@@ -146,7 +146,7 @@ html: ${DB}
 	done
 	@echo "Creating seminar list"
 	@xml tr ${PXSLT} -s what=seminar ${DB} >${HTML}/seminar/index.html
-	@echo "Creating Additional HTML pages"
+	@echo "Creating additional HTML pages"
 	@for page in $(RELPAGEIDS) ; \
 	do \
 		xml tr ${PXSLT} -s opage=$$page -s what=rel-pages ${DB} >${HTML}/rel_pages/$$page-page.html ; \
