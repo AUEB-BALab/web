@@ -1,0 +1,12 @@
+<seminar>
+    <sem_date>20030611</sem_date>
+    <sem_time>16:00</sem_time>
+    <sem_room>701</sem_room>
+    <sem_duration>25 mins</sem_duration>
+        <presentation by="m_dpap">
+                  <pres_title> Management Control Systems in collaborative context: The case of Fast Moving Consumer Goods Industry
+             </pres_title>
+                  <pres_url>seminars_files/11_6_2003_dpap.PPT</pres_url>
+        </presentation>
+
+</seminar>

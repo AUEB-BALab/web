@@ -1,0 +1,10 @@
+<seminar>
+    <sem_date>20020403</sem_date>
+    <sem_time>16:00</sem_time>
+    <sem_room>701</sem_room>
+    <sem_duration>25 mins</sem_duration>
+        <presentation by="m_pateli m_kfouskas">
+                  <pres_title>M-Express - Briefing of the Project</pres_title>
+                  <pres_url>seminars_files/03_04_2002_ada_fouskas.pdf</pres_url>
+        </presentation>
+    </seminar>

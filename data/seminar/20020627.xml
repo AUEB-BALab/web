@@ -1,0 +1,11 @@
+<seminar>
+    <sem_date>20020627</sem_date>
+    <sem_time>16:00</sem_time>
+    <sem_room>701</sem_room>
+    <sem_duration>25 mins</sem_duration>
+        <presentation by="m_dpap">
+                  <pres_title>GEMINI 1st Review Meeting Preparation
+             </pres_title>
+                  <pres_url>seminars_files/27_6_2002_dpap.pdf</pres_url>
+        </presentation>
+        </seminar>

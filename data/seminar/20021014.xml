@@ -1,0 +1,18 @@
+<seminar>
+    <sem_date>20021014</sem_date>
+    <sem_time>16:00</sem_time>
+    <sem_room>701</sem_room>
+    <sem_duration>25 mins</sem_duration>
+        <presentation by="m_akp m_pz">
+                  <pres_title> Developing e-learning services
+for the enhancement of ICT skills in South Eastern European Countries
+             </pres_title>
+                  <pres_url>seminars_files/14_10_2002_akp_2.pdf</pres_url>
+        </presentation>
+        <presentation by="m_akp m_nikas m_samiotis">
+                  <pres_title> Networked Business Organisations: An
+Actionable Research Framework
+             </pres_title>
+                  <pres_url>seminars_files/14_10_2002_akp_1.pdf</pres_url>
+        </presentation>
+    </seminar>

@@ -1,0 +1,10 @@
+<seminar>
+    <sem_date>20030319</sem_date>
+    <sem_time>16:00</sem_time>
+    <sem_room>701</sem_room>
+    <sem_duration>25 mins</sem_duration>
+        <presentation by="m_kfouskas">
+                  <pres_title> PhD Progress</pres_title>
+                  <pres_url>seminars_files/19-3-03_Fouskas.pdf</pres_url>
+        </presentation>
+</seminar>

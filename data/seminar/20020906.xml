@@ -1,0 +1,10 @@
+<seminar>
+    <sem_date>20020906</sem_date>
+    <sem_time>16:00</sem_time>
+    <sem_room>701</sem_room>
+    <sem_duration>25 mins</sem_duration>
+        <presentation by="m_pateli">
+                  <pres_title>M-Express Review Meeting Preparation</pres_title>
+                  <pres_url>seminars_files/06_09_2002_ada.pdf</pres_url>
+        </presentation>
+    </seminar>

@@ -1,0 +1,10 @@
+<seminar>
+    <sem_date>20021209</sem_date>
+    <sem_time>16:00</sem_time>
+    <sem_room>701</sem_room>
+    <sem_duration>25 mins</sem_duration>
+        <presentation by="m_isideris">
+                  <pres_title>Strategic Planning and Organizational Learning</pres_title>
+                  <pres_url>seminars_files/09_12_2002_sider.pdf</pres_url>
+        </presentation>
+    </seminar>

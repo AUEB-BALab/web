@@ -1,0 +1,10 @@
+<seminar>
+    <sem_date>20011212</sem_date>
+    <sem_time>16:00</sem_time>
+    <sem_room>701</sem_room>
+    <sem_duration>25 mins</sem_duration>
+        <presentation by="m_dpap m_k.pramatari">
+                  <pres_title>ΒΕΛΤΙΩΣΗ ΑΠΟΔΟΣΗΣ ΔΙΕΠΙΧΕΙΡΗΣΙΑΚΩΝ ΔΙΑΔΙΚΑΣΙΩΝ</pres_title>
+                  <pres_url>seminars_files/12_12_2001_dpap-pram.pdf</pres_url>
+        </presentation>
+    </seminar>

@@ -1,0 +1,10 @@
+<seminar>
+    <sem_date>20030326</sem_date>
+    <sem_time>16:00</sem_time>
+    <sem_room>701</sem_room>
+    <sem_duration>25 mins</sem_duration>
+        <presentation by="m_giaglis">
+                  <pres_title> PhD Process - Part II</pres_title>
+                  <pres_url>seminars_files/26_03_2003_Giaglis.pdf</pres_url>
+        </presentation>
+</seminar>
