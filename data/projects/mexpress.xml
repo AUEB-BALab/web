@@ -1,4 +1,4 @@
-<project id="p_mexpress" group="g_eltrun g_sense g_wrc" scientific_coordinator="m_dds" contact="m_dds" international="yes" type="research">
+<project id="p_mexpress" group="g_eltrun g_sense g_wrc" scientific_coordinator="m_dds" contact="m_dds" international="yes" type="rtd">
 	<shortname>mExpress</shortname>
 	<projtitle>Mobile Exhibition Environments</projtitle>
 	<startdate>20020305</startdate>

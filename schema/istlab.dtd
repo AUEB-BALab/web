@@ -42,7 +42,7 @@
 	project_manager IDREF #IMPLIED
 	group IDREFS #REQUIRED
 	international (yes | no) #REQUIRED
-	type (consulting | research | training | dissemination) #REQUIRED
+	type (consulting | rtd | training | dissemination) #REQUIRED
 >
 <!ELEMENT projtitle (#PCDATA)>
 <!ELEMENT our_budget (#PCDATA)>
