@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<member group="g_eltrun g_swise" id="m_nkorf">
+<member group="g_eltrun g_ois" id="m_nkorf">
 	<givenname>Nikolaos</givenname>
 	<surname>Korfiatis</surname>
 	<memb_title>Mr</memb_title>
@@ -8,6 +8,7 @@
 	<!--<fax>+30 2108203756</fax>-->
 	<!--office_address>1 Derigni St. &amp; Mauromataion (Vankouver Building)</office_address>-->
 	<!--<postal_address>76 Patission St., GR104 34, Athens, Greece</postal_address> -->
+	<alumnus/>
 	<photo>../images/m_nkorfiatis.jpg</photo>
 	<shortcv>Nikos Korfiatis is a graduant of the Department of Management Science and Technology, AUEB with specialization in the field of information systems and e-business. 
 From August 2004 is pursuing his MEng in the Royal Institute of Technology [KTH], Stockholm Sweden from the Institute of Computer and 
