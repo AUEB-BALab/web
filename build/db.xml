@@ -70,6 +70,336 @@
 </project_list>
 <publication_list>
 
+	<publication id="Spi93" type="article" group="g_sense"  member="m_dds">
+		<pub_title>Implementing {H</pub_title>
+		<pub_author>Diomidis Spinellis</pub_author>
+		<pub_year>1993</pub_year>
+	</publication>
+
+	<publication id="Spi93b" type="article" group="g_sense"  member="m_dds">
+		<pub_title>Checking {C</pub_title>
+		<pub_author>Diomidis Spinellis</pub_author>
+		<pub_year>1993</pub_year>
+	</publication>
+
+	<publication id="Spi93d" type="article" group="g_sense"  member="m_dds">
+		<pub_title>Implementing Multimedia Applications: Introduction</pub_title>
+		<pub_author>Diomidis Spinellis</pub_author>
+		<pub_year>1993</pub_year>
+	</publication>
+
+	<publication id="Spi93e" type="article" group="g_sense"  member="m_dds">
+		<pub_title>Implementing Multimedia Applications: Programming the {W</pub_title>
+		<pub_author>Diomidis Spinellis</pub_author>
+		<pub_year>1993</pub_year>
+	</publication>
+
+	<publication id="Spi93f" type="article" group="g_sense"  member="m_dds">
+		<pub_title>Implementing Multimedia Applications: Development Tools</pub_title>
+		<pub_author>Diomidis Spinellis</pub_author>
+		<pub_year>1993</pub_year>
+	</publication>
+
+	<publication id="Spi93g" type="article" group="g_sense"  member="m_dds">
+		<pub_title>Implementing Multimedia Applications: File Storage and Compression Methods</pub_title>
+		<pub_author>Diomidis Spinellis</pub_author>
+		<pub_year>1993</pub_year>
+	</publication>
+
+	<publication id="Spi93h" type="article" group="g_sense"  member="m_dds">
+		<pub_title>Implementing Multimedia Applications: The Media Control Interface</pub_title>
+		<pub_author>Diomidis Spinellis</pub_author>
+		<pub_year>1993</pub_year>
+	</publication>
+
+	<publication id="Spi93i" type="article" group="g_sense"  member="m_dds">
+		<pub_title>Implementing Multimedia Applications: Handling Moving Images</pub_title>
+		<pub_author>Diomidis Spinellis</pub_author>
+		<pub_year>1993</pub_year>
+	</publication>
+
+	<publication id="Spi93j" type="article" group="g_sense"  member="m_dds">
+		<pub_title>Implementing Multimedia Applications: Controlling the Video Machine</pub_title>
+		<pub_author>Diomidis Spinellis</pub_author>
+		<pub_year>1993</pub_year>
+	</publication>
+
+	<publication id="SDE95" type="article" group="g_sense"  member="m_dds">
+		<pub_title>Object-Oriented Technology in Multiparadigm Language Implementation</pub_title>
+		<pub_author>Diomidis Spinellis and Sophia Drossopoulou and Susan Eisenbach</pub_author>
+		<pub_year>1995</pub_year>
+	</publication>
+
+	<publication id="Spi94d" type="article" group="g_sense"  member="m_dds">
+		<pub_title>Trace: A Tool for Logging Operating System Call Transactions</pub_title>
+		<pub_author>Diomidis Spinellis</pub_author>
+		<pub_year>1994</pub_year>
+	</publication>
+
+	<publication id="Spi91c" type="article" group="g_sense"  member="m_dds">
+		<pub_title>Type-safe Linkage for Variables and Functions</pub_title>
+		<pub_author>Diomidis Spinellis</pub_author>
+		<pub_year>1991</pub_year>
+	</publication>
+
+	<publication id="Spi97d" type="article" group="g_sense"  member="m_dds">
+		<pub_title>A Conversation about {P</pub_title>
+		<pub_author>Diomidis Spinellis and Rob Kolstad</pub_author>
+		<pub_year>1997</pub_year>
+	</publication>
+
+	<publication id="Spi94f" type="article" group="g_sense"  member="m_dds">
+		<pub_title>Protecting Software from Unauthorised Copying</pub_title>
+		<pub_author>Diomidis Spinellis</pub_author>
+		<pub_year>1994</pub_year>
+	</publication>
+
+	<publication id="Spi95c" type="article" group="g_sense"  member="m_dds">
+		<pub_title>The {S</pub_title>
+		<pub_author>Diomidis Spinellis</pub_author>
+		<pub_year>1995</pub_year>
+	</publication>
+
+	<publication id="KSIB97b" type="article" group="g_sense"  member="m_dds">
+		<pub_title>Using Trusted Third Parties for Secure Telemedical Applications over the {WWW</pub_title>
+		<pub_author>Sokratis Katsikas and Diomidis Spinellis and John Iliadis and Bernd Blobel</pub_author>
+		<pub_year>1998,</pub_year>
+	</publication>
+
+	<publication id="Spi98a" type="article" group="g_sense"  member="m_dds">
+		<pub_title>A Critique of the {W</pub_title>
+		<pub_author>Diomidis Spinellis</pub_author>
+		<pub_year>1998</pub_year>
+	</publication>
+
+	<publication id="Spi98b" type="article" group="g_sense"  member="m_dds">
+		<pub_title>Palmtop Programmable Appliance Controls</pub_title>
+		<pub_author>Diomidis Spinellis</pub_author>
+		<pub_year>1998</pub_year>
+	</publication>
+
+	<publication id="SP98" type="article" group="g_sense"  member="m_dds">
+		<pub_title>A Simulated Annealing Approach for Buffer Allocation in Reliable Production Lines</pub_title>
+		<pub_author>Diomidis Spinellis and Chrissoleon T. Papadopoulos</pub_author>
+		<pub_year>2000</pub_year>
+	</publication>
+
+	<publication id="GS98" type="article" group="g_sense"  member="m_dds">
+		<pub_title>The Cascade Vulnerability problem: The Detection problem and a Simulated Annealing Approach for its Correction</pub_title>
+		<pub_author>Stefanos Gritzalis and Diomidis Spinellis</pub_author>
+		<pub_year>1998,</pub_year>
+	</publication>
+
+	<publication id="Spi98c" type="article" group="g_sense"  member="m_dds">
+		<pub_title>Small Tools for Automatic Text Generation</pub_title>
+		<pub_author>Diomidis Spinellis</pub_author>
+		<pub_year>1998</pub_year>
+	</publication>
+
+	<publication id="Spi98e" type="article" group="g_sense"  member="m_dds">
+		<pub_title>The Computer's New Clothes</pub_title>
+		<pub_author>Diomidis Spinellis</pub_author>
+		<pub_year>1998,</pub_year>
+	</publication>
+
+	<publication id="GAS99" type="article" group="g_sense"  member="m_dds">
+		<pub_title>Architectures for Secure Portable Executable Content</pub_title>
+		<pub_author>Stefanos Gritzalis and George Aggelis and Diomidis Spinellis</pub_author>
+		<pub_year>1999</pub_year>
+	</publication>
+
+	<publication id="GSG99" type="article" group="g_sense"  member="m_dds">
+		<pub_title>Security Protocols Over Open Networks and Distributed Systems: Formal Methods for their Analysis, Design, and Verification</pub_title>
+		<pub_author>Stefanos Gritzalis and Diomidis Spinellis and Panagiotis Georgiadis</pub_author>
+		<pub_year>1999</pub_year>
+	</publication>
+
+	<publication id="Spi99e" type="article" group="g_sense"  member="m_dds">
+		<pub_title>Declarative Peephole Optimization Using String Pattern Matching</pub_title>
+		<pub_author>Diomidis Spinellis</pub_author>
+		<pub_year>1999</pub_year>
+	</publication>
+
+	<publication id="GIGSK99" type="article" group="g_sense"  member="m_dds">
+		<pub_title>Developing Secure {Web-based</pub_title>
+		<pub_author>Stephanos Gritzalis and John Iliadis and Dimitris Gritzalis and Diomidis Spinellis and Sokratis Katsikas</pub_author>
+		<pub_year>1999</pub_year>
+	</publication>
+
+	<publication id="SKG99" type="article" group="g_sense"  member="m_dds">
+		<pub_title>Security Requirements, Risks, and Recommendations for Small Enterprise and Home-office Environments</pub_title>
+		<pub_author>Diomidis Spinellis and Spyros Kokolakis and Stephanos Gritzalis </pub_author>
+		<pub_year>1999</pub_year>
+	</publication>
+
+	<publication id="SPM99" type="article" group="g_sense"  member="m_dds">
+		<pub_title>Large Production Line Optimization Using Simulated Annealing</pub_title>
+		<pub_author>Diomidis Spinellis and Chrissoleon Papadopoulos and Jim {MacGregor Smith</pub_author>
+		<pub_year>2000,</pub_year>
+	</publication>
+
+	<publication id="Spi99i" type="article" group="g_sense"  member="m_dds">
+		<pub_title>Explore, Excogitate, Exploit: Component Mining</pub_title>
+		<pub_author>Diomidis Spinellis</pub_author>
+		<pub_year>1999,</pub_year>
+	</publication>
+
+	<publication id="Spi99j" type="article" group="g_sense"  member="m_dds">
+		<pub_title>Optimal Peripheral Access Using Pipe-based Double-buffering</pub_title>
+		<pub_author>Diomidis Spinellis</pub_author>
+		<pub_year>1999</pub_year>
+	</publication>
+
+	<publication id="SP99c" type="article" group="g_sense"  member="m_dds">
+		<pub_title>Stochastic Algorithms for Buffer Allocation in Reliable Production Lines</pub_title>
+		<pub_author>Diomidis Spinellis and Chrissoleon Papadopoulos</pub_author>
+		<pub_year>2000,</pub_year>
+	</publication>
+
+	<publication id="Spi00a" type="article" group="g_sense"  member="m_dds">
+		<pub_title>Reflection as a Mechanism for Software Integrity Verification</pub_title>
+		<pub_author>Diomidis Spinellis</pub_author>
+		<pub_year>2000,</pub_year>
+	</publication>
+
+	<publication id="SGIGK99" type="article" group="g_sense"  member="m_dds">
+		<pub_title>Trusted Third Party Services for Deploying Secure Telemedical Applications Over the {WWW</pub_title>
+		<pub_author>Diomidis Spinellis and Stefanos Gritzalis and John Iliadis and Dimitris Gritzalis and Sokratis Katsikas</pub_author>
+		<pub_year>1999,</pub_year>
+	</publication>
+
+	<publication id="RSK00" type="article" group="g_sense"  member="m_dds">
+		<pub_title>Distributed Object Bridges and a {J</pub_title>
+		<pub_author>Konstantinos Raptis and Diomidis Spinellis and Sokratis Katsikas</pub_author>
+		<pub_year>2000</pub_year>
+	</publication>
+
+	<publication id="SR00" type="article" group="g_sense"  member="m_dds">
+		<pub_title>Component Mining: A Process and its Pattern Language</pub_title>
+		<pub_author>Diomidis Spinellis and Konstantinos Raptis</pub_author>
+		<pub_year>2000,</pub_year>
+	</publication>
+
+	<publication id="Spi00b" type="article" group="g_sense"  member="m_dds">
+		<pub_title>Notable Design Patterns for Domain Specific Languages</pub_title>
+		<pub_author>Diomidis Spinellis</pub_author>
+		<pub_year>2001</pub_year>
+	</publication>
+
+	<publication id="SP00" type="article" group="g_sense"  member="m_dds">
+		<pub_title>Modular Production Line Optimization: The Ex{PLO</pub_title>
+		<pub_author>Diomidis Spinellis and Chrissoleon Papadopoulos</pub_author>
+		<pub_year>2001</pub_year>
+	</publication>
+
+	<publication id="LS01" type="article" group="g_sense"  member="m_dds">
+		<pub_title>Information Systems Security in the {G</pub_title>
+		<pub_author>Euripides Loukis and Diomidis Spinellis</pub_author>
+		<pub_year>2001</pub_year>
+	</publication>
+
+	<publication id="RSK01" type="article" group="g_sense"  member="m_dds">
+		<pub_title>Multi-Technology Distributed Objects and their Integration</pub_title>
+		<pub_author>Konstantinos Raptis and Diomidis Spinellis and Sokratis Katsikas</pub_author>
+		<pub_year>2001</pub_year>
+	</publication>
+
+	<publication id="Spi01a" type="article" group="g_sense"  member="m_dds">
+		<pub_title>Fear of Coding, and How to Reduce It</pub_title>
+		<pub_author>Diomidis Spinellis</pub_author>
+		<pub_year>2001,</pub_year>
+	</publication>
+
+	<publication id="Spi02a" type="article" group="g_sense"  member="m_dds">
+		<pub_title>Unix tools as visual programming components in a {GUI</pub_title>
+		<pub_author>Diomidis Spinellis</pub_author>
+		<pub_year>2002,</pub_year>
+	</publication>
+
+	<publication id="Spi02c" type="article" group="g_sense"  member="m_dds">
+		<pub_title>A Modest Proposal for Curing the Public Field Phobia</pub_title>
+		<pub_author>Diomidis Spinellis</pub_author>
+		<pub_year>2002</pub_year>
+	</publication>
+
+	<publication id="Spi02d" type="article" group="g_sense"  member="m_dds">
+		<pub_title>The Decay and Failures of Web References</pub_title>
+		<pub_author>Diomidis Spinellis</pub_author>
+		<pub_year>2003,</pub_year>
+	</publication>
+
+	<publication id="SG02" type="article" group="g_sense"  member="m_dds">
+		<pub_title>Panoptis: Intrusion Detection Using a Domain-specific Language</pub_title>
+		<pub_author>Diomidis Spinellis and Dimitris Gritzalis</pub_author>
+		<pub_year>2002,</pub_year>
+	</publication>
+
+	<publication id="Spi03c" type="article" group="g_sense"  member="m_dds">
+		<pub_title>Reliable identification of bounded-length viruses is {NP</pub_title>
+		<pub_author>Diomidis Spinellis</pub_author>
+		<pub_year>2003,</pub_year>
+	</publication>
+
+	<publication id="SMIGGK02" type="article" group="g_sense"  member="m_dds">
+		<pub_title>Deploying a Secure Cyberbazaar by Adding Trust on Commercial Transactions</pub_title>
+		<pub_author>D. Spinellis and K. Moulinos and J. Iliadis and D. Gritzalis and S. Gritzalis and S. Katsikas</pub_author>
+		<pub_year>2002,</pub_year>
+	</publication>
+
+	<publication id="Spi03e" type="article" group="g_sense"  member="m_dds">
+		<pub_title>On the Declarative Specification of Models</pub_title>
+		<pub_author>Diomidis Spinellis</pub_author>
+		<pub_year>2003,</pub_year>
+	</publication>
+
+	<publication id="Spi03g" type="article" group="g_sense"  member="m_dds">
+		<pub_title>Organized Pruning of File Sets</pub_title>
+		<pub_author>Diomidis Spinellis</pub_author>
+		<pub_year>2003</pub_year>
+	</publication>
+
+	<publication id="Spi03h" type="article" group="g_sense"  member="m_dds">
+		<pub_title>The Information Furnace: Consolidated Home Control</pub_title>
+		<pub_author>Diomidis Spinellis</pub_author>
+		<pub_year>2003</pub_year>
+	</publication>
+
+	<publication id="Spi03m" type="article" group="g_sense"  member="m_dds">
+		<pub_title>Position-Annotated Photographs: A Geotemporal Web</pub_title>
+		<pub_author>Diomidis Spinellis</pub_author>
+		<pub_year>2003,</pub_year>
+	</publication>
+
+	<publication id="Spi03n" type="article" group="g_sense"  member="m_dds">
+		<pub_title>Reflections on Trusting Trust Revisited</pub_title>
+		<pub_author>Diomidis Spinellis</pub_author>
+		<pub_year>2003,</pub_year>
+	</publication>
+
+	<publication id="SS03" type="article" group="g_sense"  member="m_dds">
+		<pub_title>Security Architectures for Network Clients</pub_title>
+		<pub_author>Victoria Skoularidou and Diomidis Spinellis</pub_author>
+		<pub_year>2003</pub_year>
+	</publication>
+
+	<publication id="IGS03" type="article" group="g_sense"  member="m_dds">
+		<pub_title>Towards a Framework for Evaluating Certificate Status Information Mechanisms</pub_title>
+		<pub_author>Iliadis, John and Gritzalis, Stefanos and Spinellis, Diomidis and de Cock, Danny and Preneel, Bart and Gritzalis, Dimitris</pub_author>
+		<pub_year>2003</pub_year>
+	</publication>
+
+	<publication id="Spi03r" type="article" group="g_sense"  member="m_dds">
+		<pub_title>Global Analysis and Transformations in Preprocessed Languages</pub_title>
+		<pub_author>Diomidis Spinellis</pub_author>
+		<pub_year>2003</pub_year>
+	</publication>
+
+	<publication id="Spi03v" type="article" group="g_sense"  member="m_dds">
+		<pub_title>Reading, Writing, and Code</pub_title>
+		<pub_author>Diomidis Spinellis</pub_author>
+		<pub_year>2003,</pub_year>
+	</publication>
+
 	<publication id="Spi03i" type="book" group="g_sense"  member="m_dds">
 		<pub_title>Code Reading: The Open Source Perspective</pub_title>
 		<pub_author>Diomidis Spinellis</pub_author>
@@ -81,15 +411,286 @@
 		<pub_author>Diomidis Spinellis</pub_author>
 		<pub_year>2003</pub_year>
 	</publication>
+
+	<publication id="Spi94" type="inproceedings" group="g_sense"  member="m_dds">
+		<pub_title>Wux: {U</pub_title>
+		<pub_author>Diomidis Spinellis</pub_author>
+		<pub_year>1994</pub_year>
+	</publication>
+
+	<publication id="SDE94" type="inproceedings" group="g_sense"  member="m_dds">
+		<pub_title>Language and Architecture Paradigms as Object Classes: A Unified Approach Towards Multiparadigm Programming</pub_title>
+		<pub_author>Diomidis Spinellis and Sophia Drossopoulou and Susan Eisenbach</pub_author>
+		<pub_year>1994</pub_year>
+	</publication>
+
+	<publication id="SDE94b" type="inproceedings" group="g_sense"  member="m_dds">
+		<pub_title>An Object Model for Multiparadigm Programming</pub_title>
+		<pub_author>Diomidis Spinellis and Sophia Drossopoulou and Susan Eisenbach</pub_author>
+		<pub_year>1994</pub_year>
+	</publication>
+
+	<publication id="Spi93c" type="inproceedings" group="g_sense"  member="m_dds">
+		<pub_title>TEKTON: A Program for the Composition, Design, and Three-dimensional View of Architectural Subjects</pub_title>
+		<pub_author>Diomidis Spinellis</pub_author>
+		<pub_year>1993</pub_year>
+	</publication>
+
+	<publication id="Spi94e" type="inproceedings" group="g_sense"  member="m_dds">
+		<pub_title>The Design and Implementation of a Legal Text Database</pub_title>
+		<pub_author>Diomidis Spinellis</pub_author>
+		<pub_year>1994</pub_year>
+	</publication>
+
+	<publication id="Spi95" type="inproceedings" group="g_sense"  member="m_dds">
+		<pub_title>Integrated Aluminum Hot Milling Automation</pub_title>
+		<pub_author>Diomidis Spinellis</pub_author>
+		<pub_year>1995</pub_year>
+	</publication>
+
+	<publication id="Spi95b" type="inproceedings" group="g_sense"  member="m_dds">
+		<pub_title>{DIKAIO</pub_title>
+		<pub_author>Diomidis Spinellis</pub_author>
+		<pub_year>1995</pub_year>
+	</publication>
+
+	<publication id="GS97a" type="inproceedings" group="g_sense"  member="m_dds">
+		<pub_title>The Cascade Vulnerability Problem for Open Distributed Systems: A Review</pub_title>
+		<pub_author>Stefanos Gritzalis and Diomidis Spinellis</pub_author>
+		<pub_year>1997</pub_year>
+	</publication>
+
+	<publication id="SP97" type="inproceedings" group="g_sense"  member="m_dds">
+		<pub_title>A Simulated Annealing Approach for Buffer Allocation in Reliable Production Lines</pub_title>
+		<pub_author>Diomidis Spinellis and Chrisoleon T. Papadopoulos</pub_author>
+		<pub_year>1997</pub_year>
+	</publication>
+
+	<publication id="Spi92" type="inproceedings" group="g_sense"  member="m_dds">
+		<pub_title>The Implementation of Multimedia Applications</pub_title>
+		<pub_author>Diomidis Spinellis</pub_author>
+		<pub_year>1992</pub_year>
+	</publication>
+
+	<publication id="GS97b" type="inproceedings" group="g_sense"  member="m_dds">
+		<pub_title>Cryptographic Protocols over Open Distributed Systems: A Taxonomy of Flaws and Related Protocol Analysis Tools</pub_title>
+		<pub_author>Stefanos Gritzalis and Diomidis Spinellis</pub_author>
+		<pub_year>1997</pub_year>
+	</publication>
+
+	<publication id="GS97c" type="inproceedings" group="g_sense"  member="m_dds">
+		<pub_title>Addressing Threats and Security Issues in {W</pub_title>
+		<pub_author>Stefanos Gritzalis and Diomidis Spinellis</pub_author>
+		<pub_year>1997</pub_year>
+	</publication>
+
+	<publication id="SG97" type="inproceedings" group="g_sense"  member="m_dds">
+		<pub_title>Lightweight Languages as Software Engineering Tools</pub_title>
+		<pub_author>Diomidis Spinellis and V. Guruprasad</pub_author>
+		<pub_year>1997,</pub_year>
+	</publication>
+
+	<publication id="KSIB97" type="inproceedings" group="g_sense"  member="m_dds">
+		<pub_title>Using {TTP</pub_title>
+		<pub_author>Soktratis Katsikas and Diomidis Spinellis and John Iliadis and Bernd Blobel</pub_author>
+		<pub_year>1997</pub_year>
+	</publication>
+
+	<publication id="GAS98" type="inproceedings" group="g_sense"  member="m_dds">
+		<pub_title>Programming Languages for Mobile Code: A Problems Viewpoint</pub_title>
+		<pub_author>Stefanos Gritzalis and George Aggelis and Diomidis Spinellis</pub_author>
+		<pub_year>1998</pub_year>
+	</publication>
+
+	<publication id="Spi99b" type="inproceedings" group="g_sense"  member="m_dds">
+		<pub_title>Reliable Software Implementation using Domain Specific Languages</pub_title>
+		<pub_author>Diomidis Spinellis</pub_author>
+		<pub_year>1999,</pub_year>
+	</publication>
+
+	<publication id="Spi99c" type="inproceedings" group="g_sense"  member="m_dds">
+		<pub_title>Software Reliability: Modern Challenges</pub_title>
+		<pub_author>Diomidis Spinellis</pub_author>
+		<pub_year>1999,</pub_year>
+	</publication>
+
+	<publication id="SP99a" type="inproceedings" group="g_sense"  member="m_dds">
+		<pub_title>Ex{PLO</pub_title>
+		<pub_author>Diomidis Spinellis and Chrissoleon T. Papadopoulos</pub_author>
+		<pub_year>1999,</pub_year>
+	</publication>
+
+	<publication id="SP99b" type="inproceedings" group="g_sense"  member="m_dds">
+		<pub_title>Production Line Buffer Allocation: Genetic Algorithms Versus Simulated Annealing</pub_title>
+		<pub_author>Diomidis Spinellis and Chrissoleon T. Papadopoulos</pub_author>
+		<pub_year>1999</pub_year>
+	</publication>
+
+	<publication id="SG99" type="inproceedings" group="g_sense"  member="m_dds">
+		<pub_title>Information Security Best Practice Dissemination: The {ISA-EUNET</pub_title>
+		<pub_author>Diomidis Spinellis and Dimitris Gritzalis</pub_author>
+		<pub_year>1999</pub_year>
+	</publication>
+
+	<publication id="LKSGP99" type="inproceedings" group="g_sense"  member="m_dds">
+		<pub_title>User Requirements of Trusted Third Parties in {E</pub_title>
+		<pub_author>Dimitrios Lekkas and Sokratis K. Katsikas and Diomidis Spinellis and Pavel Gladychev and Ahmed Patel</pub_author>
+		<pub_year>1999</pub_year>
+	</publication>
+
+	<publication id="Spi00c" type="inproceedings" group="g_sense"  member="m_dds">
+		<pub_title>Outwit: {Unix</pub_title>
+		<pub_author>Diomidis Spinellis</pub_author>
+		<pub_year>2000,</pub_year>
+	</publication>
+
+	<publication id="RSK00b" type="inproceedings" group="g_sense"  member="m_dds">
+		<pub_title>Java as Distributed Object Glue</pub_title>
+		<pub_author>Konstantinos Raptis and Diomidis Spinellis and Sokratis Katsikas</pub_author>
+		<pub_year>2000,</pub_year>
+	</publication>
+
+	<publication id="TES99" type="inproceedings" group="g_sense"  member="m_dds">
+		<pub_title>{MABLe</pub_title>
+		<pub_author>John Tait and Jeremy Ellman and Diomidis Spinellis</pub_author>
+		<pub_year>1999,</pub_year>
+	</publication>
+
+	<publication id="ISKP00" type="inproceedings" group="g_sense"  member="m_dds">
+		<pub_title>A Taxonomy of Certificate Status Information Mechanisms</pub_title>
+		<pub_author>Ioannis S. Iliadis and Diomidis Spinellis and Sokratis Katsikas and Bart Preneel</pub_author>
+		<pub_year>2000,</pub_year>
+	</publication>
+
+	<publication id="ISGPK00" type="inproceedings" group="g_sense"  member="m_dds">
+		<pub_title>Evaluating Certificate Status Information Mechanisms</pub_title>
+		<pub_author>John Iliadis and Diomidis Spinellis and Dimitris Gritzalis and Bart Preneel and Sokratis Katsikas</pub_author>
+		<pub_year>2000,</pub_year>
+	</publication>
+
+	<publication id="SG00" type="inproceedings" group="g_sense"  member="m_dds">
+		<pub_title>A Domain-specific Language of Intrusion Detection</pub_title>
+		<pub_author>Diomidis Spinellis and Dimitris Gritzalis</pub_author>
+		<pub_year>2000,</pub_year>
+	</publication>
+
+	<publication id="PS01" type="inproceedings" group="g_sense"  member="m_dds">
+		<pub_title>Sandboxing Applications</pub_title>
+		<pub_author>Vassilis Prevelakis and Diomidis Spinellis</pub_author>
+		<pub_year>2001,</pub_year>
+	</publication>
+
+	<publication id="KKSA01" type="inproceedings" group="g_sense"  member="m_dds">
+		<pub_title>{MITOS</pub_title>
+		<pub_author>Evangelia Kopanaki and Vangelis Karkaletsis and Constantine D. Spyropoulos and Nikos Avradinis and Nikos Fakotakis and Theodore Kalamboukis and Basilis Kladis and Yannis Lazarou and Themis Panayiotopoulos and Diomidis Spinellis</pub_author>
+		<pub_year>2001,</pub_year>
+	</publication>
+
+	<publication id="SKS01" type="inproceedings" group="g_sense"  member="m_dds">
+		<pub_title>A Computer-Assisted Lexicographic Application</pub_title>
+		<pub_author>Marios Sintichakis and Theodore Kalamboukis and Diomidis Spinellis</pub_author>
+		<pub_year>2001</pub_year>
+	</publication>
+
+	<publication id="LCS01" type="inproceedings" group="g_sense"  member="m_dds">
+		<pub_title>Information Systems in the Living Room: A Case Study of Personalized Interactive {TV</pub_title>
+		<pub_author>Giorgos Lekakos and Kostas Chorianopoulos and Diomidis Spinellis</pub_author>
+		<pub_year>2001,</pub_year>
+	</publication>
+
+	<publication id="GS02" type="inproceedings" group="g_sense"  member="m_dds">
+		<pub_title>A Comparison of Portable Dynamic Web Content Technologies for the Apache Web Server</pub_title>
+		<pub_author>Giorgos Gousios and Diomidis Spinellis</pub_author>
+		<pub_year>2002</pub_year>
+	</publication>
+
+	<publication id="Spi02e" type="inproceedings" group="g_sense"  member="m_dds">
+		<pub_title>The Information Furnace: User-friendly Home Control</pub_title>
+		<pub_author>Diomidis Spinellis</pub_author>
+		<pub_year>2002</pub_year>
+	</publication>
+
+	<publication id="SS02" type="inproceedings" group="g_sense"  member="m_dds">
+		<pub_title>Securing the Network Client</pub_title>
+		<pub_author>Victoria Skoularidou and Diomidis Spinellis</pub_author>
+		<pub_year>2002</pub_year>
+	</publication>
+
+	<publication id="CS02" type="inproceedings" group="g_sense"  member="m_dds">
+		<pub_title>A Metaphor for Personalized Television Programming</pub_title>
+		<pub_author>Konstantinos Chorianopoulos and Diomidis Spinellis</pub_author>
+		<pub_year>2002</pub_year>
+	</publication>
+
+	<publication id="MPTS02" type="inproceedings" group="g_sense"  member="m_dds">
+		<pub_title>Context Aware Services in an Exhibition Environment- The {mEXPRESS</pub_title>
+		<pub_author>Ioannis Mathes and Adamantia Pateli and Argiris Tsamakos and Diomidis Spinellis</pub_author>
+		<pub_year>2002</pub_year>
+	</publication>
+
+	<publication id="PGS02" type="inproceedings" group="g_sense"  member="m_dds">
+		<pub_title>Indoor Application Environments and Location-based Services</pub_title>
+		<pub_author>Ada Pateli and Giorgos Giaglis and Diomidis Spinellis</pub_author>
+		<pub_year>2002</pub_year>
+	</publication>
+
+	<publication id="CLS03" type="inproceedings" group="g_sense"  member="m_dds">
+		<pub_title>Intelligent User Interfaces in the Living Room: Usability Design for Personalized Television Applications</pub_title>
+		<pub_author>Konstantinos Chorianopoulos and George Lekakos and Diomidis Spinellis</pub_author>
+		<pub_year>2003</pub_year>
+	</publication>
+
+	<publication id="CLS03b" type="inproceedings" group="g_sense"  member="m_dds">
+		<pub_title>The Virtual Channel Model for Personalized Television</pub_title>
+		<pub_author>Konstantinos Chorianopoulos and George Lekakos and Diomidis Spinellis</pub_author>
+		<pub_year>2003</pub_year>
+	</publication>
+
+	<publication id="CS03" type="inproceedings" group="g_sense"  member="m_dds">
+		<pub_title>Usability Design for the Home Media Station</pub_title>
+		<pub_author>Konstantinos Chorianopoulos and Diomidis Spinellis</pub_author>
+		<pub_year>2003</pub_year>
+	</publication>
+
+	<publication id="KSRG02" type="inproceedings" group="g_sense"  member="m_dds">
+		<pub_title>Intelligent Cokes and Diapers: {MyGrocer</pub_title>
+		<pub_author>Kourouthanasis, Panos and Spinellis, Diomidis and Roussos, Giorgos and Giaglis, Giorgos</pub_author>
+		<pub_year>2002</pub_year>
+	</publication>
+
+	<publication id="RKSG03" type="inproceedings" group="g_sense"  member="m_dds">
+		<pub_title>Systems Architecture for Pervasive Retail</pub_title>
+		<pub_author>George Roussos and Panos Kourouthanasis and Diomidis Spinellis and Eugene Gryazin and Mike Pryzbliski and George Kalpogiannis and George Giaglis</pub_author>
+		<pub_year>2003</pub_year>
+	</publication>
+
+	<publication id="Spi96" type="techreport" group="g_sense"  member="m_dds">
+		<pub_title>Greek Character Encoding for Electronic Mail Messages</pub_title>
+		<pub_author>Diomidis Spinellis</pub_author>
+		<pub_year>1996</pub_year>
+	</publication>
 </publication_list>
 <publication_type_list>
 	<publication_type for="m_dds">
 		<has_any/>
+		<has_article/>
 		<has_book/>
+		<has_inproceedings/>
+		<has_techreport/>
+	</publication_type>
+	<publication_type for="">
+		<has_any/>
+		<has_article/>
+		<has_book/>
+		<has_inproceedings/>
+		<has_techreport/>
 	</publication_type>
 	<publication_type for="g_sense">
 		<has_any/>
+		<has_article/>
 		<has_book/>
+		<has_inproceedings/>
+		<has_techreport/>
 	</publication_type>
 	<publication_type for="p_contessa">
 		<has_any/>
