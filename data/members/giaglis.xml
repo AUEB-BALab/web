@@ -4,24 +4,23 @@
 	<surname>Giaglis</surname>
 	<memb_title>Dr.</memb_title>
 	<email>giaglis@aueb.gr</email>
-	<web_site>http://www.eltrun.gr/wrc/WRC_giaglis_v1.html</web_site>-->
+	<web_site>http://www.eltrun.gr/wrc/WRC_giaglis_v1.html</web_site>
 	<office_phone>+30 2108203658</office_phone>
 	<fax>+30 2108203685</fax>
 	<office_address>Evelpidon 47-A &amp; Lefkados 33, Office 915</office_address>
 	<postal_address>Patision 76, GR-104 34 Athens, Greece</postal_address>
 	<!--<photo>../images/spi.jpg</photo>-->
 	<shortcv>
-		<p>
 	   George M. Giaglis is Assistant Professor of eBusiness at the Department of Management
 	   Science and Technology of the Athens University of Economics and Business, Greece.
 	   He has also held full-time academic posts in Brunel University (UK) and the
 	   University of the Aegean (Greece), while he has been a visiting professor in
 	   universities such as the University of London, Nottingham Trent University, and
-	   Henley Management College.<br><br>
+	   Henley Management College.<br /><br />
 	   His main teaching and research interests lie in the areas of eBusiness (emphasising
 	   on mobile and wireless applications and services), technology-enabled business
 	   process redesign, business process modelling and re-engineering, information
-	   management, and information systems evaluation.<br><br>
+	   management, and information systems evaluation.<br /><br />
 	   He has published more than 50 research articles in leading journals and
 	   international conferences, including the Information Systems Journal, the
 	   International Journal of Electronic Commerce, and the International Journal of
@@ -36,13 +35,12 @@
 	   member of the organising committee of various international conferences
 	   (including the European Conference on Information Systems Evaluation, the
 	   International Conference on Business Process Modelling, and the Hawaiian
-	   International Conference on Systems Sciences).<br><br>
+	   International Conference on Systems Sciences).<br /><br />
 	   Since 2001, he is the Director of the ELTRUN Wireless Research Group (ELTRUN/WRC)
 	   hosted by the Athens University of Economics and Business. The group pursues
 	   research in innovative mBusiness models, assessment of new mobile/wireless
 	   technologies, applications and services development, and others. The group
-	   operates one the most well known portals on mBusiness, namely Mobiforum (<a
-	   href="http://www.mobiforum.org/">www.mobiforum.org</a>).
-      </p>
+	   operates one the most well known portals on mBusiness, namely Mobiforum 
+	   (<a href="http://www.mobiforum.org/">www.mobiforum.org</a>).
 	</shortcv>
 </member>
