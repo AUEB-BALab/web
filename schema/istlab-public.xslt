@@ -507,10 +507,11 @@
 		Groups:
 		<xsl:apply-templates select="/eltrun/group_list/group [contains(current()/@group, @id)]" mode="shortref"/>
 		<!-- Provide publications link, if any publications exist -->
-		<xsl:if test="count(/eltrun/publication_type_list/publication_type [@for = current()/@id]/has_any) != 0">
+		<!-- <xsl:if test="count(/eltrun/publication_type_list/publication_type [@for = current()/@id]/has_any) != 0">
 			<br/>
 			<a href="../publications/{@id}-publications.html">Publications</a>
 		</xsl:if>
+		-->
 		<br />
 		<br />
 		<xsl:if test="count(description) != 0">
@@ -722,7 +723,7 @@
 						<xsl:if test="$what != 'project-details'">
 						<xsl:element name="td">
 							<xsl:attribute name="height">800</xsl:attribute>
-							<xsl:attribute name="width">190</xsl:attribute>
+							<xsl:attribute name="width">18%</xsl:attribute>
 							<xsl:attribute name="align">left</xsl:attribute>
 							<xsl:attribute name="bgcolor">
 								<xsl:if test="$ogroup != ''">
@@ -748,7 +749,7 @@
 					</xsl:if>
 				</xsl:if>
 			</xsl:if>
-			<td align="left">
+			<td align="left" width="82%">
 			<!-- choose which HTML to show -->
 			<xsl:choose>
 				<!-- Current projects -->
