@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<page id="sense_collab" group="g_sense">
+	<page_name>Collaborators</page_name>
+	<page_body>
+<b><i>ISTLab</i></b> actively collaborates with a  number of industrial and 
+academic partners.
+Feel free to contact
+us for more information.
+<br /><br />
+<table>
+<tr>
+	<td><img src="../images/microsoft.jpg" /></td>
+	<td>Microsoft Hellas S.A.</td>
+</tr>
+<tr>
+	<td><img src="../images/oracle.gif" /></td>
+	<td>Oracle Hellas S.A.</td>
+</tr>
+<tr>
+	<td><img src="../images/ote.jpg" /></td>
+	<td>OTE - Planning and Development Department Laboratories of New Technologies and Services -  Multimedia Laboratories</td>
+</tr>
+<tr>
+	<td><img src="../images/sun.jpg" /></td>
+	<td>Sun Microsystems Inc.</td>
+</tr>
+</table>
+	</page_body>
+</page>
