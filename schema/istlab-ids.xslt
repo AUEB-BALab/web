@@ -42,5 +42,7 @@
 	</xsl:template>
 	<xsl:template match="publication_type_list">
 	</xsl:template>
+	<xsl:template match="seminar_list">
+	</xsl:template>
 
 </xsl:stylesheet>
