@@ -15,6 +15,7 @@
 BEGIN {
 	$/ = "@";
 	open(RUN, ">build/bibrun") || die "$!\n";
+	$includepath = '-b "-include-directory data/publications -include-directory tools"' if ($^O =~ m/mswin32/i);
 }
 
 # Extract publication details
@@ -72,7 +73,7 @@ END {
 				print OUT '\bibdata{macro,book,article,inproceedings,incollection,whitepaper,techreport}';
 				print OUT "\n$citations{$group}{$id}{$type}";
 				close OUT;
-				print RUN qq{perl tools/bib2html -b "-include-directory data/publications -include-directory tools" -s alpha $auxfile public_html/publications/${id}-publications.html\n} unless($type eq 'any');
+				print RUN qq{perl tools/bib2html $includepath -s alpha $auxfile public_html/publications/${id}-publications.html\n} unless($type eq 'any');
 			}
 			print "\t</publication_type>\n";
 		}
