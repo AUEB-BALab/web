@@ -363,15 +363,13 @@
 		</xsl:if>
 		Director:
 		<xsl:apply-templates select="/eltrun/member_list/member [@id=current()/@director]" mode="simple-ref" />
-		<br /><br />
-		Research group information:
-		<br /><br />
-		<xsl:apply-templates select="current()/description" />
-		<br />
 		<br />
 		Contact:
 		<xsl:apply-templates select="/eltrun/member_list/member [@id=current()/@contact]" mode="simple-ref" />
 		<br /><br />
+		Research group information:
+		<br /><br />
+		<xsl:apply-templates select="current()/description" />
 	</xsl:template>
 
 	<!-- Format description {{{1 -->
@@ -543,20 +541,20 @@
 	<!-- body menu -->
 	<xsl:template name="body-menu">
 		<xsl:apply-templates select="/eltrun/group_list/group[@id = $ogroup]" mode="menuhead"/>
-		<a href="../groups/{$ogroup}-members.html">Members</a>
-		<br />
-		<a href="../groups/{$ogroup}-current-projects.html">Current Projects</a>
-		<br />
-		<a href="../groups/{$ogroup}-completed-projects.html">Completed Projects</a>
-		<br />
-		<a href="../publications/{$ogroup}-publications.html">Publications</a>
-		<br />
-		<a href="../groups/{$ogroup}-alumni.html">Alumni</a>
-		<br />
-		<xsl:if test="$ogroup != ''">
-			<xsl:if test="count(/eltrun/group_list/group[@id = $ogroup]/rel_link) != 0">
+			<a href="../groups/{$ogroup}-members.html">Members</a>
+			<br />
+			<a href="../groups/{$ogroup}-current-projects.html">Current Projects</a>
+			<br />
+			<a href="../groups/{$ogroup}-completed-projects.html">Completed Projects</a>
+			<br />
+			<a href="../publications/{$ogroup}-publications.html">Publications</a>
+			<br />
+			<a href="../groups/{$ogroup}-alumni.html">Alumni</a>
+			<br />
+			<xsl:if test="$ogroup != ''">
+				<xsl:if test="count(/eltrun/group_list/group[@id = $ogroup]/rel_link) != 0">
 				<xsl:apply-templates select="/eltrun/group_list/group[@id = $ogroup]/rel_link" /><br />
-			</xsl:if>
+				</xsl:if>
 		</xsl:if>
 	</xsl:template>
 
@@ -610,9 +608,38 @@
 			<tr>
 			<xsl:if test="$what != 'member-publications'">
 				<xsl:if test="$ogroup != ''">
-					<th height="800" width="190" align="left" bgcolor="#8B9DC3">
-					<xsl:call-template name="body-menu" />
-					</th>
+					<xsl:choose>
+					<xsl:when test="$ogroup = 'g_ois'">
+						<th height="800" width="190" align="left" bgcolor="#A5A2C6">
+							<xsl:call-template name="body-menu"/>
+						</th>
+					</xsl:when>
+					<xsl:when test="$ogroup = 'g_iris'">
+						<th height="800" width="190" align="left" bgcolor="#84CBE7">
+							<xsl:call-template name="body-menu"/>
+						</th>
+					</xsl:when>
+					<xsl:when test="$ogroup = 'g_wrc'">
+						<th height="800" width="190" align="left" bgcolor="#FFFF96">
+							<xsl:call-template name="body-menu"/>
+						</th>
+					</xsl:when>
+					<xsl:when test="$ogroup = 'g_sense'">
+						<th height="800" width="190" align="left" bgcolor="#FFD99C">
+							<xsl:call-template name="body-menu"/>
+						</th>
+					</xsl:when>
+					<xsl:when test="$ogroup = 'g_imes'">
+						<th height="800" width="190" align="left" bgcolor="#80EFB4">
+							<xsl:call-template name="body-menu"/>
+						</th>
+					</xsl:when>
+					<xsl:otherwise>
+						<th height="800" width="190" align="left" bgcolor="#8B9DC3">
+							<xsl:call-template name="body-menu"/>
+						</th>
+					</xsl:otherwise>
+					</xsl:choose>
 				</xsl:if>
 			</xsl:if>
 			<th align="left">
