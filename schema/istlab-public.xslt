@@ -541,9 +541,11 @@
 	
 	<!-- presentation reference {{{1-->
 	<xsl:template match="presentation" mode="ref">
-		<xsl:for-each select="/eltrun/member_list/member [contains(@id,current()/@by)]">
-			<xsl:apply-templates select="current()" mode="pub-ref"/><br />
-		</xsl:for-each>
+		<xsl:if test="string-length(current()/@by) > 0">
+			<xsl:for-each select="/eltrun/member_list/member [contains(@id,current()/@by)]">
+				<xsl:apply-templates select="current()" mode="pub-ref"/><br />
+			</xsl:for-each>
+		</xsl:if>
 		<xsl:if test="count(pres_name) != 0">
 			<xsl:value-of select="pres_name" />
 			<br />
@@ -561,9 +563,11 @@
 		<tr>
 		<td valign="top" nowrap="1"><b>Presented by:</b></td>
 		<td>
-		<xsl:for-each select="/eltrun/member_list/member [contains(@id,current()/@by)]">
-			<xsl:apply-templates select="current()" mode="pub-ref"/><br />
-		</xsl:for-each>
+		<xsl:if test="string-length(current()/@by) > 0">
+			<xsl:for-each select="/eltrun/member_list/member [contains(@id,current()/@by)]">
+				<xsl:apply-templates select="current()" mode="pub-ref"/><br />
+			</xsl:for-each>
+		</xsl:if>
 		<xsl:if test="count(pres_name) != 0">
 			<xsl:value-of select="pres_name" />
 		</xsl:if>
