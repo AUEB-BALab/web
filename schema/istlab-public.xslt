@@ -26,6 +26,7 @@
 					| group-publications
 					| member-publications
 					| project-publications
+					| seminar
 				-->
 
 	<!-- Generate heading with group name {{{1 -->
@@ -397,7 +398,7 @@
 	<xsl:template match="project" mode="full">
 		<h1>
 		<xsl:value-of select="shortname" />
-		-<xsl:copy-of select="*|text()"/>
+		-
 		<xsl:value-of select="projtitle" />
 		</h1>
 		<!-- Show Logo -->
