@@ -586,8 +586,8 @@
 		    <xsl:value-of select="sem_date" />
 		</xsl:attribute>
 	    </xsl:element>
-	    Name: <xsl:value-of select="sem_name" /><br />
-	    Date: 
+	    Presenter: <xsl:value-of select="sem_name" /><br />
+	    Date:
 	    <xsl:call-template name="date">
 		<xsl:with-param name="date" select="sem_date" />
 	    </xsl:call-template>
@@ -596,7 +596,7 @@
 	    <br />
 	    Duration: <xsl:value-of select="sem_duration" />
 	    <br />
-	    Room: <xsl:value-of select="sem_room" />
+	    Location: <xsl:value-of select="sem_room" />
 	    <br /><br />
 	    <xsl:element name="a">
 		<xsl:attribute name="href">
