@@ -38,3 +38,4 @@
 <!ELEMENT alumnus EMPTY>
 <!ELEMENT office_address (#PCDATA)>
 <!ELEMENT postal_address (#PCDATA)>
+<!ELEMENT web_site (#PCDATA)>

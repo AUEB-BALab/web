@@ -15,6 +15,10 @@
 <!ENTITY % xhtml11.mod PUBLIC "-//W3C//ENTITIES XHTML 1.1//EN"
 		 "xhtml11.dtd">
 %xhtml11.mod;
+<!-- Entities -->
+<!ENTITY % image "(#PCDATA  | %Flow.mix;)*">
+
+
 <!-- Main group dtd -->
 <!ENTITY % pc_flow "(#PCDATA | %Flow.mix;)*">
 <!ELEMENT group (grouptitle, shortname, description, rel_link*, logo?)>
@@ -27,3 +31,4 @@
 <!ELEMENT rel_link %pc_flow;>
 <!ELEMENT shortname (#PCDATA)>
 <!ELEMENT description %pc_flow;>
+<!ELEMENT logo %image;>

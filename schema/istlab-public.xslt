@@ -312,10 +312,12 @@
 
 	<!-- Format a short group reference {{{1 -->
 	<xsl:template match="group" mode="shortref" >
-		<a href="../groups/{@id}-details.html">
-		<xsl:value-of select="shortname" />
-		</a>
-		<xsl:text> </xsl:text>
+		<xsl:if test="@id != 'g_eltrun'">
+			<a href="../groups/{@id}-details.html">
+			<xsl:value-of select="shortname" />
+			</a>
+			<xsl:text> </xsl:text>
+		</xsl:if>
 	</xsl:template>
 	
 	<!-- Format a group reference for the menu {{{1-->
@@ -349,13 +351,15 @@
 		Director: 
 		<xsl:apply-templates select="/eltrun/member_list/member [@id=current()/@director]" mode="simple-ref" />
 		<br />
+		Contact:
+		<xsl:apply-templates select="/eltrun/member_list/member [@id=current()/@contact]" mode="simple-ref" />
 		<br /><br />
 		Research group information:
 		<br /><br />
 		<xsl:apply-templates select="current()/description" />
 		<br /><br />
 		<xsl:if test="count(rel_link) != 0">
-			Relative Links:
+			Related Links:
 			<br /><br />
 			<xsl:apply-templates select="current()/rel_link" />
 			<br />
@@ -364,8 +368,6 @@
 		<br /><br />
 		<xsl:apply-templates select="/eltrun/member_list/member[contains(@group,$ogroup)]" mode="shortref"/>
 		<br /><br />
-		Contact:
-		<xsl:apply-templates select="/eltrun/member_list/member [@id=current()/@contact]" mode="simple-ref" />
 	</xsl:template>
 	
 	<!-- Format description {{{1 -->
@@ -373,7 +375,7 @@
 		<xsl:copy-of select="*|text()"/>
 	</xsl:template>
 	
-	<!-- Format relative links {{{1 -->
+	<!-- Format related links {{{1 -->
 	<xsl:template match="rel_link">
 		<xsl:copy-of select="*"/><br />
 	</xsl:template>
@@ -396,6 +398,47 @@
 		-
 		<xsl:value-of select="projtitle" />
 		</h1>
+		<!-- Show Logo -->
+		<xsl:element name="img">
+				<xsl:attribute name="src"><xsl:value-of select="logo" /></xsl:attribute>
+		</xsl:element>
+		<br /> <br />
+		<!-- Project Summary information -->
+		<xsl:if test="count(project_code) != 0">
+			Project Code: 
+			<xsl:value-of select="project_code" />
+			<xsl:if test="@international = 'yes'">
+				(International)
+			</xsl:if>
+			<br/>		
+		</xsl:if>
+		<xsl:if test="count(funding_programme) != 0">
+			Funding programme: <xsl:value-of select="funding_programme" />
+			<br />
+		</xsl:if>
+		<xsl:if test="count(funding_agency) != 0">
+			Funding Agency: <xsl:value-of select="funding_agency" />
+			<br />
+		</xsl:if>
+		<xsl:if test="@type != ''">
+			Project type:
+			<xsl:choose>
+				<xsl:when test="@type = 'rtd'">RTD</xsl:when>
+				<xsl:when test="@type = 'consulting'">Consulting</xsl:when>
+				<xsl:when test="@type = 'training'">Training</xsl:when>
+				<xsl:when test="@type = 'dissemination'">Dissemination</xsl:when>
+			</xsl:choose>
+			<br />
+		</xsl:if>
+		<xsl:if test="count(web_site) != 0">
+			Web site:
+			<xsl:element name="a">
+				<xsl:attribute name="href"><xsl:value-of select="web_site"/></xsl:attribute>
+				<xsl:value-of select="web_site" />
+			</xsl:element>
+			<br />
+			<br />
+		</xsl:if>
 		<!-- Show starting date -->
 		<xsl:if test="startdate != ''">
 			Starting date:
@@ -404,18 +447,82 @@
 			</xsl:call-template>
 			<br/>
 		</xsl:if>
-		<!-- Show scientific coordinator, if given -->
+		<xsl:if test="enddate != ''">
+			Ending date:
+			<xsl:call-template name="date">
+				<xsl:with-param name="date" select="enddate" />
+			</xsl:call-template>
+			<br/>
+		</xsl:if>
+		<xsl:if test="count(our_budget) != 0">
+			ELTRUN budget: <xsl:value-of select="our_budget" />
+			<br />
+		</xsl:if>
+		<xsl:if test="count(total_budget) != 0">
+			Total budget: <xsl:value-of select="total_budget" />
+			<br />
+		</xsl:if>
+		<br />
+		<!-- Show eltrun related info -->
 		<xsl:if test="@scientific_coordinator != ''">
 			Scientific coordinator:
 			<xsl:apply-templates select="/eltrun/member_list/member [@id=current()/@scientific_coordinator]" mode="simple-ref" />
+			<br />
 		</xsl:if>
+		<xsl:if test="@project_manager != ''">
+			Project Manager:
+			<xsl:apply-templates select="/eltrun/member_list/member [@id=current()/@project_manager]" mode="simple-ref" />
+			<br />		
+		</xsl:if>
+		<xsl:if test="@contact != ''">
+			Contact:
+			<xsl:apply-templates select="/eltrun/member_list/member [@id=current()/@contact]" mode="simple-ref" />
+		<br />
+		</xsl:if>
+		
 		<!-- Show groups this project belongs to -->
-		Groups: <xsl:apply-templates select="/eltrun/group_list/group [contains(current()/@group, @id)]" mode="shortref"/>
+		Groups:
+		<xsl:apply-templates select="/eltrun/group_list/group [contains(current()/@group, @id)]" mode="shortref"/>
 		<!-- Provide publications link, if any publications exist -->
 		<xsl:if test="count(/eltrun/publication_type_list/publication_type [@for = current()/@id]/has_any) != 0">
-			<br/><a href="../publications/{@id}-publications.html">Publications</a>
+			<br/>
+			<a href="../publications/{@id}-publications.html">Publications</a>
+		</xsl:if>
+		<br />
+		<br />
+		<xsl:if test="count(description) != 0">
+			Description:<br />
+			<br />
+			<xsl:apply-templates select="current()/description" />
+			<br />
+		</xsl:if>
+		<xsl:if test="count(partner) != 0">
+			Partners:
+			<ul>
+			<xsl:apply-templates select="current()/partner" />
+			</ul>		
 		</xsl:if>
 	</xsl:template>
+	
+	<!-- partners {{{1 -->
+	<xsl:template match="partner">
+		<li>
+		<xsl:if test="count(web_site) != 0">
+			<xsl:element name="a">
+				<xsl:attribute name="href">
+					<xsl:value-of select="web_site"/>
+				</xsl:attribute>
+				<xsl:value-of select="shortname"/>
+				(<xsl:value-of select="country"/>)
+			</xsl:element>
+		</xsl:if>
+		<xsl:if test="count(web_site) = 0">
+				<xsl:value-of select="shortname"/>
+				(<xsl:value-of select="country"/>)		
+		</xsl:if>
+		</li>
+	</xsl:template>
+
 
 	<!-- Format a group heading {{{1 -->
 	<xsl:template name="group-head">
@@ -444,6 +551,13 @@
 		<a href="../publications/{$ogroup}-publications.html">Publications</a>
 		<br />
 		<a href="../groups/{$ogroup}-alumni.html">Alumni</a>
+		<hr />
+		<xsl:if test="$ogroup != ''">
+			<xsl:if test="count(/eltrun/group_list/group[@id = $ogroup]/rel_link) != 0">
+				Related links:<br />
+				<xsl:apply-templates select="/eltrun/group_list/group[@id = $ogroup]/rel_link" /><br />	
+			</xsl:if>
+		</xsl:if>	
 	</xsl:template>
 	
 	<!-- Main transformation {{{1 -->

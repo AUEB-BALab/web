@@ -37,3 +37,12 @@
 <!ELEMENT funding_agency (#PCDATA)>
 <!ELEMENT funding_programme (#PCDATA)>
 <!ELEMENT project_code (#PCDATA)>
+<!ELEMENT web_site (#PCDATA)>
+<!ELEMENT startdate %date;>
+<!ELEMENT enddate %date;>
+<!ELEMENT shortname (#PCDATA)>
+<!ELEMENT logo %image;>
+<!ELEMENT description %pc_flow;>
+
+<!ELEMENT partner (shortname, country, web_site?)>
+<!ELEMENT country (#PCDATA)>

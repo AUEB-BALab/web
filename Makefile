@@ -76,20 +76,21 @@ clean:
 
 val: ${DB}
 	@echo '---> Checking group data XML files ... '
-	for file in $(GROUPFILES); \
+	@-for file in $(GROUPFILES); \
 	do \
 		xml val -d schema/eltrun-group.dtd $$file; \
 	done 
 	@echo '---> Checking member data XML files ...'
-	for file in $(MEMBERFILES); \
+	@-for file in $(MEMBERFILES); \
 	do \
 		xml val -d schema/eltrun-member.dtd $$file; \
 	done
 	@echo '---> Checking project data XML files ...'
-	for file in $(PROJECTFILES); \
+	@-for file in $(PROJECTFILES); \
 	do \
 		xml val -d schema/eltrun-project.dtd $$file; \
 	done
+	@echo '---> Checking db.xml '
 	xml val -d schema/eltrun.dtd $(DB)
 
 html: ${DB}	

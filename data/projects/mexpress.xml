@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<project id="p_mexpress" group="g_eltrun g_sense g_wrc" scientific_coordinator="m_dds" contact="m_dds" international="yes" type="rtd">
+<project id="p_mexpress" group="g_eltrun g_sense g_wrc" scientific_coordinator="m_dds" contact="m_dds" international="yes" type="rtd" project_manager="m_dds">
 	<shortname>mExpress</shortname>
 	<projtitle>mobile in-EXhibition PRovision of Electronic Support Services</projtitle>
 	<startdate>20020305</startdate>
@@ -49,7 +49,7 @@
 		<country>EL</country>
 		<web_site>http://www.rota.gr</web_site>
 	</partner>
-	<logo>p_mexpress.gif</logo>
+	<logo>../images/p_mexpress.gif</logo>
 	<description>
 mEXPRESS aims to exploit the technological opportunities arising from
 evolution in the areas of wireless networks and positioning mechanisms in
