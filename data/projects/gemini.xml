@@ -1,0 +1,62 @@
+﻿<?xml version="1.0"?>
+<project id="p_gemini" group="g_eltrun g_imes g_iris" scientific_coordinator="m_pouloudi" contact="m_kv" international="yes" type="rtd" project_manager="m_kv">
+	<shortname>GEMINI</shortname>
+	<projtitle>Global Electronic Medium ConstellatIon for Dynamic CoNtent Integration</projtitle>
+	<startdate>20020101</startdate>
+	<enddate>20031231</enddate>
+	<web_site>http://gemini.intranet.gr/</web_site>
+<!--	<our_budget> </our_budget> -->
+<!--	<total_budget></total_budget> -->
+	<funding_agency>European Commission</funding_agency>
+	<funding_programme>IST </funding_programme>
+	<project_code>IST-2001-33400</project_code>
+	<partner>
+		<shortname>Intracom</shortname>
+		<country>EL</country>
+		<web_site>http://www.intracom.gr</web_site>
+	</partner>
+	<partner>
+		<shortname>NOKIA</shortname>
+		<country>FIN</country>
+		<web_site>http://www.nokia.com/</web_site>
+	</partner>
+	<partner>
+		<shortname>Swelcom</shortname>
+		<country>FIN</country>
+		<web_site>http://www.swelcom.fi</web_site>
+	</partner>
+	<partner>
+		<shortname>Musicindie</shortname>
+		<country>UK</country>
+		<web_site>http://www.musicindie.org</web_site>
+	</partner>
+	<partner>
+		<shortname>Pouliadis</shortname>
+		<country>EL</country>
+		<web_site>http://www.pouliadis.gr/</web_site>
+	</partner>
+	<partner>
+		<shortname>OTE</shortname>
+		<country>EL</country>
+		<web_site>http://www.ote.gr</web_site>
+	</partner>
+	<partner>
+		<shortname>ERT </shortname>
+		<country>EL</country>
+		<web_site>http://www.ert.gr</web_site>
+	</partner>
+	<partner>
+		<shortname>TVC  </shortname>
+		<country>ES</country>
+		<web_site>http://www.tvc.es</web_site>
+	</partner>
+	<partner>
+		<shortname>HUT  </shortname>
+		<country>FIN</country>
+		<web_site>http://www.hut.fi</web_site>
+	</partner>
+	<logo>../images/gemini.jpg</logo>
+	<description>
+GEMNINI aims to explore the opportunities deriving from the convergence of different mass media (Digital Television, Internet, Newspapers, etc.), the ability to transfer digital content fast, accurately and at low cost, and the existence of several potential suppliers and customers. The project will contribute to the economic development of the European market by providing means for the initialization, development and maintenance of a dynamic constellation delivering value to all the participants in the media and entertainment sectors. The project introduces value-adding services to consumers by providing access to a large repository of (re-usable) content, based upon viewers’ requests and needs. In addition, GEMINI will pave the ground for additional interactive services related to provision of content in irrespective of format or type in a user-friendly manner. Specifically, the GEMINI project will develop an integrated mediation platform offering enhanced content services to viewers of sports events.
+	</description>
+</project>
