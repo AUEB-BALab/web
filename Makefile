@@ -49,6 +49,7 @@ clean:
 		${HTML}/images/* \
 		${HTML}/projects/* \
 		${HTML}/publications/* 2>/dev/null
+	-rm -f *.aux
 
 val: ${DB}
 	xml val -d schema/eltrun.dtd $(DB)
