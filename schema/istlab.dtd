@@ -21,10 +21,10 @@
 <!ENTITY % date "(#PCDATA)">
 <!ENTITY % pc_flow "(#PCDATA | %Flow.mix;)*">
 <!-- Definition of global -->
-<!ELEMENT eltrun (group_list, member_list, project_list, seminar_list,publication_list, publication_type_list)>
+<!ELEMENT eltrun (group_list, member_list, project_list, seminar_list,page_list,publication_list, publication_type_list)>
 <!-- Group list elements {{{1 -->
 <!ELEMENT group_list (group*)>
-<!ELEMENT group (grouptitle, shortname, description, rel_link*, logo?)>
+<!ELEMENT group (grouptitle, shortname, description, rel_link*, logo?,color)>
 <!ATTLIST group
 	id ID #REQUIRED
 	director IDREF #REQUIRED
@@ -32,6 +32,7 @@
 >
 <!ELEMENT grouptitle (#PCDATA)>
 <!ELEMENT rel_link %pc_flow;>
+<!ELEMENT color (#PCDATA)>
 <!--Project list elements {{{1 -->
 <!ELEMENT project_list (project*)>
 <!ELEMENT project (shortname, projtitle, startdate?, enddate, web_site?, our_budget?, total_budget?, funding_agency?, funding_programme?, project_code?, partner*, logo?, description)>
@@ -100,7 +101,7 @@
 <!ELEMENT has_techreport EMPTY>
 <!ELEMENT has_whitepaper EMPTY>
 <!ELEMENT has_workingpaper EMPTY>
-<!-- seminars -->
+<!-- seminars {{{1-->
 <!ELEMENT seminar_list (seminar*)>
 <!ELEMENT seminar (sem_date,sem_time,sem_title,sem_room,sem_url?,sem_duration)>
 <!ATTLIST seminar
@@ -112,6 +113,15 @@
 <!ELEMENT sem_room (#PCDATA)>
 <!ELEMENT sem_url (#PCDATA)>
 <!ELEMENT sem_duration (#PCDATA)>
+<!-- page definitions {{{1-->
+<!ELEMENT page_list (page*)>
+<!ELEMENT page (page_name,page_body)>
+<!ATTLIST page
+	id ID #REQUIRED
+	group IDREF #REQUIRED
+>
+<!ELEMENT page_name (#PCDATA)>
+<!ELEMENT page_body %pc_flow;>
 
 <!-- Shared elements {{{1 -->
 <!ELEMENT description %pc_flow;>

@@ -4,7 +4,7 @@
  -
  - (C) Copyright 2004 Diomidis Spinellis.
  -
- - $Id $
+ - $Id$
  -
 -->
 <!-- Import modular XHTML -->
@@ -21,7 +21,7 @@
 
 <!-- Main group dtd -->
 <!ENTITY % pc_flow "(#PCDATA | %Flow.mix;)*">
-<!ELEMENT group (grouptitle, shortname, description, rel_link*, logo?)>
+<!ELEMENT group (grouptitle, shortname, description, rel_link*, logo?,color)>
 <!ATTLIST group
 	id ID #REQUIRED
 	director CDATA #REQUIRED
@@ -32,3 +32,4 @@
 <!ELEMENT shortname (#PCDATA)>
 <!ELEMENT description %pc_flow;>
 <!ELEMENT logo %image;>
+<!ELEMENT color (#PCDATA)>

@@ -1,0 +1,28 @@
+<!--
+ -
+ - Document Type Description for the ELTRUN members
+ -
+ - (C) Copyright 2004 Diomidis Spinellis.
+ -
+ - $Id$
+ -
+-->
+<!-- Import modular XHTML -->
+<!ENTITY % xhtml-ruby.module "IGNORE">
+<!ENTITY % xhtml-bidi.module "IGNORE">
+<!ENTITY % xhtml-ssismap.module "IGNORE">
+<!ENTITY % xhtml-csismap.module "IGNORE">
+<!ENTITY % xhtml11.mod PUBLIC "-//W3C//ENTITIES XHTML 1.1//EN"
+		 "xhtml11.dtd">
+%xhtml11.mod;
+<!-- Entities - remember to keep entities on top in order for xml starlet to work properly--> 
+<!ENTITY % pc_flow "(#PCDATA | %Flow.mix;)*">
+
+<!-- page definitions -->
+<!ELEMENT page (page_name,page_body)>
+<!ATTLIST page
+	id ID #REQUIRED
+	group CDATA #REQUIRED
+>
+<!ELEMENT page_name (#PCDATA)>
+<!ELEMENT page_body %pc_flow;>

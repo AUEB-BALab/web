@@ -37,6 +37,14 @@
 		</xsl:if>
 	</xsl:template>
 
+	<!-- Output page ids -->
+	<xsl:template match="page">
+		<xsl:if test="$category = 'page'">
+			<xsl:value-of select="@id"/>
+			<xsl:text> </xsl:text>
+		</xsl:if>
+	</xsl:template>
+
 	<!-- Ignore the rest -->
 	<xsl:template match="publication_list">
 	</xsl:template>
@@ -44,5 +52,4 @@
 	</xsl:template>
 	<xsl:template match="seminar_list">
 	</xsl:template>
-
 </xsl:stylesheet>
