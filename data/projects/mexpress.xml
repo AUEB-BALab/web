@@ -1,12 +1,23 @@
-<project id="p_mexpress" group="g_eltrun g_sense g_wrc" scientific_coordinator="m_dds" contact="m_dds" international="yes" type="dissemination">
+<project id="p_mexpress" group="g_eltrun g_sense g_wrc" scientific_coordinator="m_dds" contact="m_dds" international="yes" type="research">
 	<shortname>mExpress</shortname>
 	<projtitle>Mobile Exhibition Environments</projtitle>
 	<startdate>20020305</startdate>
 	<enddate>20040401</enddate>
 	<description>
-		The <em>mExpress</em> project aims to
-		<ul>
-			<li> Line </li>
-		</ul>
+mEXPRESS aims to exploit the technological opportunities arising from
+evolution in the areas of wireless networks and positioning mechanisms in
+order to support and facilitate the professional exhibition industry in
+a context-aware manner. It will contribute to the economic development of
+the Community by providing means for efficient operation and interaction
+in information-rich environments such as exhibitions, and significantly
+enhancing promotional activities and business communications. The mEXPRESS
+project will provide an integrated mediation platform (mEXPRESS Service
+Provider) oriented to exhibition shows and events that will satisfy
+three types of objectives:
+	<ul>
+	<li>Enhance and facilitate visitors experience in terms of interaction and functionality in an information-rich environment such as an exhibition show.</li>
+	<li>Improve business communications and promotions within the exhibition and extend promotional effectiveness during and after the exhibition</li>
+	<li>Assist and support exhibition management and operations by offering real-time location information of persons within the exhibition.</li>
+	</ul>
 	</description>
 </project>
