@@ -1,7 +1,14 @@
 <member id="m_dds" group="g_eltrun g_sense">
 	<givenname>Diomidis</givenname>
 	<surname>Spinellis</surname>
-	<memb_title>Professor</memb_title>
+	<memb_title>Dr.</memb_title>
+	<email>dds@aueb.gr</email>
+	<web_site>http://www.dmst.aueb.gr/dds</web_site>
+	<office_phone>+30 2108203682</office_phone>
+	<fax>+30 2108203685</fax>
+	<office_address>Evelpidon 47-A &amp; Lefkados 33, Room 907</office_address>
+	<postal_address>Patision 76, GR-104 34 Athens, Greece</postal_address>
+	<photo>../images/spi.jpg</photo>
 	<shortcv>
 		<p>
 <i>Diomidis Spinellis</i> holds an MEng in Software Engineering and
@@ -27,7 +34,4 @@ the Greek Internet User's Society. He is a co-recipient of the Usenix
 Association 1993 Lifetime Achievement Award.
 </p>
 	</shortcv>
-	<email>dds@aueb.gr</email>
-	<web_site>http://www.dmst.aueb.gr/dds</web_site>
-	<photo>../images/spi.jpg</photo>
 </member>
