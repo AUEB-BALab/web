@@ -537,7 +537,7 @@
 	
 	<!-- presentation reference {{{1-->
 	<xsl:template match="presentation" mode="ref">
-		<xsl:apply-templates select="/eltrun/member_list/member [contains(current()/@by,@id)]/surname" />
+		<xsl:apply-templates select="/eltrun/member_list/member [contains(@by,@id)]/surname" />
 		<xsl:if test="count(pres_name) != 0">
 			<xsl:text> </xsl:text><xsl:value-of select="pres_name" />
 		</xsl:if>
@@ -566,7 +566,7 @@
 	
 	<!-- seminar {{{1-->
 	<xsl:template match="seminar" mode="ref">
-		<a href="index.html#{current()/sem_date}">
+		<a href="{$seminaryear}.html#{current()/sem_date}">
 			<xsl:call-template name="date">
 				<xsl:with-param name="date" select="sem_date" />
 			</xsl:call-template>

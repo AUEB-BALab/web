@@ -91,7 +91,7 @@ clean:
 		${HTML}/groups/* \
 		${HTML}/projects/* \
 		${HTML}/members/* \
-		${HTML}/seminar/* \
+		${HTML}/seminar/[2]* \
 		${HTML}/rel_pages/* \
 		${HTML}/publications/* 2>/dev/null
 	-rm -f  public_html/images/colgraph.svg
