@@ -70,6 +70,11 @@ the original BibTeX styles are faithfully reproduced.
 <a href="http://www.perlfect.com/freescripts/search">Perlfect Search</a>
 is a website indexing/searching suite available under an open source license (GPL). It comes as a pair of distinct scripts. The indexer, that automatically scans and indexes a web site, and the search engine, a CGI script that serves search queries for keywords over the index, and displays results pages in HTML, in a standard format including title, description and relevance ranking for each matching document.
 </li>
+<li>
+F.I.R.E. (Fast Implementation of Regular Expressions) is a regular expression library for java.
+It follows the POSIX syntax and is 100% compatible with the SUN regular expression library (java.util.regex.*).
+(F.I.R.E. has not yet been released in public).
+</li>
 </ul>
 </page_body>
 </page>
