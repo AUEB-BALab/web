@@ -9,6 +9,36 @@
 	<funding_agency>European Commission</funding_agency>
 	<funding_programme>IST</funding_programme>
 	<project_code>IST-2001-28567</project_code>
+	<partner>
+		<shortname>Intracom</shortname>
+		<country>EL</country>
+		<web_site>http://www.intracom.gr</web_site>
+	</partner>
+	<partner>
+		<shortname>Pouliadis</shortname>
+		<country>EL</country>
+		<web_site>http://www.pouliadis.gr</web_site>
+	</partner>
+	<partner>
+		<shortname>Flash Multimedia</shortname>
+		<country>EL</country>
+	</partner>
+	<partner>
+		<shortname>Danmarks Radio</shortname>
+		<country>EL</country>
+	</partner>
+	<partner>
+		<shortname>Canal +</shortname>
+		<country>BE</country>
+	</partner>
+	<partner>
+		<shortname>Ibermatica</shortname>
+		<country>ES</country>
+	</partner>
+	<partner>
+		<shortname>INESC Porto</shortname>
+		<country>PT</country>
+	</partner>
 	<description>
 CONTESSA aims to transform the content creation and distribution industry by
 allowing content to be automatically and cost effectively adapted
