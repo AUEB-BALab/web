@@ -537,7 +537,7 @@
 	
 	<!-- presentation reference {{{1-->
 	<xsl:template match="presentation" mode="ref">
-		<xsl:apply-templates select="/eltrun/member_list/member [contains(@by,@id)]/surname" />
+		<xsl:apply-templates select="/eltrun/member_list/member [contains(current()/@by,@id)]/surname" />
 		<xsl:if test="count(pres_name) != 0">
 			<xsl:text> </xsl:text><xsl:value-of select="pres_name" />
 		</xsl:if>
