@@ -813,18 +813,6 @@
 				</xsl:if>
 			</xsl:if>
 			
-			<xsl:if test="$what = 'member-publications'">
-				<xsl:if test="$what = 'project-publications'">
-					<xsl:if test="$what = 'group-publications'">
-						<xsl:if test="$what = 'seminar'">
-							<xsl:if test="$what = 'member-details'">
-								<td align="left" width="980">
-							</xsl:if>
-						</xsl:if>
-					</xsl:if>
-				</xsl:if>
-			</xsl:if>
-
 			<td align="left" width="830">
 			<!-- choose which HTML to show -->
 			<xsl:choose>
