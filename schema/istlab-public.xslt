@@ -630,7 +630,7 @@
 						</th>
 					</xsl:when>
 					<xsl:when test="$ogroup = 'g_imes'">
-						<th height="800" width="190" align="left" bgcolor="#80EFB4">
+						<th height="800" width="190" align="left" bgcolor="#C8B9AD">
 							<xsl:call-template name="body-menu"/>
 						</th>
 					</xsl:when>
