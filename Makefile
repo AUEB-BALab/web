@@ -40,11 +40,11 @@ $(DB): ${MEMBERFILES} ${GROUPFILES} ${PROJECTFILES}
 	echo '</eltrun>' >>$@
 
 clean:
-	rm -f build/*
-	rm -f ${HTML}/groups/*
-	rm -f ${HTML}/images/*
-	rm -f ${HTML}/projects/*
-	rm -f ${HTML}/publications/*
+	-rm -f build/[^CVS]*
+	-rm -f ${HTML}/groups/[^CVS]*
+	-rm -f ${HTML}/images/[^CVS]*
+	-rm -f ${HTML}/projects/[^CVS]*
+	-rm -f ${HTML}/publications/[^CVS]*
 
 val: ${DB}
 	xml val -d schema/eltrun.dtd $(DB)
