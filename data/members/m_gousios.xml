@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<member id="m_gousios" group="g_eltrun g_sense">
+	<givenname>Giorgos</givenname>
+	<surname>Gousios</surname>
+	<memb_title>Mr.</memb_title>
+	<email>george@istlab.dmst.aueb.gr</email>
+	<web_site>http://istlab.dmst.aueb.gr/~george</web_site>
+	<office_phone>+302108203370</office_phone>
+	<!--<mobile_phone></mobile_phone>-->
+	<fax>+302108203664</fax>
+	<!--<alumnus/>--><!-- Optional -->
+	<office_address>
+		Athens University of Economics and Business
+		Main Building, Derigny ct, 3rd fl
+	</office_address>
+	<postal_address>
+		76 Patission str,
+		104 34,
+		Athens, Greece
+	</postal_address>
+	<photo>Optional</photo>
+	<shortcv>
+	    <i>Giorgos Gousios</i> is a PhD candidate at the Athens University of Economics and Business. He holds a Diploma in Information and Communication Systems Engineering from the University of the Aegean and an MSc in Advanced Computer Science from the University of Manchester. He is a former member of the <a href="http://www.cs.man.ac.uk/apt">APT</a> group (Manchester University) and a current member of the <a href="../groups/g_sense-details.html">SENSE</a> group. He has contributed code in various open source projects. His research interests include programming language theory, software engineering and operating system architectures.
+	</shortcv>
+</member>
