@@ -47,22 +47,22 @@ $(DB): ${MEMBERFILES} ${GROUPFILES} ${PROJECTFILES} $(BIBFILES) tools/makepub.pl
 	@echo '<?xml version="1.0"?>' > $@
 	@echo '<eltrun>' >>$@ 
 	@echo '<group_list>' >>$@ 
-	@for file in $(GROUPFILES); \
+	for file in $(GROUPFILES); \
 	do \
-		grep -v -e "xml version=" $$file >>$@; \
-	done 
+		grep -v -e "xml version=" $$file ; \
+	done >>$@
 	@echo '</group_list>' >>$@
 	@echo '<member_list>' >>$@
 	@for file in $(MEMBERFILES); \
 	do \
-		grep -v -e "xml version=" $$file >>$@; \
-	done 
+		grep -v -e "xml version=" $$file ; \
+	done >>$@
 	@echo '</member_list>' >>$@
 	@echo '<project_list>' >>$@
 	@for file in $(PROJECTFILES); \
 	do \
-		grep -v -e "xml version=" $$file >>$@; \
-	done 
+		grep -v -e "xml version=" $$file ; \
+	done >>$@
 	@echo '</project_list>' >>$@
 	@perl -n tools/makepub.pl $(BIBFILES) >>$@
 	@echo '</eltrun>' >>$@
