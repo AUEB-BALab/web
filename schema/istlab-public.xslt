@@ -295,13 +295,9 @@
 	<!-- Format a group reference for the menu -->
 	<xsl:template match="group" mode="menuref">
 		<xsl:if test="@id != 'g_eltrun'">
-		<tr>
-			<th align="left">
-			<a href="../groups/{@id}-details.html">
-				<xsl:value-of select="shortname" />
-			</a>			
-			</th>
-		</tr>
+		<li>
+		<a href="../groups/{@id}-details.html"><xsl:value-of select="shortname" /></a>
+		</li>
 		</xsl:if>
 	</xsl:template>
 	
@@ -424,32 +420,15 @@
 	
 	<!-- body menu -->
 	<xsl:template name="body-menu">
-		<table align="left" bgcolor="#f4c225" border="1">
-			<tbody>
-			<tr >
-				<th align="left">General</th>
-			</tr>
-			<tr>
-				<th align="left"><a href="../groups/g_eltrun-members.html">Members</a></th>
-			</tr>
-			<tr>
-				<th align="left"><a href="../groups/g_eltrun-current-projects.html">Current Projects</a></th>
-			</tr>
-			<tr>
-				<th align="left"><a href="../groups/g_eltrun-completed-projects.html">Completed Projects</a></th>
-			</tr>
-			<tr>
-				<th align="left"><a href="../publications/g_eltrun-publications.html">Publications</a></th>
-			</tr>
-			<tr>
-				<th align="left"><a href="../groups/g_eltrun-alumni.html">Alumni</a></th>
-			</tr>
-			<tr>
-				<th align="left">Research groups</th>
-			</tr>	
-			<xsl:apply-templates select="/eltrun/group_list/group" mode="menuref"/>
-			</tbody>
-		</table>
+		<ul>
+		<li><a href="../groups/g_eltrun-members.html">Members</a></li>
+		<li><a href="../groups/g_eltrun-current-projects.html">Current Projects</a></li>
+		<li><a href="../groups/g_eltrun-completed-projects.html">Completed Projects</a></li>
+		<li><a href="../publications/g_eltrun-publications.html">Publications</a></li>
+		<li><a href="../groups/g_eltrun-alumni.html">Alumni</a></li>
+		<li>Research Groups</li>
+		<xsl:apply-templates select="/eltrun/group_list/group" mode="menuref"/>
+		</ul>
 	</xsl:template>
 	
 	<!-- Main transformation {{{1 -->
@@ -473,7 +452,7 @@
 				<table width="750" border="0">
 					<tbody valign="top">
 					<tr>
-						<th width="150">
+						<th width="150" align="left">
 						<xsl:call-template name="body-menu" />
 						</th>
 						<th align="left">
@@ -502,7 +481,7 @@
 				<table width="750" border="0">
 					<tbody valign="top">
 					<tr>
-						<th width="150">
+						<th width="150" align="left">
 						<xsl:call-template name="body-menu" />
 						</th>
 						<th align="left">
@@ -528,7 +507,7 @@
 				<xsl:call-template name="body-head" />
 				<br />
 				<table width="750" border="0">
-					<tbody valign="top">
+					<tbody valign="top" align="left">
 					<tr>
 						<th width="150" valign="top">
 						<xsl:call-template name="body-menu" />
