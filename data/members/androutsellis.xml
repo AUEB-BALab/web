@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<member id="m_androutsellis" group="g_eltrun g_sense">
+	<givenname>Stefanos</givenname>
+	<surname>Androutsellis-Theotokis</surname>
+	<memb_title>Mr.</memb_title>
+	<email>stheotok@aueb.gr</email>
+	<web_site>http://istlab.dmst.aueb.gr/~path/</web_site>
+	<office_phone>+30 2108203370</office_phone>
+	<fax>+30 2108203664</fax>
+	<office_address>76 Patission Str.</office_address>
+	<postal_address>76 Patission Str., 10434, Athens, 
+Greece</postal_address>
+	<photo>../images/m_androutsellis.jpg</photo>
+	<shortcv>
+		<p>
+	Mr. Androutsellis-Theotokis was born in Athens, Greece, in 1970. He holds a 
+B.Eng in Information Systems Engineering and a M.Sc. in Engineering and 
+Physical Sciences in Medicine both from Imperial College (University of London, 
+UK), and a M.S.E. in Biomedical Engineering from Johns Hopkins University, MD, 
+US. Currently he is a PhD candidate in the Department of Management Science and 
+Technology at the Athens University of Economics and Business, Greece. He has 
+worked in the industry as a software analyst and developer and has been 
+involved in several EU funded R&amp; projects. Mr. Androutsellis-Theotokis is a 
+member of the Technical Chamber of Greece and the IEEE. His research interests 
+include Information Security, Peer-to-Peer architectures and Software 
+Engineering, and his current doctoral research concerns security and routing 
+algorithms for peer-to-peer architectures
+      </p>
+	</shortcv>
+</member>

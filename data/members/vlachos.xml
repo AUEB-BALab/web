@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<member id="m_vlachos" group="g_eltrun g_sense">
+	<givenname>Vasileios</givenname>
+	<surname>Vlachos</surname>
+	<memb_title>Mr.</memb_title>
+	<email>vbill@aueb.gr</email>
+	<web_site>http://istlab.dmst.aueb.gr/~vbill/</web_site>
+	<office_phone>+30 2108203370</office_phone>
+	<fax>+30 2108203664</fax>
+	<office_address>76 Patission Str.</office_address>
+	<postal_address>76 Patission Str., 10434, Athens, 
+Greece</postal_address>
+	<photo>../images/m_vlachos.jpg</photo>
+	<shortcv>
+		<p>
+Vasileios Vlachos holds a Dipl. Eng. in Electronic &amp; Computer Engineering from 
+the Technical University of Crete, Greece and a M.Sc. in Integrated Hardware 
+and Software Systems from the Department of Computer Engineering and 
+Informatics of the University of Patras, Greece. His Master's Thesis was 
+completed at the Interuniversity MicroElectronics Center (IMEC), Leuven, 
+Belgium. Since October 2002 he is pursuing his PhD Thesis at the Department of 
+Management Science and Technology of the Athens University of Economics and 
+Business, in the area of Computer Information Security. He has also been 
+involved in various national and EU funded R&amp;D projects. 
+Mr. Vlachos is a member of the Technical Chamber of Greece and the Hellenic 
+Linux Users Group. His research interests include: Computer Information 
+Security, Telemetry, Low Power Computing and Real Time Operating Systems
+
+      </p>
+	</shortcv>
+</member>
