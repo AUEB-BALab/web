@@ -22,6 +22,7 @@
 <!ENTITY % date "(#PCDATA)">
 <!ENTITY % pc_flow "(#PCDATA | %Flow.mix;)*">
 
+<!-- Definition of global -->
 <!ELEMENT eltrun (group_list, member_list, project_list, publication_list, publication_type_list)>
 
 <!-- Group list elements {{{1 -->
@@ -53,13 +54,14 @@
 <!ELEMENT funding_agency (#PCDATA)>
 <!ELEMENT funding_programme (#PCDATA)>
 <!ELEMENT program_code (#PCDATA)>
-<!-- partner definition (used in project) -->
-<!ELEMENT partner (shortname, country, web_site)>
+
+<!-- partner definition (used in project only) -->
+<!ELEMENT partner (shortname, country, web_site?)>
 <!ELEMENT country (#PCDATA)>
 
 <!-- Member list elements {{{1 -->
 <!ELEMENT member_list (member*)>
-<!ELEMENT member (givenname, surname, shortcv, web_site?, memb_title?, email, office_phone?, mobile_phone?, fax?)>
+<!ELEMENT member (givenname, surname, shortcv, web_site?, memb_title?, email, office_phone?, mobile_phone?, fax?,photo?)>
 <!ATTLIST member
 	id ID #REQUIRED
 	group IDREFS #REQUIRED
@@ -74,6 +76,7 @@
 <!ELEMENT fax %phone;>
 <!ELEMENT job_title (#PCDATA)>
 <!ELEMENT join_date %date;>
+<!ELEMENT photo %image;>
 
 <!-- Publication list elements {{{1 -->
 <!ELEMENT publication_list (publication*)>
