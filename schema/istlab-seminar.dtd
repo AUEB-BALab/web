@@ -21,10 +21,10 @@
 <!-- seminar -->
 <!ELEMENT seminar (sem_name,sem_date,sem_time,sem_title,sem_room,sem_url?,sem_duration)>
 <!ATTLIST seminar
-	by #CDATA #REQUIRED
+	by CDATA #REQUIRED
 >
 <!ELEMENT sem_name (#PCDATA)>
-<!ELEMENT sem_date %date>
+<!ELEMENT sem_date %date;>
 <!ELEMENT sem_time (#PCDATA)>
 <!ELEMENT sem_title (#PCDATA)>
 <!ELEMENT sem_room (#PCDATA)>

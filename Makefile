@@ -1,7 +1,7 @@
 #
 # Eltrun web site creation and data validation
 #
-# (C) Copyright 2005 Diomidis Spinellis
+# (C) Copyright 2004 Diomidis Spinellis
 #
 # $Id$
 #
@@ -44,7 +44,7 @@ endif
 
 all: html
 
-$(DB): ${MEMBERFILES} ${GROUPFILES} ${PROJECTFILES} $(BIBFILES) tools/makepub.pl
+$(DB): ${MEMBERFILES} ${GROUPFILES} ${PROJECTFILES} ${SEMINARFILES} $(BIBFILES) tools/makepub.pl
 	@echo "Creating unified database"
 	@echo '<?xml version="1.0"?>' > $@
 	@echo '<eltrun>' >>$@ 
@@ -99,8 +99,13 @@ val: ${DB}
 	do \
 		xml val -d schema/eltrun-project.dtd $$file; \
 	done
-	@echo '---> Checking db.xml '
-	xml val -d schema/eltrun.dtd $(DB)
+	@echo '---> Checking seminar data XML files ...'
+	@-for file in $(SEMINARFILES); \
+	do \
+		xml val -d schema/eltrun-seminar.dtd $$file; \
+	done
+	@echo '---> Checking db.xml ...'
+	@xml val -d schema/eltrun.dtd $(DB)
 
 html: ${DB}
 # For all groups and the empty group
@@ -127,7 +132,7 @@ html: ${DB}
 		xml tr ${PXSLT} -s omember=$$member -s what=member-publications ${DB} >${HTML}/publications/$$member-publications.html ; \
 	done
 	@echo "Creating seminar list"
-	
+	@xml tr ${PXSLT} -s today=${TODAY} -s what=seminar ${DB} >${HTML}/seminar/index.html
 	@echo "Creating publications"
 	@$(SHELL) build/bibrun
 

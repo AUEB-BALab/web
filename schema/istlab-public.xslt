@@ -316,7 +316,7 @@
 		<xsl:apply-templates select="current()/shortcv"/>
 	</xsl:template>
 
-	<!-- Format a short cv -->
+	<!-- Format a short cv {{{1-->
 	<xsl:template match="shortcv">
 		<xsl:copy-of select="*|text()"/>
 	</xsl:template>
@@ -331,7 +331,7 @@
 		</xsl:if>
 	</xsl:template>
 
-	<!-- Format a group reference for the menuhead -->
+	<!-- Format a group reference for the menuhead {{{1-->
 	<xsl:template match="group" mode="menuhead">
 		<xsl:if test="@id != 'g_eltrun'">
 			<a href="../groups/{@id}-details.html">
@@ -397,7 +397,7 @@
 	<xsl:template match="project" mode="full">
 		<h1>
 		<xsl:value-of select="shortname" />
-		-
+		-<xsl:copy-of select="*|text()"/>
 		<xsl:value-of select="projtitle" />
 		</h1>
 		<!-- Show Logo -->
@@ -540,7 +540,7 @@
 		</xsl:choose>
 	</xsl:template>
 
-	<!-- body menu -->
+	<!-- body menu {{{1-->
 	<xsl:template name="body-menu">
 		<xsl:apply-templates select="/eltrun/group_list/group[@id = $ogroup]" mode="menuhead"/>
 			<a href="../groups/{$ogroup}-members.html">Members</a>
@@ -551,13 +551,59 @@
 			<br />
 			<a href="../publications/{$ogroup}-publications.html">Publications</a>
 			<br />
-			<a href="../groups/{$ogroup}-alumni.html">Alumni</a>
+			<a href="../groups/{$ogroup}-alumni.html">Associates</a>
 			<br />
 			<xsl:if test="$ogroup != ''">
 				<xsl:if test="count(/eltrun/group_list/group[@id = $ogroup]/rel_link) != 0">
 				<xsl:apply-templates select="/eltrun/group_list/group[@id = $ogroup]/rel_link" /><br />
 				</xsl:if>
 		</xsl:if>
+	</xsl:template>
+
+	<!-- seminar {{{1-->
+	<xsl:template match="seminar" mode="ref">
+	    <xsl:element name="a">
+		<xsl:attribute name="href">
+		    <xsl:text>index.html#</xsl:text>
+		    <xsl:value-of select="sem_date"/>
+		</xsl:attribute>
+		<xsl:call-template name="date">
+			<xsl:with-param name="date" select="sem_date" />
+		</xsl:call-template>
+		<xsl:text>, </xsl:text>
+		<xsl:value-of select="sem_name" />
+		<xsl:text> - </xsl:text>
+		<xsl:value-of select="sem_title" />
+	    </xsl:element>
+	</xsl:template>
+	
+	<!-- Seminar detailed template -->
+	<xsl:template match="seminar" mode="full">
+	    <h3><xsl:value-of select="sem_title" /></h3>
+	    <!-- Create the anchor -->
+	    <xsl:element name="a">
+		<xsl:attribute name="name">
+		    <xsl:value-of select="sem_date" />
+		</xsl:attribute>
+	    </xsl:element>
+	    Name: <xsl:value-of select="sem_name" /><br />
+	    Date: 
+	    <xsl:call-template name="date">
+		<xsl:with-param name="date" select="sem_date" />
+	    </xsl:call-template>
+	    <br />
+	    Time: <xsl:value-of select="sem_time" />
+	    <br />
+	    Duration: <xsl:value-of select="sem_duration" />
+	    <br />
+	    Room: <xsl:value-of select="sem_room" />
+	    <br /><br />
+	    <xsl:element name="a">
+		<xsl:attribute name="href">
+		    <xsl:value-of select="sem_url"/>
+		</xsl:attribute>
+		Download the presentation
+	    </xsl:element>
 	</xsl:template>
 
 	<!-- Main transformation {{{1 -->
@@ -597,6 +643,9 @@
 			<xsl:when test="$what = 'alumni'">
 				<xsl:text>Alumni</xsl:text>
 			</xsl:when>
+			<xsl:when test="$what = 'seminar'">
+				<xsl:text>Seminar</xsl:text>
+			</xsl:when>
 		</xsl:choose>
 		</title>
 		</head>
@@ -609,39 +658,41 @@
 			<tbody valign="top">
 			<tr>
 			<xsl:if test="$what != 'member-publications'">
-				<xsl:if test="$ogroup != ''">
-					<xsl:choose>
-					<xsl:when test="$ogroup = 'g_ois'">
-						<th height="800" width="190" align="left" bgcolor="#A5A2C6">
-							<xsl:call-template name="body-menu"/>
-						</th>
-					</xsl:when>
-					<xsl:when test="$ogroup = 'g_iris'">
-						<th height="800" width="190" align="left" bgcolor="#84CBE7">
-							<xsl:call-template name="body-menu"/>
-						</th>
-					</xsl:when>
-					<xsl:when test="$ogroup = 'g_wrc'">
-						<th height="800" width="190" align="left" bgcolor="#FFFF96">
-							<xsl:call-template name="body-menu"/>
-						</th>
-					</xsl:when>
-					<xsl:when test="$ogroup = 'g_sense'">
-						<th height="800" width="190" align="left" bgcolor="#FFD99C">
-							<xsl:call-template name="body-menu"/>
-						</th>
-					</xsl:when>
-					<xsl:when test="$ogroup = 'g_imes'">
-						<th height="800" width="190" align="left" bgcolor="#C8B9AD">
-							<xsl:call-template name="body-menu"/>
-						</th>
-					</xsl:when>
-					<xsl:otherwise>
-						<th height="800" width="190" align="left" bgcolor="#8B9DC3">
-							<xsl:call-template name="body-menu"/>
-						</th>
-					</xsl:otherwise>
-					</xsl:choose>
+				<xsl:if test="$what != 'seminar'">
+					<xsl:if test="$ogroup != ''">
+						<xsl:choose>
+						<xsl:when test="$ogroup = 'g_ois'">
+							<th height="800" width="190" align="left" bgcolor="#A5A2C6">
+								<xsl:call-template name="body-menu"/>
+							</th>
+						</xsl:when>
+						<xsl:when test="$ogroup = 'g_iris'">
+							<th height="800" width="190" align="left" bgcolor="#84CBE7">
+								<xsl:call-template name="body-menu"/>
+							</th>
+						</xsl:when>
+						<xsl:when test="$ogroup = 'g_wrc'">
+							<th height="800" width="190" align="left" bgcolor="#FFFF96">
+								<xsl:call-template name="body-menu"/>
+							</th>
+						</xsl:when>
+						<xsl:when test="$ogroup = 'g_sense'">
+							<th height="800" width="190" align="left" bgcolor="#FFD99C">
+								<xsl:call-template name="body-menu"/>
+							</th>
+						</xsl:when>
+						<xsl:when test="$ogroup = 'g_imes'">
+							<th height="800" width="190" align="left" bgcolor="#C8B9AD">
+								<xsl:call-template name="body-menu"/>
+							</th>
+						</xsl:when>
+						<xsl:otherwise>
+							<th height="800" width="190" align="left" bgcolor="#8B9DC3">
+								<xsl:call-template name="body-menu"/>
+							</th>
+						</xsl:otherwise>
+						</xsl:choose>
+					</xsl:if>
 				</xsl:if>
 			</xsl:if>
 			<th align="left">
@@ -708,6 +759,17 @@
 				<xsl:when test="$what = 'alumni'">
 					<h2>Research Associates</h2>
 					<xsl:apply-templates select="/eltrun/member_list/member [contains(@group,$ogroup)]" mode="alumnus-ref" />
+				</xsl:when>
+				<!-- seminar -->
+				<xsl:when test="$what = 'seminar'">
+					<h2>Eltrun Seminars</h2>
+					<xsl:apply-templates select="/eltrun/seminar_list/seminar" mode="ref" />
+					<!--    <xsl:sort select="sem_date" order="asceding"/>
+					</xsl:apply-templates> -->
+					<br /><br />
+					<xsl:apply-templates select="/eltrun/seminar_list/seminar" mode="full" />
+					<!--    <xsl:sort select="sem_date" order="asceding"/>
+					</xsl:apply-templates> -->
 				</xsl:when>
 			</xsl:choose>
 			</th>
