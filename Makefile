@@ -89,6 +89,7 @@ clean:
 		${HTML}/projects/* \
 		${HTML}/members/* \
 		${HTML}/seminar/* \
+		${HTML}/rel_pages/* \
 		${HTML}/publications/* 2>/dev/null
 
 val: ${DB}
