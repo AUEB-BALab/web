@@ -1,0 +1,95 @@
+<?xml version="1.0"?>
+<project id="p_seed" group="g_eltrun g_iris" scientific_coordinator="m_pouloudi" international="yes" type="rtd">
+	<shortname>SEED</shortname>
+	<projtitle>South Eastern European Digital Economy</projtitle>
+	<startdate>20001115</startdate>
+	<enddate>20020115</enddate>
+	<web_site>http://www.sofosnet.gr/seed/</web_site>
+	<!--<our_budget>328,627 EUR</our_budget>-->
+	<!--<total_budget>3,493,834 EUR</total_budget>-->
+	<funding_agency>European Commission</funding_agency>
+	<funding_programme>Accompanying Measures</funding_programme>
+	<project_code>IST-1999-29060</project_code>
+	<partner>
+		<shortname>Institute of Communications and Computer Systems</shortname>
+		<country>EL</country>
+		<web_site>http://www.ntua.gr</web_site>
+	</partner>
+	<partner>
+		<shortname>Athens University of Economics and Business</shortname>
+		<country>EL</country>
+		<web_site>http://www.eltrun.aueb.gr</web_site>
+	</partner>
+	<partner>
+		<shortname>SOFOSNET Ltd.- Multimedia Development</shortname>
+		<country>EL</country>
+		<web_site>http://www.sofosnet.gr</web_site>
+	</partner>
+	<partner>
+		<shortname>Cyprus Chamber of Commerce and Industry</shortname>
+		<country>CY</country>
+		<web_site>http://www.ccci.org.cy</web_site>
+	</partner>
+	<partner>
+		<shortname>Bulgaria Chambers of Commerce and Industry</shortname>
+		<country>BG</country>
+		<web_site>http://www.bcci.bg</web_site>
+	</partner>
+	<partner>
+		<shortname>Trade and Technological Information Promotion System Albanian National Bureau</shortname>
+		<country>AL</country>
+		<!--<web_site>http://www.bcci.bg</web_site>-->
+	</partner>
+	<partner>
+		<shortname>Chamber of Commerce and Industry Brasov Romania</shortname>
+		<country>RO</country>
+		<web_site>http://www.ccibv.ro</web_site>
+	</partner>
+	<partner>
+		<shortname>Trajkovski and Partners IT Consulting</shortname>
+		<country>FYROM</country>
+		<!--<web_site>http://www.ccibv.ro</web_site>-->
+	</partner>
+	<partner>
+		<shortname>GMD Fokus</shortname>
+		<country>DE</country>
+		<web_site>http://www.fokus.gmd.de</web_site>
+	</partner>
+	<partner>
+		<shortname>Federation of Israeli Chambers</shortname>
+		<country>IL</country>
+		<web_site>http://www.chamber.org.il</web_site>
+	</partner>
+	<partner>
+		<shortname>Chamber of Commerce and Industry of the Republic of Moldova</shortname>
+		<country>MO</country>
+		<web_site>http://www.chamber.md/index.html</web_site>
+	</partner>
+	<partner>
+		<shortname>INTRASOFT International</shortname>
+		<country>LU</country>
+		<web_site>http://www.intrasoftnet.com</web_site>
+	</partner>
+		
+	<logo>../images/p_seed.jpg</logo>
+<description>
+<p> SEED is a European Commission two-year project (2000-2002) under the IST Programme, Key Action II.1.1.  SEED aims to develop and promote digital business and e-commerce among the S.E. European countries reflecting the recognition that the development of the region as a whole is a shared responsibility. The transition to the digital economy is the most promising development path for SE European countries to follow, while progress to this end is highly facilitated by joint and collaborative efforts than individual ones. 	SEED aims to promote co-operation among the S.E. European countries, the EU and other international organisations and initiatives, actively promoting the growth of electronic commerce and the digital economy. SEED objectives are: Offer a comprehensive set of services aimed at stimulating awareness of electronic commerce, supporting the S.E. European industry and co-operation among the SMEs of the region. Services will include business application intelligence gathering, dissemination services, assistance services and a user group (including special working parties exclusively composed by S.E. European key players e.g. retailers and technology suppliers). 
+</p>
+<p>
+Peripheral sub-objectives include: </p>
+	<ul>
+	<li>Provide technical and organisational frameworks that can be used by the non-technical partners of this consortium in order to promote e-commerce in their countries.</li>
+	<li>Provide legal, technical, organisational, standardisation, ethical and societal frameworks (necessary aspects for the deployment of electronic commerce) to the non-technical partners of this consortium in order to gather relevant information from key actors in their country.</li>
+	<li>Identify barriers, bottlenecks for creating a secure e-commerce business environment in the region.</li>
+	</ul>
+<p>
+In order for SEED to meet its objectives the next steps will be followed:</p>
+	<ul>
+	<li>Compile dissemination and exploitation guidelines and methodologies, which will be used by the partners in order to promote awareness.</li>
+	<li>A study will be conducted in which the necessary environments (business, legal, regulatory, standardisation, technical, societal, financial viability) for the employment of electronic commerce will be explored. The necessary aspects in these environments will be identified with concrete frameworks necessary to capture the picture of S.E. Europe and provide guidance for the future.</li>
+	<li>Using standard methodologies SEED will build questionnaires and case studies particularly for S.E. European SMEs and government leadership, which will capture the picture of electronic commerce in the region, promoting new opportunities and possibilities in the area. </li>
+	<li>Distribute, gather and analyse the outcome of the questionnaires in order to define the e-commerce environment in the individual countries and in the whole region. Identify barriers and bottlenecks. </li>
+	<li>Cluster and link with other relevant projects, standardisation and legislation authorities in order to promote e-commerce in the S.E. European region.</li>
+	</ul>
+	</description>
+</project>
