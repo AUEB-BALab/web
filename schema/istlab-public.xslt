@@ -494,13 +494,11 @@
 		<table width="750" border="0">
 			<tbody valign="top">
 			<tr>
-			<xsl:if test="$what != 'group-publications'">
-				<xsl:if test="$what != 'member-publications'">
-					<xsl:if test="$ogroup != ''">
-						<th height="800" width="150" align="left" bgcolor="#8B9DC3">
-						<xsl:call-template name="body-menu" />
-						</th>
-					</xsl:if>
+			<xsl:if test="$what != 'member-publications'">
+				<xsl:if test="$ogroup != ''">
+					<th height="800" width="150" align="left" bgcolor="#8B9DC3">
+					<xsl:call-template name="body-menu" />
+					</th>
 				</xsl:if>
 			</xsl:if>
 			<th align="left">
@@ -544,9 +542,7 @@
 				</xsl:when>
 				<!-- group publications -->
 				<xsl:when test="$what = 'group-publications'">
-					<h1>
-					<xsl:call-template name="group-head"/>: Publications
-					</h1>
+					<h1>Publications</h1>
 					<h2>Contents</h2>
 					<xsl:apply-templates select="/eltrun/publication_type_list/publication_type [@for = $ogroup]" mode="toc" />
 					<xsl:apply-templates select="/eltrun/publication_type_list/publication_type [@for = $ogroup]" mode="full" >
