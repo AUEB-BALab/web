@@ -9,6 +9,7 @@
 MEMBERFILES=$(wildcard data/members/*.xml)
 GROUPFILES=$(wildcard data/groups/*.xml)
 PROJECTFILES=$(wildcard data/projects/*.xml)
+SEMINARFILES=$(wildcard data/seminar/*.xml)
 PUBFILE=build/pubs.xml
 BIBFILES=$(wildcard data/publications/*.bib)
 
@@ -65,6 +66,12 @@ $(DB): ${MEMBERFILES} ${GROUPFILES} ${PROJECTFILES} $(BIBFILES) tools/makepub.pl
 		grep -v -e "xml version=" $$file ; \
 	done >>$@
 	@echo '</project_list>' >>$@
+	@echo '<seminar_list>' >>$@
+	@for file in $(SEMINARFILES); \
+	do \
+		grep -v -e "xml version=" $$file ; \
+	done >>$@
+	@echo '</seminar_list>' >> $@
 	@perl -n tools/makepub.pl $(BIBFILES) >>$@
 	@echo '</eltrun>' >>$@
 
@@ -73,6 +80,7 @@ clean:
 		${HTML}/groups/* \
 		${HTML}/projects/* \
 		${HTML}/members/* \
+		${HTML}/seminar/* \
 		${HTML}/publications/* 2>/dev/null
 
 val: ${DB}
@@ -118,6 +126,8 @@ html: ${DB}
 		xml tr ${PXSLT} -s omember=$$member -s what=member-details ${DB} >${HTML}/members/$$member.html ; \
 		xml tr ${PXSLT} -s omember=$$member -s what=member-publications ${DB} >${HTML}/publications/$$member-publications.html ; \
 	done
+	@echo "Creating seminar list"
+	
 	@echo "Creating publications"
 	@$(SHELL) build/bibrun
 
