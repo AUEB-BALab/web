@@ -21,7 +21,7 @@
 <!-- seminar -->
 <!ELEMENT seminar (name,date,time,room,url?)>
 <!ATTLIST seminar
-	by IDREF #REQUIRED
+	by #CDATA #REQUIRED
 >
 <!ELEMENT name (#PCDATA)>
 <!ELEMENT date %date>
