@@ -29,6 +29,7 @@
 	id ID #REQUIRED
 	director IDREF #REQUIRED
 	contact IDREF #REQUIRED
+	maintainer IDREF #REQUIRED
 >
 <!ELEMENT grouptitle (#PCDATA)>
 <!ELEMENT rel_link %pc_flow;>

@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<group id="g_ois" director="m_akp" contact="m_akp">
+<group id="g_ois" director="m_akp" contact="m_akp" maintainer="m_apaparg">
 	<grouptitle>Organizational Information Systems</grouptitle>
 	<shortname>OIS</shortname>
 	<description>

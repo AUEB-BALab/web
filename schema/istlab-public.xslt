@@ -408,6 +408,10 @@
 		<br /><br />
 		<xsl:apply-templates select="current()/description" />
 		<br />
+		<br />
+		Website Maintainer:
+		<br />
+		<xsl:apply-templates select="/eltrun/member_list/member [@id=current()/@maintainer]" mode="simple-ref" />
 	</xsl:template>
 
 	<!-- Format description {{{1 -->

@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<group id="g_eltrun" director="m_gjd" contact="m_gjd">
+<group id="g_eltrun" director="m_gjd" contact="m_gjd" maintainer="m_bkarak">
 	<grouptitle>Electronic Trading Research Unit</grouptitle>
 	<shortname>ELTRUN</shortname>
 	<description>

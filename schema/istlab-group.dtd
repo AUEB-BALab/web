@@ -26,6 +26,7 @@
 	id ID #REQUIRED
 	director CDATA #REQUIRED
 	contact CDATA #REQUIRED
+	maintainer CDATA #REQUIRED
 >
 <!ELEMENT grouptitle (#PCDATA)>
 <!ELEMENT rel_link %pc_flow;>
