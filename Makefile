@@ -138,6 +138,7 @@ html: ${DB}
 
 dist: html
 	$(SSH) istlab.dmst.aueb.gr "cd /home/dds/src/eltrun-web ; \
+	umask 002 ; \
 	cvs update -Pd ; \
 	gmake ; \
 	tar -C public_html -cf - . | tar -C /home/dds/web/istlab/eltrun -xvf -"
