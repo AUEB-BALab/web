@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<project id="p_mad" group="g_eltrun g_wrc" scientific_coordinator="m_giaglis" contact="m_drosos" international="no" type="rtd" project_manager="m_drosos">
+	<shortname>MAD</shortname>
+	<projtitle>Mobile Advertising Effectiveness</projtitle>
+	<startdate>20040201</startdate>
+	<enddate>20060830</enddate>
+	<!--<web_site>http://www.mobiforum.org/mbnet</web_site>-->
+	<!--<our_budget>328,627 EUR</our_budget>-->
+	<!--<total_budget>3,493,834 EUR</total_budget>-->
+	<funding_agency>General Secretariat of Research and Technology</funding_agency>
+	<funding_programme>Research and Technological Development Consortiums in sections of National Priority</funding_programme>
+	<!--<project_code>Axis 4.5.1</project_code>-->
+	<partner>
+		<shortname>UPSTREAM</shortname>
+		<country>EL</country>
+		<!--<web_site>http://www.aegean.gr/</web_site>-->
+	</partner>
+	
+	<!--<logo>../images/p_mexpress.gif</logo>-->
+	<description>
+	<p>
+	The objective of this project is twofold: Under the light of an interdisciplinary approach a mobile advertising effectiveness framework will be developed for the evaluation of SMS, EMS, MMS advertising messages and in addition this model will acquire added value as it will be implemented in an electronic web environment, with real time data.
+	</p>
+	<p>
+	Searching for factors contributing to successful advertising campaigns constitutes a perennial effort for marketing researchers. 
+	Although a significant amount of research has been devoted to traditional marketing channels, the advances of technology bring forth new and innovative media such as the Internet, interactive television. 
+	Amongst these new channels, mobile marketing has created significant interest to practitioners, however its theoretical potential in advertising terms needs to be further investigated. 
+	This project aims at identifying and conceptualizing the factors that influence the effects of a mobile advertising campaign. 
+	Factors are mainly inherited from traditional channels, like television and print, and are adjusted to the principles of this innovative medium, however a number of mobile channel specific attributes are also introduced.
+	A novel classification model of the corresponding factors will be proposed and implemented. 
+	</p>
+	</description>
+</project>
