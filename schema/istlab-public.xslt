@@ -382,13 +382,17 @@
 		</xsl:if>
 		Director:
 		<xsl:apply-templates select="/eltrun/member_list/member [@id=current()/@director]" mode="simple-ref" />
-		<br /><br />
+		<br />
+		<xsl:if test='current()/@director != current()/@contact'>
+		Contact:
+		<xsl:apply-templates select="/eltrun/member_list/member [@id=current()/@contact]" mode="simple-ref" />
+		<br />
+		</xsl:if>
+		<br />
 		Research group information:
 		<br /><br />
 		<xsl:apply-templates select="current()/description" />
 		<br />
-		Contact:
-		<xsl:apply-templates select="/eltrun/member_list/member [@id=current()/@contact]" mode="simple-ref" />
 	</xsl:template>
 
 	<!-- Format description {{{1 -->
@@ -717,7 +721,7 @@
 		<table border="0">
 			<tbody valign="top">
 			<tr>
-			<xsl:if test="$what != 'member-publications'">
+			<xsl:if test="$what != 'member-publications' or $what = 'seminar'">
 				<xsl:if test="$what != 'seminar'">
 					<xsl:if test="$what != 'member-details'">
 						<xsl:if test="$what != 'project-details'">
@@ -747,7 +751,7 @@
 						</xsl:element>
 						</xsl:if>
 					</xsl:if>
-				</xsl:if>
+			 	</xsl:if>
 			</xsl:if>
 			<td align="left" width="82%">
 			<!-- choose which HTML to show -->
@@ -775,7 +779,7 @@
 				<h2>Members</h2>
 				<ul>
 				<xsl:apply-templates select="/eltrun/member_list/member[contains(@group,$ogroup)]" mode="ref">
-					<xsl:sort select="surname" order="ascending"/>
+					<xsl:sort select="memb_title" order="ascending"/>
 				</xsl:apply-templates>
 				</ul>
 				</xsl:when>
