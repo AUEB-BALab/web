@@ -2,8 +2,8 @@
 <project id="p_domino" group="g_eltrun g_ois" scientific_coordinator="m_akp" contact="m_akp" international="yes" type="rtd" project_manager="m_akp">
 	<shortname>DOMINO</shortname>
 	<projtitle>Dynamic Organisational Management for Inter-Firm Network Orchestrations</projtitle>
-	<startdate>20020201</startdate>
-	<enddate>20030801</enddate>
+	<startdate>20011101</startdate>
+	<enddate>20030430</enddate>
 	<web_site>http://www.ist-domino.net</web_site>
 <!--	<our_budget> </our_budget> -->
 <!--	<total_budget></total_budget> -->
