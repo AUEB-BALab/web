@@ -79,4 +79,5 @@ END {
 		}
 	}
 	print "</publication_type_list>\n";
+	print RUN "exit 0\n";
 }
