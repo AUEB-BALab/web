@@ -14,8 +14,8 @@ $version = '$Id$';
 # it under the terms of the GNU General Public License.  See the
 # files README and COPYING for details.
 
-require 'getopts.pl';
-require 'ctime.pl';
+require 'bin/getopts.pl' or require 'getopts.pl';
+require 'bin/ctime.pl' or require 'ctime.pl';
 
 # Label styles.
 $label_styles{'plain'} = 	$LABEL_PLAIN = 		1;
