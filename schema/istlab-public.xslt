@@ -349,7 +349,7 @@
 		<br /><br />
 		Research group information:
 		<br /><br />
-		<xsl:value-of select="description"/>
+		<xsl:apply-templates select="current()/description" />
 		<br /><br />
 		<xsl:if test="count(rel_link) != 0">
 			Relative Links:
@@ -362,6 +362,12 @@
 		<xsl:apply-templates select="/eltrun/member_list/member[contains(@group,$ogroup)]" mode="shortref"/>
 	</xsl:template>
 	
+	<!-- Format description {{{1 -->
+	<xsl:template match="description">
+		<xsl:copy-of select="*|text()"/>
+	</xsl:template>
+	
+	<!-- Format relative links {{{1 -->
 	<xsl:template match="rel_link">
 		<xsl:copy-of select="*"/><br />
 	</xsl:template>
