@@ -1,11 +1,9 @@
 <group id="g_eltrun" director="m_gjd" contact="m_gjd">
 	<grouptitle>Electronic Trading Research Unit</grouptitle>
-	<shortname>eLTRUN</shortname>
+	<shortname>ELTRUN</shortname>
 	<logo>../images/eltrun.jpg</logo>
 	<description>
 		The umbrella group.
 	</description>
-	<addlinks>
-		<a href="http://www.dmst.aueb.gr/">Department of Management Science and Technology</a>
-	</addlinks>
+	<rel_link><a href="http://www.dmst.aueb.gr/">Department of Management Science and Technology</a></rel_link>
 </group>
