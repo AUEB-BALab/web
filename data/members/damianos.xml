@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<member id="m_damianos" group="g_eltrun">
+	<givenname>Damianos</givenname>
+	<surname>Chatziadoniou</surname>
+	<memb_title>Dr.</memb_title>
+	<email>damianos@aueb.gr</email>
+	<web_site>http://dmst.aueb.gr/damianos/</web_site>
+	<!--<office_phone>+30 2108203654</office_phone>-->
+	<!--<mobile_phone>+30 2108203685</mobile_phone>-->
+	<!--<office_address>Evelpidon 47-A &amp; Lefkados 33, Room 901</office_address>-->
+	<!--<postal_address>Patision 76, GR-104 34 Athens, Greece</postal_address>-->
+<!--	<photo></photo>-->
+	<shortcv>
+<p>
+Dr DAMIANOS CHATZIANTONIOU is visiting assistant professor in Athens University of 
+Economics and Business and scientific consultant to eLTRUN. He has received his 
+B.Sc. in Applied Mathematics from the University of Athens in Greece and continued 
+his studies in Computer Science at New York University (M.Sc., 1993) and Columbia 
+University (Ph.D., 1997), working with Ken Ross on data warehousing and decision 
+support systems. During his studies he was teaching and consulting regularly. Since 
+1997, Damianos is an assistant professor at Stevens Institute of Technology, an adjunct 
+professor at Columbia University and president and co-founder of Panakea Software Inc. 
+Panakea owns patent-pending algorithms for OLAP applications and developed a state-of-the-art 
+decision support querying tool. Reference sites include AT&T, New York Hospital and 
+Dun&Bradstreet. Damianos is collaborating with AT&T Labs-Research, Columbia University Medical 
+Informatics Center, and National Technical University of Athens. His interests lie in the areas 
+of data warehousing, decision support systems, OLAP and data mining. He has published papers and 
+journals in VLDB, ICDE, EDBT and elsewhere.
+</p>
+<p>For more information please visit his	
+<a href="http://dmst.aueb.gr/damianos/">personal web page</a>
+</p>
+	</shortcv>
+</member>

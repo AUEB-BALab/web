@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<member id="m_pmichael" group="g_eltrun">
+	<givenname>George</givenname>
+	<surname>Papamichael</surname>
+	<memb_title>Dr.</memb_title>
+	<email>pmichael@aueb.gr</email>
+	<web_site>http://dmst.aueb.gr/pmichael/</web_site>
+	<!--<office_phone>+30 2108203654</office_phone>-->
+	<!--<mobile_phone>+30 2108203685</mobile_phone>-->
+	<alumnus/>
+	<!--<office_address>Evelpidon 47-A &amp; Lefkados 33, Room 901</office_address>-->
+	<!--<postal_address>Patision 76, GR-104 34 Athens, Greece</postal_address>-->
+<!--	<photo></photo>-->
+	<shortcv>
+<p>
+Dr GEORGE PAPAMICHAEL is a Lecturer in the Technology and Management Department of the 
+Athens University of Economics and Business. He received his Ph.D from the Department 
+of Informatics at the same University and his B.Sc in Computer Engineering and Informatics
+from the University of Patras. He is a senior researcher of the Eltrun (The E-Business 
+Center) at the Athens University of  Economics and Business. His research interests include 
+Small Group Decision Support Systems, Intelligent and Advanced Computational methods for 
+Decision Making and Emerging Paradigms in Electronic Commerce. He has published articles 
+in several Journals and International Conference Proceedings.
+</p>
+<p>For more information please visit his	
+<a href="http://dmst.aueb.gr/pmichael/">personal web page</a>
+</p>
+	</shortcv>
+</member>
