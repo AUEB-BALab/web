@@ -36,7 +36,8 @@ HTML=public_html
 all: html
 
 $(DB): ${MEMBERFILES} ${GROUPFILES} ${PROJECTFILES} $(BIBFILES) tools/makepub.pl
-	echo '<eltrun>' >$@
+	echo '<?xml version="1.0"?>' > $@
+	echo '<eltrun>' >>$@
 	echo '<group_list>' >>$@
 	cat ${GROUPFILES} >>$@
 	echo '</group_list>' >>$@
@@ -55,12 +56,11 @@ clean:
 		${HTML}/images/* \
 		${HTML}/projects/* \
 		${HTML}/publications/* 2>/dev/null
-	-rm -f *.aux
 
 val: ${DB}
 	xml val -d schema/eltrun.dtd $(DB)
 
-html: ${DB}
+html: ${DB}	
 	# For all groups and the empty group
 	for group in $(GROUPIDS) ; \
 	do \
@@ -72,7 +72,7 @@ html: ${DB}
 		xml tr ${PXSLT} -s ogroup=$$group -s what=group-publications ${DB} >${HTML}/publications/$$group-publications.html ; \
 	done
 	for project in $(PROJECTIDS) ; \
-	do \
+	do \$(SHELL)
 		xml tr ${PXSLT} -s oproject=$$project -s what=project-details ${DB} >${HTML}/projects/$$project.html ; \
 		xml tr ${PXSLT} -s oproject=$$project -s what=project-publications ${DB} >${HTML}/publications/$$project-publications.html ; \
 	done

@@ -15,6 +15,7 @@
 <!ENTITY % xhtml11.mod PUBLIC "-//W3C//ENTITIES XHTML 1.1//EN"
 		 "xhtml11.dtd">
 %xhtml11.mod;
+
 <!ELEMENT eltrun (group_list, member_list, project_list, publication_list, publication_type_list)>
 
 <!-- Entities - remember to keep entities on top in order for xml starlet to work properly-->
@@ -36,31 +37,29 @@
 
 <!--Project list elements {{{1 -->
 <!ELEMENT project_list (project*)>
-<!ELEMENT project (shortname, projtitle, startdate?, enddate, description, web_site?,our_budget?,total_budget?,
-				    funding_agency,funding_programme,program_code,partner*,logo?)>
+<!ELEMENT project (shortname, projtitle, startdate?, enddate, description, web_site?, our_budget?, total_budget?, funding_agency?, funding_programme?, program_code?, partner*, logo?)>
 <!ATTLIST project
 	id ID #REQUIRED
 	contact IDREF #IMPLIED
 	scientific_coordinator IDREF #IMPLIED
 	project_manager IDREF #IMPLIED
 	group IDREFS #REQUIRED
-	international (yes|no) #REQUIRED
-	type (consulting | research | training | dissemination) #IMPLIED
- >
+	international (yes | no) #REQUIRED
+	type (consulting | research | training | dissemination) #REQUIRED
+>
 <!ELEMENT projtitle (#PCDATA)>
 <!ELEMENT our_budget (#PCDATA)>
 <!ELEMENT total_budget (#PCDATA)>
 <!ELEMENT funding_agency (#PCDATA)>
 <!ELEMENT funding_programme (#PCDATA)>
 <!ELEMENT program_code (#PCDATA)>
-
 <!-- partner definition (used in project) -->
-<!ELEMENT partner (shortname,country,web_site)>
+<!ELEMENT partner (shortname, country, web_site)>
 <!ELEMENT country (#PCDATA)>
 
 <!-- Member list elements {{{1 -->
 <!ELEMENT member_list (member*)>
-<!ELEMENT member (givenname, surname, shortcv, web_site?,memb_title?,email,office_phone,mobile_phone?,fax?)>
+<!ELEMENT member (givenname, surname, shortcv, web_site?, memb_title?, email, office_phone?, mobile_phone?, fax?)>
 <!ATTLIST member
 	id ID #REQUIRED
 	group IDREFS #REQUIRED
@@ -89,11 +88,9 @@
 <!ELEMENT pub_title (#PCDATA)>
 <!ELEMENT pub_author (#PCDATA)>
 <!ELEMENT pub_year (#PCDATA)>
-
 <!-- Publication_type list elements {{{1 -->
 <!ELEMENT publication_type_list (publication_type*)>
 <!ELEMENT publication_type (has_any?, has_article?, has_book?, has_incollection?, has_inproceedings?, has_techreport?, has_whitepaper?, has_workingpaper?)>
-
 <!-- What types of publication does this id have? -->
 <!ATTLIST publication_type
 	for IDREF #REQUIRED
@@ -106,13 +103,11 @@
 <!ELEMENT has_techreport EMPTY>
 <!ELEMENT has_whitepaper EMPTY>
 <!ELEMENT has_workingpaper EMPTY>
-
 <!-- Shared elements {{{1 -->
 <!ELEMENT description %pc_flow;>
 <!ELEMENT web_site (#PCDATA)>
 <!ELEMENT shortname (#PCDATA)>
 <!ELEMENT logo %image;>
-
 <!-- Dates are in ISO format (yyyymmdd)
   - As an extension, the XSLT supports a 00 month or date for unknown values
   -->
