@@ -206,6 +206,9 @@
 			<xsl:value-of select="givenname" />
 			<xsl:text> </xsl:text>
 			<xsl:value-of select="surname" />
+			<xsl:if test="/eltrun/group_list/group [@id = $ogroup]/@director = @id">
+			(Director)
+			</xsl:if>
 			</a>
 			</li>
 		</xsl:if>
