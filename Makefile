@@ -93,7 +93,7 @@ clean:
 		${HTML}/publications/* 2>/dev/null
 	-rm -f  public_html/images/colgraph.svg
 
-xsd-val:
+xsd-val: ${DB}
 	@echo '---> Checking seminar data XML files ... '
 	@-for file in $(SEMINARFILES); \
 	do \
@@ -164,7 +164,7 @@ html: ${DB}
 	@$(SHELL) build/bibrun
 
 dist: html
-	$(SSH) bkarak@istlab.dmst.aueb.gr "cd /home/dds/src/eltrun-web ; \
+	$(SSH) istlab.dmst.aueb.gr "cd /home/dds/src/eltrun-web ; \
 	umask 002 ; \
 	cvs update -d ; \
 	gmake ; \
