@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0"?>
-<project id="p_gemini" group="g_eltrun g_imes g_iris" scientific_coordinator="m_pouloudi" contact="m_kv" international="yes" type="rtd" project_manager="m_kv">
+<project id="p_gemini" group="g_eltrun g_imes g_iris g_sense" scientific_coordinator="m_pouloudi" contact="m_kv" international="yes" type="rtd" project_manager="m_kv">
 	<shortname>GEMINI</shortname>
 	<projtitle>Global Electronic Medium ConstellatIon for Dynamic CoNtent Integration</projtitle>
 	<startdate>20020101</startdate>
