@@ -180,7 +180,8 @@
 	</xsl:template>
 	
 	<xsl:template match="member" mode="shortref">
-		<li><a href="../members/{@id}.html">
+		<li>
+		<a href="../members/{@id}.html">
 		<xsl:if test="count(memb_title) != 0">
 			<xsl:value-of select="memb_title"/>
 			<xsl:text> </xsl:text>
@@ -194,94 +195,72 @@
 	
 	<!-- Format members information --> 
 	<xsl:template match="member" mode="full">
-		<!-- header -->
-		<head>
-			<title>eLTRUN - Member Information</title>
-			<link href="../images/styles.css" type="text/css" rel="stylesheet" />
-		</head>
-		<!--  body -->
-		<body>
-		<xsl:call-template name="body-head" />
-		<br />
-		<table width="750" border="0">
-			<tbody>
-			<tr>
-				<th width="150" valign="top">
-				<xsl:call-template name="body-menu" />
-				</th>
-				<th align="left">
-				<!-- add info -->
-				<h2>
+		<h2>
+		<xsl:if test="count(memb_title) != 0">
+			<xsl:value-of select="memb_title" />
+		</xsl:if>
+		<xsl:text> </xsl:text>
+		<xsl:value-of select="givenname" />
+		<xsl:text> </xsl:text>
+		<xsl:value-of select="surname" />
+		</h2>
+		<xsl:if test="photo">
+			<xsl:element name="img">
+				<xsl:attribute name="src"><xsl:value-of select="photo"/></xsl:attribute>
+				<xsl:attribute name="alt">
 					<xsl:if test="count(memb_title) != 0">
-							<xsl:value-of select="memb_title" />
+						<xsl:value-of select="memb_title" />
 					</xsl:if>
 					<xsl:text> </xsl:text>
 					<xsl:value-of select="givenname" />
 					<xsl:text> </xsl:text>
-					<xsl:value-of select="surname" />
-				</h2>
-				<xsl:if test="photo">
-					<xsl:element name="img">
-						<xsl:attribute name="src"><xsl:value-of select="photo"/></xsl:attribute>
-						<xsl:attribute name="alt">
-							<xsl:if test="count(memb_title) != 0">
-								<xsl:value-of select="memb_title" />
-							</xsl:if>
-							<xsl:text> </xsl:text>
-							<xsl:value-of select="givenname" />
-							<xsl:text> </xsl:text>
-							<xsl:value-of select="surname" />						
-						</xsl:attribute>
-						<xsl:attribute name="width">80</xsl:attribute>
-						<xsl:attribute name="height">80</xsl:attribute>
-					</xsl:element>										
-				</xsl:if>
-				<br /> <br />
-				<xsl:if test="count(email) != 0">
-					E-mail: <xsl:value-of select="email" />
-				<br />
-				</xsl:if>
-				<xsl:if test="count(office_phone) != 0">
-					Office Phone: <xsl:value-of select="office_phone" />
-				<br />
-				</xsl:if>
-				<xsl:if test="count(mobile_phone) != 0">
-					Mobile Phone: <xsl:value-of select="mobile_phone" />
-				<br />
-				</xsl:if>
-				<xsl:if test="count(Fax) != 0">
-					Fax: <xsl:value-of select="fax" />
-				<br />
-				</xsl:if>	
-				<xsl:if test="count(office_phone) != 0">
-					Office Phone: <xsl:value-of select="office_phone" />
-				<br />
-				</xsl:if>
-				<xsl:if test="count(office_address) != 0">
-					Office Address: <xsl:value-of select="office_address"/>
-				<br />
-				</xsl:if>
-				<xsl:if test="count(web_site) != 0">
-					Web Site:
-					<xsl:element name="a">
-						<xsl:attribute name="href"><xsl:value-of select="web_site"/></xsl:attribute>
-						<xsl:value-of select="web_site"/>
-					</xsl:element>
-				<br /><br />
-				</xsl:if>
-				Groups: <xsl:apply-templates select="/eltrun/group_list/group [contains(current()/@group, @id)]" mode="shortref"/>
-				<br />
-				<a href="../publications/{$omember}-publications.html">Publications</a>
-				<br />
-				<br />
-				Short CV
-				<br />
-				<xsl:value-of select="shortcv"/>
-				</th>
-			</tr>
-			</tbody>
-		</table>	
-		</body>
+					<xsl:value-of select="surname" />						
+				</xsl:attribute>
+				<xsl:attribute name="width">80</xsl:attribute>
+				<xsl:attribute name="height">80</xsl:attribute>
+			</xsl:element>										
+		</xsl:if>
+		<br /> <br />
+		<xsl:if test="count(email) != 0">
+			E-mail: <xsl:value-of select="email" />
+			<br />
+		</xsl:if>
+		<xsl:if test="count(office_phone) != 0">
+			Office Phone: <xsl:value-of select="office_phone" />
+			<br />
+		</xsl:if>
+		<xsl:if test="count(mobile_phone) != 0">
+			Mobile Phone: <xsl:value-of select="mobile_phone" />
+			<br />
+		</xsl:if>
+		<xsl:if test="count(Fax) != 0">
+			Fax: <xsl:value-of select="fax" />
+			<br />
+		</xsl:if>	
+		<xsl:if test="count(office_phone) != 0">
+			Office Phone: <xsl:value-of select="office_phone" />
+			<br />
+		</xsl:if>
+		<xsl:if test="count(office_address) != 0">
+			Office Address: <xsl:value-of select="office_address"/>
+			<br />
+		</xsl:if>
+		<xsl:if test="count(web_site) != 0">
+			Web Site:
+			<xsl:element name="a">
+				<xsl:attribute name="href"><xsl:value-of select="web_site"/></xsl:attribute>
+				<xsl:value-of select="web_site"/>
+			</xsl:element>
+			<br /><br />
+		</xsl:if>
+		Groups: <xsl:apply-templates select="/eltrun/group_list/group [contains(current()/@group, @id)]" mode="shortref"/>
+		<br />
+		<a href="../publications/{$omember}-publications.html">Publications</a>
+		<br />
+		<br />
+		Short CV
+		<br />
+		<xsl:value-of select="shortcv"/>
 	</xsl:template>
 
 	<!-- Format a short group reference {{{1 -->
@@ -303,62 +282,40 @@
 	
 	<!-- Format a full group description -->
 	<xsl:template match="group" mode="full">
-		<!-- header -->
-		<head>
-			<title>eLTRUN - Group Information</title>
-			<link href="../images/styles.css" type="text/css" rel="stylesheet" />
-		</head>
-		<!--  body -->
-		<body>
-		<xsl:call-template name="body-head" />
+		<h2>
+		<xsl:value-of select="shortname"/>
+		<xsl:text> - </xsl:text>
+		<xsl:value-of select="grouptitle"/>
+		</h2>
 		<br />
-		<table width="750" border="0">
-			<tbody>
-			<tr>
-				<th width="150" valign="top">
-				<xsl:call-template name="body-menu" />
-				</th>
-				<th valign="top" align="left">
-				<h2>
-				<xsl:value-of select="shortname"/>
-				<xsl:text> - </xsl:text>
-				<xsl:value-of select="grouptitle"/>
-				</h2>
-				<br />
-				<xsl:if test="count(logo) != 0">
-					<xsl:element name="img">
-						<xsl:attribute name="src"><xsl:value-of select="logo"/></xsl:attribute>
-						<xsl:attribute name="alt">
-							<xsl:value-of select="shortname"/>
-							<xsl:text> - </xsl:text>
-							<xsl:value-of select="grouptitle"/>						
-						</xsl:attribute>
-					</xsl:element>
-				<br /><br />
-				</xsl:if>
-				Director: 
-				<br />
-				Contact:
-				<br /><br />
-				Research group information:
-				<br /><br />
-				<xsl:value-of select="description"/>
-				<br /><br />
-				<xsl:if test="count(rel_link) != 0">
-					Relative Links:
-					<br /><br />
-					<xsl:value-of select="rel_link"/>
-					<br /><br />
-				</xsl:if>
-				
-				Members:
-				<br /><br />
-				<xsl:apply-templates select="/eltrun/member_list/member[contains(@group,$ogroup)]" mode="shortref"/>
-				</th>
-			</tr>
-			</tbody>
-		</table>
-		</body>
+		<xsl:if test="count(logo) != 0">
+			<xsl:element name="img">
+				<xsl:attribute name="src"><xsl:value-of select="logo"/></xsl:attribute>
+				<xsl:attribute name="alt">
+					<xsl:value-of select="shortname"/>
+					<xsl:text> - </xsl:text>
+					<xsl:value-of select="grouptitle"/>						
+				</xsl:attribute>
+			</xsl:element>
+			<br /><br />
+		</xsl:if>
+		Director: 
+		<br />
+		Contact:
+		<br /><br />
+		Research group information:
+		<br /><br />
+		<xsl:value-of select="description"/>
+		<br /><br />
+		<xsl:if test="count(rel_link) != 0">
+			Relative Links:
+			<br /><br />
+			<xsl:value-of select="rel_link"/>
+			<br /><br />
+		</xsl:if>
+		Members:
+		<br /><br />
+		<xsl:apply-templates select="/eltrun/member_list/member[contains(@group,$ogroup)]" mode="shortref"/>
 	</xsl:template>
 
 	<!-- Format a project reference {{{1 -->
@@ -473,7 +430,7 @@
 		<xsl:call-template name="body-head" />
 		<br />
 		<table width="750" border="0">
-			<tbody valing="top">
+			<tbody valign="top">
 			<tr>
 			<th width="150" align="left">
 			<xsl:call-template name="body-menu" />				
