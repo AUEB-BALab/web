@@ -1,0 +1,31 @@
+<seminar>
+	<sem_date>20041222</sem_date>
+	<sem_time>12:00</sem_time>
+	<sem_room>901</sem_room>
+	<sem_duration>60 mins</sem_duration>
+		<presentation>
+          		<pres_title>Optimal Update Policies for Stochastic Data Processes in an OLAP Environment</pres_title>
+          		<pres_name>Dr. Thanos Papadimitriou</pres_name>
+          		<pres_summary>
+Up-to-date data comes at a cost, albeit an economic one that is often
+ignored in the computer science literature. This oversight is indeed
+inconsequential when it comes to transaction or high-availability
+systems such as banking or airline where the cost of error due to less
+than up-to-data  is very high.
+<p />
+In On-Line Analytical Processing (OLAP) Systems, where data is
+extensively aggregated and mathematically manipulated in order to
+support high-level reporting and ad-hoc analysis, accounting-like data
+accuracy may not be important. Besides, keeping an OLAP system
+up-to-date usually involves a substantial amount of recomputation than
+can be both costly and lead to down-time.
+<p />
+In the context of a pharmaceutical marketing research database and OLAP
+system, we treat data as a vector evolving in time and seek to minimize
+overall system usage and maintenance cost. This talk will present a set
+of stochastic Poisson arrival and Brownian motion models and introduce
+relevant policies that determine how far out-of-date data should allowed
+to go before an update is imperative. 
+			</pres_summary>
+		</presentation>
+</seminar>
