@@ -1,0 +1,12 @@
+<seminar>
+	<sem_date>20041013</sem_date>
+	<sem_time>12:00</sem_time>
+	<sem_room>901</sem_room>
+	<sem_duration>90 mins</sem_duration>
+		<presentation by="m_mbina">
+          		<pres_title> Community WLANs: Games on a Common Good
+			 </pres_title>
+          		<pres_url></pres_url>
+		</presentation>
+	
+</seminar>
