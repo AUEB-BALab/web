@@ -272,8 +272,6 @@
 					<xsl:text> </xsl:text>
 					<xsl:value-of select="surname" />
 				</xsl:attribute>
-			<!--	<xsl:attribute name="width">80</xsl:attribute> -->
-			<!--	<xsl:attribute name="height">80</xsl:attribute> -->
 			</xsl:element>
 		</xsl:if>
 		<br /> <br />
@@ -602,7 +600,24 @@
 				<xsl:apply-templates select="/eltrun/group_list/group[@id = $bodygroup]/rel_link" />
 			</xsl:if>
 	</xsl:template>
-
+	
+	<xsl:template match="surname">
+		<xsl:text> </xsl:text><xsl:value-of select="current()"/>
+	</xsl:template>
+	
+	<!-- presentation reference {{{1-->
+	<xsl:template match="presentation" mode="ref">
+		<xsl:apply-templates select="/eltrun/member_list/member [contains(current()/@by,@id)]/surname" />
+	</xsl:template>
+	
+	<xsl:template match="presentation" mode="full">
+		<li>
+		<b>Title:</b> <a href="{pres_url}"><xsl:value-of select="pres_title"/></a><br/>
+		<b>Presenters:</b>  <xsl:apply-templates select="/eltrun/member_list/member [contains(current()/@by,@id)]" mode="simple-ref" /><br />
+		<br/>
+		</li>
+	</xsl:template>
+	
 	<!-- seminar {{{1-->
 	<xsl:template match="seminar" mode="ref">
 	    <xsl:element name="a">
@@ -614,38 +629,30 @@
 			<xsl:with-param name="date" select="sem_date" />
 		</xsl:call-template>
 		<xsl:text> - </xsl:text>
-		<xsl:value-of select="sem_title" />
+		<xsl:apply-templates select="current()/presentation" mode="ref"/>
 	    </xsl:element>
 	    <br />
 	</xsl:template>
 	
 	<!-- Seminar detailed template {{{1-->
 	<xsl:template match="seminar" mode="full">
-	    <h3><xsl:value-of select="sem_title" /></h3>
+	    <h3>
+	    	<xsl:call-template name="date">
+			<xsl:with-param name="date" select="sem_date" />
+		</xsl:call-template>
+	    </h3>
 	    <!-- Create the anchor -->
 	    <xsl:element name="a">
 		<xsl:attribute name="name">
 		    <xsl:value-of select="sem_date" />
 		</xsl:attribute>
 	    </xsl:element>
-	    Presenter: <xsl:apply-templates select="/eltrun/member_list/member [@id=current()/@by]" mode="simple-ref" /><br />
-	    Date:
-	    <xsl:call-template name="date">
-		<xsl:with-param name="date" select="sem_date" />
-	    </xsl:call-template>
-	    <br />
-	    Time: <xsl:value-of select="sem_time" />
-	    <br />
-	    Duration: <xsl:value-of select="sem_duration" />
-	    <br />
-	    Location: <xsl:value-of select="sem_room" />
-	    <br /><br />
-	    <xsl:element name="a">
-		<xsl:attribute name="href">
-		    <xsl:value-of select="sem_url"/>
-		</xsl:attribute>
-		Download the presentation
-	    </xsl:element>
+	    <!-- create seminar data -->
+	    <b>Location:</b> <xsl:value-of select="sem_room" /><br />
+	    <b>Time:</b> <xsl:value-of select="sem_time" />
+	    <ul>
+	    <xsl:apply-templates select="current()/presentation" mode="full"/>
+	    </ul>
 	</xsl:template>
 
 	<!-- page_body {{{1-->
@@ -724,7 +731,8 @@
 				<xsl:text>ELTRUN Seminars</xsl:text>
 			</xsl:when>
 			<xsl:when test="$what = 'rel-pages'">
-				<xsl:variable name="tmpgroup" select="/eltrun/page_list/page[@id = $opage]/@group" />					     <xsl:value-of select="/eltrun/group_list/group[@id = $tmpgroup]/shortname" />
+				<xsl:variable name="tmpgroup" select="/eltrun/page_list/page[@id = $opage]/@group" />					     
+				<xsl:value-of select="/eltrun/group_list/group[@id = $tmpgroup]/shortname" />
 				<xsl:text> - </xsl:text>
 				<xsl:value-of select="/eltrun/page_list/page[@id = $opage]/page_name" />
 			</xsl:when>

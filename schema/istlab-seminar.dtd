@@ -15,18 +15,21 @@
 <!ENTITY % xhtml11.mod PUBLIC "-//W3C//ENTITIES XHTML 1.1//EN"
 		 "xhtml11.dtd">
 %xhtml11.mod;
-<!-- Entities - remember to keep entities on top in order for xml starlet to work properly-->
+<!-- Entities - remember to keep entities on top in order for xml starlet to work properly -->
 <!ENTITY % date "(#PCDATA)">
 
 <!-- seminar -->
-<!ELEMENT seminar (sem_date,sem_time,sem_title,sem_room,sem_url?,sem_duration)>
-<!ATTLIST seminar
-	by CDATA #REQUIRED
->
+<!ELEMENT seminar (sem_date,sem_time,sem_room,sem_duration,presentation+)>
+
 <!ELEMENT sem_date %date;>
 <!ELEMENT sem_time (#PCDATA)>
-<!ELEMENT sem_title (#PCDATA)>
 <!ELEMENT sem_room (#PCDATA)>
-<!ELEMENT sem_url (#PCDATA)>
 <!ELEMENT sem_duration (#PCDATA)>
+
+<!ELEMENT presentation (pres_title,pres_url,pres_name?)>
+<!ATTLIST by CDATA #IMPLIED>
+
+<!ELEMENT pres_title (#PCDATA)>
+<!ELEMENT pres_url %pc_flow;>
+<!ELEMENT pres_name (#PCDATA)> 
 

@@ -103,17 +103,19 @@
 <!ELEMENT has_whitepaper EMPTY>
 <!ELEMENT has_workingpaper EMPTY>
 <!-- seminars {{{1-->
-<!ELEMENT seminar_list (seminar*)>
-<!ELEMENT seminar (sem_date,sem_time,sem_title,sem_room,sem_url?,sem_duration)>
-<!ATTLIST seminar
-	by IDREF #REQUIRED
->
+<!ELEMENT seminar (sem_date,sem_time,sem_room,sem_duration,presentation+)>
+
 <!ELEMENT sem_date %date;>
 <!ELEMENT sem_time (#PCDATA)>
-<!ELEMENT sem_title (#PCDATA)>
 <!ELEMENT sem_room (#PCDATA)>
-<!ELEMENT sem_url (#PCDATA)>
 <!ELEMENT sem_duration (#PCDATA)>
+
+<!ELEMENT presentation (pres_title,pres_url,pres_name?)>
+<!ATTLIST by IDREFS #IMPLIED>
+
+<!ELEMENT pres_title (#PCDATA)>
+<!ELEMENT pres_url %pc_flow;>
+<!ELEMENT pres_name (#PCDATA)>
 <!-- page definitions {{{1-->
 <!ELEMENT page_list (page*)>
 <!ELEMENT page (page_name,page_body)>
