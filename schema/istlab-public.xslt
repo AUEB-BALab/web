@@ -773,9 +773,11 @@
 				<!-- members -->
 				<xsl:when test="$what = 'members'">
 				<h2>Members</h2>
+				<ul>
 				<xsl:apply-templates select="/eltrun/member_list/member[contains(@group,$ogroup)]" mode="ref">
 					<xsl:sort select="surname" order="ascending"/>
 				</xsl:apply-templates>
+				</ul>
 				</xsl:when>
 				<!-- project details -->
 				<xsl:when test="$what = 'project-details'">
