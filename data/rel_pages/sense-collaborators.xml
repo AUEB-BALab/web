@@ -9,19 +9,19 @@ us for more information.
 <br /><br />
 <table>
 <tr>
-	<td><img src="../images/microsoft.jpg" /></td>
+	<td><img src="../images/microsoft.jpg" alt="Microsoft"/></td>
 	<td>Microsoft Hellas S.A.</td>
 </tr>
 <tr>
-	<td><img src="../images/oracle.gif" /></td>
+	<td><img src="../images/oracle.gif" alt="Oracle"/></td>
 	<td>Oracle Hellas S.A.</td>
 </tr>
 <tr>
-	<td><img src="../images/ote.jpg" /></td>
+	<td><img src="../images/ote.jpg" alt="OTE"/></td>
 	<td>OTE - Planning and Development Department Laboratories of New Technologies and Services -  Multimedia Laboratories</td>
 </tr>
 <tr>
-	<td><img src="../images/sun.jpg" /></td>
+	<td><img src="../images/sun.jpg" alt="SUN Microsystems"/></td>
 	<td>Sun Microsystems Inc.</td>
 </tr>
 </table>
