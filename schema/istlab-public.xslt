@@ -650,16 +650,20 @@
 				<!-- Current projects -->
 				<xsl:when test="$what = 'current-projects'">
 				<h2>Current Projects</h2>
+				    <ul>
 					<xsl:apply-templates select="/eltrun/project_list/project [contains(@group, $ogroup)] [enddate &gt;= $today]" mode="ref">
 						<xsl:sort select="shortname" order="ascending"/>
 					</xsl:apply-templates>
+				    </ul>
 				</xsl:when>
 				<!-- Completed Projects -->
 				<xsl:when test="$what = 'completed-projects'">
 				<h2>Completed Projects</h2>
+				    <ul>
 					<xsl:apply-templates select="/eltrun/project_list/project [contains(@group, $ogroup)] [enddate &lt; $today]" mode="ref" >
 						<xsl:sort select="shortname" order="ascending"/>
 					</xsl:apply-templates>
+				    </ul>
 				</xsl:when>
 				<!-- members -->
 				<xsl:when test="$what = 'members'">
