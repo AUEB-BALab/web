@@ -66,6 +66,10 @@ is a program that converts BibTeX files into HTML (specifically XHTML
 derived from a converted bibliography style template. This ensures that
 the original BibTeX styles are faithfully reproduced.
 </li>
+<li>
+<a href="http://www.perlfect.com/freescripts/search">Perlfect Search</a>
+is a website indexing/searching suite available under an open source license (GPL). It comes as a pair of distinct scripts. The indexer, that automatically scans and indexes a web site, and the search engine, a CGI script that serves search queries for keywords over the index, and displays results pages in HTML, in a standard format including title, description and relevance ranking for each matching document.
+</li>
 </ul>
 </page_body>
 </page>
