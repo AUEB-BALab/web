@@ -292,6 +292,7 @@
 		<xsl:text> </xsl:text>
 	</xsl:template>
 	
+	<!-- Format a group reference for the menu -->
 	<xsl:template match="group" mode="menuref">
 		<xsl:if test="@id != 'g_eltrun'">
 		<tr>
@@ -304,6 +305,7 @@
 		</xsl:if>
 	</xsl:template>
 	
+	<!-- Format a full group description -->
 	<xsl:template match="group" mode="full">
 		<!-- header -->
 		<head>
@@ -336,59 +338,26 @@
 							<xsl:value-of select="grouptitle"/>						
 						</xsl:attribute>
 					</xsl:element>
+				<br /><br />
 				</xsl:if>
-				<table>
-					<tbody valign="top">
-						<tr>
-							<th class="SMALL" align="left"><u>Research group information:</u></th>
-						</tr>
-						<tr>
-							<th> </th>
-						</tr>
-						<tr>
-							<th class="SMALL" align="left">
-							<xsl:value-of select="description"/>
-							</th>
-						</tr>
-						<tr>
-							<th><xsl:text> </xsl:text></th>
-						</tr>
-						<tr>
-							<th><xsl:text> </xsl:text></th>
-						</tr>
-						<tr>
-							<th><xsl:text> </xsl:text></th>
-						</tr>
-						<tr>
-							<th class="SMALL" align="left"><u>Relative Links:</u></th>
-						</tr>
-						<tr>
-							<th class="SMALL" align="left">						
-							<xsl:value-of select="addlinks"/>
-							</th>
-						</tr>
-						<tr>
-							<th><xsl:text> </xsl:text></th>
-						</tr>
-						<tr>
-							<th><xsl:text> </xsl:text></th>
-						</tr>
-						<tr>
-							<th><xsl:text> </xsl:text></th>
-						</tr>
-						<tr>
-							<th class="SMALL" align="left"><u>Members:</u></th>
-						</tr>
-						<tr>
-							<th>
-							<br />
-							<ul>
-							<xsl:apply-templates select="/eltrun/member_list/member[contains(@group,$ogroup)]" mode="shortref"/>
-							</ul>
-							</th>
-						</tr>
-					</tbody>
-				</table>
+				Director: 
+				<br />
+				Contact:
+				<br /><br />
+				Research group information:
+				<br /><br />
+				<xsl:value-of select="description"/>
+				<br /><br />
+				<xsl:if test="count(rel_link) != 0">
+					Relative Links:
+					<br /><br />
+					<xsl:value-of select="rel_link"/>
+					<br /><br />
+				</xsl:if>
+				
+				Members:
+				<br /><br />
+				<xsl:apply-templates select="/eltrun/member_list/member[contains(@group,$ogroup)]" mode="shortref"/>
 				</th>
 			</tr>
 			</tbody>
@@ -457,7 +426,7 @@
 	<xsl:template name="body-menu">
 		<table align="left" bgcolor="#f4c225" border="1">
 			<tbody>
-			<tr class="TableHeader">
+			<tr >
 				<th align="left">General</th>
 			</tr>
 			<tr>
@@ -476,7 +445,7 @@
 				<th align="left"><a href="../groups/g_eltrun-alumni.html">Alumni</a></th>
 			</tr>
 			<tr>
-				<th class="Tableheader" align="left">Research groups</th>
+				<th align="left">Research groups</th>
 			</tr>	
 			<xsl:apply-templates select="/eltrun/group_list/group" mode="menuref"/>
 			</tbody>
@@ -496,7 +465,6 @@
 				<!-- header -->
 				<head>
 					<title>eLTRUN - Current Projects</title>
-					<link href="../images/styles.css" type="text/css" rel="stylesheet" />
 				</head>
 				<!--  body -->
 				<body>
@@ -526,7 +494,6 @@
 				<!-- header -->
 				<head>
 					<title>eLTRUN - Completed Projects</title>
-					<link href="../images/styles.css" type="text/css" rel="stylesheet" />
 				</head>
 				<!--  body -->
 				<body>
@@ -555,7 +522,6 @@
 				<!-- header -->
 				<head>
 					<title>eLTRUN - Members</title>
-					<link href="../images/styles.css" type="text/css" rel="stylesheet" />
 				</head>
 				<!--  body -->
 				<body>

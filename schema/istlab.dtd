@@ -24,14 +24,14 @@
 <!ELEMENT eltrun (group_list, member_list, project_list, publication_list, publication_type_list)>
 <!-- Group list elements {{{1 -->
 <!ELEMENT group_list (group*)>
-<!ELEMENT group (grouptitle, shortname, description, addlinks*, logo?)>
+<!ELEMENT group (grouptitle, shortname, description, rel_link*, logo?)>
 <!ATTLIST group
 	id ID #REQUIRED
 	director IDREF #REQUIRED
 	contact IDREF #REQUIRED
 >
 <!ELEMENT grouptitle (#PCDATA)>
-<!ELEMENT addlinks %pc_flow;>
+<!ELEMENT rel_link %pc_flow;>
 <!--Project list elements {{{1 -->
 <!ELEMENT project_list (project*)>
 <!ELEMENT project (shortname, projtitle, startdate?, enddate, description, web_site?, our_budget?, total_budget?, funding_agency?, funding_programme?, program_code?, partner*, logo?)>
