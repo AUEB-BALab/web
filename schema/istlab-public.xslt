@@ -706,7 +706,7 @@
 				</xsl:when>
 				<!-- alumni -->
 				<xsl:when test="$what = 'alumni'">
-					<h2>Alumni</h2>
+					<h2>Research Associates</h2>
 					<xsl:apply-templates select="/eltrun/member_list/member [contains(@group,$ogroup)]" mode="alumnus-ref" />
 				</xsl:when>
 			</xsl:choose>
