@@ -21,7 +21,7 @@
 
 <!-- Main group dtd -->
 <!ENTITY % pc_flow "(#PCDATA | %Flow.mix;)*">
-<!ELEMENT group (grouptitle, shortname, description, rel_link*, logo?,color)>
+<!ELEMENT group (grouptitle, shortname, description, rel_link*, logo?,color,director_photo?)>
 <!ATTLIST group
 	id ID #REQUIRED
 	director CDATA #REQUIRED
@@ -33,3 +33,4 @@
 <!ELEMENT description %pc_flow;>
 <!ELEMENT logo %image;>
 <!ELEMENT color (#PCDATA)>
+<!ELEMENT director_photo %image;>
