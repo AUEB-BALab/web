@@ -177,6 +177,20 @@
 			</a>
 		</xsl:if>
 	</xsl:template>
+	
+	<!-- Format a member reference {{{1-->
+	<xsl:template match="member" mode="pub-ref" >
+		<a href="../members/{@id}.html">
+		<xsl:if test="count(memb_title) != 0">
+			<xsl:value-of select="memb_title"/>
+			<xsl:text> </xsl:text>
+		</xsl:if>
+		<xsl:value-of select="givenname" />
+		<xsl:text> </xsl:text>
+		<xsl:value-of select="surname" />
+		</a>
+	</xsl:template>
+	
 
 	<!-- Format a member reference {{{1 -->
 	<xsl:template match="member" mode="ref" >
@@ -734,7 +748,7 @@
 				<!-- Member Publications -->
 				<xsl:when test="$what = 'member-publications'">
 					<h1>
-					<xsl:apply-templates select="/eltrun/member_list/member [@id=$omember]" mode="simple-ref" /> : Publications
+					<xsl:apply-templates select="/eltrun/member_list/member [@id=$omember]" mode="pub-ref" /> : Publications
 					</h1>
 					<h2>Contents</h2>
 					<xsl:apply-templates select="/eltrun/publication_type_list/publication_type [@for = $omember]" mode="toc" />
