@@ -44,10 +44,11 @@ endif
 all: html
 
 $(DB): ${MEMBERFILES} ${GROUPFILES} ${PROJECTFILES} $(BIBFILES) tools/makepub.pl
+	@echo "Creating unified database"
 	@echo '<?xml version="1.0"?>' > $@
 	@echo '<eltrun>' >>$@ 
 	@echo '<group_list>' >>$@ 
-	for file in $(GROUPFILES); \
+	@for file in $(GROUPFILES); \
 	do \
 		grep -v -e "xml version=" $$file ; \
 	done >>$@
@@ -93,9 +94,10 @@ val: ${DB}
 	@echo '---> Checking db.xml '
 	xml val -d schema/eltrun.dtd $(DB)
 
-html: ${DB}	
-	# For all groups and the empty group
-	for group in $(GROUPIDS) ; \
+html: ${DB}
+# For all groups and the empty group
+	@echo "Creating groups"
+	@for group in $(GROUPIDS) ; \
 	do \
 		xml tr ${PXSLT} -s today=${TODAY} -s ogroup=$$group -s what=group-details ${DB} >${HTML}/groups/$$group-details.html ; \
 		xml tr ${PXSLT} -s today=${TODAY} -s ogroup=$$group -s what=completed-projects ${DB} >${HTML}/groups/$$group-completed-projects.html ; \
@@ -104,17 +106,20 @@ html: ${DB}
 		xml tr ${PXSLT} -s today=${TODAY} -s ogroup=$$group -s what=alumni ${DB} >${HTML}/groups/$$group-alumni.html ; \
 		xml tr ${PXSLT} -s ogroup=$$group -s what=group-publications ${DB} >${HTML}/publications/$$group-publications.html ; \
 	done
-	for project in $(PROJECTIDS) ; \
+	@echo "Creating projects"
+	@for project in $(PROJECTIDS) ; \
 	do \
 		xml tr ${PXSLT} -s oproject=$$project -s what=project-details ${DB} >${HTML}/projects/$$project.html ; \
 		xml tr ${PXSLT} -s oproject=$$project -s what=project-publications ${DB} >${HTML}/publications/$$project-publications.html ; \
 	done
-	for member in $(MEMBERIDS) ; \
+	@echo "Creating members"
+	@for member in $(MEMBERIDS) ; \
 	do \
 		xml tr ${PXSLT} -s omember=$$member -s what=member-details ${DB} >${HTML}/members/$$member.html ; \
 		xml tr ${PXSLT} -s omember=$$member -s what=member-publications ${DB} >${HTML}/publications/$$member-publications.html ; \
 	done
-	$(SHELL) build/bibrun
+	@echo "Creating publications"
+	@$(SHELL) build/bibrun
 
 dist: html
 	$(SSH) istlab.dmst.aueb.gr "cd /home/dds/src/eltrun-web ; \
