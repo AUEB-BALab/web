@@ -103,6 +103,7 @@
 <!ELEMENT has_whitepaper EMPTY>
 <!ELEMENT has_workingpaper EMPTY>
 <!-- seminars {{{1-->
+<!ELEMENT seminar_list (seminar*)>
 <!ELEMENT seminar (sem_date,sem_time,sem_room,sem_duration,presentation+)>
 
 <!ELEMENT sem_date %date;>
@@ -111,7 +112,9 @@
 <!ELEMENT sem_duration (#PCDATA)>
 
 <!ELEMENT presentation (pres_title,pres_url,pres_name?)>
-<!ATTLIST by IDREFS #IMPLIED>
+<!ATTLIST presentation 
+	by IDREFS #IMPLIED
+>
 
 <!ELEMENT pres_title (#PCDATA)>
 <!ELEMENT pres_url %pc_flow;>
