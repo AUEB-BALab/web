@@ -349,8 +349,6 @@
 		Director: 
 		<xsl:apply-templates select="/eltrun/member_list/member [@id=current()/@director]" mode="simple-ref" />
 		<br />
-		Contact:
-		<xsl:apply-templates select="/eltrun/member_list/member [@id=current()/@contact]" mode="simple-ref" />
 		<br /><br />
 		Research group information:
 		<br /><br />
@@ -365,6 +363,9 @@
 		Members:
 		<br /><br />
 		<xsl:apply-templates select="/eltrun/member_list/member[contains(@group,$ogroup)]" mode="shortref"/>
+		<br /><br />
+		Contact:
+		<xsl:apply-templates select="/eltrun/member_list/member [@id=current()/@contact]" mode="simple-ref" />
 	</xsl:template>
 	
 	<!-- Format description {{{1 -->
@@ -424,7 +425,7 @@
 				ELTRUN
 			</xsl:when>
 			<xsl:when test="$ogroup != 'g_eltrun'">
-				<xsl:apply-templates select="/eltrun/group_list/group [@id=$ogroup]" mode="heading" />
+				<xsl:apply-templates select="/eltrun/group_list/group[@id = $ogroup]" mode="shortref"/>
 			</xsl:when>
 		</xsl:choose>
 	</xsl:template>
