@@ -697,6 +697,7 @@
 			<xsl:when test="$what = 'project-details'"></xsl:when>
 			<xsl:when test="$what = 'member-details'"></xsl:when>
 			<xsl:when test="$what = 'member-publications'"></xsl:when>
+			<xsl:when test="$what = 'project-publications'"></xsl:when>
 			<xsl:when test="$what = 'seminar'"></xsl:when>
 			<!-- For all the rest -->
 			<xsl:otherwise>
@@ -778,7 +779,7 @@
 				</xsl:when>
 				<!-- project publications -->
 				<xsl:when test="$what = 'project-publications'">
-					<div class="title">
+					<div class="projecttitle">
 					<a href="../projects/{$oproject}.html">
 						<xsl:apply-templates select="/eltrun/project_list/project[@id = $oproject]/shortname" />
 					</a>
