@@ -36,7 +36,7 @@ RELPAGEIDS=$(shell xml tr ${IDXSLT} -s category=page ${DB})
 # HTML output directory
 HTML=public_html
 
-ifdef SHELL
+ifdef TERM
 # Unix
 SSH=ssh
 else
