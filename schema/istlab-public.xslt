@@ -45,10 +45,10 @@
 <!-- Do not change the formatting of the following lines -->
 <xsl:text>
 </xsl:text>
-<xsl:comment>BEGIN BIBLIOGRAPHY build/<xsl:value-of select="$pubid" />-<xsl:value-of select="$type" /></xsl:comment>
+<xsl:comment><xsl:text> </xsl:text>BEGIN BIBLIOGRAPHY build/<xsl:value-of select="$pubid" />-<xsl:value-of select="$type" /><xsl:text> </xsl:text></xsl:comment>
 <xsl:text>
 </xsl:text>
-<xsl:comment>END BIBLIOGRAPHY build/<xsl:value-of select="$pubid" />-<xsl:value-of select="$type" /></xsl:comment>
+<xsl:comment><xsl:text> </xsl:text>END BIBLIOGRAPHY build/<xsl:value-of select="$pubid" />-<xsl:value-of select="$type" /><xsl:text> </xsl:text></xsl:comment>
 <xsl:text>
 </xsl:text>
 	</xsl:template>

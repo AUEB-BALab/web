@@ -69,10 +69,10 @@ END {
 				print "\t\t<has_$type/>\n";
 				$auxfile = "build/$id-$type.aux";
 				open(OUT, ">$auxfile") || die "Unable to open $auxfile for writing: $!\n";
-				print OUT '\bibdata{book,article,incproceedings,incollection,whitepaper,techreport}';
+				print OUT '\bibdata{book,article,inproceedings,incollection,whitepaper,techreport}';
 				print OUT "\n$citations{$group}{$id}{$type}";
 				close OUT;
-				print RUN "perl tools/bib2html -s unsortlist $auxfile public_html/publications/$id.html\n";
+				print RUN qq{perl tools/bib2html -b "-include-directory data/publications -include-directory tools" -s alpha $auxfile public_html/publications/$id.html\n} unless($type eq 'any');
 			}
 			print "\t</publication_type>\n";
 		}

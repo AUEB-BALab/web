@@ -69,3 +69,4 @@ html: ${DB}
 	do \
 		xml tr ${PXSLT} -s omember=$$member -s what=member-publications ${DB} >${HTML}/publications/$$member.html ; \
 	done
+	$(SHELL) build/bibrun
