@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<seminar>
+	<sem_date>20040701</sem_date>
+	<sem_time>16:00</sem_time>
+	<sem_duration>2 Hours</sem_duration>
+	<sem_room>706</sem_room>
+	<presentation by="m_androutsellis m_kv">
+		<pres_title>PRAXIS</pres_title>
+		<pres_url>http://istlab.dmst.aueb.gr/</pres_url>
+	</presentation>
+	<presentation by="m_bkarak">
+		<pres_title>PRAXIS 2</pres_title>
+		<pres_url>http://istlab.dmst.aueb.gr</pres_url>
+	</presentation>
+</seminar>
