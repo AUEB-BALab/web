@@ -1,10 +1,13 @@
-<group id="g_wrc" director="m_gjd">
-	<grouptitle>WRC</grouptitle>
-	<shortname>Wireless Research Center</shortname>
+<group id="g_wrc" director="m_gjd" contact="m_gjd">
+	<grouptitle>Wireless Research Center</grouptitle>
+	<shortname>WRC</shortname>
 	<description>
 		Streams:
 		<ul>
 			<li> Emerging mBusiness Models </li>
 		</ul>
 	</description>
+	<addlinks>
+		<a href="http://www.eltrun.gr/wrc/"></a>
+	</addlinks>
 </group>

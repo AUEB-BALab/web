@@ -1,7 +1,13 @@
-<group id="g_eltrun" director="m_gjd">
-	<grouptitle>ELTRUN</grouptitle>
-	<shortname>ELTRUN</shortname>
+<group id="g_eltrun" director="m_gjd" contact="m_gjd">
+	<grouptitle>eLTRUN</grouptitle>
+	<shortname>eLTRUN</shortname>
+	<logo>
+		<img src="images/logo.jpg" border="0" />
+	</logo>
 	<description>
 		The umbrella group.
 	</description>
+	<addlinks>
+		<a href="http://www.dmst.aueb.gr/">Department of Management Science and Technology</a>
+	</addlinks>
 </group>

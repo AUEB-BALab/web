@@ -1,4 +1,4 @@
-<project id="p_contessa" group="g_eltrun g_sense">
+<project id="p_contessa" group="g_eltrun g_sense" contact="m_dds" scientific_coordinator="m_dds" international="yes" type="research">
 	<shortname>Contessa</shortname>
 	<projtitle>Content Transformation</projtitle>
 	<startdate>20010615</startdate>
@@ -9,4 +9,9 @@
 			<li> Line </li>
 		</ul>
 	</description>
+	<partner>
+		<shortname>Contessa partner 1</shortname>
+		<country>Hellas</country>
+		<web_site>http://contessa/</web_site>
+	</partner>
 </project>

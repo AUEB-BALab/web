@@ -53,8 +53,8 @@ $(DB): ${MEMBERFILES} ${GROUPFILES} ${PROJECTFILES} $(BIBFILES) tools/makepub.pl
 clean:
 	-rm -f  build/* \
 		${HTML}/groups/* \
-		${HTML}/images/* \
 		${HTML}/projects/* \
+		${HTML}/members/* \
 		${HTML}/publications/* 2>/dev/null
 
 val: ${DB}

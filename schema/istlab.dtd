@@ -16,13 +16,13 @@
 		 "xhtml11.dtd">
 %xhtml11.mod;
 
-<!ELEMENT eltrun (group_list, member_list, project_list, publication_list, publication_type_list)>
-
 <!-- Entities - remember to keep entities on top in order for xml starlet to work properly-->
-<!ENTITY % image "(#PCDATA)">
+<!ENTITY % image "(#PCDATA  | %Flow.mix;)*">
 <!ENTITY % phone "(#PCDATA)">
 <!ENTITY % date "(#PCDATA)">
 <!ENTITY % pc_flow "(#PCDATA | %Flow.mix;)*">
+
+<!ELEMENT eltrun (group_list, member_list, project_list, publication_list, publication_type_list)>
 
 <!-- Group list elements {{{1 -->
 <!ELEMENT group_list (group*)>
@@ -88,9 +88,11 @@
 <!ELEMENT pub_title (#PCDATA)>
 <!ELEMENT pub_author (#PCDATA)>
 <!ELEMENT pub_year (#PCDATA)>
+
 <!-- Publication_type list elements {{{1 -->
 <!ELEMENT publication_type_list (publication_type*)>
 <!ELEMENT publication_type (has_any?, has_article?, has_book?, has_incollection?, has_inproceedings?, has_techreport?, has_whitepaper?, has_workingpaper?)>
+
 <!-- What types of publication does this id have? -->
 <!ATTLIST publication_type
 	for IDREF #REQUIRED
@@ -103,11 +105,13 @@
 <!ELEMENT has_techreport EMPTY>
 <!ELEMENT has_whitepaper EMPTY>
 <!ELEMENT has_workingpaper EMPTY>
+
 <!-- Shared elements {{{1 -->
 <!ELEMENT description %pc_flow;>
 <!ELEMENT web_site (#PCDATA)>
 <!ELEMENT shortname (#PCDATA)>
 <!ELEMENT logo %image;>
+
 <!-- Dates are in ISO format (yyyymmdd)
   - As an extension, the XSLT supports a 00 month or date for unknown values
   -->
