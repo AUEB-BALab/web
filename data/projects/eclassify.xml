@@ -2,8 +2,8 @@
 <project id="p_eclassify" group="g_eltrun g_ois" scientific_coordinator="m_akp" contact="m_akp" international="yes" type="rtd" project_manager="m_akp">
 	<shortname>eClassify</shortname>
 	<projtitle>Enterprise Intellectual Capital Management System - supporting automatic file classification</projtitle>
-	<startdate></startdate>
-	<enddate></enddate>
+	<startdate>20040104</startdate>
+	<enddate>20060104</enddate>
 	<web_site></web_site>
 <!--	<our_budget> </our_budget> -->
 <!--	<total_budget></total_budget> -->
