@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<page id="ois_newsletter" group="g_ois">
+	<page_name>Newsletter</page_name>
+	<page_body>
+During the past months, our laboratory published two newsletters in the 'ELTRUN eBusiness newsletter' series. The newsletter are distributed by email; contact us to subscribe. From this page you can access these in a pdf format.
+
+<ul>
+<li> <a href="http://www.eltrun.gr/newsletters/1/24.pdf">Implementing the Learner-Centered Design Paradigm for Web-Based Training Curricula</a> with the following contents:
+	<ul>
+	<li> Introduction and background information</li>
+	<li> Learner-centered design of web-based training courses</li>
+	<li> Plan the human (learner) centered design process</li>
+	<li> Understand and specify the context of use</li>
+	<li> Specify the user and organizational requirements</li>
+	<li> Design</li>
+	<li> Evaluation</li>
+	<li> Conclusions</li>
+	</ul>
+</li>
+<li> <a href="http://www.eltrun.gr/newsletters/1/19.pdf">Managerial Implications of Networking: Impact on people and technology</a> with the following contents:
+	<ul>
+	<li> The DOMINO Project</li>
+	<li> Method of work and research contexts</li>
+	<li> Interorganizational networks</li>
+	<li> Characteristics of interorganizational networks</li>
+	<li> Generic network types</li>
+	<li> Notion of network management</li>
+	<li> Management challenges</li>
+	<li> The DOMINO management framework</li>
+	<li> Towards implications for managerial action</li>
+	</ul>
+</li>
+</ul>
+	</page_body>
+</page>
