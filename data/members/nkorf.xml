@@ -4,12 +4,17 @@
 	<surname>Korfiatis</surname>
 	<memb_title>Mr</memb_title>
 	<email>nkorf@eltrun.gr</email>
-	<office_phone>+30 2108203755	</office_phone>
-	<fax>+30 2108203756</fax>
-	<office_address>1 Derigni St. &amp; Mauromataion (Vankouver Building)</office_address>
-	<postal_address>76 Patission St., GR104 34, Athens, Greece</postal_address>
-	<photo>../images/nkorfiatis.jpg</photo>
-	<shortcv>Nikos Korfiatis is a Research Assistant at ELTRUN where he also serves as a technical support specialist for the prototyping part of RTD Projects. He is currently pursuing his BSc in Management Information Systems from the Department of Management Science and Technology, AUEB. 
-His research interests are in the tranformations of the information supply chain in the semantic web context. Mr. Korfiatis is also technical support officer for the Special Interest Group in Semantic Web and Information Systems of the Association of Information Systems AIS. His is member of the ACM and AIS 
+ <!--<office_phone>+30 2108203755	</office_phone>-->
+	<!--<fax>+30 2108203756</fax>-->
+	<!--office_address>1 Derigni St. &amp; Mauromataion (Vankouver Building)</office_address>-->
+	<!--<postal_address>76 Patission St., GR104 34, Athens, Greece</postal_address> -->
+	<alumnus/>
+	<photo>../images/m_nkorfiatis.jpg</photo>
+	<shortcv>Nikos Korfiatis is a graduant of the Department of Management Science and Technology, AUEB with specialization in the field of information systems and e-business. 
+From August 2004 is pursuing his MEng in the Royal Institute of Technology [KTH], Stockholm Sweden from the Institute of Computer and 
+Systems Sciences in the Field of Interactive Systems. His research interests include information dissemination issues with peer-to-peer and grid computing, 
+citation analysis and bibliometric research on the web, ontology modeling and semantic interoperabbility.
+ Mr. Korfiatis is the technical officer of the Special Interest Group in Semantic Web and Information Systems  of the Association of Information Systems AIS. 
+His is member of the ACM and AIS 
 	</shortcv>
 </member>
