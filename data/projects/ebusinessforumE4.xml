@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<project id="p_ebusinessforumE4" group="g_eltrun g_wrc" scientific_coordinator="m_giaglis" international="no" type="rtd" contact="m_vzeimp">
+	<shortname>eBusinessForum - Working Group E4</shortname>
+	<projtitle>Mobile and Wireless Applications for Transports and Logistics</projtitle>
+	<startdate>20030601</startdate>
+	<enddate>20040228</enddate>
+	<web_site>http://www.ebusinessforum.gr</web_site>
+	<!--<our_budget>328,627 EUR</our_budget>-->
+	<!--<total_budget>3,493,834 EUR</total_budget>-->
+	<!--<funding_agency>General Secretariat of Research and Technology</funding_agency>-->
+	<!--<funding_programme>Research and Technological Development Consortiums in sections of National Priority</funding_programme>-->
+	<!--<project_code>Axis 4.5.1</project_code>-->
+		
+	<!--<logo>../images/athens.gif</logo>-->
+	<partner>
+		<shortname>University of the Aegean - Department of Financial and Management Engineering</shortname>
+		<country>GR</country>
+		<web_site>http://www.fme.aegean.gr</web_site>
+	</partner>
+	<partner>
+		<shortname>GRNET - Greek Research and Technology Network</shortname>
+		<country>GR</country>
+		<web_site>http://www.edet.gr</web_site>
+	</partner>
+	
+	<description>
+ <p>
+  	ELTRUN/WRC members participate actively in E-Business Forum. In particular, working group E4 focused its attention in the area of "Mobile and Wireless Applications for Transports and Logistics".
+	The group analyzed the critical factors that determine the evolution of the use of mobile and wireless technologies for transports management and classified its work in three broad thematic categories:
+</p>	<ul>
+	<li>Assessment of the current state of play in greek and international markets with the scope to determine the market's structure and dynamics, the main actors, and the technological infrastructure.</li>
+	<li>Determination of appropriate dissemination actions targeting groups specialized in transports and logistics as well as the end customer.</li>
+	<li>Shaping a goal framework for strategy determination in the area of "Mobile and Wireless Applications for Transports and Logistics".</li>
+	</ul>
+<p>	The group also evaluated current and emerging technologies, systems, and services with the scope to improve the execution part of the supply chain and the provisioning of excellent services to its members (from suppliers to end customers).
+	Results were published in the form of reports and were presented in a Workshop held on the 5th of February, 2004.
+</p>
+	</description>
+</project>
