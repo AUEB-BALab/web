@@ -126,3 +126,6 @@ dist: html
 	cvs update -Pd ; \
 	gmake ; \
 	tar -C public_html -cf - . | tar -C /home/dds/web/istlab/eltrun -xvf -"
+
+stats:
+	@$(SHELL) tools/stats.sh
