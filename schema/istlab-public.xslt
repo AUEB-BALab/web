@@ -319,14 +319,12 @@
 			<xsl:text> </xsl:text>
 		</xsl:if>
 	</xsl:template>
-	
-	<!-- Format a group reference for the menu {{{1-->
-	<xsl:template match="group" mode="menuref">
-		<xsl:if test="@id != 'g_eltrun'">
-		<li>
-		<a href="../groups/{@id}-details.html"><xsl:value-of select="shortname" /></a>
-		</li>
-		</xsl:if>
+
+	<!-- Format a group reference for the menuhead -->
+	<xsl:template match="group" mode="menuhead">
+		<a href="../groups/{@id}-details.html">
+		<xsl:value-of select="shortname" />
+		</a>
 	</xsl:template>
 	
 	<!-- Format a full group description {{{1-->
@@ -357,13 +355,7 @@
 		Research group information:
 		<br /><br />
 		<xsl:apply-templates select="current()/description" />
-		<br /><br />
-		<xsl:if test="count(rel_link) != 0">
-			Related Links:
-			<br /><br />
-			<xsl:apply-templates select="current()/rel_link" />
-			<br />
-		</xsl:if>
+		<br />
 		Members:
 		<br /><br />
 		<xsl:apply-templates select="/eltrun/member_list/member[contains(@group,$ogroup)]" mode="shortref"/>
@@ -523,7 +515,6 @@
 		</li>
 	</xsl:template>
 
-
 	<!-- Format a group heading {{{1 -->
 	<xsl:template name="group-head">
 		<!-- Generate ELTRUN or group heading -->
@@ -539,14 +530,14 @@
 	
 	<!-- body menu -->
 	<xsl:template name="body-menu">
-		<xsl:apply-templates select="/eltrun/group_list/group[@id = $ogroup]" mode="shortref"/>
+		<xsl:apply-templates select="/eltrun/group_list/group[@id = $ogroup]" mode="menuhead"/>
 		<br />
 		<hr />
 		<a href="../groups/{$ogroup}-members.html">Members</a>
 		<br />
 		<a href="../groups/{$ogroup}-current-projects.html">Current Projects</a>
 		<br />
-		<a href="../groups/{$ogroup}-completed-projects.html">Completed Projects</a>
+		<a href="../groups/{$ogroup}-completed-projects.html">Complete Projects</a>
 		<br />
 		<a href="../publications/{$ogroup}-publications.html">Publications</a>
 		<br />
@@ -605,12 +596,12 @@
 		<body>
 		<a href="http://www.eltrun.gr/"><img src="../images/heading.jpg" alt="ELTRUN - The e-Business Center" border="0" /></a>
 		<br />
-		<table width="750" border="0">
+		<table width="950" border="0">
 			<tbody valign="top">
 			<tr>
 			<xsl:if test="$what != 'member-publications'">
 				<xsl:if test="$ogroup != ''">
-					<th height="800" width="150" align="left" bgcolor="#8B9DC3">
+					<th height="800" width="140" align="left" bgcolor="#8B9DC3">
 					<xsl:call-template name="body-menu" />
 					</th>
 				</xsl:if>
