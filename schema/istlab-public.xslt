@@ -742,7 +742,7 @@
 				<!-- project publications -->
 				<xsl:when test="$what = 'project-publications'">
 					<h1>
-					<a href="../publications/{$oproject}-publications.html">
+					<a href="../projects/{$oproject}.html">
 						<xsl:apply-templates select="/eltrun/project_list/project[@id = $oproject]/shortname" />
 					</a>
 					: Publications
