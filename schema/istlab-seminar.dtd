@@ -17,6 +17,7 @@
 %xhtml11.mod;
 <!-- Entities - remember to keep entities on top in order for xml starlet to work properly -->
 <!ENTITY % date "(#PCDATA)">
+<!ENTITY % pc_flow "(#PCDATA | %Flow.mix;)*">
 
 <!-- seminar -->
 <!ELEMENT seminar (sem_date,sem_time,sem_room,sem_duration,presentation+)>

@@ -784,7 +784,7 @@
 						<xsl:if test="$what != 'project-details'">
 						<xsl:element name="td">
 							<xsl:attribute name="height">800</xsl:attribute>
-							<xsl:attribute name="width">18%</xsl:attribute>
+							<xsl:attribute name="width">150</xsl:attribute>
 							<xsl:attribute name="align">left</xsl:attribute>
 							<xsl:attribute name="bgcolor">
 								<xsl:if test="$ogroup != ''">
@@ -812,7 +812,20 @@
 				</xsl:if>
 				</xsl:if>
 			</xsl:if>
-			<td align="left" width="82%">
+			
+			<xsl:if test="$what = 'member-publications'">
+				<xsl:if test="$what = 'project-publications'">
+					<xsl:if test="$what = 'group-publications'">
+						<xsl:if test="$what = 'seminar'">
+							<xsl:if test="$what = 'member-details'">
+								<td align="left" width="980">
+							</xsl:if>
+						</xsl:if>
+					</xsl:if>
+				</xsl:if>
+			</xsl:if>
+
+			<td align="left" width="830">
 			<!-- choose which HTML to show -->
 			<xsl:choose>
 				<!-- Current projects -->
