@@ -1,0 +1,10 @@
+<seminar>
+	<sem_date>20030110</sem_date>
+	<sem_time>16:00</sem_time>
+	<sem_room>701</sem_room>
+	<sem_duration>25 mins</sem_duration>
+		<presentation by="m_akp">
+          		<pres_title>The state of IS research: report on ICIS 2002, IFIP 'WG8.2', and IFIP ISGLOB03</pres_title>
+          		<pres_url>seminars_files/10_01_2003_akp.pdf</pres_url>
+		 </presentation>
+	</seminar>
