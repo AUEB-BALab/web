@@ -38,36 +38,20 @@
 	
 	<!--<logo>../images/p_mexpress.gif</logo>-->
 	<description>
-The basic aim of MO.R.S.E is to investigate the prospects of exploiting mobile and wireless technologies in the supply chain execution (focusing on urban distributions) and at the same time to design, implement, and evaluate an innovative decision support system, 
-that will embrace dynamic routing algorithms and real-time applications in order to create an efficient supply chain execution network, capable of delivering value to its members (starting from the supplier and reaching the end-customer).
-the project, apart from the design and development of methods, algorithms, systems, and techniques that intend to transform the current state in urban distributions, will also develop a pilot integrated distribution system that will be tested in real-life distribution scenarios.
-More specifically, the project will address the following research areas:
-<br /><br />
-<ul>
-<li>
-Dynamic real-time reconfiguration of urban distribution decision making in order to cope with unforeseen customer demand or unforeseen events.
-</li>
-<li>
-Two-way data communications via packet-based mobile networks (GPRS).
-</li>
-<li>
-Improved fleet operations via monitoring and storing certain information in real-time and fleet rescheduling in both standard and ex-van delivery networks.
-</li>
-<li>
-Real-time collection of performance data (working hours, on-time deliveries, etc.), which can support improved HR management
-</li>
-<li>
-Real-time customer order status notification through mobile networks.
-</li>
-<li>
-Optimal truck utilization for fleets that perform both deliveries and pick-ups (for reverse logistics purposes).
-</li>
-<li>
-Investigation on the business value of using mobile technologies for delivering in a hard or soft time-window environment.
-</li>
-<li>
-Automating the interface between the proposed system and the company's ERP system (back end connectivity).
-</li>
-</ul>
+	<p>
+	The basic aim of MO.R.S.E is to investigate the prospects of exploiting mobile and wireless technologies in the supply chain execution (focusing on urban distributions) and at the same time to design, implement, and evaluate an innovative decision support system, that will embrace dynamic routing algorithms and real-time applications in order to create an efficient supply chain execution network, capable of delivering value to its members (starting from the supplier and reaching the end-customer).
+	The project, apart from the design and development of methods, algorithms, systems, and techniques that intend to transform the current state in urban distributions, will also develop a pilot integrated distribution system that will be tested in real-life distribution scenarios.
+	More specifically, the project will address the following research areas:</p>
+
+	<ol>
+	<li>Dynamic real-time reconfiguration of urban distribution decision making in order to cope with unforeseen customer demand or unforeseen events.
+	</li><li>Two-way data communications via packet-based mobile networks (GPRS).
+	</li><li>Improved fleet operations via monitoring and storing certain information in real-time and fleet rescheduling in both standard and ex-van delivery networks.
+	</li><li>Real-time collection of performance data (working hours, on-time deliveries, etc.), which can support improved HR management
+	</li><li>Real-time customer order status notification through mobile networks.
+	</li><li>Optimal truck utilization for fleets that perform both deliveries and pick-ups (for reverse logistics purposes).
+	</li><li>Investigation on the business value of using mobile technologies for delivering in a hard or soft time-window environment.
+	</li><li>Automating the interface between the proposed system and the ERP system (back end connectivity).
+	</li></ol>
 	</description>
 </project>

@@ -52,21 +52,20 @@
 
 	<!--<logo>../images/p_mexpress.gif</logo>-->
 	<description>
-The ESTIA project aims to provide the means for mass adoption of Business-to-Consumer (B2C) E-Commerce in the tourism sector. The project is introducing value-added services over the next generation access medium of E-Business: Mobile Networks, in order to efficiently support individuals and vendors in the tourism economy. More specifically, this project provides the following tools and services:
-<br /><br />
-<ul>
-<li>
-Easy and cost efficient access to travel information (and all associated info) during the actual holiday trip.
-</li>
-<li>
-Brokering tools and platforms for locating, reserving and purchasing domestic products &amp; services better matching their needs.
-</li>
-<li>
-Personalised services including recommendation and bundling services that best complements their tourist plan and schedule and matches their tourist identity and travel profile.
-</li>
-<li>
-On line virtual communities of groups of people that belong to their target segment, traveling along them that build virtual trails in order to be easy located from other un-informed travellers and people at home.
-</li>
-</ul>	
+		<p>
+		The ESTIA project aims to provide the means for mass adoption of Business-to-Consumer (B2C) E-Commerce in the tourism sector. The project is introducing value-added services over the next generation access medium of E-Business: Mobile Networks, in order to efficiently support individuals and vendors in the tourism economy. More specifically, this project provides the following tools and services:
+		</p>
+
+		<ol>
+			<li>Easy and cost efficient access to travel information (and all associated info) during the actual holiday trip.
+            </li>
+			<li>Brokering tools and platforms for locating, reserving and purchasing domestic products &amp; services better matching their needs.
+            </li>
+			<li>Personalised services including recommendation and bundling services that best complements their tourist plan and schedule and matches their tourist identity and travel profile.
+            </li>
+			<li>On line virtual communities of groups of people that belong to their target segment, traveling along them that build virtual trails in order to be easy located from other un-informed travellers and people at home.
+		</li>
+		</ol>
+
 	</description>
 </project>

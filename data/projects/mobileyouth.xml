@@ -28,57 +28,56 @@
 		
 	<!--<logo>../images/p_mexpress.gif</logo>-->
 	<description>
-The primary goal of this project is to
-study the nature of adoption and social absorption of mobile technologies and
-services in the segment with the highest usage and adoption rates, the youth.
-This objective follows the argument that true mobile innovation will arise when
-today's adolescents become working adults; this is because this is the most
-adaptive user base that learns to assimilate new technologies in unique ways.
-The work plan of the project consists of four phases:
-<br />
-<ul>
-<li>Literature and Background</li>
-<li>Field Studies and Surveys</li>
-<li>Synthesis and Reporting</li>
-<li>Exploitation and Diffusion</li>
-</ul>
-<br />
-The contribution of this project is the
-understanding of the continuous impacts of the mobile telephony and services in
-respect to:
-<br /><br />
-<ul>
-<li>
-<b>Social Changes among teenagers.</b> In which way the mobile phone affects
-the social relationships of the youngsters? Are there any correlations between
-communication patterns and social networks? Which are the needs for
-communication of the teenager and how the mobile phone facilitates the
-communication process? Which is the role of the family? Does the mobile phone
-increase the feeling of security and the level of independency? 
-</li>
-<li>
-<b>Education and the school environment.</b> Do school rules inhibit the need for
-communication? Which is the response of the teenager? Could the mobile
-technology characteristics enhance the operational processes of schools? For
-instance, with the Short Messaging Service the teachers could inform the
-parents when their kids are absent or the pupils could be informed about their
-grades.
-</li>
-<li>
-<b>Business prospects and opportunities.</b> Companies participating in the mobile
-industry should segment, analyze and target the youth market with a unique,
-flexible and at a minimum cost product offering. Thus, the analysis of the
-ocial behaviour and the communications usage patterns of the youngsters is a
-valuable tool for all the actors in the mobile value chain. More than this, as
-today's youth will be the professional mobile users of tomorrow, this study
-will serve as a gauge of future demand patterns.
-</li>
-<li>
-<b>Development of Descriptive Social
-Interaction Scenarios.</b> (case
-studies of how mobile technologies are being assimilated in the daily life of
-adolescents).
-</li>
-</ul>
+			<p>
+
+				The primary goal of this project is to
+				study the nature of adoption and social absorption of mobile technologies and
+				services in the segment with the highest usage and adoption rates, the youth.
+				This objective follows the argument that true mobile innovation will arise when
+				the adolescents of today become working adults; this is because this is the most
+				adaptive user base that learns to assimilate new technologies in unique ways.
+				The work plan of the project consists of four phases:</p>
+
+				<ol><li>Literature and Background</li>
+				<li>Field Studies and Surveys</li>
+				<li>Synthesis and Reporting</li>
+				<li>Exploitation and Diffusion</li>
+				</ol>
+
+				<p>
+
+				The contribution of this project is the
+				understanding of the continuous impacts of the mobile telephony and services in
+				respect to:</p>
+
+                		<ul>
+				<li><b>Social Changes among teenagers.</b> In which way the mobile phone affects
+				the social relationships of the youngsters? Are there any correlations between
+				communication patterns and social networks? Which are the needs for
+				communication of the teenager and how the mobile phone facilitates the
+				communication process? Which is the role of the family? Does the mobile phone
+				increase the feeling of security and the level of independency? </li>
+
+				<li><b>Education and the school environment.</b> Do school rules inhibit the need for
+				communication? Which is the response of the teenager? Could the mobile
+				technology characteristics enhance the operational processes of schools? For
+				instance, with the Short Messaging Service the teachers could inform the
+				parents when their kids are absent or the pupils could be informed about their
+				grades.</li>
+
+				<li><b>Business prospects and opportunities.</b> Companies participating in the mobile
+				industry should segment, analyze and target the youth market with a unique,
+				flexible and at a minimum cost product offering. Thus, the analysis of the
+				social behaviour and the communications usage patterns of the youngsters is a
+				valuable tool for all the actors in the mobile value chain. More than this, as
+				the youth of today will be the professional mobile users of tomorrow, this study
+				will serve as a gauge of future demand patterns.</li>
+
+				<li><b>Development of Descriptive Social
+				Interaction Scenarios.</b> (case
+				studies of how mobile technologies are being assimilated in the daily life of
+				adolescents).</li>
+                </ul>
+
 	</description>
 </project>

@@ -8,7 +8,7 @@
 	<!--<our_budget>328,627 EUR</our_budget>-->
 	<!--<total_budget>3,493,834 EUR</total_budget>-->
 	<funding_agency>General Secretariat of Research and Technology</funding_agency>
-	<funding_programme>Competiteveness - Human Networks in R and T</funding_programme>
+	<funding_programme>Competiteveness - Human Networks in R&amp;T</funding_programme>
 	<!--<project_code>Action 8.3.6</project_code>-->
 	<partner>
 		<shortname>Aristotle University of Thessaloniki</shortname>
@@ -28,44 +28,41 @@
 		
 	<!--<logo>../images/p_mexpress.gif</logo>-->
 	<description>
-The Human Network of Excellence in M-Business (MobiNet) embraces a network of
-cooperation between scientific and industrial partners whose basic aim is the
-dissemination of knowledge and the education of students and executives in the
-area of wireless technologies and corporate applications based on the use of
-mobile devices.
-<br /><br />
-The creation of this network, aims in the synthesis of knowledge for the exchange
-and establishment of mBusiness teaching material. The main goal is the
-development of a complete teaching material portfolio, which will be used for
-the education and training of graduate or postgraduate students as well as
-business executives. This educational material could also be used at the end of
-the project as generic information in training and educational events that will
-be organized from time to time.
-<br /><br />
-The network will consist of 4 main axes:
-<ul>
-<li>
-The organization of a double round of training seminars in 3 cities (Athens, Thessaloniki,
-and Heraklio) whose main goal will be the education of students and business
-executives in the area of wireless technologies and corporate applications
-based on the use of mobile devices. The fist phase of the seminar will include
-introductory coursed in M-Business where as the second one will focus on
-advanced Technological and Business Issues in M-Business.
-</li>
-<li>
-Placement for the graduate and postgraduate
-students in the Universities as well in the participating company of the
-project (Unisystems).
-</li>
-<li>
-The execution of an intra-organizational training programme for the executives
-of the participating firm (Unisystems).
-</li>
-<li>
-The organization of events for the public dissemination of the Network's activities as well as of a
-web page for further on-line information about the Network's progress and
-operation.
-</li>
-</ul>
-    </description>
+			<p>
+			The	Human Network of Excellence in M-Business (MobiNet) embraces a network of
+			cooperation between scientific and industrial partners whose basic aim is the
+			dissemination of knowledge and the education of students and executives in the
+			area of wireless technologies and corporate applications based on the use of
+			mobile devices.</p>
+			
+			<p>
+			The	creation of this network, aims in the synthesis of knowledge for the exchange
+			and establishment of mBusiness teaching material. The main goal is the
+			development of a complete teaching material portfolio, which will be used for
+			the education and training of graduate or postgraduate students as well as
+			business executives. This educational material could also be used at the end of
+			the project as generic information in training and educational events that will
+			be organized from time to time.</p>
+
+			The	network will consist of 4 main axes:
+            	<ul>
+			<li>The organization of a double round of training seminars in 3 cities (Athens, Thessaloniki,
+			and Heraklio) whose main goal will be the education of students and business
+			executives in the area of wireless technologies and corporate applications
+			based on the use of mobile devices. The fist phase of the seminar will include
+			introductory coursed in M-Business where as the second one will focus on
+			advanced Technological and Business Issues in M-Business.</li>
+
+			<li>Placement for the graduate and postgraduate
+			students in the Universities as well in the participating company of the
+			project (Unisystems).</li>
+
+			<li>The execution of an intra-organizational training programme for the executives
+			of the participating firm (Unisystems).</li>
+
+			<li>The organization of
+			events for the public dissemination of the Network activities as well as of a
+			web page for further on-line information about the Network progress and
+			operation.</li></ul>
+	</description>
 </project>

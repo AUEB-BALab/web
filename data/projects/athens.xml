@@ -33,32 +33,30 @@
 		
 	<!--<logo>../images/p_mexpress.gif</logo>-->
 	<description>
-The project aims to carry out research in the area of mobile and wireless technologies and its basic aim is to study their possible exploitation for the provision of advanced information services to the spectators of sports events, emphasising on athletics.
-The project aims to develop a wireless platform based on innovative wireless technologies, such as IEEE 802.11b and Bluetooth.
-The platform will be capable of providing a series of services that will be accessible inside and around a stadium area where athletic events take place.
-The spectators watching an athletic event or approaching the stadium area will be capable of having, through their mobile phone or other wireless portable device, access to the following services:
-<br /><br />
-<ul>
-<li>
-<b>Statistics of contests and athletes</b>. The user will be capable of having access to the current and historical statistics of the athletic contests of his/her interest (records, performance, etc). The user will also be able to watch the current and historical statistics of specific athletes (performance etc).
-</li>
-<li>
-<b>Personalised announcements, information</b>. The user will be capable of choosing the way that he/she will be informed by the system and determine his/her interest through a predefined set of choices.
-</li>
-</ul>
-<br /><br />
-The basic goal of ATH.EN.S is to provide to spectators of sport events results that are going to be based on three main axes:
-<br /><br />
-<ul>
-<li>
-<b>In-depth analysis in the area of service provisioning to the spectators of sports events</b>. This will be accomplished through an intense study of the current state-of-the-art techniques in the area of mobile business, and more specifically in the area of technical infrastructure, interconnection with other information systems (wireless or wireline), standardisation of communication, and so on.
-</li>
-<li>
-<b>An integrated application system</b>, which will consist of a complete database and a wireless platform, through which the spectators will be able to receive the aforementioned services in real time.
-</li>
-<li>
-<b>An integrated business plan</b>, which will explore and exemplify the potential of the commercial exploitation of the system and its services, based on the results of the system evaluation during the trial period of a sport event.
-</li>
-</ul>
-    </description>
+ <p>
+    		The project aims to carry out research in the area of mobile and wireless technologies and its basic aim is to study their possible exploitation for the provision of advanced information services to the spectators of sports events, emphasising on athletics.
+    		The project aims to develop a wireless platform based on innovative wireless technologies, such as IEEE 802.11b and Bluetooth.
+    		The platform will be capable of providing a series of services that will be accessible inside and around a stadium area where athletic events take place.
+    		The spectators watching an athletic event or approaching the stadium area will be capable of having, through their mobile phone or other wireless portable device, access to the following services:
+		</p>
+		
+		<ul>
+		<li><b>Statistics of contests and athletes</b>. The user will be capable of having access to the current and historical statistics of the athletic contests of his/her interest (records, performance, etc). The user will also be able to watch the current and historical statistics of specific athletes (performance etc).
+		</li>
+		<li><b>Personalised announcements, information</b>. The user will be capable of choosing the way that he/she will be informed by the system and determine his/her interest through a predefined set of choices.
+        	</li>
+		</ul>
+		
+		<p>The basic goal of ATH.EN.S is to provide to spectators of sport events results that are going to be based on three main axes:
+		</p>
+		<ul>
+		<li><b>In-depth analysis in the area of service provisioning to the spectators of sports events</b>. This will be accomplished through an intense study of the current state-of-the-art techniques in the area of mobile business, and more specifically in the area of technical infrastructure, interconnection with other information systems (wireless or wireline), standardisation of communication, and so on.
+		</li>
+		<li><b>An integrated application system</b>, which will consist of a complete database and a wireless platform, through which the spectators will be able to receive the aforementioned services in real time.
+		</li>
+		<li><b>An integrated business plan</b>, which will explore and exemplify the potential of the commercial exploitation of the system and its services, based on the results of the system evaluation during the trial period of a sport event.
+        	</li>
+		</ul>
+
+	</description>
 </project>

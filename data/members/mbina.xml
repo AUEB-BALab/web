@@ -11,14 +11,9 @@
 	<postal_address>Patision 76, GR-104 34 Athens, Greece</postal_address>
 	<!--<photo>../images/spi.jpg</photo>-->
 	<shortcv>
-Mary Bina is a graduate from the department of Electrical Engineering and Computer Science of the National Technical University of Athens. 
-During her studies, she specialized in the area of Telecommunications an in particular in Wireless and Mobile Communications Networks and Digital Communications. Following her studies, she was admitted first in the Decision Sciences Graduate Program. 
-E-commerce specialization of the Athens University of Economics and Business.
-There, she got involved in various projects in the areas of Information Systems, E-commerce and Mobile Business applications.
-Her Master Thesis concerning the transformation of an existing e-business model into the mobile environment excelled among the other projects of the program.
-She also became a member of ELTRUN/WRC. Currently she works in 
-preparing her Doctoral Thesis in the area of Mobile Business and is also involved in research projects.
-Her research interests concern mobile and wireless applications with an emphasis on wireless Internet and emerging wireless business models.
-She is also a member of the Technical Chamber of Greece.
+		<p>
+	Mary Bina is a graduate from the department of Electrical Engineering and Computer Science of the National Technical University of Athens. During her studies, she specialized in the area of Telecommunications an in particular in Wireless and Mobile Communications Networks and Digital Communications. Following her studies, she was admitted first in the Decision Sciences Graduate Program (E-commerce specialization) of the Athens University of Economics and Business. There, she got involved in various projects in the areas of Information Systems, E-commerce and Mobile Business applications. Her Master Thesis concerning the transformation of an existing e-business model into the mobile environment excelled among the other projects of the program. She also became a member of ELTRUN/WRC. Currently she works in preparing her Doctoral Thesis in the area of Mobile Business and is also involved in research projects.  Her research interests concern mobile and wireless applications with an emphasis on wireless Internet and emerging wireless business models.
+	She is also a member of the Technical Chamber of Greece.
+      </p>
 	</shortcv>
 </member>
