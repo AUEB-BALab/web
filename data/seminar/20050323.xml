@@ -1,7 +1,7 @@
 <seminar>
 	<sem_date>20050323</sem_date>
-	<sem_time></sem_time>
-	<sem_room></sem_room>
+	<sem_time>13:00</sem_time>
+	<sem_room>901</sem_room>
 	<sem_duration>90 mins</sem_duration>
 		<presentation by="m_drosos">
           		<pres_title> PhD empirical design and first results
