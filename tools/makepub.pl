@@ -15,6 +15,7 @@
 BEGIN {
 	$/ = "@";
 	open(RUN, ">build/bibrun") || die "$!\n";
+	print RUN "(\n";
 	$includepath = '-b "-include-directory data/publications -include-directory tools"' if ($^O =~ m/mswin32/i);
 }
 
@@ -73,11 +74,21 @@ END {
 				print OUT '\bibdata{macro,book,article,inproceedings,incollection,whitepaper,techreport,workingpaper}';
 				print OUT "\n$citations{$group}{$id}{$type}";
 				close OUT;
- 				print RUN qq{perl tools/bib2html $includepath -s empty $auxfile public_html/publications/${id}-publications.html} . q{ 2>&1 | grep -v '^[UTD][sha][eit]'} . "\n" unless($type eq 'any');
+ 				print RUN qq{perl tools/bib2html $includepath -s empty $auxfile public_html/publications/${id}-publications.html\n} unless($type eq 'any');
 			}
 			print "\t</publication_type>\n";
 		}
 	}
 	print "</publication_type_list>\n";
-	print RUN "exit 0\n";
+	print RUN q{ ) 2>&1 |
+perl -n -e '
+# Remove bib2html noise
+	next if (/^Use of uninitialized/);
+	next if (/^The /);
+	next if (/^This is /);
+	next if (/^Database /);
+	print;
+'
+exit 0
+};
 }
