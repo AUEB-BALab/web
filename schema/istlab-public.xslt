@@ -355,7 +355,7 @@
 			Relative Links:
 			<br /><br />
 			<xsl:apply-templates select="current()/rel_link" />
-			<br /><br />
+			<br />
 		</xsl:if>
 		Members:
 		<br /><br />
@@ -363,7 +363,7 @@
 	</xsl:template>
 	
 	<xsl:template match="rel_link">
-		<xsl:apply-templates />
+		<xsl:copy-of select="*"/><br />
 	</xsl:template>
 	
 	<!-- Format a project reference {{{1 -->
