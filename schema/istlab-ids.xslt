@@ -17,6 +17,7 @@
 	<xsl:template match="group" >
 		<xsl:if test="$category = 'group'">
 			<xsl:value-of select="@id" />
+			<xsl:text> </xsl:text>
 		</xsl:if>
 	</xsl:template>
 
@@ -24,6 +25,7 @@
 	<xsl:template match="member">
 		<xsl:if test="$category = 'member'">
 			<xsl:value-of select="@id" />
+			<xsl:text> </xsl:text>
 		</xsl:if>
 	</xsl:template>
 
@@ -31,6 +33,7 @@
 	<xsl:template match="project">
 		<xsl:if test="$category = 'project'">
 			<xsl:value-of select="@id" />
+			<xsl:text> </xsl:text>
 		</xsl:if>
 	</xsl:template>
 
