@@ -33,6 +33,14 @@ MEMBERIDS=$(shell xml tr ${IDXSLT} -s category=member ${DB})
 # HTML output directory
 HTML=public_html
 
+ifdef MACHTYPE
+# Unix
+SSH=ssh
+else
+# Windows
+SSH=plink
+endif
+
 all: html
 
 $(DB): ${MEMBERFILES} ${GROUPFILES} ${PROJECTFILES} $(BIBFILES) tools/makepub.pl
@@ -106,3 +114,7 @@ html: ${DB}
 		xml tr ${PXSLT} -s omember=$$member -s what=member-publications ${DB} >${HTML}/publications/$$member-publications.html ; \
 	done
 	$(SHELL) build/bibrun
+
+dist: html
+	$(SSH) istlab.dmst.aueb.gr "cd /home/dds/src/eltrun-web ; \
+	tar -C public_html -cf - . | tar -C /home/dds/web/istlab/eltrun -xvf -"
