@@ -713,14 +713,14 @@
 			<img src="../images/heading.jpg" alt="ELTRUN - The e-Business Center" border="0" />
 		</a>
 		<br />
-		<table width="950" border="0">
+		<table border="0">
 			<tbody valign="top">
 			<tr>
 			<xsl:if test="$what != 'member-publications'">
 				<xsl:if test="$what != 'seminar'">
 					<xsl:if test="$what != 'member-details'">
 						<xsl:if test="$what != 'project-details'">
-						<xsl:element name="th">
+						<xsl:element name="td">
 							<xsl:attribute name="height">800</xsl:attribute>
 							<xsl:attribute name="width">190</xsl:attribute>
 							<xsl:attribute name="align">left</xsl:attribute>
@@ -748,7 +748,7 @@
 					</xsl:if>
 				</xsl:if>
 			</xsl:if>
-			<th align="left">
+			<td align="left">
 			<!-- choose which HTML to show -->
 			<xsl:choose>
 				<!-- Current projects -->
@@ -829,7 +829,7 @@
 					<xsl:apply-templates select="/eltrun/page_list/page[@id = $opage]" mode="full"/>
 				</xsl:when>
 			</xsl:choose>
-			</th>
+			</td>
 			</tr>
 			</tbody>
 		</table>
