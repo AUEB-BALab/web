@@ -3,11 +3,12 @@
 	<sem_time>09:00</sem_time>
 	<sem_room>901</sem_room>
 	<sem_duration></sem_duration>
-		<presentation by="">
-          		<pres_title>Dr Manolis Kolezakis
-Presentation of Doctoral Disseration (UMIST) with title: 
-		  		    "Business Modelling in the Context of Enterprise Resource Planning Systems: The SAP approach"
-                         </pres_title>
-          		 <pres_url>seminars_files/KolezakisUMIST03.pdf</pres_url>
+		<presentation>
+          		<pres_title>
+			Presentation of Doctoral Disseration (UMIST) with title: 
+		  	"Business Modelling in the Context of Enterprise Resource Planning Systems: The SAP approach"
+                        </pres_title>
+          		<pres_url>seminars_files/KolezakisUMIST03.pdf</pres_url>
+			<pres_name>Dr Manolis Kolezakis</pres_name>
 		</presentation>
 </seminar>
