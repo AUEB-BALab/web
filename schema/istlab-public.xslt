@@ -212,9 +212,9 @@
 		</xsl:if>
 	</xsl:template>
 
-	<!-- Format a member reference {{{1-->
-	<xsl:template match="member" mode="alumnus-ref">
-		<xsl:if test="count(alumnus) != 0">
+		<!-- Format a member reference {{{1 -->
+	<xsl:template match="member" mode="shortref">
+		<xsl:if test="count(alumnus) = 0">
 		<li>
 		<a href="../members/{@id}.html">
 		<xsl:if test="count(memb_title) != 0">
@@ -228,7 +228,7 @@
 		</li>
 		</xsl:if>
 	</xsl:template>
-
+	
 	<!-- Format members information {{{1 -->
 	<xsl:template match="member" mode="full">
 		<h2>
@@ -571,11 +571,10 @@
 		<xsl:call-template name="date">
 			<xsl:with-param name="date" select="sem_date" />
 		</xsl:call-template>
-		<xsl:text>, </xsl:text>
-		<xsl:value-of select="sem_name" />
 		<xsl:text> - </xsl:text>
 		<xsl:value-of select="sem_title" />
 	    </xsl:element>
+	    <br />
 	</xsl:template>
 	
 	<!-- Seminar detailed template -->
@@ -587,7 +586,7 @@
 		    <xsl:value-of select="sem_date" />
 		</xsl:attribute>
 	    </xsl:element>
-	    Presenter: <xsl:value-of select="sem_name" /><br />
+	    Presenter: <xsl:apply-templates select="/eltrun/member_list/member [@id=current()/@by]" mode="simple-ref" /><br />
 	    Date:
 	    <xsl:call-template name="date">
 		<xsl:with-param name="date" select="sem_date" />
@@ -764,13 +763,13 @@
 				<!-- seminar -->
 				<xsl:when test="$what = 'seminar'">
 					<h2>Eltrun Seminars</h2>
-					<xsl:apply-templates select="/eltrun/seminar_list/seminar" mode="ref" />
-					<!--    <xsl:sort select="sem_date" order="asceding"/>
-					</xsl:apply-templates> -->
+					<xsl:apply-templates select="/eltrun/seminar_list/seminar" mode="ref">
+					    <xsl:sort select="sem_date" data-type="number" order="descending"/>
+					</xsl:apply-templates>
 					<br /><br />
-					<xsl:apply-templates select="/eltrun/seminar_list/seminar" mode="full" />
-					<!--    <xsl:sort select="sem_date" order="asceding"/>
-					</xsl:apply-templates> -->
+					<xsl:apply-templates select="/eltrun/seminar_list/seminar" mode="full">
+					    <xsl:sort select="sem_date" data-type="number" order="descending"/>
+					</xsl:apply-templates>
 				</xsl:when>
 			</xsl:choose>
 			</th>

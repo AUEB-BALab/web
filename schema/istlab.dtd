@@ -102,11 +102,10 @@
 <!ELEMENT has_workingpaper EMPTY>
 <!-- seminars -->
 <!ELEMENT seminar_list (seminar*)>
-<!ELEMENT seminar (sem_name,sem_date,sem_time,sem_title,sem_room,sem_url?,sem_duration)>
+<!ELEMENT seminar (sem_date,sem_time,sem_title,sem_room,sem_url?,sem_duration)>
 <!ATTLIST seminar
 	by IDREF #REQUIRED
 >
-<!ELEMENT sem_name (#PCDATA)>
 <!ELEMENT sem_date %date;>
 <!ELEMENT sem_time (#PCDATA)>
 <!ELEMENT sem_title (#PCDATA)>
