@@ -160,7 +160,13 @@ dist: html
 	umask 002 ; \
 	cvs update -d ; \
 	gmake ; \
-	tar -C public_html -cf - . | tar -C /home/dds/web/istlab/eltrun -xvf -"
+	tar -C $(HTML) -cf - . | tar -C /home/dds/web/istlab/eltrun -xvf -"
 
 stats:
 	@$(SHELL) tools/stats.sh
+
+colgraph: $(HTML)/images/colgraph.svg
+
+$(HTML)/images/colgraph.svg: tools/colgraph.sh $(BIBFILES)
+	$(SHELL) tools/colgraph.sh >build/colgraph.neato
+	neato build/colgraph.neato -Tsvg -o$@
