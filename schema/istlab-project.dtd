@@ -1,0 +1,39 @@
+<!--
+ -
+ - Document Type Description for the ELTRUN projects
+ -
+ - (C) Copyright 2004 Diomidis Spinellis.
+ -
+ - $Id$
+ -
+-->
+<!-- Import modular XHTML -->
+<!ENTITY % xhtml-ruby.module "IGNORE">
+<!ENTITY % xhtml-bidi.module "IGNORE">
+<!ENTITY % xhtml-ssismap.module "IGNORE">
+<!ENTITY % xhtml-csismap.module "IGNORE">
+<!ENTITY % xhtml11.mod PUBLIC "-//W3C//ENTITIES XHTML 1.1//EN"
+		 "xhtml11.dtd">
+%xhtml11.mod;
+<!-- Entities - remember to keep entities on top in order for xml starlet to work properly-->
+<!ENTITY % image "(#PCDATA  | %Flow.mix;)*">
+<!ENTITY % phone "(#PCDATA)">
+<!ENTITY % date "(#PCDATA)">
+<!ENTITY % pc_flow "(#PCDATA | %Flow.mix;)*">
+<!-- -->
+<!ELEMENT project (shortname, projtitle, startdate?, enddate, web_site?, our_budget?, total_budget?, funding_agency?, funding_programme?, project_code?, partner*, logo?, description)>
+<!ATTLIST project
+	id ID #REQUIRED
+	contact CDATA #IMPLIED
+	scientific_coordinator CDATA #IMPLIED
+	project_manager CDATA #IMPLIED
+	group CDATA #REQUIRED
+	international (yes | no) #REQUIRED
+	type (consulting | rtd | training | dissemination) #REQUIRED
+>
+<!ELEMENT projtitle (#PCDATA)>
+<!ELEMENT our_budget (#PCDATA)>
+<!ELEMENT total_budget (#PCDATA)>
+<!ELEMENT funding_agency (#PCDATA)>
+<!ELEMENT funding_programme (#PCDATA)>
+<!ELEMENT project_code (#PCDATA)>

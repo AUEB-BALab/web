@@ -37,15 +37,24 @@ all: html
 
 $(DB): ${MEMBERFILES} ${GROUPFILES} ${PROJECTFILES} $(BIBFILES) tools/makepub.pl
 	echo '<?xml version="1.0"?>' > $@
-	echo '<eltrun>' >>$@
-	echo '<group_list>' >>$@
-	cat ${GROUPFILES} >>$@
+	echo '<eltrun>' >>$@ 
+	echo '<group_list>' >>$@ 
+	for file in $(GROUPFILES); \
+	do \
+		grep -v -e "xml version=" $$file >>$@; \
+	done 
 	echo '</group_list>' >>$@
 	echo '<member_list>' >>$@
-	cat ${MEMBERFILES} >>$@
+	for file in $(MEMBERFILES); \
+	do \
+		grep -v -e "xml version=" $$file >>$@; \
+	done 
 	echo '</member_list>' >>$@
 	echo '<project_list>' >>$@
-	cat ${PROJECTFILES} >>$@
+	for file in $(PROJECTFILES); \
+	do \
+		grep -v -e "xml version=" $$file >>$@; \
+	done 
 	echo '</project_list>' >>$@
 	perl -n tools/makepub.pl $(BIBFILES) >>$@
 	echo '</eltrun>' >>$@
@@ -58,6 +67,21 @@ clean:
 		${HTML}/publications/* 2>/dev/null
 
 val: ${DB}
+	@echo '---> Checking group data XML files ... '
+	for file in $(GROUPFILES); \
+	do \
+		xml val -d schema/eltrun-group.dtd $$file; \
+	done 
+	@echo '---> Checking member data XML files ...'
+	for file in $(MEMBERFILES); \
+	do \
+		xml val -d schema/eltrun-member.dtd $$file; \
+	done
+	@echo '---> Checking project data XML files ...'
+	for file in $(PROJECTFILES); \
+	do \
+		xml val -d schema/eltrun-project.dtd $$file; \
+	done
 	xml val -d schema/eltrun.dtd $(DB)
 
 html: ${DB}	

@@ -1,3 +1,4 @@
+<?xml version="1.0"?>
 <member id="m_dds" group="g_eltrun g_sense">
 	<givenname>Diomidis</givenname>
 	<surname>Spinellis</surname>
@@ -11,7 +12,7 @@
 	<photo>../images/spi.jpg</photo>
 	<shortcv>
 		<p>
-<i>Diomidis Spinellis</i> holds an MEng in Software Engineering and
+			<i>Diomidis Spinellis</i> holds an MEng in Software Engineering and
 a PhD in Computer Science both from Imperial College (University of
 London, UK). Currently he is an Assistant Professor at the Department of
 Management Science and Technology at the Athens University of Economics

@@ -1,3 +1,4 @@
+<?xml version="1.0"?>
 <project id="p_mexpress" group="g_eltrun g_sense g_wrc" scientific_coordinator="m_dds" contact="m_dds" international="yes" type="rtd">
 	<shortname>mExpress</shortname>
 	<projtitle>mobile in-EXhibition PRovision of Electronic Support Services</projtitle>
@@ -61,9 +62,9 @@ project will provide an integrated mediation platform (mEXPRESS Service
 Provider) oriented to exhibition shows and events that will satisfy
 three types of objectives:
 	<ul>
-	<li>Enhance and facilitate visitors experience in terms of interaction and functionality in an information-rich environment such as an exhibition show.</li>
-	<li>Improve business communications and promotions within the exhibition and extend promotional effectiveness during and after the exhibition</li>
-	<li>Assist and support exhibition management and operations by offering real-time location information of persons within the exhibition.</li>
-	</ul>
+			<li>Enhance and facilitate visitors experience in terms of interaction and functionality in an information-rich environment such as an exhibition show.</li>
+			<li>Improve business communications and promotions within the exhibition and extend promotional effectiveness during and after the exhibition</li>
+			<li>Assist and support exhibition management and operations by offering real-time location information of persons within the exhibition.</li>
+		</ul>
 	</description>
 </project>

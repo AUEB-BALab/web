@@ -1,3 +1,4 @@
+<?xml version="1.0"?>
 <member id="m_bkarak" group="g_eltrun g_sense">
 	<givenname>Vassilios</givenname>
 	<surname>Karakoidas</surname>
@@ -6,6 +7,6 @@
 	<web_site>http://istlab.dmst.aueb.gr/~bkarak/</web_site>
 	<photo>../images/eltrun.jpg</photo>
 	<shortcv>
-<i>Vassilios Karakoidas</i> is a PhD candidate in Athens University of Economics and Business at the Department of Management Science and Technology. He holds an BSc in Computer Science (University of Piraeus) and  an MSc in Information Systems (Athens University of Economics and Business). He is former member of the Health Informatics laboratory at University of Piraeus. He is now a member of eLTRUN (http://www.eltrun.aueb.gr/) and has been involved in various research projects. The most  recent are Gemini (IST – 2001 – 33400) and PRAXIS. His research interests include Software Engineering, Programming Languages, Operating Systems and Networking. He is an author of a number of open-source and public-domain software packages and tools.
+		<i>Vassilios Karakoidas</i> is a PhD candidate in Athens University of Economics and Business at the Department of Management Science and Technology. He holds an BSc in Computer Science (University of Piraeus) and  an MSc in Information Systems (Athens University of Economics and Business). He is former member of the Health Informatics laboratory at University of Piraeus. He is now a member of eLTRUN (http://www.eltrun.aueb.gr/) and has been involved in various research projects. The most  recent are Gemini (IST – 2001 – 33400) and PRAXIS. His research interests include Software Engineering, Programming Languages, Operating Systems and Networking. He is an author of a number of open-source and public-domain software packages and tools.
 	</shortcv>
 </member>

@@ -1,0 +1,29 @@
+<!--
+ -
+ - Document Type Description for the ELTRUN groups
+ -
+ - (C) Copyright 2004 Diomidis Spinellis.
+ -
+ - $Id $
+ -
+-->
+<!-- Import modular XHTML -->
+<!ENTITY % xhtml-ruby.module "IGNORE">
+<!ENTITY % xhtml-bidi.module "IGNORE">
+<!ENTITY % xhtml-ssismap.module "IGNORE">
+<!ENTITY % xhtml-csismap.module "IGNORE">
+<!ENTITY % xhtml11.mod PUBLIC "-//W3C//ENTITIES XHTML 1.1//EN"
+		 "xhtml11.dtd">
+%xhtml11.mod;
+<!-- Main group dtd -->
+<!ENTITY % pc_flow "(#PCDATA | %Flow.mix;)*">
+<!ELEMENT group (grouptitle, shortname, description, rel_link*, logo?)>
+<!ATTLIST group
+	id ID #REQUIRED
+	director CDATA #REQUIRED
+	contact CDATA #REQUIRED
+>
+<!ELEMENT grouptitle (#PCDATA)>
+<!ELEMENT rel_link %pc_flow;>
+<!ELEMENT shortname (#PCDATA)>
+<!ELEMENT description %pc_flow;>
