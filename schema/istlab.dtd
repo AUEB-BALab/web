@@ -100,6 +100,18 @@
 <!ELEMENT has_techreport EMPTY>
 <!ELEMENT has_whitepaper EMPTY>
 <!ELEMENT has_workingpaper EMPTY>
+<!-- seminars -->
+<!ELEMENT seminar (name,date,time,room,url?)>
+<!ATTLIST seminar
+	by IDREF #REQUIRED
+>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT date %date>
+<!ELEMENT time (#PCDATA)>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT room (#PCDATA)>
+<!ELEMENT url (#PCDATA)>
+
 <!-- Shared elements {{{1 -->
 <!ELEMENT description %pc_flow;>
 <!ELEMENT web_site (#PCDATA)>
