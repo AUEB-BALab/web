@@ -107,7 +107,7 @@
 	by IDREF #REQUIRED
 >
 <!ELEMENT sem_name (#PCDATA)>
-<!ELEMENT sem_date %date>
+<!ELEMENT sem_date %date;>
 <!ELEMENT sem_time (#PCDATA)>
 <!ELEMENT sem_title (#PCDATA)>
 <!ELEMENT sem_room (#PCDATA)>
