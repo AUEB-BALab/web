@@ -5,5 +5,7 @@
 	<description>
 		The umbrella group.
 	</description>
-	<rel_link><a href="http://www.dmst.aueb.gr/">Department of Management Science and Technology</a></rel_link>
+	<rel_link>
+		<a href="http://www.dmst.aueb.gr/">Department of Management Science and Technology</a>
+	</rel_link>
 </group>

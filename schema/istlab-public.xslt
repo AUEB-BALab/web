@@ -164,7 +164,7 @@
 
 	<!-- Format a member reference {{{1 -->
 	<xsl:template match="member" mode="simple-ref" >
-		<xsl:if test="count(alumni) = 0">
+		<xsl:if test="count(alumnus) = 0">
 			<a href="../members/{@id}.html">
 			<xsl:if test="count(memb_title) != 0">
 				<xsl:value-of select="memb_title"/>
@@ -179,7 +179,7 @@
 	
 	<!-- Format a member reference {{{1 -->
 	<xsl:template match="member" mode="ref" >
-		<xsl:if test="count(alumni) = 0">
+		<xsl:if test="count(alumnus) = 0">
 			<li>
 			<a href="../members/{@id}.html">
 			<xsl:if test="count(memb_title) != 0">
@@ -194,8 +194,9 @@
 		</xsl:if>
 	</xsl:template>
 	
+	<!-- Format a member reference {{{1 -->
 	<xsl:template match="member" mode="shortref">
-		<xsl:if test="count(alumni) = 0">
+		<xsl:if test="count(alumnus) = 0">
 		<li>
 		<a href="../members/{@id}.html">
 		<xsl:if test="count(memb_title) != 0">
@@ -210,8 +211,9 @@
 		</xsl:if>
 	</xsl:template>
 	
-	<xsl:template match="member" mode="alumni-ref">
-		<xsl:if test="count(alumni) != 0">
+	<!-- Format a member reference {{{1-->
+	<xsl:template match="member" mode="alumnus-ref">
+		<xsl:if test="count(alumnus) != 0">
 		<li>
 		<a href="../members/{@id}.html">
 		<xsl:if test="count(memb_title) != 0">
@@ -226,7 +228,7 @@
 		</xsl:if>
 	</xsl:template>
 	
-	<!-- Format members information --> 
+	<!-- Format members information {{{1 --> 
 	<xsl:template match="member" mode="full">
 		<h2>
 		<xsl:if test="count(memb_title) != 0">
@@ -254,6 +256,11 @@
 			</xsl:element>										
 		</xsl:if>
 		<br /> <br />
+		<xsl:if test="count(alumnus) != 0">
+			<font color="#FF0000">
+			<h4>This member is no longer active.</h4>
+			</font>
+		</xsl:if>
 		<xsl:if test="count(email) != 0">
 			E-mail: <xsl:value-of select="email" />
 			<br />
@@ -281,7 +288,9 @@
 		<xsl:if test="count(web_site) != 0">
 			Web Site:
 			<xsl:element name="a">
-				<xsl:attribute name="href"><xsl:value-of select="web_site"/></xsl:attribute>
+					<xsl:attribute name="href">
+						<xsl:value-of select="web_site"/>
+					</xsl:attribute>
 				<xsl:value-of select="web_site"/>
 			</xsl:element>
 			<br /><br />
@@ -304,7 +313,7 @@
 		<xsl:text> </xsl:text>
 	</xsl:template>
 	
-	<!-- Format a group reference for the menu -->
+	<!-- Format a group reference for the menu {{{1-->
 	<xsl:template match="group" mode="menuref">
 		<xsl:if test="@id != 'g_eltrun'">
 		<li>
@@ -313,7 +322,7 @@
 		</xsl:if>
 	</xsl:template>
 	
-	<!-- Format a full group description -->
+	<!-- Format a full group description {{{1-->
 	<xsl:template match="group" mode="full">
 		<h2>
 		<xsl:value-of select="shortname"/>
@@ -345,14 +354,18 @@
 		<xsl:if test="count(rel_link) != 0">
 			Relative Links:
 			<br /><br />
-			<xsl:value-of select="rel_link"/>
+			<xsl:apply-templates select="current()/rel_link" />
 			<br /><br />
 		</xsl:if>
 		Members:
 		<br /><br />
 		<xsl:apply-templates select="/eltrun/member_list/member[contains(@group,$ogroup)]" mode="shortref"/>
 	</xsl:template>
-
+	
+	<xsl:template match="rel_link">
+		<xsl:apply-templates />
+	</xsl:template>
+	
 	<!-- Format a project reference {{{1 -->
 	<xsl:template match="project" mode="ref">
 		<li>
@@ -407,15 +420,21 @@
 	
 	<!-- body menu -->
 	<xsl:template name="body-menu">
-		<a href="../groups/g_eltrun-members.html">Members</a>
+		<xsl:apply-templates select="/eltrun/group_list/group[@id = $ogroup]" mode="shortref"/>
 		<br />
-		<a href="../groups/g_eltrun-current-projects.html">Current Projects</a>
+		<hr />
+		<a href="../groups/{$ogroup}-members.html">Members</a>
 		<br />
-		<a href="../groups/g_eltrun-completed-projects.html">Completed Projects</a>
+		<a href="../groups/{$ogroup}-current-projects.html">Current Projects</a>
 		<br />
-		<a href="../publications/g_eltrun-publications.html">Publications</a>
+		<a href="../groups/{$ogroup}-completed-projects.html">Completed Projects</a>
 		<br />
-		<a href="../groups/g_eltrun-alumni.html">Alumni</a>
+		<a href="../publications/{$ogroup}-publications.html">Publications</a>
+		<br />
+		<a href="../groups/{$ogroup}-alumni.html">Alumni</a>
+		<br />
+		<hr />
+		<a href="../groups/g_eltrun-details.html">Main group</a>
 	</xsl:template>
 	
 	<!-- Main transformation {{{1 -->
@@ -460,14 +479,20 @@
 		
 		<!-- BODY -->
 		<body>
-		<a href="http://www.eltrun.gr/"><img src="../images/heading.jpg" alt="eLTRUN - The e-Business Center" border="0" /></a>
+		<a href="http://www.eltrun.gr/"><img src="../images/heading.jpg" alt="ELTRUN - The e-Business Center" border="0" /></a>
 		<br />
 		<table width="750" border="0">
 			<tbody valign="top">
 			<tr>
-			<th width="150" align="left">
-			<xsl:call-template name="body-menu" />
-			</th>
+			<xsl:if test="$what != 'group-publications'">
+				<xsl:if test="$what != 'member-publications'">
+					<xsl:if test="$ogroup != ''">
+						<th width="150" align="left">
+						<xsl:call-template name="body-menu" />
+						</th>
+					</xsl:if>
+				</xsl:if>
+			</xsl:if>
 			<th align="left">
 			<!-- choose which HTML to show -->
 			<xsl:choose>
@@ -529,7 +554,7 @@
 				<!-- alumni -->
 				<xsl:when test="$what = 'alumni'">
 					<h2>Alumni</h2>
-					<xsl:apply-templates select="/eltrun/member_list/member [contains(@group,$ogroup)]" mode="alumni-ref" />
+					<xsl:apply-templates select="/eltrun/member_list/member [contains(@group,$ogroup)]" mode="alumnus-ref" />
 				</xsl:when>
 			</xsl:choose>
 			</th>

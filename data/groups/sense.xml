@@ -32,6 +32,10 @@ The objectives of the SENSE group are:
 			<li>Evaluate technology advances in new information technologies.</li>
 		</ul>
 	</description>
-	<ref_link><a href="http://istlab.dmst.aueb.gr/colab.html">Collaborators</a></ref_link>
-	<ref_link><a href="http://istlab.dmst.aueb.gr/itru.html">Newsletter</a></ref_link>
+	<rel_link>
+		<a href="http://istlab.dmst.aueb.gr/colab.html">Collaborators</a>
+	</rel_link>
+	<rel_link>
+		<a href="http://istlab.dmst.aueb.gr/itru.html">Newsletter</a>
+	</rel_link>
 </group>

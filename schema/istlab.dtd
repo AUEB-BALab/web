@@ -55,7 +55,7 @@
 <!ELEMENT country (#PCDATA)>
 <!-- Member list elements {{{1 -->
 <!ELEMENT member_list (member*)>
-<!ELEMENT member (givenname, surname, memb_title?, email, web_site?, office_phone?, mobile_phone?, fax?, alumni?, office_address?, postal_address?, photo?, shortcv)>
+<!ELEMENT member (givenname, surname, memb_title?, email, web_site?, office_phone?, mobile_phone?, fax?, alumnus?, office_address?, postal_address?, photo?, shortcv)>
 <!ATTLIST member
 	id ID #REQUIRED
 	group IDREFS #REQUIRED
@@ -69,7 +69,7 @@
 <!ELEMENT mobile_phone %phone;>
 <!ELEMENT fax %phone;>
 <!ELEMENT photo %image;>
-<!ELEMENT alumni EMPTY>
+<!ELEMENT alumnus EMPTY>
 <!ELEMENT office_address (#PCDATA)>
 <!ELEMENT postal_address (#PCDATA)>
 <!-- Publication list elements {{{1 -->
