@@ -4,8 +4,9 @@ Groups
 ------
 Name
 Shortname
-Id
-Director id
+Id (attribute)
+Director id (attribute)
+Contact (attribute)
 Description
 Addlinks
 Logo
@@ -24,7 +25,7 @@ Mobile phone
 Fax
 Birthdate
 Short CV
-Group membership (e.g. WRC, SENSE, ELTRUN)
+Group membership (e.g. WRC, SENSE, ELTRUN) (attribute)
 Job title
 Join date
 Leave date
@@ -50,3 +51,6 @@ Project partners:
 	Web site
 Group membership (e.g. WRC, SENSE, ELTRUN)
 Logo
+PRoject manager (attribute)
+Scientific coordinator (attribute)
+Contact (attribute)
