@@ -1,16 +1,30 @@
 <?xml version="1.0"?>
-<project id="p_eAware" group="g_eltrun g_sense" contact="m_dds" scientific_coordinator="m_dds" international="yes" type="dissemination">
+<project id="p_eAware" group="g_eltrun g_sense" contact="m_dds" 
+scientific_coordinator="m_dds" international="yes" type="dissemination">
 	<shortname>eAware</shortname>
-	<projtitle>e-Awareness for Europe: Digital Awareness and Security for the Citizen in Europe</projtitle>
+	<projtitle>e-Awareness for Europe: Digital Awareness and Security for the 
+Citizen in Europe</projtitle>
 	<startdate>20020101</startdate>
-	<enddate>20030101</enddate>
+	<enddate>20031231</enddate>
 	<web_site>http://www.iaac.org.uk/eaware/</web_site>
+	<our_budget>17.160 EUR</our_budget>
 	<total_budget>268.800 EUR</total_budget>
 	<funding_agency>European Commission</funding_agency>
-	<funding_programme>Improving Human Potential and Socio-economic Knowledge Base</funding_programme>
+	<funding_programme>Improving Human Potential and Socio-economic Knowledge 
+Base</funding_programme>
 	<project_code>HPRP CT 2002 0008</project_code>
 	<logo>../images/p_eaware.gif</logo>
 	<description>
-eAWARe aims to educate the everyday Internet user about online risks and the steps users can take to protect themselves. eAWARe reaches out to the public through local events across Europe. We will also produce a free guide on how to have and host your own event to promote information security awareness. eAWARe is supported by the Directorate General for Research of the European Commission. eAWARe will hold its final international conference during the first week of November 2003 in Rome, Italy. This event is part of the European Commission's initiatives in the context of European Science Week. eAWARe also supports the dissemination of the OECD Guidelines for Information and Network Security.
+eAWARe aims to educate the everyday Internet user about online risks and the 
+steps users can take to protect themselves. eAWARe reaches out to the public 
+through local events across Europe. We will also produce a free guide on how to 
+
+have and host your own event to promote information security awareness. eAWARe 
+is supported by the Directorate General for Research of the European 
+Commission. eAWARe will hold its final international conference during the 
+first week of November 2003 in Rome, Italy. This event is part of the European 
+Commission's initiatives in the context of European Science Week. eAWARe also 
+supports the dissemination of the OECD Guidelines for Information and Network 
+Security.
 	</description>
 </project>

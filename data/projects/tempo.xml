@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<project id="p_tempo" group="g_eltrun g_sense" contact="m_dds" scientific_coordinator="m_dds" international="no" type="rtd">
+	<shortname>TEMPO</shortname>
+	<projtitle>Technologies and Applications in Multi-Protocol networks</projtitle>
+	<startdate>20020326</startdate>
+	<enddate>20030509</enddate>
+	<!--<web_site>http://www.iaac.org.uk/eaware/</web_site>-->
+	<our_budget>44.000 EUR</our_budget>
+	<total_budget>519.442 EUR</total_budget>
+	<funding_agency>Hellenic Organization of Telecommunications OTE</funding_agency>
+	<funding_programme>Private Funding</funding_programme>
+	<project_code>1182</project_code>
+	<description>
+
+	</description>
+</project>
