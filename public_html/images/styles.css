@@ -113,3 +113,9 @@
      padding-left: 10px;
      width: 100%;
    }
+
+   .title a:link , .title a:visited , .title a:active {
+     color: #4040B0;
+     text-decoration: underline;
+
+   }
