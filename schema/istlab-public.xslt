@@ -174,9 +174,9 @@
 			<xsl:text> </xsl:text>
 			<xsl:value-of select="surname" />
 			</a>
-		</xsl:if>		
+		</xsl:if>
 	</xsl:template>
-	
+
 	<!-- Format a member reference {{{1 -->
 	<xsl:template match="member" mode="ref" >
 		<xsl:if test="count(alumnus) = 0">
@@ -193,7 +193,7 @@
 			</li>
 		</xsl:if>
 	</xsl:template>
-	
+
 	<!-- Format a member reference {{{1 -->
 	<xsl:template match="member" mode="shortref">
 		<xsl:if test="count(alumnus) = 0">
@@ -210,7 +210,7 @@
 		</li>
 		</xsl:if>
 	</xsl:template>
-	
+
 	<!-- Format a member reference {{{1-->
 	<xsl:template match="member" mode="alumnus-ref">
 		<xsl:if test="count(alumnus) != 0">
@@ -224,11 +224,11 @@
 		<xsl:text> </xsl:text>
 		<xsl:value-of select="surname" />
 		</a>
-		</li>	
+		</li>
 		</xsl:if>
 	</xsl:template>
-	
-	<!-- Format members information {{{1 --> 
+
+	<!-- Format members information {{{1 -->
 	<xsl:template match="member" mode="full">
 		<h2>
 		<xsl:if test="count(memb_title) != 0">
@@ -250,11 +250,11 @@
 					<xsl:text> </xsl:text>
 					<xsl:value-of select="givenname" />
 					<xsl:text> </xsl:text>
-					<xsl:value-of select="surname" />						
+					<xsl:value-of select="surname" />
 				</xsl:attribute>
 				<xsl:attribute name="width">80</xsl:attribute>
 				<xsl:attribute name="height">80</xsl:attribute>
-			</xsl:element>										
+			</xsl:element>
 		</xsl:if>
 		<br /> <br />
 		</td>
@@ -280,7 +280,7 @@
 		<xsl:if test="count(Fax) != 0">
 			Fax: <xsl:value-of select="fax" />
 			<br />
-		</xsl:if>	
+		</xsl:if>
 		<xsl:if test="count(office_address) != 0">
 			Office address: <xsl:value-of select="office_address"/>
 			<br />
@@ -315,7 +315,7 @@
 		<br />
 		<xsl:apply-templates select="current()/shortcv"/>
 	</xsl:template>
-	
+
 	<!-- Format a short cv -->
 	<xsl:template match="shortcv">
 		<xsl:copy-of select="*|text()"/>
@@ -341,7 +341,7 @@
 			<hr />
 		</xsl:if>
 	</xsl:template>
-	
+
 	<!-- Format a full group description {{{1-->
 	<xsl:template match="group" mode="full">
 		<h2>
@@ -356,12 +356,12 @@
 				<xsl:attribute name="alt">
 					<xsl:value-of select="shortname"/>
 					<xsl:text> - </xsl:text>
-					<xsl:value-of select="grouptitle"/>						
+					<xsl:value-of select="grouptitle"/>
 				</xsl:attribute>
 			</xsl:element>
 			<br /><br />
 		</xsl:if>
-		Director: 
+		Director:
 		<xsl:apply-templates select="/eltrun/member_list/member [@id=current()/@director]" mode="simple-ref" />
 		<br /><br />
 		Research group information:
@@ -373,17 +373,17 @@
 		<xsl:apply-templates select="/eltrun/member_list/member [@id=current()/@contact]" mode="simple-ref" />
 		<br /><br />
 	</xsl:template>
-	
+
 	<!-- Format description {{{1 -->
 	<xsl:template match="description">
 		<xsl:copy-of select="*|text()"/>
 	</xsl:template>
-	
+
 	<!-- Format related links {{{1 -->
 	<xsl:template match="rel_link">
 		<xsl:copy-of select="*"/><br />
 	</xsl:template>
-	
+
 	<!-- Format a project reference {{{1 -->
 	<xsl:template match="project" mode="ref">
 		<li>
@@ -409,12 +409,12 @@
 		<br /> <br />
 		<!-- Project Summary information -->
 		<xsl:if test="count(project_code) != 0">
-			Project Code: 
+			Project Code:
 			<xsl:value-of select="project_code" />
 			<xsl:if test="@international = 'yes'">
 				(International)
 			</xsl:if>
-			<br/>		
+			<br/>
 		</xsl:if>
 		<xsl:if test="count(funding_programme) != 0">
 			Funding programme: <xsl:value-of select="funding_programme" />
@@ -476,14 +476,14 @@
 		<xsl:if test="@project_manager != ''">
 			Project Manager:
 			<xsl:apply-templates select="/eltrun/member_list/member [@id=current()/@project_manager]" mode="simple-ref" />
-			<br />		
+			<br />
 		</xsl:if>
 		<xsl:if test="@contact != ''">
 			Contact:
 			<xsl:apply-templates select="/eltrun/member_list/member [@id=current()/@contact]" mode="simple-ref" />
 		<br />
 		</xsl:if>
-		
+
 		<!-- Show groups this project belongs to -->
 		Groups:
 		<xsl:apply-templates select="/eltrun/group_list/group [contains(current()/@group, @id)]" mode="shortref"/>
@@ -504,10 +504,10 @@
 			Partners:
 			<ul>
 			<xsl:apply-templates select="current()/partner" />
-			</ul>		
+			</ul>
 		</xsl:if>
 	</xsl:template>
-	
+
 	<!-- partners {{{1 -->
 	<xsl:template match="partner">
 		<li>
@@ -522,7 +522,7 @@
 		</xsl:if>
 		<xsl:if test="count(web_site) = 0">
 				<xsl:value-of select="shortname"/>
-				(<xsl:value-of select="country"/>)		
+				(<xsl:value-of select="country"/>)
 		</xsl:if>
 		</li>
 	</xsl:template>
@@ -539,7 +539,7 @@
 			</xsl:when>
 		</xsl:choose>
 	</xsl:template>
-	
+
 	<!-- body menu -->
 	<xsl:template name="body-menu">
 		<xsl:apply-templates select="/eltrun/group_list/group[@id = $ogroup]" mode="menuhead"/>
@@ -555,11 +555,11 @@
 		<br />
 		<xsl:if test="$ogroup != ''">
 			<xsl:if test="count(/eltrun/group_list/group[@id = $ogroup]/rel_link) != 0">
-				<xsl:apply-templates select="/eltrun/group_list/group[@id = $ogroup]/rel_link" /><br />	
+				<xsl:apply-templates select="/eltrun/group_list/group[@id = $ogroup]/rel_link" /><br />
 			</xsl:if>
-		</xsl:if>	
+		</xsl:if>
 	</xsl:template>
-	
+
 	<!-- Main transformation {{{1 -->
 	<xsl:template match="eltrun">
 		<html>
@@ -600,7 +600,7 @@
 		</xsl:choose>
 		</title>
 		</head>
-		
+
 		<!-- BODY -->
 		<body>
 		<a href="http://www.eltrun.gr/"><img src="../images/heading.jpg" alt="ELTRUN - The e-Business Center" border="0" /></a>
@@ -681,7 +681,7 @@
 			</tr>
 			</tbody>
 		</table>
-		</body>		
+		</body>
 		</html>
 	</xsl:template>
 </xsl:stylesheet>
