@@ -537,20 +537,25 @@
 	
 	<!-- presentation reference {{{1-->
 	<xsl:template match="presentation" mode="ref">
-		<xsl:apply-templates select="/eltrun/member_list/member [contains(current()/@by,@id)]/surname" />
+		<xsl:for-each select="/eltrun/member_list/member [contains(current()/@by,@id)]">
+			<xsl:apply-templates select="current()" mode="pub-ref"/><br />
+		</xsl:for-each>
 		<xsl:if test="count(pres_name) != 0">
-			<xsl:text> </xsl:text><xsl:value-of select="pres_name" />
+			<xsl:value-of select="pres_name" />
+			<br />
 		</xsl:if>
+		<xsl:value-of select="pres_title"/>
+		<br />
 	</xsl:template>
 	
 	<xsl:template match="presentation" mode="full">
 		<table border="0">
 		<tr>
-		<td><b>Title:</b></td>
+		<td valign="top"><b>Title:</b></td>
 		<td><a href="{pres_url}"><xsl:value-of select="pres_title"/></a></td>
 		</tr>
 		<tr>
-		<td><b>Presenters:</b></td>
+		<td valign="top" nowrap="1"><b>Presented by:</b></td>
 		<td>
 		<xsl:for-each select="/eltrun/member_list/member [contains(current()/@by,@id)]">
 			<xsl:apply-templates select="current()" mode="pub-ref"/><br />
@@ -560,20 +565,28 @@
 		</xsl:if>
 		</td>
 		</tr>
+		<xsl:if test="count(pres_summary) != 0">
+			<tr>
+			<td valign="top"><b>Summary:</b></td>
+			<td><xsl:copy-of select="pres_summary"/></td>
+			</tr>
+		</xsl:if>
 		</table>
 		<br/><br />
 	</xsl:template>
 	
 	<!-- seminar {{{1-->
 	<xsl:template match="seminar" mode="ref">
+		<tr>
+		<td valign="top" nowrap="1">
 		<a href="{$seminaryear}.html#{current()/sem_date}">
 			<xsl:call-template name="date">
 				<xsl:with-param name="date" select="sem_date" />
 			</xsl:call-template>
-			<xsl:text> - </xsl:text>
-			<xsl:apply-templates select="current()/presentation" mode="ref"/>
 		</a>
-	    <br />
+			</td> <td>
+			<xsl:apply-templates select="current()/presentation" mode="ref"/>
+			</td> </tr>
 	</xsl:template>
 	
 	<!-- Seminar detailed template {{{1-->
@@ -788,9 +801,11 @@
 				<!-- seminar -->
 				<xsl:when test="$what = 'seminar'">
 					<h2>Eltrun Seminars</h2>
+						<table>
 						<xsl:apply-templates select="/eltrun/seminar_list/seminar [starts-with(sem_date,$seminaryear)]" mode="ref">
 							<xsl:sort select="sem_date" data-type="number" order="descending"/>
 						</xsl:apply-templates>
+						</table>
 						<br /><br />
 						<xsl:apply-templates select="/eltrun/seminar_list/seminar [starts-with(sem_date,$seminaryear)]" mode="full">
 							<xsl:sort select="sem_date" data-type="number" order="descending"/>

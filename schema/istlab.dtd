@@ -112,7 +112,7 @@
 <!ELEMENT sem_room (#PCDATA)>
 <!ELEMENT sem_duration (#PCDATA)>
 
-<!ELEMENT presentation (pres_title,pres_url,pres_name?)>
+<!ELEMENT presentation (pres_title,pres_url?,pres_name?,pres_summary?)>
 <!ATTLIST presentation 
 	by IDREFS #IMPLIED
 >
@@ -120,6 +120,7 @@
 <!ELEMENT pres_title (#PCDATA)>
 <!ELEMENT pres_url %pc_flow;>
 <!ELEMENT pres_name (#PCDATA)>
+<!ELEMENT pres_summary %pc_flow;>
 <!-- page definitions {{{1-->
 <!ELEMENT page_list (page*)>
 <!ELEMENT page (page_name,page_body)>
