@@ -196,8 +196,8 @@
 	</xsl:template>
 
 	<!-- Format a member reference {{{1 -->
-	<xsl:template match="member" mode="shortref">
-		<xsl:if test="count(alumnus) = 0">
+	<xsl:template match="member" mode="alumnus-ref">
+		<xsl:if test="count(alumnus) != 0">
 		<li>
 		<a href="../members/{@id}.html">
 		<xsl:if test="count(memb_title) != 0">
@@ -212,7 +212,7 @@
 		</xsl:if>
 	</xsl:template>
 
-		<!-- Format a member reference {{{1 -->
+	<!-- Format a member reference {{{1 -->
 	<xsl:template match="member" mode="shortref">
 		<xsl:if test="count(alumnus) = 0">
 		<li>
@@ -353,7 +353,9 @@
 		<br />
 		<xsl:if test="count(logo) != 0">
 			<xsl:element name="img">
-				<xsl:attribute name="src"><xsl:value-of select="logo"/></xsl:attribute>
+				<xsl:attribute name="src">
+				    <xsl:value-of select="logo"/>
+				</xsl:attribute>
 				<xsl:attribute name="alt">
 					<xsl:value-of select="shortname"/>
 					<xsl:text> - </xsl:text>
@@ -552,13 +554,15 @@
 			<br />
 			<a href="../publications/{$ogroup}-publications.html">Publications</a>
 			<br />
-			<a href="../groups/{$ogroup}-alumni.html">Associates</a>
-			<br />
+			<xsl:if test="count(/eltrun/member_list/member[contains(@group,$ogroup)]/alumnus) != 0">
+			    <a href="../groups/{$ogroup}-alumni.html">Associates</a>
+			    <br />
+			</xsl:if>
 			<xsl:if test="$ogroup != ''">
 				<xsl:if test="count(/eltrun/group_list/group[@id = $ogroup]/rel_link) != 0">
 				<xsl:apply-templates select="/eltrun/group_list/group[@id = $ogroup]/rel_link" /><br />
 				</xsl:if>
-		</xsl:if>
+			</xsl:if>
 	</xsl:template>
 
 	<!-- seminar {{{1-->
