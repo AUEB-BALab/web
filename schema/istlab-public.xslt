@@ -401,6 +401,7 @@
 		<br />
 		<xsl:if test='current()/@director != current()/@contact'>
 		Contact:
+		<br />
 		<xsl:apply-templates select="/eltrun/member_list/member [@id=current()/@contact]" mode="simple-ref" />
 		<br />
 		</xsl:if>
