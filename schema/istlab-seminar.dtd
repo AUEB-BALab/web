@@ -23,10 +23,10 @@
 <!ATTLIST seminar
 	by #CDATA #REQUIRED
 >
-<!ELEMENT name (#PCDATA)>
-<!ELEMENT date %date>
-<!ELEMENT time (#PCDATA)>
-<!ELEMENT title (#PCDATA)>
-<!ELEMENT room (#PCDATA)>
-<!ELEMENT url (#PCDATA)>
+<!ELEMENT sem_name (#PCDATA)>
+<!ELEMENT sem_date %date>
+<!ELEMENT sem_time (#PCDATA)>
+<!ELEMENT sem_title (#PCDATA)>
+<!ELEMENT sem_room (#PCDATA)>
+<!ELEMENT sem_url (#PCDATA)>
 

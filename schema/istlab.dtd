@@ -21,7 +21,7 @@
 <!ENTITY % date "(#PCDATA)">
 <!ENTITY % pc_flow "(#PCDATA | %Flow.mix;)*">
 <!-- Definition of global -->
-<!ELEMENT eltrun (group_list, member_list, project_list, publication_list, publication_type_list)>
+<!ELEMENT eltrun (group_list, member_list, project_list, seminar_list,publication_list, publication_type_list)>
 <!-- Group list elements {{{1 -->
 <!ELEMENT group_list (group*)>
 <!ELEMENT group (grouptitle, shortname, description, rel_link*, logo?)>
@@ -102,16 +102,16 @@
 <!ELEMENT has_workingpaper EMPTY>
 <!-- seminars -->
 <!ELEMENT seminar_list (seminar*)>
-<!ELEMENT seminar (name,date,time,room,url?)>
+<!ELEMENT seminar (sem_name,sem_date,sem_title,sem_time,sem_room,sem_url?)>
 <!ATTLIST seminar
 	by IDREF #REQUIRED
 >
-<!ELEMENT name (#PCDATA)>
-<!ELEMENT date %date>
-<!ELEMENT time (#PCDATA)>
-<!ELEMENT title (#PCDATA)>
-<!ELEMENT room (#PCDATA)>
-<!ELEMENT url (#PCDATA)>
+<!ELEMENT sem_name (#PCDATA)>
+<!ELEMENT sem_date %date;>
+<!ELEMENT sem_time (#PCDATA)>
+<!ELEMENT sem_title (#PCDATA)>
+<!ELEMENT sem_room (#PCDATA)>
+<!ELEMENT sem_url (#PCDATA)>
 
 <!-- Shared elements {{{1 -->
 <!ELEMENT description %pc_flow;>
