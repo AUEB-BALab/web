@@ -4,7 +4,6 @@
 	<sem_room>901</sem_room>
 	<sem_duration>90 mins</sem_duration>
 		<presentation by="m_bkarak">
-		<pres_title> Phd Progress </pres_title>
-          		<pres_url></pres_url>
+			<pres_title>FIRE - Fast Implementation of Regular Expressions</pres_title>
 		</presentation>
 </seminar>
