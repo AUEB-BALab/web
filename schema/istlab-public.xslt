@@ -223,10 +223,10 @@
 	<xsl:template name="group-head">
 		<!-- Generate ELTRUN or group heading -->
 		<xsl:choose>
-			<xsl:when test="$ogroup = ''">
+			<xsl:when test="$ogroup = 'g_eltrun'">
 				ELTRUN
 			</xsl:when>
-			<xsl:when test="$ogroup != ''">
+			<xsl:when test="$ogroup != 'g_eltrun'">
 				<xsl:apply-templates select="/eltrun/group_list/group [@id=$ogroup]" mode="heading" />
 			</xsl:when>
 		</xsl:choose>

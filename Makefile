@@ -55,7 +55,7 @@ val: ${DB}
 
 html: ${DB}
 	# For all groups and the empty group
-	for group in $(GROUPIDS) '' ; \
+	for group in $(GROUPIDS) ; \
 	do \
 		xml tr ${PXSLT} -s today=${TODAY} -s ogroup=$$group -s what=group-details ${DB} >${HTML}/groups/$$group-details.html ; \
 		xml tr ${PXSLT} -s today=${TODAY} -s ogroup=$$group -s what=completed-projects ${DB} >${HTML}/groups/$$group-completed-projects.html ; \

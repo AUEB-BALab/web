@@ -34,8 +34,6 @@ foreach $id (split(/\s+/, $group)) {
 	$citations{'group'}{$id}{$type} .= "\\citation{$key}\n";
 	$citations{'group'}{$id}{'any'} .= "\\citation{$key}\n";
 }
-$citations{'group'}{''}{$type} .= "\\citation{$key}\n";
-$citations{'group'}{''}{'any'} .= "\\citation{$key}\n";
 foreach $id (split(/\s+/, $project)) {
 	$citations{'project'}{$id}{$type} .= "\\citation{$key}\n";
 	$citations{'project'}{$id}{'any'} .= "\\citation{$key}\n";

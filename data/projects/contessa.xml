@@ -1,4 +1,4 @@
-<project id="p_contessa" group="g_sense" >
+<project id="p_contessa" group="g_eltrun g_sense" >
 	<shortname>Contessa</shortname>
 	<projtitle>Content Transformation</projtitle>
 	<startdate>20010615</startdate>
