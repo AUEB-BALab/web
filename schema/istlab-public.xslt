@@ -263,7 +263,7 @@
 		<td>
 		<xsl:if test="count(alumnus) != 0">
 			<font color="#FF0000">
-			<h4>This member is no longer active.</h4>
+			<h4>(ELTRUN associate).</h4>
 			</font>
 		</xsl:if>
 		<xsl:if test="count(email) != 0">
