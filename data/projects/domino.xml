@@ -1,0 +1,62 @@
+﻿<?xml version="1.0"?>
+<project id="p_domino" group="g_eltrun g_ois" scientific_coordinator="m_akp" contact="m_akp" international="yes" type="rtd" project_manager="m_akp">
+	<shortname>DOMINO</shortname>
+	<projtitle>Dynamic Organisational Management for Inter-Firm Network Orchestrations</projtitle>
+	<startdate>20020201</startdate>
+	<enddate>20030801</enddate>
+	<web_site>http://www.ist-domino.net</web_site>
+<!--	<our_budget> </our_budget> -->
+<!--	<total_budget></total_budget> -->
+	<funding_agency>European Commission</funding_agency>
+	<funding_programme>FP5 - IST Program under key action II</funding_programme>
+	<project_code>IST-2000-29545</project_code>
+	<partner>
+		<shortname>Copenhagen Business School (CBS)</shortname>
+		<country>DK</country>
+		<web_site>http://www.cbs.dk/departments/mpp/</web_site>
+	</partner>
+	<partner>
+		<shortname>University of Münster</shortname>
+		<country>D</country>
+		<web_site>http://www.uni-muenster.de/en/</web_site>
+	</partner>
+	<partner>
+		<shortname>Institut Fuer Technologie Managemen (Universitaet St. Gallen)</shortname>
+		<country>CH</country>
+		<web_site>http://www.item.unisg.ch</web_site>
+	</partner>
+	<partner>
+		<shortname>Dios</shortname>
+		<country>DK</country>
+		<web_site>http://www.dios.dk</web_site>
+	</partner>
+	<partner>
+		<shortname>Exodus</shortname>
+		<country>EL</country>
+		<web_site>http://www.exodus.gr</web_site>
+	</partner>
+	<partner>
+		<shortname>Namics</shortname>
+		<country>CH</country>
+		<web_site>http://www.namics.com</web_site>
+	</partner>
+	<partner>
+		<shortname>PROJECT ONLINE S.A.</shortname>
+		<country>EL</country>
+		<web_site>http://www.projectonline.gr</web_site>
+	</partner>
+	<partner>
+		<shortname>ECR CH Switzerland</shortname>
+		<country>CH</country>
+		<web_site></web_site>
+	</partner>
+	<partner>
+		<shortname>New World Multimedia Aps</shortname>
+		<country>DK</country>
+		<web_site></web_site>
+	</partner>
+	<logo></logo>
+	<description>
+DOMINO addresses the issue of management in dynamic organizational forms in terms of strategy, structure, processes and people. The main objective of the project is to shape guidelines, which will support the management of these new organizational forms.
+	</description>
+</project>

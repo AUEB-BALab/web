@@ -1,0 +1,41 @@
+﻿<?xml version="1.0"?>
+<project id="p_eclassify" group="g_eltrun g_ois" scientific_coordinator="m_akp" contact="m_akp" international="yes" type="rtd" project_manager="m_akp">
+	<shortname>eClassify</shortname>
+	<projtitle>Enterprise Intellectual Capital Management System - supporting automatic file classification</projtitle>
+	<startdate></startdate>
+	<enddate></enddate>
+	<web_site></web_site>
+<!--	<our_budget> </our_budget> -->
+<!--	<total_budget></total_budget> -->
+	<funding_agency>MINISTRY OF DEVELOPMENTGENERAL - Secretariat for Research and Technology</funding_agency>
+	<funding_programme>Operational Programme Competitivenes Axis 4 - Measure 4.5 / New Forms of Work Organization</funding_programme>
+	<project_code></project_code>
+	<partner>
+		<shortname>BPM  S.A.</shortname>
+		<country>EL</country>
+		<web_site>http://www.bpm.gr</web_site>
+	</partner>
+	<partner>
+		<shortname>EXODUS S.A.</shortname>
+		<country>EL</country>
+		<web_site>http://www.exodus.gr</web_site>
+	</partner>
+	<partner>
+		<shortname>BPM  S.A.</shortname>
+		<country>EL</country>
+		<web_site>http://www.bpm.gr</web_site>
+	</partner>
+	<partner>
+		<shortname>Institute for Language and Speech Processing</shortname>
+		<country>EL</country>
+		<web_site>http://www.ilsp.gr</web_site>
+	</partner>
+	<partner>
+		<shortname>Piraeus Bank</shortname>
+		<country>EL</country>
+		<web_site>http://www.piraeusbank.gr</web_site>
+	</partner>
+	<description>
+The main objective of the project is the development of an integrated environment for the creation and management of enterprise intranets with emphasis on enterprise Intellectual Capital management. The project's innovation is based on the fact that the management of an enterprise's intellectual capital demands knowledge management systems, in comparison to the traditional and widely used content management systems. Such a system, beyond the typical features and functionalities, will also provide users with the ability to thematically classify enterprise intellectual capital in categories related to the company's area of operation. This way, the enterprise Intranet turns into a usable Knowledge Management tool, giving the enterprise a competitive advantage.
+	</description>
+</project>

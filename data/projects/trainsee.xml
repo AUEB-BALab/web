@@ -1,0 +1,67 @@
+﻿<?xml version="1.0"?>
+<project id="p_trainsee" group="g_eltrun g_ois" scientific_coordinator="m_akp" contact="m_akp" international="yes" type="rtd" project_manager="m_akp">
+	<shortname>TRAINSEE</shortname>
+	<projtitle>Training in Information Technologies in South Eastern Europe</projtitle>
+	<startdate>20020201</startdate>
+	<enddate>20030801</enddate>
+	<web_site>http://laplace.intrasoft-intl.com/TrainSEE/source/home.htm</web_site>
+<!--	<our_budget> </our_budget> -->
+<!--	<total_budget></total_budget> -->
+	<funding_agency>European Commission</funding_agency>
+	<funding_programme>FP5 - IST Program under key action II</funding_programme>
+	<project_code>IST-2000-28181</project_code>
+	<partner>
+		<shortname>INTRASOFT International</shortname>
+		<country>L</country>
+		<web_site>www.intrasoft-intl.com</web_site>
+	</partner>
+	<partner>
+		<shortname>Open University of Catalonia</shortname>
+		<country>E</country>
+		<web_site>http://www.uoc.es</web_site>
+	</partner>
+	<partner>
+		<shortname>Lambrakis Research Foundation</shortname>
+		<country>EL</country>
+		<web_site>http://www.lrf.gr</web_site>
+	</partner>
+	<partner>
+		<shortname>Public Power Company</shortname>
+		<country>EL</country>
+		<web_site>http://www.dekp-ppc.org</web_site>
+	</partner>
+	<partner>
+		<shortname>Bulgarian Telecommunications Company</shortname>
+		<country>BG</country>
+		<web_site>http://www.btc.bg/</web_site>
+	</partner>
+	<partner>
+		<shortname>LOGO Business Solutions</shortname>
+		<country>TR</country>
+		<web_site>http://www.logo.com.tr</web_site>
+	</partner>
+	<partner>
+		<shortname>National Oil Company PETROM</shortname>
+		<country>RO</country>
+		<web_site>http://www.petrom.ro</web_site>
+	</partner>
+	<partner>
+		<shortname>IBM Central and Eastern Europe/Middle East/Africa Inc</shortname>
+		<country>D</country>
+		<web_site>http://www.de.ibm.com</web_site>
+	</partner>
+	<partner>
+		<shortname>Bulgarian Academy of Science</shortname>
+		<country>BG</country>
+		<web_site>http://www.acad.bg</web_site>
+	</partner>
+	<partner>
+		<shortname>New World APS</shortname>
+		<country>DK</country>
+		<web_site>http://www.</web_site>
+	</partner>
+<logo>../images/Trainsee_logo.gif</logo>
+	<description>
+Train-SEE aims to develop a corporate e-learning environment for ICT skill development based on generic ICT skill profiles and targeted to the SE European market. The Athens University of Economics and Business helped in conducting training needs assessment in the market of SE Europe, was responsible for the preparation and delivery of the content in appropriate form, and helped in the evaluation and usability testing of the implemented training service.
+	</description>
+</project>
