@@ -3,11 +3,10 @@
     <sem_time>16:00</sem_time>
     <sem_room>701</sem_room>
     <sem_duration>25 mins</sem_duration>
-        <presentation>
+        <presentation by="m_eric">
                   <pres_title> Ubiquitous Computing Security
              </pres_title>
                   <pres_url></pres_url>
-				  <pres_name>Erast Athanasiadis</pres_name>
         </presentation>
 
 </seminar>
