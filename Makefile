@@ -158,7 +158,8 @@ html: ${DB}
 	done
 	@echo "Creating seminar list"
 	@counter=${FIRST_YEAR}; \
-	while [ $$counter -le ${YEAR} ] ; \
+	theyear=`expr ${YEAR} + 1`; \
+	while [ $$counter -le $$theyear ] ; \
 	do \
 		xml tr ${PXSLT} -s what=seminar -s menu=off -s seminaryear=$$counter ${DB} >${HTML}/seminar/$$counter.html ; \
 		counter=`expr $$counter + 1`; \

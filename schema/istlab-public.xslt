@@ -580,7 +580,7 @@
 	<xsl:template match="seminar" mode="full">
 	    <hr />
 	    <!-- Create the anchor -->
-	    <a href="{current()/sem_date}"></a>
+	    <a name="{current()/sem_date}" />
 	    <h2>
 	    	<xsl:call-template name="date">
 			<xsl:with-param name="date" select="sem_date" />
