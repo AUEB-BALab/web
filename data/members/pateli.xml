@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<member id="m_pateli" group="g_eltrun g_wrc">
+	<givenname>Ada</givenname>
+	<surname>Pateli</surname>
+	<memb_title>Mrs.</memb_title>
+	<email>pateli@aueb.gr</email>
+	<web_site>http://www.eltrun.gr/wrc/WRC_ada_v1.html</web_site>-->
+	<office_phone>+30 2108203663</office_phone>
+	<fax>+30 2108203664</fax>
+	<office_address>Evelpidon 47-A &amp; Lefkados 33, Room 801</office_address>
+	<postal_address>Patision 76, GR-104 34 Athens, Greece</postal_address>
+	<!--<photo>../images/spi.jpg</photo>-->
+	<shortcv>
+		<p>
+	   Adamantia Pateli is a PhD student at the Department of Management Science and Technology (DMST) of the Athens University of Economics and Business (AUEB), in Greece. She holds a BSc in Informatics – specialization in Information Systems - from Athens University of Economics and Business (AUEB) in September 1999, and a Masters Degree in Electronic Commerce from the University of Manchester Institute of Science and Technology (UMIST) in September 2001.
+	   <br><br>
+	   Ms. Pateli has both working and research experience. In particular, from 1997 to 1999, she has worked as research assistant in ELTRUN (The E-Business Centre) and has participated in a number of national and European-funded research projects (KISMET, WeCAN, National Committee of Electronic Commerce, etc.) in the areas of Electronic Commerce and Information Systems. From 1999 to 2000, she has worked as e-Commerce consultant in a Greek IT company and has also been involved in several national projects (Business Process Re-engineering for a Greek Institute of Social Insurance, Design of a National Network for the Greek Administration, etc.) in the areas of Electronic Commerce, Business Process Reengineering and Communications. Since 2001, she holds a position as research officer in the ELTRUN Wireless Research Group (ELTRUN/WRC).
+	   <br><br>
+	   Her main research interests lie in the area of Business Modelling, Technology-Induced Innovation, Inter-firm Cooperation Agreements (emphasizing on Strategic Technology Alliances), Strategy and Mobile and Wireless Business.
+	   <br><br>
+	   She has published 8 research articles in European and international conferences, including the European Conference of Information Systems (ECIS), the International Conference of the Decision Sciences Institute (DSI), the Bled Electronic Commerce Conference, and the International Conference on Mobile Business (ICMB).
+      </p>
+	</shortcv>
+</member>

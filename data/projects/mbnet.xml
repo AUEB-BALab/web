@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<project id="p_mbnet" group="g_eltrun g_wrc" scientific_coordinator="m_giaglis" contact="m_kfouskas" international="yes" type="thematic network" project_manager="m_kfouskas">
+	<shortname>MB-net</shortname>
+	<projtitle>MB-net: A network of excellence in Mobile business applications and services</projtitle>
+	<startdate>20020701</startdate>
+	<enddate>20030630</enddate>
+	<web_site>http://www.mobiforum.org/mbnet</web_site>
+	<!--<our_budget>328,627 EUR</our_budget>-->
+	<!--<total_budget>3,493,834 EUR</total_budget>-->
+	<funding_agency>European Commission</funding_agency>
+	<funding_programme>IST</funding_programme>
+	<!--<project_code>IST-2001-26239</project_code>-->
+	<partner>
+		<shortname>AITEK</shortname>
+		<country>IT</country>
+		<web_site>http://www.aitek.it</web_site>
+	</partner>
+	<partner>
+		<shortname>Alcatel</shortname>
+		<country>DE</country>
+		<web_site>http://www.alcatel.de/</web_site>
+	</partner>
+	<partner>
+		<shortname>Electronic Commerce Competence Center</shortname>
+		<country>AT</country>
+		<web_site>http://www.ec3.at</web_site>
+	</partner>
+	<partner>
+		<shortname>Fraunhofer Fokus</shortname>
+		<country>DE</country>
+		<web_site>http://www.fokus.fhg.de</web_site>
+	</partner>
+	<partner>
+		<shortname>RAND EUROPE</shortname>
+		<country>NE</country>
+		<web_site>www.rand.org</web_site>
+	</partner>
+	<partner>
+		<shortname>University of Cyprus</shortname>
+		<country>CY</country>
+		<web_site>http://www.ucy.ac.cy</web_site>
+	</partner>
+	<partner>
+		<shortname>University of St. Gallen</shortname>
+		<country>SW</country>
+		<web_site>http://www.unisg.ch</web_site>
+	</partner>
+	<!--<logo>../images/p_mexpress.gif</logo>-->
+	<description>
+<p>
+	  MB-net comprised a Network of Excellence that was funded by the European Commission and was part of the IST program. The project aimed at the systematic research in the area of m-Business with emphasis in the investigation of innovative corporate applications and services that are supported by mobile and wireless technologies.
+	  The network embraced 25 academic and industrial research teams from 8 European countries and was coordinated by ELTRUN, the E-Business Centre of Athens University of Economics and Business. MB-net shaped a roadmap which identifies the research challenges, proposes innovative ideas for research and development and equip European Commission with new strategic plans in the area of m-Business.
+	  MB-Net’s main goal is to help European Commission to set new research funding priorities in m-Business within the 6th Framework for the Research and Technologic Development (2002-2207).
+	  <br><br>
+
+	  The basic aims that MB-Net fulfilled are:<br>
+	  <ul>
+	  <li type="disque">Investigation of the m-Business future with the identification of innovative research challenges, the formation of political proposals and the creation of a roadmap with a five-year horizon (2002-2007)</li>
+	  <br><li type="disque">Successful representation from all interesting parties that will affect the future of applications and services in the area of m-Business </li>
+	  <br><li type="disque">Creation of a collaborative environment that brought together the academic and industrial communities, in order that each party could share its special knowledge in a multidimensional and multicultural level </li>
+	  <br><li type="disque">To provide with research directions in the academic and industrial community as well as in the governmental carriers for the future of m-Business </li>
+	  </ul>
+	  <br><br>The project succeeded in aforementioned goals, thanks to the contribution of its members (25 academic and industrial teams from 8 European Countries) and the broad participation of the industrial and academic societies.
+</p>	
+	</description>
+</project>

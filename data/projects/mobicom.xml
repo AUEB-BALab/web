@@ -1,0 +1,103 @@
+<?xml version="1.0"?>
+<project id="p_mobicom" group="g_eltrun g_wrc" scientific_coordinator="m_gjd" international="yes" type="rtd">
+	<shortname>mobiCom</shortname>
+	<projtitle>Evolution Scenarios for Emerging m-Commerce Services</projtitle>
+	<startdate>20001201</startdate>
+	<enddate>20011231</enddate>
+	<web_site>http://www.mobiforum.org</web_site>
+	<!--<our_budget>328,627 EUR</our_budget>-->
+	<!--<total_budget>3,493,834 EUR</total_budget>-->
+	<funding_agency>European Commission</funding_agency>
+	<funding_programme>IST</funding_programme>
+	<!--<project_code>IST-2001-26239</project_code>-->
+	<partner>
+		<shortname>LRF</shortname>
+		<country>EL</country>
+		<!--<web_site>http://www.aitek.it</web_site>-->
+	</partner>
+	<partner>
+		<shortname>Stet Hellas</shortname>
+		<country>EL</country>
+		<web_site>http://www.telestet.gr/</web_site>
+	</partner>
+	<partner>
+		<shortname>COL</shortname>
+		<country>D</country>
+		<!--<web_site>http://www.ec3.at</web_site>-->
+	</partner>
+	<partner>
+		<shortname>VPE</shortname>
+		<country>D</country>
+		<!--<web_site>http://www.fokus.fhg.de</web_site>-->
+	</partner>
+	<partner>
+		<shortname>Crediteform</shortname>
+		<country>D</country>
+		<!--<web_site>www.rand.org</web_site>-->
+	</partner>
+	<partner>
+		<shortname>JyU</shortname>
+		<country>FIN</country>
+		<web_site>http://www.jyu.fi</web_site>
+	</partner>
+	<partner>
+		<shortname>Sonera</shortname>
+		<country>FIN</country>
+		<web_site>http://www.sonera.fi</web_site>
+	</partner>
+	<partner>
+		<shortname>UoB</shortname>
+		<country>UK</country>
+		<web_site>http://www.brighton.ac.uk</web_site>
+	</partner>
+	<!--<logo>../images/p_mexpress.gif</logo>-->
+	<description>
+<p>
+		MobiCom aimed to explore the fundamental factors affecting the evolution of Mobile
+	      e-Commerce, such as market structure, key players, technology
+	      architectures, consumer behaviour, new products and services. Towards this
+	      aim the following objectives were pursued:<br>
+
+		<ol><li type="square">Identification of existing factors deriving from mobile communications and e-Commerce
+	   	industries, which enable or constrain the development of m-Commerce in
+	      Europe.</li>
+		<li type="square">Identification of new development trajectories emerging from the convergence of
+	      mobile communications technologies and e-Commerce entrepreneurial
+	      activities.</li>
+		<li type="square">Description
+	      and specification of new business models and services as well as of
+	      diffusion and adoption patterns in m-Commerce.</li>
+		<li type="square">Preparation
+	      of guidelines on regulation and policy for facilitating the growth of
+	      m-Commerce.</li>
+	      <li type="square">Consensus
+	      building, dissemination and interaction of m-Commerce stakeholders</li>
+		</ol>
+
+		<br>
+
+		MobiCom was divided into 3 phases. The first phase comprised an analysis of the
+		mobile communications and e-Commerce sectors, exhibiting the fundamental
+		characteristics of the two industries driving their evolution and growth.
+		The second phase assessed the industry convergence, technological
+		evolution and potential market growth in m-Commerce. New services and
+		applications were assessed against socio-economic factors affecting
+		their adoption and diffusion. Feasibility studies provided input on
+		the commercialisation process and market readiness. The third phase
+		involved a socio-economic analysis on the intensity of new market
+		evolution. To this end m-Commerce evolution scenarios were developed
+		with respect to critical issues that affect this process. Emphasis was
+		given to regulatory and policy issues, new methods of work, new market
+	      dynamics and new business models.
+
+		<br>
+		<br>
+
+		An interactive online platform, MobiForum, (<a href="http://www.mobiforum.org">http://www.mobiforum.org</a>) was set up to support
+		dissemination /exploitation. It provides a globally accessible central
+		point of reference for all developments in the project and in the area of
+		m-Commerce evolution in general and is used for consensus building
+	      among m-Commerce stakeholders.
+</p>
+	</description>
+</project>

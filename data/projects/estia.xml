@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<project id="p_estia" group="g_eltrun g_wrc" scientific_coordinator="m_gjd" international="yes" type="rtd">
+	<shortname>ESTIA</shortname>
+	<projtitle>Efficient Electronic Services for Tourists in Action</projtitle>
+	<startdate>20001001</startdate>
+	<enddate>20021030</enddate>
+	<web_site>http://estia.sema.es</web_site>
+	<!--<our_budget>328,627 EUR</our_budget>-->
+	<!--<total_budget>3,493,834 EUR</total_budget>-->
+	<funding_agency>European Commission</funding_agency>
+	<funding_programme>IST</funding_programme>
+	<!--<project_code>IST-2001-26239</project_code>-->
+	<partner>
+		<shortname>Pouliadis Associates Corporation</shortname>
+		<country>EL</country>
+		<web_site>http://www.pouliadis.gr</web_site>
+	</partner>
+	<partner>
+		<shortname>Nokia Corporation</shortname>
+		<country>FIN</country>
+		<web_site>http://www.nokia.com/</web_site>
+	</partner>
+	<partner>
+		<shortname>ICOM</shortname>
+		<country>EL</country>
+		<!--<web_site>http://www.elisa.com</web_site>-->
+	</partner>
+	<partner>
+		<shortname>Elisa</shortname>
+		<country>FIN</country>
+		<web_site>http://http://www.elisa.com</web_site>
+	</partner>
+	<partner>
+		<shortname>SSF</shortname>
+		<country>FIN</country>
+		<web_site>http://www.ssf.fi/</web_site>
+	</partner>
+	<partner>
+		<shortname>HUT</shortname>
+		<country>FIN</country>
+		<web_site>http://www.hut.fi</web_site>
+	</partner>
+	<partner>
+		<shortname>FFC</shortname>
+		<country>FIN</country>
+	</partner>
+	<partner>
+		<shortname>ROTA</shortname>
+		<country>EL</country>
+		<web_site>http://www.rota.gr</web_site>
+	</partner>
+
+	<!--<logo>../images/p_mexpress.gif</logo>-->
+	<description>
+<p>
+
+		The ESTIA project aims to provide the means for mass adoption of Business-to-Consumer (B2C) E-Commerce in the tourism sector. The project is introducing value-added services over the next generation access medium of E-Business: Mobile Networks, in order to efficiently support individuals and vendors in the tourism economy. More specifically, this project provides the following tools and services:
+		<br><br>
+		<ol>
+			<li type="disque">Easy and cost efficient access to travel information (and all associated info) during the actual holiday trip.
+            </li>
+			<br><li type="disque">Brokering tools and platforms for locating, reserving and purchasing domestic products &amp; services better matching their needs.
+            </li>
+			<br><li type="disque">Personalised services including recommendation and bundling services that best complements their tourist plan and schedule and matches their tourist identity and travel profile.
+            </li>
+			<br><li type="disque">10.0pt">On line virtual communities of groups of people that belong to their target segment, traveling along them that build virtual trails in order to be easy located from other un-informed travellers and people at home.
+</p>	
+	</description>
+</project>

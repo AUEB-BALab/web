@@ -1,0 +1,83 @@
+<?xml version="1.0"?>
+<project id="p_mobileyouth" group="g_eltrun g_wrc" scientific_coordinator="m_giaglis" contact="m_drosos" international="no" type="dissemination" project_manager="m_drosos">
+	<shortname>Mobile Youth</shortname>
+	<projtitle>Mobile Youth</projtitle>
+	<startdate>20031001</startdate>
+	<enddate>20050331</enddate>
+	<!--<web_site>http://www.mobinet.gr</web_site>-->
+	<!--<our_budget>328,627 EUR</our_budget>-->
+	<!--<total_budget>3,493,834 EUR</total_budget>-->
+	<funding_agency>General Secretariat of Research and Technology</funding_agency>
+	<funding_programme>Electronic Business of Information Society</funding_programme>
+	<!--<project_code>Action 8.3.6</project_code>-->
+	<partner>
+		<shortname>Lambrakis Research Foundation</shortname>
+		<country>EL</country>
+		<web_site>http://www.lrf.gr/</web_site>
+	</partner>
+	<partner>
+		<shortname>ALBA</shortname>
+		<country>EL</country>
+		<web_site>http://www.alba.gr</web_site>
+	</partner>
+	<partner>
+		<shortname>LEO BURNETT</shortname>
+		<country>EL</country>
+		<!--<web_site>www.unisystems.gr</web_site>-->
+	</partner>
+		
+	<!--<logo>../images/p_mexpress.gif</logo>-->
+	<description>
+<p>
+
+				The primary goal of this project is to
+				study the nature of adoption and social absorption of mobile technologies and
+				services in the segment with the highest usage and adoption rates, the youth.
+				This objective follows the argument that true mobile innovation will arise when
+				today’s adolescents become working adults; this is because this is the most
+				adaptive user base that learns to assimilate new technologies in unique ways.
+				The work plan of the project consists of four phases:<br>
+
+				<ol><li>Literature and Background</li>
+				<li>Field Studies and Surveys</li>
+				<li>Synthesis and Reporting</li>
+				<li>Exploitation and Diffusion</li>
+				</ol>
+
+				<br>
+
+				The contribution of this project is the
+				understanding of the continuous impacts of the mobile telephony and services in
+				respect to:<br><br>
+
+                <ul>
+				<li type="square"><b>Social Changes among teenagers.</b> In which way the mobile phone affects
+				the social relationships of the youngsters? Are there any correlations between
+				communication patterns and social networks? Which are the needs for
+				communication of the teenager and how the mobile phone facilitates the
+				communication process? Which is the role of the family? Does the mobile phone
+				increase the feeling of security and the level of independency? </li><br>
+
+				<li type="square"><b>Education and the school environment.</b> Do school rules inhibit the need for
+				communication? Which is the response of the teenager? Could the mobile
+				technology characteristics enhance the operational processes of schools? For
+				instance, with the Short Messaging Service the teachers could inform the
+				parents when their kids are absent or the pupils could be informed about their
+				grades.</li><br>
+
+				<li type="square"><b>Business prospects and opportunities.</b> Companies participating in the mobile
+				industry should segment, analyze and target the youth market with a unique,
+				flexible and at a minimum cost product offering. Thus, the analysis of the
+				social behaviour and the communications usage patterns of the youngsters is a
+				valuable tool for all the actors in the mobile value chain. More than this, as
+				today’s youth will be the professional mobile users of tomorrow, this study
+				will serve as a gauge of future demand patterns.</li><br>
+
+				<li type="square"><b>Development of Descriptive Social
+				Interaction Scenarios.</b> (case
+				studies of how mobile technologies are being assimilated in the daily life of
+				adolescents).</li><br>
+                </ul>
+</p>
+	</description>
+</project>

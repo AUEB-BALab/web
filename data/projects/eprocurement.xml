@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<project id="p_eprocurement" group="g_eltrun g_wrc" scientific_coordinator="m_giaglis" contact="m_pkour" international="no" type="rtd" project_manager="m_pkour">
+	<shortname>eProcurement</shortname>
+	<projtitle>Development of an eBusiness platform for data exchange support between stores with headquarters and warehouses</projtitle>
+	<startdate>20030401</startdate>
+	<enddate>20040731</enddate>
+	<!--<web_site>http://www.mobinet.gr</web_site>-->
+	<!--<our_budget>328,627 EUR</our_budget>-->
+	<!--<total_budget>3,493,834 EUR</total_budget>-->
+	<funding_agency>General Secretariat of Research and Technology</funding_agency>
+	<funding_programme>Development of Industrial Research and Technology in New Businesses (PAVET-NE)</funding_programme>
+	<!--<project_code>Action 8.3.6</project_code>-->
+	<partner>
+		<shortname>Information Systems Impact</shortname>
+		<country>EL</country>
+		<web_site>http://www.impact.gr/</web_site>
+	</partner>
+			
+	<!--<logo>../images/p_mexpress.gif</logo>-->
+	<description>
+ <p>
+
+	    		The	project examines the prospects of innovative e-commerce technologies for the
+				automation and integration of supply chain processes that play a pivotal role
+				in retailing. Emphasis is given in the process of procurement. The main aim of
+				the project is the design and implementation of a business and technological
+				e-business solution/platform focusing on the improvement and support of the
+				communication and exchange processes between the collaborative parties of a
+				business group or between chain stores (stressing the process of procurement
+				between the headquarters, the stores and the warehouse). Apart from the design
+				and evaluation of a prototype system, a pilot operation of the platform will
+				also take place in real-life situations.Research issues that will be tackled during the project comprise:
+				algorithms for stock replenishment, implementation of methods for stock
+				estimation with the use of statistical and econometrical algorithms, full
+				integration with ERP systems, RFQs management, and integration with methods of
+				triangular markets etc.
+</p>
+	</description>
+</project>

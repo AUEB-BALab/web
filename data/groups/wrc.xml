@@ -1,11 +1,31 @@
 <?xml version="1.0"?>
-<group id="g_wrc" director="m_gjd" contact="m_gjd">
+<group id="g_wrc" director="m_gmg" contact="m_gmg">
 	<grouptitle>Wireless Research Center</grouptitle>
 	<shortname>WRC</shortname>
 	<description>
-		Streams:
-		<ul>
-			<li> Emerging mBusiness Models </li>
-		</ul>
+		<p align="justify"><b>The ELTRUN Wireless Research Center (ELTRUN/WRC)</b> operates under
+the direction and supervision of <b>Dr George M. Giaglis </b>and pursues basic and applied research on areas relating to the application and exploitation of mobile and wireless technologies in organizational and social contexts. The main research interests of the group
+engage upon the following research streams:
+<ul>
+<li type="square">Emerging mBusiness Models</li>
+
+<li type="square"> Innovative mBusiness Applications and Services </li>
+
+<li type="square"> New Mobile Work Models </li>
+
+<li type="square"> Mobile Supply Chain Management Optimisation </li>
+
+<li type="square"> Emerging Mobile and Wireless Technologies </li>
+
+<li type="square"> Mobile and Wireless Network Architectures </li>
+
+<li type="square"> Mobile Business Strategy, Policy and Regulation </li>
+</ul>
+</p>
+
+<p align="justify">The mission of ELTRUN/WRC is to promote research on mobile and wireless
+business through its participation on leading-edge and innovative <b>research
+projects </b> as well as the production of high-quality research results. The <b>members</b> of ELTRUN/WRC pursue basic and applied
+interdisciplinary research on a multiplicity of dimensions defining the world of mobile and wireless business.
 	</description>
 </group>

@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<project id="p_athens" group="g_eltrun g_wrc" scientific_coordinator="m_giaglis" international="no" type="rtd">
+	<shortname>ATHENS</shortname>
+	<projtitle>Athletic Coverage En Stadium</projtitle>
+	<startdate>20030601</startdate>
+	<enddate>20041231</enddate>
+	<!--<web_site>http://www.mobiforum.org/mbnet</web_site>-->
+	<!--<our_budget>328,627 EUR</our_budget>-->
+	<!--<total_budget>3,493,834 EUR</total_budget>-->
+	<funding_agency>General Secretariat of Research and Technology</funding_agency>
+	<funding_programme>Research and Technological Development Consortiums in sections of National Priority</funding_programme>
+	<!--<project_code>Axis 4.5.1</project_code>-->
+	<partner>
+		<shortname>Information Dynamics S.A</shortname>
+		<country>EL</country>
+		<web_site>http://www.infodyn.gr/</web_site>
+	</partner>
+	<partner>
+		<shortname>Pouliadis and Associates Group</shortname>
+		<country>EL</country>
+		<web_site>http://www.pouliadis.gr</web_site>
+	</partner>
+	<partner>
+		<shortname>Galanis Sports Data</shortname>
+		<country>EL</country>
+		<!--<web_site>http://www.fokus.fhg.de</web_site>-->
+	</partner>
+	<partner>
+		<shortname>Dimokritos</shortname>
+		<country>EL</country>
+		<web_site>www.dimokritos.gr</web_site>
+	</partner>
+		
+	<!--<logo>../images/p_mexpress.gif</logo>-->
+	<description>
+ <p>
+    		The project aims to carry out research in the area of mobile and wireless technologies and its basic aim is to study their possible exploitation for the provision of advanced information services to the spectators of sports events, emphasising on athletics.
+    		The project aims to develop a wireless platform based on innovative wireless technologies, such as IEEE 802.11b and Bluetooth.
+    		The platform will be capable of providing a series of services that will be accessible inside and around a stadium area where athletic events take place.
+    		The spectators watching an athletic event or approaching the stadium area will be capable of having, through their mobile phone or other wireless portable device, access to the following services:
+		<br><br>
+		<ul>
+		<li type="disque"><b>Statistics of contests and athletes</b>. The user will be capable of having access to the current and historical statistics of the athletic contests of his/her interest (records, performance, etc). The user will also be able to watch the current and historical statistics of specific athletes (performance etc).
+		</li><br><li type="disque"><b>Personalised announcements, information</b>. The user will be capable of choosing the way that he/she will be informed by the system and determine his/her interest through a predefined set of choices.
+        </li></ul>
+		<br><br>The basic goal of ATH.EN.S is to provide to spectators of sport events results that are going to be based on three main axes:
+		<br><br><ul>
+		<li type="disque"><b>In-depth analysis in the area of service provisioning to the spectators of sports events</b>. This will be accomplished through an intense study of the current state-of-the-art techniques in the area of mobile business, and more specifically in the area of technical infrastructure, interconnection with other information systems (wireless or wireline), standardisation of communication, and so on.
+		</li><br><li type="disque"><b>An integrated application system</b>, which will consist of a complete database and a wireless platform, through which the spectators will be able to receive the aforementioned services in real time.
+		</li><br><li type="disque"><b>An integrated business plan</b>, which will explore and exemplify the potential of the commercial exploitation of the system and its services, based on the results of the system evaluation during the trial period of a sport event.
+        </li></ul>
+</p>
+	</description>
+</project>
