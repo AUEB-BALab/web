@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<project id="p_iraklitos_zeimpekis" group="g_eltrun g_wrc" contact="m_vzeimp" 
+scientific_coordinator="m_giaglis" international="no" type="rtd">
+	<shortname>Iraklitos</shortname>
+	<projtitle>Design and evaluation of wireless systems in Supply Chain Management</projtitle>
+	<startdate>20021108</startdate>
+	<enddate>20051031</enddate>
+	<total_budget>31.697</total_budget>
+	<funding_agency>Ministry of Education</funding_agency>
+	<funding_programme>Programme for Education and Initial Vocational Training II (EPEAEK II) - Action 2.2.3.b - Iraklitos research fellowships at the Athens University of Economics and Business</funding_programme>
+	<!--<project_code>19</project_code>-->
+	<description>
+In urban freight movement a good, near-optimal, distribution plan is necessary but not 
+sufficient for high performance distribution. This is mainly due to the probabilistic 
+factors that urban movement depends on, such as high levels of traffic congestion, 
+negative environmental impact, tight delivery time windows, vehicle breakdowns, unexpected 
+events and so on.We propose a dynamic vehicle management system that monitors distribution
+ vehicles in real-time and recommends intelligent re-routing interventions that minimize 
+the adverse impact of unforeseen events on the entire system
+	</description>
+</project>
