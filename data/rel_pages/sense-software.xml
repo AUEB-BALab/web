@@ -1,38 +1,71 @@
 <?xml version="1.0"?>
 <page id="sense_software" group="g_sense">
-	<page_name>Public Software</page_name>
-	<page_body>
-		The goal of SENSE is to practice what we preach by developing software following or deomonstrating the techniques or methodologies we advocate. When there are no intelectual property rights conflicts we try to make our software available in open-source form.  During 2003 we released the following software, or new versions:
-		<br />
-		<ul>
-			<li>
-				<b><i>CScout</i></b>is a source code analyzer and refactoring browser for collections of C programs. It can process workspaces of multiple projects mapping the complexity introduced by the C preprocessor back into the original C source code files. CScout takes advantage of modern hardware advances (fast processors and large memory capacities) to analyze C source code beyond the level of detail and accuracy provided by current compilers and linkers.
-				<br /><br />
-			</li>
-			<li>
-				<b><i>UMLGraph</i></b> allows the declarative specification and drawing of a number of UML diagrams. See also the article titled On the declarative specification of models. IEEE Software, 20(2):94-96, March/April 2003.
-				<br /><br />
-			</li>
-			<li>
-				<b><i>Outwit</i></b> A tool suite that provides console-based access to the Windows clipboard, registry, databases, document properties, and links. See also Outwit: Unix tool-based programming meets the Windows world. In USENIX 2000 Technical Conference Proceedings, pages 149-158, San Diego, CA, USA, June 2000. Usenix Association.
-				<br /><br />
-			</li>
-			<li>
-				<b><i>Socketpipe</i></b> connects a remote command to local input and output processes without the data copy and context switching overhead of the customary rsh or ssh pipelines.
-				<br /><br />
-			</li>
-			<li>
-				<b><i>Fileprune</i></b> will delete files from the specified set targetting a given distribution of the files within time as well as size, number, and age constraints. Its main purpose is to keep a set of daily-created backup files in managable size, while still providing reasonable access to older versions. Specifying a size, file number, or age constraint will simply remove files starting from the oldest, until the constraint is met. The distribution specification (exponential, Gaussian (normal), or Fibonacci) provides finer control of the files to delete, allowing the retention of recent copies and the increasingly agressive pruning of the older files. You can read more in the article Organized pruning of file sets. ;login:, 28(3):39-42, June 2003.
-				<br /><br />
-			</li>
-			<li>
-				<b><i>bib2html</i></b> is a program that converts BibTeX files into HTML (specifically XHTML 1.0). The conversion is mostly done by specialized BibTeX style files, derived from a converted bibliography style template. This ensures that the original BibTeX styles are faithfully reproduced.
-				<br /><br />
-			</li>
-			<li>
-				<b><i>Rtfbtx</i></b> is a collection of BibTeX style files that create Microsoft Word RTF format output instead of LaTeX output.
-				<br /><br />
-			</li>
-		</ul>
-	</page_body>
+<page_name>Public Software</page_name>
+<page_body>
+The goal of SENSE is to practice what we preach by
+developing software following or deomonstrating the
+techniques or methodologies we advocate. When there are
+no intelectual property rights conflicts we try to make
+our software available in free and/or open-source form.
+Software we have released includes the following projects:
+<br />
+<ul>
+<li>
+<a href="http://www.dmst.aueb.gr/dds/cscout">CScout</a>
+is a source code analyzer and refactoring browser
+for collections of C programs. It can process workspaces of multiple
+projects mapping the complexity introduced by the C preprocessor back
+into the original C source code files. CScout takes advantage of modern
+hardware advances (fast processors and large memory capacities) to
+analyze C source code beyond the level of detail and accuracy provided
+by current compilers and linkers.
+</li>
+<li>
+<a href="http://www.dmst.aueb.gr/dds/sw/umlgraph">UMLGraph</a>
+allows the declarative specification and drawing of a number of UML
+diagrams. See also the
+<a href="http://www.dmst.aueb.gr/dds/pubs/jrnl/2003-IEEESW-umlgraph/html/article.html">article</a>
+titled On the declarative specification
+of models. IEEE Software, 20(2):94-96, March/April 2003.
+</li>
+<li>
+<a href="http://www.dmst.aueb.gr/dds/sw/outwit">Outwit</a>
+A tool suite that provides console-based access to the Windows clipboard,
+registry, databases, document properties, and links. See also the
+<a href="http://www.dmst.aueb.gr/dds/pubs/conf/2000-Usenix-outwit/html/utool.html">conference paper</a> Outwit:
+Unix tool-based programming meets the Windows world. In USENIX 2000
+Technical Conference Proceedings, pages 149-158, San Diego, CA, USA,
+June 2000. Usenix Association.
+</li>
+<li>
+<a href="http://www.dmst.aueb.gr/dds/sw/unix/socketpipe">Socketpipe</a>
+connects a remote command to local input and output processes without
+the data copy and context switching overhead of the customary rsh or
+ssh pipelines.
+</li>
+<li>
+<a href="http://www.dmst.aueb.gr/dds/sw/unix/fileprune">Fileprune</a>
+will delete files from the specified set targetting a given
+distribution of the files within time as well as size, number, and age
+constraints. Its main purpose is to keep a set of daily-created backup
+files in managable size, while still providing reasonable access to
+older versions. Specifying a size, file number, or age constraint will
+simply remove files starting from the oldest, until the constraint is
+met. The distribution specification (exponential, Gaussian (normal),
+or Fibonacci) provides finer control of the files to delete, allowing
+the retention of recent copies and the increasingly agressive pruning
+of the older files. You can read more in the
+<a href="http://www.dmst.aueb.gr/dds/pubs/trade/2003-login-prune/html/prune.html">article</a>
+Organized pruning
+of file sets. ;login:, 28(3):39-42, June 2003.
+</li>
+<li>
+<a href="http://www.dmst.aueb.gr/dds/sw/textproc/bib2xhtml">bib2xhtml</a>
+is a program that converts BibTeX files into HTML (specifically XHTML
+1.0). The conversion is mostly done by specialized BibTeX style files,
+derived from a converted bibliography style template. This ensures that
+the original BibTeX styles are faithfully reproduced.
+</li>
+</ul>
+</page_body>
 </page>
