@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<member id="m_nick" group="g_eltrun g_iris">
+	<givenname>Nick</givenname>
+	<surname>Chozos</surname>
+	<memb_title>Mr.</memb_title>
+	<email>nick@dcs.gla.ac.uk</email>
+	<web_site>http://www.dcs.gla.ac.uk/~nick/</web_site>
+	<!--<office_phone>+44 1413300917</office_phone>-->
+	<alumnus/>
+	<shortcv>
+<p>
+Nick Chozos is a PhD student in the Department of Computing of Glasgow University. His PhD focuses on the analysis and design of healthcare information systems with regard to assuring safer practices and avoiding, minimizing and controlling adverse events that result from information systems failure. He holds an MSc in Information Systems (Brunel University) and a BSc in Management and Computing (Deree College). Nick was a Research Assistant in ELTRUN from October 2001 until December 2002, where he worked in two EC funded projects (CEBOS, DOMINO). Research interests include accident analysis, social and human factors in computing, and information systems development. 
+</p>
+<p>To find out more, visit Nick's website:
+<a href="http://www.dcs.gla.ac.uk/~nick/">http://www.dcs.gla.ac.uk/~nick/</a>
+</p>
+	</shortcv>
+</member>
