@@ -12,6 +12,12 @@ PROJECTFILES=$(wildcard data/projects/*.xml)
 PUBFILE=build/pubs.xml
 BIBFILES=$(wildcard data/publications/*.bib)
 
+# BibTeX paths (used under Unix)
+BIBINPUTS=data/publications:tools
+BSTINPUTS=tools
+export BIBINPUTS
+export BSTINPUTS
+
 # Database containing all the above
 DB=build/db.xml
 # XSLT file for public data
