@@ -72,7 +72,7 @@ html: ${DB}
 		xml tr ${PXSLT} -s ogroup=$$group -s what=group-publications ${DB} >${HTML}/publications/$$group-publications.html ; \
 	done
 	for project in $(PROJECTIDS) ; \
-	do \$(SHELL)
+	do \
 		xml tr ${PXSLT} -s oproject=$$project -s what=project-details ${DB} >${HTML}/projects/$$project.html ; \
 		xml tr ${PXSLT} -s oproject=$$project -s what=project-publications ${DB} >${HTML}/publications/$$project-publications.html ; \
 	done
