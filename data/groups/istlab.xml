@@ -3,10 +3,20 @@
 	<grouptitle>Electronic Trading Research Unit</grouptitle>
 	<shortname>ELTRUN</shortname>
 	<description>
-		The umbrella group.
+		<h2>You should not have seen this page</h2>
+		ELTRUN is an umbrella group for consolidating members,
+		groups, projects, and publications.
+		This page should not be linked and is therefore
+		invisible.
+		<p />
+		If you have found this page following a hyperlink,
+		please notify the web administrator.
 	</description>
 	<rel_link>
-		<a href="http://www.dmst.aueb.gr/">Department of Management Science and Technology</a>
+		<a href="http://www.dmst.aueb.gr/">AUEB</a>
+	</rel_link>
+	<rel_link>
+		<a href="http://www.aueb.gr/">DMST</a>
 	</rel_link>
 	<logo>../images/eltrun.jpg</logo>
 </group>
