@@ -10,7 +10,7 @@
  -->
 
 <!-- Global definitions {{{1 -->
-<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" >
 <xsl:param name="today"/>	<!-- today's date -->
 <xsl:param name="ogroup"/>	<!-- limit output to (projects/members) of a given group -->
 <xsl:param name="oproject"/>	<!-- limit output to a given project -->
@@ -31,7 +31,7 @@
 					| rel-pages
 				-->
 <xsl:param name="menu"/>        <!-- Turn Side menu:
-					  on
+					  on (default is on)
 					| off
 				-->
 
@@ -273,23 +273,11 @@
 		<xsl:value-of select="surname" />
 		</h2>
 		<table border="0"><tr><td valign="top">
-		<xsl:if test="photo">
-			<xsl:element name="img">
-				<xsl:attribute name="src"><xsl:value-of select="photo"/></xsl:attribute>
-				<xsl:attribute name="alt">
-					<xsl:if test="count(memb_title) != 0">
-						<xsl:value-of select="memb_title" />
-					</xsl:if>
-					<xsl:text> </xsl:text>
-					<xsl:value-of select="givenname" />
-					<xsl:text> </xsl:text>
-					<xsl:value-of select="surname" />
-				</xsl:attribute>
-			</xsl:element>
+		<xsl:if test="count(photo) != 0">
+			<img src="{current()/photo}" alt="{current()/memb_title} {current()/givenname} {current()/surname}" />
 		</xsl:if>
 		<br /> <br />
 		</td>
-		<td width="10" />
 		<td>
 		<xsl:if test="count(alumnus) != 0">
 			<font color="#FF0000">
@@ -321,13 +309,7 @@
 			<br />
 		</xsl:if>
 		<xsl:if test="count(web_site) != 0">
-			Web site:
-			<xsl:element name="a">
-					<xsl:attribute name="href">
-						<xsl:value-of select="web_site"/>
-					</xsl:attribute>
-				<xsl:value-of select="web_site"/>
-			</xsl:element>
+			Web site: <a href="{web_site}"><xsl:value-of select="web_site"/></a>
 			<br />
 		</xsl:if>
 		<!-- List group membership, if any -->
@@ -344,12 +326,7 @@
 		</xsl:if>
 		<br />
 		<br />
-		<xsl:apply-templates select="current()/shortcv"/>
-	</xsl:template>
-
-	<!-- Format a short cv {{{1-->
-	<xsl:template match="shortcv">
-		<xsl:copy-of select="*|text()"/>
+		<xsl:copy-of select="current()/shortcv/*|text()"/>
 	</xsl:template>
 
 	<!-- Format a short group reference {{{1 -->
@@ -362,17 +339,6 @@
 		</xsl:if>
 	</xsl:template>
 
-	<!-- Format a group reference for the menuhead {{{1-->
-	<xsl:template match="group" mode="menuhead">
-		<xsl:if test="@id != 'g_eltrun'">
-			<a href="../groups/{@id}-details.html">
-			ELTRUN - <xsl:value-of select="shortname" />
-			</a>
-			<br />
-			<hr />
-		</xsl:if>
-	</xsl:template>
-
 	<!-- Format a full group description {{{1-->
 	<xsl:template match="group" mode="full">
 		<h2>
@@ -382,27 +348,11 @@
 		</h2>
 		<br />
 		<xsl:if test="count(logo) != 0">
-			<xsl:element name="img">
-				<xsl:attribute name="src">
-				    <xsl:value-of select="logo"/>
-				</xsl:attribute>
-				<xsl:attribute name="alt">
-					<xsl:value-of select="shortname"/>
-					<xsl:text> - </xsl:text>
-					<xsl:value-of select="grouptitle"/>
-				</xsl:attribute>
-			</xsl:element>
+			<img src="{current()/logo}" alt="{current()/shortname} - {current()/grouptitle}" />
 			<br /><br />
 		</xsl:if>
 		<xsl:if test='count(director_photo) != 0'>
-			<xsl:element name="img">
-				<xsl:attribute name="src">
-					<xsl:value-of select="director_photo"/>
-				</xsl:attribute>
-				<xsl:attribute name="alt">
-					<xsl:apply-templates select="/eltrun/member_list/member [@id = current()/@director]/surname"/>
-				</xsl:attribute>
-			</xsl:element>
+			<img src="{current()/director_photo}" alt="{current()/surname}" />
 			<br />
 		</xsl:if>
 		<br /><br />
@@ -419,31 +369,19 @@
 		<br />
 		Research group information:
 		<br /><br />
-		<xsl:apply-templates select="current()/description" />
+		<xsl:copy-of select="current()/description" />
 		<br />
 		<br />
 		Website Maintainer:
 		<br />
 		<xsl:apply-templates select="/eltrun/member_list/member [@id=current()/@maintainer]" mode="simple-ref" />
 	</xsl:template>
-
-	<!-- Format description {{{1 -->
-	<xsl:template match="description">
-		<xsl:copy-of select="*|text()"/>
-	</xsl:template>
-
-	<!-- Format related links {{{1 -->
-	<xsl:template match="rel_link">
-		<xsl:copy-of select="*"/><br />
-	</xsl:template>
-
+	
 	<!-- Format a project reference {{{1 -->
 	<xsl:template match="project" mode="ref">
 		<li>
 		<a href="../projects/{@id}.html">
-		<xsl:value-of select="shortname" />
-		-
-		<xsl:value-of select="projtitle" />
+			<xsl:value-of select="shortname" /> - <xsl:value-of select="projtitle" />
 		</a>
 		</li>
 	</xsl:template>
@@ -457,18 +395,14 @@
 		</h1>
 		<!-- Show Logo -->
 		<xsl:if test="count(logo) != 0">
-		<xsl:element name="img">
-				<xsl:attribute name="src"><xsl:value-of select="logo" /></xsl:attribute>
-		</xsl:element>
+			<img src="{current()/logo}" alt="{current()/shortname} Logo" />
 		</xsl:if>
 		<br /> <br />
 		<!-- Project Summary information -->
 		<xsl:if test="count(project_code) != 0">
 			Project Code:
 			<xsl:value-of select="project_code" />
-			<xsl:if test="@international = 'yes'">
-				(International)
-			</xsl:if>
+			<xsl:if test="@international = 'yes'">(International)</xsl:if>
 			<br/>
 		</xsl:if>
 		<xsl:if test="count(funding_programme) != 0">
@@ -490,13 +424,8 @@
 			<br />
 		</xsl:if>
 		<xsl:if test="count(web_site) != 0">
-			Web site:
-			<xsl:element name="a">
-				<xsl:attribute name="href"><xsl:value-of select="web_site"/></xsl:attribute>
-				<xsl:value-of select="web_site" />
-			</xsl:element>
-			<br />
-			<br />
+			Web site: <a href="{current()/web_site}"><xsl:value-of select="web_site" /></a>
+			<br /><br />
 		</xsl:if>
 		<!-- Show starting date -->
 		<xsl:if test="startdate != ''">
@@ -538,10 +467,9 @@
 			<xsl:apply-templates select="/eltrun/member_list/member [@id=current()/@contact]" mode="simple-ref" />
 		<br />
 		</xsl:if>
-
 		<!-- Show groups this project belongs to -->
 		Groups:
-		<xsl:apply-templates select="/eltrun/group_list/group [contains(current()/@group, @id)]" mode="shortref"/>
+		<xsl:apply-templates select="/eltrun/group_list/group [contains(current()/@group, @id)]" mode="shortref" />
 		<!-- Provide publications link, if any publications exist -->
 		<xsl:if test="count(/eltrun/publication_type_list/publication_type [@for = current()/@id]/has_any) != 0">
 			<br/><br />
@@ -552,53 +480,35 @@
 		<xsl:if test="count(description) != 0">
 			Description:<br />
 			<br />
-			<xsl:apply-templates select="current()/description" />
+			<xsl:copy-of select="current()/description" />
 			<br />
 		</xsl:if>
 		<xsl:if test="count(partner) != 0">
 			Partners:
 			<ul>
-			<xsl:apply-templates select="current()/partner" />
+			<xsl:for-each select="current()/partner">
+				<li>
+				<xsl:if test="count(web_site) != 0">
+					<a href="{current()/web_site}"><xsl:value-of select="current()/shortname"/> (<xsl:value-of select="current()/country"/>)</a>
+				</xsl:if>
+				<xsl:if test="count(web_site) = 0">
+					<xsl:value-of select="current()/shortname"/> (<xsl:value-of select="current()/country"/>)
+				</xsl:if>
+				</li>			
+			</xsl:for-each>
 			</ul>
 		</xsl:if>
-	</xsl:template>
-
-	<!-- partners {{{1 -->
-	<xsl:template match="partner">
-		<li>
-		<xsl:if test="count(web_site) != 0">
-			<xsl:element name="a">
-				<xsl:attribute name="href">
-					<xsl:value-of select="web_site"/>
-				</xsl:attribute>
-				<xsl:value-of select="shortname"/>
-				(<xsl:value-of select="country"/>)
-			</xsl:element>
-		</xsl:if>
-		<xsl:if test="count(web_site) = 0">
-				<xsl:value-of select="shortname"/>
-				(<xsl:value-of select="country"/>)
-		</xsl:if>
-		</li>
-	</xsl:template>
-
-	<!-- Format a group heading {{{1 -->
-	<xsl:template name="group-head">
-		<!-- Generate ELTRUN or group heading -->
-		<xsl:choose>
-			<xsl:when test="$ogroup = 'g_eltrun'">
-				ELTRUN
-			</xsl:when>
-			<xsl:when test="$ogroup != 'g_eltrun'">
-				<xsl:apply-templates select="/eltrun/group_list/group[@id = $ogroup]" mode="shortref"/>
-			</xsl:when>
-		</xsl:choose>
 	</xsl:template>
 
 	<!-- body menu {{{1-->
 	<xsl:template name="body-menu">
 		<xsl:param name="bodygroup" />
-		<xsl:apply-templates select="/eltrun/group_list/group[@id = $bodygroup]" mode="menuhead"/>
+		<xsl:if test="/eltrun/group_list/group[@id = $bodygroup]/@id != 'g_eltrun'">
+			<a href="../groups/{/eltrun/group_list/group[@id = $bodygroup]/@id}-details.html">
+			ELTRUN - <xsl:value-of select="/eltrun/group_list/group[@id = $bodygroup]/shortname" />
+			</a>
+			<br /><hr />
+		</xsl:if>
 		<a href="../groups/{$bodygroup}-members.html">Members</a>
 			<br />
 			<a href="../groups/{$bodygroup}-current-projects.html">Current Projects</a>
@@ -610,16 +520,18 @@
 			<xsl:if test="count(/eltrun/member_list/member[contains(@group,$bodygroup)]/alumnus) != 0">
 				<a href="../groups/{$bodygroup}-alumni.html">Associates</a><br />
 			</xsl:if>
-			<xsl:if test="count(/eltrun/page_list/page[@group = $bodygroup]) != 0">
-				<xsl:apply-templates select="/eltrun/page_list/page[@group = $bodygroup]" mode="ref"/>
+			<xsl:if test="count(/eltrun/page_list/page[@group = $bodygroup]) != 0">				
+				<xsl:for-each select="/eltrun/page_list/page[@group = $bodygroup]">
+					<a href="../rel_pages/{@id}-page.html">
+					<xsl:value-of select="page_name" />
+					</a><br />
+				</xsl:for-each>
 			</xsl:if>
 			<xsl:if test="count(/eltrun/group_list/group[@id = $bodygroup]/rel_link) != 0">
-				<xsl:apply-templates select="/eltrun/group_list/group[@id = $bodygroup]/rel_link" />
+				<xsl:for-each select="/eltrun/group_list/group[@id = $bodygroup]/rel_link">
+					<xsl:copy-of select="current()/*" /><br />
+				</xsl:for-each>
 			</xsl:if>
-	</xsl:template>
-	
-	<xsl:template match="surname">
-		<xsl:text> </xsl:text><xsl:value-of select="current()"/>
 	</xsl:template>
 	
 	<!-- presentation reference {{{1-->
@@ -628,10 +540,6 @@
 		<xsl:if test="count(pres_name) != 0">
 			<xsl:text> </xsl:text><xsl:value-of select="pres_name" />
 		</xsl:if>
-	</xsl:template>
-	
-	<xsl:template match="member" mode="pres-ref">
-		<xsl:apply-templates select="current()" mode="simple-ref"/><br />
 	</xsl:template>
 	
 	<xsl:template match="presentation" mode="full">
@@ -643,7 +551,9 @@
 		<tr>
 		<td><b>Presenters:</b></td>
 		<td>
-		<xsl:apply-templates select="/eltrun/member_list/member [contains(current()/@by,@id)]" mode="pres-ref" />
+		<xsl:for-each select="/eltrun/member_list/member [contains(current()/@by,@id)]">
+			<xsl:apply-templates select="current()" mode="simple-ref"/><br />
+		</xsl:for-each>
 		<xsl:if test="count(pres_name) != 0">
 			<xsl:value-of select="pres_name" />
 		</xsl:if>
@@ -655,34 +565,26 @@
 	
 	<!-- seminar {{{1-->
 	<xsl:template match="seminar" mode="ref">
-	    <xsl:element name="a">
-		<xsl:attribute name="href">
-		    <xsl:text>index.html#</xsl:text>
-		    <xsl:value-of select="sem_date"/>
-		</xsl:attribute>
-		<xsl:call-template name="date">
-			<xsl:with-param name="date" select="sem_date" />
-		</xsl:call-template>
-		<xsl:text> - </xsl:text>
-		<xsl:apply-templates select="current()/presentation" mode="ref"/>
-	    </xsl:element>
+		<a href="index.html#{current()/sem_date}">
+			<xsl:call-template name="date">
+				<xsl:with-param name="date" select="sem_date" />
+			</xsl:call-template>
+			<xsl:text> - </xsl:text>
+			<xsl:apply-templates select="current()/presentation" mode="ref"/>
+		</a>
 	    <br />
 	</xsl:template>
 	
 	<!-- Seminar detailed template {{{1-->
 	<xsl:template match="seminar" mode="full">
 	    <hr />
+	    <!-- Create the anchor -->
+	    <a href="#{current()/sem_date}" />
 	    <h2>
 	    	<xsl:call-template name="date">
 			<xsl:with-param name="date" select="sem_date" />
 		</xsl:call-template>
 	    </h2>
-	    <!-- Create the anchor -->
-	    <xsl:element name="a">
-		<xsl:attribute name="name">
-		    <xsl:value-of select="sem_date" />
-		</xsl:attribute>
-	    </xsl:element>
 	    <!-- create seminar data -->
 	    <table border="0">
 	    <tr>
@@ -699,21 +601,10 @@
 	    <xsl:apply-templates select="current()/presentation" mode="full"/>
 	</xsl:template>
 
-	<!-- page_body {{{1-->
-	<xsl:template match="page_body">
-		<xsl:copy-of select="*|text()"/>
-	</xsl:template>
-
 	<!-- page transformation {{{1-->
 	<xsl:template match="page" mode="full">
 		<h2><xsl:value-of select="page_name" /></h2>
-		<xsl:apply-templates select="current()/page_body" />
-	</xsl:template>
-
-	<xsl:template match="page" mode="ref">
-		<a href="../rel_pages/{@id}-page.html">
-			<xsl:value-of select="page_name" />
-		</a><br />
+		<xsl:copy-of select="current()/page_body" />
 	</xsl:template>
 
 	<!-- Main transformation {{{1 -->
@@ -785,32 +676,23 @@
 		<table border="0">
 			<tbody valign="top">
 			<tr>
-			<xsl:if test="$menu != 'off'">			
-				<xsl:element name="td">
-					<xsl:attribute name="height">800</xsl:attribute>
-					<xsl:attribute name="width">150</xsl:attribute>
-					<xsl:attribute name="align">left</xsl:attribute>
-					<xsl:attribute name="bgcolor">
-						<xsl:if test="$what = 'rel-pages'">
-							<xsl:variable name="tmpgroup" select="/eltrun/page_list/page[@id = $opage]/@group" />					     
-							<xsl:value-of select="/eltrun/group_list/group[@id = $tmpgroup]/color" />							
-						</xsl:if>
-						<xsl:if test="$what != 'rel-pages'">
-							<xsl:value-of select="/eltrun/group_list/group[@id = $ogroup]/color" />
-						</xsl:if>
-					</xsl:attribute>
-					<xsl:if test="$what = 'rel-pages'">
-						<xsl:call-template name="body-menu">
-							<xsl:with-param name="bodygroup" select="/eltrun/page_list/page[@id = $opage]/@group" />
-						</xsl:call-template>
-					</xsl:if>
-					<xsl:if test="$what != 'rel-pages'">
-						<xsl:call-template name="body-menu">
-							<xsl:with-param name="bodygroup" select="$ogroup" />
-						</xsl:call-template>
-					</xsl:if>							
-				</xsl:element>			
-			</xsl:if>			
+			<xsl:if test="$menu != 'off'">
+				<xsl:if test="$what = 'rel-pages'">
+					<xsl:variable name="tmpgroup" select="/eltrun/page_list/page[@id = $opage]/@group" />
+					<td height="800" width="150" align="left" bgcolor="{/eltrun/group_list/group[@id = $tmpgroup]/color}">				
+					<xsl:call-template name="body-menu">
+						<xsl:with-param name="bodygroup" select="/eltrun/page_list/page[@id = $opage]/@group" />
+					</xsl:call-template>
+					</td>
+				</xsl:if>
+				<xsl:if test="$what != 'rel-pages'">
+					<td height="800" width="150" align="left" bgcolor="{/eltrun/group_list/group[@id = $ogroup]/color}">
+					<xsl:call-template name="body-menu">
+						<xsl:with-param name="bodygroup" select="$ogroup" />
+					</xsl:call-template>
+					</td>
+				</xsl:if>
+			</xsl:if>
 			<td align="left" width="830">
 			<!-- choose which HTML to show -->
 			<xsl:choose>
@@ -853,7 +735,7 @@
 					<h2>Contents</h2>
 					<xsl:apply-templates select="/eltrun/publication_type_list/publication_type [@for = $omember]" mode="toc" />
 					<xsl:apply-templates select="/eltrun/publication_type_list/publication_type [@for = $omember]" mode="full" >
-					<xsl:with-param name="pubid" select="$omember" />
+						<xsl:with-param name="pubid" select="$omember" />
 					</xsl:apply-templates>
 				</xsl:when>
 				<!-- project publications -->
@@ -868,9 +750,7 @@
 					<xsl:apply-templates select="/eltrun/publication_type_list/publication_type [@for = $oproject]" mode="toc" />
 					<xsl:apply-templates select="/eltrun/publication_type_list/publication_type [@for = $oproject]" mode="full">
 						<xsl:with-param name="pubid" select="$oproject" />
-
 					</xsl:apply-templates>
-
 				</xsl:when>
 				<!-- group publications -->
 				<xsl:when test="$what = 'group-publications'">
