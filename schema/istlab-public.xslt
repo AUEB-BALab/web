@@ -625,7 +625,7 @@
 		<td><xsl:apply-templates select="/eltrun/member_list/member [contains(current()/@by,@id)]" mode="pres-ref" /></td>
 		</tr>
 		</table>
-		<br/>
+		<br/><br />
 	</xsl:template>
 	
 	<!-- seminar {{{1-->
@@ -646,20 +646,19 @@
 	
 	<!-- Seminar detailed template {{{1-->
 	<xsl:template match="seminar" mode="full">
+	    <hr />
 	    <h2>
 	    	<xsl:call-template name="date">
 			<xsl:with-param name="date" select="sem_date" />
 		</xsl:call-template>
 	    </h2>
 	    <!-- Create the anchor -->
-	    <hr />
 	    <xsl:element name="a">
 		<xsl:attribute name="name">
 		    <xsl:value-of select="sem_date" />
 		</xsl:attribute>
 	    </xsl:element>
 	    <!-- create seminar data -->
-	    <br />
 	    <table border="0">
 	    <tr>
 	    <td><b>Location:</b></td> 
@@ -670,6 +669,8 @@
 	    <td><xsl:value-of select="sem_time" /></td>
 	    </tr>
 	    </table>
+	    <br />
+	    <h3>Presentations</h3>
 	    <xsl:apply-templates select="current()/presentation" mode="full"/>
 	</xsl:template>
 
