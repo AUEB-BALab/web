@@ -1,9 +1,7 @@
 <group id="g_eltrun" director="m_gjd" contact="m_gjd">
 	<grouptitle>eLTRUN</grouptitle>
 	<shortname>eLTRUN</shortname>
-	<logo>
-		<img src="images/logo.jpg" border="0" />
-	</logo>
+	<logo>../images/eltrun.jpg</logo>
 	<description>
 		The umbrella group.
 	</description>

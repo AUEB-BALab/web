@@ -24,7 +24,7 @@
 <!ELEMENT eltrun (group_list, member_list, project_list, publication_list, publication_type_list)>
 <!-- Group list elements {{{1 -->
 <!ELEMENT group_list (group*)>
-<!ELEMENT group (grouptitle, shortname, description, addlinks?, logo?)>
+<!ELEMENT group (grouptitle, shortname, description, addlinks*, logo?)>
 <!ATTLIST group
 	id ID #REQUIRED
 	director IDREF #REQUIRED
@@ -55,7 +55,7 @@
 <!ELEMENT country (#PCDATA)>
 <!-- Member list elements {{{1 -->
 <!ELEMENT member_list (member*)>
-<!ELEMENT member (givenname, surname, shortcv, web_site?, memb_title?, email, office_phone?, mobile_phone?, fax?, photo?)>
+<!ELEMENT member (givenname, surname, shortcv, web_site?, memb_title?, email, office_phone?, mobile_phone?, fax?, photo?,alumni?,office_address?)>
 <!ATTLIST member
 	id ID #REQUIRED
 	group IDREFS #REQUIRED
@@ -69,7 +69,8 @@
 <!ELEMENT mobile_phone %phone;>
 <!ELEMENT fax %phone;>
 <!ELEMENT photo %image;>
-
+<!ELEMENT alumni EMPTY>
+<!ELEMENT office_address (#PCDATA)>
 <!-- Publication list elements {{{1 -->
 <!ELEMENT publication_list (publication*)>
 <!ELEMENT publication (pub_title, pub_author, pub_year)>

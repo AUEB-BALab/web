@@ -4,7 +4,5 @@
 	<description>
 		<em>We</em> are the champs!
 	</description>
-	<addlinks>
-		<a href="http://istlab.dmst.aueb.gr/">ISTLab</a>
-	</addlinks>
+	<addlinks>http://istlab.dmst.aueb.gr/</addlinks>
 </group>
