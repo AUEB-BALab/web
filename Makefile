@@ -36,7 +36,7 @@ RELPAGEIDS=$(shell xml tr ${IDXSLT} -s category=page ${DB})
 # HTML output directory
 HTML=public_html
 
-ifdef MACHTYPE
+ifdef SHELL
 # Unix
 SSH=ssh
 else
@@ -91,6 +91,7 @@ clean:
 		${HTML}/seminar/* \
 		${HTML}/rel_pages/* \
 		${HTML}/publications/* 2>/dev/null
+	-rm -f  public_html/images/colgraph.svg
 
 val: ${DB}
 	@echo '---> Checking group data XML files ... '
