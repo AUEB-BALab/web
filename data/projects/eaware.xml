@@ -13,11 +13,57 @@ Citizen in Europe</projtitle>
 	<funding_programme>Improving Human Potential and Socio-economic Knowledge 
 Base</funding_programme>
 	<project_code>HPRP CT 2002 0008</project_code>
+	<partner>
+		<shortname>RAND Europe</shortname>
+		<country>NL</country>
+		<web_site>http://www.randeurope.org/</web_site>
+	</partner>
+	<partner>
+		<shortname>Intellect</shortname>
+		<country>UK</country>
+		<web_site>http://www.intellectuk.org/</web_site>
+	</partner>
+	<partner>
+		<shortname>CLUSIT</shortname>
+		<country>IT</country>
+		<web_site>http://www.clusit.it/</web_site>
+	</partner>
+	<partner>
+		<shortname>The Danish Technological Institute</shortname>
+		<country>DK</country>
+		<web_site>http://www.danishtechnology.dk/</web_site>
+	</partner>
+	<partner>
+		<shortname>esCERT</shortname>
+		<country>ES</country>
+		<web_site>http://escert.upc.es/</web_site>
+	</partner>
+	<partner>
+		<shortname>INFOLAB</shortname>
+		<country>PL</country>
+		<!--<web_site></web_site>-->
+	</partner>
+	<partner>
+		<shortname>TimeKontor AG</shortname>
+		<country>DE</country>
+		<web_site>http://www.timekontor.de/</web_site>
+	</partner>
+	<partner>
+		<shortname>ECP.NL</shortname>
+		<country>NL</country>
+		<web_site>http://www.ecp.nl/</web_site>
+	</partner>
+	<partner>
+		<shortname>PRAXIS</shortname>
+		<country>EE</country>
+		<web_site>http://www.praxis.ee/</web_site>
+	</partner>
 	<logo>../images/p_eaware.gif</logo>
 	<description>
 eAWARe aims to educate the everyday Internet user about online risks and the 
 steps users can take to protect themselves. eAWARe reaches out to the public 
 through local events across Europe. We will also produce a free guide on how to 
+
 
 have and host your own event to promote information security awareness. eAWARe 
 is supported by the Directorate General for Research of the European 
