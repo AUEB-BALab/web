@@ -2,18 +2,28 @@
 <project id="p_elevate" group="g_eltrun g_ois" scientific_coordinator="m_akp" contact="m_akp" international="yes" type="rtd" project_manager="m_akp">
 	<shortname>ELEVATE</shortname>
 	<projtitle>ELEVATE</projtitle>
-	<startdate>20040104</startdate>
-	<enddate>20060104</enddate>
-	<web_site></web_site>
+	<startdate>20030110</startdate>
+	<enddate>20053103</enddate>
+	<web_site>http://www.exodus.gr/elevate/</web_site>
 <!--	<our_budget> </our_budget> -->
 <!--	<total_budget></total_budget> -->
 	<funding_agency>MINISTRY OF DEVELOPMENTGENERAL - Secretariat for Research and Technology</funding_agency>
 	<funding_programme>Operational Programme Competitivenes Axis 4/Measure 4.5 - New Forms of Work Organization</funding_programme>
-	<project_code></project_code>
+	<project_code>EL-21</project_code>
+	<partner>
+		<shortname>EXODUS S.A.</shortname>
+		<country>EL</country>
+		<web_site>http://www.exodus.gr</web_site>
+	</partner>
 	<partner>
 		<shortname>Piraeus Bank</shortname>
 		<country>EL</country>
 		<web_site>http://www.piraeusbank.gr</web_site>
+	</partner>
+	<partner>
+		<shortname>Geniki Bank</shortname>
+		<country>EL</country>
+		<web_site>http://www.geniki.gr</web_site>
 	</partner>
 	<description>
 The main objective of the "ELEVATE" project is the development of an integrated environment for human resources education, which, in combination with Knowledge Management, e-Learning and Web Usage Mining applications, will be in a position to develop advanced, added value, e-learning programs for large organizations, while at the same time contributing to the improvement of employees' skills. This will be accomplished by integrating the system into the employees' working environment, offering tools that contribute to the constant improvement of the quality of the provided education.

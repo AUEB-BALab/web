@@ -1,21 +1,21 @@
 ﻿<?xml version="1.0"?>
 <project id="p_pened" group="g_eltrun g_ois" scientific_coordinator="m_akp" contact="m_akp" international="yes" type="rtd" project_manager="m_akp">
 	<shortname>PENED 2001</shortname>
-	<projtitle>PENED 2001</projtitle>
-	<startdate></startdate>
-	<enddate></enddate>
+	<projtitle>Development of a Methodology for Analyzing Training Needs in Knowledge Intensive Organizations, during the Adoption of e-Learning and Knowledge Management Strategies</projtitle>
+	<startdate>20031503</startdate>
+	<enddate>20061503</enddate>
 	<web_site></web_site>
 <!--	<our_budget> </our_budget> -->
 <!--	<total_budget></total_budget> -->
-	<funding_agency></funding_agency>
-	<funding_programme></funding_programme>
-	<project_code></project_code>
+	<funding_agency>MINISTRY OF DEVELOPMENTGENERAL - Secretariat for Research and Technology</funding_agency>
+	<funding_programme>Operational Programme Competitivenes "PENED 2001" - Measure 8.3</funding_programme>
+	<project_code>01ΕΔ552</project_code>
 	<partner>
 		<shortname>ALPHA BANK</shortname>
 		<country>EL</country>
 		<web_site>http://www.alpha.gr</web_site>
 	</partner>
 	<description>
-In the Call for Proposals for "PENED 2001" project of General Secretariat for Research and Technology (3 rd Community Support Programme, Operational Programme "Competitiveness") for Human Resources in Research &amp; Technology (PhD Candidates), AUEB undertook the research project PROMITHEAS (Development of a Methodology for Analyzing Training Needs in Knowledge Intensive Organizations, during the Adoption of e-Learning and Knowledge Management Strategies), with Scientific Coordinator for AUEB, the Assistant Professor of DET, Dr. Angeliki Poulymenakou. The project focuses in formulating valid proposals for practical considerations of strategic and business issues, in concern with the use and exploitation of modern technologies and practices of e-Learning and Knowledge Management. The proposed methodology will be applied in the user organization of the project, which is ALPHA BANK.
+In the Call for Proposals for "PENED 2001" project for Human Resources in Research &amp; Technology (PhD Candidates), AUEB undertook the research project PROMITHEAS (Development of a Methodology for Analyzing Training Needs in Knowledge Intensive Organizations, during the Adoption of e-Learning and Knowledge Management Strategies), with Scientific Coordinator for AUEB, the Assistant Professor of DET, Dr. Angeliki Poulymenakou. The project focuses in formulating valid proposals for practical considerations of strategic and business issues, in concern with the use and exploitation of modern technologies and practices of e-Learning and Knowledge Management. The proposed methodology will be applied in the user organization of the project, which is ALPHA BANK.
 	</description>
 </project>
