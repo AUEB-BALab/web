@@ -3,9 +3,8 @@
 	<sem_time></sem_time>
 	<sem_room></sem_room>
 	<sem_duration>90 mins</sem_duration>
-		<presentation by="m_pzioto">
+		<presentation by="m_ilias.kastritis">
           		<pres_title> </pres_title>
           		<pres_url></pres_url>
 		</presentation>
-	
 </seminar>
