@@ -1,14 +1,14 @@
 ﻿<?xml version="1.0"?>
 <project id="p_elevate" group="g_eltrun g_ois" scientific_coordinator="m_akp" contact="m_akp" international="yes" type="rtd" project_manager="m_akp">
 	<shortname>ELEVATE</shortname>
-	<projtitle>ELEVATE</projtitle>
+	<projtitle>ELearning EnVironment for quAlitative Training of Employeees</projtitle>
 	<startdate>20030110</startdate>
 	<enddate>20053103</enddate>
 	<web_site>http://www.exodus.gr/elevate/</web_site>
 <!--	<our_budget> </our_budget> -->
 <!--	<total_budget></total_budget> -->
 	<funding_agency>MINISTRY OF DEVELOPMENTGENERAL - Secretariat for Research and Technology</funding_agency>
-	<funding_programme>Operational Programme Competitivenes Axis 4/Measure 4.5 - New Forms of Work Organization</funding_programme>
+	<funding_programme>Operational Programme 'INFORMATION SOCIETY' Axis 3/Measure 3.3</funding_programme>
 	<project_code>EL-21</project_code>
 	<partner>
 		<shortname>EXODUS S.A.</shortname>

@@ -1,0 +1,80 @@
+﻿<?xml version="1.0"?>
+<project id="p_model" group="g_eltrun g_ois" scientific_coordinator="m_akp" contact="m_akp" international="yes" type="rtd" project_manager="m_akp">
+	<shortname>MODEL</shortname>
+	<projtitle>Multimedia for Open and Dynamic Executives Learning</projtitle>
+	<startdate>20001501</startdate>
+	<enddate>20030305</enddate>
+	<web_site>http://www.model2learn.org/</web_site>
+<!--	<our_budget> </our_budget> -->
+<!--	<total_budget></total_budget> -->
+	<funding_agency>European Commission</funding_agency>
+	<funding_programme>FP5 - IST Program under key action II</funding_programme>
+	<project_code>IST-1999-12181</project_code>
+	<partner>
+		<shortname>Labrakis Research Foundation</shortname>
+		<country>EL</country>
+		<web_site>http://www.lrf.gr</web_site>
+	</partner>
+	<partner>
+		<shortname>Athens Laboratory of Business Administration</shortname>
+		<country>EL</country>
+		<web_site>http://www.alba.edu.gr</web_site>
+	</partner>
+
+	<partner>
+		<shortname>Piraeus Banking Group</shortname>
+		<country>EL</country>
+		<web_site>http://www.piraeusbank.gr</web_site>
+	</partner>
+	<partner>
+		<shortname>University of Brighton</shortname>
+		<country>UK</country>
+		<web_site>http://www.brighton.ac.uk</web_site>
+	</partner>
+	<partner>
+		<shortname>University of Cologne</shortname>
+		<country>DE</country>
+		<web_site>http://www.uni-koeln.de/allgemeines/homepage.e.html</web_site>
+	</partner>
+	<partner>
+		<shortname>University του Erlangen - FIM</shortname>
+		<country>DE</country>
+		<web_site>www.fim.uni-erlangen.de</web_site>
+	</partner>
+	<partner>
+		<shortname>City of Cologne</shortname>
+		<country>DE</country>
+		<web_site>http://www.stadt-koeln.de/en/</web_site>
+	</partner>
+	<partner>
+		<shortname>RWE Energy AG</shortname>
+		<country>DE</country>
+		<web_site>http://www.rwe.com/generator.aspx/templateId=renderPage/id=496</web_site>
+	</partner>
+	<partner>
+		<shortname>SCIENTER</shortname>
+		<country>IT</country>
+		<web_site>http://www.scienter.org</web_site>
+	</partner>
+	<partner>
+		<shortname>ORACLE Italia</shortname>
+		<country>IT</country>
+		<web_site>http://www.</web_site>
+	</partner>
+	<partner>
+		<shortname>Banca Intesa Spa</shortname>
+		<country>IT</country>
+		<web_site>http://www.oracle.com/it/</web_site>
+	</partner>
+	<partner>
+		<shortname>College of Europe</shortname>
+		<country>BE</country>
+		<web_site>http://www.coleurop.be</web_site>
+	</partner>
+	<logo></logo>
+	<description>
+The MODEL project aims to develop a knowledge management (KM) system (methodological framework, and software tools) to enhance the organisational ability to capture, structure and transfer knowledge across different organisational groups (departments etc.) and over time (from project to project). The key idea is a conceptual and practical shift from the informational retrieval approach, towards an integrated methodology that enables the capture of both explicit and tacit knowledge within the organisation thus increasing the effectiveness of learning materials. The MODEL KM system will be validated as means for enhancing the knowledge dissemination within organisations.
+MODEL will design, implement and validate Knowledge Management (KM) tools for the creation of learning modules based on the concept of interactive case studies comprising dynamic knowledge profiles, as a means for enhancing knowledge dissemination and knowledge intensive work within organisations.
+Work unfolds in three phases: The analysis phase collects and synthesises the current state-of- the-art understanding on the sociocognitive, pedagogic, organisational, and technological facets of the rapidly evolving field of knowledge management. During analysis, we look into particular organisational contexts and work practices to establish the context, content, and processes related to business process driven organisational learning. Analysis work also examines candidates for MODEL-driven support and environment of knowledge intensive organisational work. The result will be a conceptual and methodological framework. The development phase has two major aspects. First business scenarios for implementation and use are formulated. Second, the technological infrastructure is being developed. The third and final phase of the project is concerned with pilot use, evaluation and exploitation activities.
+	</description>
+</project>
