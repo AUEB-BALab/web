@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<project id="p_ebusinessforumZ1" group="g_eltrun g_wrc g_imes" scientific_coordinator="m_avrehop" international="no" type="rtd" contact="m_drosos">
+	<shortname>eBusinessForum - Working Group Z1</shortname>
+	<projtitle>Emerging technologies and Advertising</projtitle>
+	<startdate>20040601</startdate>
+	<enddate>20041101</enddate>
+	<web_site>http://www.ebusinessforum.gr</web_site>
+	<!--<our_budget>328,627 EUR</our_budget>-->
+	<!--<total_budget>3,493,834 EUR</total_budget>-->
+	<!--<funding_agency>General Secretariat of Research and Technology</funding_agency>-->
+	<!--<funding_programme>Research and Technological Development Consortiums in sections of National Priority</funding_programme>-->
+	<!--<project_code>Axis 4.5.1</project_code>-->
+		
+	<!--<logo>../images/athens.gif</logo>-->
+	<partner>
+		<shortname>Tempo OMD Hellas</shortname>
+		<country>GR</country>
+		<!--<web_site>http://www.fme.aegean.gr</web_site>-->
+	</partner>
+	<partner>
+		<shortname>GRNET - Greek Research and Technology Network</shortname>
+		<country>GR</country>
+		<web_site>http://www.edet.gr</web_site>
+	</partner>
+	
+	<description>
+ <p>
+  	ELTRUN/WRC members participate actively in E-Business Forum. Working group (WG) Z1 will research, evaluate and record the most important ingredients of electronic advertising. Advertising has changed radically over the years thanks to new techniques and technologies. New mediums demand for extensive research so as to evaluate them in advertising effectiveness terms and persuade advertisers to invest on them. WG Z1 will focus on <b>Internet and Mobile advertising</b> and especially on the following areas:
+
+</p>	<ul>
+	<li>Emerging advertising technologies and techniques</li>
+	<li>Models and methods of advertising research, management and billing</li>
+	<li>Factors that influence Internet and Mobile advertising</li> 
+	<li>Business models and actors strategies</li>
+	<li>Government and electronic advertising</li>
+	<li>User Acceptance and Privacy</li>
+	<li>Traditional and new advertising mediums: similarities and differences</li> 
+	</ul>
+<p>	For more information please contact Mr. Dimitris Drossos. 
+</p>
+	</description>
+</project>

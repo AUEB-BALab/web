@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<project id="p_ebusinessforumZ2" group="g_eltrun g_wrc" scientific_coordinator="m_giaglis" international="no" type="rtd" contact="m_vzeimp">
+	<shortname>eBusinessForum - Working Group Z2</shortname>
+	<projtitle>Streamlining supply chain operations through automatic identification technologies (RF-ID)</projtitle>
+	<startdate>20040601</startdate>
+	<enddate>20041101</enddate>
+	<web_site>http://www.ebusinessforum.gr</web_site>
+	<!--<our_budget>328,627 EUR</our_budget>-->
+	<!--<total_budget>3,493,834 EUR</total_budget>-->
+	<!--<funding_agency>General Secretariat of Research and Technology</funding_agency>-->
+	<!--<funding_programme>Research and Technological Development Consortiums in sections of National Priority</funding_programme>-->
+	<!--<project_code>Axis 4.5.1</project_code>-->
+		
+	<!--<logo>../images/athens.gif</logo>-->
+	<!--<partner>
+		<shortname>University of the Aegean - Department of Financial and Management Engineering</shortname>
+		<country>GR</country>
+		<web_site>http://www.fme.aegean.gr</web_site>
+	</partner>-->
+	<partner>
+		<shortname>GRNET - Greek Research and Technology Network</shortname>
+		<country>GR</country>
+		<web_site>http://www.edet.gr</web_site>
+	</partner>
+	
+	<description>
+ <p>
+  	ELTRUN/WRC members participate actively in E-Business Forum. Working group (WG) Z2 aims to explore the way Automatic Identification technologies with emphasis on Radio Frequency Identification can streamline core supply chain management operations. In particular, the main objectives of this working group are:
+
+</p>	<ul>
+	<li>The imprinting of current practices in Greece and internationally, mainly in terms of offer and demand, determining the structure and dynamics of the existing market, the main players and the existing technological infrastructure. </li>
+	<li>The determination of synergies that will function as channels of communication around the area of the completion and automation of supply chain via the technologies of Auto-ID technologies, focusing in retailers and suppliers of products that together with consumers constitute the immediate interested parties.</li>
+	<li>The creation of a wider frame of objectives for the configuration of strategy in the sector of growth of management of supply chain with the use of Auto-ID technologies. </li>
+	<li>The identification of innovative applications based on RF-ID technology focusing on the end consumer as well as the Government with accent in the fighting of smuggling, counterfeiting and so on. </li>
+	</ul>
+<p>	For more information please contact Mr. Vasileios Zeimpekis. 
+</p>
+	</description>
+</project>
