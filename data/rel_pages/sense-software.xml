@@ -72,6 +72,9 @@ the original BibTeX styles are faithfully reproduced.
 <li>
 <a href="http://istlab.dmst.aueb.gr/~bkarak/programs/fire/">FIRE Suite - Regular Expression Benchmark Utility</a> is an application written in 100% Java. It was implemented to test FIRE (Fast Implementation of Regular Expressions) execution speed and compatibility with other Regular Expression Engines in Java.
 </li>
+<li>
+<a href="http://istlab.dmst.aueb.gr/~bkarak/programs/regex-api/index.html">SARE - Simple API for Regular Expressions</a> -  SARE stands for Simple API for Regular Expressions. Its an extension API that provides event based regular expression parsing. SARE's API is very simple. The developer need only to implement an interface, action event handler and attach it to the specific group of SARE parser.
+</li>
 </ul>
 </page_body>
 </page>
