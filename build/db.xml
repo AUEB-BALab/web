@@ -68,4 +68,32 @@
 	</description>
 </project>
 </project_list>
+<publication_list>
+
+	<publication id="Spi03i" type="book" group="g_sense"  member="m_dds">
+		<pub_title>Code Reading: The Open Source Perspective</pub_title>
+		<pub_author>Diomidis Spinellis</pub_author>
+		<pub_year>2003</pub_year>
+	</publication>
+
+	<publication id="Spi03k" type="book" group="g_sense" project="p_contessa" member="m_dds">
+		<pub_title>Cross-Media Service Delivery</pub_title>
+		<pub_author>Diomidis Spinellis</pub_author>
+		<pub_year>2003</pub_year>
+	</publication>
+</publication_list>
+<publication_type_list>
+	<publication_type for="m_dds">
+		<has_any/>
+		<has_book/>
+	</publication_type>
+	<publication_type for="g_sense">
+		<has_any/>
+		<has_book/>
+	</publication_type>
+	<publication_type for="p_contessa">
+		<has_any/>
+		<has_book/>
+	</publication_type>
+</publication_type_list>
 </eltrun>

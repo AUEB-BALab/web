@@ -9,6 +9,9 @@
 MEMBERFILES=$(wildcard data/members/*.xml)
 GROUPFILES=$(wildcard data/groups/*.xml)
 PROJECTFILES=$(wildcard data/projects/*.xml)
+PUBFILE=build/pubs.xml
+BIBFILES=$(wildcard data/publications/*.bib)
+
 # Database containing all the above
 DB=build/db.xml
 # XSLT file for public data
@@ -26,7 +29,7 @@ HTML=public_html
 
 all: html
 
-$(DB): ${MEMBERFILES} ${GROUPFILES} ${PROJECTFILES}
+$(DB): ${MEMBERFILES} ${GROUPFILES} ${PROJECTFILES} $(BIBFILES) tools/makepub.pl
 	echo '<eltrun>' >$@
 	echo '<group_list>' >>$@
 	cat ${GROUPFILES} >>$@
@@ -37,14 +40,15 @@ $(DB): ${MEMBERFILES} ${GROUPFILES} ${PROJECTFILES}
 	echo '<project_list>' >>$@
 	cat ${PROJECTFILES} >>$@
 	echo '</project_list>' >>$@
+	perl -n tools/makepub.pl $(BIBFILES) >>$@
 	echo '</eltrun>' >>$@
 
 clean:
-	-rm -f build/[^CVS]*
-	-rm -f ${HTML}/groups/[^CVS]*
-	-rm -f ${HTML}/images/[^CVS]*
-	-rm -f ${HTML}/projects/[^CVS]*
-	-rm -f ${HTML}/publications/[^CVS]*
+	-rm -f  build/* \
+		${HTML}/groups/* \
+		${HTML}/images/* \
+		${HTML}/projects/* \
+		${HTML}/publications/* 2>/dev/null
 
 val: ${DB}
 	xml val -d schema/eltrun.dtd $(DB)
@@ -59,4 +63,9 @@ html: ${DB}
 	for project in $(PROJECTIDS) ; \
 	do \
 		xml tr ${PXSLT} -s oproject=$$project -s what=project-details ${DB} >${HTML}/projects/$$project.html ; \
+		xml tr ${PXSLT} -s oproject=$$project -s what=project-publications ${DB} >${HTML}/publications/$$project.html ; \
+	done
+	for member in $(MEMBERIDS) ; \
+	do \
+		xml tr ${PXSLT} -s omember=$$member -s what=member-publications ${DB} >${HTML}/publications/$$member.html ; \
 	done

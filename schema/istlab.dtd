@@ -17,7 +17,8 @@
 		 "xhtml11.dtd" >
 %xhtml11.mod;
 
-<!ELEMENT eltrun (group_list, member_list, project_list)>
+<!ELEMENT eltrun (group_list, member_list, project_list,
+	publication_list, publication_type_list)>
 
 <!-- Group list elements {{{1 -->
 <!ELEMENT group_list (group*)>
@@ -58,6 +59,40 @@
 <!ELEMENT surname (#PCDATA)>
 <!ELEMENT shortcv (#PCDATA | %Flow.mix;)*>
 
+
+<!-- Publication list elements {{{1 -->
+<!ELEMENT publication_list (publication*)>
+
+<!ELEMENT publication (pub_title, pub_author, pub_year)>
+<!ATTLIST publication
+	id		ID	#REQUIRED
+	type		(article | book | incollection | inproceedings | techreport | whitepaper | workingpaper)	#REQUIRED
+	group		IDREFS	#IMPLIED
+	project		IDREFS	#IMPLIED
+	member		IDREFS	#REQUIRED
+>
+
+<!ELEMENT pub_title (#PCDATA)>
+<!ELEMENT pub_author (#PCDATA)>
+<!ELEMENT pub_year (#PCDATA)>
+
+<!-- Publication_type list elements {{{1 -->
+<!ELEMENT publication_type_list (publication_type*)>
+
+<!ELEMENT publication_type (has_any?, has_article?, has_book?, has_incollection?, has_inproceedings?, has_techreport?, has_whitepaper?, has_workingpaper?)>
+
+<!-- What types of publication does this id have? -->
+<!ATTLIST publication_type
+	for		IDREF	#REQUIRED
+>
+<!ELEMENT has_any EMPTY>
+<!ELEMENT has_article EMPTY>
+<!ELEMENT has_book EMPTY>
+<!ELEMENT has_incollection EMPTY>
+<!ELEMENT has_inproceedings EMPTY>
+<!ELEMENT has_techreport EMPTY>
+<!ELEMENT has_whitepaper EMPTY>
+<!ELEMENT has_workingpaper EMPTY>
 
 <!-- Shared elements {{{1 -->
 <!ELEMENT description (#PCDATA | %Flow.mix;)*>

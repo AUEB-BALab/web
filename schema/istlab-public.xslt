@@ -23,6 +23,9 @@
 					| member-details
 					| project-details
 					| group-details
+					| group-publications
+					| member-publications
+					| project-publications
 				-->
 
 	<!-- Generate heading with group name {{{1 -->
@@ -33,6 +36,21 @@
 			<xsl:value-of select="grouptitle" />
 			</h1>
 		</xsl:if>
+	</xsl:template>
+
+	<!-- Create a bib2html template{{{1 -->
+	<xsl:template name="bib2html">
+		<xsl:param name="pubid" />
+		<xsl:param name="type" />
+<!-- Do not change the formatting of the following lines -->
+<xsl:text>
+</xsl:text>
+<xsl:comment>BEGIN BIBLIOGRAPHY build/<xsl:value-of select="$pubid" />-<xsl:value-of select="$type" /></xsl:comment>
+<xsl:text>
+</xsl:text>
+<xsl:comment>END BIBLIOGRAPHY build/<xsl:value-of select="$pubid" />-<xsl:value-of select="$type" /></xsl:comment>
+<xsl:text>
+</xsl:text>
 	</xsl:template>
 
 	<!-- Format an ISO date {{{1 -->
@@ -63,6 +81,87 @@
 		<xsl:text> </xsl:text>
 		<!-- Year -->
 		<xsl:value-of select="substring($date, 1, 4)"/>
+	</xsl:template>
+
+	<!-- Format a publication type for the contents list {{{1 -->
+	<xsl:template match="publication_type" mode="toc" >
+		<ul>
+		<xsl:if test="count(has_book) != 0">
+			<li><a href="#book">Monographs and edited volumes</a></li>
+		</xsl:if>
+		<xsl:if test="count(has_article) != 0">
+			<li><a href="#article">Journal articles</a></li>
+		</xsl:if>
+		<xsl:if test="count(has_incollection) != 0">
+			<li><a href="#incollection">Book chapters</a></li>
+		</xsl:if>
+		<xsl:if test="count(has_inproceedings) != 0">
+			<li><a href="#inproceedings">Conference publications</a></li>
+		</xsl:if>
+		<xsl:if test="count(has_techreport) != 0">
+			<li><a href="#techreport">Technical reports</a></li>
+		</xsl:if>
+		<xsl:if test="count(has_whitepaper) != 0">
+			<li><a href="#whitepaper">White papers</a></li>
+		</xsl:if>
+		<xsl:if test="count(has_workingpaper) != 0">
+			<li><a href="#workingpaper">Working papers</a></li>
+		</xsl:if>
+		</ul>
+	</xsl:template>
+
+	<!-- Format a publication type for including BibTeX results {{{1 -->
+	<xsl:template match="publication_type" mode="full" >
+		<xsl:param name="pubid" />
+		<xsl:if test="count(has_book) != 0">
+			<a name="book"> </a><h2>Monographs and Edited Volumes</h2>
+			<xsl:call-template name="bib2html">
+				<xsl:with-param name="type" select="'book'" />
+				<xsl:with-param name="pubid" select="$pubid" />
+			</xsl:call-template>
+		</xsl:if>
+		<xsl:if test="count(has_article) != 0">
+			<a name="article"> </a><h2>Journal Articles</h2>
+			<xsl:call-template name="bib2html">
+				<xsl:with-param name="type" select="'article'" />
+				<xsl:with-param name="pubid" select="$pubid" />
+			</xsl:call-template>
+		</xsl:if>
+		<xsl:if test="count(has_incollection) != 0">
+			<a name="incollection"> </a><h2>Book Chapters</h2>
+			<xsl:call-template name="bib2html">
+				<xsl:with-param name="type" select="'incollection'" />
+				<xsl:with-param name="pubid" select="$pubid" />
+			</xsl:call-template>
+		</xsl:if>
+		<xsl:if test="count(has_inproceedings) != 0">
+			<a name="inproceedings"> </a><h2>Conference Publications</h2>
+			<xsl:call-template name="bib2html">
+				<xsl:with-param name="type" select="'inproceedings'" />
+				<xsl:with-param name="pubid" select="$pubid" />
+			</xsl:call-template>
+		</xsl:if>
+		<xsl:if test="count(has_techreport) != 0">
+			<a name="techreport"> </a><h2>Technical Reports</h2>
+			<xsl:call-template name="bib2html">
+				<xsl:with-param name="type" select="'techreport'" />
+				<xsl:with-param name="pubid" select="$pubid" />
+			</xsl:call-template>
+		</xsl:if>
+		<xsl:if test="count(has_whitepaper) != 0">
+			<a name="whitepaper"> </a><h2>White Papers</h2>
+			<xsl:call-template name="bib2html">
+				<xsl:with-param name="type" select="'whitepaper'" />
+				<xsl:with-param name="pubid" select="$pubid" />
+			</xsl:call-template>
+		</xsl:if>
+		<xsl:if test="count(has_workingpaper) != 0">
+			<a name="workingpaper"> </a><h2>Working Papers</h2>
+			<xsl:call-template name="bib2html">
+				<xsl:with-param name="type" select="'workingpaper'" />
+				<xsl:with-param name="pubid" select="$pubid" />
+			</xsl:call-template>
+		</xsl:if>
 	</xsl:template>
 
 	<!-- Format a member reference {{{1 -->
@@ -116,6 +215,10 @@
 		</xsl:if>
 		<!-- Show groups this project belongs to -->
 		Groups: <xsl:apply-templates select="/eltrun/group_list/group [contains(current()/@group, @id)]" mode="shortref"/>
+		<!-- Provide publications link, if any publications exist -->
+		<xsl:if test="count(/eltrun/publication_type_list/publication_type [@for = current()/@id]/has_any) != 0">
+			<br/><a href="../publications/{@id}.html">Publications</a>
+		</xsl:if>
 	</xsl:template>
 
 	<!-- Format a group heading {{{1 -->
@@ -160,6 +263,18 @@
 
 			<xsl:when test="$what = 'project-details'">
 				<xsl:apply-templates select="/eltrun/project_list/project [@id = $oproject]" mode="full" />
+			</xsl:when>
+
+			<xsl:when test="$what = 'member-publications'">
+				<h1>
+				<xsl:apply-templates select="/eltrun/member_list/member [@id=$omember]" mode="ref" />
+				: Publications
+				</h1>
+				<h2>Contents</h2>
+				<xsl:apply-templates select="/eltrun/publication_type_list/publication_type [@for = $omember]" mode="toc" />
+				<xsl:apply-templates select="/eltrun/publication_type_list/publication_type [@for = $omember]" mode="full" >
+					<xsl:with-param name="pubid" select="$omember" />
+				</xsl:apply-templates>
 			</xsl:when>
 		</xsl:choose>
 		</html>

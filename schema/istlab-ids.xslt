@@ -34,4 +34,10 @@
 		</xsl:if>
 	</xsl:template>
 
+	<!-- Ignore the rest -->
+	<xsl:template match="publication_list">
+	</xsl:template>
+	<xsl:template match="publication_type_list">
+	</xsl:template>
+
 </xsl:stylesheet>
