@@ -1,4 +1,4 @@
-<project id="p_web" group="g_ist" sc='m_gjd' >
+<project id="p_web" group="g_sense" sc='m_gjd' >
 	<shortname>web</shortname>
 	<projtitle>Web site</projtitle>
 	<enddate>20040401</enddate>

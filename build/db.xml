@@ -1,8 +1,8 @@
 <eltrun>
 <group_list>
-<group id="g_ist" director="m_dds">
-	<grouptitle>Information Systems Technology</grouptitle>
-	<shortname>IST</shortname>
+<group id="g_sense" director="m_dds">
+	<grouptitle>Software Engineering and Security</grouptitle>
+	<shortname>SENSE</shortname>
 	<description>
 		<em>We</em> are the champs!
 	</description>
@@ -19,19 +19,19 @@
 </group>
 </group_list>
 <member_list>
-<member id="m_dds" group="g_ist">
+<member id="m_dds" group="g_sense">
 	<givenname>Diomidis</givenname>
 	<surname>Spinellis</surname>
 	<shortcv>Here it is</shortcv>
 </member>
-<member id="m_gjd" group="g_wrc g_ist">
+<member id="m_gjd" group="g_wrc g_sense">
 	<givenname>George</givenname>
 	<surname>Doukidis</surname>
 	<shortcv>Here it is</shortcv>
 </member>
 </member_list>
 <project_list>
-<project id="p_contessa" group="g_ist" >
+<project id="p_contessa" group="g_sense" >
 	<shortname>Contessa</shortname>
 	<projtitle>Content Transformation</projtitle>
 	<startdate>20010615</startdate>
@@ -44,7 +44,7 @@
 	</description>
 </project>
 
-<project id="p_mexpress" group="g_ist g_wrc" sc="m_dds" >
+<project id="p_mexpress" group="g_sense g_wrc" sc="m_dds" >
 	<shortname>mExpress</shortname>
 	<projtitle>Mobile Exhibition Environments</projtitle>
 	<startdate>20020305</startdate>
@@ -56,7 +56,7 @@
 		</ul>
 	</description>
 </project>
-<project id="p_web" group="g_ist" sc='m_gjd' >
+<project id="p_web" group="g_sense" sc='m_gjd' >
 	<shortname>web</shortname>
 	<projtitle>Web site</projtitle>
 	<enddate>20040401</enddate>

@@ -1,4 +1,4 @@
-<project id="p_mexpress" group="g_ist g_wrc" sc="m_dds" >
+<project id="p_mexpress" group="g_sense g_wrc" sc="m_dds" >
 	<shortname>mExpress</shortname>
 	<projtitle>Mobile Exhibition Environments</projtitle>
 	<startdate>20020305</startdate>
