@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<member id="m_pateli" group="g_eltrun g_wrc">
+<member id="m_pateli" group="g_eltrun g_wrc g_sense">
 	<givenname>Ada</givenname>
 	<surname>Pateli</surname>
 	<memb_title>Mrs.</memb_title>
