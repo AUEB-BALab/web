@@ -382,13 +382,13 @@
 		</xsl:if>
 		Director:
 		<xsl:apply-templates select="/eltrun/member_list/member [@id=current()/@director]" mode="simple-ref" />
-		<br />
-		Contact:
-		<xsl:apply-templates select="/eltrun/member_list/member [@id=current()/@contact]" mode="simple-ref" />
 		<br /><br />
 		Research group information:
 		<br /><br />
 		<xsl:apply-templates select="current()/description" />
+		<br />
+		Contact:
+		<xsl:apply-templates select="/eltrun/member_list/member [@id=current()/@contact]" mode="simple-ref" />
 	</xsl:template>
 
 	<!-- Format description {{{1 -->
