@@ -1,8 +1,13 @@
 <project id="p_contessa" group="g_eltrun g_sense" contact="m_dds" scientific_coordinator="m_dds" international="yes" type="rtd">
-	<shortname>Contessa</shortname>
-	<projtitle>Content Transformation</projtitle>
+	<shortname>CONTESSA</shortname>
+	<projtitle>Content Transformation Engine Supporting Universal Access</projtitle>
 	<startdate>20010615</startdate>
 	<enddate>20030715</enddate>
+	<web_site>http://contessa.intranet.gr/</web_site>
+	<total_budget>4,698,425 EUR</total_budget>
+	<funding_agency>European Commission</funding_agency>
+	<funding_programme>IST</funding_programme>
+	<project_code>IST-2001-28567</project_code>
 	<description>
 CONTESSA will bring enormous benefits to the Content Industry by
 allowing content to be automatically and cost effectively adapted
@@ -23,9 +28,4 @@ using different access protocols enabling e-Commerce and e-Business
 widespread application.</li>
 </ul>
 	</description>
-	<partner>
-		<shortname>Contessa partner 1</shortname>
-		<country>Hellas</country>
-		<web_site>http://contessa/</web_site>
-	</partner>
 </project>

@@ -34,7 +34,7 @@
 <!ELEMENT rel_link %pc_flow;>
 <!--Project list elements {{{1 -->
 <!ELEMENT project_list (project*)>
-<!ELEMENT project (shortname, projtitle, startdate?, enddate, description, web_site?, our_budget?, total_budget?, funding_agency?, funding_programme?, project_code?, partner*, logo?)>
+<!ELEMENT project (shortname, projtitle, startdate?, enddate, web_site?, our_budget?, total_budget?, funding_agency?, funding_programme?, project_code?, partner*, logo?, description)>
 <!ATTLIST project
 	id ID #REQUIRED
 	contact IDREF #IMPLIED

@@ -1,9 +1,10 @@
-<project id="p_web" group="g_eltrun g_sense" project_manager="m_gjd" contact="m_dds" scientific_coordinator="m_dds" international="yes" type="research">
+<project id="p_web" group="g_eltrun g_sense" project_manager="m_dds" contact="m_bkarak" scientific_coordinator="m_dds" international="yes" type="consulting">
 	<shortname>web</shortname>
-	<projtitle>Web site</projtitle>
+	<projtitle>ELTRUN Web Site</projtitle>
 	<enddate>20040401</enddate>
-	<description>
-		The <em>web site</em> project aims to created a maintanable web site for eLTRUN research group.
-	</description>
 	<web_site>http://www.eltrun.gr/</web_site>
+	<description>
+		The <em>web site</em> project aims to create a dynamic,
+		distributed, and maintanable web site for ELTRUN.
+	</description>
 </project>
