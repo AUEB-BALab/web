@@ -34,6 +34,7 @@
 					  on (default is on)
 					| off
 				-->
+<xsl:param name="seminaryear"/> <!-- limit output to seminar per year -->
 
 	<!-- Generate heading with group name {{{1 -->
 	<xsl:template match="group" mode="heading">
@@ -199,7 +200,7 @@
 	
 
 	<!-- Format a member reference {{{1 -->
-	<xsl:template match="member" mode="ref" >
+	<xsl:template match="member" mode="ref">
 		<xsl:if test="count(alumnus) = 0">
 			<li>
 			<a href="../members/{@id}.html">
@@ -552,7 +553,7 @@
 		<td><b>Presenters:</b></td>
 		<td>
 		<xsl:for-each select="/eltrun/member_list/member [contains(current()/@by,@id)]">
-			<xsl:apply-templates select="current()" mode="simple-ref"/><br />
+			<xsl:apply-templates select="current()" mode="pub-ref"/><br />
 		</xsl:for-each>
 		<xsl:if test="count(pres_name) != 0">
 			<xsl:value-of select="pres_name" />
@@ -579,7 +580,7 @@
 	<xsl:template match="seminar" mode="full">
 	    <hr />
 	    <!-- Create the anchor -->
-	    <a href="#{current()/sem_date}" />
+	    <a href="{current()/sem_date}"></a>
 	    <h2>
 	    	<xsl:call-template name="date">
 			<xsl:with-param name="date" select="sem_date" />
@@ -787,13 +788,13 @@
 				<!-- seminar -->
 				<xsl:when test="$what = 'seminar'">
 					<h2>Eltrun Seminars</h2>
-					<xsl:apply-templates select="/eltrun/seminar_list/seminar" mode="ref">
-					    <xsl:sort select="sem_date" data-type="number" order="descending"/>
-					</xsl:apply-templates>
-					<br /><br />
-					<xsl:apply-templates select="/eltrun/seminar_list/seminar" mode="full">
-					    <xsl:sort select="sem_date" data-type="number" order="descending"/>
-					</xsl:apply-templates>
+						<xsl:apply-templates select="/eltrun/seminar_list/seminar [starts-with(sem_date,$seminaryear)]" mode="ref">
+							<xsl:sort select="sem_date" data-type="number" order="descending"/>
+						</xsl:apply-templates>
+						<br /><br />
+						<xsl:apply-templates select="/eltrun/seminar_list/seminar [starts-with(sem_date,$seminaryear)]" mode="full">
+							<xsl:sort select="sem_date" data-type="number" order="descending"/>
+						</xsl:apply-templates>
 				</xsl:when>
 				<!-- rel-pages -->
 				<xsl:when test="$what = 'rel-pages'">

@@ -35,6 +35,9 @@ MEMBERIDS=$(shell xml tr ${IDXSLT} -s category=member ${DB})
 RELPAGEIDS=$(shell xml tr ${IDXSLT} -s category=page ${DB})
 # HTML output directory
 HTML=public_html
+# Seminar data
+YEAR=$(shell date +'%Y')
+FIRST_YEAR=2001
 
 ifdef TERM
 # Unix
@@ -121,7 +124,7 @@ val: ${DB}
 	do \
 		xml val -d schema/eltrun-seminar.dtd $$file; \
 	done
-	@echo '---> Checking additional HTML pages'
+	@echo '---> Checking additional HTML pages ...'
 	@-for file in $(RELPAGEFILES); \
 	do \
 		xml val -d schema/eltrun-page.dtd $$file; \
@@ -154,7 +157,12 @@ html: ${DB}
 		xml tr ${PXSLT} -s omember=$$member -s what=member-publications -s menu=off ${DB} >${HTML}/publications/$$member-publications.html ; \
 	done
 	@echo "Creating seminar list"
-	@xml tr ${PXSLT} -s what=seminar -s menu=off ${DB} >${HTML}/seminar/index.html
+	@counter=${FIRST_YEAR}; \
+	while [ $$counter -le ${YEAR} ] ; \
+	do \
+		xml tr ${PXSLT} -s what=seminar -s menu=off -s seminaryear=$$counter ${DB} >${HTML}/seminar/$$counter.html ; \
+		counter=`expr $$counter + 1`; \
+	done
 	@echo "Creating additional HTML pages"
 	@for page in $(RELPAGEIDS) ; \
 	do \
