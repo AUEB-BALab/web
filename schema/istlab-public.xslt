@@ -237,82 +237,46 @@
 					</xsl:element>										
 				</xsl:if>
 				<br /> <br />
-				<table>
-					<tbody>
-					<xsl:if test="count(email) != 0">
-						<tr>
-							<th align="left" class="SMALL">E-mail:</th>
-							<th align="left" class="SMALL"><xsl:value-of select="email" /></th>
-						</tr>
-					</xsl:if>
-					<xsl:if test="count(office_phone) != 0">
-						<tr>
-							<th align="left" class="SMALL">Office Phone:</th>
-							<th align="left" class="SMALL"><xsl:value-of select="office_phone" /></th>
-						</tr>
-					</xsl:if>	
-					<xsl:if test="count(mobile_phone) != 0">
-						<tr>
-							<th align="left" class="SMALL">Mobile Phone:</th>
-							<th align="left" class="SMALL"><xsl:value-of select="mobile_phone" /></th>
-						</tr>
-					</xsl:if>	
-					<xsl:if test="count(Fax) != 0">
-						<tr>
-							<th align="left" class="SMALL">Fax:</th>
-							<th align="left" class="SMALL"><xsl:value-of select="fax" /></th>
-						</tr>
-					</xsl:if>	
-					<xsl:if test="count(office_phone) != 0">
-						<tr>
-							<th align="left" class="SMALL">Office Phone:</th>
-							<th align="left" class="SMALL"><xsl:value-of select="office_phone" /></th>
-						</tr>
-					</xsl:if>	
-					<xsl:if test="count(office_address) != 0">
-						<tr>
-							<th align="left" class="SMALL">Office Address:</th>
-							<th align="left" class="SMALL">
-							<xsl:value-of select="office_address"/>
-							</th>
-						</tr>
-					</xsl:if>
-					<xsl:if test="count(web_site) != 0">
-						<tr>
-							<th align="left" class="SMALL">Web Site:</th>
-							<th align="left" class="SMALL">
-							<xsl:element name="a">
-								<xsl:attribute name="href"><xsl:value-of select="web_site"/></xsl:attribute>
-								<xsl:value-of select="web_site"/>
-							</xsl:element>							
-							</th>
-						</tr>
-					</xsl:if>
-					<tr>
-						<th align="left" class="SMALL">Groups:</th>
-						<th align="left" class="SMALL"><xsl:apply-templates select="/eltrun/group_list/group [contains(current()/@group, @id)]" mode="shortref"/></th>
-					</tr>
-					<tr>
-						<th colspan="2" align="left" class="SMALL">
-						<a href="../publications/{$omember}-publications.html">Publications</a>
-						</th>
-					</tr>
-					<tr>
-						<th colspan="2"> </th>
-					</tr>
-					<tr>
-						<th colspan="2"> </th>						
-					</tr>					
-					<tr>
-						<th colspan="2" class="SMALL" align="left"><u>Short CV</u></th>			
-					</tr>
-					<tr>
-						<th colspan="2" align="left" class="SMALL">
-							<xsl:value-of select="shortcv"/>
-						</th>
-					</tr>
-					</tbody>
-				</table>						
+				<xsl:if test="count(email) != 0">
+					E-mail: <xsl:value-of select="email" />
+				<br />
+				</xsl:if>
+				<xsl:if test="count(office_phone) != 0">
+					Office Phone: <xsl:value-of select="office_phone" />
+				<br />
+				</xsl:if>
+				<xsl:if test="count(mobile_phone) != 0">
+					Mobile Phone: <xsl:value-of select="mobile_phone" />
+				<br />
+				</xsl:if>
+				<xsl:if test="count(Fax) != 0">
+					Fax: <xsl:value-of select="fax" />
+				<br />
+				</xsl:if>	
+				<xsl:if test="count(office_phone) != 0">
+					Office Phone: <xsl:value-of select="office_phone" />
+				<br />
+				</xsl:if>
+				<xsl:if test="count(office_address) != 0">
+					Office Address: <xsl:value-of select="office_address"/>
+				<br />
+				</xsl:if>
+				<xsl:if test="count(web_site) != 0">
+					Web Site:
+					<xsl:element name="a">
+						<xsl:attribute name="href"><xsl:value-of select="web_site"/></xsl:attribute>
+						<xsl:value-of select="web_site"/>
+					</xsl:element>
+				<br /><br />
+				</xsl:if>
+				Groups: <xsl:apply-templates select="/eltrun/group_list/group [contains(current()/@group, @id)]" mode="shortref"/>
+				<br />
+				<a href="../publications/{$omember}-publications.html">Publications</a>
+				<br />
+				<br />
+				Short CV
+				<br />
+				<xsl:value-of select="shortcv"/>
 				</th>
 			</tr>
 			</tbody>
