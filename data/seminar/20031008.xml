@@ -1,0 +1,10 @@
+<seminar>
+	<sem_date>20031008</sem_date>
+	<sem_time>09:00</sem_time>
+	<sem_room>901</sem_room>
+	<sem_duration>45 mins</sem_duration>
+		<presentation by="m_chk">
+          		<pres_title>"The Digital Set-Top Box as a Virtual Channel Provider" </pres_title>
+          		<pres_url>seminars_files/2003-10-08-chk.pdf</pres_url>
+		</presentation>
+</seminar>

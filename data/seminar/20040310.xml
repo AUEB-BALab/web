@@ -1,0 +1,10 @@
+<seminar>
+	<sem_date>20040310</sem_date>
+	<sem_time>09:00</sem_time>
+	<sem_room>901</sem_room>
+	<sem_duration></sem_duration>
+		<presentation by="m_k.pramatari">
+          		<pres_title>Phd Presentation "Effective store replenishment based on information exchange via the Internet and collaboration practices for the manegement of procurement chain in retailing" </pres_title>
+          		<pres_url>seminars_files/KP_Presentation.zip</pres_url>
+		</presentation>
+</seminar>

@@ -1,0 +1,12 @@
+<seminar>
+	<sem_date>20031112</sem_date>
+	<sem_time>09:00</sem_time>
+	<sem_room>901</sem_room>
+	<sem_duration>45 mins</sem_duration>
+		<presentation by="m_tsamakos">
+          		<pres_title>Phd Progress: 
+				   Measuring Customer Satisfaction in Mobile Context-Aware Information Services for Tourism
+			</pres_title>
+          		<pres_url>seminars_files/Tsamakos_031112.zip</pres_url>
+		</presentation>
+</seminar>

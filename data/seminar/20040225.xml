@@ -1,0 +1,12 @@
+<seminar>
+	<sem_date>20040225</sem_date>
+	<sem_time>09:00</sem_time>
+	<sem_room>901</sem_room>
+	<sem_duration>45 min</sem_duration>
+		<presentation by="m_androutsellis">
+          		<pres_title>Paper presentation for Ethicomp 2004: 
+				   Social behaviour, incentives and technology in peer-to-peer networks
+			</pres_title>
+          		<pres_url>seminars_files/ethicomp04.pdf</pres_url>
+		</presentation>
+</seminar>

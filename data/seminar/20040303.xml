@@ -1,0 +1,14 @@
+<seminar>
+	<sem_date>20040303</sem_date>
+	<sem_time>09:30</sem_time>
+	<sem_room>901</sem_room>
+	<sem_duration>20 mins</sem_duration>
+		<presentation by="m_drosos">
+          		<pres_title>Annual Phd Progress Report: "Mobile Advertising Effectiveness"</pres_title>
+          		<pres_url>seminars_files/KD_Proposal.zip</pres_url>
+		</presentation>
+<presentation by="m_kdiamanti">
+          		<pres_title>Annual Phd Progress Report: "Virtual Benchmarking in networking organizations"</pres_title>
+          		<pres_url>seminars_files/drosos-11_03_04.pdf</pres_url>
+		</presentation>
+</seminar>

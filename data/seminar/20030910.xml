@@ -1,0 +1,20 @@
+<seminar>
+	<sem_date>20030910</sem_date>
+	<sem_time>09:00</sem_time>
+	<sem_room>901</sem_room>
+	<sem_duration>20 mins</sem_duration>
+		<presentation by="m_apaparg">
+          		<pres_title>Presentation of conference paper 
+                                   "Evolving Knowledge: an exploration of Affinities between Knowledge Management and Communities of Practice" 
+                                    for the conference European Conference on Knowledge Management, Oxford, UK 18-20/9/2003</pres_title>
+          		<pres_url>seminars_files/apaparg-ECKM03.pdf</pres_url>
+		</presentation>
+		<presentation by="m_pvlachos">
+          		<pres_title>Presentation of conference paper:  
+				    "Key Success Factors in the Emerging Landscape of Mobile Music Services" 
+                                     for the conference 3rd International Conference on Web Delivering of MusicLeeds, 
+                                     UK, 15-17/9/2003
+                          </pres_title>
+          		<pres_url>seminars_files/vlaxos.pdf</pres_url>
+		</presentation>
+</seminar>

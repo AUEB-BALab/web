@@ -1,0 +1,10 @@
+<seminar>
+	<sem_date>20040129</sem_date>
+	<sem_time>09:30</sem_time>
+	<sem_room>901</sem_room>
+	<sem_duration>1 hour</sem_duration>
+		<presentation by="m_pz m_bk">
+          		<pres_title>The TrainSEE project - Lessons learned on an end-to-end method for eLearning courses' design and delivery</pres_title>
+          		<pres_url>seminars_files/karamanis.zip</pres_url>
+		</presentation>
+</seminar>

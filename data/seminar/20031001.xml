@@ -1,0 +1,12 @@
+<seminar>
+	<sem_date>20031001</sem_date>
+	<sem_time>09:00</sem_time>
+	<sem_room>901</sem_room>
+	<sem_duration>45 mins</sem_duration>
+		<presentation by="m_vzeimp">
+          		<pres_title>Phd Progress 
+				  "Evaluation of the use of wirelless and mobile applications in integrated decision support systems  for
+	urban distributions"</pres_title>
+          		<pres_url>seminars_files/Zeimpekis_1-10-03.pdf</pres_url>
+		</presentation>
+</seminar>

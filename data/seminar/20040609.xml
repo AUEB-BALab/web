@@ -1,0 +1,10 @@
+<seminar>
+	<sem_date>20040609</sem_date>
+	<sem_time>16:00</sem_time>
+	<sem_room>708</sem_room>
+	<sem_duration>60 mins</sem_duration>
+		<presentation by="m_kv">
+          		<pres_title> GEMINI - Project proposal and final results</pres_title>
+          		<pres_url></pres_url>
+		</presentation>
+</seminar>

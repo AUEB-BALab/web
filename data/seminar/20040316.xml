@@ -1,0 +1,11 @@
+<seminar>
+	<sem_date>20040316</sem_date>
+	<sem_time>09:30</sem_time>
+	<sem_room>901</sem_room>
+	<sem_duration></sem_duration>
+		<presentation by="m_kfouskas">
+          		<pres_title>
+PhD Report : "The influence of perceived market characteristics in cognitive categorization of competition: Evidence from the mBusiness market"</pres_title>
+          		<pres_url>seminars_files/Kfouskas_160304.Pdf</pres_url>
+		</presentation>
+</seminar>

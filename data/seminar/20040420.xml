@@ -1,0 +1,10 @@
+<seminar>
+	<sem_date>20040420</sem_date>
+	<sem_time>09:00</sem_time>
+	<sem_room>901</sem_room>
+	<sem_duration>20 mins</sem_duration>
+		<presentation by="m_apaparg">
+          		<pres_title>Paper presentation of the Social Learning through Gaming workshop (CHI04):  Learning opportunities in massively multiplayer online role playing games player communities.</pres_title>
+          		<pres_url>seminars_files/apaparg-PhD_CHI04.pdf</pres_url>
+		</presentation>
+</seminar>

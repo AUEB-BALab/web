@@ -1,0 +1,11 @@
+<seminar>
+	<sem_date>20040121</sem_date>
+	<sem_time>09:00</sem_time>
+	<sem_room>901</sem_room>
+	<sem_duration>45 mins</sem_duration>
+		<presentation by="m_borotis">
+          		<pres_title>Training Needs Assessment for e-Learning Interventions 
+			</pres_title>
+          		<pres_url>seminars_files/Borotis-21_1_04.pdf</pres_url>
+		</presentation>
+</seminar>
