@@ -30,6 +30,10 @@
 					| seminar
 					| rel-pages
 				-->
+<xsl:param name="menu"/>        <!-- Turn Side menu:
+					  on
+					| off
+				-->
 
 	<!-- Generate heading with group name {{{1 -->
 	<xsl:template match="group" mode="heading">
@@ -248,6 +252,15 @@
 		</xsl:if>
 	</xsl:template>
 	
+	<!-- Format member plain text -->
+	<xsl:template match="member" mode="plaintext">
+		<xsl:value-of select="current()/memb_title" />
+		<xsl:text> </xsl:text>
+		<xsl:value-of select="current()/givenname" />
+		<xsl:text> </xsl:text>
+		<xsl:value-of select="current()/surname" />
+	</xsl:template>
+	
 	<!-- Format members information {{{1 -->
 	<xsl:template match="member" mode="full">
 		<h2>
@@ -280,7 +293,7 @@
 		<td>
 		<xsl:if test="count(alumnus) != 0">
 			<font color="#FF0000">
-			<h4>(ELTRUN associate).</h4>
+			<h4>(ELTRUN associate)</h4>
 			</font>
 		</xsl:if>
 		<xsl:if test="count(email) != 0">
@@ -734,22 +747,14 @@
 				<xsl:text> - Details</xsl:text>
 			</xsl:when>
 			<xsl:when test="$what = 'member-publications'">
-				<xsl:value-of select="/eltrun/member_list/member[@id = $omember]/memb_title" />
-				<xsl:text> </xsl:text>
-				<xsl:value-of select="/eltrun/member_list/member[@id = $omember]/givenname" />
-				<xsl:text> </xsl:text>
-				<xsl:value-of select="/eltrun/member_list/member[@id = $omember]/surname" />
+				<xsl:apply-templates select="/eltrun/member_list/member[@id = $omember]" mode="plaintext" />
 				<xsl:text> publication list</xsl:text>
 			</xsl:when>
 			<xsl:when test="$what = 'group-publications'">
 				<xsl:text> publication list</xsl:text>
 			</xsl:when>
 			<xsl:when test="$what = 'member-details'">
-				<xsl:value-of select="/eltrun/member_list/member[@id = $omember]/memb_title" />
-				<xsl:text> </xsl:text>
-				<xsl:value-of select="/eltrun/member_list/member[@id = $omember]/givenname" />
-				<xsl:text> </xsl:text>
-				<xsl:value-of select="/eltrun/member_list/member[@id = $omember]/surname" />
+				<xsl:apply-templates select="/eltrun/member_list/member[@id = $omember]" mode="plaintext" />
 				<xsl:text> Details</xsl:text>
 			</xsl:when>
 			<xsl:when test="$what = 'group-details'">
@@ -780,43 +785,32 @@
 		<table border="0">
 			<tbody valign="top">
 			<tr>
-			<xsl:if test="$what != 'member-publications'">
-				<xsl:if test="$what != 'project-publications'">
-				<xsl:if test="$what != 'group-publications'">
-				<xsl:if test="$what != 'seminar'">
-					<xsl:if test="$what != 'member-details'">
-						<xsl:if test="$what != 'project-details'">
-						<xsl:element name="td">
-							<xsl:attribute name="height">800</xsl:attribute>
-							<xsl:attribute name="width">150</xsl:attribute>
-							<xsl:attribute name="align">left</xsl:attribute>
-							<xsl:attribute name="bgcolor">
-								<xsl:if test="$ogroup != ''">
-									<xsl:value-of select="/eltrun/group_list/group[@id = $ogroup]/color" />
-								</xsl:if>
-								<xsl:if test="$ogroup = ''">
-									<xsl:variable name="tmpgroup" select="/eltrun/page_list/page[@id = $opage]/@group" />
-									<xsl:value-of select="/eltrun/group_list/group[@id = $tmpgroup]/color" />
-								</xsl:if>
-							</xsl:attribute>
-							<xsl:if test="$what = 'rel-pages'">
-								<xsl:call-template name="body-menu">
-									<xsl:with-param name="bodygroup" select="/eltrun/page_list/page[@id = $opage]/@group" />
-								</xsl:call-template>
-							</xsl:if>
-							<xsl:if test="$what != 'rel-pages'">
-								<xsl:call-template name="body-menu">
-									<xsl:with-param name="bodygroup" select="$ogroup" />
-								</xsl:call-template>
-							</xsl:if>							
-						</xsl:element>
+			<xsl:if test="$menu != 'off'">			
+				<xsl:element name="td">
+					<xsl:attribute name="height">800</xsl:attribute>
+					<xsl:attribute name="width">150</xsl:attribute>
+					<xsl:attribute name="align">left</xsl:attribute>
+					<xsl:attribute name="bgcolor">
+						<xsl:if test="$what = 'rel-pages'">
+							<xsl:variable name="tmpgroup" select="/eltrun/page_list/page[@id = $opage]/@group" />					     
+							<xsl:value-of select="/eltrun/group_list/group[@id = $tmpgroup]/color" />							
 						</xsl:if>
+						<xsl:if test="$what != 'rel-pages'">
+							<xsl:value-of select="/eltrun/group_list/group[@id = $ogroup]/color" />
+						</xsl:if>
+					</xsl:attribute>
+					<xsl:if test="$what = 'rel-pages'">
+						<xsl:call-template name="body-menu">
+							<xsl:with-param name="bodygroup" select="/eltrun/page_list/page[@id = $opage]/@group" />
+						</xsl:call-template>
 					</xsl:if>
-			 	</xsl:if>
-				</xsl:if>
-				</xsl:if>
-			</xsl:if>
-			
+					<xsl:if test="$what != 'rel-pages'">
+						<xsl:call-template name="body-menu">
+							<xsl:with-param name="bodygroup" select="$ogroup" />
+						</xsl:call-template>
+					</xsl:if>							
+				</xsl:element>			
+			</xsl:if>			
 			<td align="left" width="830">
 			<!-- choose which HTML to show -->
 			<xsl:choose>
