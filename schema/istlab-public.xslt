@@ -610,12 +610,22 @@
 		<xsl:apply-templates select="/eltrun/member_list/member [contains(current()/@by,@id)]/surname" />
 	</xsl:template>
 	
+	<xsl:template match="member" mode="pres-ref">
+		<xsl:apply-templates select="current()" mode="simple-ref"/><br />
+	</xsl:template>
+	
 	<xsl:template match="presentation" mode="full">
-		<li>
-		<b>Title:</b> <a href="{pres_url}"><xsl:value-of select="pres_title"/></a><br/>
-		<b>Presenters:</b>  <xsl:apply-templates select="/eltrun/member_list/member [contains(current()/@by,@id)]" mode="simple-ref" /><br />
+		<table border="0">
+		<tr>
+		<td><b>Title:</b></td>
+		<td><a href="{pres_url}"><xsl:value-of select="pres_title"/></a></td>
+		</tr>
+		<tr>
+		<td><b>Presenters:</b></td>
+		<td><xsl:apply-templates select="/eltrun/member_list/member [contains(current()/@by,@id)]" mode="pres-ref" /></td>
+		</tr>
+		</table>
 		<br/>
-		</li>
 	</xsl:template>
 	
 	<!-- seminar {{{1-->
@@ -636,23 +646,31 @@
 	
 	<!-- Seminar detailed template {{{1-->
 	<xsl:template match="seminar" mode="full">
-	    <h3>
+	    <h2>
 	    	<xsl:call-template name="date">
 			<xsl:with-param name="date" select="sem_date" />
 		</xsl:call-template>
-	    </h3>
+	    </h2>
 	    <!-- Create the anchor -->
+	    <hr />
 	    <xsl:element name="a">
 		<xsl:attribute name="name">
 		    <xsl:value-of select="sem_date" />
 		</xsl:attribute>
 	    </xsl:element>
 	    <!-- create seminar data -->
-	    <b>Location:</b> <xsl:value-of select="sem_room" /><br />
-	    <b>Time:</b> <xsl:value-of select="sem_time" />
-	    <ul>
+	    <br />
+	    <table border="0">
+	    <tr>
+	    <td><b>Location:</b></td> 
+	    <td><xsl:value-of select="sem_room" /></td>
+	    </tr>
+	    <tr>
+	    <td><b>Time:</b></td>
+	    <td><xsl:value-of select="sem_time" /></td>
+	    </tr>
+	    </table>
 	    <xsl:apply-templates select="current()/presentation" mode="full"/>
-	    </ul>
 	</xsl:template>
 
 	<!-- page_body {{{1-->

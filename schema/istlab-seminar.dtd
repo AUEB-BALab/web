@@ -27,7 +27,7 @@
 <!ELEMENT sem_duration (#PCDATA)>
 
 <!ELEMENT presentation (pres_title,pres_url,pres_name?)>
-<!ATTLIST by CDATA #IMPLIED>
+<!ATTLIST presentation by CDATA #IMPLIED>
 
 <!ELEMENT pres_title (#PCDATA)>
 <!ELEMENT pres_url %pc_flow;>
