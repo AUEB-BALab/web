@@ -252,8 +252,8 @@
 					<xsl:text> </xsl:text>
 					<xsl:value-of select="surname" />
 				</xsl:attribute>
-				<xsl:attribute name="width">80</xsl:attribute>
-				<xsl:attribute name="height">80</xsl:attribute>
+			<!--	<xsl:attribute name="width">80</xsl:attribute> -->
+			<!--	<xsl:attribute name="height">80</xsl:attribute> -->
 			</xsl:element>
 		</xsl:if>
 		<br /> <br />
@@ -401,9 +401,11 @@
 		<xsl:value-of select="projtitle" />
 		</h1>
 		<!-- Show Logo -->
+		<xsl:if test="count(logo) != 0">
 		<xsl:element name="img">
 				<xsl:attribute name="src"><xsl:value-of select="logo" /></xsl:attribute>
 		</xsl:element>
+		</xsl:if>
 		<br /> <br />
 		<!-- Project Summary information -->
 		<xsl:if test="count(project_code) != 0">
