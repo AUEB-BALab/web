@@ -2,29 +2,30 @@
 <member id="m_nmylonop" group="g_eltrun">
 	<givenname>Nikolaos</givenname>
 	<surname>Mylonopoulos</surname>
-	<memb_title>Dr</memb_title>
+	<memb_title>Dr.</memb_title>
 	<email>nmylonop@alba.edu.gr</email>
+	<web_site>http://www.alba.edu.gr/faculty/faculty/resident/index.asp?prof_id=26</web_site>
 	<!--<office_phone>+30 2108203654</office_phone>-->
-	<!--<fax>+30 2108203685</fax>-->
+	<!--<mobile_phone>+30 2108203685</mobile_phone>-->
+	<alumnus/>
 	<!--<office_address>Evelpidon 47-A &amp; Lefkados 33, Room 901</office_address>-->
 	<!--<postal_address>Patision 76, GR-104 34 Athens, Greece</postal_address>-->
 	<photo>../images/m_nm.jpg</photo>
-	<alumnus />
 	<shortcv>
-<p>B.Sc., Athens University of Economics and Business; Ph.D., 
-Warwick Business School, University of Warwick 
+<p>
+B.Sc., Athens University of Economics and Business; Ph.D., Warwick Business School, University of 
+Warwick 
 </p>
-<p>Dr. Mylonopoulos has teaching and research interests in the areas 
-of Information Systems Management, Electronic Business and Mobile Commerce. 
-He is currently Assistant Professsor of Information Systems in the Athens 
-Laboratory of Business Administration (ALBA). He has taught at Loughborough 
-University Business School, Warwick Business School, Birkbeck College 
-(University of London), Bordeaux School of Management and the Athens 
-University of Economics and Business. Since 2001 he is Visiting Professor 
-of Electronic Business at the Bordeaux School of Management, France.
+<p>Dr. Mylonopoulos has teaching and research interests in the areas of Information Systems 
+Management, Electronic Business and Mobile Commerce. He is currently Assistant Professsor of 
+Information Systems in the Athens Laboratory of Business Administration (ALBA). He has taught
+at Loughborough University Business School, Warwick Business School, Birkbeck College 
+(University of London), Bordeaux School of Management and the Athens University of Economics 
+and Business. Since 2001 he is Visiting Professor of Electronic Business at the Bordeaux School 
+of Management, France.
 </p>
 <p>For more information please visit his
-<a href="http://www.alba.edu.gr/faculty/faculty/resident/index.asp?prof_id=26">personal web page</a>.
+<a href="http://www.alba.edu.gr/faculty/faculty/resident/index.asp?prof_id=26">personal web page</a>
 </p>
 	</shortcv>
 </member>
