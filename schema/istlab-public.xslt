@@ -67,7 +67,7 @@
 
 	<!-- Format a member reference {{{1 -->
 	<xsl:template match="member" mode="ref" >
-		<a href="members/{@id}.html">
+		<a href="../members/{@id}.html">
 		<xsl:value-of select="givenname" />
 		<xsl:text> </xsl:text>
 		<xsl:value-of select="surname" />
@@ -77,7 +77,7 @@
 
 	<!-- Format a short group reference {{{1 -->
 	<xsl:template match="group" mode="shortref" >
-		<a href="groups/{@id}.html">
+		<a href="../groups/{@id}.html">
 		<xsl:value-of select="shortname" />
 		</a>
 		<xsl:text> </xsl:text>
@@ -86,7 +86,7 @@
 	<!-- Format a project reference {{{1 -->
 	<xsl:template match="project" mode="ref">
 		<li>
-		<a href="projects/{@id}.html">
+		<a href="../projects/{@id}.html">
 		<xsl:value-of select="shortname" />
 		-
 		<xsl:value-of select="projtitle" />
