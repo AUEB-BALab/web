@@ -1,0 +1,10 @@
+<seminar>
+	<sem_date>20050525</sem_date>
+	<sem_time></sem_time>
+	<sem_room></sem_room>
+	<sem_duration> </sem_duration>
+		<presentation by="m_bkarak">
+			<pres_title>PRAXIS</pres_title>
+		</presentation>
+</seminar>
+

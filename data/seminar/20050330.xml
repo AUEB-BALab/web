@@ -3,9 +3,8 @@
 	<sem_time></sem_time>
 	<sem_room></sem_room>
 	<sem_duration>90 mins</sem_duration>
-		<presentation by="m_vlachos">
-          		<pres_title> PhD progress
-		</pres_title>
+		<presentation by="m_pkour">
+          		<pres_title> Full PhD story </pres_title>
           		<pres_url></pres_url>
 		</presentation>
 	

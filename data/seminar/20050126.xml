@@ -3,9 +3,8 @@
 	<sem_time>12:00</sem_time>
 	<sem_room>901</sem_room>
 	<sem_duration>90 mins</sem_duration>
-		<presentation by="m_apaparg">
-		<pres_title> On Viruality: Literature review, research questions and research design
-		 </pres_title>
-          		<pres_url></pres_url>
+		<presentation>
+          		<pres_title></pres_title>
+          		<pres_name>Dr. Vassilis Kostakos, University of Bath</pres_name>
 		</presentation>
 </seminar>
