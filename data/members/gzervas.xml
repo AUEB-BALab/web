@@ -4,22 +4,14 @@
 	<surname>Zervas</surname>
 	<memb_title>Mr.</memb_title>
 	<email>gzervas@aueb.gr</email>
-	<!-- <web_site></web_site> -->
-	<office_phone>+30 2108203370</office_phone>
-	<fax>+30 2108203664</fax>
-	<office_address>76 Patission Str.</office_address>
-	<postal_address>76 Patission Str., 10434, Athens</postal_address>
-	<!--<photo></photo>-->
 	<alumnus/>
 	<shortcv>
 	<p>
 	<i>Giorgos Zervas</i> holds an MSc in Advanced Computing and
 a BEng in Computing both from Imperial College (University of
 London, UK) and an MA in Interactive Multimedia from the London College
-of Printing (London Institute). Currently he is a PhD candidate at the Department of
-Management Science and Technology at the Athens University of Economics
-and Business, Greece pursuing a doctoral thesis on the subject of distributed search
-engines. His research interests include Information Retrieval, Distributed
+of Printing (London Institute). 
+His research interests include Information Retrieval, Distributed
 Computing and Open Source Software. He is the author of the open source <i>
 <a href="http://www.perlfect.com/freescripts/search">Perlfect
 Search</a></i> search engine.
