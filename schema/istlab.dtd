@@ -102,16 +102,17 @@
 <!ELEMENT has_workingpaper EMPTY>
 <!-- seminars -->
 <!ELEMENT seminar_list (seminar*)>
-<!ELEMENT seminar (sem_name,sem_date,sem_title,sem_time,sem_room,sem_url?)>
+<!ELEMENT seminar (sem_name,sem_date,sem_time,sem_title,sem_room,sem_url?,sem_duration)>
 <!ATTLIST seminar
 	by IDREF #REQUIRED
 >
 <!ELEMENT sem_name (#PCDATA)>
-<!ELEMENT sem_date %date;>
+<!ELEMENT sem_date %date>
 <!ELEMENT sem_time (#PCDATA)>
 <!ELEMENT sem_title (#PCDATA)>
 <!ELEMENT sem_room (#PCDATA)>
 <!ELEMENT sem_url (#PCDATA)>
+<!ELEMENT sem_duration (#PCDATA)>
 
 <!-- Shared elements {{{1 -->
 <!ELEMENT description %pc_flow;>

@@ -19,7 +19,7 @@
 <!ENTITY % date "(#PCDATA)">
 
 <!-- seminar -->
-<!ELEMENT seminar (name,date,time,room,url?)>
+<!ELEMENT seminar (sem_name,sem_date,sem_time,sem_title,sem_room,sem_url?,sem_duration)>
 <!ATTLIST seminar
 	by #CDATA #REQUIRED
 >
@@ -29,4 +29,5 @@
 <!ELEMENT sem_title (#PCDATA)>
 <!ELEMENT sem_room (#PCDATA)>
 <!ELEMENT sem_url (#PCDATA)>
+<!ELEMENT sem_duration (#PCDATA)>
 
