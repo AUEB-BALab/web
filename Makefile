@@ -168,7 +168,7 @@ dist: html
 	umask 002 ; \
 	cvs update -d ; \
 	gmake ; \
-	tar -C $(HTML) -cf - . | tar -C /home/dds/web/istlab/eltrun -xvf -"
+	tar -C $(HTML) -cf - . | tar -C /home/dds/web/istlab/eltrun -xf -"
 
 stats:
 	@$(SHELL) tools/stats.sh
