@@ -4,7 +4,7 @@
 	<projtitle>Athletic Coverage En Stadium</projtitle>
 	<startdate>20030601</startdate>
 	<enddate>20041231</enddate>
-	<!--<web_site>http://www.mobiforum.org/mbnet</web_site>-->
+	<web_site>http://194.30.196.50</web_site>
 	<!--<our_budget>328,627 EUR</our_budget>-->
 	<!--<total_budget>3,493,834 EUR</total_budget>-->
 	<funding_agency>General Secretariat of Research and Technology</funding_agency>
@@ -57,6 +57,7 @@
 		<li><b>An integrated business plan</b>, which will explore and exemplify the potential of the commercial exploitation of the system and its services, based on the results of the system evaluation during the trial period of a sport event.
         	</li>
 		</ul>
+		<p>A <a href="http://relay5.yospace.com/ipaqbrowser/ipaqbrowser.html?http://www.chamber.gr:8080/web/pda.jsp">pilot </a>of the application is available online</p>
 
 	</description>
 </project>
