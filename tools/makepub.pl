@@ -34,6 +34,8 @@ foreach $id (split(/\s+/, $group)) {
 	$citations{'group'}{$id}{$type} .= "\\citation{$key}\n";
 	$citations{'group'}{$id}{'any'} .= "\\citation{$key}\n";
 }
+$citations{'group'}{''}{$type} .= "\\citation{$key}\n";
+$citations{'group'}{''}{'any'} .= "\\citation{$key}\n";
 foreach $id (split(/\s+/, $project)) {
 	$citations{'project'}{$id}{$type} .= "\\citation{$key}\n";
 	$citations{'project'}{$id}{'any'} .= "\\citation{$key}\n";
@@ -69,10 +71,10 @@ END {
 				print "\t\t<has_$type/>\n";
 				$auxfile = "build/$id-$type.aux";
 				open(OUT, ">$auxfile") || die "Unable to open $auxfile for writing: $!\n";
-				print OUT '\bibdata{book,article,inproceedings,incollection,whitepaper,techreport}';
+				print OUT '\bibdata{macro,book,article,inproceedings,incollection,whitepaper,techreport}';
 				print OUT "\n$citations{$group}{$id}{$type}";
 				close OUT;
-				print RUN qq{perl tools/bib2html -b "-include-directory data/publications -include-directory tools" -s alpha $auxfile public_html/publications/$id.html\n} unless($type eq 'any');
+				print RUN qq{perl tools/bib2html -b "-include-directory data/publications -include-directory tools" -s alpha $auxfile public_html/publications/${id}-publications.html\n} unless($type eq 'any');
 			}
 			print "\t</publication_type>\n";
 		}
