@@ -49,7 +49,7 @@
 <!ELEMENT total_budget (#PCDATA)>
 <!ELEMENT funding_agency (#PCDATA)>
 <!ELEMENT funding_programme (#PCDATA)>
-<!ELEMENT program_code (#PCDATA)>
+<!ELEMENT project_code (#PCDATA)>
 <!-- partner definition (used in project only) -->
 <!ELEMENT partner (shortname, country, web_site?)>
 <!ELEMENT country (#PCDATA)>
