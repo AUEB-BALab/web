@@ -31,10 +31,8 @@
 	<!-- Generate heading with group name {{{1 -->
 	<xsl:template match="group" mode="heading">
 		<xsl:if test="@id = $ogroup">
-			<h1>
 			ELTRUN - <xsl:value-of select="shortname" />:
 			<xsl:value-of select="grouptitle" />
-			</h1>
 		</xsl:if>
 	</xsl:template>
 
@@ -217,7 +215,7 @@
 		Groups: <xsl:apply-templates select="/eltrun/group_list/group [contains(current()/@group, @id)]" mode="shortref"/>
 		<!-- Provide publications link, if any publications exist -->
 		<xsl:if test="count(/eltrun/publication_type_list/publication_type [@for = current()/@id]/has_any) != 0">
-			<br/><a href="../publications/{@id}.html">Publications</a>
+			<br/><a href="../publications/{@id}-publications.html">Publications</a>
 		</xsl:if>
 	</xsl:template>
 
@@ -226,7 +224,7 @@
 		<!-- Generate ELTRUN or group heading -->
 		<xsl:choose>
 			<xsl:when test="$ogroup = ''">
-				<h1>ELTRUN</h1>
+				ELTRUN
 			</xsl:when>
 			<xsl:when test="$ogroup != ''">
 				<xsl:apply-templates select="/eltrun/group_list/group [@id=$ogroup]" mode="heading" />
@@ -244,7 +242,7 @@
 		<!-- Output the element(s) -->
 		<xsl:choose>
 			<xsl:when test="$what = 'current-projects'">
-				<xsl:call-template name="group-head"/>
+				<h1><xsl:call-template name="group-head"/></h1>
 				<h2>Current Projects</h2> <hr />
 				<ul>
 				<xsl:apply-templates select="/eltrun/project_list/project [contains(@group, $ogroup)] [enddate &gt;= $today]" mode="ref">
@@ -254,7 +252,7 @@
 			</xsl:when>
 
 			<xsl:when test="$what = 'completed-projects'">
-				<xsl:call-template name="group-head"/>
+				<h1><xsl:call-template name="group-head"/></h1>
 				<h2>Completed Projects</h2> <hr />
 				<ul>
 				<xsl:apply-templates select="/eltrun/project_list/project [contains(@group, $ogroup)] [enddate &lt; $today]" mode="ref" />
@@ -274,6 +272,18 @@
 				<xsl:apply-templates select="/eltrun/publication_type_list/publication_type [@for = $omember]" mode="toc" />
 				<xsl:apply-templates select="/eltrun/publication_type_list/publication_type [@for = $omember]" mode="full" >
 					<xsl:with-param name="pubid" select="$omember" />
+				</xsl:apply-templates>
+			</xsl:when>
+
+			<xsl:when test="$what = 'group-publications'">
+				<h1>
+				<xsl:call-template name="group-head"/>
+				: Publications
+				</h1>
+				<h2>Contents</h2>
+				<xsl:apply-templates select="/eltrun/publication_type_list/publication_type [@for = $ogroup]" mode="toc" />
+				<xsl:apply-templates select="/eltrun/publication_type_list/publication_type [@for = $ogroup]" mode="full" >
+					<xsl:with-param name="pubid" select="$ogroup" />
 				</xsl:apply-templates>
 			</xsl:when>
 		</xsl:choose>
