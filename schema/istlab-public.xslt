@@ -327,7 +327,7 @@
 		</xsl:if>
 		<br />
 		<br />
-		<xsl:copy-of select="current()/shortcv/*|text()"/>
+		<xsl:copy-of select="current()/shortcv"/>
 	</xsl:template>
 
 	<!-- Format a short group reference {{{1 -->
