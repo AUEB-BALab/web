@@ -71,9 +71,10 @@ the original BibTeX styles are faithfully reproduced.
 is a website indexing/searching suite available under an open source license (GPL). It comes as a pair of distinct scripts. The indexer, that automatically scans and indexes a web site, and the search engine, a CGI script that serves search queries for keywords over the index, and displays results pages in HTML, in a standard format including title, description and relevance ranking for each matching document.
 </li>
 <li>
-F.I.R.E. (Fast Implementation of Regular Expressions) is a regular expression library for java.
-It follows the POSIX syntax and is 100% compatible with the SUN regular expression library (java.util.regex.*).
-(F.I.R.E. has not yet been released in public).
+<a href="http://istlab.dmst.aueb.gr/~bkarak/programs/fire/">FIRE</a> (Fast Implementation of Regular Expressions) is a regular expression library for java. It follows the POSIX syntax and is 100% compatible with the SUN regular expression library (java.util.regex.*).
+</li>
+<li>
+<a href="http://istlab.dmst.aueb.gr/~bkarak/programs/fire/">FIRE Suite - Regular Expression Benchmark Utility</a> is an application written in 100% Java. It was implemented to test FIRE (Fast Implementation of Regular Expressions) execution speed and compatibility with other Regular Expression Engines in Java.
 </li>
 </ul>
 </page_body>
