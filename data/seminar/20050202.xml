@@ -1,0 +1,10 @@
+<seminar>
+	<sem_date>20050202</sem_date>
+	<sem_time>12:00</sem_time>
+	<sem_room>901</sem_room>
+	<sem_duration>180 mins</sem_duration>
+		<presentation>
+          		<pres_title>Assigments' presentations</pres_title>
+          		<pres_name>Postgraduate students</pres_name>
+		</presentation>
+</seminar>

@@ -1,11 +1,10 @@
 <seminar>
-	<sem_date>20050307</sem_date>
+	<sem_date>20050413</sem_date>
 	<sem_time></sem_time>
 	<sem_room></sem_room>
 	<sem_duration>90 mins</sem_duration>
-		<presentation by="m_drosos">
-          		<pres_title> PhD empirical design and first results
-		</pres_title>
+		<presentation by="m_pzioto">
+          		<pres_title> </pres_title>
           		<pres_url></pres_url>
 		</presentation>
 	
