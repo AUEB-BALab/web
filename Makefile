@@ -1,4 +1,3 @@
-#
 # Eltrun web site creation and data validation
 #
 # (C) Copyright 2004 Diomidis Spinellis
@@ -132,8 +131,9 @@ val: ${DB}
 	@echo '---> Checking db.xml ...'
 	@xml val -d schema/eltrun.dtd $(DB)
 
-html: ${DB}
-# For all groups and the empty group
+html: ${DB} groups projects members seminars rel_pages publications
+
+groups:
 	@echo "Creating groups"
 	@for group in $(GROUPIDS) ; \
 	do \
@@ -144,18 +144,24 @@ html: ${DB}
 		xml tr ${PXSLT} -s today=${TODAY} -s ogroup=$$group -s what=alumni ${DB} >${HTML}/groups/$$group-alumni.html ; \
 		xml tr ${PXSLT} -s ogroup=$$group -s what=group-publications -s menu=off ${DB} >${HTML}/publications/$$group-publications.html ; \
 	done
+
+projects:
 	@echo "Creating projects"
 	@for project in $(PROJECTIDS) ; \
 	do \
 		xml tr ${PXSLT} -s oproject=$$project -s what=project-details -s menu=off ${DB} >${HTML}/projects/$$project.html ; \
 		xml tr ${PXSLT} -s oproject=$$project -s what=project-publications -s menu=off ${DB} >${HTML}/publications/$$project-publications.html ; \
 	done
+	
+members:
 	@echo "Creating members"
 	@for member in $(MEMBERIDS) ; \
 	do \
 		xml tr ${PXSLT} -s omember=$$member -s what=member-details -s menu=off ${DB} >${HTML}/members/$$member.html ; \
 		xml tr ${PXSLT} -s omember=$$member -s what=member-publications -s menu=off ${DB} >${HTML}/publications/$$member-publications.html ; \
 	done
+	
+seminars:
 	@echo "Creating seminar list"
 	@counter=${FIRST_YEAR}; \
 	theyear=`expr ${YEAR} + 1`; \
@@ -164,11 +170,15 @@ html: ${DB}
 		xml tr ${PXSLT} -s what=seminar -s menu=off -s seminaryear=$$counter ${DB} >${HTML}/seminar/$$counter.html ; \
 		counter=`expr $$counter + 1`; \
 	done
+	
+rel_pages:
 	@echo "Creating additional HTML pages"
 	@for page in $(RELPAGEIDS) ; \
 	do \
 		xml tr ${PXSLT} -s opage=$$page -s what=rel-pages ${DB} >${HTML}/rel_pages/$$page-page.html ; \
 	done
+
+publications:
 	@echo "Creating publications"
 	@$(SHELL) build/bibrun
 

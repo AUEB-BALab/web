@@ -1,11 +1,11 @@
 #!/bin/sh
 (
 	echo -n "Total pages: "
-	/usr/bin/find public_html -name '*.html' | wc -l
+	find public_html -name '*.html' | wc -l
 	for i in groups members projects
 	do
 		echo -n "$i: "
-		/usr/bin/find "data/$i" -type f -name '*.xml' | wc -l
+		find "data/$i" -type f -name '*.xml' | wc -l
 	done
 	echo
 	echo -n "Publications: "
@@ -25,7 +25,7 @@
 	done
 	echo
 	echo -n "Hyperlinks: "
-	/usr/bin/find public_html -name '*.html' |
+	find public_html -name '*.html' |
 	xargs cat |
 	perl -e 'while(<>){while(s/href//i){$x++}}print $x'
 ) |

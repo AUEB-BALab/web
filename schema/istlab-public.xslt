@@ -264,7 +264,7 @@
 	
 	<!-- Format members information {{{1 -->
 	<xsl:template match="member" mode="full">
-		<h2>
+		<div class="projecttitle">
 		<xsl:if test="count(memb_title) != 0">
 			<xsl:value-of select="memb_title" />
 		</xsl:if>
@@ -272,14 +272,16 @@
 		<xsl:value-of select="givenname" />
 		<xsl:text> </xsl:text>
 		<xsl:value-of select="surname" />
-		</h2>
-		<table border="0"><tr><td valign="top">
+		</div>
+		<table border="0">
+		<tr>
+		<td valign="top" class="content">
 		<xsl:if test="count(photo) != 0">
 			<img src="{current()/photo}" alt="{current()/memb_title} {current()/givenname} {current()/surname}" />
 		</xsl:if>
 		<br /> <br />
 		</td>
-		<td>
+		<td class="content">
 		<xsl:if test="count(alumnus) != 0">
 			<font color="#FF0000">
 			<h4>(ELTRUN associate)</h4>
@@ -320,6 +322,7 @@
 		</xsl:if>
 		</td></tr>
 		</table>
+		<div class="content">
 		<!-- Provide publications link, if any publications exist -->
 		<xsl:if test="count(/eltrun/publication_type_list/publication_type [@for = current()/@id]/has_any) != 0">
 			<br />
@@ -328,6 +331,7 @@
 		<br />
 		<br />
 		<xsl:copy-of select="current()/shortcv"/>
+		</div>
 	</xsl:template>
 
 	<!-- Format a short group reference {{{1 -->
@@ -342,15 +346,11 @@
 
 	<!-- Format a full group description {{{1-->
 	<xsl:template match="group" mode="full">
-		<h2>
-		<xsl:value-of select="shortname"/>
-		<xsl:text> - </xsl:text>
-		<xsl:value-of select="grouptitle"/>
-		</h2>
+		<div class="title">Group Details</div>
 		<br />
+		<div class="content">
 		<xsl:if test="count(logo) != 0">
 			<img src="{current()/logo}" alt="{current()/shortname} - {current()/grouptitle}" />
-			<br /><br />
 		</xsl:if>
 		<xsl:if test='count(director_photo) != 0'>
 			<img src="{current()/director_photo}" alt="{current()/surname}" />
@@ -376,6 +376,7 @@
 		Website Maintainer:
 		<br />
 		<xsl:apply-templates select="/eltrun/member_list/member [@id=current()/@maintainer]" mode="simple-ref" />
+		</div>
 	</xsl:template>
 	
 	<!-- Format a project reference {{{1 -->
@@ -389,16 +390,17 @@
 
 	<!-- List project details {{{1 -->
 	<xsl:template match="project" mode="full">
-		<h1>
+		<div class="projecttitle">
 		<xsl:value-of select="shortname" />
 		-
 		<xsl:value-of select="projtitle" />
-		</h1>
+		</div>
 		<!-- Show Logo -->
+		<div class="content">
 		<xsl:if test="count(logo) != 0">
 			<img src="{current()/logo}" alt="{current()/shortname} Logo" />
 		</xsl:if>
-		<br /> <br />
+		<br /><br />		
 		<!-- Project Summary information -->
 		<xsl:if test="count(project_code) != 0">
 			Project Code:
@@ -499,33 +501,34 @@
 			</xsl:for-each>
 			</ul>
 		</xsl:if>
+		</div>
 	</xsl:template>
 
 	<!-- body menu {{{1-->
 	<xsl:template name="body-menu">
 		<xsl:param name="bodygroup" />
-		<xsl:if test="/eltrun/group_list/group[@id = $bodygroup]/@id != 'g_eltrun'">
-			<a href="../groups/{/eltrun/group_list/group[@id = $bodygroup]/@id}-details.html">
-			ELTRUN - <xsl:value-of select="/eltrun/group_list/group[@id = $bodygroup]/shortname" />
-			</a>
-			<br /><hr />
-		</xsl:if>
-		<a href="../groups/{$bodygroup}-members.html">Members</a>
-			<br />
-			<a href="../groups/{$bodygroup}-current-projects.html">Current Projects</a>
-			<br />
-			<a href="../groups/{$bodygroup}-completed-projects.html">Completed Projects</a>
-			<br />
-			<a href="../publications/{$bodygroup}-publications.html">Publications</a>
-			<br />
+		<div class="leftmenutitle">
+			<xsl:choose>
+				<xsl:when test="$bodygroup = 'g_eltrun'">ELTRUN</xsl:when>
+				<xsl:otherwise>
+					ELTRUN - <xsl:value-of select="/eltrun/group_list/group[@id = $bodygroup]/shortname" />
+				</xsl:otherwise>
+			</xsl:choose>
+		</div>
+		<div class="leftmenu">
+			<xsl:if test="$bodygroup != 'g_eltrun'">
+				<a href="../groups/{$bodygroup}-details.html">Group Details</a><br />
+			</xsl:if>
+			<a href="../groups/{$bodygroup}-members.html">Members</a><br />
+			<a href="../groups/{$bodygroup}-current-projects.html">Current Projects</a><br />
+			<a href="../groups/{$bodygroup}-completed-projects.html">Completed Projects</a><br />
+			<a href="../publications/{$bodygroup}-publications.html">Publications</a><br />
 			<xsl:if test="count(/eltrun/member_list/member[contains(@group,$bodygroup)]/alumnus) != 0">
 				<a href="../groups/{$bodygroup}-alumni.html">Associates</a><br />
 			</xsl:if>
 			<xsl:if test="count(/eltrun/page_list/page[@group = $bodygroup]) != 0">				
 				<xsl:for-each select="/eltrun/page_list/page[@group = $bodygroup]">
-					<a href="../rel_pages/{@id}-page.html">
-					<xsl:value-of select="page_name" />
-					</a><br />
+					<a href="../rel_pages/{@id}-page.html"><xsl:value-of select="page_name" /></a><br />
 				</xsl:for-each>
 			</xsl:if>
 			<xsl:if test="count(/eltrun/group_list/group[@id = $bodygroup]/rel_link) != 0">
@@ -533,6 +536,7 @@
 					<xsl:copy-of select="current()/*" /><br />
 				</xsl:for-each>
 			</xsl:if>
+		</div>
 	</xsl:template>
 	
 	<!-- presentation reference {{{1-->
@@ -549,7 +553,7 @@
 	</xsl:template>
 	
 	<xsl:template match="presentation" mode="full">
-		<table border="0">
+		<table class="content">
 		<tr>
 		<td valign="top"><b>Title:</b></td>
 		<td><a href="{pres_url}"><xsl:value-of select="pres_title"/></a></td>
@@ -591,34 +595,28 @@
 	
 	<!-- Seminar detailed template {{{1-->
 	<xsl:template match="seminar" mode="full">
-	    <hr />
 	    <!-- Create the anchor -->
 	    <a name="{current()/sem_date}" />
-	    <h2>
+	    <div class="title">
 	    	<xsl:call-template name="date">
 			<xsl:with-param name="date" select="sem_date" />
 		</xsl:call-template>
-	    </h2>
+	    </div>
 	    <!-- create seminar data -->
-	    <table border="0">
-	    <tr>
-	    <td><b>Location:</b></td> 
-	    <td><xsl:value-of select="sem_room" /></td>
-	    </tr>
-	    <tr>
-	    <td><b>Time:</b></td>
-	    <td><xsl:value-of select="sem_time" /></td>
-	    </tr>
-	    </table>
-	    <br />
+	    <div class="content">
+	    <h3>Location: <xsl:value-of select="sem_room" /></h3>
+	    <h3>Time: <xsl:value-of select="sem_time" /></h3>
 	    <h3>Presentations</h3>
 	    <xsl:apply-templates select="current()/presentation" mode="full"/>
+	    </div>
 	</xsl:template>
 
 	<!-- page transformation {{{1-->
 	<xsl:template match="page" mode="full">
-		<h2><xsl:value-of select="page_name" /></h2>
+		<div class="title"><xsl:value-of select="page_name" /></div>
+		<div class="content">
 		<xsl:copy-of select="current()/page_body" />
+		</div>
 	</xsl:template>
 
 	<!-- Main transformation {{{1 -->
@@ -626,7 +624,7 @@
 		<html>
 		<!-- HEAD -->
 		<head>
-		<!-- <link href="../images/styles.css" type="text/css" rel="stylesheet" /> -->
+		<link href="../images/styles.css" type="text/css" rel="stylesheet" />
 		<xsl:comment>Generated by $Id$</xsl:comment>
 		<title>
 		<!-- Append the appropriate title -->
@@ -672,9 +670,9 @@
 				<xsl:text>ELTRUN Seminars</xsl:text>
 			</xsl:when>
 			<xsl:when test="$what = 'rel-pages'">
-				<xsl:variable name="tmpgroup" select="/eltrun/page_list/page[@id = $opage]/@group" />					     
+				<xsl:variable name="tmpgroup" select="/eltrun/page_list/page[@id = $opage]/@group" />
 				<xsl:value-of select="/eltrun/group_list/group[@id = $tmpgroup]/shortname" />
-				<xsl:text> - </xsl:text>
+				-
 				<xsl:value-of select="/eltrun/page_list/page[@id = $opage]/page_name" />
 			</xsl:when>
 		</xsl:choose>
@@ -682,60 +680,84 @@
 		</head>
 
 		<!-- BODY -->
-		<body>
-		<a href="http://www.eltrun.gr/">
-			<img src="../images/heading.jpg" alt="ELTRUN - The e-Business Center" border="0" />
-		</a>
-		<br />
-		<table border="0">
-			<tbody valign="top">
-			<tr>
+		<body margin-left="0" margin-top="0">
+		<div class="logo">
+			<a href="http://www.eltrun.gr/"><img src="../images/eltrun_top1.gif" alt="ELTRUN" align="middle" border="0" /></a> The Research Center
+		</div>
+		<xsl:choose>
+			<xsl:when test="$what = 'rel-pages'">
+			<div class="projecttitle">
+				<xsl:variable name="tmpgroup" select="/eltrun/page_list/page[@id = $opage]/@group" />
+				<xsl:value-of select="/eltrun/group_list/group[@id = $tmpgroup]/shortname" />
+				-
+				<xsl:value-of select="/eltrun/group_list/group[@id = $tmpgroup]/grouptitle" />
+			</div>
+			</xsl:when>
+			<!-- No Title Bar with Group name for these -->
+			<xsl:when test="$what = 'project-details'"></xsl:when>
+			<xsl:when test="$what = 'member-details'"></xsl:when>
+			<xsl:when test="$what = 'member-publications'"></xsl:when>
+			<xsl:when test="$what = 'seminar'"></xsl:when>
+			<!-- For all the rest -->
+			<xsl:otherwise>
+				<div class="projecttitle">
+				<xsl:value-of select="/eltrun/group_list/group[@id = $ogroup]/shortname" />
+				-
+				<xsl:value-of select="/eltrun/group_list/group[@id = $ogroup]/grouptitle" />
+				</div>
+			</xsl:otherwise>
+		</xsl:choose>		
+		<table border="0" cellpadding="0" cellspacing="0" width="100%">
+			<tr>			
 			<xsl:if test="$menu != 'off'">
+				<td valign="top">
 				<xsl:if test="$what = 'rel-pages'">
-					<xsl:variable name="tmpgroup" select="/eltrun/page_list/page[@id = $opage]/@group" />
-					<td height="800" width="150" align="left" bgcolor="{/eltrun/group_list/group[@id = $tmpgroup]/color}">				
 					<xsl:call-template name="body-menu">
 						<xsl:with-param name="bodygroup" select="/eltrun/page_list/page[@id = $opage]/@group" />
 					</xsl:call-template>
-					</td>
 				</xsl:if>
 				<xsl:if test="$what != 'rel-pages'">
-					<td height="800" width="150" align="left" bgcolor="{/eltrun/group_list/group[@id = $ogroup]/color}">
 					<xsl:call-template name="body-menu">
 						<xsl:with-param name="bodygroup" select="$ogroup" />
 					</xsl:call-template>
-					</td>
 				</xsl:if>
-			</xsl:if>
-			<td align="left" width="830">
+				</td>
+			</xsl:if>			
+			<td valign="top" width="100%">
 			<!-- choose which HTML to show -->
 			<xsl:choose>
 				<!-- Current projects -->
 				<xsl:when test="$what = 'current-projects'">
-				<h2>Current Projects</h2>
-				    <ul>
-					<xsl:apply-templates select="/eltrun/project_list/project [contains(@group, $ogroup)] [enddate &gt;= $today]" mode="ref">
-						<xsl:sort select="shortname" order="ascending"/>
-					</xsl:apply-templates>
-				    </ul>
+					<div class="title">Current Projects</div>
+					<div class="content">
+					<ul>
+						<xsl:apply-templates select="/eltrun/project_list/project [contains(@group, $ogroup)] [enddate &gt;= $today]" mode="ref">
+							<xsl:sort select="shortname" order="ascending"/>
+						</xsl:apply-templates>
+					</ul>
+					</div>
 				</xsl:when>
 				<!-- Completed Projects -->
 				<xsl:when test="$what = 'completed-projects'">
-				<h2>Completed Projects</h2>
-				    <ul>
-					<xsl:apply-templates select="/eltrun/project_list/project [contains(@group, $ogroup)] [enddate &lt; $today]" mode="ref" >
-						<xsl:sort select="shortname" order="ascending"/>
-					</xsl:apply-templates>
-				    </ul>
+					<div class="title">Completed Projects</div>
+					<div class="content">
+					<ul>
+						<xsl:apply-templates select="/eltrun/project_list/project [contains(@group, $ogroup)] [enddate &lt; $today]" mode="ref" >
+							<xsl:sort select="shortname" order="ascending"/>
+						</xsl:apply-templates>
+					</ul>
+					</div>
 				</xsl:when>
 				<!-- members -->
 				<xsl:when test="$what = 'members'">
-				<h2>Members</h2>
-				<ul>
-				<xsl:apply-templates select="/eltrun/member_list/member[contains(@group,$ogroup)]" mode="ref">
-					<xsl:sort select="memb_title" order="ascending"/>
-				</xsl:apply-templates>
-				</ul>
+					<div class="title">Members</div>
+					<div class="content">
+					<ul>
+						<xsl:apply-templates select="/eltrun/member_list/member[contains(@group,$ogroup)]" mode="ref">
+							<xsl:sort select="surname" order="ascending"/>
+						</xsl:apply-templates>
+					</ul>
+					</div>
 				</xsl:when>
 				<!-- project details -->
 				<xsl:when test="$what = 'project-details'">
@@ -743,32 +765,36 @@
 				</xsl:when>
 				<!-- Member Publications -->
 				<xsl:when test="$what = 'member-publications'">
-					<h1>
+					<div class="projecttitle">
 					<xsl:apply-templates select="/eltrun/member_list/member [@id=$omember]" mode="pub-ref" /> : Publications
-					</h1>
+					</div>
+					<div class="content">
 					<h2>Contents</h2>
 					<xsl:apply-templates select="/eltrun/publication_type_list/publication_type [@for = $omember]" mode="toc" />
 					<xsl:apply-templates select="/eltrun/publication_type_list/publication_type [@for = $omember]" mode="full" >
 						<xsl:with-param name="pubid" select="$omember" />
 					</xsl:apply-templates>
+					</div>
 				</xsl:when>
 				<!-- project publications -->
 				<xsl:when test="$what = 'project-publications'">
-					<h1>
+					<div class="title">
 					<a href="../projects/{$oproject}.html">
 						<xsl:apply-templates select="/eltrun/project_list/project[@id = $oproject]/shortname" />
 					</a>
 					: Publications
-					</h1>
+					</div>
+					<div class="content">
 					<h2>Contents</h2>
 					<xsl:apply-templates select="/eltrun/publication_type_list/publication_type [@for = $oproject]" mode="toc" />
 					<xsl:apply-templates select="/eltrun/publication_type_list/publication_type [@for = $oproject]" mode="full">
 						<xsl:with-param name="pubid" select="$oproject" />
 					</xsl:apply-templates>
+					</div>
 				</xsl:when>
 				<!-- group publications -->
 				<xsl:when test="$what = 'group-publications'">
-					<h1>
+					<div class="title">
 					<xsl:if test="$ogroup != 'g_eltrun'">
 					<a href="../groups/{$ogroup}-details.html">
 						<xsl:apply-templates select="/eltrun/group_list/group [@id = $ogroup]/shortname" />
@@ -776,12 +802,14 @@
 					:
 					</xsl:if>
 					Publications
-					</h1>
+					</div>
+					<div class="content">
 					<h2>Contents</h2>
 					<xsl:apply-templates select="/eltrun/publication_type_list/publication_type [@for = $ogroup]" mode="toc" />
 					<xsl:apply-templates select="/eltrun/publication_type_list/publication_type [@for = $ogroup]" mode="full" >
 						<xsl:with-param name="pubid" select="$ogroup" />
 					</xsl:apply-templates>
+					</div>
 				</xsl:when>
 				<!-- member details -->
 				<xsl:when test="$what = 'member-details'">
@@ -793,15 +821,17 @@
 				</xsl:when>
 				<!-- alumni -->
 				<xsl:when test="$what = 'alumni'">
-					<h2>Research Associates</h2>
+					<div class="title">Research Associates</div>
+					<div class="content">
 					<ul>
-					<xsl:apply-templates select="/eltrun/member_list/member [contains(@group,$ogroup)]" mode="alumnus-ref" />
+						<xsl:apply-templates select="/eltrun/member_list/member [contains(@group,$ogroup)]" mode="alumnus-ref" />
 					</ul>
+					</div>
 				</xsl:when>				
 				<!-- seminar -->
 				<xsl:when test="$what = 'seminar'">
-					<h2>Eltrun Seminars</h2>
-						<table>
+					<div class="projecttitle">Eltrun Seminars</div>
+						<table class="content">
 						<xsl:apply-templates select="/eltrun/seminar_list/seminar [starts-with(sem_date,$seminaryear)]" mode="ref">
 							<xsl:sort select="sem_date" data-type="number" order="descending"/>
 						</xsl:apply-templates>
@@ -818,7 +848,6 @@
 			</xsl:choose>
 			</td>
 			</tr>
-			</tbody>
 		</table>
 		</body>
 		</html>
