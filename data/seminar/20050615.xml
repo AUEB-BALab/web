@@ -1,0 +1,11 @@
+<seminar>
+	<sem_date>20050615</sem_date>
+	<sem_time></sem_time>
+	<sem_room></sem_room>
+	<sem_duration> </sem_duration>
+		<presentation by="m_lina">
+          		<pres_title> PhD progress
+		</pres_title>
+		</presentation>
+</seminar>
+
