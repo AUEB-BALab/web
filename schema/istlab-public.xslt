@@ -608,6 +608,9 @@
 	<!-- presentation reference {{{1-->
 	<xsl:template match="presentation" mode="ref">
 		<xsl:apply-templates select="/eltrun/member_list/member [contains(current()/@by,@id)]/surname" />
+		<xsl:if test="count(pres_name) != 0">
+			<xsl:text> </xsl:text><xsl:value-of select="pres_name" />
+		</xsl:if>
 	</xsl:template>
 	
 	<xsl:template match="member" mode="pres-ref">
@@ -622,7 +625,12 @@
 		</tr>
 		<tr>
 		<td><b>Presenters:</b></td>
-		<td><xsl:apply-templates select="/eltrun/member_list/member [contains(current()/@by,@id)]" mode="pres-ref" /></td>
+		<td>
+		<xsl:apply-templates select="/eltrun/member_list/member [contains(current()/@by,@id)]" mode="pres-ref" />
+		<xsl:if test="count(pres_name) != 0">
+			<xsl:value-of select="pres_name" />
+		</xsl:if>
+		</td>
 		</tr>
 		</table>
 		<br/><br />
