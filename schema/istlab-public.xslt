@@ -541,7 +541,7 @@
 	
 	<!-- presentation reference {{{1-->
 	<xsl:template match="presentation" mode="ref">
-		<xsl:for-each select="/eltrun/member_list/member [contains(current()/@by,@id)]">
+		<xsl:for-each select="/eltrun/member_list/member [contains(@id,current()/@by)]">
 			<xsl:apply-templates select="current()" mode="pub-ref"/><br />
 		</xsl:for-each>
 		<xsl:if test="count(pres_name) != 0">
@@ -561,7 +561,7 @@
 		<tr>
 		<td valign="top" nowrap="1"><b>Presented by:</b></td>
 		<td>
-		<xsl:for-each select="/eltrun/member_list/member [contains(current()/@by,@id)]">
+		<xsl:for-each select="/eltrun/member_list/member [contains(@id,current()/@by)]">
 			<xsl:apply-templates select="current()" mode="pub-ref"/><br />
 		</xsl:for-each>
 		<xsl:if test="count(pres_name) != 0">

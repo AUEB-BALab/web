@@ -133,7 +133,7 @@ val: ${DB}
 
 html: ${DB} groups projects members seminars rel_pages publications
 
-groups:
+groups: ${DB}
 	@echo "Creating groups"
 	@for group in $(GROUPIDS) ; \
 	do \
@@ -145,7 +145,7 @@ groups:
 		xml tr ${PXSLT} -s ogroup=$$group -s what=group-publications -s menu=off ${DB} >${HTML}/publications/$$group-publications.html ; \
 	done
 
-projects:
+projects: ${DB}
 	@echo "Creating projects"
 	@for project in $(PROJECTIDS) ; \
 	do \
@@ -153,7 +153,7 @@ projects:
 		xml tr ${PXSLT} -s oproject=$$project -s what=project-publications -s menu=off ${DB} >${HTML}/publications/$$project-publications.html ; \
 	done
 	
-members:
+members: ${DB}
 	@echo "Creating members"
 	@for member in $(MEMBERIDS) ; \
 	do \
@@ -161,7 +161,7 @@ members:
 		xml tr ${PXSLT} -s omember=$$member -s what=member-publications -s menu=off ${DB} >${HTML}/publications/$$member-publications.html ; \
 	done
 	
-seminars:
+seminars: ${DB}
 	@echo "Creating seminar list"
 	@counter=${FIRST_YEAR}; \
 	theyear=`expr ${YEAR} + 1`; \
@@ -171,14 +171,14 @@ seminars:
 		counter=`expr $$counter + 1`; \
 	done
 	
-rel_pages:
+rel_pages: ${DB}
 	@echo "Creating additional HTML pages"
 	@for page in $(RELPAGEIDS) ; \
 	do \
 		xml tr ${PXSLT} -s opage=$$page -s what=rel-pages ${DB} >${HTML}/rel_pages/$$page-page.html ; \
 	done
 
-publications:
+publications: ${DB}
 	@echo "Creating publications"
 	@$(SHELL) build/bibrun
 
