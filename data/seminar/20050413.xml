@@ -1,10 +1,10 @@
 <seminar>
 	<sem_date>20050413</sem_date>
-	<sem_time>10:00</sem_time>
+	<sem_time>12:00</sem_time>
 	<sem_room>901</sem_room>
 	<sem_duration>90 mins</sem_duration>
-		<presentation by="m_pkour">
-          		<pres_title> Full PhD story </pres_title>
-          		<pres_url></pres_url>
+		<presentation by="m_chk">
+          		<pres_title>Opening keynore speech at the 3rd EuroITV Conference: Methodology for User Interface Design and Evaluation in Interactive TV: Beyond Usability</pres_title>
+          		<pres_url>http://uitv.info/about/editors/chorianopoulos/talk/keynote%20euroitv%202005.pdf</pres_url>
 		</presentation>		
 </seminar>
