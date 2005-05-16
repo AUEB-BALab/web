@@ -67,13 +67,16 @@ derived from a converted bibliography style template. This ensures that
 the original BibTeX styles are faithfully reproduced.
 </li>
 <li>
-<a href="http://istlab.dmst.aueb.gr/~bkarak/programs/fire/index.html">FIRE</a> (Fast Implementation of Regular Expressions) is a regular expression library for java. It follows the POSIX syntax and is 100% compatible with the SUN regular expression library (java.util.regex.*).
+<a href="http://istlab.dmst.aueb.gr/~bkarak/programs/fire/index.html">FIRE - Fast Implementation of Regular Expressions</a> is a regular expression library for java. It follows the POSIX syntax and is 100% compatible with the SUN regular expression library (java.util.regex.*).
 </li>
 <li>
 <a href="http://istlab.dmst.aueb.gr/~bkarak/programs/fire/benchmark.html">Regular Expression Benchmark Utility</a> is an application written in 100% Java. It was implemented to test FIRE (Fast Implementation of Regular Expressions) execution speed and compatibility with other Regular Expression Engines in Java.
 </li>
 <li>
-<a href="http://istlab.dmst.aueb.gr/~bkarak/programs/regex-api/index.html">SARE - Simple API for Regular Expressions</a> -  SARE stands for Simple API for Regular Expressions. Its an extension API that provides event based regular expression parsing. SARE's API is very simple. The developer need only to implement an interface, action event handler and attach it to the specific group of SARE parser.
+<a href="http://istlab.dmst.aueb.gr/~bkarak/programs/regex-api/index.html">SARE - Simple API for Regular Expressions</a> -  SARE stands for Simple API for Regular Expressions. Its an extension API that provides event based regular expression parsing. SARE's API is very simple. The developer need only to implement an interface, action event handler and attach it to the specific group of SARE parser.	
+</li>
+<li>
+<a href="http://istlab.dmst.aueb.gr/~vbill/ngce/">NGCE - Network Graphs for Computer Epidemiologists</a> Graphs are useful data structures capable of representing eficiently many technological and social networks. Because of this specific property they are utilized in the simulation-based studies of new algorithms and protocols. Inspired by the popular TGFF (Task Graphs For Free) toolkit, which creates task graphs for embedded systems, we present the NGCE, an easy to use graphical graph generator that produces graphs for the study of the propagation of viral agents in complex networks.
 </li>
 </ul>
 </page_body>
