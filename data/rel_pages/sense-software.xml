@@ -78,6 +78,12 @@ the original BibTeX styles are faithfully reproduced.
 <li>
 <a href="http://istlab.dmst.aueb.gr/~vbill/ngce/">NGCE - Network Graphs for Computer Epidemiologists</a> Graphs are useful data structures capable of representing eficiently many technological and social networks. Because of this specific property they are utilized in the simulation-based studies of new algorithms and protocols. Inspired by the popular TGFF (Task Graphs For Free) toolkit, which creates task graphs for embedded systems, we present the NGCE, an easy to use graphical graph generator that produces graphs for the study of the propagation of viral agents in complex networks.
 </li>
+<li>
+<a href="http://www.dmst.aueb.gr/dds/sw/ckjm/">ckjm - Chidamber and Kemerer Java Metrics</a>. The program ckjm calculates Chidamber and Kemerer object-oriented metrics by processing the bytecode of compiled Java files. The program calculates for each class the following six metrics: (1) <i>WMC: Weighted methods per class</i>, (2) <i>DIT: Depth of Inheritance Tree</i>, (3) <i>NOC: Number of Children</i>, (4) <i>CBO: Coupling between object classes</i>, (5) <i>RFC: Response for a Class</i> and (6) <i>LCOM: Lack of cohesion in methods</i>
+</li>
+<li>
+<a href="http://www.spinellis.gr/blog/20050413/">Pipe Namespace in the Portal Filesystem</a>. The portal filesystem allows a daemon running as a userland program to pass descriptors to processes that open files belonging to its namespace. It has been part of the *BSD operating systems since 4.4 BSD. I recently added a pipe namespace to its FreeBSD implementation. This allows us to perform scatter gather operations without using temporary files, create non-linear pipelines, and implement file views using symbolic links. 
+</li>
 </ul>
 </page_body>
 </page>
