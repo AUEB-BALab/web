@@ -3,9 +3,9 @@
 	<sem_time>10:00</sem_time>
 	<sem_room>901</sem_room>
 	<sem_duration>60 mins</sem_duration>
-		<presentation>
-          		<pres_title>Mobile Youth</pres_title>
-          		<pres_name>WRC research team</pres_name>
-		</presentation>
+	<presentation by="m_bkarak">
+	<pres_title>PRAXIS</pres_title>
+	<pres_url></pres_url>
+	</presentation>
 </seminar>
 
