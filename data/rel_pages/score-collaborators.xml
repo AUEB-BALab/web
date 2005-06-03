@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<page id="score_collab" group="g_score">
+	<page_name>Collaborators</page_name>
+	<page_body>
+The Score research group actively collaborates with a  number of academic partners in the context of ECR academic partnership.
+Feel free to contact
+us for more information.
+<br /><br />
+<table class="content">
+<tr>
+	<td><img src="../images/unisg_logo_eng.gif"  border="1" height="60" width="150" alt="St. Gallen University"/></td>
+	<td>St. Gallen University</td>
+</tr>
+<tr>
+	<td><img src="../images/whu_logo.jpg" border="1" height="60" width="150" alt="WHU University"/></td>
+	<td>WHU University, Koblenz</td>
+</tr>
+<tr>
+	<td><img src="../images/cbs_logo.gif" border="1" height="60" width="150" alt="Cardiff Business School"/></td>
+	<td>Cardiff Business School, UK</td>
+</tr>
+<tr>
+	<td><img src="../images/logo_iulm.gif" border="1" height="60" width="150" alt="IULM University"/></td>
+	<td>IULM University, Milan</td>
+</tr>
+</table>
+	</page_body>
+</page>
