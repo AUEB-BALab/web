@@ -18,8 +18,8 @@
 		104 34,
 		Athens, Greece
 	</postal_address>
-	<photo>Optional</photo>
+	<photo>../images/gousiosg.jpg</photo>
 	<shortcv>
-	    <i>Giorgos Gousios</i> is a PhD candidate at the Athens University of Economics and Business. He holds a Diploma in Information and Communication Systems Engineering from the University of the Aegean and an MSc in Advanced Computer Science from the University of Manchester. He is a former member of the <a href="http://www.cs.man.ac.uk/apt">APT</a> group (Manchester University) and a current member of the <a href="../groups/g_sense-details.html">SENSE</a> group. He has contributed code in various open source projects. His research interests include programming language theory, software engineering and operating system architectures.
+	    <i>Giorgos Gousios</i> is a PhD candidate at the Athens University of Economics and Business. He holds a Diploma in Information and Communication Systems Engineering from the University of the Aegean and an MSc in Advanced Computer Science from the University of Manchester. He is a former member of the <a href="http://www.cs.man.ac.uk/apt">APT</a> group (Manchester University) and a current member of the <a href="../groups/g_sense-details.html">SENSE</a> group. He has contributed code in various open source projects. His research interests include programming languages implementation, virtual machines, memory management and operating system architectures.
 	</shortcv>
 </member>
