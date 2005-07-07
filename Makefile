@@ -25,6 +25,8 @@ DB=build/db.xml
 PXSLT=schema/eltrun-public.xslt
 # XSLT file for fetching the ids
 IDXSLT=schema/eltrun-ids.xslt
+# XSLT file for creating the phone catalog
+PHONEXSLT=schema/eltrun-phone-catalog.xslt
 # Today' date in ISO format
 TODAY=$(shell date +'%Y%m%d')
 # Fetch the ids
@@ -92,8 +94,14 @@ clean:
 		${HTML}/members/* \
 		${HTML}/seminar/[2]* \
 		${HTML}/rel_pages/* \
+		${HTML}/misc/* \
 		${HTML}/publications/* 2>/dev/null
 	-rm -f  public_html/images/colgraph.svg
+
+phone: ${DB}
+	@echo "Creating phone catalog"
+	@xml tr ${PHONEXSLT} ${DB} > ${HTML}/misc/catalog.html
+
 
 xsd-val: ${DB}
 	@echo '---> Checking seminar data XML files ... '
@@ -131,7 +139,7 @@ val: ${DB}
 	@echo '---> Checking db.xml ...'
 	@xml val -d schema/eltrun.dtd $(DB)
 
-html: ${DB} groups projects members seminars rel_pages publications
+html: ${DB} groups projects members seminars rel_pages publications phone
 
 groups: ${DB}
 	@echo "Creating groups"
