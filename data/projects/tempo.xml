@@ -15,15 +15,19 @@ OTE</funding_agency>
 	<funding_programme>Private Funding</funding_programme>
 	<project_code>1182</project_code>
 	<partner>
-		<shortname>Hellenic Organization of Telecommunications 
-OTE</shortname>
+		<shortname>OTE</shortname>
 		<country>GR</country>
 		<web_site>http://www.ote.gr/</web_site>
 	</partner>
 	<partner>
-		<shortname>National Technical University of Athens </shortname>
+		<shortname>NTUA</shortname>
 		<country>GR</country>
 		<web_site>http://www.ntua.gr/</web_site>
+	</partner>
+	<partner>
+		<shortname>UoA</shortname>
+		<country>GR</country>
+		<web_site>http://www.uoa.gr/</web_site>
 	</partner>
 	<description>
 		The TEMPO project aims to:
