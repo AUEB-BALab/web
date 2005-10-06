@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project id="p_pened_wrc" group="g_eltrun g_wrc" contact="m_mbina" scientific_coordinator="m_giaglis" international="no" type="rtd">
+	<shortname>PENED</shortname>
+	<projtitle>Mobile and Wireless Business: Technologies and Applications</projtitle>
+	<startdate>20050901</startdate>
+	<enddate>20081231</enddate>
+	<!-- <web_site>http://sense.eltrun.gr/projects/p_pened03.html</web_site> -->
+	<!--<our_budget>125.000 euro</our_budget>-->
+	<!--<total_budget>125.000 euro</total_budget>-->
+	<funding_agency>General Secretariat of Research and Technology, Ministry of Development</funding_agency>
+	<funding_programme>Competitiveness</funding_programme>
+	<project_code> - </project_code>
+	<partner>
+		<shortname>Unisystems SA</shortname>
+		<country>GR</country>
+		<!--<web_site>http://www.singularsoftware.gr/index.asp</web_site>-->
+	</partner>
+	<partner>
+		<shortname>GLOBO Technologies SA</shortname>
+		<country>GR</country>
+		<!--<web_site>http://www.singularsoftware.gr/index.asp</web_site>-->
+	</partner>
+	<partner>
+		<shortname>UPSTREAM SA</shortname>
+		<country>GR</country>
+		<!--<web_site>http://www.singularsoftware.gr/index.asp</web_site>-->
+	</partner>
+	<partner>
+		<shortname>Forthnet SA</shortname>
+		<country>GR</country>
+		<!--<web_site>http://www.singularsoftware.gr/index.asp</web_site>-->
+	</partner>
+	<partner>
+		<shortname>Yonsei University</shortname>
+		<country>Korea</country>
+		<!--<web_site>http://www.singularsoftware.gr/index.asp</web_site>-->
+	</partner>
+
+	<!-- <logo> put logo here </logo> -->
+	<description>
+	The project's aim is to promote the conduction of basic and applied research in the area of Mobile and Wireless business by focusing on two aspects: 
+	emerging technologies and innovative business models. The project is planned to support 5 doctoral students in the preparation of their theses 
+	themed around the respective research areas.
+	</description>
+</project>
+
