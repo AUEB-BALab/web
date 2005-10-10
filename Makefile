@@ -114,27 +114,37 @@ val: ${DB}
 	@echo '---> Checking group data XML files ... '
 	@-for file in $(GROUPFILES); \
 	do \
-		xml val -d schema/eltrun-group.dtd $$file; \
+		xml val -d schema/eltrun-group.dtd $$file > /dev/null 2>xmlval.out; \
+		if [ $$? != "0" ]; then cat xmlval.out; fi; \
+		rm xmlval.out; \
 	done 
 	@echo '---> Checking member data XML files ...'
 	@-for file in $(MEMBERFILES); \
 	do \
-		xml val -d schema/eltrun-member.dtd $$file; \
+		xml val -d schema/eltrun-member.dtd $$file > /dev/null 2>xmlval.out; \
+		if [ $$? != "0" ]; then cat xmlval.out; fi; \
+		rm xmlval.out; \
 	done
 	@echo '---> Checking project data XML files ...'
 	@-for file in $(PROJECTFILES); \
 	do \
-		xml val -d schema/eltrun-project.dtd $$file; \
+		xml val -d schema/eltrun-project.dtd $$file > /dev/null 2>xmlval.out; \
+		if [ $$? != "0" ]; then cat xmlval.out; fi; \
+		rm xmlval.out; \
 	done
 	@echo '---> Checking seminar data XML files ...'
 	@-for file in $(SEMINARFILES); \
 	do \
-		xml val -d schema/eltrun-seminar.dtd $$file; \
+		xml val -d schema/eltrun-seminar.dtd $$file > /dev/null 2>xmlval.out; \
+		if [ $$? != "0" ]; then cat xmlval.out; fi; \
+		rm xmlval.out; \
 	done
 	@echo '---> Checking additional HTML pages ...'
 	@-for file in $(RELPAGEFILES); \
 	do \
-		xml val -d schema/eltrun-page.dtd $$file; \
+		xml val -d schema/eltrun-page.dtd $$file > /dev/null 2>xmlval.out; \
+		if [ $$? != "0" ]; then cat xmlval.out; fi; \
+		rm xmlval.out; \
 	done
 	@echo '---> Checking db.xml ...'
 	@xml val -d schema/eltrun.dtd $(DB)
@@ -160,7 +170,7 @@ projects: ${DB}
 		xml tr ${PXSLT} -s oproject=$$project -s what=project-details -s menu=off ${DB} >${HTML}/projects/$$project.html ; \
 		xml tr ${PXSLT} -s oproject=$$project -s what=project-publications -s menu=off ${DB} >${HTML}/publications/$$project-publications.html ; \
 	done
-	
+
 members: ${DB}
 	@echo "Creating members"
 	@for member in $(MEMBERIDS) ; \
@@ -168,7 +178,7 @@ members: ${DB}
 		xml tr ${PXSLT} -s omember=$$member -s what=member-details -s menu=off ${DB} >${HTML}/members/$$member.html ; \
 		xml tr ${PXSLT} -s omember=$$member -s what=member-publications -s menu=off ${DB} >${HTML}/publications/$$member-publications.html ; \
 	done
-	
+
 seminars: ${DB}
 	@echo "Creating seminar list"
 	@counter=${FIRST_YEAR}; \
@@ -178,7 +188,7 @@ seminars: ${DB}
 		xml tr ${PXSLT} -s what=seminar -s menu=off -s seminaryear=$$counter ${DB} >${HTML}/seminar/$$counter.html ; \
 		counter=`expr $$counter + 1`; \
 	done
-	
+
 rel_pages: ${DB}
 	@echo "Creating additional HTML pages"
 	@for page in $(RELPAGEIDS) ; \
