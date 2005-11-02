@@ -2,7 +2,7 @@
 <page id="sense_newsletter" group="g_sense">
 	<page_name>Newsletter</page_name>
 	<page_body>
-		Our laboratory used to publish and distribute by email the Information Technology Research Update: a free periodic newsletter providing summaries, analyses, insights, and commentaries on information technology research. This distribution format has been now been subsumed by our members' blogs (currently <a href="http://www.dmst.aueb.gr/dds/blog/">dds</a>). From this page you can access the archive of older issues as plain text messages.
+		Our laboratory used to publish and distribute by email the Information Technology Research Update: a free periodic newsletter providing summaries, analyses, insights, and commentaries on information technology research. This distribution format has been now been subsumed by our <a href="g_sense_weblog-page.html">members' blogs</a> . From this page you can access the archive of older issues as plain text messages.
 
 <ul>
 <li> <a href="http://istlab.dmst.aueb.gr/v3i2.txt">Volume 3 Issue 2</a> with the following contents:
