@@ -2,28 +2,42 @@
 <page id="sense_collab" group="g_sense">
 	<page_name>Collaborators</page_name>
 	<page_body>
-<b><i>ISTLab</i></b> actively collaborates with a  number of industrial and 
-academic partners.
-Feel free to contact
-us for more information.
-<br /><br />
-<table class="content">
-<tr>
-	<td><img src="../images/microsoft.jpg" alt="Microsoft"/></td>
-	<td>Microsoft Hellas S.A.</td>
-</tr>
-<tr>
-	<td><img src="../images/oracle.gif" alt="Oracle"/></td>
-	<td>Oracle Hellas S.A.</td>
-</tr>
-<tr>
-	<td><img src="../images/ote.jpg" alt="OTE"/></td>
-	<td>OTE - Planning and Development Department Laboratories of New Technologies and Services -  Multimedia Laboratories</td>
-</tr>
-<tr>
-	<td><img src="../images/sun.jpg" alt="SUN Microsystems"/></td>
-	<td>Sun Microsystems Inc.</td>
-</tr>
-</table>
+<b><i>SENSE</i></b> actively collaborates with a  number of industrial and academic partners. Feel free to contact us for more information.
+
+<h2>Current Collaborators</h2>
+
+<ul>	
+	<li><a href="http://www.cis.aueb.gr/">CIS Research Group - - Athens University of Economics and Business</a></li>
+	<li><a href="http://www.db-net.aueb.gr/">DB-net - Athens University of Economics and Business</a></li>
+	<li><a href="http://w3.umh.ac.be/genlog/">Software Engineering Lab - University of Mons-Hainaut</a></li>
+	<li><a href="http://www.lore.ua.ac.be/">LORE / Lab On REengineering - University of Antwerp</a></li>
+	<li><a href="http://www.singular.gr/">Singular S.A.</a></li>
+</ul>
+
+<h2>Past Collaborators</h2>
+
+<ul>
+	<li><a href="http://www.microsoft.com/hellas/">Microsoft Hellas S.A.</a></li>
+	<li><a href="http://www.oracle.com/global/gr/index.html">Oracle Hellas S.A.</a></li>
+	<li>OTE - Planning and Development Department Laboratories of New Technologies and Services - Multimedia Laboratories</li>
+	<li><a href="http://www.intracom.gr/">Intracom</a></li>
+	<li><a href="http://www.pouliadis.gr/">Pouliadis</a></li>
+	<li>Flash Multimedia</li>
+	<li>Danmarks Radio</li>
+	<li>Ibermatica</li>
+	<li>INESC Porto</li>
+	<li><a href="http://www.randeurope.org/">RAND Europe</a></li>
+	<li><a href="http://www.intellectuk.org/">Intellect</a></li>
+	<li><a href="http://www.clusit.it/">CLUSIT</a></li>
+	<li><a href="http://www.danishtechnology.dk/">The Danish Technological Institute</a></li>
+	<li><a href="http://escert.upc.es/">esCERT</a></li>
+	<li><a href="http://www.timekontor.de/">TimeKontor AG</a></li>
+	<li><a href="http://www.ecp.nl/">ECP.NL</a></li>
+	<li><a href="http://www.praxis.ee/">PRAXIS</a></li>
+	<li><a href="http://www.ericsson.com/">Ericsson</a></li>
+	<li><a href="http://www.elisa.com">ELISA</a></li>
+	<li><a href="http://www.ssf.fi/">Space Systems Finland (FFS)</a></li>
+	<li><a href="http://www.hut.fi/">Helsinki University of Technology (HUT)</a></li>
+</ul>
 	</page_body>
 </page>
