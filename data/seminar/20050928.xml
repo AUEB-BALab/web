@@ -4,8 +4,7 @@
 	<sem_room>901</sem_room>
 	<sem_duration>120 mins</sem_duration>
 	<presentation>
-	<pres_title>IRIS group, and Speks project presentation </pres_title>
-	<pres_name></pres_name>
-	<pres_url>http://www.eltrun.gr/content/seminar/seminars_files/iris_presentation_final_2.zip</pres_url>
+  		<pres_title>IRIS group, and Speks project presentation</pres_title>
+  		<pres_name>IRIS group</pres_name>
 	</presentation>
 </seminar>
