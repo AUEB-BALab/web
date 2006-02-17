@@ -481,13 +481,12 @@
 		<br />
 		<br />
 		<xsl:if test="count(description) != 0">
-			Description:<br />
-			<br />
+			<h2>Description</h2>
 			<xsl:copy-of select="current()/description" />
 			<br />
 		</xsl:if>
 		<xsl:if test="count(partner) != 0">
-			Partners:
+			<h2>Partners</h2>
 			<ul>
 			<xsl:for-each select="current()/partner">
 				<li>
@@ -497,7 +496,7 @@
 				<xsl:if test="count(web_site) = 0">
 					<xsl:value-of select="current()/shortname"/> (<xsl:value-of select="current()/country"/>)
 				</xsl:if>
-				</li>			
+				</li>
 			</xsl:for-each>
 			</ul>
 		</xsl:if>
