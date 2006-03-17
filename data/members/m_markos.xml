@@ -8,7 +8,7 @@
 		<office_phone>+30 210 8203370</office_phone>
 	<!-- <mobile_phone>Optional</mobile_phone> -->
 	<fax>+30 210 8203370</fax>
-	<!-- <alumnus/> Optional -->
+	<alumnus/> <!-- Optional -->
 	<!-- <office_address></office_address> -->
 	<postal_address>Patission 76, Athens</postal_address>
 	<!-- <photo>Optional</photo> -->
@@ -20,6 +20,5 @@ Demokritos. He holds a Diploma in Information and Communication Systems
 Engineering from the University of the Aegean. His research interests
 include applied security and operating systems hardening, network attack
 analysis, operating systems and networking.
-	   
 	</shortcv>
 </member>
