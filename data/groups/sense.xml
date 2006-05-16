@@ -14,22 +14,21 @@ The research streams of the SENSE group include:
 
 <ul>
 			<li>Software development tools and techniques</li>
+			<li>Quality and reusability of open source software</li>
 			<li>Safety, security, and availability of software systems</li>
-			<li>Software reusability and component-based development</li>
+			<li>Peer to peer networks</li>
 			<li>Domain-specific languages</li>
-			<li>Vertical applications in the areas of ubiquitous computing and interactive TV </li>
 			<li>Stochastic optimisation algorithms and applications</li>
-			<li>Technology evaluation</li>
 		</ul>
 
 The objectives of the SENSE group are:
 <ul>
 			<li>Advance the state of the art in software development by realizing tools and methods for efficiently developing reliable, maintainable, and secure applications.</li>
+			<li>Study the reusability of open source software focusing on the quality of the corresponding artefacts.</li>
 			<li>Examine the safety, security and availability aspects of applications and develop processes, algorithms, and environments for conducting secure and resilient transactions.</li>
-			<li>Exploit software reusability and component-based methods through development processes that capitalise on existing designs and software artefacts based on components and design patterns.</li>
+			<li>Develop algorithms and applications based on peer to peer networks.</li>
+			<li>Study and apply stochastic optimisation algorithms, such as simulated annealing, taboo search, and genetic algorithms, applying them in the optimisation of eBusiness processes.</li>
 			<li>Explore the potential of domain-specific languages by designing focused, flexible, and efficient languages for expressing rules, models, processes, and applications.  These are used to bridge the gap between an information system’s specification and implementation. </li>
-			<li>Study vertical applications in the areas ubiquitous computing and interactive TV by the realisation of innovative applications in emerging information technology areas that aim to push the frontier of the current state of the art.</li>
-			<li>Develop and apply stochastic optimisation algorithms, such as simulated annealing, taboo search, and genetic algorithms, applying them in the optimisation of eBusiness processes.</li>
 			<li>Evaluate technology advances in new information technologies.</li>
 		</ul>
 	</description>
