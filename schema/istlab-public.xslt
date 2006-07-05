@@ -288,7 +288,8 @@
 			</font>
 		</xsl:if>
 		<xsl:if test="count(email) != 0">
-			E-mail: <xsl:value-of select="email" />
+			<!-- print the email in 'bkarak at aueb.gr form -->
+			E-mail: <xsl:value-of select="substring-before(current()/email,'@')"/><b><xsl:text> at </xsl:text></b><xsl:value-of select="substring-after(current()/email,'@')"/> 
 			<br />
 		</xsl:if>
 		<xsl:if test="count(office_phone) != 0">
