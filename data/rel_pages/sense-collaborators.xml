@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+﻿<?xml version="1.0"?>
 <page id="sense_collab" group="g_sense">
 	<page_name>Collaborators</page_name>
 	<page_body>
@@ -20,7 +20,6 @@
 <h2>Past Collaborators</h2>
 
 <ul>
-	<li><a href="http://www.lore.ua.ac.be/">LORE / Lab On REengineering - University of Antwerp</a></li>
 	<li><a href="http://www.lore.ua.ac.be/">LORE / Lab On REengineering - University of Antwerp</a></li>
 	<li><a href="http://www.clusit.it/">CLUSIT</a></li>
 	<li><a href="http://www.danishtechnology.dk/">The Danish Technological Institute</a></li>

@@ -3,10 +3,10 @@
 	<page_name>Web logs</page_name>
 	<page_body>
 		<ul>
-			<li><a href="http://www.spinellis.gr/blog/index.html">Diomidis Spinellis</a> <a href="http://www.spinellis.gr/blog/dds-blog-rss.xml"><img src="../images/rss.gif" alt="Diomidis Spinellis RSS Feed"/></a></li>
+			<li><a href="http://www.spinellis.gr/blog/index.html">Diomidis Spinellis</a> <a href="http://www.spinellis.gr/blog/dds-blog-rss.xml"><img src="../images/rss.gif" alt="Diomidis Spinellis RSS Feed" align="top"/></a></li>
 			<li><a href="http://istlab.dmst.aueb.gr/~vbill/blog.html">Vasileios Vlachos</a></li>
 			<li><a href="http://lessisapossibility.blogspot.com/">Stephanos Androutsellis-Theotokis</a></li>
-			<li><a href="http://istlab.dmst.aueb.gr/~bkarak/weblog/index.html">Vassilios Karakoidas</a> <a href="http://istlab.dmst.aueb.gr/~bkarak/weblog/weblog-rss.xml"><img src="../images/rss.gif" alt="Vassilios Karakoidas RSS Feed"/></a></li>
+			<li><a href="http://istlab.dmst.aueb.gr/~bkarak/weblog/index.html">Vassilios Karakoidas</a> <a href="http://istlab.dmst.aueb.gr/~bkarak/weblog/weblog-rss.xml"><img src="../images/rss.gif" alt="Vassilios Karakoidas RSS Feed" align="top"/></a></li>
 		</ul>
 	</page_body>
 </page>
