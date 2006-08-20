@@ -25,8 +25,10 @@ DB=build/db.xml
 PXSLT=schema/eltrun-public.xslt
 # XSLT file for fetching the ids
 IDXSLT=schema/eltrun-ids.xslt
-# XSLT file for creating the phone catalog
+# XSLT file for the phone catalog
 PHONEXSLT=schema/eltrun-phone-catalog.xslt
+#XSLT file for phd-students
+STUDXSLT=schema/eltrun-phd-list.xslt
 # Today' date in ISO format
 TODAY=$(shell date +'%Y%m%d')
 # Fetch the ids
@@ -199,6 +201,10 @@ rel_pages: ${DB}
 publications: ${DB}
 	@echo "Creating publications"
 	@$(SHELL) build/bibrun
+
+phd-students: ${DB}
+	@echo "Creating PhD Students list"
+	@xml tr ${STUDXSLT} ${DB} > ${HTML}/misc/phd-students.html
 
 dist: html
 	$(SSH) istlab.dmst.aueb.gr "cd /home/dds/src/eltrun-web ; \

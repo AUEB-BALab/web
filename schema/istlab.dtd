@@ -58,7 +58,7 @@
 <!ELEMENT country (#PCDATA)>
 <!-- Member list elements {{{1 -->
 <!ELEMENT member_list (member*)>
-<!ELEMENT member (givenname, surname, memb_title?, email, web_site?, office_phone?, mobile_phone?, fax?, alumnus?, office_address?, postal_address?, photo?, shortcv)>
+<!ELEMENT member (givenname, surname, memb_title?, email, web_site?, office_phone?, mobile_phone?, fax?, alumnus?, office_address?, postal_address?, photo?, shortcv,phd-info?)>
 <!ATTLIST member
 	id ID #REQUIRED
 	group IDREFS #REQUIRED
@@ -75,6 +75,17 @@
 <!ELEMENT alumnus EMPTY>
 <!ELEMENT office_address (#PCDATA)>
 <!ELEMENT postal_address (#PCDATA)>
+<!-- phd information  -->
+<!ELEMENT phd-info (phd-title,phd-summary)>
+<!ATTLIST phd-info
+	completed CDATA #REQUIRED
+	supervisor ID #REQUIRED
+	startdate CDATA #REQUIRED
+>
+
+<!ELEMENT phd-title (#PCDATA)>
+<!ELEMENT phd-summary %pc_flow;>
+
 <!-- Publication list elements {{{1 -->
 <!ELEMENT publication_list (publication*)>
 <!ELEMENT publication (pub_title, pub_author, pub_year)>

@@ -272,12 +272,18 @@
 		<xsl:value-of select="givenname" />
 		<xsl:text> </xsl:text>
 		<xsl:value-of select="surname" />
+		<xsl:if test="count(current()/phd-info) = 1">
+			(PhD Student)
+		</xsl:if>
 		</div>
 		<table border="0">
 		<tr>
 		<td valign="top" class="content">
 		<xsl:if test="count(photo) != 0">
 			<img src="{current()/photo}" alt="{current()/memb_title} {current()/givenname} {current()/surname}" />
+		</xsl:if>
+		<xsl:if test="count(photo) = 0">
+			<img src="../images/eltrun.jpg" alt="{current()/memb_title} {current()/givenname} {current()/surname}"/>
 		</xsl:if>
 		<br /> <br />
 		</td>
@@ -328,11 +334,20 @@
 		<xsl:if test="count(/eltrun/publication_type_list/publication_type [@for = current()/@id]/has_any) != 0">
 			<br />
 			<a href="../publications/{$omember}-publications.html">Publication list</a>
-		</xsl:if>
+		</xsl:if>		
 		<br />
 		<br />
+		<h3>Summary</h3>
 		<xsl:copy-of select="current()/shortcv"/>
 		</div>
+		<xsl:if test="count(current()/phd-info) = 1">
+		<div class="content">
+		<h3>PhD Thesis</h3>
+		<b>Title: </b><xsl:value-of select="current()/phd-info/phd-title"/>
+		<br/><br/>
+		<xsl:copy-of select="current()/phd-info/phd-summary"/>
+		</div>
+		</xsl:if>
 	</xsl:template>
 
 	<!-- Format a short group reference {{{1 -->

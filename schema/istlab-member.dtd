@@ -15,13 +15,15 @@
 <!ENTITY % xhtml11.mod PUBLIC "-//W3C//ENTITIES XHTML 1.1//EN"
 		 "xhtml11.dtd">
 %xhtml11.mod;
+
 <!-- Entities - remember to keep entities on top in order for xml starlet to work properly-->
 <!ENTITY % image "(#PCDATA  | %Flow.mix;)*">
 <!ENTITY % phone "(#PCDATA)">
 <!ENTITY % date "(#PCDATA)">
 <!ENTITY % pc_flow "(#PCDATA | %Flow.mix;)*">
+
 <!-- -->
-<!ELEMENT member (givenname, surname, memb_title?, email, web_site?, office_phone?, mobile_phone?, fax?, alumnus?, office_address?, postal_address?, photo?, shortcv)>
+<!ELEMENT member (givenname, surname, memb_title?, email, web_site?, office_phone?, mobile_phone?, fax?, alumnus?, office_address?, postal_address?, photo?, shortcv,phd-info?)>
 <!ATTLIST member
 	id ID #REQUIRED
 	group CDATA #REQUIRED
@@ -39,3 +41,14 @@
 <!ELEMENT office_address (#PCDATA)>
 <!ELEMENT postal_address (#PCDATA)>
 <!ELEMENT web_site (#PCDATA)>
+
+<!-- phd information  -->
+<!ELEMENT phd-info (phd-title,phd-summary)>
+<!ATTLIST phd-info
+	completed CDATA #REQUIRED
+	supervisor ID #REQUIRED
+	startdate CDATA #REQUIRED
+>
+
+<!ELEMENT phd-title (#PCDATA)>
+<!ELEMENT phd-summary %pc_flow;>
