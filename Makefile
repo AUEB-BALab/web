@@ -204,7 +204,9 @@ publications: ${DB}
 
 phd-students: ${DB}
 	@echo "Creating PhD Students list"
-	@xml tr ${STUDXSLT} ${DB} > ${HTML}/misc/phd-students.html
+	@xml tr ${STUDXSLT} -s completed=0 ${DB} > ${HTML}/misc/phd-students.html
+	@echo "Creating Awarded PhD's list"
+	@xml tr ${STUDXSLT} -s completed=1 ${DB} > ${HTML}/misc/awarded-phd-students.html
 
 dist: html
 	$(SSH) istlab.dmst.aueb.gr "cd /home/dds/src/eltrun-web ; \

@@ -273,7 +273,9 @@
 		<xsl:text> </xsl:text>
 		<xsl:value-of select="surname" />
 		<xsl:if test="count(current()/phd-info) = 1">
-			(PhD Student)
+			<xsl:if test="current()/phd-info/@completed = 0">
+				(PhD Student)
+			</xsl:if>
 		</xsl:if>
 		</div>
 		<table border="0">
@@ -343,7 +345,12 @@
 		<xsl:if test="count(current()/phd-info) = 1">
 		<div class="content">
 		<h3>PhD Thesis</h3>
-		<b>Title: </b><xsl:value-of select="current()/phd-info/phd-title"/>
+		<b>Title: </b><xsl:value-of select="current()/phd-info/phd-title"/><br/>
+		<b>Supervisor: </b> <xsl:apply-templates select="/eltrun/member_list/member [@id=current()/phd-info/@supervisor]" mode="simple-ref" /><br/>
+		<b>Starting date: </b> 
+		<xsl:call-template name="date">
+			<xsl:with-param name="date" select="current()/phd-info/@startdate" />
+		</xsl:call-template>
 		<br/><br/>
 		<xsl:copy-of select="current()/phd-info/phd-summary"/>
 		</div>

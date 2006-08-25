@@ -18,8 +18,14 @@
 		104 34,
 		Athens, Greece
 	</postal_address>
-	<photo>../images/gousiosg.jpg</photo>
+	<photo>../images/m_gousios.jpg</photo>
 	<shortcv>
 	    <i>Giorgos Gousios</i> is a PhD candidate at the Athens University of Economics and Business. He holds a Diploma in Information and Communication Systems Engineering from the University of the Aegean and an MSc in Advanced Computer Science from the University of Manchester. He is a former member of the <a href="http://www.cs.man.ac.uk/apt">APT</a> group (Manchester University) and a current member of the <a href="../groups/g_sense-details.html">SENSE</a> group. He has contributed code in various open source projects. His research interests include programming languages implementation, virtual machines, memory management and operating system architectures.
 	</shortcv>
+	<phd-info completed="0" supervisor="m_dds" startdate="20031114">
+		<phd-title>Memory performance of object oriented languages</phd-title>
+		<phd-summary>
+			Modern object-oriented programming languages offer a wealth of features to the programmer, but those features come at a price. Today's programs are memory and processing power hungry, while not offering features that justify the high requirements. In our research, we investigate the memory usage characteristics of modern applications. We aim to construct a system where the programmer will only pay for the price he is asking for in terms of memory usage.
+		</phd-summary>
+	</phd-info>
 </member>

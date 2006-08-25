@@ -9,6 +9,7 @@
 	<fax>+30 2108203871</fax>
 	<office_address>Evelpidon 47-A &amp; Lefkados 33, Room 205</office_address>
 	<postal_address>Evelpidon 47-A &amp; Lefkados 33, 11362, Athens, Greece</postal_address>
+	<photo>../images/m_fouskas.jpg</photo>
 	<shortcv>
 		<p>
 	   Konstantinos Fouskas is a full time researcher and PhD candidate at the Department of
@@ -37,4 +38,10 @@
 	   Wireless Research Group (ELTRUN/WRC).
       </p>
 	</shortcv>
+	<phd-info completed="0" supervisor="m_giaglis" startdate="20031114">
+		<phd-title>Factors influencing the effectiveness of Competitor Analysis</phd-title>
+		<phd-summary>
+			Competitor analysis is becoming an increasingly important task for organizations in today’s competitive landscape. The efficient analysis of competitors is vital for organizations success and in several occasions critical for its survival. However managers tend to be myopic when recognizing rivals, and inefficient in analyzing them. To this end, this thesis will try to identify factors influencing competitor analysis effectiveness, examine their influence and try to raise conclusions correlating the competitive decision process to common mistakes in competitive analysis. This will be held though an analytical process, examining environmental and organizational effects on the competitive analysis process characteristics and the process characteristics in relation to the process effectiveness. The results will better help us understand the process by which organizations choose to watch competitive others by identifying key points in the process that have to be taken into consideration.
+		</phd-summary>
+	</phd-info>
 </member>

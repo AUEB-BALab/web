@@ -6,9 +6,9 @@
 	<email>bkarak@aueb.gr</email>
 	<web_site>http://istlab.dmst.aueb.gr/~bkarak/</web_site>	
 	<office_phone>+30 2108203370</office_phone>
-	<!--<photo>../images/eltrun.jpg</photo>-->
+	<photo>../images/m_bkarak.jpg</photo>
 	<shortcv>
-		<i>Vassilios Karakoidas</i> is a PhD candidate in Athens University of Economics and Business at the Department of Management Science and Technology. He holds an BSc in Computer Science (University of Piraeus) and  an MSc in Information Systems (Athens University of Economics and Business). He is former member of the Health Informatics laboratory at University of Piraeus. He is now a member of <a href="http://www.eltrun.gr/">ELTRUN</a>/<a href="../groups/g_sense-details.html">SENSE</a> and has been involved in various research projects. The most recent are <a href="../projects/p_gemini.html">GEMINI</a> and <a href="../projects/p_praxis.html">PRAXIS</a>. His research interests include Software Engineering, Programming Languages, Operating Systems and Networking. He is an author of a number of open-source and public-domain software packages and tools.
+		<i>Vassilios Karakoidas</i> is a PhD candidate in Athens University of Economics and Business at the Department of Management Science and Technology. He holds an BSc in Computer Science (University of Piraeus) and  an MSc in Information Systems (Athens University of Economics and Business). He is former member of the Health Informatics laboratory at University of Piraeus. He is now a member of <a href="http://www.eltrun.gr/">ELTRUN</a>/<a href="../groups/g_sense-details.html">SENSE</a> and has been involved in various research projects. The most recent are <a href="../projects/p_gemini.html">GEMINI</a>, <a href="../projects/p_praxis.html">PRAXIS</a> and <a href="../projects/p_sqo-oss.html">SQO-OSS</a>. His research interests include Software Engineering, Programming Languages, Operating Systems and Networking. He is an author of a number of open-source and public-domain software packages and tools.
 	</shortcv>
 	<phd-info completed="0" supervisor="m_dds" startdate="20031114">
 		<phd-title>Integrating Domain-Specific Languages with General-Purpose Languages</phd-title>
