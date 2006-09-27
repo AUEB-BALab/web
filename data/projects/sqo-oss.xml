@@ -5,7 +5,7 @@ contact="m_dds" international="yes" type="rtd" project_manager="m_gousios">
 	<projtitle>Source Quality Observatory for Open Source Software</projtitle>
 	<startdate>20060901</startdate>
 	<enddate>20080901</enddate>
-	<!-- <web_site>-</web_site> -->
+	<web_site>http://www.sqo-oss.eu/</web_site>
 	<our_budget>378000</our_budget>
 	<total_budget>1638800</total_budget>
 	<funding_agency>European Commission</funding_agency>
@@ -41,7 +41,7 @@ contact="m_dds" international="yes" type="rtd" project_manager="m_gousios">
 		<country>D</country>
 		<web_site>http://www.kde.org</web_site>
 	</partner>
-	<!--<logo>../images/p_mexpress.gif</logo>-->
+	<logo>../images/sqo-oss.png</logo>
 	<description>
 What do we know about the quality of the software you are using?  A well-known conjecture  
 in software engineering is that external quality characteristics are correlated to internal quality  
