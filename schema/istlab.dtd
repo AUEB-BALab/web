@@ -79,7 +79,7 @@
 <!ELEMENT phd-info (phd-title,phd-summary)>
 <!ATTLIST phd-info
 	completed CDATA #REQUIRED
-	supervisor ID #REQUIRED
+	supervisor IDREF #REQUIRED
 	startdate CDATA #REQUIRED
 >
 
