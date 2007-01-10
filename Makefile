@@ -135,13 +135,6 @@ val: ${DB}
 		if [ $$? != "0" ]; then cat xmlval.out; fi; \
 		rm xmlval.out; \
 	done
-	@echo '---> Checking seminar data XML files ...'
-	@-for file in $(SEMINARFILES); \
-	do \
-		xml val -d schema/istlab-seminar.dtd $$file > /dev/null 2>xmlval.out; \
-		if [ $$? != "0" ]; then cat xmlval.out; fi; \
-		rm xmlval.out; \
-	done
 	@echo '---> Checking additional HTML pages ...'
 	@-for file in $(RELPAGEFILES); \
 	do \
@@ -185,16 +178,6 @@ members: ${DB}
 	do \
 		xml tr ${PXSLT} -s omember=$$member -s what=member-details -s menu=off ${DB} >${HTML}/members/$$member.html ; \
 		xml tr ${PXSLT} -s omember=$$member -s what=member-publications -s menu=off ${DB} >${HTML}/publications/$$member-publications.html ; \
-	done
-
-seminars: ${DB}
-	@echo "Creating seminar list"
-	@counter=${FIRST_YEAR}; \
-	theyear=`expr ${YEAR} + 1`; \
-	while [ $$counter -le $$theyear ] ; \
-	do \
-		xml tr ${PXSLT} -s what=seminar -s menu=off -s seminaryear=$$counter ${DB} >${HTML}/seminar/$$counter.html ; \
-		counter=`expr $$counter + 1`; \
 	done
 
 rel_pages: ${DB}
