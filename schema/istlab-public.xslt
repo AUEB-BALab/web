@@ -298,6 +298,7 @@
 		<xsl:if test="count(photo) != 0">
 			<img src="{current()/photo}" alt="{current()/givenname} {current()/surname}" />
 		</xsl:if>
+		<!-- TODO: put a smaller icon for a non-existing photo -->
 		<xsl:if test="count(photo) = 0">
 			<img src="../images/istlab-m.jpg" alt="{current()/givenname} {current()/surname}"/>
 		</xsl:if>
@@ -383,7 +384,9 @@
 
 	<!-- Format a full group description {{{1-->
 	<xsl:template match="group" mode="full">
+		<xsl:if test="$ogroup != 'g_istlab'">
 		<div class="title">Group Details</div>
+		</xsl:if>
 		<br />
 		<div class="content">
 		<xsl:if test="count(logo) != 0">
@@ -394,25 +397,20 @@
 			<br />
 		</xsl:if>
 		<br /><br />
+		<xsl:if test="$ogroup != 'g_istlab'">
 		Director:
 		<br />
 		<xsl:apply-templates select="/istlab/member_list/member [@id=current()/@director]" mode="simple-ref" />
 		<br />
+		</xsl:if>
 		<xsl:if test='current()/@director != current()/@contact'>
 		Contact:
 		<br />
 		<xsl:apply-templates select="/istlab/member_list/member [@id=current()/@contact]" mode="simple-ref" />
 		<br />
 		</xsl:if>
-		<br />
-		Research group information:
 		<br /><br />
 		<xsl:copy-of select="current()/description" />
-		<br />
-		<br />
-		Website Maintainer:
-		<br />
-		<xsl:apply-templates select="/istlab/member_list/member [@id=current()/@maintainer]" mode="simple-ref" />
 		</div>
 	</xsl:template>
 	
@@ -721,9 +719,11 @@
 
 		<!-- BODY -->
 		<body margin-left="0" margin-top="0">
+		<xsl:if test="$ogroup != 'g_istlab'">
 		<div class="logo">
-			<a href="http://istlab.dmst.aueb.gr/"><img src="../images/istlab-s.jpg" alt="ISTLab" align="middle" border="0" /></a> The Research Center
+			<a href="http://istlab.dmst.aueb.gr/"><img src="../images/istlab-s.jpg" alt="ISTLab" align="middle" border="0" /></a> Information Systems Technology Laboratory
 		</div>
+		</xsl:if>
 		<xsl:choose>
 			<xsl:when test="$what = 'rel-pages'">
 			<div class="projecttitle">
@@ -741,11 +741,13 @@
 			<xsl:when test="$what = 'seminar'"></xsl:when>
 			<!-- For all the rest -->
 			<xsl:otherwise>
+				<xsl:if test="$ogroup != 'g_istlab'">
 				<div class="projecttitle">
 				<xsl:value-of select="/istlab/group_list/group[@id = $ogroup]/shortname" />
 				-
 				<xsl:value-of select="/istlab/group_list/group[@id = $ogroup]/grouptitle" />
 				</div>
+				</xsl:if>
 			</xsl:otherwise>
 		</xsl:choose>		
 		<table border="0" cellpadding="0" cellspacing="0" width="100%">
