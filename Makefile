@@ -5,6 +5,22 @@
 # $Id$
 #
 
+ifdef SYSTEMDRIVE
+# Windows - CygWin
+SSH=plink
+PATHSEP=;
+else
+ifdef SystemDrive
+# Windows - GNU Win32
+SSH=plink
+PATHSEP=;
+else
+# Unix
+SSH=ssh
+PATHSEP=:
+endif
+endif
+
 MEMBERFILES=$(wildcard data/members/*.xml)
 GROUPFILES=$(wildcard data/groups/*.xml)
 PROJECTFILES=$(wildcard data/projects/*.xml)
@@ -14,7 +30,7 @@ PUBFILE=build/pubs.xml
 BIBFILES=$(wildcard data/publications/*.bib)
 
 # BibTeX paths (used under Unix)
-BIBINPUTS=data/publications:tools
+BIBINPUTS=data/publications$(PATHSEP)tools
 BSTINPUTS=tools
 export BIBINPUTS
 export BSTINPUTS
@@ -41,14 +57,6 @@ HTML=public_html
 # Seminar data
 YEAR=$(shell date +'%Y')
 FIRST_YEAR=2001
-
-ifdef TERM
-# Unix
-SSH=ssh
-else
-# Windows
-SSH=plink
-endif
 
 all: html
 
