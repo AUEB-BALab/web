@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="p_pened_b2b" group="g_eltrun g_sense" contact="m_androutsellis" scientific_coordinator="m_dds" international="no" type="rtd">
+<project id="p_pened_b2b" group="g_istlab g_sense" contact="m_androutsellis" scientific_coordinator="m_dds" international="no" type="rtd">
 	<shortname>PENED</shortname>
 	<projtitle>Designing a Peer-to-Peer e-Business Transaction Processing System</projtitle>
 	<startdate>20050901</startdate>

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0"?>
-<project id="p_eclassify" group="g_eltrun g_ois" scientific_coordinator="m_akp" contact="m_akp" international="yes" type="rtd" project_manager="m_akp">
+<project id="p_eclassify" group="g_istlab g_ois" scientific_coordinator="m_akp" contact="m_akp" international="yes" type="rtd" project_manager="m_akp">
 	<shortname>eClassify</shortname>
 	<projtitle>Enterprise Intellectual Capital Management System - supporting automatic file classification</projtitle>
 	<startdate>20040503</startdate>

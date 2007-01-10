@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<project id="p_mobinet" group="g_eltrun g_wrc" scientific_coordinator="m_giaglis" contact="m_kfouskas" international="no" type="training" project_manager="m_kfouskas">
+<project id="p_mobinet" group="g_istlab g_wrc" scientific_coordinator="m_giaglis" contact="m_kfouskas" international="no" type="training" project_manager="m_kfouskas">
 	<shortname>MobiNet</shortname>
 	<projtitle>Mobile-Human Network of Excellence in Mobile Business</projtitle>
 	<startdate>20030501</startdate>

@@ -1,10 +1,10 @@
 <?xml version="1.0"?>
-<group id="g_eltrun" director="m_gjd" contact="m_gjd" maintainer="m_bkarak">
+<group id="g_istlab" director="m_dds" contact="m_dds" maintainer="m_dds">
 	<grouptitle>The Research Center</grouptitle>
-	<shortname>ELTRUN</shortname>
+	<shortname>ISTLab</shortname>
 	<description>
 		<h2>You should not have seen this page</h2>
-		ELTRUN is an umbrella group for consolidating members,
+		ISTLab is an umbrella group for consolidating members,
 		groups, projects, and publications.
 		This page should not be linked and is therefore
 		invisible.
@@ -18,6 +18,6 @@
 	<rel_link>
 		<a href="http://www.aueb.gr/">AUEB</a>
 	</rel_link>
-	<logo>../images/eltrun.jpg</logo>
+	<logo>../images/eltrun-m.jpg</logo>
 	<color>#8B9DC3</color>
 </group>

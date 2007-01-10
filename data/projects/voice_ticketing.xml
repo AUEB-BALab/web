@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<project id="p_voice_ticketing" group="g_eltrun g_wrc" scientific_coordinator="m_giaglis" contact="m_alextsiaousis" international="no" type="rtd" project_manager="m_alextsiaousis">
+<project id="p_voice_ticketing" group="g_istlab g_wrc" scientific_coordinator="m_giaglis" contact="m_alextsiaousis" international="no" type="rtd" project_manager="m_alextsiaousis">
 	<shortname>VoiceTicketing</shortname>
 	<projtitle>Development of a Voice Ticketing System</projtitle>
 	<startdate>20050501</startdate>

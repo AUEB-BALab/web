@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<project id="p_mygrocer" group="g_eltrun g_wrc g_sense" scientific_coordinator="m_gjd" contact="m_pkour" international="yes" type="rtd" project_manager="m_pkour">
+<project id="p_mygrocer" group="g_istlab g_wrc g_sense" scientific_coordinator="m_gjd" contact="m_pkour" international="yes" type="rtd" project_manager="m_pkour">
 	<shortname>myGrocer</shortname>
 	<projtitle>Mobile Shopping of Electronically Referenced Grocery Products</projtitle>
 	<startdate>20010101</startdate>

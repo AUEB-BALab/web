@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<project id="p_trainsee" group="g_eltrun g_ois g_sense" scientific_coordinator="m_akp" contact="m_akp" international="yes" type="rtd" project_manager="m_akp">
+<project id="p_trainsee" group="g_istlab g_ois g_sense" scientific_coordinator="m_akp" contact="m_akp" international="yes" type="rtd" project_manager="m_akp">
 	<shortname>TRAINSEE</shortname>
 	<projtitle>Training in Information Technologies in South Eastern Europe</projtitle>
 	<startdate>20020201</startdate>

@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<project id="p_mobicom" group="g_eltrun g_wrc" scientific_coordinator="m_gjd" international="yes" type="rtd">
+<project id="p_mobicom" group="g_istlab g_wrc" scientific_coordinator="m_gjd" international="yes" type="rtd">
 	<shortname>mobiCom</shortname>
 	<projtitle>Evolution Scenarios for Emerging m-Commerce Services</projtitle>
 	<startdate>20001201</startdate>

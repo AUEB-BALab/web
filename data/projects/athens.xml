@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<project id="p_athens" group="g_eltrun g_wrc" scientific_coordinator="m_giaglis" international="no" type="rtd">
+<project id="p_athens" group="g_istlab g_wrc" scientific_coordinator="m_giaglis" international="no" type="rtd">
 	<shortname>ATHENS</shortname>
 	<projtitle>Athletic Coverage En Stadium</projtitle>
 	<startdate>20030601</startdate>

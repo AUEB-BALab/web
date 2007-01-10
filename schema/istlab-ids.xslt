@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!--
  -
- - Obtain IDs from the eltrun data
+ - Obtain IDs from the ISTLab data
  -
  - (C) Copyright 2004 Diomidis Spinellis
  -

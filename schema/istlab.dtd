@@ -1,6 +1,6 @@
 <!--
  -
- - Document Type Description for the ELTRUN groups, projects, and members
+ - Document Type Description for the ISTLab groups, projects, and members
  -
  - (C) Copyright 2004 Diomidis Spinellis.
  -
@@ -21,7 +21,7 @@
 <!ENTITY % date "(#PCDATA)">
 <!ENTITY % pc_flow "(#PCDATA | %Flow.mix;)*">
 <!-- Definition of global -->
-<!ELEMENT eltrun (group_list, member_list, project_list, seminar_list,page_list,publication_list, publication_type_list)>
+<!ELEMENT istlab (group_list, member_list, project_list, seminar_list,page_list,publication_list, publication_type_list)>
 <!-- Group list elements {{{1 -->
 <!ELEMENT group_list (group*)>
 <!ELEMENT group (grouptitle, shortname, description, rel_link*, logo?,color,director_photo?)>

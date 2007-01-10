@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<project id="p_mexpress" group="g_eltrun g_sense g_wrc" scientific_coordinator="m_dds" contact="m_dds" international="yes" type="rtd" project_manager="m_pateli">
+<project id="p_mexpress" group="g_istlab g_sense g_wrc" scientific_coordinator="m_dds" contact="m_dds" international="yes" type="rtd" project_manager="m_pateli">
 	<shortname>mExpress</shortname>
 	<projtitle>mobile in-EXhibition PRovision of Electronic Support Services</projtitle>
 	<startdate>20020305</startdate>

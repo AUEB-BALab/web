@@ -25,7 +25,7 @@ Mobile phone
 Fax
 Birthdate
 Short CV
-Group membership (e.g. WRC, SENSE, ELTRUN) (attribute)
+Group membership (e.g. WRC, SENSE, ISTLab) (attribute)
 Job title
 Join date
 Leave date
@@ -49,7 +49,7 @@ Project partners:
 	Name
 	Country
 	Web site
-Group membership (e.g. WRC, SENSE, ELTRUN)
+Group membership (e.g. WRC, SENSE, ISTLab)
 Logo
 PRoject manager (attribute)
 Scientific coordinator (attribute)

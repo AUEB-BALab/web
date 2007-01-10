@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<project id="p_tempo" group="g_eltrun g_sense" contact="m_dds" 
+<project id="p_tempo" group="g_istlab g_sense" contact="m_dds" 
 scientific_coordinator="m_dds" international="no" type="rtd">
 	<shortname>TEMPO</shortname>
 	<projtitle>Technologies and Applications in Multi-Protocol networks</projtitle>

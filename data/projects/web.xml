@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<project id="p_web" group="g_eltrun g_sense" project_manager="m_dds" contact="m_bkarak" scientific_coordinator="m_dds" international="yes" type="consulting">
+<project id="p_web" group="g_istlab g_sense" project_manager="m_dds" contact="m_bkarak" scientific_coordinator="m_dds" international="yes" type="consulting">
 	<shortname>Web</shortname>
 	<projtitle>The ELTRUN Web Site</projtitle>
 	<enddate>20040401</enddate>

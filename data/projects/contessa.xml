@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<project id="p_contessa" group="g_eltrun g_sense" contact="m_dds" scientific_coordinator="m_dds" international="yes" type="rtd">
+<project id="p_contessa" group="g_istlab g_sense" contact="m_dds" scientific_coordinator="m_dds" international="yes" type="rtd">
 	<shortname>CONTESSA</shortname>
 	<projtitle>Content Transformation Engine Supporting Universal Access</projtitle>
 	<startdate>20010615</startdate>

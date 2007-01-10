@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<project id="p_iraklitos_vlachos" group="g_eltrun g_sense" contact="m_vlachos" 
+<project id="p_iraklitos_vlachos" group="g_istlab g_sense" contact="m_vlachos" 
 scientific_coordinator="m_dds" international="no" type="rtd">
 	<shortname>Iraklitos</shortname>
 	<projtitle>Security Applications for Peer-to-Peer Networks</projtitle>

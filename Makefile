@@ -1,4 +1,4 @@
-# Eltrun web site creation and data validation
+# ISTLab web site creation and data validation
 #
 # (C) Copyright 2004 Diomidis Spinellis
 #
@@ -22,13 +22,13 @@ export BSTINPUTS
 # Database containing all the above
 DB=build/db.xml
 # XSLT file for public data
-PXSLT=schema/eltrun-public.xslt
+PXSLT=schema/istlab-public.xslt
 # XSLT file for fetching the ids
-IDXSLT=schema/eltrun-ids.xslt
+IDXSLT=schema/istlab-ids.xslt
 # XSLT file for the phone catalog
-PHONEXSLT=schema/eltrun-phone-catalog.xslt
+PHONEXSLT=schema/istlab-phone-catalog.xslt
 #XSLT file for phd-students
-STUDXSLT=schema/eltrun-phd-list.xslt
+STUDXSLT=schema/istlab-phd-list.xslt
 # Today' date in ISO format
 TODAY=$(shell date +'%Y%m%d')
 # Fetch the ids
@@ -55,7 +55,7 @@ all: html
 $(DB): ${MEMBERFILES} ${GROUPFILES} ${PROJECTFILES} ${SEMINARFILES} ${RELPAGEFILES} $(BIBFILES) tools/makepub.pl
 	@echo "Creating unified database"
 	@echo '<?xml version="1.0"?>' > $@
-	@echo '<eltrun>' >>$@ 
+	@echo '<istlab>' >>$@ 
 	@echo '<group_list>' >>$@ 
 	@for file in $(GROUPFILES); \
 	do \
@@ -87,7 +87,7 @@ $(DB): ${MEMBERFILES} ${GROUPFILES} ${PROJECTFILES} ${SEMINARFILES} ${RELPAGEFIL
 	done >>$@
 	@echo '</page_list>' >> $@
 	@perl -n tools/makepub.pl $(BIBFILES) >>$@
-	@echo '</eltrun>' >>$@
+	@echo '</istlab>' >>$@
 
 clean:
 	-rm -f  build/* \
@@ -109,47 +109,47 @@ xsd-val: ${DB}
 	@echo '---> Checking seminar data XML files ... '
 	@-for file in $(SEMINARFILES); \
 	do \
-		xml val -s schema/xsd/eltrun-seminar.xsd $$file; \
+		xml val -s schema/xsd/istlab-seminar.xsd $$file; \
 	done
 
 val: ${DB}
 	@echo '---> Checking group data XML files ... '
 	@-for file in $(GROUPFILES); \
 	do \
-		xml val -d schema/eltrun-group.dtd $$file > /dev/null 2>xmlval.out; \
+		xml val -d schema/istlab-group.dtd $$file > /dev/null 2>xmlval.out; \
 		if [ $$? != "0" ]; then cat xmlval.out; fi; \
 		rm xmlval.out; \
 	done 
 	@echo '---> Checking member data XML files ...'
 	@-for file in $(MEMBERFILES); \
 	do \
-		xml val -d schema/eltrun-member.dtd $$file > /dev/null 2>xmlval.out; \
+		xml val -d schema/istlab-member.dtd $$file > /dev/null 2>xmlval.out; \
 		if [ $$? != "0" ]; then cat xmlval.out; fi; \
 		rm xmlval.out; \
 	done
 	@echo '---> Checking project data XML files ...'
 	@-for file in $(PROJECTFILES); \
 	do \
-		xml val -d schema/eltrun-project.dtd $$file > /dev/null 2>xmlval.out; \
+		xml val -d schema/istlab-project.dtd $$file > /dev/null 2>xmlval.out; \
 		if [ $$? != "0" ]; then cat xmlval.out; fi; \
 		rm xmlval.out; \
 	done
 	@echo '---> Checking seminar data XML files ...'
 	@-for file in $(SEMINARFILES); \
 	do \
-		xml val -d schema/eltrun-seminar.dtd $$file > /dev/null 2>xmlval.out; \
+		xml val -d schema/istlab-seminar.dtd $$file > /dev/null 2>xmlval.out; \
 		if [ $$? != "0" ]; then cat xmlval.out; fi; \
 		rm xmlval.out; \
 	done
 	@echo '---> Checking additional HTML pages ...'
 	@-for file in $(RELPAGEFILES); \
 	do \
-		xml val -d schema/eltrun-page.dtd $$file > /dev/null 2>xmlval.out; \
+		xml val -d schema/istlab-page.dtd $$file > /dev/null 2>xmlval.out; \
 		if [ $$? != "0" ]; then cat xmlval.out; fi; \
 		rm xmlval.out; \
 	done
 	@echo '---> Checking db.xml ...'
-	@xml val -d schema/eltrun.dtd $(DB)
+	@xml val -d schema/istlab.dtd $(DB)
 
 html: ${DB} groups projects members seminars rel_pages publications phone
 
@@ -209,11 +209,11 @@ phd-students: ${DB}
 	@xml tr ${STUDXSLT} -s completed=1 ${DB} > ${HTML}/misc/awarded-phd-students.html
 
 dist: html
-	$(SSH) istlab.dmst.aueb.gr "cd /home/dds/src/eltrun-web ; \
+	$(SSH) istlab.dmst.aueb.gr "cd /home/dds/src/istlab-web ; \
 	umask 002 ; \
 	cvs update -d ; \
 	gmake ; \
-	tar -C $(HTML) -cf - . | tar -C /home/dds/web/istlab/eltrun -xf -"
+	tar -C $(HTML) -cf - . | tar -C /home/dds/web/istlab/content -xf -"
 
 stats:
 	@$(SHELL) tools/stats.sh
