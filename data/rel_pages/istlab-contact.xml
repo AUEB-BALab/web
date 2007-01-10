@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<page id="istlab-contact" group="g_istlab">
+	<page_name>Contact Details</page_name>
+	<page_body>
+<h2>Email</h2>
+<a href="mailto:info@istlab.dmst.aueb.gr">info@istlab.dmst.aueb.gr</a>
+
+<h2>Web</h2>
+
+<a href="http://istlab.dmst.aueb.gr">istlab.dmst.aueb.gr</a>
+
+<h2>Post</h2>
+Diomidis Spinellis<br />
+Information Systems Technology Laboratory<br />
+Athens University of Economics and Business<br />
+Patision 76<br />
+GR-104 34 Athens<br />
+GREECE
+	</page_body>
+</page>
+

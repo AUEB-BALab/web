@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<page id="istlab-services" group="g_istlab">
+	<page_name>Services</page_name>
+	<page_body>
+<em>ISTLab</em> provides the following services:
+<ul>
+<li> Consulting on software analysis, design, and implementation </li>
+<li> Studies on information systems strategy, deployment, and management </li>
+<li> Design and implementation of software engineering process tools </li>
+<li> Security evaluation of software protocols, software, and services </li>
+</ul>
+For more details contact the head of the group closest to your area of interest.
+	</page_body>
+</page>
+

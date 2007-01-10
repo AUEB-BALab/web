@@ -3,14 +3,34 @@
 	<grouptitle>The Research Center</grouptitle>
 	<shortname>ISTLab</shortname>
 	<description>
-		<h2>You should not have seen this page</h2>
-		ISTLab is an umbrella group for consolidating members,
-		groups, projects, and publications.
-		This page should not be linked and is therefore
-		invisible.
-		<p />
-		If you have found this page following a hyperlink,
-		please notify the web administrator.
+<p>
+Welcome to the
+<em>Information Systems Technology Laboratory</em> (ISTLab),
+established at the
+<a href="http://www.dmst.aueb.gr">Department of Management Science and Technology</a>
+of the
+<a href="http://www.aueb.gr">Athens University of Economics and Business</a>.
+Here we explore, research, create, formulate, and integrate
+engineering and management practices to increase the
+productivity of the information systems realisation process.
+To reach our goal we follow a number of interrelated paths:
+</p>
+<ul>
+<li> Development processes </li>
+<li> Technology practices </li>
+<li> Information system security </li>
+<li> Programming languages and environments </li>
+<li> Information systems management </li>
+</ul>
+<p>
+ISTLab consists of four federated research groups:
+</p>
+<ul>
+<li><a href="g_iris-details.html">IRIS</a>: Interdisciplinary Research on the Information Society, headed by Nancy Pouloudi</li>
+<li><a href="g_ois-details.html">OIS</a>: Organizational Information Systems, headed by Angeliki Poulymenakou</li>
+<li><a href="g_sense-details.html">SENSE</a>: Software Engineering and Security, headed by Diomidis Spinellis</li>
+<li><a href="g_wrc-details.html">WRC</a>: Wireless Research Center, headed by George Giaglis</li>
+</ul>
 	</description>
 	<rel_link>
 		<a href="http://www.dmst.aueb.gr/">DMST</a>
@@ -18,6 +38,6 @@
 	<rel_link>
 		<a href="http://www.aueb.gr/">AUEB</a>
 	</rel_link>
-	<logo>../images/eltrun-m.jpg</logo>
+	<logo>../images/istlab-m.jpg</logo>
 	<color>#8B9DC3</color>
 </group>
