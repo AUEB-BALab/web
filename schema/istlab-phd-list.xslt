@@ -40,7 +40,7 @@
     } 
 </style>
 <!-- CSS end -->
-			<div class="logo"><a href="http://istlab.dmst.aueb.gr/"><img src="../images/istlab-s.gif" alt="ISTLab" align="middle" border="0" /></a> The Research Center</div>
+			<div class="logo"><a href="http://istlab.dmst.aueb.gr/"><img src="../images/istlab-s.jpg" alt="ISTLab" align="middle" border="0" /></a> The Research Center</div>
 			<div class="projecttitle">
 			ISTLab PhD Students
 			</div>

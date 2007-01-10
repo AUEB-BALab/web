@@ -708,7 +708,7 @@
 		<!-- BODY -->
 		<body margin-left="0" margin-top="0">
 		<div class="logo">
-			<a href="http://istlab.dmst.aueb.gr/"><img src="../images/istlab-s.gif" alt="ISTLab" align="middle" border="0" /></a> The Research Center
+			<a href="http://istlab.dmst.aueb.gr/"><img src="../images/istlab-s.jpg" alt="ISTLab" align="middle" border="0" /></a> The Research Center
 		</div>
 		<xsl:choose>
 			<xsl:when test="$what = 'rel-pages'">
