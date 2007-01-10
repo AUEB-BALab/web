@@ -38,6 +38,9 @@ ISTLab consists of four federated research groups:
 	<rel_link>
 		<a href="http://www.aueb.gr/">AUEB</a>
 	</rel_link>
+	<rel_link>
+		<a href="http://istlab.dmst.aueb.gr/">Home page</a>
+	</rel_link>
 	<logo>../images/istlab-m.jpg</logo>
 	<color>#8B9DC3</color>
 </group>
