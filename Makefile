@@ -106,7 +106,8 @@ clean:
 		${HTML}/rel_pages/* \
 		${HTML}/misc/* \
 		${HTML}/publications/* 2>/dev/null
-	-rm -f  public_html/images/colgraph.svg
+	-rm -f public_html/images/colgraph.svg
+	-rm -f *.aux
 
 phone: ${DB}
 	@echo "Creating phone catalog"
@@ -165,7 +166,10 @@ groups: ${DB}
 	@echo "Creating groups"
 	@for group in $(GROUPIDS) ; \
 	do \
-		xml tr ${PXSLT} -s today=${TODAY} -s ogroup=$$group -s what=group-details ${DB} >${HTML}/groups/$$group-details.html ; \
+		if [ $$group = "g_istlab" ] ; \
+		then xml tr ${PXSLT} -s menu=off -s today=${TODAY} -s ogroup=$$group -s what=group-details ${DB} >${HTML}/groups/$$group-details.html ; \
+		else xml tr ${PXSLT} -s today=${TODAY} -s ogroup=$$group -s what=group-details ${DB} >${HTML}/groups/$$group-details.html ; \
+		fi ; \
 		xml tr ${PXSLT} -s today=${TODAY} -s ogroup=$$group -s what=completed-projects ${DB} >${HTML}/groups/$$group-completed-projects.html ; \
 		xml tr ${PXSLT} -s today=${TODAY} -s ogroup=$$group -s what=current-projects ${DB} >${HTML}/groups/$$group-current-projects.html ; \
 		xml tr ${PXSLT} -s today=${TODAY} -s ogroup=$$group -s what=members ${DB} >${HTML}/groups/$$group-members.html ; \
