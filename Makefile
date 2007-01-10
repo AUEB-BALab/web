@@ -54,9 +54,6 @@ MEMBERIDS=$(shell xml tr ${IDXSLT} -s category=member ${DB})
 RELPAGEIDS=$(shell xml tr ${IDXSLT} -s category=page ${DB})
 # HTML output directory
 HTML=public_html
-# Seminar data
-YEAR=$(shell date +'%Y')
-FIRST_YEAR=2001
 
 all: html
 
