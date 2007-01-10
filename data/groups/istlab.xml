@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <group id="g_istlab" director="m_dds" contact="m_dds" maintainer="m_dds">
-	<grouptitle>The Research Center</grouptitle>
+	<grouptitle>Information Systems Technology Laboratory</grouptitle>
 	<shortname>ISTLab</shortname>
 	<description>
 <p>
@@ -44,6 +44,6 @@ To reach our goal we follow a number of interrelated paths:
 	<rel_link>
 		<a href="http://istlab.dmst.aueb.gr/">Home</a>
 	</rel_link>
-	<logo>../images/istlab-m.jpg</logo>
+	<!-- <logo>../images/istlab-m.jpg</logo>  -->
 	<color>#8B9DC3</color>
 </group>

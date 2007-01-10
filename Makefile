@@ -102,7 +102,6 @@ clean:
 		${HTML}/groups/* \
 		${HTML}/projects/* \
 		${HTML}/members/* \
-		${HTML}/seminar/[2]* \
 		${HTML}/rel_pages/* \
 		${HTML}/misc/* \
 		${HTML}/publications/* 2>/dev/null

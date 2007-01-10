@@ -218,7 +218,9 @@
 			<xsl:text> </xsl:text>
 			<xsl:value-of select="surname" />
 			<xsl:if test="/istlab/group_list/group [@id = $ogroup]/@director = @id">
-			(Director)
+			<xsl:if test="$ogroup = 'g_istlab'">
+			(Group leader)
+			</xsl:if>
 			</xsl:if>
 			</a>
 			</li>
@@ -398,7 +400,7 @@
 		</xsl:if>
 		<br /><br />
 		<xsl:if test="$ogroup != 'g_istlab'">
-		Director:
+		Group leader:
 		<br />
 		<xsl:apply-templates select="/istlab/member_list/member [@id=current()/@director]" mode="simple-ref" />
 		<br />
@@ -719,20 +721,9 @@
 
 		<!-- BODY -->
 		<body margin-left="0" margin-top="0">
-		<xsl:choose>
-			<xsl:when test="$what = 'group-details'">
-				<xsl:if test="$ogroup != 'g_istlab'">
-				<div class="logo">
-					<a href="http://istlab.dmst.aueb.gr/"><img src="../images/istlab-s.jpg" alt="ISTLab" align="middle" border="0" /></a> Information Systems Technology Laboratory
-				</div>
-				</xsl:if>
-			</xsl:when>
-			<xsl:otherwise>
-				<div class="logo">
-					<a href="http://istlab.dmst.aueb.gr/"><img src="../images/istlab-s.jpg" alt="ISTLab" align="middle" border="0" /></a> Information Systems Technology Laboratory
-				</div>	
-			</xsl:otherwise>
-		</xsl:choose>		
+		<div class="logo">
+			<a href="http://istlab.dmst.aueb.gr/"><img src="../images/istlab-s.jpg" alt="ISTLab" align="middle" border="0" /></a>
+		</div>
 		<xsl:choose>
 			<xsl:when test="$what = 'rel-pages'">
 			<div class="projecttitle">
@@ -749,13 +740,11 @@
 			<xsl:when test="$what = 'project-publications'"></xsl:when>
 			<xsl:when test="$what = 'seminar'"></xsl:when>
 			<xsl:when test="$what = 'group-details'">
-				<xsl:if test="$ogroup != 'g_istlab'">
 				<div class="projecttitle">
 				<xsl:value-of select="/istlab/group_list/group[@id = $ogroup]/shortname" />
 				-
 				<xsl:value-of select="/istlab/group_list/group[@id = $ogroup]/grouptitle" />
 				</div>
-				</xsl:if>			
 			</xsl:when>
 			<!-- For all the rest -->
 			<xsl:otherwise>
