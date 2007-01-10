@@ -113,14 +113,6 @@ phone: ${DB}
 	@echo "Creating phone catalog"
 	@xml tr ${PHONEXSLT} ${DB} > ${HTML}/misc/catalog.html
 
-
-xsd-val: ${DB}
-	@echo '---> Checking seminar data XML files ... '
-	@-for file in $(SEMINARFILES); \
-	do \
-		xml val -s schema/xsd/istlab-seminar.xsd $$file; \
-	done
-
 val: ${DB}
 	@echo '---> Checking group data XML files ... '
 	@-for file in $(GROUPFILES); \
@@ -160,16 +152,18 @@ val: ${DB}
 	@echo '---> Checking db.xml ...'
 	@xml val -d schema/istlab.dtd $(DB)
 
-html: ${DB} groups projects members seminars rel_pages publications phone
+html: ${DB} groups projects members rel_pages publications phone
+
+#		if [ $$group = "g_istlab" ] ; \
+#		then xml tr ${PXSLT} -s menu=off -s today=${TODAY} -s ogroup=$$group -s what=group-details ${DB} >${HTML}/groups/$$group-details.html ; \
+#		else xml tr ${PXSLT} -s today=${TODAY} -s ogroup=$$group -s what=group-details ${DB} >${HTML}/groups/$$group-details.html ; \
+#		fi ; \
 
 groups: ${DB}
 	@echo "Creating groups"
 	@for group in $(GROUPIDS) ; \
 	do \
-		if [ $$group = "g_istlab" ] ; \
-		then xml tr ${PXSLT} -s menu=off -s today=${TODAY} -s ogroup=$$group -s what=group-details ${DB} >${HTML}/groups/$$group-details.html ; \
-		else xml tr ${PXSLT} -s today=${TODAY} -s ogroup=$$group -s what=group-details ${DB} >${HTML}/groups/$$group-details.html ; \
-		fi ; \
+		xml tr ${PXSLT} -s today=${TODAY} -s ogroup=$$group -s what=group-details ${DB} >${HTML}/groups/$$group-details.html ; \
 		xml tr ${PXSLT} -s today=${TODAY} -s ogroup=$$group -s what=completed-projects ${DB} >${HTML}/groups/$$group-completed-projects.html ; \
 		xml tr ${PXSLT} -s today=${TODAY} -s ogroup=$$group -s what=current-projects ${DB} >${HTML}/groups/$$group-current-projects.html ; \
 		xml tr ${PXSLT} -s today=${TODAY} -s ogroup=$$group -s what=members ${DB} >${HTML}/groups/$$group-members.html ; \
