@@ -388,8 +388,8 @@
 	<xsl:template match="group" mode="full">
 		<xsl:if test="$ogroup != 'g_istlab'">
 		<div class="title">Group Details</div>
-		</xsl:if>
 		<br />
+		</xsl:if>
 		<div class="content">
 		<xsl:if test="count(logo) != 0">
 			<img src="{current()/logo}" alt="{current()/shortname} - {current()/grouptitle}" />
@@ -398,20 +398,19 @@
 			<img src="{current()/director_photo}" alt="{current()/surname}" />
 			<br />
 		</xsl:if>
-		<br /><br />
 		<xsl:if test="$ogroup != 'g_istlab'">
+		<br /><br />
 		Group leader:
 		<br />
 		<xsl:apply-templates select="/istlab/member_list/member [@id=current()/@director]" mode="simple-ref" />
-		<br />
+		<br /><br />
 		</xsl:if>
 		<xsl:if test='current()/@director != current()/@contact'>
 		Contact:
 		<br />
 		<xsl:apply-templates select="/istlab/member_list/member [@id=current()/@contact]" mode="simple-ref" />
-		<br />
-		</xsl:if>
 		<br /><br />
+		</xsl:if>
 		<xsl:copy-of select="current()/description" />
 		</div>
 	</xsl:template>
