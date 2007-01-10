@@ -10,8 +10,8 @@ established at the
 <a href="http://www.dmst.aueb.gr">Department of Management Science and Technology</a>
 of the
 <a href="http://www.aueb.gr">Athens University of Economics and Business</a>.
-Here we explore, research, create, formulate, and integrate
-engineering and management practices to increase the
+Here we <a href="../rel_pages/istlab-services-page.html">explore, research, create, formulate, and integrate
+engineering and management practices</a> to increase the
 productivity of the information systems realisation process.
 To reach our goal we follow a number of interrelated paths:
 </p>
@@ -32,16 +32,17 @@ To reach our goal we follow a number of interrelated paths:
 <li><a href="g_wrc-details.html">WRC</a>: Wireless Research Center, headed by <a href="../member/m_giaglis.html">George Giaglis</a></li>
 </ul>
 <br/><br/>
-<a href="../rel_pages/istlab-join-page.html">Join us</a> - <a href="../rel_pages/istlab-contact-page.html">Contact Information</a>
+<div align="center">
+<a href="../rel_pages/istlab-services-page.html">Services</a> -
+<a href="../groups/g_istlab-members.html">Members</a> -
+<a href="../publications/g_istlab-publications.html">Publications</a> -
+<a href="../groups/g_istlab-current-projects.html">Projects</a> - 
+<a href="../rel_pages/istlab-join-page.html">Join <em>ISTLab</em></a> -
+<a href="../rel_pages/istlab-contact-page.html">Contact Us</a>
+</div>
 </description>
 	<rel_link>
-		<a href="http://www.dmst.aueb.gr/">DMST</a>
-	</rel_link>
-	<rel_link>
-		<a href="http://www.aueb.gr/">AUEB</a>
-	</rel_link>
-	<rel_link>
-		<a href="http://istlab.dmst.aueb.gr/">Home page</a>
+		<a href="http://istlab.dmst.aueb.gr/">Home</a>
 	</rel_link>
 	<logo>../images/istlab-m.jpg</logo>
 	<color>#8B9DC3</color>

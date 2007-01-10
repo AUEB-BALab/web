@@ -719,11 +719,20 @@
 
 		<!-- BODY -->
 		<body margin-left="0" margin-top="0">
-		<xsl:if test="$ogroup != 'g_istlab'">
-		<div class="logo">
-			<a href="http://istlab.dmst.aueb.gr/"><img src="../images/istlab-s.jpg" alt="ISTLab" align="middle" border="0" /></a> Information Systems Technology Laboratory
-		</div>
-		</xsl:if>
+		<xsl:choose>
+			<xsl:when test="$what = 'group-details'">
+				<xsl:if test="$ogroup != 'g_istlab'">
+				<div class="logo">
+					<a href="http://istlab.dmst.aueb.gr/"><img src="../images/istlab-s.jpg" alt="ISTLab" align="middle" border="0" /></a> Information Systems Technology Laboratory
+				</div>
+				</xsl:if>
+			</xsl:when>
+			<xsl:otherwise>
+				<div class="logo">
+					<a href="http://istlab.dmst.aueb.gr/"><img src="../images/istlab-s.jpg" alt="ISTLab" align="middle" border="0" /></a> Information Systems Technology Laboratory
+				</div>	
+			</xsl:otherwise>
+		</xsl:choose>		
 		<xsl:choose>
 			<xsl:when test="$what = 'rel-pages'">
 			<div class="projecttitle">
@@ -739,15 +748,22 @@
 			<xsl:when test="$what = 'member-publications'"></xsl:when>
 			<xsl:when test="$what = 'project-publications'"></xsl:when>
 			<xsl:when test="$what = 'seminar'"></xsl:when>
-			<!-- For all the rest -->
-			<xsl:otherwise>
+			<xsl:when test="$what = 'group-details'">
 				<xsl:if test="$ogroup != 'g_istlab'">
 				<div class="projecttitle">
 				<xsl:value-of select="/istlab/group_list/group[@id = $ogroup]/shortname" />
 				-
 				<xsl:value-of select="/istlab/group_list/group[@id = $ogroup]/grouptitle" />
 				</div>
-				</xsl:if>
+				</xsl:if>			
+			</xsl:when>
+			<!-- For all the rest -->
+			<xsl:otherwise>
+				<div class="projecttitle">
+				<xsl:value-of select="/istlab/group_list/group[@id = $ogroup]/shortname" />
+				-
+				<xsl:value-of select="/istlab/group_list/group[@id = $ogroup]/grouptitle" />
+				</div>
 			</xsl:otherwise>
 		</xsl:choose>		
 		<table border="0" cellpadding="0" cellspacing="0" width="100%">
