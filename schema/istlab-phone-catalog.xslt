@@ -16,10 +16,6 @@
 	<!-- Member reference -->
 	<xsl:template match="member">
 		<a href="../members/{@id}.html">
-		<xsl:if test="count(memb_title) != 0">
-			<xsl:value-of select="memb_title"/>
-			<xsl:text> </xsl:text>
-		</xsl:if>
 		<xsl:value-of select="givenname" />
 		<xsl:text> </xsl:text>
 		<xsl:value-of select="surname" />
@@ -50,7 +46,7 @@
 				<tr>
 					<td><xsl:apply-templates select="current()"/></td>
 					<td><xsl:value-of select="current()/office_phone"/></td>
-					<td><xsl:value-of select="substring-before(current()/email,'@')"/><b><xsl:text> at </xsl:text></b><xsl:value-of select="substring-after(current()/email,'@')"/></td>
+					<td><xsl:value-of select="substring-before(current()/email,'@')"/><b><img src="../images/at.gif" align="top" /></b><xsl:value-of select="substring-after(current()/email,'@')"/></td>
 				</tr>
 				</xsl:if>				
 				</xsl:for-each>
