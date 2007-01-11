@@ -24,7 +24,6 @@ endif
 MEMBERFILES=$(wildcard data/members/*.xml)
 GROUPFILES=$(wildcard data/groups/*.xml)
 PROJECTFILES=$(wildcard data/projects/*.xml)
-SEMINARFILES=$(wildcard data/seminar/*.xml)
 RELPAGEFILES=$(wildcard data/rel_pages/*.xml)
 PUBFILE=build/pubs.xml
 BIBFILES=$(wildcard data/publications/*.bib)
