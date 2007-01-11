@@ -401,7 +401,6 @@
 		<xsl:if test="$ogroup != 'g_istlab'">
 		<br /><br />
 		Group leader:
-		<br />
 		<xsl:apply-templates select="/istlab/member_list/member [@id=current()/@director]" mode="simple-ref" />
 		<br /><br />
 		</xsl:if>

@@ -3,7 +3,8 @@
 	<grouptitle>Information Systems Technology Laboratory</grouptitle>
 	<shortname>ISTLab</shortname>
 	<description>
-<p>
+<img src="../images/ote.jpg"/>
+<br/><br/>
 Welcome to the
 <em>Information Systems Technology Laboratory</em> (ISTLab),
 established at the
@@ -14,7 +15,6 @@ Here we <a href="../rel_pages/istlab-services-page.html">explore, research, crea
 engineering and management practices</a> to increase the
 productivity of the information systems realisation process.
 To reach our goal we follow a number of interrelated paths:
-</p>
 <ul>
 <li> Development processes </li>
 <li> Technology practices </li>
@@ -22,9 +22,7 @@ To reach our goal we follow a number of interrelated paths:
 <li> Programming languages and environments </li>
 <li> Information systems management </li>
 </ul>
-<p>
 <em>ISTLab</em> consists of four federated research groups:
-</p>
 <ul>
 <li><a href="g_iris-details.html">IRIS</a>: Interdisciplinary Research on the Information Society, headed by <a href="../members/m_pouloudi.html">Nancy Pouloudi</a></li>
 <li><a href="g_ois-details.html">OIS</a>: Organizational Information Systems, headed by <a href="../members/m_akp.html">Angeliki Poulymenakou</a></li>
