@@ -15,16 +15,14 @@ of the
 <a href="http://www.aueb.gr">Athens University of Economics and Business</a>.
 Here we <a href="../rel_pages/istlab-services-page.html">explore, research, create, formulate, and integrate
 engineering and management practices</a> to increase the
-productivity of the information systems realisation process.
-To reach our goal we follow a number of interrelated paths:
+productivity of the information systems and their realisation process.
+To reach our goal we follow a number of interrelated paths.
 <ul>
-<li> Development processes </li>
-<li> Technology practices </li>
-<li> Information system security </li>
-<li> Programming languages and environments </li>
-<li> Information systems management </li>
+<li> Software: programming languages, software engineering tools, and open source software</li> <!-- SENSE -->
+<li> Distributed systems: security, reliability, and performance</li> <!-- SENSE -->
+<li> Information systems management </li> <!-- Orphan -->
 </ul>
-<em>ISTLab</em> consists of four federated research groups:
+<em>ISTLab</em> consists of four federated research groups.
 <ul>
 <li><a href="g_iris-details.html">IRIS</a>: Interdisciplinary Research on the Information Society, headed by <a href="../members/m_pouloudi.html">Nancy Pouloudi</a></li>
 <li><a href="g_ois-details.html">OIS</a>: Organizational Information Systems, headed by <a href="../members/m_akp.html">Angeliki Poulymenakou</a></li>
