@@ -369,7 +369,6 @@
 		</xsl:if>
 		<xsl:if test='current()/@director != current()/@contact'>
 		Contact:
-		<br />
 		<xsl:apply-templates select="/istlab/member_list/member [@id=current()/@contact]" mode="simple-ref" />
 		<br /><br />
 		</xsl:if>
