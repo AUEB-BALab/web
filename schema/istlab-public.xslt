@@ -219,7 +219,11 @@
 			<xsl:value-of select="surname" />
 			</a>
 			<xsl:if test="$ogroup = 'g_istlab' and /istlab/group_list/group [@id = $ogroup]/@director = @id">
-			; current lab director
+			&#8212; current lab director
+			</xsl:if>
+			<xsl:if test="/istlab/group_list/group/@director = @id">
+				<xsl:variable name="tmpgroup" select="/istlab/group_list/group [@director = current()/@id and @id != 'g_istlab']/@id" />
+				&#8212; <a href="../groups/{$tmpgroup}-details.html"><xsl:value-of select="/istlab/group_list/group[@id = $tmpgroup]/shortname" /></a> group leader
 			</xsl:if>
 			</li>
 		</xsl:if>
