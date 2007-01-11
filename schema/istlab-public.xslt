@@ -302,7 +302,7 @@
 		</xsl:if>
 		<!-- TODO: put a smaller icon for a non-existing photo -->
 		<xsl:if test="count(photo) = 0">
-			<img src="../images/istlab-m.jpg" alt="{current()/givenname} {current()/surname}"/>
+			<img src="../images/lamp.png" width="80%" height="80%" alt="{current()/givenname} {current()/surname}"/>
 		</xsl:if>
 		<br /> <br />
 		</td>
