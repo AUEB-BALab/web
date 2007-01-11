@@ -43,6 +43,8 @@ PXSLT=schema/istlab-public.xslt
 IDXSLT=schema/istlab-ids.xslt
 # XSLT file for the phone catalog
 PHONEXSLT=schema/istlab-phone-catalog.xslt
+# XSLT file for the email list
+EMAILXSLT=schema/istlab-email-list.xslt
 #XSLT file for phd-students
 STUDXSLT=schema/istlab-phd-list.xslt
 # Today' date in ISO format
@@ -109,6 +111,10 @@ phone: ${DB}
 	@echo "Creating phone catalog"
 	@xml tr ${PHONEXSLT} ${DB} > ${HTML}/misc/catalog.html
 
+email: ${DB}
+	@echo "Creating email list"
+	@xml tr ${EMAILXSLT} ${DB} > ${HTML}/misc/email-all.txt
+
 val: ${DB}
 	@echo '---> Checking group data XML files ... '
 	@-for file in $(GROUPFILES); \
@@ -141,7 +147,7 @@ val: ${DB}
 	@echo '---> Checking db.xml ...'
 	@xml val -d schema/istlab.dtd $(DB)
 
-html: ${DB} groups projects members rel_pages publications phone
+html: ${DB} groups projects members rel_pages publications phone email
 
 #		if [ $$group = "g_istlab" ] ; \
 #		then xml tr ${PXSLT} -s menu=off -s today=${TODAY} -s ogroup=$$group -s what=group-details ${DB} >${HTML}/groups/$$group-details.html ; \
