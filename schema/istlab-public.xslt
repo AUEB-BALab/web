@@ -217,12 +217,10 @@
 			<xsl:value-of select="givenname" />
 			<xsl:text> </xsl:text>
 			<xsl:value-of select="surname" />
-			<xsl:if test="/istlab/group_list/group [@id = $ogroup]/@director = @id">
-			<xsl:if test="$ogroup = 'g_istlab'">
-			(Group leader)
-			</xsl:if>
-			</xsl:if>
 			</a>
+			<xsl:if test="$ogroup = 'g_istlab' and /istlab/group_list/group [@id = $ogroup]/@director = @id">
+			; current lab director
+			</xsl:if>
 			</li>
 		</xsl:if>
 	</xsl:template>
