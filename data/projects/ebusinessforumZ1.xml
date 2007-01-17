@@ -1,5 +1,6 @@
 <?xml version="1.0"?>
-<project id="p_ebusinessforumZ1" group="g_istlab g_wrc g_imes" scientific_coordinator="m_avrehop" international="no" type="rtd" contact="m_drosos">
+<!-- changed e-businessforum with empty as coordinator -->
+<project id="p_ebusinessforumZ1" group="g_istlab g_wrc" scientific_coordinator="m_giaglis" international="no" type="rtd" contact="m_drosos">
 	<shortname>eBusinessForum - Working Group Z1</shortname>
 	<projtitle>Emerging technologies and Advertising</projtitle>
 	<startdate>20040601</startdate>
