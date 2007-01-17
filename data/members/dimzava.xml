@@ -3,16 +3,16 @@
 	<givenname>Dimitrios</givenname>
 	<surname>Zavaliadis</surname>
 	<memb_title>Mr.</memb_title>
-	<email>dimzava@eltrun.gr</email>
-	<web_site>http://www.mobiforum.org/mobiforum/wrc_member.php?name=Zavaliadis</web_site>
-	<office_phone>+30 2108203663</office_phone>
-	<fax>+30 2108203664</fax>
-	<office_address>Evelpidon 47-A &amp; Lefkados 33, Room 801</office_address>
+	<email>dimzava@aueb.gr</email>
+	<!--<web_site>http://www.mobiforum.org/mobiforum/wrc_member.php?name=Zavaliadis</web_site>-->
+	<office_phone>+30 2108203855</office_phone>
+	<fax>+30 2108203854</fax>
+	<office_address>Evelpidon 47-A &amp; Lefkados 33, Room 103</office_address>
 	<postal_address>Evelpidon 47-A &amp; Lefkados 33, 11362, Athens, Greece</postal_address>
-	<!--<photo>../images/spi.jpg</photo>-->
+	<photo>../images/dimzava.jpg</photo>
 	<shortcv>
-		<p> Mr. Dimitrios Zavaliadis received his Undergraduate Degree (Ptychion) in Business Economics from the Aristotle University of Thessaloniki, Greece and his Master's Degree (M.Sc.) in Information Technology (Software Engineering specialisation) with Distinction from the University of Glasgow, Scotland, UK.
-Currently he is working towards a PhD degree at the Department of Management Science and Technology of Athens University of Economics and Business and he is also a Research Officer at ELTRUN/WRC. His main research interests lie in the area of Device-Independent Web Engineering and he is investigating ways in which Web Applications can be authored only once and then accommodate delivery of content onto a wide variety of platforms (e.g. desktop PCs, PDAs, mobile phones and speech interfaces) without the need for any changes. 
+		<p>Dimitrios Zavaliadis received his Undergraduate Degree (Ptychion) in Business Economics from the Aristotle University of Thessaloniki, Greece and his Master's Degree (M.Sc.) in Information Technology (Software Engineering specialisation) with Distinction from the University of Glasgow, Scotland, UK.
+Currently he is working towards a PhD degree at the Department of Management Science and Technology of Athens University of Economics and Business and he is also a Research Officer at ISTLab/WRC. His main research interests lie in the area of Device-Independent Web Engineering and he is investigating ways in which Web Applications can be authored only once and then accommodate delivery of content onto a wide variety of platforms (e.g. desktop PCs, PDAs, mobile phones and speech interfaces) without the need for any changes. 
       </p>
 	</shortcv>
 </member>

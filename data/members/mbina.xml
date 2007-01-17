@@ -4,15 +4,15 @@
 	<surname>Bina</surname>
 	<memb_title>Mrs.</memb_title>
 	<email>mbina@aueb.gr</email>
-	<web_site>http://www.mobiforum.org/mobiforum/wrc_member.php?name=%20Bina</web_site>
-	<office_phone>+30 2108203663</office_phone>
-	<fax>+30 2108203664</fax>
-	<office_address>Evelpidon 47-A &amp; Lefkados 33, Room 801</office_address>
+	<!--<web_site>http://www.mobiforum.org/mobiforum/wrc_member.php?name=%20Bina</web_site>-->
+	<office_phone>+30 2108203855</office_phone>
+	<fax>+30 2108203854</fax>
+	<office_address>Evelpidon 47-A &amp; Lefkados 33, Room 103</office_address>
 	<postal_address>Evelpidon 47-A &amp; Lefkados 33, 11362, Athens, Greece</postal_address>
-	<!--<photo>../images/spi.jpg</photo>-->
+	<photo>../images/mbina.jpg</photo>
 	<shortcv>
 		<p>
-	Mary Bina is a graduate from the department of Electrical Engineering and Computer Science of the National Technical University of Athens. During her studies, she specialized in the area of Telecommunications an in particular in Wireless and Mobile Communications Networks and Digital Communications. Following her studies, she was admitted first in the Decision Sciences Graduate Program (E-commerce specialization) of the Athens University of Economics and Business. There, she got involved in various projects in the areas of Information Systems, E-commerce and Mobile Business applications. Her Master Thesis concerning the transformation of an existing e-business model into the mobile environment excelled among the other projects of the program. She also became a member of ELTRUN/WRC. Currently she works in preparing her Doctoral Thesis in the area of Mobile Business and is also involved in research projects.  Her research interests concern mobile and wireless applications with an emphasis on wireless Internet and emerging wireless business models.
+	Mary Bina is a graduate from the department of Electrical Engineering and Computer Science of the National Technical University of Athens. During her studies, she specialized in the area of Telecommunications an in particular in Wireless and Mobile Communications Networks and Digital Communications. Following her studies, she was admitted first in the Decision Sciences Graduate Program (E-commerce specialization) of the Athens University of Economics and Business. There, she got involved in various projects in the areas of Information Systems, E-commerce and Mobile Business applications. Her Master Thesis concerning the transformation of an existing e-business model into the mobile environment excelled among the other projects of the program. Currently she works in preparing her Doctoral Thesis in the area of Mobile Business and is also involved in research projects.  Her research interests concern wireless communities, the adoption of mobile data services, emerging mobile and wireless business models, and telecommunications policy.
 	She is also a member of the Technical Chamber of Greece.
       </p>
 	</shortcv>

@@ -2,20 +2,20 @@
 <member id="m_pateli" group="g_istlab g_wrc">
 	<givenname>Ada</givenname>
 	<surname>Pateli</surname>
-	<memb_title>Mrs.</memb_title>
+	<memb_title>Dr.</memb_title>
 	<email>pateli@aueb.gr</email>
-	<web_site>http://www.mobiforum.org/mobiforum/wrc_member.php?name=Pateli</web_site>
-	<office_phone>+30 2108203663</office_phone>
-	<fax>+30 2108203664</fax>
-	<office_address>Evelpidon 47-A &amp; Lefkados 33, Room 801</office_address>
-	<postal_address>Evelpidon 47-A &amp; Lefkados 33, 11362, Athens, Greece</postal_address>
+	<!--<web_site>http://www.mobiforum.org/mobiforum/wrc_member.php?name=Pateli</web_site>-->
+	<!--<office_phone>+30 2108203855</office_phone>-->
+	<!--<fax>+30 2108203664</fax>-->
+	<!--<office_address>Evelpidon 47-A &amp; Lefkados 33, Room 801</office_address>-->
+	<!--<postal_address>Evelpidon 47-A &amp; Lefkados 33, 11362, Athens, Greece</postal_address>-->
 	<!--<photo>../images/spi.jpg</photo>-->
+	<alumnus/>
 	<shortcv>
-		<p>
-	   Adamantia Pateli is a PhD student at the Department of Management Science and Technology (DMST) of the Athens University of Economics and Business (AUEB), in Greece. She holds a BSc in Informatics (specialization in Information Systems) from Athens University of Economics and Business (AUEB) in September 1999, and a Masters Degree in Electronic Commerce from the University of Manchester Institute of Science and Technology (UMIST) in September 2001.
+		<p>Adamantia Pateli has received her PhD focusing on mobile strategy issues from the Department of Management Science and Technology (DMST) of the Athens University of Economics and Business (AUEB). She holds a BSc in Informatics (specialization in Information Systems) from the same university sity of Economics and Business (AUEB) and a Masters Degree in Electronic Commerce from the University of Manchester Institute of Science and Technology (UMIST).
 	   </p>
 
-	   <p>Ms. Pateli has both working and research experience. In particular, from 1997 to 1999, she has worked as research assistant in ELTRUN (The E-Business Centre) and has participated in a number of national and European-funded research projects (KISMET, WeCAN, National Committee of Electronic Commerce, etc.) in the areas of Electronic Commerce and Information Systems. From 1999 to 2000, she has worked as e-Commerce consultant in a Greek IT company and has also been involved in several national projects (Business Process Re-engineering for a Greek Institute of Social Insurance, Design of a National Network for the Greek Administration, etc.) in the areas of Electronic Commerce, Business Process Reengineering and Communications. Since 2001, she holds a position as research officer in the ELTRUN Wireless Research Group (ELTRUN/WRC).
+	   <p>Dr. Pateli has both working and research experience. In particular, from 1997 to 1999, she has worked as research assistant in ELTRUN and has participated in a number of national and European-funded research projects (KISMET, WeCAN, National Committee of Electronic Commerce, etc.) in the areas of Electronic Commerce and Information Systems. From 1999 to 2000, she has worked as e-Commerce consultant in a Greek IT company and has also been involved in several national projects (Business Process Re-engineering for a Greek Institute of Social Insurance, Design of a National Network for the Greek Administration, etc.) in the areas of Electronic Commerce, Business Process Reengineering and Communications.
 	   </p>
 
 	   <p>Her main research interests lie in the area of Business Modelling, Technology-Induced Innovation, Inter-firm Cooperation Agreements (emphasizing on Strategic Technology Alliances), Strategy and Mobile and Wireless Business.

@@ -4,15 +4,15 @@
 	<surname>Fouskas</surname>
 	<memb_title>Mr.</memb_title>
 	<email>kfouskas@aueb.gr</email>
-	<web_site>http://www.mobiforum.org/mobiforum/wrc_member.php?name=Fouskas</web_site>
-	<office_phone>+30 2108203870</office_phone>
-	<fax>+30 2108203871</fax>
-	<office_address>Evelpidon 47-A &amp; Lefkados 33, Room 205</office_address>
+	<!--<web_site>http://www.mobiforum.org/mobiforum/wrc_member.php?name=Fouskas</web_site>-->
+	<office_phone>+30 2108203855</office_phone>
+	<fax>+30 2108203854</fax>
+	<office_address>Evelpidon 47-A &amp; Lefkados 33, Room 103</office_address>
 	<postal_address>Evelpidon 47-A &amp; Lefkados 33, 11362, Athens, Greece</postal_address>
 	<photo>../images/m_fouskas.jpg</photo>
 	<shortcv>
 		<p>
-	   Konstantinos Fouskas is a full time researcher and PhD candidate at the Department of
+	   Konstantinos Fouskas is a PhD candidate at the Department of
 	   Management Science and Technology of the Athens University of Economics and
 	   Business, Greece. He achieved a Bachelor Degree (BSc) on Business Administration with
 	   specialization on Accounting and Financial Administration from the department
@@ -32,16 +32,7 @@
 	   <p>
 	   He has seven years working experience (1994 - 2000) in the private sector in
 	   accounting and financial analysis positions in various organizations, having an
-	   accounting licence from the Economic Champers of Greece. Since 2000 he is
-	   employed in the Hellenic Electronic Trading Research Unit (ELTRUN),
-	   working in mBusiness related projects. From 2001 he is an active member of the ELTRUN
-	   Wireless Research Group (ELTRUN/WRC).
+	   accounting licence from the Economic Chambers of Greece. 
       </p>
 	</shortcv>
-	<phd-info completed="0" supervisor="m_giaglis" startdate="20031114">
-		<phd-title>Factors influencing the effectiveness of Competitor Analysis</phd-title>
-		<phd-summary>
-			Competitor analysis is becoming an increasingly important task for organizations in today’s competitive landscape. The efficient analysis of competitors is vital for organizations success and in several occasions critical for its survival. However managers tend to be myopic when recognizing rivals, and inefficient in analyzing them. To this end, this thesis will try to identify factors influencing competitor analysis effectiveness, examine their influence and try to raise conclusions correlating the competitive decision process to common mistakes in competitive analysis. This will be held though an analytical process, examining environmental and organizational effects on the competitive analysis process characteristics and the process characteristics in relation to the process effectiveness. The results will better help us understand the process by which organizations choose to watch competitive others by identifying key points in the process that have to be taken into consideration.
-		</phd-summary>
-	</phd-info>
 </member>

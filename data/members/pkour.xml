@@ -2,20 +2,20 @@
 <member id="m_pkour" group="g_istlab g_wrc">
 	<givenname>Panos</givenname>
 	<surname>Kourouthanassis</surname>
-	<memb_title>Mr.</memb_title>
+	<memb_title>Dr.</memb_title>
 	<email>pkour@aueb.gr</email>
-	<web_site>http://www.mobiforum.org/mobiforum/wrc_member.php?name=Kourouthanassis</web_site>
-	<office_phone>+30 2108203687</office_phone>
-	<fax>+30 2108203664</fax>
-	<office_address>Evelpidon 47-A &amp; Lefkados 33, Room 907</office_address>
+	<!--<web_site>http://www.mobiforum.org/mobiforum/wrc_member.php?name=Kourouthanassis</web_site>-->
+	<office_phone>+30 2108203855</office_phone>
+	<fax>+30 2108203854</fax>
+	<office_address>Evelpidon 47-A &amp; Lefkados 33, Room 103</office_address>
 	<postal_address>Evelpidon 47-A &amp; Lefkados 33, 11362, Athens, Greece</postal_address>
 	<!--<photo>../images/spi.jpg</photo>-->
 	<shortcv>
 		<p>
-	   Panos Kourouthanassis has graduated from the Athens University of Economics and Business, Department of Informatics. He holds a Masters Degree in Decision Sciences and he is currently completing his PhD thesis on designing pervasive information systems. Mr. Panos Kourouthanassis has extensive research experience. Since 1996, he is a Research Officer in ELTRUN research group (hosted within the Athens University of Economics and Business) which is actively involved in the area of eBusiness. For the past years, he has been involved in numerous leading edge European research projects as information systems analyst or project manager.
+	   Panos Kourouthanassis has completed his phD thesis on designing pervasive information systems. Panos graduated from the Athens University of Economics and Business, Department of Informatics and holds a Masters Degree in Decision Sciences. Panos has extensive research experience. Since 1996, he is a Research Officer in ELTRUN research group (hosted within the Athens University of Economics and Business) which is actively involved in the area of eBusiness. For the past years, he has been involved in numerous leading edge European research projects as information systems analyst or project manager. Currently he participates as Research Officer in the ISTLab Wireless Research Center (ISTLab/WRC).
 	   </p>
 
-	   <p>His main research interests lie in the areas of eBusiness (emphasising on mobile and wireless applications and services), ubiquitous computing, software engineering, and information systems design. He has already co-organised a dedicated workshop and a research track on ubiquitous commerce on leading International Conferences focused on ubiquitous computing. His research work on the proposition of innovative wireless information systems for the retail sector enhancing consumers shopping experience received the Gold Award in the 4th ECR Student Award programme. Since 2002 he participates as Research Officer in the ELTRUN Wireless Research Group (ELTRUN/WRC) which pursues research in innovative mBusiness models, assessment of new mobile/wireless technologies, applications and services development, and others.
+	   <p>His main research interests lie in the areas of eBusiness (emphasising on mobile and wireless applications and services), ubiquitous computing, software engineering, and information systems design. He has already co-organised a dedicated workshop and a research track on ubiquitous commerce on leading International Conferences focused on ubiquitous computing. His research work on the proposition of innovative wireless information systems for the retail sector enhancing consumers shopping experience received the Gold Award in the 4th ECR Student Award programme.
       </p>
 	</shortcv>
 </member>
