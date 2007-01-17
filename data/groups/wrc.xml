@@ -3,25 +3,17 @@
 	<grouptitle>Wireless Research Center</grouptitle>
 	<shortname>WRC</shortname>
 	<description>
-		<p><b>The ISTLab Wireless Research Center (ISTLab/WRC)</b> operates under
-the direction and supervision of <b>Dr George M. Giaglis </b>and pursues basic and applied research on areas relating to the application and exploitation of mobile and wireless technologies in organizational and social contexts. The main research interests of the group
+		<p><b>The ISTLab Wireless Research Center (ISTLab/WRC)</b> pursues basic and applied research on areas relating to the application and exploitation of mobile, wireless, and sensor-based technologies in organizational and social contexts. The main research interests of the group
 engage upon the following research streams:</p>
 
 <ul>
-<li>Emerging mBusiness Models</li>
-
-<li> Innovative mBusiness Applications and Services </li>
-
 <li>Pervasive and Ubiquitous Information Systems </li>
-
-<li> New Mobile Work Models </li>
-
+<li>Emerging Mobile Business Models</li>
+<li>Wireless Communities</li>
+<li>Mobile Advertising and Marketing</li>
+<li> Innovative mBusiness Applications and Services </li>
 <li> Mobile Supply Chain Management Optimisation </li>
-
-<li> Emerging Mobile and Wireless Technologies </li>
-
-<li> Mobile and Wireless Network Architectures </li>
-
+<li> New Mobile Work Models </li>
 <li> Mobile Business Strategy, Policy and Regulation </li>
 </ul>
 
@@ -31,8 +23,11 @@ projects </b> as well as the production of high-quality research results. The <b
 interdisciplinary research on a multiplicity of dimensions defining the world of mobile and wireless business.</p>
 	</description>
 	<rel_link>
-		<a href="http://www.mobiforum.org">ISTLab/WRC Mobiforum Portal</a>
+		<a href="http://www.mobiforum.org">Mobiforum Portal</a>
 	</rel_link>
-	<!-- <logo>../images/g_wrc.jpg</logo>  -->
+	<rel_link>
+		<a href="http://icmb.mobiforum.org/about.php">International Conference on Mobile Business</a>
+	</rel_link>
+	<logo>../images/g_wrc.jpg</logo>  
 	<color>#FFFF96</color>
 </group>
