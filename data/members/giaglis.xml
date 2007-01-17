@@ -3,16 +3,16 @@
 	<givenname>George</givenname>
 	<surname>Giaglis</surname>
 	<memb_title>Dr.</memb_title>
-	<email>giagli@aueb.gr</email>
+	<email>giaglis@aueb.gr</email>
 	<!--<web_site>http://www.mobiforum.org/mobiforum/wrc_member.php?name=Giaglhs</web_site>-->
 	<office_phone>+30 2108203682</office_phone>
-	<fax>+30 2108203685</fax>
+	<fax>+30 2108203682</fax>
 	<office_address>Evelpidon 47-A &amp; Lefkados 33, Office 907</office_address>
 	<postal_address>Evelpidon 47-A &amp; Lefkados 33, 11362, Athens, Greece</postal_address>
-	<!--<photo>../images/spi.jpg</photo>-->
+	<photo>../images/giaglis.jpg</photo>
 	<shortcv>
 		<p>
-	   George M. Giaglis is Assistant Professor of eBusiness at the Department of Management
+	   George M. Giaglis is Associate Professor of eBusiness at the Department of Management
 	   Science and Technology of the Athens University of Economics and Business, Greece.
 	   He has also held full-time academic posts in Brunel University (UK) and the
 	   University of the Aegean (Greece), while he has been a visiting professor in
@@ -20,18 +20,18 @@
 	   Henley Management College.</p>
 
 	   <p>His main teaching and research interests lie in the areas of eBusiness (emphasising
-	   on mobile and wireless applications and services), technology-enabled business
+	   on mobile and wireless applications and services), pervasive and ubiquitous information systems, technology-enabled business
 	   process redesign, business process modelling and re-engineering, information
 	   management, and information systems evaluation.</p>
 
-	   <p>He has published more than 50 research articles in leading journals and
+	   <p>He has published more than 100 research articles in leading journals and
 	   international conferences, including the Information Systems Journal, the
 	   International Journal of Electronic Commerce, and the International Journal of
 	   Information Management. He is a member of the editorial board of the
-	   International Journal of Mobile Communications and the Logistics Information
-	   Management Journal. He is the permanent secretary of the International
+	   International Journal of Mobile Communications and the Journal of Enterprise Information
+	   Systems. He is the permanent secretary of the International
 	   Conference on Mobile Business, where he has also served as Research Track
-	   Chair, and permanent Track Co-Chair in the European Simulation Symposium. He
+	   Chair. He
 	   has also acted as guest-editor in journals such as the International Journal of
 	   Mobile Communications, the Business Process Management Journal, and the
 	   International Journal of Flexible Manufacturing Systems. He has also been a
@@ -40,10 +40,7 @@
 	   International Conference on Business Process Modelling, and the Hawaiian
 	   International Conference on Systems Sciences).</p>
 
-	   <p>Since 2001, he is the Director of the ELTRUN Wireless Research Group (ELTRUN/WRC)
-	   hosted by the Athens University of Economics and Business. The group pursues
-	   research in innovative mBusiness models, assessment of new mobile/wireless
-	   technologies, applications and services development, and others. The group
+	   <p>Since 2001, he is the Director of the ISTLab Wireless Research Center (ISTLab/WRC). The group
 	   operates one the most well known portals on mBusiness, namely Mobiforum (<a
 	   href="http://www.mobiforum.org/">www.mobiforum.org</a>).
       </p>
