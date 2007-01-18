@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<project id="p_ebusinessforumIA4" group="g_istlab g_sense" scientific_coordinator="m_dds" international="no" type="rtd" contact="m_vlachos">
+	<shortname>eBusinessForum - Working Group IA4</shortname>
+	<projtitle>Greek Computer Emergency Response Team (GR-CERT)</projtitle>
+	<startdate>20060910</startdate>
+	<enddate>20070530</enddate>
+	<web_site>http://www.ebusinessforum.gr
+</web_site>
+	<!--<our_budget>328,627 EUR</our_budget>-->
+	<!--<total_budget>3,493,834 EUR</total_budget>-->
+	<!--<funding_agency>General Secretariat of Research and Technology</funding_agency>-->
+	<!--<funding_programme>Research and Technological Development Consortiums in sections of National Priority</funding_programme>-->
+	<!--<project_code>Axis 4.5.1</project_code>-->
+		
+	<!--<logo>../images/athens.gif</logo>-->
+	<partner>
+		<shortname>University of the Aegean - Department of Information and Communication Systems Engineering</shortname>
+		<country>GR</country>
+		<web_site>http://www.icsd.aegean.gr</web_site>
+	</partner>
+	<partner>
+		<shortname>GRNET - Greek Research and Technology Network</shortname>
+		<country>GR</country>
+		<web_site>http://www.edet.gr</web_site>
+	</partner>
+	
+	<description>
+ <p>
+  	ISTLab/SENSE members participate actively in E-Business Forum. In particular, working group IA4 focused its attention in the area of "Preliminary Actions for the Establishment of the Greek Computer Emergency Response Team (GR-CERT)". 
+  	
+  	GR-CERT is an initiative, which aims to provide timely notifications regarding software vulnerabilities, malware epidemics and fraud schemes.
+  	
+  	The IA4 working group focuses on non experts and SMEs not employing technical personnel  and therefore all the necessary information is provided in a simple and understandable manner for the average user.  
+
+	Results will be published in the form of reports and will be presented in a workshop.
+</p>
+	</description>
+</project>
