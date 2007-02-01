@@ -110,10 +110,6 @@ phone: ${DB}
 	@echo "Creating phone catalog"
 	@xml tr ${PHONEXSLT} ${DB} > ${HTML}/misc/catalog.html
 
-email: ${DB}
-	@echo "Creating email list"
-	@xml tr ${EMAILXSLT} ${DB} > ${HTML}/misc/email-all.txt
-
 val: ${DB}
 	@echo '---> Checking group data XML files ... '
 	@-for file in $(GROUPFILES); \
@@ -146,12 +142,9 @@ val: ${DB}
 	@echo '---> Checking db.xml ...'
 	@xml val -d schema/istlab.dtd $(DB)
 
-html: ${DB} groups projects members rel_pages publications phone email
+html: ${DB} groups projects members rel_pages publications phone
 
-#		if [ $$group = "g_istlab" ] ; \
-#		then xml tr ${PXSLT} -s menu=off -s today=${TODAY} -s ogroup=$$group -s what=group-details ${DB} >${HTML}/groups/$$group-details.html ; \
-#		else xml tr ${PXSLT} -s today=${TODAY} -s ogroup=$$group -s what=group-details ${DB} >${HTML}/groups/$$group-details.html ; \
-#		fi ; \
+beta: ${DB} email-lists phd-students
 
 groups: ${DB}
 	@echo "Creating groups"
@@ -192,12 +185,24 @@ publications: ${DB}
 	@echo "Creating publications"
 	@$(SHELL) build/bibrun
 
+## beta targets
 phd-students: ${DB}
 	@echo "Creating PhD Students list"
 	@xml tr ${STUDXSLT} -s completed=0 ${DB} > ${HTML}/misc/phd-students.html
 	@echo "Creating Awarded PhD's list"
 	@xml tr ${STUDXSLT} -s completed=1 ${DB} > ${HTML}/misc/awarded-phd-students.html
 
+email-lists: ${DB}
+	@echo "Creating email lists"
+	@for group in $(GROUPIDS) ; \
+	do \
+		xml tr ${EMAILXSLT} -s ogroup=$$group -s what=members-all ${DB} > ${HTML}/misc/$$group-email-all.txt ; \
+		xml tr ${EMAILXSLT} -s ogroup=$$group -s what=members-phd ${DB} > ${HTML}/misc/$$group-email-phd.txt ; \
+		xml tr ${EMAILXSLT} -s ogroup=$$group -s what=members-alumni ${DB} > ${HTML}/misc/$$group-email-alumni.txt ; \
+		xml tr ${EMAILXSLT} -s ogroup=$$group -s what=members-gl ${DB} > ${HTML}/misc/$$group-email-gl.txt ; \
+	done
+
+## end - beta
 dist: html
 	$(SSH) istlab.dmst.aueb.gr "cd /home/dds/src/istlab-web ; \
 	umask 002 ; \
