@@ -142,9 +142,7 @@ val: ${DB}
 	@echo '---> Checking db.xml ...'
 	@xml val -d schema/istlab.dtd $(DB)
 
-html: ${DB} groups projects members rel_pages publications phone
-
-beta: ${DB} email-lists phd-students
+html: ${DB} groups projects members rel_pages publications phone email-lists phd-students
 
 groups: ${DB}
 	@echo "Creating groups"
@@ -185,7 +183,6 @@ publications: ${DB}
 	@echo "Creating publications"
 	@$(SHELL) build/bibrun
 
-## beta targets
 phd-students: ${DB}
 	@echo "Creating PhD Students list"
 	@xml tr ${STUDXSLT} -s completed=0 ${DB} > ${HTML}/misc/phd-students.html
@@ -196,13 +193,12 @@ email-lists: ${DB}
 	@echo "Creating email lists"
 	@for group in $(GROUPIDS) ; \
 	do \
-		xml tr ${EMAILXSLT} -s ogroup=$$group -s what=members-all ${DB} > ${HTML}/misc/$$group-email-all.txt ; \
-		xml tr ${EMAILXSLT} -s ogroup=$$group -s what=members-phd ${DB} > ${HTML}/misc/$$group-email-phd.txt ; \
-		xml tr ${EMAILXSLT} -s ogroup=$$group -s what=members-alumni ${DB} > ${HTML}/misc/$$group-email-alumni.txt ; \
-		xml tr ${EMAILXSLT} -s ogroup=$$group -s what=members-gl ${DB} > ${HTML}/misc/$$group-email-gl.txt ; \
+		xml tr ${EMAILXSLT} -s ogroup=$$group -s what=members-all ${DB} > lists/$$group-email-all.txt ; \
+		xml tr ${EMAILXSLT} -s ogroup=$$group -s what=members-phd ${DB} > lists/$$group-email-phd.txt ; \
+		xml tr ${EMAILXSLT} -s ogroup=$$group -s what=members-alumni ${DB} > lists/$$group-email-alumni.txt ; \
+		xml tr ${EMAILXSLT} -s ogroup=$$group -s what=members-gl ${DB} > lists/$$group-email-gl.txt ; \
 	done
 
-## end - beta
 dist: html
 	$(SSH) istlab.dmst.aueb.gr "cd /home/dds/src/istlab-web ; \
 	umask 002 ; \
