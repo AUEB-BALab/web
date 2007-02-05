@@ -193,10 +193,10 @@ email-lists: ${DB}
 	@echo "Creating email lists"
 	@for group in $(GROUPIDS) ; \
 	do \
-		xml tr ${EMAILXSLT} -s ogroup=$$group -s what=members-all ${DB} > lists/$$group-email-all.txt ; \
-		xml tr ${EMAILXSLT} -s ogroup=$$group -s what=members-phd ${DB} > lists/$$group-email-phd.txt ; \
-		xml tr ${EMAILXSLT} -s ogroup=$$group -s what=members-alumni ${DB} > lists/$$group-email-alumni.txt ; \
-		xml tr ${EMAILXSLT} -s ogroup=$$group -s what=members-gl ${DB} > lists/$$group-email-gl.txt ; \
+		xml tr ${EMAILXSLT} -s ogroup=$$group -s what=members-all ${DB} > lists/$$group-all.txt ; \
+		xml tr ${EMAILXSLT} -s ogroup=$$group -s what=members-phd ${DB} > lists/$$group-phd.txt ; \
+		xml tr ${EMAILXSLT} -s ogroup=$$group -s what=members-alumni ${DB} > lists/$$group-alumni.txt ; \
+		xml tr ${EMAILXSLT} -s ogroup=$$group -s what=members-gl ${DB} > lists/$$group-gl.txt ; \
 	done
 
 dist: html
