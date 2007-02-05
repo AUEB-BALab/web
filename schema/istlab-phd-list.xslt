@@ -55,7 +55,7 @@
 						<a href="../members/{current()/@id}.html"><img src="../images/istlab-m.jpg" border="0"/></a>
 					</xsl:if>
 					<br/>
-					<a href="../members/{current()/@id}.html"><xsl:value-of select="current()/memb_title"/><xsl:text> </xsl:text><xsl:value-of select="current()/givenname"/><xsl:text> </xsl:text><xsl:value-of select="current()/surname"/></a>
+					<a href="../members/{current()/@id}.html"><xsl:value-of select="current()/givenname"/><xsl:text> </xsl:text><xsl:value-of select="current()/surname"/></a>
 					</div>
 					</xsl:if>
 					<xsl:if test="(position() + 1) mod 3 = 0">
