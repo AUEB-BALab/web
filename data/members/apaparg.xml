@@ -10,8 +10,21 @@
 	<postal_address>76 Patission St., GR104 34, Athens, Greece</postal_address>
 	<photo>../images/m_apaparg.jpg</photo>
 	<shortcv>
-	<p>
-Mr. ANTHONY PAPARGYRIS is a  PhD candidate in the Department of Management Science and Technology at the Athens University of Economics and Business, Greece. He holds a first degree in Business Computing (Teesside, UK), and an MSc degree in Information Systems (AUEB). Since 2001, he is working as a senior researcher in the Electronic Trading Research Unit (ELTRUN). His current research is focussing on collective action and meaning construction, virtual communities, and learning. His general research interests are in online interactive learning games, philosophy of science and Information Systems, and Knowledge Management.
-	</p>
+		<p>
+		Mr. ANTHONY PAPARGYRIS is a  PhD candidate in the Department of Management Science and Technology at the Athens University of Economics and Business, Greece. He holds a first degree in Business Computing (Teesside, UK), and an MSc degree in Information Systems (AUEB). Since 2001, he is now a member of <a href="http://istlab.dmst.aueb.gr/">ISTLab</a>/<a href="../groups/g_ois-details.html">OIS</a>. His current research is focussing on collective action and meaning construction, virtual communities, and learning. His general research interests are in online interactive learning games, philosophy of science and Information Systems, and Knowledge Management.
+		</p>
 	</shortcv>
+	<phd-info completed="0" supervisor="m_akp" startdate="20031014">
+		<phd-title>
+		Communicating and Capitalizing knowledge in virtual Communities and Practice
+		</phd-title>
+		<phd-summary>
+		<p>
+		Multinational and distributed organizations are seeking new working practices and spaces in order to motivate their employees to share and innovative capitalize their knowledge. During the last 15 years, many researchers and practitioners have conducted many studies, proposing many technological and managerial practices towards the 'learning organization'. One of the most promising approaches is the 'Communities of Practice', a framework for understanding how self-organized communities are forming and explore, learn and manage commons of communication, knowledge and innovation. 
+		</p>
+		<p>
+		This thesis aims to understand how virtual Communities of Practice are communicating and capitalising their knowledge. Such communities are forming in Multiplayer Online Role-Playing Games (MMORPG). In other words, this research will study such communities and the connections their member develop over time, the technology they use and the social practices they apply.
+		</p>
+		</phd-summary>
+	</phd-info>
 </member>

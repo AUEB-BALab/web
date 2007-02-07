@@ -22,7 +22,7 @@
 	<shortcv>
 	    <i>Giorgos Gousios</i> is a PhD candidate at the Athens University of Economics and Business. He holds a Diploma in Information and Communication Systems Engineering from the University of the Aegean and an MSc in Advanced Computer Science from the University of Manchester. He has contributed code in various open source projects and worked as independent software consultant. Currently, he is pursuing a PhD in the area of virtual machines at the Athens University of Economics and Business and also managing the <a href="http://www.sqo-oss.eu">SQO-OSS</a> project (IST-033331). His research interests include programming languages implementation, virtual machines, operating system architectures and software quality assesment.
 	</shortcv>
-	<phd-info completed="0" supervisor="m_dds" startdate="20041114">
+	<phd-info completed="0" supervisor="m_dds" startdate="20031014">
 		<phd-title>Efficient co-operation of Virtual Machines with Operting Systems</phd-title>
 		<phd-summary>
 <p>

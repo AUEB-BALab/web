@@ -10,8 +10,16 @@
 	<office_address>1 Derigni St.</office_address>
 	<postal_address>76 Patission St., GR104 34, Athens, Greece</postal_address>
 	<shortcv>
-	<p>
-PANAGIOTIS ZAHARIAS was born in Athens, Greece. He holds a first degree in Informatics from the Athens University of Economics and Business (AUEB, 1998) and a Masters degree in Information Systems (from the MSc. Program in Information Systems in AUEB, 2000). He also holds a Ph.D. degree in Usability Evaluation Methods of E-learning Courses (Management Science and Technology department, AUEB, 2004). His main research interest is focused on e-Learning design and usability evaluation. Since 1999, he is working in the Electronic Trading Research Unit (ELTRUN) and participated in various European and National research projects. His research publications record includes more than 15 papers published in scientific journals and conference proceedings. Panagiotis Zaharias is a member of ELTRUN research group and AACE (Association for the Advancement of Computing in Education) organization.
-	</p>
+		<p>
+		Dr. PANAGIOTIS ZAHARIAS was born in Athens, Greece. He holds a first degree in Informatics from the Athens University of Economics and Business (AUEB, 1998) and a Masters degree in Information Systems (from the MSc. Program in Information Systems in AUEB, 2000). He also holds a Ph.D. degree in Usability Evaluation Methods of E-learning Courses (Management Science and Technology department, AUEB, 2004). His main research interest is focused on e-Learning design and usability evaluation. Since 1999, he is working in the <a href="http://istlab.dmst.aueb.gr/">ISTLab</a>/<a href="../groups/g_ois-details.html">OIS</a> and participated in various European and National research projects. His research publications record includes more than 15 papers published in scientific journals and conference proceedings. Panagiotis Zaharias is a member of <a href="http://istlab.dmst.aueb.gr/">ISTLab</a>/<a href="../groups/g_ois-details.html">OIS</a> research group and AACE (Association for the Advancement of Computing in Education) organization. Dr. Zaharias is currently a Lecturer at the Department of Product and Systems Design Engineering of the University of Aegean.
+		</p>
 	</shortcv>
+	<phd-info completed="1" supervisor="m_akp" startdate="20011014">
+		<phd-title>
+		A Usability Evaluation Method for E-Learning Courses
+		</phd-title>
+		<phd-summary>
+		A Usability Evaluation Method for E-Learning Courses
+		</phd-summary>
+	</phd-info>
 </member>
