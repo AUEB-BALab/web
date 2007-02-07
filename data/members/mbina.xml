@@ -16,4 +16,14 @@
 	She is also a member of the Technical Chamber of Greece.
       </p>
 	</shortcv>
+	<phd-info completed="0" supervisor="m_giaglis" startdate="20040301">
+			<phd-title>A Socio-Economic Perspective in Community-based WLANs Research</phd-title>
+			<phd-summary>
+				This phD research attempts a two-fold approach of Community-based WLANs: 
+				<ul><li>Study the motives that trigger the initialization and further development of a Community WLAN project
+				</li><li>Investigate the growth and evolution patterns followed by Community WLANs  
+				</li></ul>In doing so, it refers to the theory of collective action and private provision of public goods. The expected contribution will be an assessment of the long-term survivability of the community model and the nature of the mechanisms to foster it. 
+
+			</phd-summary>
+	</phd-info>
 </member>
