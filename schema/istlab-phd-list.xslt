@@ -52,7 +52,7 @@
 						<a href="../members/{current()/@id}.html"><img src="{current()/photo}" border="0" width="80" height="80"/></a>
 					</xsl:if>
 					<xsl:if test="count(current()/photo) = 0">
-						<a href="../members/{current()/@id}.html"><img src="../images/istlab-m.jpg" border="0"/></a>
+						<a href="../members/{current()/@id}.html"><img src="../images/lamp.png" border="0" width="80" height="80" /></a>
 					</xsl:if>
 					<br/>
 					<a href="../members/{current()/@id}.html"><xsl:value-of select="current()/givenname"/><xsl:text> </xsl:text><xsl:value-of select="current()/surname"/></a>
