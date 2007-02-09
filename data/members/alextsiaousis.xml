@@ -17,4 +17,13 @@ He has also been awarded with an MSc in Information Technology from the Universi
 Mr. Tsiaousis is currently studying towards his PhD in mobile Human Computer Interaction (HCI) at the Department of Management Science and Technology of Athens University of Economics and Business (GR). His main interests lie in the area of the latest developments in 3G mobile phones.
       </p>
 	</shortcv>
+	<phd-info completed="0" supervisor="m_giaglis" startdate="20050201">
+				<phd-title>The impact of context of use on Mobile Applications Usability</phd-title>
+				<phd-summary>
+				With the rapid advances of mobile technology and applications, effective usability testing becomes increasingly important for the design, development, and deployment of successful mobile applications. 
+				However, due to unique features of mobile devices, limited bandwidth, unreliability of wireless networks, as well as other changing mobile context (e.g., location), traditional guidelines and methods used in usability testing of desktop applications may not be directly applicable to mobile applications. 
+				Therefore, it is essential to develop and adopt appropriate methodologies and tools to evaluate the usability of mobile applications in their context of use. 
+				This research highlights major research questions and issues in this field, and attempts to analyse the impact of context on mobile usability by employing applicable usability evaluation methods. 
+				</phd-summary>
+	</phd-info>
 </member>
