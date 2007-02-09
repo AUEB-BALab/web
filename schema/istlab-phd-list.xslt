@@ -25,14 +25,14 @@
 <!-- CSS -->
 <style> 
 .a {
-	border-width: 0; 
-	border-style: solid; 
-	border-color: #a0a0a0; 
-	padding:2px; 
-	margin:2px; 
-	width:200px; 
-	position:relative; 
-	float: left; 
+	border-width: 0;
+	border-style: solid;
+	border-color: #a0a0a0;
+	padding:2px;
+	margin:2px;
+	width:250px;
+	position:relative;
+	float: left;
     } 
 
 .b {
@@ -57,9 +57,6 @@
 					<br/>
 					<a href="../members/{current()/@id}.html"><xsl:value-of select="current()/givenname"/><xsl:text> </xsl:text><xsl:value-of select="current()/surname"/></a>
 					</div>
-					</xsl:if>
-					<xsl:if test="(position() + 1) mod 3 = 0">
-						<div class="b"></div>
 					</xsl:if>
 				</xsl:if>
 			</xsl:for-each>
