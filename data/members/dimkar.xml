@@ -15,4 +15,11 @@
 		<p>Dimitrios is currently studying towards his PhD in Pervasive Information Systems (PIS) in the Department of Management Science and Technology of Athens University of Economics and Business, Greece. He has a great experience regarding programming on both desktop and mobile devices in various platforms and programming languages. His main interests lie in the area of Pervasive Information Systems, RFID technology and Sensor Networks.</p>
 	
 	</shortcv>
+	<phd-info completed="0" supervisor="m_giaglis" startdate="20060301">
+	<phd-title>A Predictive Model for the Acceptance of Pervasive Information Systems by Individuals</phd-title>
+	<phd-summary>My research efforts lie in the intersection among pervasive/ubiquitous computing and behavioral prediction models, investigating factors affecting the acceptance and use of pervasive/ubiquitous computing by individuals taking into account the technology-specific traits, the human behavior, and the physical and social environment.
+	Moreover, Pervasive Information Systems (PIS) constitute the resurgent class of Information Systems (IS) due to the new attributes that pervasive/ubiquitous computing, the underlying technology, introduce. PIS differentiate themselves from traditional IS as they are characterized mainly by the embedment of technology into the physical environment, the effortless interactivity through natural interfaces, the seamless mobility of devices and services and the proactive support of users. These new elements of PIS create a hiatus among the existing technology acceptance models which were developed and tested under the focus of IS. 
+	Therefore, my doctoral research goal is to define the factors that will meet the PIS novel attributes and provide a robust acceptance model for predicting PIS adoption and use by individuals.
+	</phd-summary>
+	</phd-info>
 </member>

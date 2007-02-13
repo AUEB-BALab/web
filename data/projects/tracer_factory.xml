@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<project id="p_tracer_factory" group="g_istlab g_wrc" scientific_coordinator="m_giaglis" contact="m_dimkar" international="no" type="rtd" project_manager="m_dimkar">
+	<shortname>Tracer Factory</shortname>
+	<projtitle>Improvement and standardization of the Traceability Information System</projtitle>
+	<startdate>20060601</startdate>
+	<enddate>20071231</enddate>
+	<!--<web_site>http://www.mobinet.gr</web_site>-->
+	<!--<our_budget>328,627 EUR</our_budget>-->
+	<!--<total_budget>3,493,834 EUR</total_budget>-->
+	<funding_agency>General Secretariat of Research and Technology</funding_agency>
+	<funding_programme>Development of Industrial Research and Technology(PAVET)</funding_programme>
+	<!--<project_code>Action 8.3.6</project_code>-->
+	<partner>
+		<shortname>Theodorou Automations</shortname>
+		<country>EL</country>
+		<!--<web_site>http://www.voiceweb.gr/</web_site>-->
+	</partner>
+			
+	<!--<logo>../images/p_mexpress.gif</logo>-->
+	<description>
+ 	The objective of the current project is to implement an innovative information system (named <i>Tracer Factory</i>) that would support traceability in the food sector. Actions towards implementing <i>Tracer Factory</i> are:
+ 	<ul><li>Desk research upon the best practises implemented world wide regarding traceability information systems along with legal issues and legislations affecting food safety</li>
+ 	<li>Interviews on numerous sectors of the Greek food industry in order to capture the specific attributes and ensure their embodiment in <i>Tracer Factory</i></li>
+ 	<li>Analysis, design and implementation of <i>Tracer Factory</i></li>
+ 	<li>Testing and evaluation of <i>Tracer Factory</i> in real conditions</li>
+ 	<li>Diffusion and business plan of <i>Tracer Factory</i> under the scopus of the Greek market</li></ul>
+	</description>
+</project>
+
