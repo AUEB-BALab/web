@@ -85,6 +85,30 @@
 		<!-- Year -->
 		<xsl:value-of select="substring($date, 1, 4)"/>
 	</xsl:template>
+	
+	<!-- Format an ISO date ommiting day {{{1 -->
+	<xsl:template name="date-phd">
+		<xsl:param name="date" />
+		<!-- Month (00 means unknown)-->
+		<xsl:variable name="month" select="substring($date, 5, 2)" />
+		<xsl:choose>
+			<xsl:when test="$month = '01'">January</xsl:when>
+			<xsl:when test="$month = '02'">February</xsl:when>
+			<xsl:when test="$month = '03'">March</xsl:when>
+			<xsl:when test="$month = '04'">April</xsl:when>
+			<xsl:when test="$month = '05'">May</xsl:when>
+			<xsl:when test="$month = '06'">June</xsl:when>
+			<xsl:when test="$month = '07'">July</xsl:when>
+			<xsl:when test="$month = '08'">August</xsl:when>
+			<xsl:when test="$month = '09'">September</xsl:when>
+			<xsl:when test="$month = '10'">October</xsl:when>
+			<xsl:when test="$month = '11'">November</xsl:when>
+			<xsl:when test="$month = '12'">December</xsl:when>
+		</xsl:choose>
+		<xsl:text> </xsl:text>
+		<!-- Year -->
+		<xsl:value-of select="substring($date, 1, 4)"/>	
+	</xsl:template>
 
 	<!-- Format a publication type for the contents list {{{1 -->
 	<xsl:template match="publication_type" mode="toc" >
@@ -333,7 +357,7 @@
 				</xsl:otherwise>
 			</xsl:choose><br/>
 		<b>Starting date: </b> 
-		<xsl:call-template name="date">
+		<xsl:call-template name="date-phd">
 			<xsl:with-param name="date" select="current()/phd-info/@startdate" />
 		</xsl:call-template>
 		<br/><br/>
