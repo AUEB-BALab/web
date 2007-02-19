@@ -80,12 +80,6 @@ $(DB): ${MEMBERFILES} ${GROUPFILES} ${PROJECTFILES} ${SEMINARFILES} ${RELPAGEFIL
 		grep -v -e "xml version=" $$file ; \
 	done >>$@
 	@echo '</project_list>' >>$@
-	@echo '<seminar_list>' >>$@
-	@for file in $(SEMINARFILES); \
-	do \
-		grep -v -e "xml version=" $$file ; \
-	done >>$@
-	@echo '</seminar_list>' >> $@
 	@echo '<page_list>' >> $@
 	@for file in $(RELPAGEFILES); \
 	do \

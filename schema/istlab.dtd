@@ -21,7 +21,7 @@
 <!ENTITY % date "(#PCDATA)">
 <!ENTITY % pc_flow "(#PCDATA | %Flow.mix;)*">
 <!-- Definition of global -->
-<!ELEMENT istlab (group_list, member_list, project_list, seminar_list,page_list,publication_list, publication_type_list)>
+<!ELEMENT istlab (group_list, member_list, project_list, page_list, publication_list, publication_type_list)>
 <!-- Group list elements {{{1 -->
 <!ELEMENT group_list (group*)>
 <!ELEMENT group (grouptitle, shortname, description, rel_link*, logo?,color,director_photo?)>
@@ -79,7 +79,8 @@
 <!ELEMENT phd-info (phd-title,phd-summary)>
 <!ATTLIST phd-info
 	completed CDATA #REQUIRED
-	supervisor IDREF #REQUIRED
+	supervisor IDREF #IMPLIED
+	supervisor-external CDATA #IMPLIED
 	startdate CDATA #REQUIRED
 >
 
@@ -114,24 +115,7 @@
 <!ELEMENT has_techreport EMPTY>
 <!ELEMENT has_whitepaper EMPTY>
 <!ELEMENT has_workingpaper EMPTY>
-<!-- seminars {{{1-->
-<!ELEMENT seminar_list (seminar*)>
-<!ELEMENT seminar (sem_date,sem_time,sem_room,sem_duration,presentation+)>
 
-<!ELEMENT sem_date %date;>
-<!ELEMENT sem_time (#PCDATA)>
-<!ELEMENT sem_room (#PCDATA)>
-<!ELEMENT sem_duration (#PCDATA)>
-
-<!ELEMENT presentation (pres_title,pres_url?,pres_name?,pres_summary?)>
-<!ATTLIST presentation 
-	by IDREFS #IMPLIED
->
-
-<!ELEMENT pres_title (#PCDATA)>
-<!ELEMENT pres_url %pc_flow;>
-<!ELEMENT pres_name (#PCDATA)>
-<!ELEMENT pres_summary %pc_flow;>
 <!-- page definitions {{{1-->
 <!ELEMENT page_list (page*)>
 <!ELEMENT page (page_name,page_body)>

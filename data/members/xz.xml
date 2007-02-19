@@ -6,10 +6,21 @@
 	<email>xeniaziouvelou@hotmail.com</email>
 	<shortcv>
 		<p>
-<b>Xenia Ziouvelou</b> is a sponsored PhD candidate in the Department of Economics of the Lancaster University (UK). She holds a BSc in Business Administration from the American College of Greece and an MSc in International Business from the Department of Economics of Lancaster University.  From 2002 until 2006 she worked as a research officer in eLTRUN and as a project manager in the EU funded project titled: 'E-FACTORS: A Thematic Network in E-Business Models'. Xenia is a member of the IRIS research group and is currently completing her PhD Thesis sponsored by the Department of Economics of the Lancaster University. Her principal research interest is in strategic and micro economic aspects of highly competitive marketplaces, with particular reference to electronic commerce.
-
+<b>Xenia Ziouvelou</b> is a sponsored PhD candidate in the Department of Economics of the Lancaster University (UK). 
+She holds a BSc in Business Administration from the American College of Greece and an MSc in International Business 
+from the Department of Economics of Lancaster University.  From 2002 until 2006 she worked as a research officer 
+in eLTRUN and as a project manager in the EU funded project titled: 'E-FACTORS: A Thematic Network in E-Business Models'. 
+Xenia is a member of the IRIS research group and is currently completing her PhD Thesis sponsored by the Department 
+of Economics of the Lancaster University. Her principal research interest is in strategic and micro economic aspects 
+of highly competitive marketplaces, with particular reference to electronic commerce.
 </p>
-	
 	</shortcv>
-
+	<phd-info completed="0" supervisor-external="Professor R.Rothschild (Lancaster University)" startdate="20031114">
+		<phd-title>Price Dynamics in Internet-Enabled Markets: A Multidimensional Analysis</phd-title>
+		<phd-summary>
+This thesis investigates the impact of technology on the nature of price competition. Specifically it examines 
+rivalry and the level of friction in Internet retail markets using a multidimensional approach covering 
+both macro and micro analytic perspectives of online price dynamics.
+		</phd-summary>
+	</phd-info>
 </member>

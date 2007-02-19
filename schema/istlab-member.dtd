@@ -46,7 +46,8 @@
 <!ELEMENT phd-info (phd-title,phd-summary)>
 <!ATTLIST phd-info
 	completed CDATA #REQUIRED
-	supervisor ID #REQUIRED
+	supervisor ID #IMPLIED
+	supervisor-external CDATA #IMPLIED
 	startdate CDATA #REQUIRED
 >
 

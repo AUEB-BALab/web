@@ -27,15 +27,12 @@
 					| group-publications
 					| member-publications
 					| project-publications
-					| seminar
 					| rel-pages
 				-->
 <xsl:param name="menu"/>        <!-- Turn Side menu:
 					  on (default is on)
 					| off
 				-->
-<xsl:param name="seminaryear"/> <!-- limit output to seminar per year -->
-
 	<!-- Generate heading with group name {{{1 -->
 	<xsl:template match="group" mode="heading">
 		<xsl:if test="@id = $ogroup">
@@ -326,7 +323,15 @@
 		<div class="content">
 		<h3>PhD Thesis</h3>
 		<b>Title: </b><xsl:value-of select="current()/phd-info/phd-title"/><br/>
-		<b>Supervisor: </b> <xsl:apply-templates select="/istlab/member_list/member [@id=current()/phd-info/@supervisor]" mode="simple-ref" /><br/>
+		<b>Supervisor: </b>
+			<xsl:choose>
+				<xsl:when test="count(current()/phd-info/@supervisor) = 1">
+					<xsl:apply-templates select="/istlab/member_list/member [@id=current()/phd-info/@supervisor]" mode="simple-ref" />
+				</xsl:when>
+				<xsl:otherwise>
+					<xsl:value-of select="current()/phd-info/@supervisor-external"/>
+				</xsl:otherwise>
+			</xsl:choose><br/>
 		<b>Starting date: </b> 
 		<xsl:call-template name="date">
 			<xsl:with-param name="date" select="current()/phd-info/@startdate" />
@@ -578,38 +583,6 @@
 		</table>
 		<br/><br />
 	</xsl:template>
-	
-	<!-- seminar {{{1-->
-	<xsl:template match="seminar" mode="ref">
-		<tr>
-		<td valign="top" nowrap="1">
-		<a href="{$seminaryear}.html#{current()/sem_date}">
-			<xsl:call-template name="date">
-				<xsl:with-param name="date" select="sem_date" />
-			</xsl:call-template>
-		</a>
-			</td> <td>
-			<xsl:apply-templates select="current()/presentation" mode="ref"/>
-			</td> </tr>
-	</xsl:template>
-	
-	<!-- Seminar detailed template {{{1-->
-	<xsl:template match="seminar" mode="full">
-	    <!-- Create the anchor -->
-	    <a name="{current()/sem_date}" />
-	    <div class="title">
-	    	<xsl:call-template name="date">
-			<xsl:with-param name="date" select="sem_date" />
-		</xsl:call-template>
-	    </div>
-	    <!-- create seminar data -->
-	    <div class="content">
-	    <h3>Location: <xsl:value-of select="sem_room" /></h3>
-	    <h3>Time: <xsl:value-of select="sem_time" /></h3>
-	    <h3>Presentations</h3>
-	    <xsl:apply-templates select="current()/presentation" mode="full"/>
-	    </div>
-	</xsl:template>
 
 	<!-- page transformation {{{1-->
 	<xsl:template match="page" mode="full">
@@ -667,9 +640,6 @@
 			<xsl:when test="$what = 'alumni'">
 				<xsl:text> - Research Associates</xsl:text>
 			</xsl:when>
-			<xsl:when test="$what = 'seminar'">
-				<xsl:text>ISTLab Seminars</xsl:text>
-			</xsl:when>
 			<xsl:when test="$what = 'rel-pages'">
 				<xsl:variable name="tmpgroup" select="/istlab/page_list/page[@id = $opage]/@group" />
 				<xsl:value-of select="/istlab/group_list/group[@id = $tmpgroup]/shortname" />
@@ -699,7 +669,6 @@
 			<xsl:when test="$what = 'member-details'"></xsl:when>
 			<xsl:when test="$what = 'member-publications'"></xsl:when>
 			<xsl:when test="$what = 'project-publications'"></xsl:when>
-			<xsl:when test="$what = 'seminar'"></xsl:when>
 			<xsl:when test="$what = 'group-details'">
 				<div class="projecttitle">
 				<xsl:value-of select="/istlab/group_list/group[@id = $ogroup]/shortname" />
@@ -837,19 +806,6 @@
 					</ul>
 					</div>
 				</xsl:when>				
-				<!-- seminar -->
-				<xsl:when test="$what = 'seminar'">
-					<div class="projecttitle">ISTLab Seminars</div>
-						<table class="content">
-						<xsl:apply-templates select="/istlab/seminar_list/seminar [starts-with(sem_date,$seminaryear)]" mode="ref">
-							<xsl:sort select="sem_date" data-type="number" order="descending"/>
-						</xsl:apply-templates>
-						</table>
-						<br /><br />
-						<xsl:apply-templates select="/istlab/seminar_list/seminar [starts-with(sem_date,$seminaryear)]" mode="full">
-							<xsl:sort select="sem_date" data-type="number" order="descending"/>
-						</xsl:apply-templates>
-				</xsl:when>
 				<!-- rel-pages -->
 				<xsl:when test="$what = 'rel-pages'">
 					<xsl:apply-templates select="/istlab/page_list/page[@id = $opage]" mode="full"/>
