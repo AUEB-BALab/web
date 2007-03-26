@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<member id="m_etzitzi" group="g_istlab g_wrc">
+	<givenname>Evaggelia</givenname>
+	<surname>Tzitzi</surname>
+	<memb_title>Mrs.</memb_title>
+	<email>etzitzi@aueb.gr</email>
+	<!--<web_site>http://www.mobiforum.org/mobiforum/wrc_member.php?name=%20Bina</web_site>-->
+	<office_phone>+30 2108203682</office_phone>
+	<fax>+30 2108203682</fax>
+	<office_address>Evelpidon 47-A &amp; Lefkados 33, Room 907</office_address>
+	<postal_address>Evelpidon 47-A &amp; Lefkados 33, 11362, Athens, Greece</postal_address>
+	<!--<photo>../images/mbina.jpg</photo>-->
+	<shortcv>
+		<p>
+	Evaggelia Tzitzi is a Research Assistant at the ISTLab Wireless Research Center. She holds a degree in Greek Classical Studies from the National and Kapodistrian University of Athens and has extensive teaching experience.
+      </p>
+	</shortcv>
+</member>
