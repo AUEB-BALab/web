@@ -17,6 +17,10 @@ Eur. Ing. Vasileios Zeimpekis is Adjunct Lecturer in the Department of Financial
 Vasileios, holds a BEng(Hons) in Telecommunications Engineering from the University of Essex, (UK). He has also been awarded with an MSc in Mobile &amp; Satellite Communications from the University of Surrey (UK) and an MSc with Distinction in Engineering Business Management from the University of Warwick (UK). Vasileios is currently completing his PhD in the area of Real-time Fleet Management Systems in Urban Distributions. </p>
 <p>
 Vasileios is Member of the European Technical Chamber (FEANI), of the Technical Chamber of Greece, of the Institute of Electrical &amp; Electronic Engineers (MIEEE), of the Institute of Electrical Engineers (MIEE), of the Hellenic Logistics Organisation (SOLE/EEL), of the Hellenic Management Association, and of the Institute of Operations Management.</p>
-
-	</shortcv>
+</shortcv>
+	<phd-info completed="0" supervisor="m_giaglis" startdate="20021101">
+		<phd-title>Design and Evaluation of a Real-time Fleet Management System for Dynamic Incident Handling in Urban Freight Distributions</phd-title>
+		<phd-summary>In urban freight movement a good, near-optimal, distribution plan is necessary but not sufficient for high performance distribution. This is mainly due to the probabilistic factors that urban movement depends on, such as high levels of traffic congestion, weather conditions, tight delivery time windows, vehicle breakdowns, unexpected events and so on. The aim of this PhD thesis is the design and evaluation of a real-time fleet management system that handles in a dyanmic way unexpected events during urban freight distribution so as to reduce delivery delays and increase customer service. 
+		</phd-summary>
+	</phd-info>
 </member>
