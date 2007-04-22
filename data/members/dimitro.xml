@@ -11,10 +11,10 @@
 	<!-- <alumnus/>--><!-- Optional -->
 	<!--<office_address>Optional</office_address>-->
 	<!--<postal_address>Optional</postal_address>-->
-	<!-- <photo>Optional</photo>-->
+	<photo>../images/m_dimitro.JPG</photo>
 	<shortcv>
 			<p><i>Dimitrios Mitropoulos</i> holds a BSc in Informatics and Telecommunications from National and Kapodistrian University of Athens and a MSc in Information Systems from Athens University of Economics and Business.	</p>
-			<p>In the past he has worked in IT support and software development positions during his studies. He is a member of the <a href="../groups/g_sense-details.html">SENSE</a> group. His research interests include Computer Security and Software Engineering.
+			<p>In the past he has worked in IT support and software development positions during his studies. He is a member of the <a href="../groups/g_sense-details.html">SENSE</a> group. His research interests include P2P Network Security and Software Engineering.
 			</p>
 		</shortcv>
 	</member>
