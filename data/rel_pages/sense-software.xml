@@ -67,22 +67,46 @@ derived from a converted bibliography style template. This ensures that
 the original BibTeX styles are faithfully reproduced.
 </li>
 <li>
-<a href="http://istlab.dmst.aueb.gr/~bkarak/programs/fire/index.html">FIRE - Fast Implementation of Regular Expressions</a> is a regular expression library for java. It follows the POSIX syntax and is 100% compatible with the SUN regular expression library (java.util.regex.*).
+<a href="http://istlab.dmst.aueb.gr/~bkarak/programs/fire/index.html">FIRE/J</a> 
+is a very fast regular expression library for java.
 </li>
 <li>
-<a href="http://istlab.dmst.aueb.gr/~bkarak/programs/fire/benchmark.html">Regular Expression Benchmark Utility</a> is an application written in 100% Java. It was implemented to test FIRE (Fast Implementation of Regular Expressions) execution speed and compatibility with other Regular Expression Engines in Java.
+<a href="http://istlab.dmst.aueb.gr/~bkarak/programs/fire/benchmark.html">Regular Expression Benchmark Utility</a> 
+is an application written in 100% Java. It was implemented to test FIRE/J execution speed and compatibility 
+against other Regular Expression Engines in Java.  The FIRE/J regular expression library is designed to 
+provide maximum execution speed, while remaining portable across different machine architectures. 
+To achieve that, FIRE/J transforms each regular expression into a tailor-made class file, which is 
+compiled directly to Java virtual machine (JVM) bytecodes.
 </li>
 <li>
-<a href="http://istlab.dmst.aueb.gr/~bkarak/programs/regex-api/index.html">SARE - Simple API for Regular Expressions</a> -  SARE stands for Simple API for Regular Expressions. Its an extension API that provides event based regular expression parsing. SARE's API is very simple. The developer need only to implement an interface, action event handler and attach it to the specific group of SARE parser.	
+<a href="http://istlab.dmst.aueb.gr/~bkarak/programs/regex-api/index.html">SARE - Simple API for Regular Expressions</a> 
+-  SARE stands for Simple API for Regular Expressions. Its an API that provides event 
+based regular expression parsing. SARE's API is very simple. The developer need only to 
+implement an interface, action event handler and attach it to the specific group of SARE parser.	
 </li>
 <li>
-<a href="http://istlab.dmst.aueb.gr/~vbill/ngce/">NGCE - Network Graphs for Computer Epidemiologists</a> Graphs are useful data structures capable of representing eficiently many technological and social networks. Because of this specific property they are utilized in the simulation-based studies of new algorithms and protocols. Inspired by the popular TGFF (Task Graphs For Free) toolkit, which creates task graphs for embedded systems, we present the NGCE, an easy to use graphical graph generator that produces graphs for the study of the propagation of viral agents in complex networks.
+<a href="http://istlab.dmst.aueb.gr/~vbill/ngce/">NGCE - Network Graphs for Computer Epidemiologists</a> 
+Graphs are useful data structures capable of representing eficiently many technological and social networks. 
+Because of this specific property they are utilized in the simulation-based studies of new algorithms and protocols. 
+Inspired by the popular TGFF (Task Graphs For Free) toolkit, which creates task graphs for embedded systems, 
+we present the NGCE, an easy to use graphical graph generator that produces graphs for the study of the 
+propagation of viral agents in complex networks.
 </li>
 <li>
-<a href="http://www.dmst.aueb.gr/dds/sw/ckjm/">ckjm - Chidamber and Kemerer Java Metrics</a>. The program ckjm calculates Chidamber and Kemerer object-oriented metrics by processing the bytecode of compiled Java files. The program calculates for each class the following six metrics: (1) <i>WMC: Weighted methods per class</i>, (2) <i>DIT: Depth of Inheritance Tree</i>, (3) <i>NOC: Number of Children</i>, (4) <i>CBO: Coupling between object classes</i>, (5) <i>RFC: Response for a Class</i> and (6) <i>LCOM: Lack of cohesion in methods</i>
+<a href="http://www.dmst.aueb.gr/dds/sw/ckjm/">ckjm - Chidamber and Kemerer Java Metrics</a>. 
+The program ckjm calculates Chidamber and Kemerer object-oriented metrics by processing the 
+bytecode of compiled Java files. The program calculates for each class the following six 
+metrics: (1) <i>WMC: Weighted methods per class</i>, (2) <i>DIT: Depth of Inheritance Tree</i>, 
+(3) <i>NOC: Number of Children</i>, (4) <i>CBO: Coupling between object classes</i>, 
+(5) <i>RFC: Response for a Class</i> and (6) <i>LCOM: Lack of cohesion in methods</i>
 </li>
 <li>
-<a href="http://www.spinellis.gr/blog/20050413/">Pipe Namespace in the Portal Filesystem</a>. The portal filesystem allows a daemon running as a userland program to pass descriptors to processes that open files belonging to its namespace. It has been part of the *BSD operating systems since 4.4 BSD. I recently added a pipe namespace to its FreeBSD implementation. This allows us to perform scatter gather operations without using temporary files, create non-linear pipelines, and implement file views using symbolic links. 
+<a href="http://www.spinellis.gr/blog/20050413/">Pipe Namespace in the Portal Filesystem</a>. 
+The portal filesystem allows a daemon running as a userland program to pass descriptors to 
+processes that open files belonging to its namespace. It has been part of the *BSD operating 
+systems since 4.4 BSD. I recently added a pipe namespace to its FreeBSD implementation. 
+This allows us to perform scatter gather operations without using temporary files, create non-linear 
+pipelines, and implement file views using symbolic links. 
 </li>
 </ul>
 </page_body>
