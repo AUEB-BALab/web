@@ -1,14 +1,14 @@
 <?xml version="1.0"?>
 <project id="p_web" group="g_istlab g_sense" project_manager="m_dds" contact="m_bkarak" scientific_coordinator="m_dds" international="yes" type="consulting">
 	<shortname>Web</shortname>
-	<projtitle>The ELTRUN Web Site</projtitle>
+	<projtitle>The ISTLab Web Site</projtitle>
 	<enddate>20040401</enddate>
-	<web_site>http://www.eltrun.gr/</web_site>
+	<web_site>http://istlab.dmst.aueb.gr/</web_site>
 	<logo>../images/p_web.jpg</logo>
 	<description>
 		The <em>Web site</em> project aims to create a dynamic,
-		distributed, and maintanable Web site for ELTRUN research centre.
-		<p />
+		distributed, and maintanable Web site for ISTLab.
+<br/>
 Traditionally, the realization of Web sites involves either
 static content developed using web authoring tools like
 Microsoft's Front Page and DreamWeaver, or dynamic
@@ -23,7 +23,7 @@ We believe that our approach and many of the lessons we learned
 can be applied numerous similar situations,
 leading to a lightweight, structured, consistent, and maintainable
 web site building method.
-<p />
+<br/>
 The guiding principles behind our design are:
 <ul>
 <li>Openness</li>
