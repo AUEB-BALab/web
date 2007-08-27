@@ -67,11 +67,11 @@ derived from a converted bibliography style template. This ensures that
 the original BibTeX styles are faithfully reproduced.
 </li>
 <li>
-<a href="http://istlab.dmst.aueb.gr/~bkarak/programs/fire/index.html">FIRE/J</a> 
+<a href="http://gaijin.dmst.aueb.gr/~bkarak/programs/fire/index.html">FIRE/J</a> 
 is a very fast regular expression library for java.
 </li>
 <li>
-<a href="http://istlab.dmst.aueb.gr/~bkarak/programs/fire/benchmark.html">Regular Expression Benchmark Utility</a> 
+<a href="http://gaijin.dmst.aueb.gr/~bkarak/programs/fire/benchmark.html">Regular Expression Benchmark Utility</a> 
 is an application written in 100% Java. It was implemented to test FIRE/J execution speed and compatibility 
 against other Regular Expression Engines in Java.  The FIRE/J regular expression library is designed to 
 provide maximum execution speed, while remaining portable across different machine architectures. 
@@ -79,7 +79,7 @@ To achieve that, FIRE/J transforms each regular expression into a tailor-made cl
 compiled directly to Java virtual machine (JVM) bytecodes.
 </li>
 <li>
-<a href="http://istlab.dmst.aueb.gr/~bkarak/programs/regex-api/index.html">SARE - Simple API for Regular Expressions</a> 
+<a href="http://gaijin.dmst.aueb.gr/~bkarak/programs/regex-api/index.html">SARE - Simple API for Regular Expressions</a> 
 -  SARE stands for Simple API for Regular Expressions. Its an API that provides event 
 based regular expression parsing. SARE's API is very simple. The developer need only to 
 implement an interface, action event handler and attach it to the specific group of SARE parser.	
