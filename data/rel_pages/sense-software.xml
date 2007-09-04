@@ -68,7 +68,8 @@ the original BibTeX styles are faithfully reproduced.
 </li>
 <li>
 <a href="http://gaijin.dmst.aueb.gr/~bkarak/programs/fire/index.html">FIRE/J</a> 
-is a very fast regular expression library for java.
+is a very fast regular expression library for java. See also the article titled, Vassilios  Karakoidas and Diomidis Spinellis. 
+FIRE/J: Optimizing regular expression searches with generative programming. <i>Software: Practice and Experience</i>, 2007. (to appear)
 </li>
 <li>
 <a href="http://gaijin.dmst.aueb.gr/~bkarak/programs/fire/benchmark.html">Regular Expression Benchmark Utility</a> 
