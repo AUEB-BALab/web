@@ -99,6 +99,8 @@ clean:
 		${HTML}/publications/* 2>/dev/null
 	-rm -f public_html/images/colgraph.svg
 	-rm -f *.aux
+	-rm -f *.bbl
+	-rm -f *.blg
 
 phone: ${DB}
 	@echo "Creating phone catalog"
