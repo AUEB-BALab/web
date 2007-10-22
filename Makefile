@@ -49,10 +49,10 @@ STUDXSLT=schema/istlab-phd-list.xslt
 # Today' date in ISO format
 TODAY=$(shell date +'%Y%m%d')
 # Fetch the ids
-GROUPIDS=$(shell xmlstarlet tr ${IDXSLT} -s category=group ${DB})
-PROJECTIDS=$(shell xmlstarlet tr ${IDXSLT} -s category=project ${DB})
-MEMBERIDS=$(shell xmlstarlet tr ${IDXSLT} -s category=member ${DB})
-RELPAGEIDS=$(shell xmlstarlet tr ${IDXSLT} -s category=page ${DB})
+GROUPIDS=$(shell xml tr ${IDXSLT} -s category=group ${DB})
+PROJECTIDS=$(shell xml tr ${IDXSLT} -s category=project ${DB})
+MEMBERIDS=$(shell xml tr ${IDXSLT} -s category=member ${DB})
+RELPAGEIDS=$(shell xml tr ${IDXSLT} -s category=page ${DB})
 # HTML output directory
 HTML=public_html
 
@@ -104,39 +104,39 @@ clean:
 
 phone: ${DB}
 	@echo "Creating phone catalog"
-	@xmlstarlet tr ${PHONEXSLT} ${DB} > ${HTML}/misc/catalog.html
+	@xml tr ${PHONEXSLT} ${DB} > ${HTML}/misc/catalog.html
 
 val: ${DB}
 	@echo '---> Checking group data XML files ... '
 	@-for file in $(GROUPFILES); \
 	do \
-		xmlstarlet val -d schema/istlab-group.dtd $$file > /dev/null 2>xmlval.out; \
+		xml val -d schema/istlab-group.dtd $$file > /dev/null 2>xmlval.out; \
 		if [ $$? != "0" ]; then cat xmlval.out; fi; \
 		rm xmlval.out; \
 	done 
 	@echo '---> Checking member data XML files ...'
 	@-for file in $(MEMBERFILES); \
 	do \
-		xmlstarlet val -d schema/istlab-member.dtd $$file > /dev/null 2>xmlval.out; \
+		xml val -d schema/istlab-member.dtd $$file > /dev/null 2>xmlval.out; \
 		if [ $$? != "0" ]; then cat xmlval.out; fi; \
 		rm xmlval.out; \
 	done
 	@echo '---> Checking project data XML files ...'
 	@-for file in $(PROJECTFILES); \
 	do \
-		xmlstarlet val -d schema/istlab-project.dtd $$file > /dev/null 2>xmlval.out; \
+		xml val -d schema/istlab-project.dtd $$file > /dev/null 2>xmlval.out; \
 		if [ $$? != "0" ]; then cat xmlval.out; fi; \
 		rm xmlval.out; \
 	done
 	@echo '---> Checking additional HTML pages ...'
 	@-for file in $(RELPAGEFILES); \
 	do \
-		xmlstarlet val -d schema/istlab-page.dtd $$file > /dev/null 2>xmlval.out; \
+		xml val -d schema/istlab-page.dtd $$file > /dev/null 2>xmlval.out; \
 		if [ $$? != "0" ]; then cat xmlval.out; fi; \
 		rm xmlval.out; \
 	done
 	@echo '---> Checking db.xml ...'
-	@xmlstarlet val -d schema/istlab.dtd $(DB)
+	@xml val -d schema/istlab.dtd $(DB)
 
 html: ${DB} groups projects members rel_pages publications phone email-lists phd-students
 
@@ -144,35 +144,35 @@ groups: ${DB}
 	@echo "Creating groups"
 	@for group in $(GROUPIDS) ; \
 	do \
-		xmlstarlet tr ${PXSLT} -s today=${TODAY} -s ogroup=$$group -s what=group-details ${DB} >${HTML}/groups/$$group-details.html ; \
-		xmlstarlet tr ${PXSLT} -s today=${TODAY} -s ogroup=$$group -s what=completed-projects ${DB} >${HTML}/groups/$$group-completed-projects.html ; \
-		xmlstarlet tr ${PXSLT} -s today=${TODAY} -s ogroup=$$group -s what=current-projects ${DB} >${HTML}/groups/$$group-current-projects.html ; \
-		xmlstarlet tr ${PXSLT} -s today=${TODAY} -s ogroup=$$group -s what=members ${DB} >${HTML}/groups/$$group-members.html ; \
-		xmlstarlet tr ${PXSLT} -s today=${TODAY} -s ogroup=$$group -s what=alumni ${DB} >${HTML}/groups/$$group-alumni.html ; \
-		xmlstarlet tr ${PXSLT} -s ogroup=$$group -s what=group-publications -s menu=off ${DB} >${HTML}/publications/$$group-publications.html ; \
+		xml tr ${PXSLT} -s today=${TODAY} -s ogroup=$$group -s what=group-details ${DB} >${HTML}/groups/$$group-details.html ; \
+		xml tr ${PXSLT} -s today=${TODAY} -s ogroup=$$group -s what=completed-projects ${DB} >${HTML}/groups/$$group-completed-projects.html ; \
+		xml tr ${PXSLT} -s today=${TODAY} -s ogroup=$$group -s what=current-projects ${DB} >${HTML}/groups/$$group-current-projects.html ; \
+		xml tr ${PXSLT} -s today=${TODAY} -s ogroup=$$group -s what=members ${DB} >${HTML}/groups/$$group-members.html ; \
+		xml tr ${PXSLT} -s today=${TODAY} -s ogroup=$$group -s what=alumni ${DB} >${HTML}/groups/$$group-alumni.html ; \
+		xml tr ${PXSLT} -s ogroup=$$group -s what=group-publications -s menu=off ${DB} >${HTML}/publications/$$group-publications.html ; \
 	done
 
 projects: ${DB}
 	@echo "Creating projects"
 	@for project in $(PROJECTIDS) ; \
 	do \
-		xmlstarlet tr ${PXSLT} -s oproject=$$project -s what=project-details -s menu=off ${DB} >${HTML}/projects/$$project.html ; \
-		xmlstarlet tr ${PXSLT} -s oproject=$$project -s what=project-publications -s menu=off ${DB} >${HTML}/publications/$$project-publications.html ; \
+		xml tr ${PXSLT} -s oproject=$$project -s what=project-details -s menu=off ${DB} >${HTML}/projects/$$project.html ; \
+		xml tr ${PXSLT} -s oproject=$$project -s what=project-publications -s menu=off ${DB} >${HTML}/publications/$$project-publications.html ; \
 	done
 
 members: ${DB}
 	@echo "Creating members"
 	@for member in $(MEMBERIDS) ; \
 	do \
-		xmlstarlet tr ${PXSLT} -s omember=$$member -s what=member-details -s menu=off ${DB} >${HTML}/members/$$member.html ; \
-		xmlstarlet tr ${PXSLT} -s omember=$$member -s what=member-publications -s menu=off ${DB} >${HTML}/publications/$$member-publications.html ; \
+		xml tr ${PXSLT} -s omember=$$member -s what=member-details -s menu=off ${DB} >${HTML}/members/$$member.html ; \
+		xml tr ${PXSLT} -s omember=$$member -s what=member-publications -s menu=off ${DB} >${HTML}/publications/$$member-publications.html ; \
 	done
 
 rel_pages: ${DB}
 	@echo "Creating additional HTML pages"
 	@for page in $(RELPAGEIDS) ; \
 	do \
-		xmlstarlet tr ${PXSLT} -s opage=$$page -s what=rel-pages ${DB} >${HTML}/rel_pages/$$page-page.html ; \
+		xml tr ${PXSLT} -s opage=$$page -s what=rel-pages ${DB} >${HTML}/rel_pages/$$page-page.html ; \
 	done
 
 publications: ${DB}
@@ -181,22 +181,22 @@ publications: ${DB}
 
 phd-students: ${DB}
 	@echo "Creating PhD Students list"
-	@xmlstarlet tr ${STUDXSLT} -s completed=0 ${DB} > ${HTML}/misc/phd-students.html
+	@xml tr ${STUDXSLT} -s completed=0 ${DB} > ${HTML}/misc/phd-students.html
 	@echo "Creating Awarded PhD's list"
-	@xmlstarlet tr ${STUDXSLT} -s completed=1 ${DB} > ${HTML}/misc/awarded-phd-students.html
+	@xml tr ${STUDXSLT} -s completed=1 ${DB} > ${HTML}/misc/awarded-phd-students.html
 
 email-lists: ${DB}
 	@echo "Creating email lists"
 	@for group in $(GROUPIDS) ; \
 	do \
-		xmlstarlet tr ${EMAILXSLT} -s ogroup=$$group -s what=members-all ${DB} > lists/$$group-all.txt ; \
-		xmlstarlet tr ${EMAILXSLT} -s ogroup=$$group -s what=members-phd ${DB} > lists/$$group-phd.txt ; \
-		xmlstarlet tr ${EMAILXSLT} -s ogroup=$$group -s what=members-alumni ${DB} > lists/$$group-alumni.txt ; \
-		xmlstarlet tr ${EMAILXSLT} -s ogroup=$$group -s what=members-gl ${DB} > lists/$$group-gl.txt ; \
+		xml tr ${EMAILXSLT} -s ogroup=$$group -s what=members-all ${DB} > lists/$$group-all.txt ; \
+		xml tr ${EMAILXSLT} -s ogroup=$$group -s what=members-phd ${DB} > lists/$$group-phd.txt ; \
+		xml tr ${EMAILXSLT} -s ogroup=$$group -s what=members-alumni ${DB} > lists/$$group-alumni.txt ; \
+		xml tr ${EMAILXSLT} -s ogroup=$$group -s what=members-gl ${DB} > lists/$$group-gl.txt ; \
 	done
 
 dist: html
-	$(SSH) panos@istlab.dmst.aueb.gr "cd /home/dds/src/istlab-web ; \
+	$(SSH) istlab.dmst.aueb.gr "cd /home/dds/src/istlab-web ; \
 	umask 002 ; \
 	cvs update -d ; \
 	gmake ; \
