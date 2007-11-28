@@ -109,6 +109,11 @@ systems since 4.4 BSD. I recently added a pipe namespace to its FreeBSD implemen
 This allows us to perform scatter gather operations without using temporary files, create non-linear 
 pipelines, and implement file views using symbolic links. 
 </li>
+<li>
+<a href="http://indywikia.sourceforge.net">Indywikia</a> aims to explore
+different ways of browsing the Wikipedia universe, through an intuitive GUI
+application.
+</li>
 </ul>
 </page_body>
 </page>
