@@ -110,7 +110,7 @@ This allows us to perform scatter gather operations without using temporary file
 pipelines, and implement file views using symbolic links. 
 </li>
 <li>
-<a href="http://indywikia.sourceforge.net">Indywikia</a> aims to explore
+<a href="http://indywiki.sourceforge.net">Indywiki</a> aims to explore
 different ways of browsing the Wikipedia universe, through an intuitive GUI
 application.
 </li>
