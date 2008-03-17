@@ -44,8 +44,10 @@ IDXSLT=schema/istlab-ids.xslt
 PHONEXSLT=schema/istlab-phone-catalog.xslt
 # XSLT file for the email list
 EMAILXSLT=schema/istlab-email-list.xslt
-#XSLT file for phd-students
+# XSLT file for phd-students
 STUDXSLT=schema/istlab-phd-list.xslt
+# XSLT file for reports
+REPORTXSLT=schema/istlab-report.xslt
 # Today' date in ISO format
 TODAY=$(shell date +'%Y%m%d')
 # Fetch the ids
@@ -98,6 +100,7 @@ clean:
 		${HTML}/members/* \
 		${HTML}/rel_pages/* \
 		${HTML}/misc/* \
+		${HTML}/reports/* \
 		${HTML}/publications/* 2>/dev/null
 	-rm -f public_html/images/colgraph.svg
 	-rm -f *.aux
@@ -154,6 +157,7 @@ report: ${DB}
 		perl tools/typeyear.pl data/publications/techreport.bib $$year > build/$$year-techreport.aux ; \
 		perl tools/typeyear.pl data/publications/whitepaper.bib $$year > build/$$year-whitepaper.aux ; \
 		perl tools/typeyear.pl data/publications/workingpaper.bib $$year > build/$$year-workingpaper.aux ; \
+		xml tr ${REPORTXSLT} -s year=$$year ${DB} > ${HTML}/reports/istlab-report-$$year.html ; \
 		year=`expr $$year + 1`; \
 	done
 
