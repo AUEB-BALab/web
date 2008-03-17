@@ -55,6 +55,8 @@ MEMBERIDS=$(shell xml tr ${IDXSLT} -s category=member ${DB})
 RELPAGEIDS=$(shell xml tr ${IDXSLT} -s category=page ${DB})
 # HTML output directory
 HTML=public_html
+# yearly report
+CURRENT_YEAR=$(shell date +'%Y')
 
 all: html
 
@@ -138,7 +140,22 @@ val: ${DB}
 	@echo '---> Checking db.xml ...'
 	@xml val -d schema/istlab.dtd $(DB)
 
-html: ${DB} groups projects members rel_pages publications phone email-lists phd-students
+html: ${DB} groups projects members rel_pages publications phone email-lists phd-students report
+
+report: ${DB}
+	@echo "Creating ISTLab reports"
+	@year=2002 ; \
+	while [[ $$year -le $(CURRENT_YEAR) ]] ; \
+	do \
+		perl tools/typeyear.pl data/publications/article.bib $$year > build/$$year-article.aux ; \
+		perl tools/typeyear.pl data/publications/book.bib $$year > build/$$year-book.aux ; \
+		perl tools/typeyear.pl data/publications/incollection.bib $$year > build/$$year-incollection.aux ; \
+		perl tools/typeyear.pl data/publications/inproceedings.bib $$year > build/$$year-inproceedings.aux ; \
+		perl tools/typeyear.pl data/publications/techreport.bib $$year > build/$$year-techreport.aux ; \
+		perl tools/typeyear.pl data/publications/whitepaper.bib $$year > build/$$year-whitepaper.aux ; \
+		perl tools/typeyear.pl data/publications/workingpaper.bib $$year > build/$$year-workingpaper.aux ; \
+		year=`expr $$year + 1`; \
+	done
 
 groups: ${DB}
 	@echo "Creating groups"
