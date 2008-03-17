@@ -2,6 +2,8 @@
 #
 # $Id$
 #
+# Author: Diomidis Spinellis (dds@aueb.gr)
+#
 # Split publications by year
 #
 
