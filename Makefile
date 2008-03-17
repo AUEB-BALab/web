@@ -48,6 +48,7 @@ EMAILXSLT=schema/istlab-email-list.xslt
 STUDXSLT=schema/istlab-phd-list.xslt
 # XSLT file for reports
 REPORTXSLT=schema/istlab-report.xslt
+REPIDXXSLT=schema/istlab-report-index.xslt
 # Today' date in ISO format
 TODAY=$(shell date +'%Y%m%d')
 # Fetch the ids
@@ -159,7 +160,9 @@ report: ${DB}
 		perl tools/typeyear.pl data/publications/workingpaper.bib $$year > build/$$year-workingpaper.aux ; \
 		xml tr ${REPORTXSLT} -s year=$$year ${DB} > ${HTML}/reports/istlab-report-$$year.html ; \
 		year=`expr $$year + 1`; \
-	done
+	done ; \
+	cd public_html/reports ; xml ls > ../../build/ls.xml ; cd - ; \
+	xml tr ${REPIDXXSLT} build/ls.xml > ${HTML}/reports/index.html
 
 groups: ${DB}
 	@echo "Creating groups"
