@@ -100,7 +100,13 @@
 		<a name="phd"></a>
 		<div class="title">Completed PhDs</div>
 		<div class="content">
-			
+			<ul>
+			<xsl:for-each select="current()/member_list/member">
+				<xsl:if test="starts-with(current()/phd-info/@enddate,$year)">
+					<xsl:apply-templates select="current()" />
+				</xsl:if>
+			</xsl:for-each>
+			</ul>			
 		</div>
 		
 		<a name="pubs"></a>
