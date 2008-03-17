@@ -27,6 +27,7 @@
 <!ATTLIST member
 	id ID #REQUIRED
 	group CDATA #REQUIRED
+	joined CDATA #IMPLIED
 >
 <!ELEMENT givenname (#PCDATA)>
 <!ELEMENT surname (#PCDATA)>
@@ -49,6 +50,7 @@
 	supervisor ID #IMPLIED
 	supervisor-external CDATA #IMPLIED
 	startdate CDATA #REQUIRED
+	enddate CDATA #IMPLIED
 >
 
 <!ELEMENT phd-title (#PCDATA)>

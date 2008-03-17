@@ -26,7 +26,7 @@ Linux Users Group. His research interests include: Computer Information
 Security, Telemetry, Low Power Computing and Real Time Operating Systems
       </p>
 	</shortcv>
-	<phd-info completed="1" supervisor="m_dds" startdate="20031114">
+	<phd-info completed="1" supervisor="m_dds" startdate="20031114" enddate="20070820">
 		<phd-title>Security applications of p2p networks</phd-title>
 		<phd-summary>
 			Open networks are often insecure and provide an opportunity for viruses and DDOS activities to spread. To make such networks more resilient against these kind of threats, we propose the use of a peer-to-peer architecture whereby each peer is responsible for: (a) detecting whether a virus or worm is uncontrollably propagating through the network resulting in an epidemic; (b) automatically dispatching warnings and information to other peers of a security-focused group; and (c) taking specific precautions for protecting their host by automatically hardening their security measures during the epidemic. This can lead to auto-adaptive secure operating systems that automatically change the trust level of the services they provide.

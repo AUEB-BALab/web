@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<member id="m_elpidap" group="g_istlab g_iris">
+<member id="m_elpidap" group="g_istlab g_iris" joined="20020101">
 	<givenname>Elpida</givenname>
 	<surname>Prasopoulou</surname>
 	<memb_title>Ms.</memb_title>
@@ -15,7 +15,7 @@
 </p>
 
 	</shortcv>
-<phd-info completed="0" supervisor="m_pouloudi" startdate="2002">
+<phd-info completed="0" supervisor="m_pouloudi" startdate="20020101">
 		<phd-title>Information technology as a vehicle for the modernization of the state: The case of TAXIS</phd-title>
 		<phd-summary>
 			

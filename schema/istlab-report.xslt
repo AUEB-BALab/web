@@ -22,7 +22,23 @@
 		</li>
 	</xsl:template>
 	
-	<!-- main transformation -->
+	<!-- Format a member reference {{{1 -->
+	<xsl:template match="member">
+		<xsl:if test="count(alumnus) = 0">
+		<li>
+		<a href="../members/{@id}.html">
+		<xsl:value-of select="givenname" />
+		<xsl:text> </xsl:text>
+		<xsl:value-of select="surname" />
+		</a>
+		<xsl:if test="count(current()/phd-info) = 1">
+			<xsl:text>(PhD student)</xsl:text>
+		</xsl:if>
+		</li>
+		</xsl:if>
+	</xsl:template>
+	
+	<!-- main transformation {{{1 -->
 	<xsl:template match="istlab">
 		<html>
 		<head>
@@ -72,7 +88,13 @@
 		<a name="members"></a>
 		<div class="title">New Members</div>
 		<div class="content">
-			
+			<ul>
+			<xsl:for-each select="current()/member_list/member">
+				<xsl:if test="starts-with(current()/@joined,$year)">
+					<xsl:apply-templates select="current()" />
+				</xsl:if>
+			</xsl:for-each>
+			</ul>
 		</div>
 		
 		<a name="phd"></a>

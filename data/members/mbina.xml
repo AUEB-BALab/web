@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<member id="m_mbina" group="g_istlab g_wrc">
+<member id="m_mbina" group="g_istlab g_wrc" joined="20040301">
 	<givenname>Mary</givenname>
 	<surname>Bina</surname>
 	<memb_title>Mrs.</memb_title>
@@ -16,7 +16,7 @@
 	She is also a member of the Technical Chamber of Greece.
       </p>
 	</shortcv>
-	<phd-info completed="0" supervisor="m_giaglis" startdate="20040301">
+	<phd-info completed="1" supervisor="m_giaglis" startdate="20040301">
 			<phd-title>A Socio-Economic Perspective in Community-based WLANs Research</phd-title>
 			<phd-summary>
 				This phD research attempts a two-fold approach of Community-based WLANs: 

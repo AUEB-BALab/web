@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<member id="m_markos" group="g_istlab g_sense">
+<member id="m_markos" group="g_istlab g_sense" joined="20060901">
 	<givenname>Markos</givenname>
 	<surname>Gogoulos</surname>
 	<memb_title>Mr.</memb_title>
@@ -8,7 +8,7 @@
 		<office_phone>+30 210 8203370</office_phone>
 	<!-- <mobile_phone>Optional</mobile_phone> -->
 	<fax>+30 210 8203370</fax>
-	<!--	<alumnus/> --><!-- Optional -->
+	<alumnus/><!-- Optional -->
 	<!-- <office_address></office_address> -->
 	<postal_address>Patission 76, Athens</postal_address>
 	<!-- <photo>Optional</photo> -->
