@@ -13,6 +13,16 @@
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 	<xsl:param name="year"/> <!-- possible options of group -->
 	
+	<!-- Format a project reference {{{1 -->
+	<xsl:template match="project">
+		<li>
+		<a href="../projects/{@id}.html">
+			<xsl:value-of select="shortname" /> - <xsl:value-of select="projtitle" />
+		</a>
+		</li>
+	</xsl:template>
+	
+	<!-- main transformation -->
 	<xsl:template match="istlab">
 		<html>
 		<head>
@@ -38,13 +48,25 @@
 		<a name="cprojects"></a>
 		<div class="title">Completed Projects</div>
 		<div class="content">
-			
+			<ul>
+			<xsl:for-each select="current()/project_list/project">
+				<xsl:if test="starts-with(current()/enddate,$year)">
+					<xsl:apply-templates select="current()" />
+				</xsl:if>
+			</xsl:for-each>
+			</ul>
 		</div>
 		
 		<a name="nprojects"></a>
 		<div class="title">New Projects</div>
 		<div class="content">
-			
+			<ul>
+			<xsl:for-each select="current()/project_list/project">
+				<xsl:if test="starts-with(current()/startdate,$year)">
+					<xsl:apply-templates select="current()" />
+				</xsl:if>
+			</xsl:for-each>
+			</ul>			
 		</div>
 		
 		<a name="members"></a>
