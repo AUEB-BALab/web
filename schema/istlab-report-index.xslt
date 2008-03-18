@@ -23,11 +23,11 @@
 		</head>
 		<body margin-left="0" margin-top="0">
 		<div class="logo"><a href="http://istlab.dmst.aueb.gr/"><img src="../images/istlab-s.jpg" alt="ISTLab" align="middle" border="0" /></a></div>
-		<div class="projecttitle">ISTLab yearly reports</div>
+		<div class="projecttitle">ISTLab Yearly Reports</div>
 		<ul>
 		<xsl:for-each select="f">
 			<xsl:if test="starts-with(current()/@n,'istlab')">
-				<li><a href="{current()/@n}"><xsl:value-of select="current()/@n" /></a></li>
+				<li><a href="{current()/@n}"><xsl:value-of select="substring(current()/@n, 1, string-length(current()/@n) - 5)" /></a></li>
 			</xsl:if>
 		</xsl:for-each>
 		</ul>
