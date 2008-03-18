@@ -32,7 +32,7 @@
 		<xsl:value-of select="surname" />
 		</a>
 		<xsl:if test="count(current()/phd-info) = 1">
-			<xsl:text>(PhD student)</xsl:text>
+			<xsl:text> (PhD student)</xsl:text>
 		</xsl:if>
 		</li>
 		</xsl:if>
