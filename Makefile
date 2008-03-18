@@ -158,7 +158,14 @@ report: ${DB}
 		perl tools/typeyear.pl data/publications/techreport.bib $$year > build/$$year-techreport.aux ; \
 		perl tools/typeyear.pl data/publications/whitepaper.bib $$year > build/$$year-whitepaper.aux ; \
 		perl tools/typeyear.pl data/publications/workingpaper.bib $$year > build/$$year-workingpaper.aux ; \
-		xml tr ${REPORTXSLT} -s year=$$year ${DB} > ${HTML}/reports/istlab-report-$$year.html ; \
+		xml tr ${REPORTXSLT} -s year=$$year -s cyear=$(CURRENT_YEAR) ${DB} > ${HTML}/reports/istlab-report-$$year.html ; \
+		perl tools/bib2html -c -r -s empty build/$$year-article.aux build/$$year-article.html ; \
+		perl tools/bib2html -c -r -s empty build/$$year-book.aux build/$$year-book.html ; \
+		perl tools/bib2html -c -r -s empty build/$$year-incollection.aux build/$$year-incollection.html ; \
+		perl tools/bib2html -c -r -s empty build/$$year-inproceedings.aux build/$$year-inproceedings.html ; \
+		perl tools/bib2html -c -r -s empty build/$$year-techreport.aux build/$$year-techreport.html ; \
+		perl tools/bib2html -c -r -s empty build/$$year-whitepaper.aux build/$$year-whitepaper.html ; \
+		perl tools/bib2html -c -r -s empty build/$$year-workingpaper.aux build/$$year-workingpaper.html ; \
 		year=`expr $$year + 1`; \
 	done ; \
 	cd public_html/reports ; xml ls > ../../build/ls.xml ; cd - ; \

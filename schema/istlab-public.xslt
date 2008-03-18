@@ -563,50 +563,6 @@
 			</xsl:if>
 		</div>
 	</xsl:template>
-	
-	<!-- presentation reference {{{1-->
-	<xsl:template match="presentation" mode="ref">
-		<xsl:if test="string-length(current()/@by) > 0">
-			<xsl:for-each select="/istlab/member_list/member [contains(@id,current()/@by)]">
-				<xsl:apply-templates select="current()" mode="pub-ref"/><br />
-			</xsl:for-each>
-		</xsl:if>
-		<xsl:if test="count(pres_name) != 0">
-			<xsl:value-of select="pres_name" />
-			<br />
-		</xsl:if>
-		<xsl:value-of select="pres_title"/>
-		<br />
-	</xsl:template>
-	
-	<xsl:template match="presentation" mode="full">
-		<table class="content">
-		<tr>
-		<td valign="top"><b>Title:</b></td>
-		<td><a href="{pres_url}"><xsl:value-of select="pres_title"/></a></td>
-		</tr>
-		<tr>
-		<td valign="top" nowrap="1"><b>Presented by:</b></td>
-		<td>
-		<xsl:if test="string-length(current()/@by) > 0">
-			<xsl:for-each select="/istlab/member_list/member [contains(@id,current()/@by)]">
-				<xsl:apply-templates select="current()" mode="pub-ref"/><br />
-			</xsl:for-each>
-		</xsl:if>
-		<xsl:if test="count(pres_name) != 0">
-			<xsl:value-of select="pres_name" />
-		</xsl:if>
-		</td>
-		</tr>
-		<xsl:if test="count(pres_summary) != 0">
-			<tr>
-			<td valign="top"><b>Summary:</b></td>
-			<td><xsl:copy-of select="pres_summary"/></td>
-			</tr>
-		</xsl:if>
-		</table>
-		<br/><br />
-	</xsl:template>
 
 	<!-- page transformation {{{1-->
 	<xsl:template match="page" mode="full">
