@@ -166,6 +166,7 @@ report: ${DB}
 		perl tools/bib2html -c -r -s empty build/$$year-techreport.aux build/$$year-techreport.html ; \
 		perl tools/bib2html -c -r -s empty build/$$year-whitepaper.aux build/$$year-whitepaper.html ; \
 		perl tools/bib2html -c -r -s empty build/$$year-workingpaper.aux build/$$year-workingpaper.html ; \
+		perl tools/prepare-pubs.pl $$year ; \
 		year=`expr $$year + 1`; \
 	done ; \
 	cd public_html/reports ; xml ls > ../../build/ls.xml ; cd ../.. ; \
