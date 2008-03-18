@@ -144,7 +144,7 @@ val: ${DB}
 	@echo '---> Checking db.xml ...'
 	@xml val -d schema/istlab.dtd $(DB)
 
-html: ${DB} groups projects members rel_pages publications phone email-lists phd-students report
+html: ${DB} groups projects members rel_pages publications phone email-lists phd-students
 
 report: ${DB}
 	@echo "Creating ISTLab reports"
@@ -168,7 +168,7 @@ report: ${DB}
 		perl tools/bib2html -c -r -s empty build/$$year-workingpaper.aux build/$$year-workingpaper.html ; \
 		year=`expr $$year + 1`; \
 	done ; \
-	cd public_html/reports ; xml ls > ../../build/ls.xml ; cd - ; \
+	cd public_html/reports ; xml ls > ../../build/ls.xml ; cd ../.. ; \
 	xml tr ${REPIDXXSLT} build/ls.xml > ${HTML}/reports/index.html
 
 groups: ${DB}
