@@ -149,7 +149,7 @@ html: ${DB} groups projects members rel_pages publications phone email-lists phd
 report: ${DB}
 	@echo "Creating ISTLab reports"
 	@year=2002 ; \
-	while [[ $$year -le $(CURRENT_YEAR) ]] ; \
+	while `test $$year -le $(CURRENT_YEAR)` ; \
 	do \
 		perl tools/typeyear.pl data/publications/article.bib $$year > build/$$year-article.aux ; \
 		perl tools/typeyear.pl data/publications/book.bib $$year > build/$$year-book.aux ; \
