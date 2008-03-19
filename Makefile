@@ -232,7 +232,7 @@ dist: html
 	umask 002 ; \
 	cvs update -d ; \
 	gmake ; \
-	tar -C $(HTML) -cf - . | tar -U -C /home/dds/web/istlab/content -xf -"
+	tar -C $(HTML) -cf - . | tar -mU -C /home/dds/web/istlab/content -xf -"
 
 stats:
 	@$(SHELL) tools/stats.sh
