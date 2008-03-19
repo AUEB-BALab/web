@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<project id="p_eTransport" group="g_istlab g_wrc" scientific_coordinator="m_giaglis" contact="m_alextsiaousis" international="no" type="rtd" project_manager="m_alextsiaousis">
+	<shortname>e-Transport</shortname>
+	<projtitle>Development of a system that combines electronic tickets, customer loyalty and physical acess control services for transportation.</projtitle>
+	<startdate>20060301</startdate>
+	<enddate>20071130</enddate>
+	<!--<web_site>http://www.mobinet.gr</web_site>-->
+	<!--<our_budget>328,627 EUR</our_budget>-->
+	<!--<total_budget>3,493,834 EUR</total_budget>-->
+	<funding_agency>General Secretariat of Research and Technology</funding_agency>
+	<funding_programme>Operational Programme "Competitiveness" (EPAN)</funding_programme>
+	<!--<project_code>Action 8.3.6</project_code>-->
+	<partner>
+		<shortname>Inform P. Lykos</shortname>
+		<country>EL</country>
+		<!--<web_site>http://www.voiceweb.gr/</web_site>-->
+	</partner>
+			
+	<!--<logo>../images/p_mexpress.gif</logo>-->
+	<description>
+The project involves the  development of an integrated platform (e-transport) that provides the issue and reservation of electronic tickets. Tickets can be purchased from pre-defined kiosks through the use of smart cards.  
+The platform increases customer loyalty and serves as an access control provider to ensure enhanced security levels, with the employment of Radio Frequency IDentification (RFID) and smart card technologies. 
+The e-transport platform is constituted by three main parts:<ol>
+<li>Core information system</li><li>
+Smart cards</li><li>
+Ticket Kiosks</li></ol>
+
+The e-transport's advantages apply in several forms of transportation. In particular, the e-transport platform can be used in naval shipping, where companies can benefit from e-transport considering the frequent itineraries taking place daily. The same advantages apply in railway as well, especially in routes involving cabins. 
+The end users of e-transport are not solely the aforementioned providers but most of all are the travelers that can benefit from the use of e-transport's services in terms of enhanced quality of service and security.
+
+
+	</description>
+</project>
+

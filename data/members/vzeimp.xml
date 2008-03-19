@@ -18,7 +18,7 @@ Vasileios, holds a BEng(Hons) in Telecommunications Engineering from the Univers
 <p>
 Vasileios is Member of the European Technical Chamber (FEANI), of the Technical Chamber of Greece, of the Institute of Electrical &amp; Electronic Engineers (MIEEE), of the Institute of Electrical Engineers (MIEE), of the Hellenic Logistics Organisation (SOLE/EEL), of the Hellenic Management Association, and of the Institute of Operations Management.</p>
 </shortcv>
-	<phd-info completed="0" supervisor="m_giaglis" startdate="20021101">
+	<phd-info completed="1" supervisor="m_giaglis" startdate="20021101" enddate="20080218">
 		<phd-title>Design and Evaluation of a Real-time Fleet Management System for Dynamic Incident Handling in Urban Freight Distributions</phd-title>
 		<phd-summary>In urban freight movement a good, near-optimal, distribution plan is necessary but not sufficient for high performance distribution. This is mainly due to the probabilistic factors that urban movement depends on, such as high levels of traffic congestion, weather conditions, tight delivery time windows, vehicle breakdowns, unexpected events and so on. The aim of this PhD thesis is the design and evaluation of a real-time fleet management system that handles in a dyanmic way unexpected events during urban freight distribution so as to reduce delivery delays and increase customer service. 
 		</phd-summary>
