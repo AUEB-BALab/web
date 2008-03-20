@@ -75,25 +75,18 @@
 		<div class="title">Publications</div>
 		<div class="content">
 		
-		<h2>Monographs and Edited Volumes</h2>
 		<xsl:text>&#10;[book]&#10;</xsl:text>
 		
-		<h2>Journal Articles</h2>
 		<xsl:text>&#10;[article]&#10;</xsl:text>
 		
-		<h2>Book Chapters</h2>
 		<xsl:text>&#10;[incollection]&#10;</xsl:text>
 		
-		<h2>Conference Publications</h2>
 		<xsl:text>&#10;[inproceedings]&#10;</xsl:text>
 		
-		<h2>Technical Reports</h2>
 		<xsl:text>&#10;[techreport]&#10;</xsl:text>
 		
-		<h2>White Papers</h2>
 		<xsl:text>&#10;[whitepaper]&#10;</xsl:text>
 		
-		<h2>Working Papers</h2>
 		<xsl:text>&#10;[workingpaper]&#10;</xsl:text>
 			
 		</div>
