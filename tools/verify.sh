@@ -22,5 +22,5 @@ EOF
 		exit 1
 	fi
 done
-rm -f verify.blg verify.bbl verify.aux errors.txt
+rm -f verify.blg verify.bbl verify.aux
 exit 0
