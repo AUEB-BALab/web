@@ -144,7 +144,7 @@ val: ${DB}
 	@echo '---> Checking db.xml ...'
 	@xml val -d schema/istlab.dtd $(DB)
 
-html: ${DB} groups projects members rel_pages publications phone email-lists phd-students report
+html: verify ${DB} groups projects members rel_pages publications phone email-lists phd-students report
 
 report: ${DB}
 	@echo "Creating ISTLab reports"
@@ -242,3 +242,6 @@ colgraph: $(HTML)/images/colgraph.svg
 $(HTML)/images/colgraph.svg: tools/colgraph.sh $(BIBFILES)
 	$(SHELL) tools/colgraph.sh >build/colgraph.neato
 	neato build/colgraph.neato -Tsvg -o$@
+
+verify:
+	sh tools/verify.sh
