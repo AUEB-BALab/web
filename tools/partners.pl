@@ -1,0 +1,278 @@
+#/usr/bin/perl
+#
+# Produce an HTML report of the partners by country
+#
+# $Id$
+#
+# Run as perl partners.pl data/projects/*.xml
+#
+
+init_cc();
+
+while (<>) {
+	if (/<partner>/ .. /<\/partner>/) {
+		$name = $1 if (/<shortname>([^<]*)<\/shortname>/);
+		$partner{$1}{$name} = 1 if (/<country>([^<]*)<\/country>/);
+	}
+}
+
+for $c (sort keys %partner) {
+	print "<h3>$fc{$c}</h3><ul>\n";
+	for $n (sort keys %{$partner{$c}}) {
+		print "<li>$n</li>\n";
+	}
+	print "</ul>";
+}
+
+# See http://www.iso.org/iso/country_codes/iso_3166_code_lists.htm
+#
+sub
+init_cc
+{
+	$fc{'AF'} = 'AFGHANISTAN';
+	$fc{'AX'} = 'ALAND ISLANDS';
+	$fc{'AL'} = 'ALBANIA';
+	$fc{'DZ'} = 'ALGERIA';
+	$fc{'AS'} = 'AMERICAN SAMOA';
+	$fc{'AD'} = 'ANDORRA';
+	$fc{'AO'} = 'ANGOLA';
+	$fc{'AI'} = 'ANGUILLA';
+	$fc{'AQ'} = 'ANTARCTICA';
+	$fc{'AG'} = 'ANTIGUA AND BARBUDA';
+	$fc{'AR'} = 'ARGENTINA';
+	$fc{'AM'} = 'ARMENIA';
+	$fc{'AW'} = 'ARUBA';
+	$fc{'AU'} = 'AUSTRALIA';
+	$fc{'AT'} = 'AUSTRIA';
+	$fc{'AZ'} = 'AZERBAIJAN';
+	$fc{'BS'} = 'BAHAMAS';
+	$fc{'BH'} = 'BAHRAIN';
+	$fc{'BD'} = 'BANGLADESH';
+	$fc{'BB'} = 'BARBADOS';
+	$fc{'BY'} = 'BELARUS';
+	$fc{'BE'} = 'BELGIUM';
+	$fc{'BZ'} = 'BELIZE';
+	$fc{'BJ'} = 'BENIN';
+	$fc{'BM'} = 'BERMUDA';
+	$fc{'BT'} = 'BHUTAN';
+	$fc{'BO'} = 'BOLIVIA';
+	$fc{'BA'} = 'BOSNIA AND HERZEGOVINA';
+	$fc{'BW'} = 'BOTSWANA';
+	$fc{'BV'} = 'BOUVET ISLAND';
+	$fc{'BR'} = 'BRAZIL';
+	$fc{'IO'} = 'BRITISH INDIAN OCEAN TERRITORY';
+	$fc{'BN'} = 'BRUNEI DARUSSALAM';
+	$fc{'BG'} = 'BULGARIA';
+	$fc{'BF'} = 'BURKINA FASO';
+	$fc{'BI'} = 'BURUNDI';
+	$fc{'KH'} = 'CAMBODIA';
+	$fc{'CM'} = 'CAMEROON';
+	$fc{'CA'} = 'CANADA';
+	$fc{'CV'} = 'CAPE VERDE';
+	$fc{'KY'} = 'CAYMAN ISLANDS';
+	$fc{'CF'} = 'CENTRAL AFRICAN REPUBLIC';
+	$fc{'TD'} = 'CHAD';
+	$fc{'CL'} = 'CHILE';
+	$fc{'CN'} = 'CHINA';
+	$fc{'CX'} = 'CHRISTMAS ISLAND';
+	$fc{'CC'} = 'COCOS (KEELING) ISLANDS';
+	$fc{'CO'} = 'COLOMBIA';
+	$fc{'KM'} = 'COMOROS';
+	$fc{'CG'} = 'CONGO';
+	$fc{'CD'} = 'CONGO, THE DEMOCRATIC REPUBLIC OF THE';
+	$fc{'CK'} = 'COOK ISLANDS';
+	$fc{'CR'} = 'COSTA RICA';
+	$fc{'CI'} = "COTE D'IVOIRE";
+	$fc{'HR'} = 'CROATIA';
+	$fc{'CU'} = 'CUBA';
+	$fc{'CY'} = 'CYPRUS';
+	$fc{'CZ'} = 'CZECH REPUBLIC';
+	$fc{'DK'} = 'DENMARK';
+	$fc{'DJ'} = 'DJIBOUTI';
+	$fc{'DM'} = 'DOMINICA';
+	$fc{'DO'} = 'DOMINICAN REPUBLIC';
+	$fc{'EC'} = 'ECUADOR';
+	$fc{'EG'} = 'EGYPT';
+	$fc{'SV'} = 'EL SALVADOR';
+	$fc{'GQ'} = 'EQUATORIAL GUINEA';
+	$fc{'ER'} = 'ERITREA';
+	$fc{'EE'} = 'ESTONIA';
+	$fc{'ET'} = 'ETHIOPIA';
+	$fc{'FK'} = 'FALKLAND ISLANDS (MALVINAS)';
+	$fc{'FO'} = 'FAROE ISLANDS';
+	$fc{'FJ'} = 'FIJI';
+	$fc{'FI'} = 'FINLAND';
+	$fc{'FR'} = 'FRANCE';
+	$fc{'GF'} = 'FRENCH GUIANA';
+	$fc{'PF'} = 'FRENCH POLYNESIA';
+	$fc{'TF'} = 'FRENCH SOUTHERN TERRITORIES';
+	$fc{'GA'} = 'GABON';
+	$fc{'GM'} = 'GAMBIA';
+	$fc{'GE'} = 'GEORGIA';
+	$fc{'DE'} = 'GERMANY';
+	$fc{'GH'} = 'GHANA';
+	$fc{'GI'} = 'GIBRALTAR';
+	$fc{'GR'} = 'GREECE';
+	$fc{'GL'} = 'GREENLAND';
+	$fc{'GD'} = 'GRENADA';
+	$fc{'GP'} = 'GUADELOUPE';
+	$fc{'GU'} = 'GUAM';
+	$fc{'GT'} = 'GUATEMALA';
+	$fc{'GG'} = 'GUERNSEY';
+	$fc{'GN'} = 'GUINEA';
+	$fc{'GW'} = 'GUINEA-BISSAU';
+	$fc{'GY'} = 'GUYANA';
+	$fc{'HT'} = 'HAITI';
+	$fc{'HM'} = 'HEARD ISLAND AND MCDONALD ISLANDS';
+	$fc{'VA'} = 'HOLY SEE (VATICAN CITY STATE)';
+	$fc{'HN'} = 'HONDURAS';
+	$fc{'HK'} = 'HONG KONG';
+	$fc{'HU'} = 'HUNGARY';
+	$fc{'IS'} = 'ICELAND';
+	$fc{'IN'} = 'INDIA';
+	$fc{'ID'} = 'INDONESIA';
+	$fc{'IR'} = 'IRAN, ISLAMIC REPUBLIC OF';
+	$fc{'IQ'} = 'IRAQ';
+	$fc{'IE'} = 'IRELAND';
+	$fc{'IM'} = 'ISLE OF MAN';
+	$fc{'IL'} = 'ISRAEL';
+	$fc{'IT'} = 'ITALY';
+	$fc{'JM'} = 'JAMAICA';
+	$fc{'JP'} = 'JAPAN';
+	$fc{'JE'} = 'JERSEY';
+	$fc{'JO'} = 'JORDAN';
+	$fc{'KZ'} = 'KAZAKHSTAN';
+	$fc{'KE'} = 'KENYA';
+	$fc{'KI'} = 'KIRIBATI';
+	$fc{'KP'} = "KOREA, DEMOCRATIC PEOPLE'S REPUBLIC OF";
+	$fc{'KR'} = 'KOREA, REPUBLIC OF';
+	$fc{'KW'} = 'KUWAIT';
+	$fc{'KG'} = 'KYRGYZSTAN';
+	$fc{'LA'} = "LAO PEOPLE'S DEMOCRATIC REPUBLIC";
+	$fc{'LV'} = 'LATVIA';
+	$fc{'LB'} = 'LEBANON';
+	$fc{'LS'} = 'LESOTHO';
+	$fc{'LR'} = 'LIBERIA';
+	$fc{'LY'} = 'LIBYAN ARAB JAMAHIRIYA';
+	$fc{'LI'} = 'LIECHTENSTEIN';
+	$fc{'LT'} = 'LITHUANIA';
+	$fc{'LU'} = 'LUXEMBOURG';
+	$fc{'MO'} = 'MACAO';
+	$fc{'MK'} = 'MACEDONIA, THE FORMER YUGOSLAV REPUBLIC OF';
+	$fc{'MG'} = 'MADAGASCAR';
+	$fc{'MW'} = 'MALAWI';
+	$fc{'MY'} = 'MALAYSIA';
+	$fc{'MV'} = 'MALDIVES';
+	$fc{'ML'} = 'MALI';
+	$fc{'MT'} = 'MALTA';
+	$fc{'MH'} = 'MARSHALL ISLANDS';
+	$fc{'MQ'} = 'MARTINIQUE';
+	$fc{'MR'} = 'MAURITANIA';
+	$fc{'MU'} = 'MAURITIUS';
+	$fc{'YT'} = 'MAYOTTE';
+	$fc{'MX'} = 'MEXICO';
+	$fc{'FM'} = 'MICRONESIA, FEDERATED STATES OF';
+	$fc{'MD'} = 'MOLDOVA, REPUBLIC OF';
+	$fc{'MC'} = 'MONACO';
+	$fc{'MN'} = 'MONGOLIA';
+	$fc{'ME'} = 'MONTENEGRO';
+	$fc{'MS'} = 'MONTSERRAT';
+	$fc{'MA'} = 'MOROCCO';
+	$fc{'MZ'} = 'MOZAMBIQUE';
+	$fc{'MM'} = 'MYANMAR';
+	$fc{'NA'} = 'NAMIBIA';
+	$fc{'NR'} = 'NAURU';
+	$fc{'NP'} = 'NEPAL';
+	$fc{'NL'} = 'NETHERLANDS';
+	$fc{'AN'} = 'NETHERLANDS ANTILLES';
+	$fc{'NC'} = 'NEW CALEDONIA';
+	$fc{'NZ'} = 'NEW ZEALAND';
+	$fc{'NI'} = 'NICARAGUA';
+	$fc{'NE'} = 'NIGER';
+	$fc{'NG'} = 'NIGERIA';
+	$fc{'NU'} = 'NIUE';
+	$fc{'NF'} = 'NORFOLK ISLAND';
+	$fc{'MP'} = 'NORTHERN MARIANA ISLANDS';
+	$fc{'NO'} = 'NORWAY';
+	$fc{'OM'} = 'OMAN';
+	$fc{'PK'} = 'PAKISTAN';
+	$fc{'PW'} = 'PALAU';
+	$fc{'PS'} = 'PALESTINIAN TERRITORY, OCCUPIED';
+	$fc{'PA'} = 'PANAMA';
+	$fc{'PG'} = 'PAPUA NEW GUINEA';
+	$fc{'PY'} = 'PARAGUAY';
+	$fc{'PE'} = 'PERU';
+	$fc{'PH'} = 'PHILIPPINES';
+	$fc{'PN'} = 'PITCAIRN';
+	$fc{'PL'} = 'POLAND';
+	$fc{'PT'} = 'PORTUGAL';
+	$fc{'PR'} = 'PUERTO RICO';
+	$fc{'QA'} = 'QATAR';
+	$fc{'RE'} = 'REUNION';
+	$fc{'RO'} = 'ROMANIA';
+	$fc{'RU'} = 'RUSSIAN FEDERATION';
+	$fc{'RW'} = 'RWANDA';
+	$fc{'BL'} = 'SAINT BARTHELEMY';
+	$fc{'SH'} = 'SAINT HELENA';
+	$fc{'KN'} = 'SAINT KITTS AND NEVIS';
+	$fc{'LC'} = 'SAINT LUCIA';
+	$fc{'MF'} = 'SAINT MARTIN';
+	$fc{'PM'} = 'SAINT PIERRE AND MIQUELON';
+	$fc{'VC'} = 'SAINT VINCENT AND THE GRENADINES';
+	$fc{'WS'} = 'SAMOA';
+	$fc{'SM'} = 'SAN MARINO';
+	$fc{'ST'} = 'SAO TOME AND PRINCIPE';
+	$fc{'SA'} = 'SAUDI ARABIA';
+	$fc{'SN'} = 'SENEGAL';
+	$fc{'RS'} = 'SERBIA';
+	$fc{'SC'} = 'SEYCHELLES';
+	$fc{'SL'} = 'SIERRA LEONE';
+	$fc{'SG'} = 'SINGAPORE';
+	$fc{'SK'} = 'SLOVAKIA';
+	$fc{'SI'} = 'SLOVENIA';
+	$fc{'SB'} = 'SOLOMON ISLANDS';
+	$fc{'SO'} = 'SOMALIA';
+	$fc{'ZA'} = 'SOUTH AFRICA';
+	$fc{'GS'} = 'SOUTH GEORGIA AND THE SOUTH SANDWICH ISLANDS';
+	$fc{'ES'} = 'SPAIN';
+	$fc{'LK'} = 'SRI LANKA';
+	$fc{'SD'} = 'SUDAN';
+	$fc{'SR'} = 'SURINAME';
+	$fc{'SJ'} = 'SVALBARD AND JAN MAYEN';
+	$fc{'SZ'} = 'SWAZILAND';
+	$fc{'SE'} = 'SWEDEN';
+	$fc{'CH'} = 'SWITZERLAND';
+	$fc{'SY'} = 'SYRIAN ARAB REPUBLIC';
+	$fc{'TW'} = 'TAIWAN, PROVINCE OF CHINA';
+	$fc{'TJ'} = 'TAJIKISTAN';
+	$fc{'TZ'} = 'TANZANIA, UNITED REPUBLIC OF';
+	$fc{'TH'} = 'THAILAND';
+	$fc{'TL'} = 'TIMOR-LESTE';
+	$fc{'TG'} = 'TOGO';
+	$fc{'TK'} = 'TOKELAU';
+	$fc{'TO'} = 'TONGA';
+	$fc{'TT'} = 'TRINIDAD AND TOBAGO';
+	$fc{'TN'} = 'TUNISIA';
+	$fc{'TR'} = 'TURKEY';
+	$fc{'TM'} = 'TURKMENISTAN';
+	$fc{'TC'} = 'TURKS AND CAICOS ISLANDS';
+	$fc{'TV'} = 'TUVALU';
+	$fc{'UG'} = 'UGANDA';
+	$fc{'UA'} = 'UKRAINE';
+	$fc{'AE'} = 'UNITED ARAB EMIRATES';
+	$fc{'GB'} = 'UNITED KINGDOM';
+	$fc{'US'} = 'UNITED STATES';
+	$fc{'UM'} = 'UNITED STATES MINOR OUTLYING ISLANDS';
+	$fc{'UY'} = 'URUGUAY';
+	$fc{'UZ'} = 'UZBEKISTAN';
+	$fc{'VU'} = 'VANUATU';
+	$fc{'VE'} = 'VENEZUELA';
+	$fc{'VN'} = 'VIET NAM';
+	$fc{'VG'} = 'VIRGIN ISLANDS, BRITISH';
+	$fc{'VI'} = 'VIRGIN ISLANDS, U.S.';
+	$fc{'WF'} = 'WALLIS AND FUTUNA';
+	$fc{'EH'} = 'WESTERN SAHARA';
+	$fc{'YE'} = 'YEMEN';
+	$fc{'ZM'} = 'ZAMBIA';
+	$fc{'ZW'} = 'ZIMBABWE';
+}
