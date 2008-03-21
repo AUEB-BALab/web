@@ -11,7 +11,7 @@ do
 	base=`basename $i .bib`
 	echo Verifying $base
 	cat <<EOF >verify.aux
-\bibstyle{html-u}
+\bibstyle{html-n}
 \bibdata{macro,$base}
 \citation{*}
 EOF
