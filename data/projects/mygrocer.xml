@@ -12,7 +12,7 @@
 	<project_code>IST-2001-26239</project_code>
 	<partner>
 		<shortname>Pouliadis Associates Corporation</shortname>
-		<country>EL</country>
+		<country>GR</country>
 		<web_site>http://www.pouliadis.gr</web_site>
 	</partner>
 	<partner>
@@ -22,16 +22,16 @@
 	</partner>
 	<partner>
 		<shortname>Atlantic S.A.</shortname>
-		<country>EL</country>
+		<country>GR</country>
 		<!--<web_site>http://www.elisa.com</web_site>-->
 	</partner>
 	<partner>
 		<shortname>Procter &amp; Gamble Hellas S.A.</shortname>
-		<country>EL</country>
+		<country>GR</country>
 	</partner>
 	<partner>
 		<shortname>ATMEL-HELLAS</shortname>
-		<country>EL</country>
+		<country>GR</country>
 		<!--<web_site>http://www.ssf.fi/</web_site>-->
 	</partner>
 	<partner>
@@ -41,7 +41,7 @@
 	</partner>
 	<partner>
 		<shortname>Unisys Belgium</shortname>
-		<country>BEL</country>
+		<country>BE</country>
 	</partner>
 	<logo>../images/mygrocer.gif</logo>
 	<description>

@@ -12,22 +12,22 @@
 	<!--<project_code>Axis 4.5.1</project_code>-->
 	<partner>
 		<shortname>Information Dynamics S.A</shortname>
-		<country>EL</country>
+		<country>GR</country>
 		<web_site>http://www.infodyn.gr/</web_site>
 	</partner>
 	<partner>
 		<shortname>Pouliadis and Associates Group</shortname>
-		<country>EL</country>
+		<country>GR</country>
 		<web_site>http://www.pouliadis.gr</web_site>
 	</partner>
 	<partner>
 		<shortname>Galanis Sports Data</shortname>
-		<country>EL</country>
+		<country>GR</country>
 		<!--<web_site>http://www.fokus.fhg.de</web_site>-->
 	</partner>
 	<partner>
 		<shortname>Dimokritos</shortname>
-		<country>EL</country>
+		<country>GR</country>
 		<web_site>www.dimokritos.gr</web_site>
 	</partner>
 		

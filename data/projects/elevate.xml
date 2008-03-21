@@ -12,17 +12,17 @@
 	<project_code>EL-21</project_code>
 	<partner>
 		<shortname>EXODUS S.A.</shortname>
-		<country>EL</country>
+		<country>GR</country>
 		<web_site>http://www.exodus.gr</web_site>
 	</partner>
 	<partner>
 		<shortname>Piraeus Bank</shortname>
-		<country>EL</country>
+		<country>GR</country>
 		<web_site>http://www.piraeusbank.gr</web_site>
 	</partner>
 	<partner>
 		<shortname>Geniki Bank</shortname>
-		<country>EL</country>
+		<country>GR</country>
 		<web_site>http://www.geniki.gr</web_site>
 	</partner>
 	<description>

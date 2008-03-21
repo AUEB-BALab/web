@@ -12,17 +12,17 @@
 	<project_code>IST-1999-29060</project_code>
 	<partner>
 		<shortname>Institute of Communications and Computer Systems</shortname>
-		<country>EL</country>
+		<country>GR</country>
 		<web_site>http://www.ntua.gr</web_site>
 	</partner>
 	<partner>
 		<shortname>Athens University of Economics and Business</shortname>
-		<country>EL</country>
+		<country>GR</country>
 		<web_site>http://www.eltrun.aueb.gr</web_site>
 	</partner>
 	<partner>
 		<shortname>SOFOSNET Ltd.- Multimedia Development</shortname>
-		<country>EL</country>
+		<country>GR</country>
 		<web_site>http://www.sofosnet.gr</web_site>
 	</partner>
 	<partner>
@@ -47,7 +47,7 @@
 	</partner>
 	<partner>
 		<shortname>Trajkovski and Partners IT Consulting</shortname>
-		<country>FYROM</country>
+		<country>MK</country>
 		<!--<web_site>http://www.ccibv.ro</web_site>-->
 	</partner>
 	<partner>
@@ -62,7 +62,7 @@
 	</partner>
 	<partner>
 		<shortname>Chamber of Commerce and Industry of the Republic of Moldova</shortname>
-		<country>MO</country>
+		<country>MD</country>
 		<web_site>http://www.chamber.md/index.html</web_site>
 	</partner>
 	<partner>

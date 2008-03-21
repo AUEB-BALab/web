@@ -12,27 +12,27 @@
 	<!--<project_code>IST-2001-26239</project_code>-->
 	<partner>
 		<shortname>LRF</shortname>
-		<country>EL</country>
+		<country>GR</country>
 		<!--<web_site>http://www.aitek.it</web_site>-->
 	</partner>
 	<partner>
 		<shortname>Stet Hellas</shortname>
-		<country>EL</country>
+		<country>GR</country>
 		<web_site>http://www.telestet.gr/</web_site>
 	</partner>
 	<partner>
 		<shortname>COL</shortname>
-		<country>D</country>
+		<country>DE</country>
 		<!--<web_site>http://www.ec3.at</web_site>-->
 	</partner>
 	<partner>
 		<shortname>VPE</shortname>
-		<country>D</country>
+		<country>DE</country>
 		<!--<web_site>http://www.fokus.fhg.de</web_site>-->
 	</partner>
 	<partner>
 		<shortname>Crediteform</shortname>
-		<country>D</country>
+		<country>DE</country>
 		<!--<web_site>www.rand.org</web_site>-->
 	</partner>
 	<partner>

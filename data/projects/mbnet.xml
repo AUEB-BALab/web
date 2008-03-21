@@ -32,7 +32,7 @@
 	</partner>
 	<partner>
 		<shortname>RAND EUROPE</shortname>
-		<country>NE</country>
+		<country>NL</country>
 		<web_site>www.rand.org</web_site>
 	</partner>
 	<partner>
@@ -42,7 +42,7 @@
 	</partner>
 	<partner>
 		<shortname>University of St. Gallen</shortname>
-		<country>SW</country>
+		<country>CH</country>
 		<web_site>http://www.unisg.ch</web_site>
 	</partner>
 	<logo>../images/mb-net.jpg</logo>

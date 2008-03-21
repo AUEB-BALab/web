@@ -13,17 +13,17 @@ contact="m_dds" international="yes" type="rtd" project_manager="m_gousios">
 	<project_code>IST-2005-33331</project_code>
 	<partner>
 		<shortname>DB-NET</shortname>
-		<country>EL</country>
+		<country>GR</country>
 		<web_site>http://www.db-net.aueb.gr/</web_site>
 	</partner>
 	<partner>
 		<shortname>AUTH-PLASE</shortname>
-		<country>EL</country>
+		<country>GR</country>
 		<web_site>http://plase.csd.auth.gr/</web_site>
 	</partner>
 	<partner>
 		<shortname>PROSYST</shortname>
-		<country>D</country>
+		<country>DE</country>
 		<web_site>http://www.prosyst.de</web_site>
 	</partner>
 	<partner>
@@ -38,7 +38,7 @@ contact="m_dds" international="yes" type="rtd" project_manager="m_gousios">
 	</partner>
 	<partner>
 		<shortname>KDE</shortname>
-		<country>D</country>
+		<country>DE</country>
 		<web_site>http://www.kde.org</web_site>
 	</partner>
 	<logo>../images/sqo-oss.png</logo>
