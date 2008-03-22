@@ -36,7 +36,7 @@
 	<!-- Generate heading with group name {{{1 -->
 	<xsl:template match="group" mode="heading">
 		<xsl:if test="@id = $ogroup">
-			ISTLab - <xsl:value-of select="shortname" />:
+			ISTLab &#8212; <xsl:value-of select="shortname" />:
 			<xsl:value-of select="grouptitle" />
 		</xsl:if>
 	</xsl:template>
@@ -384,7 +384,7 @@
 		</xsl:if>
 		<div class="content">
 		<xsl:if test="count(logo) != 0">
-			<img src="{current()/logo}" alt="{current()/shortname} - {current()/grouptitle}" />
+			<img src="{current()/logo}" alt="{current()/shortname} &#8212; {current()/grouptitle}" />
 		</xsl:if>
 		<xsl:if test='count(director_photo) != 0'>
 			<img src="{current()/director_photo}" alt="{current()/surname}" />
@@ -409,7 +409,7 @@
 	<xsl:template match="project" mode="ref">
 		<li>
 		<a href="../projects/{@id}.html">
-			<xsl:value-of select="shortname" /> - <xsl:value-of select="projtitle" />
+			<xsl:value-of select="shortname" /> &#8212; <xsl:value-of select="projtitle" />
 		</a>
 		</li>
 	</xsl:template>
@@ -536,7 +536,7 @@
 			<xsl:choose>
 				<xsl:when test="$bodygroup = 'g_istlab'">ISTLab</xsl:when>
 				<xsl:otherwise>
-					ISTLab - <xsl:value-of select="/istlab/group_list/group[@id = $bodygroup]/shortname" />
+					ISTLab &#8212; <xsl:value-of select="/istlab/group_list/group[@id = $bodygroup]/shortname" />
 				</xsl:otherwise>
 			</xsl:choose>
 		</div>
@@ -591,17 +591,17 @@
 				<xsl:text> publication list</xsl:text>
 			</xsl:when>
 			<xsl:when test="$what = 'current-projects'">
-				<xsl:text> - Current Projects</xsl:text>
+				<xsl:text> &#8212; Current Projects</xsl:text>
 			</xsl:when>
 			<xsl:when test="$what = 'completed-projects'">
-				<xsl:text> - Completed Projects</xsl:text>
+				<xsl:text> &#8212; Completed Projects</xsl:text>
 			</xsl:when>
 			<xsl:when test="$what = 'members'">
-				<xsl:text> - Members</xsl:text>
+				<xsl:text> &#8212; Members</xsl:text>
 			</xsl:when>
 			<xsl:when test="$what = 'project-details'">
 				<xsl:value-of select="/istlab/project_list/project[@id = $oproject]/shortname" />
-				<xsl:text> - Details</xsl:text>
+				<xsl:text> &#8212; Details</xsl:text>
 			</xsl:when>
 			<xsl:when test="$what = 'member-publications'">
 				<xsl:apply-templates select="/istlab/member_list/member[@id = $omember]" mode="plaintext" />
@@ -615,10 +615,10 @@
 				<xsl:text> Details</xsl:text>
 			</xsl:when>
 			<xsl:when test="$what = 'group-details'">
-				<xsl:text> - Group Details</xsl:text>
+				<xsl:text> &#8212; Group Details</xsl:text>
 			</xsl:when>
 			<xsl:when test="$what = 'alumni'">
-				<xsl:text> - Research Associates</xsl:text>
+				<xsl:text> &#8212; Research Associates</xsl:text>
 			</xsl:when>
 			<xsl:when test="$what = 'rel-pages'">
 				<xsl:variable name="tmpgroup" select="/istlab/page_list/page[@id = $opage]/@group" />

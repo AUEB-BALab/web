@@ -18,7 +18,7 @@
 	<xsl:template match="project">
 		<li>
 		<a href="../projects/{@id}.html">
-			<xsl:value-of select="shortname" /> - <xsl:value-of select="projtitle" />
+			<xsl:value-of select="shortname" /> &#8212; <xsl:value-of select="projtitle" />
 		</a>
 		</li>
 	</xsl:template>

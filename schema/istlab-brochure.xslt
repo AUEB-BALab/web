@@ -22,7 +22,7 @@
 	<xsl:template match="project">
 		<li>
 		<a href="../projects/{@id}.html">
-			<xsl:value-of select="shortname" /> - <xsl:value-of select="projtitle" />
+			<xsl:value-of select="shortname" /> &#8212; <xsl:value-of select="projtitle" />
 		</a>
 		</li>
 	</xsl:template>
@@ -75,7 +75,7 @@
 		</head>
 		<body margin-left="0" margin-top="0">
 			<div class="logo"><a href="http://istlab.dmst.aueb.gr/"><img src="../images/istlab-s.jpg" alt="ISTLab" align="middle" border="0" /></a></div>
-			<div class="projecttitle">ISTLab - Information Systems Technology Laboratory</div>
+			<div class="projecttitle">ISTLab &#8212; Information Systems Technology Laboratory</div>
 			
 			<!-- introduction -->
 			<div class="title">Introduction</div>
@@ -89,7 +89,7 @@
 			<div class="title">Groups</div>
 			<div class="content">
 				<xsl:for-each select="current()/group_list/group[@id != 'g_istlab']">
-					<h2><xsl:value-of select="current()/shortname" /><xsl:text> - </xsl:text><xsl:value-of select="current()/grouptitle" /></h2>
+					<h2><xsl:value-of select="current()/shortname" /><xsl:text> &#8212; </xsl:text><xsl:value-of select="current()/grouptitle" /></h2>
 					<xsl:apply-templates select="current()" />
 				</xsl:for-each>
 			</div>
