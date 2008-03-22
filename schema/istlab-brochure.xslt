@@ -71,7 +71,7 @@
 			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 			<link href="../images/styles.css" type="text/css" rel="stylesheet" />
 			<link rel="shortcut icon" href="../images/favicon.ico" />
-			<title>ISTLab brochure</title>
+			<title>ISTLab &#8212; Information Systems Technology Laboratory</title>
 		</head>
 		<body margin-left="0" margin-top="0">
 			<div class="logo"><a href="http://istlab.dmst.aueb.gr/"><img src="../images/istlab-s.jpg" alt="ISTLab" align="middle" border="0" /></a></div>
