@@ -30,7 +30,7 @@ sub get_pubs {
 
 $year = $ARGV[0];
 
-open(HTML, "public_html/reports/istlab-report-$year.html");
+open(HTML, "$ARGV[1]");
 $output_buf = "";
 
 for (<HTML>) {
@@ -55,6 +55,6 @@ for (<HTML>) {
 
 close(HTML);
 
-open(HTML, ">public_html/reports/istlab-report-$year.html");
+open(HTML, ">$ARGV[1]");
 print HTML $output_buf;
 close(HTML);

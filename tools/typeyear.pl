@@ -9,8 +9,9 @@
 
 # Associate the publication year with each publication
 
-#$#ARGV == 0 || die "Usage: $0 file.bib <year>\n";
+#$#ARGV == 0 || die "Usage: $0 file.bib (year)+\n";
 open(IN, $ARGV[0]) || die "Unable to open $ARGV[0]: $!\n";
+@years = @ARGV[1..$#ARGV];
 print STDOUT "\\bibdata{macro,book,article,inproceedings,incollection,whitepaper,techreport,workingpaper}\n";
 while (<IN>) {
 	next if (/^\@string/i);
@@ -30,8 +31,10 @@ endrecord
 {
 	print STDERR "Undefined key on line $.\n" unless (defined($key));
 	print STDERR "Undefined year on line $.\n" unless (defined($year));
-	if ($ARGV[1] == $year) {
-		print STDOUT "\\citation{$key}\n";
+	for ( @years ) {
+		if ($_ == $year) {
+			print STDOUT "\\citation{$key}\n";
+		}		
 	}
 
 	undef $key;

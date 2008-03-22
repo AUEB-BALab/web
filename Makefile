@@ -49,6 +49,8 @@ STUDXSLT=schema/istlab-phd-list.xslt
 # XSLT file for reports
 REPORTXSLT=schema/istlab-report.xslt
 REPIDXXSLT=schema/istlab-report-index.xslt
+# XSLT file for brochure
+BROCHXSLT=schema/istlab-brochure.xslt
 # Today' date in ISO format
 TODAY=$(shell date +'%Y%m%d')
 # Fetch the ids
@@ -102,6 +104,7 @@ clean:
 		${HTML}/rel_pages/* \
 		${HTML}/misc/* \
 		${HTML}/reports/* \
+		${HTML}/brochure/* \
 		${HTML}/publications/* 2>/dev/null
 	-rm -f public_html/images/colgraph.svg
 	-rm -f *.aux
@@ -166,11 +169,37 @@ report: ${DB}
 		perl tools/bib2html -c -r -s empty build/$$year-techreport.aux build/$$year-techreport.html ; \
 		perl tools/bib2html -c -r -s empty build/$$year-whitepaper.aux build/$$year-whitepaper.html ; \
 		perl tools/bib2html -c -r -s empty build/$$year-workingpaper.aux build/$$year-workingpaper.html ; \
-		perl tools/prepare-pubs.pl $$year ; \
+		perl tools/prepare-pubs.pl $$year public_html/reports/istlab-report-$year.html; \
 		year=`expr $$year + 1`; \
 	done ; \
 	cd public_html/reports ; xml ls > ../../build/ls.xml ; cd ../.. ; \
 	xml tr ${REPIDXXSLT} build/ls.xml > ${HTML}/reports/index.html
+
+brochure: ${DB}
+	@echo "Creating ISTLab brochure"
+	@year=`expr $(CURRENT_YEAR) - 2` ; \
+	years=" " ; \
+	while `test $$year -le $(CURRENT_YEAR)` ; \
+	do \
+		years="$$years $$year" ; \
+		year=`expr $$year + 1` ; \
+	done ; \
+	perl tools/typeyear.pl data/publications/article.bib $$years > build/brochure-article.aux ; \
+	perl tools/typeyear.pl data/publications/book.bib $$years > build/brochure-book.aux ; \
+	perl tools/typeyear.pl data/publications/incollection.bib $$years > build/brochure-incollection.aux ; \
+	perl tools/typeyear.pl data/publications/inproceedings.bib $$years > build/brochure-inproceedings.aux ; \
+	perl tools/typeyear.pl data/publications/techreport.bib $$years > build/brochure-techreport.aux ; \
+	perl tools/typeyear.pl data/publications/whitepaper.bib $$years > build/brochure-whitepaper.aux ; \
+	perl tools/typeyear.pl data/publications/workingpaper.bib $$years > build/brochure-workingpaper.aux ; \
+	xml tr ${BROCHXSLT} ${DB} > ${HTML}/brochure/istlab-brochure.html ; \
+	perl tools/bib2html -c -r -s empty build/brochure-article.aux build/brochure-article.html ; \
+	perl tools/bib2html -c -r -s empty build/brochure-book.aux build/brochure-book.html ; \
+	perl tools/bib2html -c -r -s empty build/brochure-incollection.aux build/brochure-incollection.html ; \
+	perl tools/bib2html -c -r -s empty build/brochure-inproceedings.aux build/brochure-inproceedings.html ; \
+	perl tools/bib2html -c -r -s empty build/brochure-techreport.aux build/brochure-techreport.html ; \
+	perl tools/bib2html -c -r -s empty build/brochure-whitepaper.aux build/brochure-whitepaper.html ; \
+	perl tools/bib2html -c -r -s empty build/brochure-workingpaper.aux build/brochure-workingpaper.html ; \
+	perl tools/prepare-pubs.pl brochure public_html/brochure/istlab-brochure.html
 
 groups: ${DB}
 	@echo "Creating groups"
