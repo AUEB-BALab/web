@@ -98,7 +98,7 @@
 			<xsl:for-each select="current()/project_list/project">
 				<xsl:if test="starts-with(current()/enddate,$year)">
 					<xsl:apply-templates select="current()" />
-				</xsl:if>
+ 				</xsl:if>
 			</xsl:for-each>
 			</ul>
 		</div>
