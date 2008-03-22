@@ -11,8 +11,55 @@
 
 <!-- Global definitions {{{1 -->
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+	<xsl:param name="today"/>
+
+	<!-- Format a project reference {{{1 -->
+	<xsl:template match="project">
+		<li>
+		<a href="../projects/{@id}.html">
+			<xsl:value-of select="shortname" /> - <xsl:value-of select="projtitle" />
+		</a>
+		</li>
+	</xsl:template>
 	
-	<!-- main rule -->
+	<!-- Format a member reference (with <li>) {{{1 -->
+	<xsl:template match="member">
+		<xsl:if test="count(alumnus) = 0">
+			<li>
+			<a href="../members/{@id}.html">
+			<xsl:value-of select="givenname" />
+			<xsl:text> </xsl:text>
+			<xsl:value-of select="surname" />
+			</a>
+			</li>
+		</xsl:if>
+	</xsl:template>
+
+	<!-- Format a member reference (without <li>) {{{1 -->
+	<xsl:template match="member" mode="simple-ref">
+		<xsl:if test="count(alumnus) = 0">
+			<a href="../members/{@id}.html">
+			<xsl:value-of select="givenname" />
+			<xsl:text> </xsl:text>
+			<xsl:value-of select="surname" />
+			</a>
+		</xsl:if>
+	</xsl:template>
+	
+	<!-- Format a full group description {{{1-->
+	<xsl:template match="group">
+		Group leader:
+		<xsl:apply-templates select="/istlab/member_list/member [@id=current()/@director]" mode="simple-ref" />
+		<br />
+		<xsl:if test='current()/@director != current()/@contact'>
+		Contact:
+		<xsl:apply-templates select="/istlab/member_list/member [@id=current()/@contact]" mode="simple-ref" />
+		</xsl:if>
+		<br />
+		<xsl:copy-of select="current()/description" />
+	</xsl:template>
+	
+	<!-- main rule {{{1-->
 	<xsl:template match="istlab">
 		<html>
 		<head>
@@ -28,9 +75,40 @@
 			<!-- introduction -->
 			<div class="title">Introduction</div>
 			<div class="content">
-				<!-- <xsl:for-each select="current()/group_list/group[@id = 'g_istlab']">
-					
-				</xsl:for-each> -->
+				<xsl:for-each select="current()/group_list/group[@id = 'g_istlab']">
+					<xsl:apply-templates select="current()" />
+				</xsl:for-each>
+			</div>
+			
+			<!-- groups -->
+			<div class="title">Groups</div>
+			<div class="content">
+				<xsl:for-each select="current()/group_list/group[@id != 'g_istlab']">
+					<h2><xsl:value-of select="current()/shortname" /><xsl:text> - </xsl:text><xsl:value-of select="current()/grouptitle" /></h2>
+					<xsl:apply-templates select="current()" />
+				</xsl:for-each>
+			</div>
+			
+			<!-- Members -->
+			<div class="title">Members</div>
+			<div class="content">
+				<ul>
+				<xsl:for-each select="current()/member_list/member">
+					<xsl:apply-templates select="current()">
+						<xsl:sort select="givenname" order="ascending" />
+					</xsl:apply-templates>
+				</xsl:for-each>
+				</ul>
+			</div>
+			
+			<!-- Current Projects -->
+			<div class="title">Projects</div>
+			<div class="content">
+				<ul>
+				<xsl:apply-templates select="/istlab/project_list/project [enddate &gt;= $today]">
+					<xsl:sort select="shortname" order="ascending"/>
+				</xsl:apply-templates>
+				</ul>
 			</div>
 			
 			<!-- publications -->
@@ -51,6 +129,12 @@
 
 			<xsl:text>&#10;[workingpaper]&#10;</xsl:text>
 
+			</div>
+			
+			<!-- Contact -->
+			<div class="title">Contact</div>
+			<div class="content">
+				
 			</div>
 		</body>
 		</html>

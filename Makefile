@@ -191,7 +191,7 @@ brochure: ${DB}
 	perl tools/typeyear.pl data/publications/techreport.bib $$years > build/brochure-techreport.aux ; \
 	perl tools/typeyear.pl data/publications/whitepaper.bib $$years > build/brochure-whitepaper.aux ; \
 	perl tools/typeyear.pl data/publications/workingpaper.bib $$years > build/brochure-workingpaper.aux ; \
-	xml tr ${BROCHXSLT} ${DB} > ${HTML}/brochure/istlab-brochure.html ; \
+	xml tr ${BROCHXSLT} -s today=`expr $(CURRENT_YEAR) - 2`0101 ${DB} > ${HTML}/brochure/istlab-brochure.html ; \
 	perl tools/bib2html -c -r -s empty build/brochure-article.aux build/brochure-article.html ; \
 	perl tools/bib2html -c -r -s empty build/brochure-book.aux build/brochure-book.html ; \
 	perl tools/bib2html -c -r -s empty build/brochure-incollection.aux build/brochure-incollection.html ; \
