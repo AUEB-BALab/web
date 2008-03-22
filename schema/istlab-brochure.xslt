@@ -53,15 +53,15 @@
 	
 	<!-- Format a full group description {{{1-->
 	<xsl:template match="group">
-		Group leader:
-		<xsl:apply-templates select="/istlab/member_list/member [@id=current()/@director]" mode="simple-ref" />
+		<xsl:copy-of select="current()/description" />
+		<p />
+		<xsl:value-of select="current()/shortname" /><xsl:text> is headed by  </xsl:text>
+		<xsl:apply-templates select="/istlab/member_list/member [@id=current()/@director]" mode="simple-ref" /><xsl:text>.  </xsl:text>
 		<br />
 		<xsl:if test='current()/@director != current()/@contact'>
 		Contact:
 		<xsl:apply-templates select="/istlab/member_list/member [@id=current()/@contact]" mode="simple-ref" />
 		</xsl:if>
-		<br />
-		<xsl:copy-of select="current()/description" />
 	</xsl:template>
 	
 	<!-- main rule {{{1-->
@@ -95,7 +95,7 @@
 			</div>
 			
 			<!-- Members -->
-			<div class="title">Members</div>
+			<div class="title">Current Members</div>
 			<div class="content">
 				<ul>
 				<xsl:for-each select="current()/member_list/member">
@@ -107,7 +107,7 @@
 			</div>
 			
 			<!-- Current Projects -->
-			<div class="title">Projects</div>
+			<div class="title">Current Projects</div>
 			<div class="content">
 				<ul>
 				<xsl:apply-templates select="current()/project_list/project [enddate &gt;= $today]">
@@ -117,7 +117,7 @@
 			</div>
 			
 			<!-- publications -->
-			<div class="title">Publications</div>
+			<div class="title">Recent Publications</div>
 			<div class="content">
 
 			<xsl:text>&#10;[book]&#10;</xsl:text>
@@ -137,7 +137,7 @@
 			</div>
 			
 			<!-- Contact -->
-			<div class="title">Contact</div>
+			<div class="title">Contact Details</div>
 			<div class="content">
 				<xsl:apply-templates select="current()/page_list/page [@id = 'istlab-contact']" />
 			</div>
