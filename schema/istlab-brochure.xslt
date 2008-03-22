@@ -12,6 +12,11 @@
 <!-- Global definitions {{{1 -->
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 	<xsl:param name="today"/>
+	
+	<!-- page transformation {{{1-->
+	<xsl:template match="page">
+		<xsl:copy-of select="current()/page_body" />
+	</xsl:template>
 
 	<!-- Format a project reference {{{1 -->
 	<xsl:template match="project">
@@ -105,7 +110,7 @@
 			<div class="title">Projects</div>
 			<div class="content">
 				<ul>
-				<xsl:apply-templates select="/istlab/project_list/project [enddate &gt;= $today]">
+				<xsl:apply-templates select="current()/project_list/project [enddate &gt;= $today]">
 					<xsl:sort select="shortname" order="ascending"/>
 				</xsl:apply-templates>
 				</ul>
@@ -134,7 +139,7 @@
 			<!-- Contact -->
 			<div class="title">Contact</div>
 			<div class="content">
-				
+				<xsl:apply-templates select="current()/page_list/page [@id = 'istlab-contact']" />
 			</div>
 		</body>
 		</html>
