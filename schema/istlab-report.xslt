@@ -44,7 +44,8 @@
 		<html>
 		<head>
 			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-			<link href="../images/styles.css" type="text/css" rel="stylesheet" />
+			<link href="../images/styles.css" type="text/css" rel="stylesheet" media="screen" />
+			<link href="../images/styles-print.css" type="text/css" rel="stylesheet" media="print" />
 			<link rel="shortcut icon" href="../images/favicon.ico" />
 			<xsl:if test="$year != $cyear">
 				<title>ISTLab Yearly Report &#8212; <xsl:value-of select="$year" /></title>

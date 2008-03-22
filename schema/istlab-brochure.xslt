@@ -69,7 +69,8 @@
 		<html>
 		<head>
 			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-			<link href="../images/styles.css" type="text/css" rel="stylesheet" />
+			<link href="../images/styles.css" type="text/css" rel="stylesheet" media="screen" />
+			<link href="../images/styles-print.css" type="text/css" rel="stylesheet" media="print" />
 			<link rel="shortcut icon" href="../images/favicon.ico" />
 			<title>ISTLab &#8212; Information Systems Technology Laboratory</title>
 		</head>
