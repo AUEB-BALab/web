@@ -64,10 +64,18 @@
 		<div class="content">
 			<ul>
 				<li><a href="#pubs">Publications</a></li>
-				<li><a href="#cprojects">Completed Projects</a></li>
-				<li><a href="#nprojects">New Projects</a></li>
-				<li><a href="#members">New Members</a></li>
-				<li><a href="#phd">Completed PhDs</a></li>
+				<xsl:if test='count(current()/project_list/project [starts-with(enddate,$year)]) != 0'>
+					<li><a href="#cprojects">Completed Projects</a></li>
+				</xsl:if>
+				<xsl:if test="count(current()/project_list/project [starts-with(startdate,$year)]) != 0">
+					<li><a href="#nprojects">New Projects</a></li>
+				</xsl:if>
+				<xsl:if test="count(current()/member_list/member [starts-with(@joined,$year)]) != 0">
+					<li><a href="#members">New Members</a></li>
+				</xsl:if>
+				<xsl:if test="count(current()/member_list/member/phd-info [starts-with(@enddate,$year)]) != 0">
+					<li><a href="#phd">Completed PhDs</a></li>
+				</xsl:if>
 			</ul>
 		</div>
 
@@ -91,53 +99,53 @@
 			
 		</div>
 		
-		<a name="cprojects"></a>
+		<xsl:if test='count(current()/project_list/project [starts-with(enddate,$year)]) != 0'>
+		<a name="cprojects"></a>	
 		<div class="title">Completed Projects</div>
 		<div class="content">
 			<ul>
-			<xsl:for-each select="current()/project_list/project">
-				<xsl:if test="starts-with(current()/enddate,$year)">
-					<xsl:apply-templates select="current()" />
- 				</xsl:if>
+			<xsl:for-each select="current()/project_list/project [starts-with(enddate,$year)]">
+				<xsl:apply-templates select="current()" />
 			</xsl:for-each>
 			</ul>
 		</div>
+		</xsl:if>
 		
+		<xsl:if test="count(current()/project_list/project [starts-with(startdate,$year)]) != 0">
 		<a name="nprojects"></a>
 		<div class="title">New Projects</div>
 		<div class="content">
 			<ul>
-			<xsl:for-each select="current()/project_list/project">
-				<xsl:if test="starts-with(current()/startdate,$year)">
+			<xsl:for-each select="current()/project_list/project [starts-with(startdate,$year)]">
 					<xsl:apply-templates select="current()" />
-				</xsl:if>
 			</xsl:for-each>
-			</ul>			
+			</ul>		
 		</div>
+		</xsl:if>
 		
+		<xsl:if test="count(current()/member_list/member [starts-with(@joined,$year)]) != 0">
 		<a name="members"></a>
 		<div class="title">New Members</div>
 		<div class="content">
 			<ul>
-			<xsl:for-each select="current()/member_list/member">
-				<xsl:if test="starts-with(current()/@joined,$year)">
-					<xsl:apply-templates select="current()" />
-				</xsl:if>
+			<xsl:for-each select="current()/member_list/member [starts-with(@joined,$year)]">
+				<xsl:apply-templates select="current()" />
 			</xsl:for-each>
 			</ul>
 		</div>
+		</xsl:if>
 		
+		<xsl:if test="count(current()/member_list/member/phd-info [starts-with(@enddate,$year)]) != 0">
 		<a name="phd"></a>
 		<div class="title">Completed PhDs</div>
 		<div class="content">
 			<ul>
-			<xsl:for-each select="current()/member_list/member">
-				<xsl:if test="starts-with(current()/phd-info/@enddate,$year)">
-					<xsl:apply-templates select="current()" />
-				</xsl:if>
+			<xsl:for-each select="current()/member_list/member/phd-info [starts-with(@enddate,$year)]">
+				<xsl:apply-templates select=".." />
 			</xsl:for-each>
 			</ul>			
 		</div>
+		</xsl:if>
 		
 		</body>
 		</html>		
