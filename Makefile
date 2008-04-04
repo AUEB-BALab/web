@@ -279,4 +279,4 @@ $(HTML)/images/colgraph.svg: tools/colgraph.sh $(BIBFILES)
 	neato build/colgraph.neato -Tsvg -o$@
 
 verify:
-	$(SH) tools/verify.sh $(BIBTEX_OPTIONS)
+	$(SHELL) tools/verify.sh $(BIBTEX_OPTIONS)
