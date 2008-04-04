@@ -263,7 +263,7 @@ dist: html
 	$(SSH) istlab.dmst.aueb.gr "cd /home/dds/src/istlab-web ; \
 	umask 002 ; \
 	cvs update -d ; \
-	gmake clean html ; \
+	gmake clean html report brochure ; \
 	tar -C $(HTML) -cf - . | tar -mU -C /home/dds/web/istlab/content -xf -"
 
 stats:
