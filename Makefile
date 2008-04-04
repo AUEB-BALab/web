@@ -20,7 +20,7 @@ else
 # Unix
 SSH=ssh
 PATHSEP=:
-BIBTEX_OPTIONS=" "
+BIBTEX_OPTIONS=
 endif
 endif
 
