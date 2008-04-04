@@ -10,13 +10,9 @@ for i in data/publications/*.bib
 do
 	base=`basename $i .bib`
 	echo Verifying $base
-	cat <<EOF >verify.aux
-\bibstyle{html-n}
-\bibdata{macro,$base}
-\citation{*}
-EOF
+	echo "\bibstyle{html-n} \bibdata{macro,$base} \citation{*}" > verify.aux
 	if bibtex verify |
-		egrep -v '^(This is BibTeX|The top-level auxiliary file|The style file|Database file)' |
+		egrep -v "^(This is BibTeX|The top-level auxiliary file|The style file|Database file)" |
 		grep .		# Only errors make it here
 	then
 		exit 1

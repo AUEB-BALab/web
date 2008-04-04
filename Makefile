@@ -1,4 +1,4 @@
-# ISTLab web site creation and data validation
+﻿# ISTLab web site creation and data validation
 #
 # (C) Copyright 2004 Diomidis Spinellis
 #
@@ -147,7 +147,7 @@ val: ${DB}
 	@echo '---> Checking db.xml ...'
 	@xml val -d schema/istlab.dtd $(DB)
 
-html: verify ${DB} groups projects members rel_pages publications phone email-lists phd-students report brochure
+html: ${DB} groups projects members rel_pages publications phone email-lists phd-students report brochure
 
 report: ${DB}
 	@echo "Creating ISTLab reports"
