@@ -1,4 +1,4 @@
-﻿# ISTLab web site creation and data validation
+# ISTLab web site creation and data validation
 #
 # (C) Copyright 2004 Diomidis Spinellis
 #
@@ -29,7 +29,7 @@ PUBFILE=build/pubs.xml
 BIBFILES=$(wildcard data/publications/*.bib)
 
 # BibTeX paths (used under Unix)
-BIBINPUTS=data/publications$(PATHSEP)tools
+BIBINPUTS=data/publications$(PATHSEP)tools$(PATHSEP).
 BSTINPUTS=tools
 export BIBINPUTS
 export BSTINPUTS
