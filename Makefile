@@ -10,17 +10,20 @@ ifdef SYSTEMDRIVE
 SSH=plink
 PATHSEP=;
 BIBTEX_OPTIONS=-include-directory=data/publications -include-directory=. -include-directory=./tools
+SH=$(SHELL)
 else
 ifdef SystemDrive
 # Windows - GNU Win32
 BIBTEX_OPTIONS=-include-directory=data/publications -include-directory=. -include-directory=./tools
 SSH=plink
 PATHSEP=;
+SH=$(SHELL)
 else
 # Unix
 SSH=ssh
 PATHSEP=:
 BIBTEX_OPTIONS=
+SH=bash
 endif
 endif
 
@@ -241,7 +244,7 @@ rel_pages: ${DB}
 
 publications: ${DB}
 	@echo "Creating publications"
-	@$(SHELL) build/bibrun
+	@$(SH) build/bibrun
 
 phd-students: ${DB}
 	@echo "Creating PhD Students list"
@@ -267,13 +270,13 @@ dist: html
 	tar -C $(HTML) -cf - . | tar -mU -C /home/dds/web/istlab/content -xf -"
 
 stats:
-	@$(SHELL) tools/stats.sh
+	@$(SH) tools/stats.sh
 
 colgraph: $(HTML)/images/colgraph.svg
 
 $(HTML)/images/colgraph.svg: tools/colgraph.sh $(BIBFILES)
-	$(SHELL) tools/colgraph.sh >build/colgraph.neato
+	$(SH) tools/colgraph.sh >build/colgraph.neato
 	neato build/colgraph.neato -Tsvg -o$@
 
 verify:
-	$(SHELL) tools/verify.sh $(BIBTEX_OPTIONS)
+	$(SH) tools/verify.sh $(BIBTEX_OPTIONS)
