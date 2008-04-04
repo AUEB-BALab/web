@@ -150,12 +150,12 @@ val: ${DB}
 	@echo '---> Checking db.xml ...'
 	@xml val -d schema/istlab.dtd $(DB)
 
-html: verify ${DB} groups projects members rel_pages publications phone email-lists phd-students
+html: verify ${DB} groups projects members rel_pages publications phone email-lists phd-students report brochure
 
 report: ${DB}
 	@echo "Creating ISTLab reports"
 	@year=2002 ; \
-	while `test $$year -le $(CURRENT_YEAR)` ; \
+	while [ $$year -le $(CURRENT_YEAR) ] ; \
 	do \
 		perl tools/typeyear.pl data/publications/article.bib $$year > build/$$year-article.aux ; \
 		perl tools/typeyear.pl data/publications/book.bib $$year > build/$$year-book.aux ; \
@@ -165,13 +165,13 @@ report: ${DB}
 		perl tools/typeyear.pl data/publications/whitepaper.bib $$year > build/$$year-whitepaper.aux ; \
 		perl tools/typeyear.pl data/publications/workingpaper.bib $$year > build/$$year-workingpaper.aux ; \
 		xml tr ${REPORTXSLT} -s year=$$year -s cyear=$(CURRENT_YEAR) ${DB} > ${HTML}/reports/istlab-report-$$year.html ; \
-		perl tools/bib2html -c -r -s empty build/$$year-article.aux build/$$year-article.html ; \
-		perl tools/bib2html -c -r -s empty build/$$year-book.aux build/$$year-book.html ; \
-		perl tools/bib2html -c -r -s empty build/$$year-incollection.aux build/$$year-incollection.html ; \
-		perl tools/bib2html -c -r -s empty build/$$year-inproceedings.aux build/$$year-inproceedings.html ; \
-		perl tools/bib2html -c -r -s empty build/$$year-techreport.aux build/$$year-techreport.html ; \
-		perl tools/bib2html -c -r -s empty build/$$year-whitepaper.aux build/$$year-whitepaper.html ; \
-		perl tools/bib2html -c -r -s empty build/$$year-workingpaper.aux build/$$year-workingpaper.html ; \
+		perl tools/bib2html -c -r -b "$(BIBTEX_OPTIONS)" -s empty build/$$year-article.aux build/$$year-article.html ; \
+		perl tools/bib2html -c -r -b "$(BIBTEX_OPTIONS)" -s empty build/$$year-book.aux build/$$year-book.html ; \
+		perl tools/bib2html -c -r -b "$(BIBTEX_OPTIONS)" -s empty build/$$year-incollection.aux build/$$year-incollection.html ; \
+		perl tools/bib2html -c -r -b "$(BIBTEX_OPTIONS)" -s empty build/$$year-inproceedings.aux build/$$year-inproceedings.html ; \
+		perl tools/bib2html -c -r -b "$(BIBTEX_OPTIONS)" -s empty build/$$year-techreport.aux build/$$year-techreport.html ; \
+		perl tools/bib2html -c -r -b "$(BIBTEX_OPTIONS)" -s empty build/$$year-whitepaper.aux build/$$year-whitepaper.html ; \
+		perl tools/bib2html -c -r -b "$(BIBTEX_OPTIONS)" -s empty build/$$year-workingpaper.aux build/$$year-workingpaper.html ; \
 		perl tools/prepare-pubs.pl $$year public_html/reports/istlab-report-$$year.html; \
 		year=`expr $$year + 1`; \
 	done ; \
@@ -182,7 +182,7 @@ brochure: ${DB}
 	@echo "Creating ISTLab brochure"
 	@year=`expr $(CURRENT_YEAR) - 2` ; \
 	years=" " ; \
-	while `test $$year -le $(CURRENT_YEAR)` ; \
+	while [ $$year -le $(CURRENT_YEAR) ] ; \
 	do \
 		years="$$years $$year" ; \
 		year=`expr $$year + 1` ; \
@@ -195,13 +195,13 @@ brochure: ${DB}
 	perl tools/typeyear.pl data/publications/whitepaper.bib $$years > build/brochure-whitepaper.aux ; \
 	perl tools/typeyear.pl data/publications/workingpaper.bib $$years > build/brochure-workingpaper.aux ; \
 	xml tr ${BROCHXSLT} -s today=`expr $(CURRENT_YEAR) - 2`0101 ${DB} > ${HTML}/brochure/istlab-brochure.html ; \
-	perl tools/bib2html -c -r -s empty build/brochure-article.aux build/brochure-article.html ; \
-	perl tools/bib2html -c -r -s empty build/brochure-book.aux build/brochure-book.html ; \
-	perl tools/bib2html -c -r -s empty build/brochure-incollection.aux build/brochure-incollection.html ; \
-	perl tools/bib2html -c -r -s empty build/brochure-inproceedings.aux build/brochure-inproceedings.html ; \
-	perl tools/bib2html -c -r -s empty build/brochure-techreport.aux build/brochure-techreport.html ; \
-	perl tools/bib2html -c -r -s empty build/brochure-whitepaper.aux build/brochure-whitepaper.html ; \
-	perl tools/bib2html -c -r -s empty build/brochure-workingpaper.aux build/brochure-workingpaper.html ; \
+	perl tools/bib2html -c -r -b "$(BIBTEX_OPTIONS)" -s empty build/brochure-article.aux build/brochure-article.html ; \
+	perl tools/bib2html -c -r -b "$(BIBTEX_OPTIONS)" -s empty build/brochure-book.aux build/brochure-book.html ; \
+	perl tools/bib2html -c -r -b "$(BIBTEX_OPTIONS)" -s empty build/brochure-incollection.aux build/brochure-incollection.html ; \
+	perl tools/bib2html -c -r -b "$(BIBTEX_OPTIONS)" -s empty build/brochure-inproceedings.aux build/brochure-inproceedings.html ; \
+	perl tools/bib2html -c -r -b "$(BIBTEX_OPTIONS)" -s empty build/brochure-techreport.aux build/brochure-techreport.html ; \
+	perl tools/bib2html -c -r -b "$(BIBTEX_OPTIONS)" -s empty build/brochure-whitepaper.aux build/brochure-whitepaper.html ; \
+	perl tools/bib2html -c -r -b "$(BIBTEX_OPTIONS)" -s empty build/brochure-workingpaper.aux build/brochure-workingpaper.html ; \
 	perl tools/prepare-pubs.pl brochure public_html/brochure/istlab-brochure.html
 
 groups: ${DB}
