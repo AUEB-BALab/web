@@ -13,7 +13,7 @@ do
 	echo -E '\bibstyle{html-n}' > verify.aux
     echo -E "\bibdata{macro,$base}" >> verify.aux
     echo -E '\citation{*}' >> verify.aux
-	if bibtex -include-directory=data/publications -include-directory=. -include-directory=./tools verify |
+	if bibtex $1 $2 $3 verify |
 		egrep -v "^(This is BibTeX|The top-level auxiliary file|The style file|Database file)" |
 		grep .		# Only errors make it here
 	then

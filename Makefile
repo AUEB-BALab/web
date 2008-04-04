@@ -9,15 +9,18 @@ ifdef SYSTEMDRIVE
 # Windows - CygWin
 SSH=plink
 PATHSEP=;
+BIBTEX_OPTIONS=-include-directory=data/publications -include-directory=. -include-directory=./tools
 else
 ifdef SystemDrive
 # Windows - GNU Win32
+BIBTEX_OPTIONS=-include-directory=data/publications -include-directory=. -include-directory=./tools
 SSH=plink
 PATHSEP=;
 else
 # Unix
 SSH=ssh
 PATHSEP=:
+BIBTEX_OPTIONS=" "
 endif
 endif
 
@@ -273,4 +276,4 @@ $(HTML)/images/colgraph.svg: tools/colgraph.sh $(BIBFILES)
 	neato build/colgraph.neato -Tsvg -o$@
 
 verify:
-	sh tools/verify.sh
+	sh tools/verify.sh $(BIBTEX_OPTIONS)
