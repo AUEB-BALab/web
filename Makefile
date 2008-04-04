@@ -147,7 +147,7 @@ val: ${DB}
 	@echo '---> Checking db.xml ...'
 	@xml val -d schema/istlab.dtd $(DB)
 
-html: ${DB} groups projects members rel_pages publications phone email-lists phd-students report brochure
+html: verify ${DB} groups projects members rel_pages publications phone email-lists phd-students
 
 report: ${DB}
 	@echo "Creating ISTLab reports"
