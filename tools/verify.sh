@@ -5,7 +5,6 @@
 #
 # $Id$
 #
-exit 0
 
 for i in data/publications/*.bib
 do
