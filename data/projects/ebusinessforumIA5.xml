@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<project id="p_ebusinessforumIA5" group="g_istlab g_iris g_ois" scientific_coordinator="m_akp" international="no" type="rtd" contact="m_pouloudi">
+	<shortname>eBusinessForum - Working Group IA5</shortname>
+	<projtitle>Identity management in e-government services</projtitle>
+	<startdate>20061001</startdate>
+	<enddate>20071001</enddate>
+	<web_site>http://www.ebusinessforum.gr
+</web_site>
+	<!--<our_budget>6,000 EUR</our_budget>-->
+	<!--<funding_agency>General Secretariat of Research and Technology</funding_agency>-->
+	<!--<funding_programme>Research and Technological Development Consortiums in sections of National Priority</funding_programme>-->
+
+	<partner>
+		<shortname>Coordinator: Aggeliki Poulymenakou, Athens University of Economics and Business</shortname>
+		<country>GR</country>
+	</partner>
+		<partner>
+		<shortname>Coordinator: Athanasia Pouloudi, Athens University of Economics and Business</shortname>
+		<country>GR</country>
+	</partner>
+	<partner>
+		<shortname>Rapporteur: Elpida Prasopoulou, Department of Management Science and Technology</shortname>
+		<country>GR</country>
+	</partner>
+	<partner>
+		<shortname>Rapporteur: Eirini Kalliamvakou, Department of Management Science and Technology</shortname>
+		<country>GR</country>
+	</partner>
+	
+	<description>
+ <p>
+  	In order to produce the deliverable a meeting with interested participants from various sectors was held. Indicatively, participants were lawyers, experts in identity management research, bank executives but also people interested in the implementation of an identity management framework in the medical sector. The topics discussed involved identity management in the greek context, issues that will rise in the future but also corrections to the deliverable were proposed, which were incorporated.
+</p>
+	</description>
+</project>
