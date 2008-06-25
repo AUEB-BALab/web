@@ -45,15 +45,15 @@ ssh pipelines.
 </li>
 <li>
 <a href="http://www.dmst.aueb.gr/dds/sw/unix/fileprune">Fileprune</a>
-will delete files from the specified set targetting a given
+will delete files from the specified set targeting a given
 distribution of the files within time as well as size, number, and age
 constraints. Its main purpose is to keep a set of daily-created backup
-files in managable size, while still providing reasonable access to
+files in manageable size, while still providing reasonable access to
 older versions. Specifying a size, file number, or age constraint will
 simply remove files starting from the oldest, until the constraint is
 met. The distribution specification (exponential, Gaussian (normal),
 or Fibonacci) provides finer control of the files to delete, allowing
-the retention of recent copies and the increasingly agressive pruning
+the retention of recent copies and the increasingly aggressive pruning
 of the older files. You can read more in the
 <a href="http://www.dmst.aueb.gr/dds/pubs/trade/2003-login-prune/html/prune.html">article</a>
 Organized pruning
@@ -68,8 +68,7 @@ the original BibTeX styles are faithfully reproduced.
 </li>
 <li>
 <a href="http://gaijin.dmst.aueb.gr/~bkarak/programs/fire/index.html">FIRE/J</a> 
-is a very fast regular expression library for java. See also the article titled, Vassilios  Karakoidas and Diomidis Spinellis. 
-FIRE/J: Optimizing regular expression searches with generative programming. <i>Software: Practice and Experience</i>, 2007. (to appear)
+is a very fast regular expression library for java. See also the article titled, Vassilios Karakoidas and Diomidis Spinellis. FIRE/J: Optimizing regular expression searches with generative programming. <i>Software: Practice and Experience</i>, 38(6):557-573, May 2008
 </li>
 <li>
 <a href="http://gaijin.dmst.aueb.gr/~bkarak/programs/fire/benchmark.html">Regular Expression Benchmark Utility</a> 
