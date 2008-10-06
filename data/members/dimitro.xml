@@ -5,16 +5,30 @@
 	<memb_title>Mr.</memb_title>
 	<email>dimitro@aueb.gr</email>
 	<!-- <web_site></web_site> -->
-	<!-- <office_phone></office_phone> -->
+	<office_phone>+30 2108203370</office_phone>
 	<!-- <mobile_phone></mobile_phone> -->
-	<!-- <fax></fax> -->
+	<fax>+30 2108203370</fax>
 	<!-- <alumnus/>--><!-- Optional -->
-	<!--<office_address>Optional</office_address>-->
-	<!--<postal_address>Optional</postal_address>-->
+	<office_address>
+		Athens University of Economics and Business
+		Main Building, Derigny ct, 3rd fl
+	</office_address>
+	<postal_address>
+		76 Patission str,
+		104 34,
+		Athens, Greece
+	</postal_address>
 	<photo>../images/m_dimitro.JPG</photo>
 	<shortcv>
-			<p><i>Dimitrios Mitropoulos</i> holds a BSc in Informatics and Telecommunications from National and Kapodistrian University of Athens and a MSc in Information Systems from Athens University of Economics and Business.	</p>
-			<p>In the past he has worked in IT support and software development positions during his studies. He is a member of the <a href="../groups/g_sense-details.html">SENSE</a> group. His research interests include P2P Network Security and Software Engineering.
+			<p><i>Dimitrios Mitropoulos</i> is a PhD Candidate at the Athens University of Economics and Business (AUEB), Department of Management Science and Technology. He holds a BSc in Informatics and Telecommunications from National and Kapodistrian University 
+			of Athens and a MSc in Information Systems from Athens University of Economics and Business.	</p>
+			<p>In the past he has worked in IT support and software development positions during his studies. He is a member of the <a href="../groups/g_sense-details.html">SENSE</a> group. His research interests include Types and Programming Languages, 
+			Software Security, Static code analysis and Software Engineering.
 			</p>
-		</shortcv>
+	</shortcv>
+	<phd-info completed="0" supervisor="m_dds" startdate="20080915">
+	<phd-title>
+		(to appear)
+	</phd-title>
+	</phd-info>
 	</member>
