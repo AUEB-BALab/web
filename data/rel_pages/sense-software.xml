@@ -68,7 +68,7 @@ the original BibTeX styles are faithfully reproduced.
 </li>
 <li>
 <a href="http://istlab.dmst.aueb.gr/~dimitro/sdriver/">SDriver</a> 
-secures web applications from SQL injection atacks. See also the <a href="http://www.dmst.aueb.gr/dds/pubs/jrnl/2009-CompSec-SQLIA/html/sqlia.html">article</a> titled, Vassilios Karakoidas and Diomidis Spinellis. SDriver: Location-Specific Signatures Prevent SQL Injection Attacks <i>Computers and Security</i>, 2009
+secures web applications from SQL injection atacks. See also the <a href="http://www.dmst.aueb.gr/dds/pubs/jrnl/2009-CompSec-SQLIA/html/sqlia.html">article</a> titled, Dimitris Mitropoulos and Diomidis Spinellis. SDriver: Location-Specific Signatures Prevent SQL Injection Attacks <i>Computers and Security</i>, 2009
 </li>
 <li>
 <a href="http://gaijin.dmst.aueb.gr/~bkarak/programs/fire/index.html">FIRE/J</a> 
