@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project id="soprano" group="g_istlab g_sense" contact="m_dimitro" scientific_coordinator="m_dds" international="yes" type="rtd">
+	<shortname>SOPRANO</shortname>
+	<projtitle>Service-oriented Programmable Smart Environments for Older Europeans</projtitle>
+	<startdate>20070101</startdate>
+	<enddate>20100401</enddate>
+	<!-- <web_site>http://www.soprano-ip.org/</web_site> -->
+	<our_budget>100000 euro</our_budget>
+	<total_budget>6999626 euro</total_budget>
+	<funding_agency>European Commission</funding_agency>
+	<funding_programme>FP6/IST</funding_programme>
+	<project_code> - </project_code>
+	<logo>../images/SOPRANO_logo.jpg</logo>
+	<partner>
+		<shortname>Exodus Solutions</shortname>
+		<country>GR</country>
+		<web_site>http://www.exodus.gr/</web_site>
+	</partner>
+	<partner>
+		<shortname>Singular Software S.A.</shortname>
+		<country>GR</country>
+		<web_site>http://www.singularsoftware.gr/index.asp</web_site>
+	</partner>
+	<partner>
+		<shortname>PROSYST</shortname>
+		<country>DE</country>
+		<web_site>http://www.prosyst.de</web_site>
+	</partner>
+	<partner>
+		<shortname>Tunstall</shortname>
+		<country>UK</country>
+		<web_site>http://www.tunstall.co.uk/</web_site>
+	</partner>
+	<partner>
+		<shortname>CAS Software</shortname>
+		<country>DE</country>
+		<web_site>http://www.cas.de/english/home.asp</web_site>
+	</partner>
+	<partner>
+		<shortname>FZI</shortname>
+		<country>DE</country>
+		<web_site>http://www.fzi.de/</web_site>
+	</partner>
+	<partner>
+		<shortname>Robotiker Tecnalia</shortname>
+		<country>ES</country>
+		<web_site>http://www.robotiker.com/robotiker/index.jsp</web_site>
+	</partner>
+	<partner>
+		<shortname>Dialoc ID</shortname>
+		<country>NL</country>
+		<web_site>http://www.dialocid.com/</web_site>
+	</partner>
+	<partner>
+		<shortname>and others</shortname>
+		<web_site>http://www.soprano-ip.org/ecportal.asp?id=31&amp;nt=19&amp;lang=1</web_site>
+	</partner>
+	<description>
+SOPRANO aims to design a system that assists older people in coping with everyday life in greater comfort and safety, with integrated delivery of high quality support and care. The project also aims to help all Europeans to continue to live independently and play a full role in society. SOPRANO develops and adapts to normal home environments a sophisticated range of suitably unobtrusive components seamlessly linked to external service provision.
+		<br/><br/>
+A major objective of SOPRANO is to take a leap forward in the way users can interact with and take charge of their living environment, as well as to develop the way professional care personnel can support the SOPRANO users when called on to do so. The SOPRANO system acts not as a traditional "smart home", passively receiving user commands, nor as pure "remote care", by alerting outside staff to act in case of an alarm. Instead, SOPRANO acts as an informed, friendly agent, taking orders, giving advice or reminders and ready to help, and get help when needed.
+	</description>
+</project>
