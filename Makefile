@@ -263,7 +263,7 @@ email-lists: ${DB}
 	done
 
 dist: html
-	$(SSH) george@istlab.dmst.aueb.gr "cd /home/dds/src/istlab-web ; \
+	$(SSH) istlab.dmst.aueb.gr "cd /home/dds/src/istlab-web ; \
 	umask 002 ; \
 	cvs update -d ; \
 	gmake clean html report brochure ; \
