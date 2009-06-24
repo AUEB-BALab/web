@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<project id="mubig" group="g_istlab g_wrc" scientific_coordinator="m_giaglis" international="no" type="rtd">
+  <shortname>MUBIG</shortname>
+  <projtitle>Mubig - Museum Ubiquitous Guide</projtitle>
+  <startdate>20081215</startdate>
+  <enddate>20090430</enddate>
+  <!--<web_site></web_site-->
+  <!--<our_budget>0 EUR</our_budget>-->
+  <!--<total_budget>0 EUR</total_budget>-->
+  <funding_agency>Information Society</funding_agency>
+  <funding_programme>e-Services</funding_programme>
+  <!--<project_code>Axis 4.5.1</project_code>-->
+  
+
+  <logo>../images/mubig.jpg</logo>
+  <description>
+    <p>
+      The objective of the current project is to implement a Ubiquitous Guide for the Museum of Cycladic Art (named MubiG). MubiG exploits wireless technologies (RFID and WiFi) to provide location/exhibit based tour to the museum’s visitors.
+    </p>
+    <p>
+      The visitors are capable of learning information about the museum’s exhibits from a rich audiovisual content available through a PDA that they carry during their visit. MubiG identifies the visitors’ position in the museum (using the WiFi positioning platform and the RFID identification capabilities) and offers them the appropriate content. The information available to the visitors is graduated, meaning that the visitors can decide the level of information offered about the exhibits.
+    </p>
+    <p>
+      On the other hand, MubiG through its sophisticated tracking system export various reports which are of great interest for the museum. Favorable paths of visitors in the museum, time spent per exhibit, among other information is analyzed and offered to the museum’s management for the improvement of their services.
+    </p>
+
+  </description>
+</project>
