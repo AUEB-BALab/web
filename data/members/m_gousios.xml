@@ -22,20 +22,9 @@
 	<shortcv>
 	    <i>Georgios Gousios</i> is a PhD candidate at the Athens University of Economics and Business. He holds a Diploma in Information and Communication Systems Engineering from the University of the Aegean and an MSc in Advanced Computer Science from the University of Manchester. He has contributed code in various open source projects and worked as independent software consultant. Currently, he is pursuing a PhD in the area of virtual machines at the Athens University of Economics and Business and also managing the <a href="http://www.sqo-oss.eu">SQO-OSS</a> project (IST-033331). His research interests include programming languages implementation, virtual machines, operating system architectures and software quality assesment.
 	</shortcv>
-	<phd-info completed="0" supervisor="m_dds" startdate="20041115">
-		<phd-title>Efficient co-operation of Virtual Machines with Operting Systems</phd-title>
+	<phd-info completed="1" supervisor="m_dds" startdate="20041115" enddate="20090704">
+		<phd-title>Tools and Methods for Large Scale Empirical Software Engineering Research</phd-title>
 		<phd-summary>
-<p>
-A typical computer system offers a set of resources that applications utilise in order to carry out computations. Traditionally, the operating system has been employed to manage the allocation of resources to applications in a safe and efficient manner. A less widely used approach has been the concept of virtualisation of the resources, which has been successfully utilised in the field of server consolidation. Both approaches are based on the assumption that user level applications are developed in unsafe languages and thus use complex and costly mechanisms, such as context switching and virtual memory, for isolating processes from the executive. 
-</p>
-<p>
-In the last few years, the advent of safe programming languages has driven the development of process-level virtual machines to new heights. Just-In-Time compilers provide near native performance, while efficient garbage collection algorithms could completely replace manual memory management in most environments. However, virtual machines tend to offer complementary services to the traditional resource sharing infrastructures, which has been found to deteriorate performance. Two questions emerge: 
-</p>
-<ul>
-	<li>Can the performance of virtual machines be improved by allowing them to directly manage resources such as memory and input/output devices?</li>
-	<li>Can the cost of context switching be alleviated by using a single memory space in a virtual machine or the security mechanisms and runtime conventions in safe languages place an unforeseen burden on performance?</li>
-</ul>
-Our work will try to answer the former questions by porting a process level virtual machine on virtualised computer hardware. 
 		</phd-summary>
 	</phd-info>
 </member>
