@@ -343,7 +343,7 @@
 		<h3>Summary</h3>
 		<xsl:copy-of select="current()/shortcv"/>
 		</div>
-		<xsl:if test="count(current()/phd-info) = 1">
+		<xsl:if test="count(current()/phd-info) = 1 and current()/phd-info/@completed = 0">
 		<div class="content">
 		<h3>PhD Thesis</h3>
 		<b>Title: </b><xsl:value-of select="current()/phd-info/phd-title"/><br/>
