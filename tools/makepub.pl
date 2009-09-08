@@ -15,6 +15,7 @@
 BEGIN {
 	$/ = "@";
 	open(RUN, ">build/bibrun") || die "$!\n";
+	binmode(RUN);
 	print RUN "(\n";
 	$includepath = '-b "-include-directory data/publications -include-directory tools"' if ($^O =~ m/mswin32/i);
 }
