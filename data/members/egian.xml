@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<member id="egian" group="g_istlab g_sense" joined="20090904">
+	<givenname>Vaggelis</givenname>
+	<surname>Giannikas</surname>
+	<memb_title>Mr.</memb_title>
+	<email>egian@dmst.aueb.gr</email>
+	<!-- <web_site></web_site> -->
+	<office_phone>+30 2108203370</office_phone>
+	<!-- <mobile_phone></mobile_phone> -->
+	<fax>+30 2108203370</fax>
+	<!-- <alumnus/>--><!-- Optional -->
+	<office_address>
+		Athens University of Economics and Business
+		Main Building, Derigny ct, 3rd fl
+	</office_address>
+	<postal_address>
+		76 Patission str,
+		104 34,
+		Athens, Greece
+	</postal_address>
+	<photo></photo>
+	<shortcv>
+			<p><i>Vaggelis Giannikas</i> holds a BSc in Management Science and Technology from the
+			Athens University of Economics and Business (AUEB).
+			He is currently a member of the <a href="../groups/g_sense-details.html">SENSE</a> group.
+			His research interests include open source software, software engineering and supply chain information systems.</p>
+			<p>He also works at the European Project Unit of SingularLogic S.A. and collaborates with the
+			ELTRUN, the e-business research center.</p>
+	</shortcv>
+</member>
