@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<member id="m_mkehagia" group="g_istlab g_sense" joined="20090907">
+	<givenname>Maria</givenname>
+	<surname>Kechagia</surname>
+	<memb_title>Ms</memb_title>
+	<email>mkehagia@dmst.aueb.gr</email>
+	<!-- <web_site></web_site> -->
+	<office_phone>+30 2108203370</office_phone>
+	<!-- <mobile_phone></mobile_phone> -->
+	<fax>+30 2108203370</fax>
+	<!-- <alumnus/>--><!-- Optional -->
+	<office_address>
+		Athens University of Economics and Business
+		Main Building, Derigny ct, 3rd fl
+	</office_address>
+	<postal_address>
+		76 Patission str,
+		104 34,
+		Athens, Greece
+	</postal_address>
+	<photo></photo>
+	<shortcv>
+			<p><i>Maria Kechagia</i> has just finished the department of Management Science and Technology of 
+			Athens University of Economics and Business. 
+			Currently, she is a member of the <a href="../groups/g_sense-details.html">SENSE</a> group.
+			She is interested in Information Systems and topics related to Open Source Software and E-Business.
+			She also collaborates with the department of European Projects of SingularLogic S.A. and with the ELTRUN.</p>
+	</shortcv>
+</member>
