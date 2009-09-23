@@ -19,9 +19,23 @@
 		Athens, Greece
 	</postal_address>
 	<photo>../images/m_gousios.jpg</photo>
-	<shortcv>
-	    <i>Georgios Gousios</i> has a PhD from the Athens University of Economics and Business. He holds a Diploma in Information and Communication Systems Engineering from the University of the Aegean and an MSc in Advanced Computer Science from the University of Manchester. He has contributed code in various open source projects and worked as independent software consultant. Currently, he is pursuing a PhD in the area of virtual machines at the Athens University of Economics and Business and also managing the <a href="http://www.sqo-oss.eu">SQO-OSS</a> project (IST-033331). His research interests include programming languages implementation, virtual machines, operating system architectures and software quality assesment.
-	</shortcv>
+    <shortcv>
+
+        <i>Dr. Georgios Gousios</i> holds an MSc with distinction from the
+        University of Manchester, UK and a PhD from the Athens University of
+        Economics and Business,GR, both on Software Engineering. He has worked
+        as a researcher in several national and international research projects
+        and provided consulting services in both multinational and emerging
+        startup companies.  He was the project manager, lead designer and top
+        source code contributor of the SQO-OSS project, an FP6 funded project
+        that produced novel tools for facilitating research in the field of
+        software engineering. He has published more that 10 papers in various
+        fields and also co-edited the "Beautiful Architectures" book (OReilly,
+        2009). His research interests include empirical software engineering,
+        software architectures and systems level software. He is a member of
+        the ACM, the IEEE, Usenix and the technical chamber of Greece.
+
+    </shortcv>
 	<phd-info completed="1" supervisor="m_dds" startdate="20041115" enddate="20090704">
 		<phd-title>Tools and Methods for Large Scale Empirical Software Engineering Research</phd-title>
 		<phd-summary>
