@@ -67,8 +67,8 @@ derived from a converted bibliography style template. This ensures that
 the original BibTeX styles are faithfully reproduced.
 </li>
 <li>
-<a href="http://istlab.dmst.aueb.gr/~dimitro/sdriver/">SDriver</a> 
-secures web applications from SQL injection atacks. See also the <a href="http://www.dmst.aueb.gr/dds/pubs/jrnl/2009-CompSec-SQLIA/html/sqlia.html">article</a> titled, Dimitris Mitropoulos and Diomidis Spinellis. SDriver: Location-Specific Signatures Prevent SQL Injection Attacks <i>Computers and Security</i>, 2009
+<a href="http://istlab.dmst.aueb.gr/~dimitro/ssuite/">SSuite</a> 
+is a secure suite of tools that eliminates code injeciton attacks based on a generic approach. Two applications of our approach have been presented in a <a href="http://www.dmst.aueb.gr/dds/pubs/jrnl/2009-CompSec-SQLIA/html/sqlia.html">journal</a> and <a href="http://www.dmst.aueb.gr/dds/pubs/conf/2009-MCIS-XPath/html/MKS09.htm">conference paper</a> respectively.
 </li>
 <li>
 <a href="http://gaijin.dmst.aueb.gr/~bkarak/programs/fire/index.html">FIRE/J</a> 
