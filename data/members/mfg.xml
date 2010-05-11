@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<member id="m_mfrag" group="g_istlab g_sense" joined="20091101">
+  <givenname>Marios</givenname>
+  <surname>Fragkoulis</surname>
+  <memb_title>Mr.</memb_title>
+  <email>mfg@aueb.gr</email>
+  <!-- <web_site></web_site> -->
+  <photo>../images/m_mfg.jpg</photo>
+  <shortcv>
+    <p><i>Marios Fragkoulis</i> is a PhD
+      Candidate at the Athens University of
+      Economics and Business (AUEB), Department of
+      Management Science and Technology. He holds a
+      BSc in Management Science and Technology from
+      Athens University of Economics and Business
+      with distinction and a MSc in Computing
+      Science from Imperial College London with distinction.    </p>
+    <p>He is a member of
+      the <a href="../groups/g_sense-details.html">SENSE</a>
+      group. His research interests include Security Engineering and
+      Software Engineering.
+    </p>
+  </shortcv>
+  <phd-info completed="0" supervisor="m_dds" startdate="20100101">
+    <phd-title>Information Systems Security</phd-title>
+    <phd-summary></phd-summary>
+  </phd-info>
+</member>
