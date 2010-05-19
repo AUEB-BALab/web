@@ -117,6 +117,11 @@ pipelines, and implement file views using symbolic links.
 different ways of browsing the Wikipedia universe, through an intuitive GUI
 application.
 </li>
+<li>
+<a href="http://code.grnet.gr/projects/voting-power/wiki">Voting
+Power</a> calculates the voting power of voters with weighted votes in
+an assembly.
+</li>
 </ul>
 </page_body>
 </page>
