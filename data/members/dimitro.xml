@@ -22,12 +22,15 @@
 	<shortcv>
 			<p><i>Dimitrios Mitropoulos</i> is a PhD Candidate at the Athens University of Economics and Business (AUEB), Department of Management Science and Technology. He holds a BSc in Informatics and Telecommunications from National and Kapodistrian University 
 			of Athens and a MSc in Information Systems from Athens University of Economics and Business.	</p>
-			<p>In the past he has worked in IT support and software development positions during his studies. He is a member of the <a href="../groups/g_sense-details.html">SENSE</a> group. His research interests include Countering Code Injection Attacks, Software Security, Static code analysis, Types and Programming Languages and Software Engineering.
+			<p>In the past he has worked in IT support and software development positions during his studies. He is a member of the <a href="../groups/g_sense-details.html">SENSE</a> group and has been involved in various research projects like <a href="../projects/p_sqo-oss.html">SQO-OSS</a> and <a href="../projects/soprano.html">SOPRANO</a>. His research interests include Countering Code Injection Attacks, Software Security, Static code analysis, Types and Programming Languages and Software Engineering.
 			</p>
 	</shortcv>
 	<phd-info completed="0" supervisor="m_dds" startdate="20080915">
 	<phd-title>
 		Secure Software Development Technologies
 	</phd-title>
+    <phd-summary>
+         Code injection attacks are one of the most damaging class of attacks because: they can occur in different layers, like databases, native code, applications, libraries and others; and they span a wide range of security and privacy issues, like viewing sensitive information, destruction or modification of sensitive data, or even stopping the execution of the entire application. Our research attempts to prevent a wide class of such attacks in a novel way. 
+    </phd-summary>
 	</phd-info>
 	</member>
