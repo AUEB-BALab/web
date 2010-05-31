@@ -31,6 +31,7 @@ MEMBERFILES=$(wildcard data/members/*.xml)
 GROUPFILES=$(wildcard data/groups/*.xml)
 PROJECTFILES=$(wildcard data/projects/*.xml)
 RELPAGEFILES=$(wildcard data/rel_pages/*.xml)
+ANNOUNCEFILES=$(wildcard data/announce/*.xml)
 PUBFILE=build/pubs.xml
 BIBFILES=$(wildcard data/publications/*.bib)
 
@@ -99,8 +100,14 @@ $(DB): ${MEMBERFILES} ${GROUPFILES} ${PROJECTFILES} ${SEMINARFILES} ${RELPAGEFIL
 		grep -v -e "xml version=" $$file; \
 	done >>$@
 	@echo '</page_list>' >> $@
-	@perl -n tools/makepub.pl $(BIBFILES) >>$@
-	@echo '</istlab>' >>$@
+	@echo '<announce_list>' >> $@
+	@for file in $(ANNOUNCEFILES); \
+	do \
+		grep -v -e "xml version=" $$file; \
+	done >> $@
+	@echo "</announce_list>" >> $@
+	@perl -n tools/makepub.pl $(BIBFILES) >> $@
+	@echo '</istlab>' >> $@
 
 clean:
 	-rm -f  build/* \
@@ -111,6 +118,7 @@ clean:
 		${HTML}/misc/* \
 		${HTML}/reports/* \
 		${HTML}/brochure/* \
+		${HTML}/announce/* \
 		${HTML}/publications/* 2>/dev/null
 	-rm -f public_html/images/colgraph.svg
 	-rm -f *.aux
@@ -147,6 +155,13 @@ val: ${DB}
 	@-for file in $(RELPAGEFILES); \
 	do \
 		xml val -d schema/istlab-page.dtd $$file > /dev/null 2>xmlval.out; \
+		if [ $$? != "0" ]; then cat xmlval.out; fi; \
+		rm xmlval.out; \
+	done
+	@echo '---> Checking announcements ...'
+	@-for file in $(ANNOUNCEFILES); \
+	do \
+		xml val -d schema/istlab-announce.dtd $$file > /dev/null 2>xmlval.out; \
 		if [ $$? != "0" ]; then cat xmlval.out; fi; \
 		rm xmlval.out; \
 	done
@@ -241,6 +256,10 @@ rel_pages: ${DB}
 	do \
 		xml tr ${PXSLT} -s opage=$$page -s what=rel-pages ${DB} >${HTML}/rel_pages/$$page-page.html ; \
 	done
+
+announcements: ${DB}
+	@echo "Creating announcements"
+	@xml tr ${PXSLT} -s what=announce ${DB} >${HTML}/announce/announcements.html
 
 publications: ${DB}
 	@echo "Creating publications"

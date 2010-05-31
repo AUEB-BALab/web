@@ -11,12 +11,12 @@
 
 <!-- Global definitions {{{1 -->
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" >
-<xsl:param name="today"/>	<!-- today's date -->
-<xsl:param name="ogroup"/>	<!-- limit output to (projects/members) of a given group -->
-<xsl:param name="oproject"/>	<!-- limit output to a given project -->
-<xsl:param name="omember"/>	<!-- limit output to a given member -->
-<xsl:param name="opage"/>	<!-- limit output to a given page -->
-<xsl:param name="what"/>	<!-- Output:
+<xsl:param name="today" />	<!-- today's date -->
+<xsl:param name="ogroup" />	<!-- limit output to (projects/members) of a given group -->
+<xsl:param name="oproject" />	<!-- limit output to a given project -->
+<xsl:param name="omember" />	<!-- limit output to a given member -->
+<xsl:param name="opage" />	<!-- limit output to a given page -->
+<xsl:param name="what" />	<!-- Output:
 					  members
 					| alumni
 					| current-projects
@@ -28,6 +28,7 @@
 					| member-publications
 					| project-publications
 					| rel-pages
+					| announce
 				-->
 <xsl:param name="menu"/>        <!-- Turn Side menu:
 					  on (default is on)
@@ -561,6 +562,9 @@
 					<xsl:copy-of select="current()/*" /><br />
 				</xsl:for-each>
 			</xsl:if>
+			<xsl:if test="$bodygroup = 'g_istlab'">
+				<a href="../announce/announcements.html">Announcements</a><br />
+			</xsl:if>
 		</div>
 	</xsl:template>
 
@@ -570,6 +574,22 @@
 		<div class="content">
 		<xsl:copy-of select="current()/page_body" />
 		</div>
+	</xsl:template>
+	
+	<xsl:template match="announce">
+		<h2><xsl:value-of select="current()/announce_title" /></h2>
+		
+		<p>
+			<xsl:copy-of select="current()/announce_body" /><br />
+			<small>
+				<xsl:text>Posted by </xsl:text>
+				<xsl:apply-templates select="/istlab/member_list/member [@id=current()/@member]" mode="simple-ref" />
+				<xsl:text> @ </xsl:text>
+				<xsl:call-template name="date">
+					<xsl:with-param name="date" select="current()/@date" />
+				</xsl:call-template>
+			</small>
+		</p>
 	</xsl:template>
 
 	<!-- Main transformation {{{1 -->
@@ -626,6 +646,9 @@
 				-
 				<xsl:value-of select="/istlab/page_list/page[@id = $opage]/page_name" />
 			</xsl:when>
+			<xsl:when test="$what = 'announce'">
+				<xsl:text>&#8212; Announcements</xsl:text>
+			</xsl:when>
 		</xsl:choose>
 		</title>
 		</head>
@@ -649,14 +672,15 @@
 			<xsl:when test="$what = 'member-details'"></xsl:when>
 			<xsl:when test="$what = 'member-publications'"></xsl:when>
 			<xsl:when test="$what = 'project-publications'"></xsl:when>
-			<xsl:when test="$what = 'group-details'">
+			<xsl:when test="$what = 'announce'"></xsl:when>
+			<!--><xsl:when test="$what = 'group-details'">
 				<div class="projecttitle">
 				<xsl:value-of select="/istlab/group_list/group[@id = $ogroup]/shortname" />
 				-
 				<xsl:value-of select="/istlab/group_list/group[@id = $ogroup]/grouptitle" />
 				</div>
-			</xsl:when>
-			<!-- For all the rest -->
+			</xsl:when> -->
+			<!-- For all the rest, announce and group-details -->
 			<xsl:otherwise>
 				<div class="projecttitle">
 				<xsl:value-of select="/istlab/group_list/group[@id = $ogroup]/shortname" />
@@ -664,9 +688,9 @@
 				<xsl:value-of select="/istlab/group_list/group[@id = $ogroup]/grouptitle" />
 				</div>
 			</xsl:otherwise>
-		</xsl:choose>		
+		</xsl:choose>
 		<table border="0" cellpadding="0" cellspacing="0" width="100%">
-			<tr>			
+			<tr>
 			<xsl:if test="$menu != 'off'">
 				<td valign="top">
 				<xsl:if test="$what = 'rel-pages'">
@@ -790,6 +814,18 @@
 				<xsl:when test="$what = 'rel-pages'">
 					<xsl:apply-templates select="/istlab/page_list/page[@id = $opage]" mode="full"/>
 				</xsl:when>
+				<!-- announcements -->
+				<xsl:when test="$what = 'announce'">
+					<div class="title">Announcements</div>
+					<div class="content">						
+						<xsl:for-each select="/istlab/announce_list/announce">
+							<xsl:sort select="current()/@date" data-type="text" order="ascending" />
+							<!--<xsl:if test="current()/@date">-->
+								<xsl:apply-templates select="current()" />
+							<!--</xsl:if>-->
+						</xsl:for-each>
+					</div>
+				</xsl:when>
 			</xsl:choose>
 			</td>
 			</tr>
@@ -807,11 +843,11 @@
 			</Work>
 			<License rdf:about="http://creativecommons.org/licenses/by-nc-nd/2.5/"><permits rdf:resource="http://web.resource.org/cc/Reproduction"/><permits rdf:resource="http://web.resource.org/cc/Distribution"/><requires rdf:resource="http://web.resource.org/cc/Notice"/><requires rdf:resource="http://web.resource.org/cc/Attribution"/><prohibits rdf:resource="http://web.resource.org/cc/CommercialUse"/></License></rdf:RDF> -->
 		</font>
-		<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+<!--	<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
 		<script type="text/javascript">
 			_uacct = "UA-1927509-1";
 			urchinTracker();
-		</script>
+		</script> -->
 		</body>
 		</html>
 	</xsl:template>
