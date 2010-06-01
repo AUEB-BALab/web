@@ -168,7 +168,7 @@ val: ${DB}
 	@echo '---> Checking db.xml ...'
 	@xml val -d schema/istlab.dtd $(DB)
 
-html: verify ${DB} groups projects members rel_pages publications phone email-lists phd-students report brochure
+html: verify ${DB} groups projects members rel_pages announcements publications phone email-lists phd-students report brochure
 
 report: ${DB}
 	@echo "Creating ISTLab reports"
@@ -259,7 +259,7 @@ rel_pages: ${DB}
 
 announcements: ${DB}
 	@echo "Creating announcements"
-	@xml tr ${PXSLT} -s what=announce ${DB} >${HTML}/announce/announcements.html
+	@xml tr ${PXSLT} -s ogroup=g_istlab -s what=announce ${DB} >${HTML}/announce/announcements.html
 
 publications: ${DB}
 	@echo "Creating publications"

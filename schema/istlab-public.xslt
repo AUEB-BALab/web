@@ -577,8 +577,7 @@
 	</xsl:template>
 	
 	<xsl:template match="announce">
-		<h2><xsl:value-of select="current()/announce_title" /></h2>
-		
+		<h2><xsl:value-of select="current()/announce_title" /></h2>	
 		<p>
 			<xsl:copy-of select="current()/announce_body" /><br />
 			<small>
@@ -587,6 +586,10 @@
 				<xsl:text> @ </xsl:text>
 				<xsl:call-template name="date">
 					<xsl:with-param name="date" select="current()/@date" />
+				</xsl:call-template>
+				<xsl:text> ,last updated @ </xsl:text>
+				<xsl:call-template name="date">
+					<xsl:with-param name="date" select="current()/@last_updated" />
 				</xsl:call-template>
 			</small>
 		</p>
@@ -672,8 +675,8 @@
 			<xsl:when test="$what = 'member-details'"></xsl:when>
 			<xsl:when test="$what = 'member-publications'"></xsl:when>
 			<xsl:when test="$what = 'project-publications'"></xsl:when>
-			<xsl:when test="$what = 'announce'"></xsl:when>
-			<!--><xsl:when test="$what = 'group-details'">
+			<!--<xsl:when test="$what = 'announce'"></xsl:when>
+			<xsl:when test="$what = 'group-details'">
 				<div class="projecttitle">
 				<xsl:value-of select="/istlab/group_list/group[@id = $ogroup]/shortname" />
 				-

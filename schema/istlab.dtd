@@ -135,6 +135,7 @@
 	id ID #REQUIRED
 	date CDATA #REQUIRED
 	member IDREF #REQUIRED
+	last_update CDATA #REQUIRED
 >
 
 <!ELEMENT announce_title (#PCDATA)>

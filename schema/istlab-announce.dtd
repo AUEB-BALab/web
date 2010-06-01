@@ -23,6 +23,7 @@
 	id ID #REQUIRED
 	date CDATA #REQUIRED
 	member CDATA #REQUIRED
+	last_update CDATA #REQUIRED
 >
 
 <!ELEMENT announce_title (#PCDATA)>

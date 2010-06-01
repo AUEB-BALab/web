@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<announce id="announce_one" date="20100531" member="m_bkarak">
+<announce id="announce_one" date="20100531" member="m_bkarak" last_update="20100531">
 	<announce_title>This is the title!</announce_title>
 	<announce_body>
 		This is the <i>body</i>!
