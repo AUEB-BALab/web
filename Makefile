@@ -7,7 +7,7 @@
 
 ifdef SYSTEMDRIVE
 # Windows - CygWin
-SSH=plink
+SSH=ssh
 PATHSEP=;
 BIBTEX_OPTIONS=-include-directory=data/publications -include-directory=. -include-directory=./tools
 SH=$(SHELL)
