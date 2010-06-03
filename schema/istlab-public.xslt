@@ -585,11 +585,7 @@
 				<xsl:apply-templates select="/istlab/member_list/member [@id=current()/@member]" mode="simple-ref" />
 				<xsl:text> @ </xsl:text>
 				<xsl:call-template name="date">
-					<xsl:with-param name="date" select="current()/@date" />
-				</xsl:call-template>
-				<xsl:text> ,last updated @ </xsl:text>
-				<xsl:call-template name="date">
-					<xsl:with-param name="date" select="current()/@last_updated" />
+					<xsl:with-param name="date" select="current()/@last_update" />
 				</xsl:call-template>
 			</small>
 		</p>
