@@ -10,14 +10,14 @@
 	<postal_address>Office 205, 47A Evelpidon &amp; 33 Lefkados Str., GR-113 62 Athens, Greece</postal_address>
 <photo>../images/m_ikaliam.jpg</photo>
 	<shortcv>
-		<p><b>Eirini Kalliamvakou </b> is a research officer at the Athens University of Economics and Business in ISTLab and a PhD candidate since November 2004 in the Department of Management Science and Technology at the Athens University of Economics and Business (AUEB). Eirini holds a Bachelor in Economics from the University of Athens and an MSc in Decision Sciences (specialization in e-Business) from the Athens University of Economics and Business. Her research interests concern the communication and coordination issues between developers arising in the face of global software development, especially in the context of Open Source Software development. She has also researched devloper activity within open source software projects and the social networks behind the respective communities. In parallel, she has been involved with the digital identity of a citizen in the eGovernment environment (her work within the GUIDE project).
+		<p><b>Eirini Kalliamvakou </b> is a research officer at the Athens University of Economics and Business in ISTLab and a PhD candidate since November 2004 in the Department of Management Science and Technology at the Athens University of Economics and Business (AUEB). Eirini holds a Bachelor in Economics from the University of Athens and an MSc in Decision Sciences (specialization in e-Business) from the Athens University of Economics and Business. Her research interests concern the communication and coordination processes between developers in global software development projects, especially in the context of Open Source Software development. She has also researched devloper activity within open source software projects and the social networks behind the respective communities. In parallel, she has been involved with the digital identity of a citizen in the eGovernment environment (her work within the GUIDE project).
 </p>
 
 	</shortcv>
 <phd-info completed="0" supervisor="m_pouloudi" startdate="20041103">
-		<phd-title>Investigation of the topology of open source software developer networks: Properties and implications</phd-title>
+		<phd-title>The socio-technical aspect of communication and coordination in global software development: The open source software development environment</phd-title>
 		<phd-summary>
-Open Source Software (OSS) has received growing attention due to the diversified characteristics of its development linked also with its noticeable adoption and quality. One key element that enables OSS's dynamic evolution is the internal organization of dispersed developers into effective teams that produce the output of the process. This thesis investigates the topology of social networks of collaboration between developers within OSS projects and the properties that lead to it.     
+Open Source Software (OSS) has received growing attention due to the diversified characteristics of its development linked also with its noticeable adoption and quality. One key element that enables OSS's dynamic evolution is the internal organization of dispersed developers into effective teams that produce the output of the process. This thesis investigates the collaboration between dispersed OSS developers and the level of fit between the technical structure of the software and the coordination processes that complement it.     
 		</phd-summary>
 	</phd-info>
 </member>

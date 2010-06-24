@@ -2,7 +2,7 @@
 <member id="m_elpidap" group="g_istlab g_iris" joined="20020101">
 	<givenname>Elpida</givenname>
 	<surname>Prasopoulou</surname>
-	<memb_title>Ms.</memb_title>
+	<memb_title>Dr.</memb_title>
 	<email>elpidap@aueb.gr</email>
 	<office_phone>+30 2108203870</office_phone>
 	<fax>+30 2108203664</fax>
@@ -11,11 +11,11 @@
 <photo>../images/m_elpidap.jpg</photo>
 	<shortcv>
 		<p>
-<b>Elpida Prasopoulou</b> is PhD candidate in the Department of Management Science and Technology at the Athens University of Economics and Business (AUEB). In 1999 she graduated first from the Department of Public Administration at the Panteion University of Political and Social Sciences with a specialization in Economics. She also holds a MBA degree awarded jointly in 2001 from the National Technical University of Athens and Athens University of Economics and Business. From 1999 until 2000 she worked as assistant accountant. From 2001 until 2006 she worked as a research officer in eLTRUN. From 2007, she works as a researcher in IRIS/ IST-Lab. She has participated in several research projects funded by the European Union (EU). She currently acts as project manager for AUEB in Guide (IST-2002-2.3.1.9), an Integrated Project funded by the E.U. Her research focuses on the role of information technology in the restructuring of the public sector.  Moreover, through the lens of Actor-Network Theory and Social Studies of Science and Technology (STS) she examines the role of technological artefacts in social practices.
+<b>Dr. Elpida Prasopoulou</b> holds a PhD from the Department of Management Science and Technology at the Athens University of Economics and Business (AUEB). In 1999 she graduated first from the Department of Public Administration at the Panteion University of Political and Social Sciences with a specialization in Economics. She also holds a MBA degree awarded jointly in 2001 from the National Technical University of Athens and Athens University of Economics and Business. From 1999 until 2000 she worked as assistant accountant. From 2001 until 2006 she worked as a research officer in eLTRUN. From 2007, she works as a researcher in IRIS/ IST-Lab. She has participated in several research projects funded by the European Union (EU). She currently acts as project manager for AUEB in Guide (IST-2002-2.3.1.9), an Integrated Project funded by the E.U. Her research focuses on the role of information technology in the restructuring of the public sector.  Moreover, through the lens of Actor-Network Theory and Social Studies of Science and Technology (STS) she examines the role of technological artefacts in social practices.
 </p>
 
 	</shortcv>
-<phd-info completed="0" supervisor="m_pouloudi" startdate="20021001">
+<phd-info completed="1" supervisor="m_pouloudi" startdate="20021001">
 		<phd-title>Information technology as a vehicle for the modernization of the state: The case of TAXIS</phd-title>
 		<phd-summary>
 			

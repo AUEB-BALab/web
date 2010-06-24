@@ -1,10 +1,10 @@
-<?xml version="1.0"?>
+<>?xml version="1.0"?>
 <member id="m_natasa" group="g_istlab g_iris">
 	<givenname>Natasha</givenname>
 	<surname>Papazafeiropoulou</surname>
 	<memb_title>Dr.</memb_title>
 	<email>Anastasia.Papazafeiropoulou@brunel.ac.uk</email>
-	<web_site>http://www.brunel.ac.uk/depts/cs/contact/index.shtml?apapazafeiropoulou</web_site>
+	<web_site>http://people.brunel.ac.uk/~csstaap/</web_site>
 	<!--<office_phone>+30 2108203654</office_phone>-->
 	<!--<mobile_phone>+30 2108203685</mobile_phone>-->
 	<alumnus/>
@@ -26,8 +26,6 @@ a full time researcher for a three year EPSRC funded project with the title 'Hum
 Electronic Commerce: A Stakeholder Perspective'. 
 
 </p>
-<p>For more information please visit her
-<a href="http://www.brunel.ac.uk/depts/cs/contact/index.shtml?apapazafeiropoulou">personal web page</a>
-</p>
+
 	</shortcv>
 </member>
