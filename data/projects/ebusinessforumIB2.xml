@@ -1,0 +1,29 @@
+﻿<?xml version="1.0"?>
+<project id="p_ebusinessforumIB2" group="g_istlab g_ois" scientific_coordinator="m_akp" international="no" type="rtd" contact="m_akp">
+	<shortname>eBusinessForum - Working Group IB2</shortname>
+	<projtitle>Knowledge Management Systems for Advanced e-Business Applications: Technological Capabilities, Opportunities and Prospects</projtitle>
+	<startdate>2007</startdate>
+	<enddate>2008</enddate>
+	<web_site>http://www.ebusinessforum.gr</web_site>
+	<!--<our_budget>328,627 EUR</our_budget>-->
+	<!--<total_budget>3,493,834 EUR</total_budget>-->
+	<!--<funding_agency>General Secretariat of Research and Technology</funding_agency>-->
+	<!--<funding_programme>Research and Technological Development Consortiums in sections of National Priority</funding_programme>-->
+	<!--<project_code>Axis 4.5.1</project_code>-->
+		
+	<!--<logo>../images/athens.gif</logo>-->
+	<description>
+			<p>
+			Working Group IB2 explores and presents the capabilities of Knowledge Management Systems for modern organizations.  The main objective is to inform private and public organizations about the capabilities and the advantages of Knowledge Management technologies and their impact on an organization’s innovation and competitiveness areas.
+			</p>
+			<p> Partners 
+				<ul>
+				<li>Coordinator: Angeliki Poulymenakou, Athens University of Economics and Business</li>
+				<li>Coordinator: Costis Dallas, Panteion University</li>
+				<li>Coordinator: Panos Georgolios, IMC e-services</li> 
+				<li>Rapporteur: Kostantinos Kafentzis, IMC e-services</li> 
+				<li>Rapporteur: Konstantinos Samiotis, Aston Business School, Aston University</li>
+				</ul>
+			</p>
+	</description>
+</project>

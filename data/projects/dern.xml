@@ -1,0 +1,46 @@
+﻿<?xml version="1.0"?>
+<project id="p_dern" group="g_istlab g_ois" scientific_coordinator="m_akp" international="yes" type="rtd" contact="m_akp">
+	<shortname>DERN</shortname>
+	<projtitle>Digital Enterprise Research Network</projtitle>
+	<startdate>20070601</startdate>
+	<enddate>20081001</enddate>
+	<web_site>http://islab.uom.gr/dern/</web_site>
+	<funding_agency>MINISTRY OF DEVELOPMENTGENERAL - Secretariat for Research and Technology</funding_agency>
+	<funding_programme>Operational Programme 'Competitiveness' Measure 8.3 - Action 8.3.6 </funding_programme>
+	<!--<our_budget>328,627 EUR</our_budget>-->
+	<!--<total_budget>3,493,834 EUR</total_budget>-->
+	<!--<funding_agency>General Secretariat of Research and Technology</funding_agency>-->
+	<!--<funding_programme>Research and Technological Development Consortiums in sections of National Priority</funding_programme>-->
+	<!--<project_code>Axis 4.5.1</project_code>-->
+		
+	<!--<logo>../images/athens.gif</logo>-->
+		<partner>
+		<shortname>Information Systems laboratory, University of Macedonia</shortname>
+		<country>GR</country>
+		<web_site>http://www.it.uom.gr/</web_site>
+		</partner>
+	
+		<partner>
+		<shortname>Institute of Communication and Computer Systems (ICCS), School of Electrical and Computer Engineering, National Technical University of Athens</shortname>
+		<country>GR</country>
+		<web_site>http://www.iccs.gr/eng/</web_site>
+		</partner>
+
+		<partner>
+		<shortname>ALTEC</shortname>
+		<country>GR</country>
+		<web_site>http://www.altec.gr/</web_site>
+		</partner>
+	
+		<partner>
+		<shortname>FORTHNET</shortname>
+		<country>GR</country>
+		<web_site>http://www.forthnet.gr</web_site>
+		</partner>
+	
+	<description>
+ <p>
+ The main objective of the DERN project is the development of a research network among some of the major academic, research and technology institutions and enterprises located in Greece by focusing on the use of state of the art Information and Communication Technologies in the business organization and management.
+</p>
+	</description>
+</project>

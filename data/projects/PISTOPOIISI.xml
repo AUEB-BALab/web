@@ -1,0 +1,68 @@
+﻿<?xml version="1.0"?>
+<project id="p_PISTOPOIISI" group="g_istlab g_ois" scientific_coordinator="m_akp" international="no" type="rtd" contact="m_akp">
+	<shortname>PISTOPOIISI</shortname>
+	<projtitle>Accreditation of continuous learning programs and skills development</projtitle>
+	<startdate>19980301</startdate>
+	<enddate>20000430</enddate>
+	<!--<web_site>http://islab.uom.gr/dern/</web_site>-->
+	<funding_agency>European Union</funding_agency>
+	<funding_programme>EPEAEK- Measure 3.1. D.2</funding_programme>
+	<!--<our_budget>158,473 EUR</our_budget>-->
+	<our_budget>29,200 EUR</our_budget>
+	<!--<funding_agency>General Secretariat of Research and Technology</funding_agency>-->
+	<!--<funding_programme>Research and Technological Development Consortiums in sections of National Priority</funding_programme>-->
+	<!--<project_code>Axis 4.5.1</project_code>-->
+		
+	<!--<logo>../images/athens.gif</logo>-->
+		<partner>
+		<shortname>University of Macedonia</shortname>
+		<country>GR</country>
+		<web_site>http://www.uom.gr/</web_site>
+		</partner>
+	
+		<partner>
+		<shortname>Technical University of Crete</shortname>
+		<country>GR</country>
+		<web_site>http://en.tuc.gr</web_site>
+		</partner>
+
+		<partner>
+		<shortname>ΝΕΤ channel</shortname>
+		<country>GR</country>
+		<web_site>http://www.ert.gr/</web_site>
+		</partner>
+
+		<partner>
+		<shortname>ΕΜΙ Consultants S.A</shortname>
+		<country>GR</country>
+		<web_site>http://www.emigroup.gr/</web_site>
+		</partner>
+		
+		<partner>
+		<shortname>ΕΟΜΜΕΧ</shortname>
+		<country>GR</country>
+		<web_site>http://www.eommex.gr/</web_site>
+		</partner>
+		
+		<partner>
+		<shortname>GSEVEE</shortname>
+		<country>GR</country>
+		<web_site>http://www.gsevee.gr/</web_site>
+		</partner>				
+
+		<partner>
+		<shortname>Extreme Media Solutions</shortname>
+		<country>GR</country>
+		</partner>	
+
+		<partner>
+		<shortname>G. Skroumpelos</shortname>
+		<country>GR</country>
+		</partner>
+				
+	<description>
+		<p>
+		The project constituted the sub-project of a completed development program of a tele-education environment for the teaching support in three Greek academic institutions (Athens University of Economics and Business, University of Macedonia, Athens University, Technical University of Crete). The aim of project was the certification of instructive processes in the environments of tele-education. The partners of project collaborated with British organizations (e.g. Pitman) for the accreditation of training. In addition, it was developed an Accreditation process for the environments of tele-education, which was adopted by the partners of the project.
+		</p>
+	</description>
+</project>

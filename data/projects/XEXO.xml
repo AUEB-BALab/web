@@ -1,0 +1,34 @@
+﻿<?xml version="1.0"?>
+<project id="p_XEXO" group="g_istlab g_ois" scientific_coordinator="m_akp" international="no" type="rtd" contact="m_akp">
+	<shortname>XEXO</shortname>
+	<projtitle>PLACE OF EDUCATION WITHOUT LIMITS</projtitle>
+	<startdate>19980301</startdate>
+	<enddate>20000730</enddate>
+	<!--<web_site>http://islab.uom.gr/dern/</web_site>-->
+	<funding_agency>European Union</funding_agency>
+	<funding_programme>EPEAEK- Measure 3.1. D.2</funding_programme>
+	<!--<our_budget>158,473 EUR</our_budget>-->
+	<our_budget>65,443 EUR</our_budget>
+	<!--<funding_agency>General Secretariat of Research and Technology</funding_agency>-->
+	<!--<funding_programme>Research and Technological Development Consortiums in sections of National Priority</funding_programme>-->
+	<!--<project_code>Axis 4.5.1</project_code>-->
+		
+	<!--<logo>../images/athens.gif</logo>-->
+		<partner>
+		<shortname>University of Macedonia</shortname>
+		<country>GR</country>
+		<web_site>http://www.uom.gr/</web_site>
+		</partner>
+	
+		<partner>
+		<shortname>Technical University of Crete</shortname>
+		<country>GR</country>
+		<web_site>http://en.tuc.gr</web_site>
+		</partner>
+
+	<description>
+		<p>
+		XEXO constituted a network of tele-education that served the needs of three Greek universities (Athens University of Economics and Business, University of Macedonia, and Technical University of Crete).  A tele-education system was installed in each one of the involved academic institutions, via which were taught 3 thematic objects (Electronic Commerce and Business Processes, Occupational Health and Safety, Business Process Modelling). The role of AUEB in the project was focused in a) Instructional design, and b) Design and Development e-learning courses.
+		</p>
+	</description>
+</project>

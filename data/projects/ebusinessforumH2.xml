@@ -1,0 +1,36 @@
+﻿<?xml version="1.0"?>
+<project id="p_ebusinessforumH2" group="g_istlab g_ois" scientific_coordinator="m_akp" international="no" type="rtd" contact="m_akp">
+	<shortname>eBusinessForum - Working Group H2</shortname>
+	<projtitle>E-learning and Work Environment</projtitle>
+	<startdate>2005</startdate>
+	<enddate>2006</enddate>
+	<web_site>http://www.ebusinessforum.gr</web_site>
+	<!--<our_budget>328,627 EUR</our_budget>-->
+	<!--<total_budget>3,493,834 EUR</total_budget>-->
+	<!--<funding_agency>General Secretariat of Research and Technology</funding_agency>-->
+	<!--<funding_programme>Research and Technological Development Consortiums in sections of National Priority</funding_programme>-->
+	<!--<project_code>Axis 4.5.1</project_code>-->
+		
+	<!--<logo>../images/athens.gif</logo>-->
+	<description>
+			<p>
+			Working Group IB2 attempts to:			
+				<ul>
+				<li>Evaluate the current situation concerning the adoption of e-learning by Greek organizations</li>
+				<li>Explore cases in which organizations have proceeded to an evaluation of e-learning initiatives</li>
+				<li>Identify the major problems concerning the evaluation of e-learning in the workplace</li> 
+				<li>Identify international case studies and best practices concerning  the evaluation of e-learning</li> 
+				<li>Classify and formulate a complete approach of e-learning evaluation in the workplace.</li>
+				</ul>	
+			</p>
+			
+			<p> Partners 
+				<ul>
+				<li>Coordinator: Angeliki Poulymenakou, Athens University of Economics and Business</li>
+				<li>Coordinator: Nikitas Kastis, Lambrakis Foundation</li>
+				<li>Rapporteur: Panagiotis Zaharias, Athens University of Economics and Business</li> 
+				<li>Rapporteur: Athanasios Nikas, Athens University of Economics and Business</li>
+				</ul>
+			</p>
+	</description>
+</project>

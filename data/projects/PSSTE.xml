@@ -1,0 +1,34 @@
+﻿<?xml version="1.0"?>
+<project id="p_PSSTE" group="g_istlab g_ois" scientific_coordinator="m_akp" international="no" type="rtd" contact="m_akp">
+	<shortname>DERN</shortname>
+	<projtitle>Patterns Standardization for Designing Tele-Education Systems</projtitle>
+	<startdate>2000</startdate>
+	<enddate>2001</enddate>
+	<!--<web_site>http://islab.uom.gr/dern/</web_site>-->
+	<funding_agency>MINISTRY OF DEVELOPMENTGENERAL - Secretariat for Research and Technology</funding_agency>
+	<funding_programme>Operational Program of Research and Technology EPET II, Measure 4.1, Action PENED ‘99</funding_programme>
+	<our_budget>158,473 EUR</our_budget>
+	<!--<funding_agency>General Secretariat of Research and Technology</funding_agency>-->
+	<!--<funding_programme>Research and Technological Development Consortiums in sections of National Priority</funding_programme>-->
+	<!--<project_code>Axis 4.5.1</project_code>-->
+		
+	<!--<logo>../images/athens.gif</logo>-->
+		<partner>
+		<shortname>University of Macedonia</shortname>
+		<country>GR</country>
+		<web_site>http://www.uom.gr/</web_site>
+		</partner>
+	
+		<partner>
+		<shortname>Technical University of Crete</shortname>
+		<country>GR</country>
+		<web_site>http://en.tuc.gr</web_site>
+		</partner>
+
+	<description>
+		<p>
+		The research project aimed in the improvement of the quality of the provided education and in particular of the tele-education via computers and the world web (computer- and web-based tele-education), as well as in the empowerment of corresponding national software industry. The results of the project can be described as: a) Production and standardisation of usable design patterns of Tele-education Systems, and b) Contribution in the design and development process of educational applications.
+		</p>
+	</description>
+	
+</project>
