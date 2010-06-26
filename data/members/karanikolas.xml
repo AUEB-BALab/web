@@ -1,14 +1,10 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <member id="m_karanik" group="g_istlab g_ois" joined="20010301">
 	<givenname>Nikolaos</givenname>
 	<surname>Karanikolas</surname>
 	<memb_title>Mr.</memb_title>
 	<email>Not Available</email>
-	<office_phone>+30 2108203755</office_phone>
-	<fax>+30 2108203756</fax>
 	<alumnus/>
-	<office_address>1 Derigni St.</office_address>
-	<postal_address>76 Patission St., GR104 34, Athens, Greece</postal_address>
 	<photo>../images/m_karanik.jpg</photo>
 	<shortcv>
 	<p>

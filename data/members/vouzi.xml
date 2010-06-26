@@ -1,19 +1,16 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <member id="m_vouzi" group="g_istlab g_ois" joined="20050319">
 	<givenname>Vassiliki</givenname>
 	<surname>Vouzi</surname>
 	<memb_title>Miss</memb_title>
 	<email>vavouzi@dmst.aueb.gr</email>
-	<office_phone>+30 2108203755</office_phone>
-	<fax>+30 2108203756</fax>
-	<office_address>1 Derigni St.</office_address>
-	<postal_address>76 Patission St., GR104 34, Athens, Greece</postal_address>
+	<alumnus/>
 	<shortcv>
 		<p>
 		Vasiliki Vouzi is a graduate of the Department of Management Science and Technology, Athens University of Economic and Business, with a specialization in Information Systems and E-Commerce. She is now attending the MSc in Computer Science at the Department of Informatics in Athens University of Economic and Business.
-</p>
-<p>
-She has worked at the Management and Financial Department of United Nations High Commissioner for Refugees office in Athens, Greece. From 2004 she works as a research assistant in <a href="http://istlab.dmst.aueb.gr/">ISTLab</a>/<a href="../groups/g_ois-details.html">OIS</a> research group. Her interests lay in the Deployment of tools and Methodologies related to Modeling and Simulation of Complex Systems.
-</p>
+		</p>
+		<p>
+		She has worked at the Management and Financial Department of United Nations High Commissioner for Refugees office in Athens, Greece. From 2004 she works as a research assistant in <a href="http://istlab.dmst.aueb.gr/">ISTLab</a>/<a href="../groups/g_ois-details.html">OIS</a> research group. Her interests lay in the Deployment of tools and Methodologies related to Modeling and Simulation of Complex Systems.
+		</p>
 	</shortcv>
 </member>

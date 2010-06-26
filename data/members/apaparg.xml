@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <member id="m_apaparg" group="g_istlab g_ois" joined="20021014">
 	<givenname>Anthony</givenname>
 	<surname>Papargyris</surname>
@@ -13,10 +13,10 @@
 		<p>
 		Mr. ANTHONY PAPARGYRIS is a  PhD candidate in the Department of Management Science and Technology at the Athens University of Economics and Business, Greece. He holds a first degree in Business Computing (Teesside, UK), and an MSc degree in Information Systems (AUEB). Since 2001, he is now a member of <a href="http://istlab.dmst.aueb.gr/">ISTLab</a>/<a href="../groups/g_ois-details.html">OIS</a>. His current research is focussing on collective action and meaning construction, virtual communities, and learning. His general research interests are in online interactive learning games, philosophy of science and Information Systems, and Knowledge Management.
 		</p>
-	</shortcv>
-	<phd-info completed="0" supervisor="m_akp" startdate="20021014">
+		</shortcv>
+		<phd-info completed="0" supervisor="m_akp" startdate="20021014">
 		<phd-title>
-		Communicating and Capitalizing knowledge in virtual Communities of Practice
+		Knowledge sharing in virtual communities: Collective memory in Massive Multiplayer On-Line Games
 		</phd-title>
 		<phd-summary>
 		<p>

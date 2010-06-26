@@ -1,16 +1,13 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <member id="m_bk" group="g_istlab g_ois" joined="20040101">
 	<givenname>Vassilis</givenname>
 	<surname>Karamanis</surname>
 	<memb_title>Mr.</memb_title>
 	<email>bk@aueb.gr</email>
-	<office_phone>+30 2108203755</office_phone>
-	<fax>+30 2108203756</fax>
-	<office_address>1 Derigni St.</office_address>
-	<postal_address>76 Patission St., GR104 34, Athens, Greece</postal_address>
+	<alumnus/>
 	<shortcv>
 	<p>
-Mr. VASSILIS KARAMANIS was born in Athens at 1977. He is a graduate of the department of Informatics in Athens University of Business and Economics. He has a Certificate of Proficiency in English as well as a Certificate of D.E.L.F in French. His research interests are on the e-learning field and in particular in Instructional Design and Learning Objects Theory. He is currently working as a research assistant in <a href="http://istlab.dmst.aueb.gr/">ISTLab</a>/<a href="../groups/g_ois-details.html">OIS</a>.
+	Mr. VASSILIS KARAMANIS was born in Athens at 1977. He is a graduate of the department of Informatics in Athens University of Business and Economics. He has a Certificate of Proficiency in English as well as a Certificate of D.E.L.F in French. His research interests are on the e-learning field and in particular in Instructional Design and Learning Objects Theory. He is currently working as a research assistant in <a href="http://istlab.dmst.aueb.gr/">ISTLab</a>/<a href="../groups/g_ois-details.html">OIS</a>.
 	</p>
 	</shortcv>
 </member>

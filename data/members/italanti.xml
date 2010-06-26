@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <member id="m_italanti" group="g_istlab g_ois" joined="20050412">
 	<givenname>Ioanna</givenname>
 	<surname>Talanti</surname>
@@ -10,10 +10,12 @@
 	<postal_address>76 Patission St., GR104 34, Athens, Greece</postal_address>
 	<shortcv>
 	<p>
-	Ioanna Talanti graduated from the Department of Management Science and Technology at the Athens University of Economics and Business with a specialization in Information Systems Management. She is now attending the MSc in Technology Education and Digital Systems from University of Piraeus.
+	Ioanna Talanti is a PhD candidate in the Department of Management Science and Technology at the Athens University of Economics and Business. She holds a first degree in Management Science and Technology (Specialization: Information Systems Management) (AUEB, Greece) and an MSc degree in Technology Education and Digital Systems (Specialization in e-Learning) (University of Piraeus, Greece). She has worked as an instructor of employees at the Marketing Department of Papasotiriou S.A. and as a research assistant for the e-business research team ELTRUN at AUEB. She is now a member of ISTLab/OIS research group and she has participated in various research projects. Her research interests are on the e-learning field as well as on the Human Resource Information Systems. 
 	</p>
-	<p>
-	She has worked at the Marketing Department of Papasotiriou S.A. as an instructor of employees. From 2005 until 2006 she worked as a research assistant for the e-business research team Eltrun at AUEB.  From 2007, she works as a research assistant in <a href="http://istlab.dmst.aueb.gr/">ISTLab</a>/<a href="../groups/g_ois-details.html">OIS</a> research group. She has participated in various research projects. She currently works on the Benchmarking Study on European Policies and Initiatives to support E-learning in Enterprises, commissioned by the European Commission - DG Enterprise and Industry. Her research interests are on the e-learning field as well as on the Human Resource Information Systems.
-	</p>
-	</shortcv>
+</shortcv>
+	<phd-info completed="0" supervisor="m_akp" startdate="20100201">
+	<phd-title>
+	e-Learning in the Workplace: Factors affecting Employee’s on-the-job Performance
+	</phd-title>
+	</phd-info>
 </member>
