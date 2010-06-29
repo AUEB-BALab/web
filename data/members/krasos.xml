@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<member id="m_krasos" group="g_istlab g_iris" joined="Required">
+<member id="m_krasos" group="g_istlab g_iris" joined="20091130">
 	<givenname>Ioannis</givenname>
 	<surname>Krasonikolakis</surname>
 	<memb_title>Mr.</memb_title>
@@ -20,7 +20,7 @@ His research interest evolve around interactive marketing, virtual reality retai
 	<phd-info completed="0" 
 			  supervisor="m_pouloudi" 
 			  supervisor-external="Adam Vrechopoulos"
-		  	startdate=""
+		  	startdate="20091130"
 			  enddate="Optional"> <!-- Optional -->
 		<phd-title>Virtual Reality Internet Retailing: Experimental Examination of Interactive Shopping Interface – Store Atmosphere Effects on User-Consumer Behaviour</phd-title>
 		<phd-summary>
