@@ -2,16 +2,16 @@
 <member id="m_koun" group="g_istlab g_wrc" joined="20091101">
 	<givenname>Chris</givenname>
 	<surname>Kounavis</surname>
-	<!-- <memb_title>Optional</memb_title> -->
+	<memb_title>Mr.</memb_title>
 	<email>koun@aueb.gr</email>
 	<web_site>http://www.e-foititis.gr/</web_site>
-	<office_phone>+30 210 8203855</office_phone>
-	<!-- <mobile_phone>Optional</mobile_phone>
-	<fax>Optional</fax> -->
+	<office_phone>+30 2108203855</office_phone>
+	<!-- <mobile_phone>Optional</mobile_phone> -->
+	<fax>+30 2108203854</fax>
 	<!-- <alumnus/> --><!-- Optional -->
-	<office_address>Optional</office_address>
-	<postal_address>Optional</postal_address>
-	<photo>Optional</photo>
+	<office_address>Evelpidon 47-A &amp; Lefkados 33, Room 103</office_address>
+	<postal_address>Evelpidon 47-A &amp; Lefkados 33, 11362, Athens, Greece</postal_address>
+	<!-- <photo>Optional</photo> -->
 	<shortcv>
 	    Required
 	    <!-- XHTML -->
@@ -27,4 +27,4 @@
 		</phd-summary>
 	</phd-info> -->
 
-aa</member>
+</member>
