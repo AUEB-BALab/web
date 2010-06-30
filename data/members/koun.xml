@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<member id="m_koun" group="g_istlab g_wrc" joined="20091101">
+	<givenname>Chris</givenname>
+	<surname>Kounavis</surname>
+	<!-- <memb_title>Optional</memb_title> -->
+	<email>koun@aueb.gr</email>
+	<web_site>http://www.e-foititis.gr/</web_site>
+	<office_phone>+30 210 8203855</office_phone>
+	<!-- <mobile_phone>Optional</mobile_phone>
+	<fax>Optional</fax> -->
+	<!-- <alumnus/> --><!-- Optional -->
+	<office_address>Optional</office_address>
+	<postal_address>Optional</postal_address>
+	<photo>Optional</photo>
+	<shortcv>
+	    Required
+	    <!-- XHTML -->
+	</shortcv>
+	<!-- <phd-info completed="" 
+			  supervisor="Optional (or supervisor-external): member-id" 
+			  supervisor-external="Optional (or supervisor)"
+			  startdate="Required"
+			  enddate="Optional">
+		<phd-title>Required</phd-title>
+		<phd-summary>
+			Required
+		</phd-summary>
+	</phd-info> -->
+
+aa</member>
