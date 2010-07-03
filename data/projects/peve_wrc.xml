@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<project id="p_peve_wrc" 
+	 group="g_istlab g_wrc" 
+	 scientific_coordinator="m_giaglis" 
+	 contact="m_kasimati" 
+	 international="no"
+	 type="rtd">
+	 
+	<shortname>PEVE</shortname>
+	<projtitle>Mobile Data Services Adoption</projtitle>
+	<startdate>20100101</startdate>
+	<enddate>20101231</enddate>
+	<!-- <web_site>Optional</web_site> -->
+	<!-- <our_budget>Optional</our_budget>
+	<total_budget>Optional</total_budget>
+	<funding_agency>Optional</funding_agency>
+	<funding_programme>Optional</funding_programme>
+	<project_code>Optional</project_code> -->
+	<!-- each project has zero or more <partner> tags -->
+	<!-- <logo>Optional</logo> -->
+	<description>
+	    The project aims at investigating factors affecting the process through which consumers develop (a)
+ their initial intention to adopt Mobile Data Services  (MDS) and (b) their subsequent actual adoption behavior. 
+The study will investigate the current use and future potential of MDS under a cross-national perspective, since 
+it will be co-ordinated with the Worldwide Mobile Data Services Survey (WMDSS), which is a global self-funded 
+academic survey being carried out annually since 2002 in more than ten countries across the globe . In particular, 
+the scope of the study is twofold: i) to define an explanatory model of the individual, social, and application 
+factors influencing an individual's intention to adopt MDS along with the conditions that facilitate or prohibit 
+the subsequent actual MDS usage and ii) to designate the mobile market's future potential and how consumers can 
+be classified in terms of intention and usage behavior. Both these objectives will be investigated via a cross-national 
+approach, while this application seeks funding only for the national (Greek) part of it.
+	</description>
+</project>
