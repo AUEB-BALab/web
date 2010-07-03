@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<project id="ebusg"
+         group="g_istlab g_wrc"
+         international="no"
+         type="rtd">
+         <startdate>20030101</startdate>
+         <enddate>20031231</enddate>
+
+        <shortname>EDET</shortname>
+        <projtitle>eBusinessForum Research Group: Applications and services of 3G mobile technology networks</projtitle>
+        <description>
+       Studying current practices in Greece and internationally, determination of synergies that will function as channels of communication, identification of innovative applications enabled through 3G mobile networks.
+        </description>
+</project>

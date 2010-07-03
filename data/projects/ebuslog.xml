@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<project id="ebuslog"
+         group="g_istlab g_wrc"
+         international="no"
+         type="rtd">
+         <startdate>20020101</startdate>
+         <enddate>20021231</enddate>
+
+        <shortname>EDET</shortname>
+        <projtitle>eBusinessForum Research Group: The use of mobile and wireless applications in transportation and logistics</projtitle>
+        <description>
+       Studying current practices in Greece and internationally, determination of synergies that will function as channels of communication, identification of innovative applications for supply chain management processes.
+        </description>
+</project>

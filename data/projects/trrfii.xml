@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<project id="trrdidii"
+         group="g_istlab g_wrc"
+         international="no"
+         type="training">
+         <startdate>20061101</startdate>
+         <enddate>20070331</enddate>
+
+        <shortname>Trainees</shortname>
+        <projtitle>Developing RFID Applications in Greece II</projtitle>
+        <description>
+       Executive Seminar
+        </description>
+</project>

@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<project id="b2b" 
+  group="g_istlab g_wrc"
+         international="yes"
+         type="rtd">
+         <startdate>20030604</startdate>
+         <enddate>20030731</enddate>
+
+        <shortname>Study on the Development of B2B and B2C Electronic Commerce in Western Greece</shortname>
+        <projtitle>Study on the Development of B2B and B2C Electronic Commerce in Western Greece</projtitle>
+        <description>
+       	Study of the operational requirements for B2C e-shops and B2B e-marketplaces for the enterprises of the Prefecture of Western Greece. Identification of application domains and enterprise features enabling the participation in similar efforts.
+        </description>
+</project>

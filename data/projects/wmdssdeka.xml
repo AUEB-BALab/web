@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<project id="wmdssdeka"
+         group="g_istlab g_wrc"
+         international="no"
+         type="rtd">
+         <startdate>20040101</startdate>
+	<enddate>20153112</enddate>	
+
+        <shortname>WMDSS</shortname>
+        <projtitle>Worldwide Mobile Data Services Survey</projtitle>
+        <description>
+       A large-scale annual global survey designed to explore customer behaviour and the market environment for mobile data services around the world. The key objectives are to identify the current and potential user needs by collecting and analyzing data on the usage of mobile data services, to compare market trends in the mobile data services industry around the world, and to perform a longitudinal trend analysis. The study constitutes the most widely known rigorous academic study on Mobile Business around the globe. The survey is conducted every year since 2001 with great success in terms of both the number of participants (more than 20.000 answers annually) and the quality and contribution of the final results to the academic and corporate knowledge. Participating countries include: Australia, Finland, USA, Hong-Kong, Denmark, Japan, Korea, Taiwan, China, Canada, Greece and others.
+        </description>
+</project>

@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<project id="ebusrfid"
+         group="g_istlab g_wrc"
+         international="no"
+         type="rtd">
+         <startdate>20030101</startdate>
+         <enddate>20031231</enddate>
+
+        <shortname>EDET</shortname>
+        <projtitle>eBusinessForum Research Group: Streamlining Supply Chain Operations through Automatic Identification Technologies (RFID)</projtitle>
+        <description>
+       Studying current practices in Greece and internationally, determination of synergies that will function as channels of communication, identification of innovative applications based on RFID, focusing on the end consumer.
+        </description>
+</project>

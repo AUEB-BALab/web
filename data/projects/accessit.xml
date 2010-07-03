@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<project id="assessit"
+         group="g_istlab g_wrc"
+         international="yes"
+         type="rtd">
+         <startdate>19960101</startdate>
+         <enddate>19991231</enddate>
+
+        <shortname>ASSESS-IT</shortname>
+        <projtitle>Simulation as a Tool to Assess the Impact of IT-Enabled Business Process Change in Organisations</projtitle>
+        <description>
+       Development of theories, methodologies and tools to assist organisations in evaluating their investments in business process changes and IT applications through the use of simulation models.
+        </description>
+</project>

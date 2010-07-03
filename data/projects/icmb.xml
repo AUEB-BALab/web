@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<project id="icmb"
+         group="g_istlab g_wrc"
+         international="yes"
+         type="rtd">
+         <startdate>20100613</startdate>
+         <enddate>20100615</enddate>
+
+        <shortname>ICMB/GMR2010</shortname>
+        <projtitle>9th International Conference on Mobile Business/9th Global Mobility Roundtable</projtitle>
+        <description>
+       9th International Conference on Mobile Business / 9th Global Mobility Roundtable, Athens, 13-15 June 2010
+        </description>
+</project>

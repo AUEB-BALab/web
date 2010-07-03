@@ -1,0 +1,73 @@
+<?xml version="1.0"?>
+<project id="winnovate_wrc" 
+	 group="g_istlab g_wrc" 
+	 scientific_coordinator="m_giaglis" 
+	 contact="m_angelaki"
+	 international="yes"
+	 type="dissemination">
+	 
+	<shortname>WiNNOVATE</shortname>
+	<projtitle>Mediterranean Wireless Innovation</projtitle>
+	<startdate>20090501</startdate>
+	<enddate>20111031</enddate>
+	<web_site>http://www.winnovate.eu</web_site>
+	<!-- <our_budget>Optional</our_budget>
+	<total_budget>Optional</total_budget>
+	<funding_agency>Optional</funding_agency>
+	<funding_programme>Optional</funding_programme>
+	<project_code>Optional</project_code> -->
+	<!-- each project has zero or more <partner> tags -->
+	<partner>
+		<shortname>Prefecture of Larissa</shortname>
+		<country>Greece</country>
+		<web_site>http://www.larissa.gr</web_site>
+	</partner>
+        <partner>
+                <shortname>Velez-Malaga Town Council</shortname>
+                <country>Spain</country>
+                <web_site>http://www.ayto-velezmalaga.es</web_site>
+        </partner>
+	 <partner>
+                <shortname>TEDK Chiou</shortname>
+                <country>Greece</country>
+                <web_site>http://www.tedkchios.gr</web_site>
+        </partner>
+	 <partner>
+                <shortname>Radio Labs</shortname>
+                <country>Italy</country>
+                <web_site>http://www.radiolabs.it</web_site>
+        </partner>
+	 <partner>
+                <shortname>i2CAT</shortname>
+                <country>Spain</country>
+                <web_site>http://www.i2cat.net</web_site>
+        </partner>
+	 <partner>
+                <shortname>Municipality of Genoa</shortname>
+                <country>Italy</country>
+                <web_site>http://www.comune.genova.it</web_site>
+        </partner>
+	 <partner>
+                <shortname>Development Agency Sinergija</shortname>
+                <country>Slovenia</country>
+                <web_site>http://www.ra-sinergija.si</web_site>
+        </partner>
+
+	<logo>http://istlab.dmst.aueb.gr/~koun/istlab-web/public_html/images/winnovate.png</logo>
+	<description>
+WiNNOVATE aims at strengthening the innovation capacity of regional and municipal authorities in Greece,
+ Spain, Italy and Slovenia by transferring knowledge and best practices, as well as coordinating policies, 
+on the introduction and proliferation of wireless applications and services for citizens, government, and 
+economic development actors. More specifically, the project will leverage and cross-fertilize existing 
+wireless infrastructures (local and metropolitan wireless networks), define and experiment pilot applications 
+that will add value on these infrastructures for the benefit of end users, and propose policy interventions 
+at the regional, national and transnational levels. We will define an operational toolkit positioning regions 
+in terms of maturity and capacity levels for the introduction and use of innovative WiFi- and WiMAX-based 
+applications and services and use this as a guiding vehicle for the gradual increase of wireless innovation 
+potential for any given region in the Med space. We will jointly establish the specifications and pilot one 
+wireless information service per region, delivering concrete results and acting as a proof-of-concept for the 
+operational toolkit. The project's main outcomes will be: a reusable methodological approach for assessing and 
+guiding regional authorities towards wireless innovation, working pilot applications at each participating region, 
+evaluation of the lessons learnt by the pilots, and a set of policy recommendations.
+	</description>
+</project>

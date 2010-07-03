@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<project id="cycmus"
+         group="g_istlab g_wrc"
+         international="no"
+         type="rtd">
+         <startdate>20081215</startdate>
+         <enddate>20090430</enddate>
+
+        <shortname>eServices</shortname>
+        <projtitle>Personalized Multimedia Information Guide at the Museum of Cycladic Art</projtitle>
+        <description>
+       Design and development of a personalized video/audio guide for the visitors of the museum, incorporating automatic data identification (RFID) and WiFi positioning.
+        </description>
+</project>

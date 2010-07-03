@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<member id="m_kasimati" group="g_istlab g_wrc" joined="20081001">
+	<givenname>Anna</givenname>
+	<surname>Kasimati</surname>
+	<memb_title>Ms.</memb_title>
+	<email>akasim@aueb.gr</email>
+	<!-- <web_site>Optional</web_site> -->
+	<office_phone>+30 2108203682</office_phone>
+	<!-- <mobile_phone></mobile_phone> -->
+	<fax>+30 2108203691</fax>
+	<!-- <alumnus/> --><!-- Optional -->
+	<office_address>Evelpidon 47-A &amp; Lefkados 33, Room 907 </office_address>
+	<postal_address>Evelpidon 47-A &amp; Lefkados 33, 11362, Athens, Greece</postal_address>
+	<photo>../images/kasimati.jpg</photo>
+	<shortcv> 
+	   <p> Anna Kasimati holds a BSc in Management Science and Technology from the
+Athens University of Economics and Business (AUEB). She is currently a member of
+the ISTLab/WRC, where she is involved in several European and National research
+projects.</p>
+<p>Her main research interests lie in the areas of Strategy and Innovation in mBusiness,
+Pervasive Information Systems and Augmented Reality technologies.</p>
+	</shortcv>
+	<!-- <phd-info completed="Required: 0(false) or 1(true)" 
+			  supervisor="Optional (or supervisor-external): member-id" 
+			  supervisor-external="Optional (or supervisor)"
+			  startdate="Required"
+			  enddate="Optional"> 
+		<phd-title>Required</phd-title>
+		<phd-summary>
+			Required
+		</phd-summary>
+	</phd-info> -->
+</member>

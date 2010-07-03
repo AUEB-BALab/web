@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<project id="trfact"
+         group="g_istlab g_wrc"
+         international="no"
+         type="rtd">
+         <startdate>20061206</startdate>
+         <enddate>20071231</enddate>
+
+        <shortname>Improvement and Standardization of the Tracer Factory Traceability Information System</shortname>
+        <projtitle>Improvement and Standardization of the Tracer Factory Traceability Information System</projtitle>
+        <description>
+       Upgrades on the Tracer Factory traceability information system through incorporating internal traceability at all production stages, customization to the traceability requirements of Greek and European legislation, and integration with external systems (weighting, sensors, PLC controllers, etc).
+        </description>
+</project>

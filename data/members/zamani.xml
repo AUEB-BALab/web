@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<member id="m_zamani" group="g_istlab g_wrc" joined="20090501">
+	<givenname>Efpraxia</givenname>
+	<surname>Zamani</surname>
+	<memb_title>Ms.</memb_title>
+	<email>ezamani@aueb.gr</email>
+	<!-- <web_site>Optional</web_site> -->
+	<office_phone>+30 2108203855</office_phone>
+	<!-- <mobile_phone>Optional</mobile_phone> -->
+	<fax>+30 2108203854</fax>
+	<!-- <alumnus/> --> <!-- Optional -->
+	<office_address>Evelpidon 47-A &amp; Lefkados 33, Room 103</office_address>
+	<postal_address>Evelpidon 47-A &amp; Lefkados 33, 11362, Athens, Greece</postal_address>
+	<photo>../images/m_zamani.jpg</photo>
+	<shortcv>
+	Efrpaxia Zamani holds a Bachelor Degree in Architecture from the
+Faculty of Engineering, AUTH. She has been awarded with an MA
+in Museum Studies from the University of Leicester and an MSc in
+Finance &amp;  Management Engineering from the Aegean University.
+She has received a scholarship from the Department of Financial &amp;
+Management Engineering, Aegean University
+Efpraxia is currently studying toward her PhD in Pervasive Information
+Systems in the Department of Management Science and Technology
+of Athens University of Economics and Business, Greece. Her main
+research interests lie in the area of Pervasive Information Systems and
+Adoption Theories.	
+	</shortcv>
+	<phd-info completed="0" 
+			  supervisor="m_giaglis"
+			  startdate="20090419">
+		<phd-title>The role of Emotions and Aesthetics toward the adoption of Pervasive Information Systems Adoption </phd-title>
+		<phd-summary>
+			Pervasive Information Systems constitute an emerging class of Information Systems that are
+embedded within our physical environment, constantly collecting information in the form of input
+from the user and the environment itself so as to continuously readjust their function and implicitly
+respond to user needs and requirements. However, research in the field of user acceptance and
+adoption of Information Systems has been largely concerned with the cognitive aspect of usage,
+focusing more on the predictive strength of factors such as Performance and Effort Expectancy.
+These are elements that are no longer central to the context of use of Pervasive Information
+Systems. The current study proposes a new research framework that has in its core the affective
+qualities of Pervasive Information Systems and develops by exploring their impact on the user
+Emotional State.
+		
+		</phd-summary>
+	</phd-info>
+</member>

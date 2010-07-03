@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<project id="methdec"
+         group="g_istlab g_wrc"
+         international="yes"
+         type="rtd">
+         <startdate>19970101</startdate>
+         <enddate>19981231</enddate>
+
+        <shortname>Development of Methodologies and Decision Support Systems for the Evaluation of Investments in Broadband Telecommunication Networks</shortname>
+        <projtitle>Development of Methodologies and Decision Support Systems for the Evaluation of Investments in Broadband Telecommunication Networks</projtitle>
+        <description>
+       Development of methodologies and a Decision Support System for the dynamic and reconfigurable investment appraisal in broadband applications, emphasizing on digital TV.
+        </description>
+</project>

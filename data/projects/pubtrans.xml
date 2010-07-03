@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<project id="pubtran"
+         group="g_istlab g_wrc"
+         international="no"
+         type="rtd">
+         <startdate>20070424</startdate>
+         <enddate>20070708</enddate>
+
+        <shortname>Politeia</shortname>
+        <projtitle>Feasibility Study on Public Payment Transactions</projtitle>
+        <description>
+       Study on the potential of redesigning the extant methods for payment transactions between citizens/businesses and the Greek government. The aim is the abolishment of the dated system of coupons (paravola) and the substitution of payment mechanisms that require the physical presence of payers. Study of the potential of smart cards and mobile payments as alternative payment means. 
+        </description>
+</project>

@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<project id="ebusplat" 
+	 group="g_istlab g_wrc"
+	 international="yes" 
+	 type="rtd">
+	 <startdate>20030401</startdate>
+         <enddate>20040630</enddate>
+	 
+	<shortname>Development of an eBusiness platform for electronic procurements</shortname>
+	<projtitle>Development of an eBusiness platform for electronic procurements</projtitle>
+	<description>
+	Design and implementation of a business and technological eBusiness solution focusing on the improvement and support of the communication and exchange processes between the collaborative parties of a business group or between chain stores (emphasizing on the process of intra- and inter-organizational procurement).	
+	</description>
+</project>

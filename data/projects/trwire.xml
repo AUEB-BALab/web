@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<project id="trwire"
+         group="g_istlab g_wrc"
+         international="no"
+         type="training">
+         <startdate>20040510</startdate>
+         <enddate>20040515</enddate>
+
+        <shortname>Trainees</shortname>
+        <projtitle>Mobile and Wireless Technologies in Business</projtitle>
+        <description>
+       Executive Seminar
+        </description>
+</project>

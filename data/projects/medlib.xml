@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<project id="medlib"
+         group="g_istlab g_wrc"
+         international="no"
+         type="rtd">
+         <startdate>20051130</startdate>
+         <enddate>20060531</enddate>
+
+        <shortname>Medical Electronic Library</shortname>
+        <projtitle>Ygeia-Pronoia</projtitle>
+        <description>
+       Identification of electronic libraries features, identification of content management system features, analysis of the functional and technical requirements for the development of an electronic library for medical issues for the Ministry of Health.
+        </description>
+</project>

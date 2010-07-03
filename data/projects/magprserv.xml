@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<project id="manprserv"
+         group="g_istlab g_wrc"
+         international="no"
+         type="rtd">
+         <startdate>20100215</startdate>
+         <enddate>20100515</enddate>
+
+        <shortname>Study on the Effects of Managed Print Services on Organizations</shortname>
+        <projtitle>Study on the Effects of Managed Print Services on Organizations</projtitle>
+        <description>
+       Appraisal of the printing ecosystem of large and medium enterprises and analysis of how Managed Print Services may affect business performance indicators.
+        </description>
+</project>

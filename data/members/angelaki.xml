@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<member id="m_angelaki" group="g_istlab g_wrc" joined="20100104">
+	<givenname>Despina</givenname>
+	<surname>Angelaki</surname>
+	<memb_title>Ms.</memb_title>
+	<email>dangelaki@aueb.gr</email>
+	<!-- <web_site>Optional</web_site> -->
+	<office_phone>+30 2108203855</office_phone>
+	<!-- <mobile_phone>Optional</mobile_phone> -->
+	<fax>+30 2108203854</fax>
+	<!-- <alumnus/> --><!-- Optional -->
+	<office_address>Evelpidon 47-A &amp; Lefkados 33, Room 103</office_address>
+	<postal_address>Evelpidon 47-A &amp; Lefkados 33, 11362, Athens, Greece</postal_address>
+	<!-- <photo>Optional</photo> -->
+	<shortcv>
+	    Despina Angelaki holds a Diploma in Applied Sciences from the National Technical
+University of Athens. She was awarded a MSc in Applied Physics from the University
+of Orsay (Paris - France), supported by the Eugenides Foundation Scholarship.
+She worked for the European Commission's Directorate General for Research
+- Transports Directorate, Aeronautics Unit - in the scientific management and
+monitoring of research projects funded under the FP7. Currently she is working for
+the Wireless Research Center of the IST Lab at the Department of Management
+Science and Technology of the Athens University of Economics and Business.
+	</shortcv>
+	<!-- <phd-info completed="Required: 0(false) or 1(true)" 
+			  supervisor="Optional (or supervisor-external): member-id" 
+			  supervisor-external="Optional (or supervisor)"
+			  startdate="Required"
+			  enddate="Optional"> 
+		<phd-title>Required</phd-title>
+		<phd-summary>
+			Required
+		
+		</phd-summary>
+	</phd-info> -->
+</member>

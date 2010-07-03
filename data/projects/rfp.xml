@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<project id="rfpwrc"
+         group="g_istlab g_wrc"
+         international="yes"
+         type="rtd">
+         <startdate>20061122</startdate>
+         <enddate>20070430</enddate>
+
+        <shortname>Competitiveness</shortname>
+        <projtitle>Request Management Platform for RFPs/RFQs</projtitle>
+        <description>
+       Study and research on contemporary eBusiness technologies to support the business processes of electronic data interchange between buyers and sellers in the context of competitive tendering (Requests for Proposals / Requests for Quotations).
+        </description>
+</project>
