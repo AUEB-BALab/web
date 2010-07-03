@@ -2,8 +2,20 @@
 <page id="wrc_job_openings" group="g_wrc">
 	<page_name>Job Openings</page_name>
 	<page_body>
-WRC seeks candidates to fill the positions of <b>Research Associate/Research Assistant</b>. The ideal candidates should have a degree in Information Systems 
-or Management and be fluent in English. Prior experience with the management of national or international research projects is welcome, but not necessary.
-If you are interested, send a detailed CV to Dr. Panos Kourouthanassis at pkour@aueb.gr. 
+ISTLab/WRC currently seeks to fill the following positions:
+<ul>
+<li><b>Postdoctoral Research Associate</b>. The ideal candidate will have a PhD in Computer Science,
+ Information Systems, Business Administration or related discipline and be interested in full-time
+ research/academic career. Prior experience with research project management is necessary.</li>
+
+<li><b>Doctoral Candidates (PhD students)</b>. The ideal candidate should have a Masters (or equivalent)
+ degree in Computer Science, Information Systems, Business Administration or related discipline and be
+ fluent in English. Prior experience with research projects is welcome, but not necessary.</li>
+
+<li><b>Research Assistants</b>. The ideal candidate should have a degree in Computer Science, 
+Information Systems, Business Administration or related discipline and be fluent in English.</li>
+</ul>
+ 
+<p>If you are interested in any of the above positions, send a detailed CV to the Group leader, indicating which post you are interested in.</p>
 	</page_body>
 </page>

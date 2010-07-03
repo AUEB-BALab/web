@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+a<?xml version="1.0"?>
 <member id="m_koun" group="g_istlab g_wrc" joined="20091101">
 	<givenname>Chris</givenname>
 	<surname>Kounavis</surname>
@@ -11,10 +11,9 @@
 	<!-- <alumnus/> --><!-- Optional -->
 	<office_address>Evelpidon 47-A &amp; Lefkados 33, Room 103</office_address>
 	<postal_address>Evelpidon 47-A &amp; Lefkados 33, 11362, Athens, Greece</postal_address>
-	<!-- <photo>Optional</photo> -->
+        <photo>http://istlab.dmst.aueb.gr/~koun/istlab-web/public_html/images/m_koun.jpg</photo>
 	<shortcv>
-	    Required
-	    <!-- XHTML -->
+	 Chris Kounavis is a student at the Department of Management Science and Technology, Athens University of Economics &amp; Business (AUEB). He is currently a member of the WRC research group. His research interests include mobile innovation, mobile software engineering and website development.  
 	</shortcv>
 	<!-- <phd-info completed="" 
 			  supervisor="Optional (or supervisor-external): member-id" 

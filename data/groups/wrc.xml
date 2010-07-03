@@ -1,10 +1,12 @@
 <?xml version="1.0"?>
-<group id="g_wrc" director="m_giaglis" contact="m_alextsiaousis" maintainer="m_alextsiaousis">
+<group id="g_wrc" director="m_giaglis" contact="m_koun" maintainer="m_koun">
 	<grouptitle>Wireless Research Center</grouptitle>
 	<shortname>WRC</shortname>
 	<description>
-		<p><b>The ISTLab Wireless Research Center (ISTLab/WRC)</b> pursues basic and applied research on areas relating to the application and exploitation of mobile, wireless, and sensor-based technologies in organizational and social contexts. The main research interests of the group
-engage upon the following research streams:</p>
+		<p><b>The ISTLab Wireless Research Center (ISTLab/WRC)</b> pursues basic and applied research
+ on areas relating to the application and exploitation of mobile,
+ wireless, and sensor-based technologies in organizational and social contexts.
+ The main research interests of the group engage upon the following research streams:</p>
 
 <ul>
 <li>Pervasive and Ubiquitous Information Systems </li>
@@ -17,16 +19,20 @@ engage upon the following research streams:</p>
 <li> Mobile Business Strategy, Policy and Regulation </li>
 </ul>
 
-<p>The mission of ISTLab/WRC is to promote research on mobile and wireless
-business through its participation on leading-edge and innovative <b>research
-projects </b> as well as the production of high-quality research results. The <b>members</b> of ISTLab/WRC pursue basic and applied
-interdisciplinary research on a multiplicity of dimensions defining the world of mobile and wireless business.</p>
-	</description>
+<p>The mission of ISTLab/WRC is to promote research on mobile and wireless business
+ through its participation in leading-edge and innovative <a href="http://istlab.dmst.aueb.gr/content/groups/g_wrc-current-projects.html"><b>research
+ projects</b></a> as well as the production of high-quality research results. 
+ The <a href="http://istlab.dmst.aueb.gr/content/groups/g_wrc-members.html"><b>members</b></a> of ISTLab/WRC pursue basic and applied interdisciplinary research
+ on a multiplicity of dimensions defining the world of mobile and wireless business.</p>
+
+<p>ISTLab/WRC has organized the <a href="http://www.mbusiness2010.org" target="_blank"><b>9th International Conference on Mobile Business / 9th Global Mobility Roundtable</b></a> (Athens, June 2010) and operates the <a href="http://www.wirelessresearch.eu"><b>European Wireless Research portal</b></a>.</p>
+	
+</description>
 	<rel_link>
-		<a href="http://www.mobiforum.org">Mobiforum Portal</a>
+		<a href="http://www.wirelessresearch.eu" target="_blank">WirelessResearch.eu</a>
 	</rel_link>
 	<rel_link>
-		<a href="http://icmb.mobiforum.org/about.php">Int. Conf. on M>Business</a>
+		<a href="http://www.mbusiness2010.org" target="_blank">ICMB/GMR 2010</a>
 	</rel_link>
 	<logo>../images/g_wrc.jpg</logo>  
 	<color>#FFFF96</color>

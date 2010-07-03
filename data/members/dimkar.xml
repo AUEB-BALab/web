@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <member id="m_dimkar" group="g_istlab g_wrc" joined="20060102">
-	<givenname>Dimitrios</givenname>
+	<givenname>Dr. Dimitrios</givenname>
 	<surname>Karaiskos</surname>
 	<memb_title>Mr.</memb_title>
 	<email>dimkar@aueb.gr</email>
@@ -11,11 +11,39 @@
 	<postal_address>Evelpidon 47-A &amp; Lefkados 33, 11362, Athens, Greece</postal_address>
 	<photo>../images/dimkar.jpg</photo>
 	<shortcv>
-		<p>Dimitrios Karaiskos holds a Bachelor Degree in Informatics and Telecommunications from the National and Kapodistrian University of Athens, Greece. His Bachelor dissertation regarded: Service Adaptation and Roaming in 3G networks using Mobile Agent technologies. He has also been awarded with an MSc in Information Systems from the Athens University of Economics and Business, Greece. His MSc dissertation was: Development of an RFID-enabled Automated Management System under the scope of athletic ticketing.</p>
-		<p>Dimitrios is currently studying towards his PhD in Pervasive Information Systems (PIS) in the Department of Management Science and Technology of Athens University of Economics and Business, Greece. He has a great experience regarding programming on both desktop and mobile devices in various platforms and programming languages. His main interests lie in the area of Pervasive Information Systems, RFID technology and Sensor Networks.</p>
+<p>Dimitrios Karaiskos is a Research Fellow at the WRC of the
+Department of Management Science and Technology of Athens
+University of Economics and Business (AUEB).</p>
+
+<p>He holds a BSc Degree in Informatics and Telecommunications
+from the National and Kapodistrian University of Athens,
+Greece and an MSc in Information Systems from the Athens
+University of Economics and Business, Greece. His doctoral
+dissertation investigates user acceptance of pervasive
+information systems taking into account technology-specific
+traits, human behaviour, physical and social environment. His
+work has been presented in several academic conferences and
+published in International Journal of Mobile Computing, Journal
+of Information Technology and several book chapters.</p>
+
+<p>His main research interests lie in the area of pervasive
+information systems and technology acceptance. Mainly, he
+is studying acceptance of pervasive systems in the context of
+promotion and exploitation of cultural heritage. Moreover, he
+is interested in the design and implementation of pervasive
+services involving mobile and wireless technologies. He is also
+investigating usage trends and perceptions regarding mobile
+internet and data services through his participation in the
+Worldwide Mobile Data Services Survey.</p>
+
+<p>He uses analytical tools such as variance and covariance-based
+Structural Equation Modeling (SEM) and survey and experimental
+design as research methodologies. Finally, he has great experience in
+software development on both desktop and mobile devices in various
+platforms and programming languages.</p>
 	
 	</shortcv>
-	<phd-info completed="0" supervisor="m_giaglis" startdate="20060301">
+	<phd-info completed="1" supervisor="m_giaglis" startdate="20060301">
 	<phd-title>A Predictive Model for the Acceptance of Pervasive Information Systems by Individuals</phd-title>
 	<phd-summary>My research efforts lie in the intersection among pervasive/ubiquitous computing and behavioral prediction models, investigating factors affecting the acceptance and use of pervasive/ubiquitous computing by individuals taking into account the technology-specific traits, the human behavior, and the physical and social environment.
 	Moreover, Pervasive Information Systems (PIS) constitute the resurgent class of Information Systems (IS) due to the new attributes that pervasive/ubiquitous computing, the underlying technology, introduce. PIS differentiate themselves from traditional IS as they are characterized mainly by the embedment of technology into the physical environment, the effortless interactivity through natural interfaces, the seamless mobility of devices and services and the proactive support of users. These new elements of PIS create a hiatus among the existing technology acceptance models which were developed and tested under the focus of IS. 

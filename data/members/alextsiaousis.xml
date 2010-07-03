@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <member id="m_alextsiaousis" group="g_istlab g_wrc" joined="20050201">
-	<givenname>Alexandros</givenname>
+	<givenname>Dr. Alexandros</givenname>
 	<surname>Tsiaousis</surname>
 	<memb_title>Mr.</memb_title>
 	<email>tsiaousis@aueb.gr</email>
@@ -12,12 +12,13 @@
 	<photo>../images/alex.jpg</photo>
 	<shortcv>
 		<p>
-	Alexandros Tsiaousis holds a Bachelor Degree in International and European Economic and Political Studies from the University of Macedonia, Greece. His Bachelor dissertation regarded: <i>The multi-dimensional transition from Geopolitics to Geoconomy in Europe</i>,
-He has also been awarded with an MSc in Information Technology from the University of Glasgow (UK). His MSc dissertation was: <i>GLAP: An MSc IT Material Search engine for MSc students</i>.
-Mr. Tsiaousis is currently studying towards his PhD in mobile Human Computer Interaction (HCI) at the Department of Management Science and Technology of Athens University of Economics and Business (GR). His main interests lie in the area of the latest developments in 3G mobile phones and particularly in the mobile web.
+<p>Alexandros Tsiaousis holds a Bachelor Degree in International and European Economic and Political Studies from the University of Macedonia, Greece. His Bachelor dissertation regarded: The multi-dimensional transition from Geopolitics to Geoconomy in Europe, He has also been awarded with an MSc in Information Technology from the University of Glasgow (UK). His MSc dissertation was: GLAP: An MSc IT Material Search engine for MSc students. </p>
+<p>Alexandros Tsiaousis received his PhD titled: "Usability evaluation of mobile applications in context of use" in the area of mobile Human Computer Interaction (HCI) at the Department of Management Science and Technology of Athens University of Economics and Business (GR). </p>
+<p>His main interests lie in the area of the latest developments in 4G mobile phones and particularly in the mobile web with a special interest for Augmented Reality applications.</p>
+<p>He has more than 5 years of professional and research experience in wireless - mobile - voice technology projects and an extensive experience as project manager in international web projects.</p>
       </p>
 	</shortcv>
-	<phd-info completed="0" supervisor="m_giaglis" startdate="20050201">
+	<phd-info completed="1" supervisor="m_giaglis" startdate="20050201">
 				<phd-title>The impact of context of use on Mobile Applications Usability</phd-title>
 				<phd-summary>
 				With the rapid advances of mobile technology and applications, effective usability testing becomes increasingly important for the design, development, and deployment of successful mobile applications. 
