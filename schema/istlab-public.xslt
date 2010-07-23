@@ -196,6 +196,10 @@
 	<xsl:template match="member" mode="simple-ref" >
 		<xsl:if test="count(alumnus) = 0">
 			<a href="../members/{@id}.html">
+			<xsl:if test="count(memb_title) != 0 and current()/memb_title = 'Dr.'">
+				<xsl:value-of select="memb_title" />
+				<xsl:text> </xsl:text>
+			</xsl:if>				
 			<xsl:value-of select="givenname" />
 			<xsl:text> </xsl:text>
 			<xsl:value-of select="surname" />
@@ -206,18 +210,25 @@
 	<!-- Format a member reference {{{1-->
 	<xsl:template match="member" mode="pub-ref" >
 		<a href="../members/{@id}.html">
+		<xsl:if test="count(memb_title) != 0 and current()/memb_title = 'Dr.'">
+			<xsl:value-of select="memb_title" />
+			<xsl:text> </xsl:text>
+		</xsl:if>				
 		<xsl:value-of select="givenname" />
 		<xsl:text> </xsl:text>
 		<xsl:value-of select="surname" />
 		</a>
 	</xsl:template>
-	
 
 	<!-- Format a member reference {{{1 -->
 	<xsl:template match="member" mode="ref">
 		<xsl:if test="count(alumnus) = 0">
 			<li>
 			<a href="../members/{@id}.html">
+			<xsl:if test="count(memb_title) != 0 and current()/memb_title = 'Dr.'">
+				<xsl:value-of select="memb_title" />
+				<xsl:text> </xsl:text>
+			</xsl:if>				
 			<xsl:value-of select="givenname" />
 			<xsl:text> </xsl:text>
 			<xsl:value-of select="surname" />
@@ -238,6 +249,10 @@
 		<xsl:if test="count(alumnus) != 0">
 		<li>
 		<a href="../members/{@id}.html">
+		<xsl:if test="count(memb_title) != 0 and current()/memb_title = 'Dr.'">
+			<xsl:value-of select="memb_title" />
+			<xsl:text> </xsl:text>
+		</xsl:if>
 		<xsl:value-of select="givenname" />
 		<xsl:text> </xsl:text>
 		<xsl:value-of select="surname" />
@@ -251,6 +266,10 @@
 		<xsl:if test="count(alumnus) = 0">
 		<li>
 		<a href="../members/{@id}.html">
+		<xsl:if test="count(memb_title) != 0 and current()/memb_title = 'Dr.'">
+			<xsl:value-of select="memb_title" />
+			<xsl:text> </xsl:text>
+		</xsl:if>
 		<xsl:value-of select="givenname" />
 		<xsl:text> </xsl:text>
 		<xsl:value-of select="surname" />
