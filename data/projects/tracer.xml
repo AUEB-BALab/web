@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project id="p_tracer" group="g_istlab g_sense" contact="m_dimitro" scientific_coordinator="m_dds" international="no" type="rtd" project_manager="m_dimitro">
+	<shortname>TRACER</shortname>
+	<projtitle>Identifying software vulnerabilities and securing legacy systems</projtitle>
+	<startdate>20110418</startdate>
+	<enddate>20140418</enddate>
+	<our_budget>146020 euro</our_budget>
+	<total_budget>546700 euro</total_budget>
+	<funding_agency>General Secretariat of Research and Technology</funding_agency>
+	<funding_programme>Synergasia</funding_programme>
+	<project_code>09ΣΥΝ-72-942</project_code>
+	<partner>
+		<shortname>PLASE Laboratory of the Department of Informatics of the Aristotle University of Thessaloniki</shortname>
+		<country>GR</country>
+		<web_site>http://sweng.csd.auth.gr/ </web_site>
+	</partner>
+    <partner>
+		<shortname>Institute of Computer Science (ICS) of the Foundation for Research and Technology - Hellas (FORTH)</shortname>
+		<country>GR</country>
+		<web_site>http://www.ics.forth.gr/</web_site>
+	</partner>
+	<partner>
+		<shortname>Singular Software S.A.</shortname>
+		<country>GR</country>
+		<web_site>http://www.singularsoftware.gr/index.asp</web_site>
+	</partner>
+	<description>
+Legacy systems are likely to contain software vulnerabilities that can lead
+to various security breaches. On the other hand, these systems contain valuable
+information about the environment, the creation and the evolution of the
+organization they support. For this reason, redesigning large systems in order
+to be secure and compatible with new technologies is not a practical option,
+since the information mentioned above could be lost. In addition the cost of replacing
+such system and retrain its various users, could be prohibitive. In this project we
+propose a framework that shields legacy systems based on two basic steps:
+First, our framework analyzes the source code of the system to identify potential
+software vulnerabilities and eliminates them. Then, depending on the previous
+analysis the framework proposes solutions to protect
+the system from the most common web-application attacks.
+	</description>
+</project>
