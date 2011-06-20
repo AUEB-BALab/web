@@ -9,12 +9,10 @@ ifdef SYSTEMDRIVE
 # Windows - CygWin
 SSH=ssh
 PATHSEP=;
-BIBTEX_OPTIONS=-include-directory=data/publications -include-directory=. -include-directory=./tools
 SH=$(SHELL)
 else
 ifdef SystemDrive
 # Windows - GNU Win32
-BIBTEX_OPTIONS=-include-directory=data/publications -include-directory=. -include-directory=./tools
 SSH=plink
 PATHSEP=;
 SH=$(SHELL)
@@ -22,10 +20,12 @@ else
 # Unix
 SSH=ssh
 PATHSEP=:
-BIBTEX_OPTIONS=
 SH=bash
 endif
 endif
+
+BIBINPUTS=data/publications$(PATHSEP).$(PATHSEP)./tools
+BIBTEX_OPTIONS=-W
 
 MEMBERFILES=$(wildcard data/members/*.xml)
 GROUPFILES=$(wildcard data/groups/*.xml)

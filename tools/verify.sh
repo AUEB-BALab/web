@@ -13,8 +13,8 @@ do
 	echo \\Bibstyle\{html-n\} | tr "BC" "bc" > verify.aux
     echo \\Bibdata\{macro,$base\} | tr "BC" "bc" >> verify.aux
     echo \\Citation\{\*\} | tr "BC" "bc" >> verify.aux
-	if bibtex $1 $2 $3 verify |
-		egrep -v "^(This is BibTeX|The top-level auxiliary file|The style file|Database file)" |
+	if bibtex8 $1 $2 $3 verify |
+		egrep -v "^(This is BibTeX|The top-level auxiliary file|The style file|Database file|The 8-bit codepage)" |
 		grep .		# Only errors make it here
 	then
 		exit 1
