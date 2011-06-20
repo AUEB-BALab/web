@@ -6,6 +6,13 @@
 # $Id$
 #
 
+if [ "$1" = -W ]
+then
+	BIBTEX=bibtex8
+else
+	BIBTEX=bibtex
+fi
+
 for i in data/publications/*.bib
 do
 	base=`basename $i .bib`
@@ -13,7 +20,7 @@ do
 	echo \\Bibstyle\{html-n\} | tr "BC" "bc" > verify.aux
     echo \\Bibdata\{macro,$base\} | tr "BC" "bc" >> verify.aux
     echo \\Citation\{\*\} | tr "BC" "bc" >> verify.aux
-	if bibtex8 $1 $2 $3 verify |
+	if $BIBTEX $1 $2 $3 verify |
 		egrep -v "^(This is BibTeX|The top-level auxiliary file|The style file|Database file|The 8-bit codepage)" |
 		grep .		# Only errors make it here
 	then

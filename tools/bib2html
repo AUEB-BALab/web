@@ -343,10 +343,11 @@ push(@tmpfiles, "$auxfile.bbl");
 # fork is not implemented on some non-Unix platforms.
 # fork || (open(STDOUT, ">&STDERR"), exec("bibtex $opt_b $auxfile"));
 # wait;
-eval { fork || (open(STDOUT, ">&STDERR"), exec('bibtex8', (split(/\s+/, $opt_b), $auxfile))); wait; };
+$bibtex = ($opt_b eq '-W' ? 'bibtex8' : 'bibtex');
+eval { fork || (open(STDOUT, ">&STDERR"), exec($bibtex, (split(/\s+/, $opt_b), $auxfile))); wait; };
 if ($@) {
     # The fork failed (perhaps not implemented on this system).
-    system("bibtex8 $opt_b $auxfile 1>&2");
+    system("$bibtex $opt_b $auxfile 1>&2");
 }
 
 
