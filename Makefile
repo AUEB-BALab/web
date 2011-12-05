@@ -26,6 +26,12 @@ SH=bash
 endif
 endif
 
+# HTML output directory
+HTML=public_html
+
+# Build directory
+BUILD=build
+
 BIBINPUTS=data/publications$(PATHSEP).$(PATHSEP)./tools
 
 MEMBERFILES=$(wildcard data/members/*.xml)
@@ -33,7 +39,7 @@ GROUPFILES=$(wildcard data/groups/*.xml)
 PROJECTFILES=$(wildcard data/projects/*.xml)
 RELPAGEFILES=$(wildcard data/rel_pages/*.xml)
 ANNOUNCEFILES=$(wildcard data/announce/*.xml)
-PUBFILE=build/pubs.xml
+PUBFILE=$(BUILD)/pubs.xml
 BIBFILES=$(wildcard data/publications/*.bib)
 
 # BibTeX paths (used under Unix)
@@ -43,7 +49,7 @@ export BIBINPUTS
 export BSTINPUTS
 
 # Database containing all the above
-DB=build/db.xml
+DB=$(BUILD)/db.xml
 # XSLT file for public data
 PXSLT=schema/istlab-public.xslt
 # XSLT file for fetching the ids
@@ -66,14 +72,17 @@ GROUPIDS=$(shell xml tr ${IDXSLT} -s category=group ${DB})
 PROJECTIDS=$(shell xml tr ${IDXSLT} -s category=project ${DB})
 MEMBERIDS=$(shell xml tr ${IDXSLT} -s category=member ${DB})
 RELPAGEIDS=$(shell xml tr ${IDXSLT} -s category=page ${DB})
-# HTML output directory
-HTML=public_html
 # yearly report
 CURRENT_YEAR=$(shell date +'%Y')
 
 all: html
 
-$(DB): ${MEMBERFILES} ${GROUPFILES} ${PROJECTFILES} ${SEMINARFILES} ${RELPAGEFILES} $(BIBFILES) tools/makepub.pl
+prepare:
+	@echo "Creating output directories"
+	@if [ ! -d $(HTML) ]; then mkdir $(HTML); fi
+	@if [ ! -d $(BUILD) ]; then mkdir $(BUILD); fi
+
+$(DB): prepare ${MEMBERFILES} ${GROUPFILES} ${PROJECTFILES} ${SEMINARFILES} ${RELPAGEFILES} $(BIBFILES) tools/makepub.pl
 	@echo "Creating unified database"
 	@echo '<?xml version="1.0"?>' > $@
 	@echo '<istlab>' >>$@ 
@@ -111,7 +120,7 @@ $(DB): ${MEMBERFILES} ${GROUPFILES} ${PROJECTFILES} ${SEMINARFILES} ${RELPAGEFIL
 	@echo '</istlab>' >> $@
 
 clean:
-	-rm -f  build/* \
+	-rm -f  $(BUILD)/* \
 		${HTML}/groups/* \
 		${HTML}/projects/* \
 		${HTML}/members/* \
@@ -168,7 +177,7 @@ val: ${DB}
 		rm xmlval.out; \
 	done
 	@echo '---> Checking db.xml ...'
-	@xml val -d schema/istlab.dtd $(DB)
+	@xml val -e -d schema/istlab.dtd $(DB)
 
 html: verify ${DB} groups projects members rel_pages announcements publications phone email-lists phd-students report brochure
 
@@ -177,42 +186,42 @@ report: ${DB}
 	@year=2002 ; \
 	while [ $$year -le $(CURRENT_YEAR) ] ; \
 	do \
-		perl tools/typeyear.pl data/publications/article.bib $$year > build/$$year-article.aux 2>bibval.out ; \
+		perl tools/typeyear.pl data/publications/article.bib $$year > $(BUILD)/$$year-article.aux 2>bibval.out ; \
 		if [ $$? != "0" ] ; then cat bibval.out; fi; rm bibval.out ; \
-		perl tools/typeyear.pl data/publications/book.bib $$year > build/$$year-book.aux 2>bibval.out ; \
+		perl tools/typeyear.pl data/publications/book.bib $$year > $(BUILD)/$$year-book.aux 2>bibval.out ; \
 		if [ $$? != "0" ] ; then cat bibval.out; fi; rm bibval.out ; \
-		perl tools/typeyear.pl data/publications/incollection.bib $$year > build/$$year-incollection.aux 2>bibval.out ; \
+		perl tools/typeyear.pl data/publications/incollection.bib $$year > $(BUILD)/$$year-incollection.aux 2>bibval.out ; \
 		if [ $$? != "0" ] ; then cat bibval.out; fi; rm bibval.out ; \
-		perl tools/typeyear.pl data/publications/inproceedings.bib $$year > build/$$year-inproceedings.aux 2>bibval.out ; \
+		perl tools/typeyear.pl data/publications/inproceedings.bib $$year > $(BUILD)/$$year-inproceedings.aux 2>bibval.out ; \
 		if [ $$? != "0" ] ; then cat bibval.out; fi; rm bibval.out ; \
-		perl tools/typeyear.pl data/publications/techreport.bib $$year > build/$$year-techreport.aux 2>bibval.out ; \
+		perl tools/typeyear.pl data/publications/techreport.bib $$year > $(BUILD)/$$year-techreport.aux 2>bibval.out ; \
 		if [ $$? != "0" ] ; then cat bibval.out; fi; rm bibval.out ; \
-		perl tools/typeyear.pl data/publications/whitepaper.bib $$year > build/$$year-whitepaper.aux 2>bibval.out ; \
+		perl tools/typeyear.pl data/publications/whitepaper.bib $$year > $(BUILD)/$$year-whitepaper.aux 2>bibval.out ; \
 		if [ $$? != "0" ] ; then cat bibval.out; fi; rm bibval.out ; \
-		perl tools/typeyear.pl data/publications/workingpaper.bib $$year > build/$$year-workingpaper.aux 2>bibval.out ; \
+		perl tools/typeyear.pl data/publications/workingpaper.bib $$year > $(BUILD)/$$year-workingpaper.aux 2>bibval.out ; \
 		if [ $$? != "0" ] ; then cat bibval.out; fi; rm bibval.out ; \
 		xml tr ${REPORTXSLT} -s year=$$year -s cyear=$(CURRENT_YEAR) ${DB} > ${HTML}/reports/istlab-report-$$year.html 2>bibval.out ; \
 		if [ $$? != "0" ] ; then cat bibval.out; fi; rm bibval.out ; \
-		perl tools/bib2html -c -r -b "$(BIBTEX_OPTIONS)" -s empty build/$$year-article.aux build/$$year-article.html 2>bibval.out ; \
+		perl tools/bib2html -c -r -b "$(BIBTEX_OPTIONS)" -s empty $(BUILD)/$$year-article.aux $(BUILD)/$$year-article.html 2>bibval.out ; \
 		if [ $$? != "0" ] ; then cat bibval.out; fi; rm bibval.out ; \
-		perl tools/bib2html -c -r -b "$(BIBTEX_OPTIONS)" -s empty build/$$year-book.aux build/$$year-book.html 2>bibval.out ; \
+		perl tools/bib2html -c -r -b "$(BIBTEX_OPTIONS)" -s empty $(BUILD)/$$year-book.aux $(BUILD)/$$year-book.html 2>bibval.out ; \
 		if [ $$? != "0" ] ; then cat bibval.out; fi; rm bibval.out ; \
-		perl tools/bib2html -c -r -b "$(BIBTEX_OPTIONS)" -s empty build/$$year-incollection.aux build/$$year-incollection.html 2>bibval.out ; \
+		perl tools/bib2html -c -r -b "$(BIBTEX_OPTIONS)" -s empty $(BUILD)/$$year-incollection.aux $(BUILD)/$$year-incollection.html 2>bibval.out ; \
 		if [ $$? != "0" ] ; then cat bibval.out; fi; rm bibval.out ; \
-		perl tools/bib2html -c -r -b "$(BIBTEX_OPTIONS)" -s empty build/$$year-inproceedings.aux build/$$year-inproceedings.html 2>bibval.out ; \
+		perl tools/bib2html -c -r -b "$(BIBTEX_OPTIONS)" -s empty $(BUILD)/$$year-inproceedings.aux $(BUILD)/$$year-inproceedings.html 2>bibval.out ; \
 		if [ $$? != "0" ] ; then cat bibval.out; fi; rm bibval.out ; \
-		perl tools/bib2html -c -r -b "$(BIBTEX_OPTIONS)" -s empty build/$$year-techreport.aux build/$$year-techreport.html 2>bibval.out ; \
+		perl tools/bib2html -c -r -b "$(BIBTEX_OPTIONS)" -s empty $(BUILD)/$$year-techreport.aux $(BUILD)/$$year-techreport.html 2>bibval.out ; \
 		if [ $$? != "0" ] ; then cat bibval.out; fi; rm bibval.out ; \
-		perl tools/bib2html -c -r -b "$(BIBTEX_OPTIONS)" -s empty build/$$year-whitepaper.aux build/$$year-whitepaper.html 2>bibval.out ; \
+		perl tools/bib2html -c -r -b "$(BIBTEX_OPTIONS)" -s empty $(BUILD)/$$year-whitepaper.aux $(BUILD)/$$year-whitepaper.html 2>bibval.out ; \
 		if [ $$? != "0" ] ; then cat bibval.out; fi; rm bibval.out ; \
-		perl tools/bib2html -c -r -b "$(BIBTEX_OPTIONS)" -s empty build/$$year-workingpaper.aux build/$$year-workingpaper.html 2>bibval.out; \
+		perl tools/bib2html -c -r -b "$(BIBTEX_OPTIONS)" -s empty $(BUILD)/$$year-workingpaper.aux $(BUILD)/$$year-workingpaper.html 2>bibval.out; \
 		if [ $$? != "0" ] ; then cat bibval.out; fi; rm bibval.out ; \
 		perl tools/prepare-pubs.pl $$year public_html/reports/istlab-report-$$year.html 2>bibval.out ; \
 		if [ $$? != "0" ] ; then cat bibval.out; fi; rm bibval.out ; \
 		year=`expr $$year + 1`; \
 	done ; \
-	cd public_html/reports ; xml ls > ../../build/ls.xml ; cd ../.. ; \
-	xml tr ${REPIDXXSLT} build/ls.xml > ${HTML}/reports/index.html
+	cd public_html/reports ; xml ls > ../../$(BUILD)/ls.xml ; cd ../.. ; \
+	xml tr ${REPIDXXSLT} $(BUILD)/ls.xml > ${HTML}/reports/index.html
 
 brochure: ${DB}
 	@echo "Creating ISTLab brochure"
@@ -223,35 +232,35 @@ brochure: ${DB}
 		years="$$years $$year" ; \
 		year=`expr $$year + 1` ; \
 	done ; \
-	perl tools/typeyear.pl data/publications/article.bib $$years > build/brochure-article.aux 2>bibval.out ; \
+	perl tools/typeyear.pl data/publications/article.bib $$years > $(BUILD)/brochure-article.aux 2>bibval.out ; \
 	if [ $$? != "0" ] ; then cat bibval.out; fi; rm bibval.out ; \
-	perl tools/typeyear.pl data/publications/book.bib $$years > build/brochure-book.aux 2>bibval.out ; \
+	perl tools/typeyear.pl data/publications/book.bib $$years > $(BUILD)/brochure-book.aux 2>bibval.out ; \
 	if [ $$? != "0" ] ; then cat bibval.out; fi; rm bibval.out ; \
-	perl tools/typeyear.pl data/publications/incollection.bib $$years > build/brochure-incollection.aux 2>bibval.out ; \
+	perl tools/typeyear.pl data/publications/incollection.bib $$years > $(BUILD)/brochure-incollection.aux 2>bibval.out ; \
 	if [ $$? != "0" ] ; then cat bibval.out; fi; rm bibval.out ; \
-	perl tools/typeyear.pl data/publications/inproceedings.bib $$years > build/brochure-inproceedings.aux 2>bibval.out ; \
+	perl tools/typeyear.pl data/publications/inproceedings.bib $$years > $(BUILD)/brochure-inproceedings.aux 2>bibval.out ; \
 	if [ $$? != "0" ] ; then cat bibval.out; fi; rm bibval.out ; \
-	perl tools/typeyear.pl data/publications/techreport.bib $$years > build/brochure-techreport.aux 2>bibval.out ; \
+	perl tools/typeyear.pl data/publications/techreport.bib $$years > $(BUILD)/brochure-techreport.aux 2>bibval.out ; \
 	if [ $$? != "0" ] ; then cat bibval.out; fi; rm bibval.out ; \
-	perl tools/typeyear.pl data/publications/whitepaper.bib $$years > build/brochure-whitepaper.aux 2>bibval.out ; \
+	perl tools/typeyear.pl data/publications/whitepaper.bib $$years > $(BUILD)/brochure-whitepaper.aux 2>bibval.out ; \
 	if [ $$? != "0" ] ; then cat bibval.out; fi; rm bibval.out ; \
-	perl tools/typeyear.pl data/publications/workingpaper.bib $$years > build/brochure-workingpaper.aux 2>bibval.out ; \
+	perl tools/typeyear.pl data/publications/workingpaper.bib $$years > $(BUILD)/brochure-workingpaper.aux 2>bibval.out ; \
 	if [ $$? != "0" ] ; then cat bibval.out; fi; rm bibval.out ; \
 	xml tr ${BROCHXSLT} -s today=`expr $(CURRENT_YEAR) - 2`0101 ${DB} > ${HTML}/brochure/istlab-brochure.html 2>bibval.out ; \
 	if [ $$? != "0" ] ; then cat bibval.out; fi; rm bibval.out ; \
-	perl tools/bib2html -c -r -b "$(BIBTEX_OPTIONS)" -s empty build/brochure-article.aux build/brochure-article.html 2>bibval.out ; \
+	perl tools/bib2html -c -r -b "$(BIBTEX_OPTIONS)" -s empty $(BUILD)/brochure-article.aux $(BUILD)/brochure-article.html 2>bibval.out ; \
 	if [ $$? != "0" ] ; then cat bibval.out; fi; rm bibval.out ; \
-	perl tools/bib2html -c -r -b "$(BIBTEX_OPTIONS)" -s empty build/brochure-book.aux build/brochure-book.html 2>bibval.out ; \
+	perl tools/bib2html -c -r -b "$(BIBTEX_OPTIONS)" -s empty $(BUILD)/brochure-book.aux $(BUILD)/brochure-book.html 2>bibval.out ; \
 	if [ $$? != "0" ] ; then cat bibval.out; fi; rm bibval.out ; \
-	perl tools/bib2html -c -r -b "$(BIBTEX_OPTIONS)" -s empty build/brochure-incollection.aux build/brochure-incollection.html 2>bibval.out ; \
+	perl tools/bib2html -c -r -b "$(BIBTEX_OPTIONS)" -s empty $(BUILD)/brochure-incollection.aux $(BUILD)/brochure-incollection.html 2>bibval.out ; \
 	if [ $$? != "0" ] ; then cat bibval.out; fi; rm bibval.out ; \
-	perl tools/bib2html -c -r -b "$(BIBTEX_OPTIONS)" -s empty build/brochure-inproceedings.aux build/brochure-inproceedings.html 2>bibval.out ; \
+	perl tools/bib2html -c -r -b "$(BIBTEX_OPTIONS)" -s empty $(BUILD)/brochure-inproceedings.aux $(BUILD)/brochure-inproceedings.html 2>bibval.out ; \
 	if [ $$? != "0" ] ; then cat bibval.out; fi; rm bibval.out ; \
-	perl tools/bib2html -c -r -b "$(BIBTEX_OPTIONS)" -s empty build/brochure-techreport.aux build/brochure-techreport.html 2>bibval.out ; \
+	perl tools/bib2html -c -r -b "$(BIBTEX_OPTIONS)" -s empty $(BUILD)/brochure-techreport.aux $(BUILD)/brochure-techreport.html 2>bibval.out ; \
 	if [ $$? != "0" ] ; then cat bibval.out; fi; rm bibval.out ; \
-	perl tools/bib2html -c -r -b "$(BIBTEX_OPTIONS)" -s empty build/brochure-whitepaper.aux build/brochure-whitepaper.html 2>bibval.out ; \
+	perl tools/bib2html -c -r -b "$(BIBTEX_OPTIONS)" -s empty $(BUILD)/brochure-whitepaper.aux $(BUILD)/brochure-whitepaper.html 2>bibval.out ; \
 	if [ $$? != "0" ] ; then cat bibval.out; fi; rm bibval.out ; \
-	perl tools/bib2html -c -r -b "$(BIBTEX_OPTIONS)" -s empty build/brochure-workingpaper.aux build/brochure-workingpaper.html 2>bibval.out ; \
+	perl tools/bib2html -c -r -b "$(BIBTEX_OPTIONS)" -s empty $(BUILD)/brochure-workingpaper.aux $(BUILD)/brochure-workingpaper.html 2>bibval.out ; \
 	if [ $$? != "0" ] ; then cat bibval.out; fi; rm bibval.out ; \
 	perl tools/prepare-pubs.pl brochure public_html/brochure/istlab-brochure.html 2>bibval.out ; \
 	if [ $$? != "0" ] ; then cat bibval.out; fi; rm bibval.out ; \
@@ -297,7 +306,7 @@ announcements: ${DB}
 
 publications: ${DB}
 	@echo "Creating publications"
-	@$(SH) build/bibrun
+	@$(SH) $(BUILD)/bibrun
 
 phd-students: ${DB}
 	@echo "Creating PhD Students list"
@@ -328,8 +337,8 @@ stats:
 colgraph: $(HTML)/images/colgraph.svg
 
 $(HTML)/images/colgraph.svg: tools/colgraph.sh $(BIBFILES)
-	$(SH) tools/colgraph.sh >build/colgraph.neato
-	neato build/colgraph.neato -Tsvg -o$@
+	$(SH) tools/colgraph.sh >$(BUILD)/colgraph.neato
+	neato $(BUILD)/colgraph.neato -Tsvg -o$@
 
 verify:
 	$(SHELL) tools/verify.sh $(BIBTEX_OPTIONS)
