@@ -4,7 +4,7 @@
 	<surname>Karakoidas</surname>
 	<memb_title>Mr.</memb_title>
 	<email>bkarak@aueb.gr</email>
-	<web_site>http://gaijin.dmst.aueb.gr/~bkarak/</web_site>	
+	<web_site>http://bkarak.wizhut.com/www/index.html</web_site>	
 	<office_phone>+30 2108203370</office_phone>
 	<photo>../images/m_bkarak.jpg</photo>
 	<shortcv>
@@ -32,4 +32,6 @@
 			scientific gap, and create a compiler framework that will be DSL aware.
 		</phd-summary>
 	</phd-info>
+	<web_log>http://bkarak.wizhut.com/blog/</web_log>
+	<github>https://github.com/bkarak</github>
 </member>

@@ -22,4 +22,5 @@
 			Distributed computer architectures labeled "peer-to-peer" are designed for the sharing of computer resources by direct exchange, rather than requiring the intermediation or support of a centralized server or authority, and are characterized by their ability to adapt to failures and accommodate transient populations of nodes while maintaining acceptable connectivity and performance. On-line business transaction processing systems have so far been based on centralized or client-server architectures. Our aim is to propose solutions that will allow such systems to be performed based on peer-to-peer architectures. We focus on non-functional characteristics of peer-to-peer systems such as security, scalability, performance, fairness, and resource management potential, and we study current peer-to-peer systems and infrastructure technologies.
 		</phd-summary>
 	</phd-info>
+	<web_log>http://lessisapossibility.blogspot.com/</web_log>
 </member>

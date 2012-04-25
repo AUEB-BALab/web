@@ -345,6 +345,14 @@
 			Web site: <a href="{web_site}"><xsl:value-of select="web_site"/></a>
 			<br />
 		</xsl:if>
+		<xsl:if test="count(web_log) != 0">
+		    Web Log: <a href="{web_log}"><xsl:value-of select="web_log"/></a>
+		    <br/>
+		</xsl:if>
+		<xsl:if test="count(github) != 0">
+		    Github: <a href="{github}"><xsl:value-of select="github"/></a>
+		    <br/>
+		</xsl:if>
 		<!-- List group membership, if any -->
 		<xsl:if test="@group != 'g_istlab'">
 			Groups: <xsl:apply-templates select="/istlab/group_list/group [contains(current()/@group, @id)]" mode="shortref"/>

@@ -23,7 +23,7 @@
 <!ENTITY % pc_flow "(#PCDATA | %Flow.mix;)*">
 
 <!-- -->
-<!ELEMENT member (givenname, surname, memb_title?, email, web_site?, office_phone?, mobile_phone?, fax?, alumnus?, office_address?, postal_address?, photo?, shortcv,phd-info?)>
+<!ELEMENT member (givenname, surname, memb_title?, email, web_site?, office_phone?, mobile_phone?, fax?, alumnus?, office_address?, postal_address?, photo?, shortcv, phd-info?, web_log?, github?)>
 <!ATTLIST member
 	id ID #REQUIRED
 	group CDATA #REQUIRED
@@ -42,6 +42,8 @@
 <!ELEMENT office_address (#PCDATA)>
 <!ELEMENT postal_address (#PCDATA)>
 <!ELEMENT web_site (#PCDATA)>
+<!ELEMENT web_log (#PCDATA)>
+<!ELEMENT github (#PCDATA)>
 
 <!-- phd information  -->
 <!ELEMENT phd-info (phd-title,phd-summary)>

@@ -58,7 +58,7 @@
 <!ELEMENT country (#PCDATA)>
 <!-- Member list elements {{{1 -->
 <!ELEMENT member_list (member*)>
-<!ELEMENT member (givenname, surname, memb_title?, email, web_site?, office_phone?, mobile_phone?, fax?, alumnus?, office_address?, postal_address?, photo?, shortcv,phd-info?)>
+<!ELEMENT member (givenname, surname, memb_title?, email, web_site?, office_phone?, mobile_phone?, fax?, alumnus?, office_address?, postal_address?, photo?, shortcv, phd-info?, web_log?, github?)>
 <!ATTLIST member
 	id ID #REQUIRED
 	group IDREFS #REQUIRED
@@ -76,6 +76,9 @@
 <!ELEMENT alumnus EMPTY>
 <!ELEMENT office_address (#PCDATA)>
 <!ELEMENT postal_address (#PCDATA)>
+<!ELEMENT web_log (#PCDATA)>
+<!ELEMENT github (#PCDATA)>
+
 <!-- phd information  -->
 <!ELEMENT phd-info (phd-title,phd-summary)>
 <!ATTLIST phd-info
