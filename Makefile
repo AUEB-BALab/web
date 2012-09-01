@@ -120,7 +120,7 @@ $(DB): prepare ${MEMBERFILES} ${GROUPFILES} ${PROJECTFILES} ${SEMINARFILES} ${RE
 	@echo '</istlab>' >> $@
 
 clean:
-	-rm -f  $(BUILD)/* \
+	@rm -f  $(BUILD)/* \
 		${HTML}/groups/* \
 		${HTML}/projects/* \
 		${HTML}/members/* \
@@ -130,11 +130,9 @@ clean:
 		${HTML}/brochure/* \
 		${HTML}/announce/* \
 		${HTML}/publications/* 2>/dev/null
-	-rm -f lists/* 2>/dev/null
-	-rm -f public_html/images/colgraph.svg
-	-rm -f *.aux
-	-rm -f *.bbl
-	-rm -f *.blg
+	@rm -f lists/* 2>/dev/null
+	@rm -f public_html/images/colgraph.svg
+	@rm -f *.aux *.bbl *.blg
 
 phone: ${DB}
 	@echo "Creating phone catalog"

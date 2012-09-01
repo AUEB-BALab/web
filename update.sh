@@ -5,8 +5,8 @@ export PATH=/usr/local/bin:$PATH
 cd web
 
 # Fetch updates and see if something was fetched
-git fetch 2>build/fetch.out
-if [ -z build/fetch.out ]
+git fetch 2>fetch.out
+if [ -z fetch.out ]
 then
 	exit 0
 fi
