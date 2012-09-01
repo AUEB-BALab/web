@@ -1,13 +1,1 @@
-.settings
-.project
 build
-public_html/announce/*
-public_html/brochure/*
-public_html/groups/*
-public_html/images/*
-public_html/members/*
-public_html/misc/*
-public_html/projects/*
-public_html/publications/*
-public_html/rel_pages/*
-public_html/reports/*
