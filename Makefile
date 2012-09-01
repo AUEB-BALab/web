@@ -324,13 +324,6 @@ email-lists: ${DB}
 		xml tr ${EMAILXSLT} -s ogroup=$$group -s what=members-gl ${DB} > lists/$$group-gl.txt ; \
 	done
 
-dist: html
-	$(SSH) istlab.dmst.aueb.gr "cd /home/dds/src/istlab-web ; \
-	umask 002 ; \
-	cvs update -d ; \
-	gmake clean html report brochure ; \
-	tar -C $(HTML) -cf - . | tar -mU -C /home/dds/web/istlab/content -xf -"
-
 stats:
 	@$(SH) tools/stats.sh
 
