@@ -1,5 +1,7 @@
 #!/bin/sh
 
+export PATH=/usr/local/bin:$PATH
+
 cd web
 
 # Fetch updates and see if something was fetched
@@ -10,6 +12,7 @@ then
 fi
 
 # There is work to integrate; rebuild
-git merge
+git merge origin
+
 gmake clean html report brochure && \
-tar -C $(HTML) -cf - . | tar -mU -C /home/dds/web/istlab/content -xf -"
+tar -C public_html -cf - . | tar -mU -C /home/dds/web/istlab/content -xf -
