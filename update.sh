@@ -6,7 +6,7 @@ cd web
 
 # Fetch updates and see if something was fetched
 git fetch 2>fetch.out
-if [ -z fetch.out ]
+if ! [ -s fetch.out ]
 then
 	exit 0
 fi
