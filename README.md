@@ -1,7 +1,7 @@
 ISTLab-Web
 ==========
 
-This is the [ISTLab](http://istlab.dmst.aueb.gr/) website project repository. This system is used to create and maintain the website. The system manages information regarding
+This is the repository for the [ISTLab](http://istlab.dmst.aueb.gr/) web site. This system is used to create and maintain the website. The system manages information regarding
 
 * research groups
 * group members
