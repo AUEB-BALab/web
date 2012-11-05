@@ -15,10 +15,10 @@
 		laboratory at University of Piraeus. He is now a member of 
 		<a href="http://istlab.dmst.aueb.gr/">ISTLab</a>/<a href="../groups/g_sense-details.html">SENSE</a>
 		and has been involved in various research projects. The most recent are 
-		<a href="../projects/p_gemini.html">GEMINI</a>, <a href="../projects/p_praxis.html">PRAXIS</a> 
-		and <a href="../projects/p_sqo-oss.html">SQO-OSS</a>. His research interests include Software 
-		Engineering, Programming Languages, Operating Systems and Networking. He is an author of a 
-		number of open-source and public-domain software packages and tools.
+		<a href="../projects/p_gemini.html">GEMINI</a>, <a href="../projects/p_praxis.html">PRAXIS</a>,
+		<a href="../projects/p_sqo-oss.html">SQO-OSS</a>, and <a href="../projects/p_stereo.html">STEREO</a>. 
+		His research interests include Software Engineering, Programming Languages, Operating Systems and Networking. 
+		He is an author of a number of open-source and public-domain software packages and tools.
 	</shortcv>
 	<phd-info completed="0" supervisor="m_dds" startdate="20031114">
 		<phd-title>Integrating Domain-Specific Languages with General-Purpose Languages</phd-title>
