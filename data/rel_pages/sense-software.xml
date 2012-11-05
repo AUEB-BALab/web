@@ -11,6 +11,12 @@ Software we have released includes the following projects:
 <br />
 <ul>
 <li>
+<a href="https://github.com/istlab/Alitheia-Core">Alitheia-Core</a>
+an integrated platform for large scale software engineering studies. 
+Alitheia Core works by importing the source code repository, mailing list archives and bug databases for a software project in a unified storage schema and running various analysis tools on the projects.
+Alitheia Core is free software, distributed under the 2-clause BSD license. More information can be found in the project's <a href="http://www.sqo-oss.org/">website</a>.
+</li>
+<li>
 <a href="http://www.dmst.aueb.gr/dds/cscout">CScout</a>
 is a source code analyzer and refactoring browser
 for collections of C programs. It can process workspaces of multiple
