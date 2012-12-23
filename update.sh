@@ -17,6 +17,10 @@ fi
 
 # Show us what has changed
 cat fetch.out
+if egrep '[0-9a-f]{7}\.\.[0-9a-f]{7}' fetch.out >/dev/null
+then
+	git log `awk '/->/ {print $1}' fetch.out`
+fi
 
 # There is work to integrate; rebuild
 git merge origin
