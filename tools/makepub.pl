@@ -71,7 +71,7 @@ END {
 				print "\t\t<has_$type/>\n";
 				$auxfile = "build/$id-$type.aux";
 				open(OUT, ">$auxfile") || die "Unable to open $auxfile for writing: $!\n";
-				print OUT '\bibdata{macro,book,article,inproceedings,incollection,whitepaper,techreport,workingpaper}';
+				print OUT '\bibdata{macro,magazine,book,article,inproceedings,incollection,whitepaper,techreport,workingpaper}';
 				print OUT "\n$citations{$group}{$id}{$type}";
 				close OUT;
  				print RUN qq{perl tools/bib2html $includepath -c -r -s empty $auxfile public_html/publications/${id}-publications.html\n} unless($type eq 'any');
