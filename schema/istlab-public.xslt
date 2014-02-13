@@ -133,7 +133,7 @@
 			<li><a href="#whitepaper">White papers</a></li>
 		</xsl:if>
 		<xsl:if test="count(has_magazine) != 0">
-			<li><a href="#magazine">Magazines</a></li>
+			<li><a href="#magazine">Magazine Articles</a></li>
 		</xsl:if>
 		<xsl:if test="count(has_workingpaper) != 0">
 			<li><a href="#workingpaper">Working papers</a></li>
@@ -187,7 +187,7 @@
 			</xsl:call-template>
 		</xsl:if>
 		<xsl:if test="count(has_magazine) != 0">
-			<a name="magazine"> </a><h2>Magazines</h2>
+			<a name="magazine"> </a><h2>Magazine Articles</h2>
 			<xsl:call-template name="bib2html">
 				<xsl:with-param name="type" select="'magazine'" />
 				<xsl:with-param name="pubid" select="$pubid" />
