@@ -77,11 +77,11 @@ the original BibTeX styles are faithfully reproduced.
 is a secure suite of tools that eliminates code injeciton attacks based on a generic approach. Two applications of our approach have been presented in a <a href="http://www.dmst.aueb.gr/dds/pubs/jrnl/2009-CompSec-SQLIA/html/sqlia.html">journal</a> and <a href="http://www.dmst.aueb.gr/dds/pubs/conf/2009-MCIS-XPath/html/MKS09.htm">conference paper</a> respectively.
 </li>
 <li>
-<a href="http://gaijin.dmst.aueb.gr/~bkarak/programs/fire/index.html">FIRE/J</a> 
+<a href="http://bkarak.wizhut.com/www/programs/fire/index.html">FIRE/J</a> 
 is a very fast regular expression library for java. See also the article titled, Vassilios Karakoidas and Diomidis Spinellis. FIRE/J: Optimizing regular expression searches with generative programming. <i>Software: Practice and Experience</i>, 38(6):557-573, May 2008
 </li>
 <li>
-<a href="http://istlab.dmst.aueb.gr/~vbill/ngce/">NGCE - Network Graphs for Computer Epidemiologists</a> 
+<a href="#">NGCE - Network Graphs for Computer Epidemiologists</a> 
 Graphs are useful data structures capable of representing eficiently many technological and social networks. 
 Because of this specific property they are utilized in the simulation-based studies of new algorithms and protocols. 
 Inspired by the popular TGFF (Task Graphs For Free) toolkit, which creates task graphs for embedded systems, 
