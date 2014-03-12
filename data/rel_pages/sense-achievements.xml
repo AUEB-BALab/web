@@ -3,8 +3,13 @@
 	<page_name>PhD Student Achievements</page_name>
 	<page_body>
 		<dl>
+			<dt>March 2014</dt><dd style="padding-bottom: 3em; max-width: 50em">
+			<img src="../images/phd.png" border="0" align="right" alt="PhD logo" />
+			<b>Dimitris Mitropoulos</b> successfully defends his PhD thesis.
+			</dd>
+
 			<dt>September 2013</dt><dd style="padding-bottom: 3em; max-width: 50em">
-			 <b>Dimitris Mitropoulos</b> is awarded the LASER Workshop Scholarship.
+			<b>Dimitris Mitropoulos</b> is awarded the LASER Workshop Scholarship.
 			The award was given by the organizing committee of the
 			<a href="http://www.laser-workshop.org/">LASER</a>
 			(Learning from Authoritative Security Experiment Results) Workshop.
@@ -17,7 +22,7 @@
 			The paper <a href="http://www.emeraldinsight.com/journals.htm?articleid=1925947">
 			Countering code injection attacks: A unified approach.</a>
 			(<cite>Information Management and Computer Security</cite>, 19(3):177-194, 2011)
-			co-authored by <b>Dimitrios Mitropoulos</b> and <b>Vassilios Karakoidas</b>
+			co-authored by <b>Dimitris Mitropoulos</b> and <b>Vassilios Karakoidas</b>
 			was awarded by
 			<a href="http://www.emeraldinsight.com/">Emerald</a>
 			publishers with the
@@ -51,7 +56,7 @@
 			</dd>
 
 			<dt>September 2010</dt><dd style="padding-bottom: 3em; max-width: 50em">
-			<b>Dimitrios Mitropoulos</b> is awarded a scholarship co-funded by the European Social Fund and National Resources -
+			<b>Dimitris Mitropoulos</b> is awarded a scholarship co-funded by the European Social Fund and National Resources -
 			IRAKLITOS II Fellowships for research of Athens University of Economics and Business.
 			<br/>
 			<img src="../images/irakleitos2.jpeg" alt="EPEAEK logo" />
