@@ -22,12 +22,14 @@
 	<shortcv>
 			<p><i>Maria Kechagia</i> is a PhD candidate at Athens University of Economics and Business, 
 			in the Department of Management Science and Technology. 
-			She holds a BSc in Management Science and Technology and an MSc in Computing (Software Engineering)
-			from Imperial College London. </p>
+			She holds a BSc in Management Science and Technology and an MSc in Computing (Software Engineering) from Imperial College London. She has participated in 
+			EU funded R&amp;D projects. Currently, she is the
+			project manager of the <a href="../projects/p_stereo.html">STEREO</a> project.
+			She is an IEEE student and IEEE Women In Engineering (WIE) member, as well as an ACM student and ACM-Women (ACM-W) member. Her research interests include the design and implementation of Application Programming Interfaces (APIs) and the study of open source software.</p>
 			<p>She is a member of the <a href="../groups/g_sense-details.html">SENSE</a> group.</p>
 	</shortcv>
 	<phd-info completed="0" supervisor="m_dds" startdate="20111207">
-    <phd-title>Software Engineering</phd-title>
+    <phd-title>Empirical Software Engineering</phd-title>
     <phd-summary></phd-summary>
   </phd-info>
 </member>
