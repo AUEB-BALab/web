@@ -3,6 +3,12 @@
 	<page_name>PhD Student Achievements</page_name>
 	<page_body>
 		<dl>
+			<dt>April 2014</dt><dd style="padding-bottom: 3em; max-width: 50em">
+			<b>Marios Fragkoulis</b> publishes a paper in a high-rated conference:
+			Relational access to Unix kernel data structures. 
+			Proceedings of the Ninth European Conference on Computer Systems (Eurosys '14).
+			</dd>
+
 			<dt>March 2014</dt><dd style="padding-bottom: 3em; max-width: 50em">
 			<img src="../images/phd.png" border="0" align="right" alt="PhD logo" />
 			<b>Dimitris Mitropoulos</b> successfully defends his PhD thesis.
