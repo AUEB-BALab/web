@@ -314,6 +314,7 @@ phd-students: ${DB}
 
 email-lists: ${DB}
 	@echo "Creating email lists"
+	@mkdir -p lists
 	@for group in $(GROUPIDS) ; \
 	do \
 		xml tr ${EMAILXSLT} -s ogroup=$$group -s what=members-all ${DB} > lists/$$group-all.txt ; \
