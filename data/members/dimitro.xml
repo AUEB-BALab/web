@@ -4,7 +4,7 @@
 	<surname>Mitropoulos</surname>
 	<memb_title>Dr.</memb_title>
 	<email>dimitro@aueb.gr</email>
-	<!-- <web_site></web_site> -->
+	<web_site>http://www.cs.columbia.edu/~dimitro/</web_site>
 	<office_phone>+30 2108203370</office_phone>
 	<!-- <mobile_phone></mobile_phone> -->
 	<fax>+30 2108203370</fax>
@@ -27,8 +27,9 @@
 		Economics and Business and a PhD in Cyber Security from the
 		Athens University of Economics and Business. He has worked in the
 		industry as a software engineer and has been involved in several
-		EU funded R&amp;D projects. Currently, he is the
-		project manager of the <a href="../projects/p_tracer.html">TRACER</a> project.
+		EU funded R&amp;D projects. Currently, he is
+		a <a href="http://www.cs.columbia.edu/nsl/people.html">Postdoctoral
+		Researcher at Columbia University</a>.
 		His research interests include computer security, intrusion detection systems,
 		static code analysis, software evolution and software engineering. 
 		He is an IEEE member,
