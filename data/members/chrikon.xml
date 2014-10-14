@@ -1,11 +1,10 @@
 <?xml version="1.0"?>
-<member id="m_dds" group="g_istlab" joined="20140101">
+<member id="m_chrikon" group="g_istlab" joined="20140115">
 	<givenname>Christos</givenname>
 	<surname>Oikonomou</surname>
 	<memb_title></memb_title>
 	<email>chrikon@dmst.aueb.gr</email>
-	<web_site></web_site>
-	<office_phone></office_phone>
+	<web_site>http://altebaran.dmst.aueb.gr/FS/Students2012/chrikon/inetpub/detfolio/</web_site>
 	<fax></fax>
 	<mobile_phone>+30 6947359872</mobile_phone>
 	<office_address>
@@ -18,12 +17,14 @@
 		145 75,
 		Attika, Greece
 	</postal_address>-->
-	<photo>../images/xristosoik.jpg</photo>
+	<photo>../images/chrikon.jpg</photo>
 	<shortcv>
 		<p><i>Christos Oikonomou</i> is a student at the Athens University of Economics and Business (AUEB), Department of Management Science and Technology.</p>
-		<p>In the past he a trainee experience as researcher in a econometric analysis under the supervise of my professor, <a href="http://www.kepe.gr/index.php/el/profil-cb/userprofile/pjprodr">P.J.Prodromidis</a>
-		in Hellenic Ministry of Development – General Secretariat of Commerce (GGE), (Department of Scientific Documentation, August September 2013),
-		The results of this training have been presented in the eleventh 11th <a href = "http://fsdet.dmst.aueb.gr/">DMST Conference</a> (13/5/2014).
-		Also he has worked in C project under the supervision of <a href="http://www.spinellis.gr/index.html.var">Mr. Diomidis Spinellis</a></p>
+		<p>
+In the summer of 2013, he helped in a research project regarding the evolution of prices at the Greek Ministry for Development and
+Competitiveness, under the supervision of <a href="http://www.kepe.gr/index.php/el/profil-cb/userprofile/pjprodr">Dr. Prodromidis</a>, presented the results at the eleventh <a href = "http://fsdet.dmst.aueb.gr/">DMST Conference</a> (13/05/2014); and tutored
+(TAed) certain microeconomic and macroeconomic review sessions for the freshmen class of 2013-14 at the request of <a href="http://www.kepe.gr/index.php/el/profil-cb/userprofile/pjprodr">Dr. Prodromidis</a>.
+Also he has worked in extensive systems under supervision of <a href="http://www.spinellis.gr/index.html.var">Dr. Diomidis Spinellis</a>
+		</p>
 	</shortcv>
 </member>
