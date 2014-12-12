@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<member id="m_akostaki" group="g_istlab g_ois" joined="20141212">
+	<givenname>Aggeliki</givenname>
+	<surname>Kostaki</surname>
+	<memb_title>Ms.</memb_title>
+	<email>aggkostaki@aueb.gr</email>
+	<web_site>http://gr.linkedin.com/pub/aggeliki-kostaki/31/749/33/</web_site>
+	<office_phone>+30 210 8203466</office_phone>
+	<!-- <mobile_phone></mobile_phone> -->
+	<!--fax>+30 2108203370</fax> -->
+	<!-- <alumnus/>--><!-- Optional -->
+	<office_address>
+		Athens University of Economics and Business
+		12 Derigny St., 7th floor
+	</office_address>
+	<postal_address>
+		76 Patission str,
+		104 34,
+		Athens, Greece
+	</postal_address>
+	<photo>../images/AggKostaki.jpg</photo>
+	<shortcv>
+			<p><i>Aggeliki Kostaki </i> is a PhD candidate at Athens University of Economics and Business, in the Department of Management Science and Technology. She holds a first degree in Financial Services (Technological Educational Institute of Piraeus), an MSc in Banking and Finance and an MSc in Human Resources Management (both from Athens University of Economics and Business). She has over 30 years solid multilevel experience in IT applications and since the 90’s she has participated in SAP projects (2007-2010 as a Deputy Project Manager). Also, she is a (LAEK) certified instructor  with over a ten-year teaching experience and an SAP Certified Application Associate – Human Capital Management with SAP ERP 6.0 EHP</p>
+			<p>As of 2011, she is a member of the OIS group and her main interests lay in the field of Organizational Reform, Change Management, Business Process Analysis, ICTs and IT applications.  She runs SAP and ARIS workshops for undergraduates and postgraduates and supports undergraduates’ assignments (implementing e-learning courses using moodle platform).</p>
+	</shortcv>
+	<phd-info completed="0" supervisor="m_akp" startdate="20130703">
+    <phd-title>Organizational Reform and ICTs</phd-title>
+    <phd-summary></phd-summary>
+  </phd-info>
+</member>
