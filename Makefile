@@ -26,6 +26,9 @@ SH=bash
 endif
 endif
 
+# Name of XMLStarlet
+XML=$(shell xmlstarlet --version 2>/dev/null 1>&2 && echo xmlstarlet || echo xml)
+
 # HTML output directory
 HTML=public_html
 
@@ -68,10 +71,10 @@ BROCHXSLT=schema/istlab-brochure.xslt
 # Today' date in ISO format
 TODAY=$(shell date +'%Y%m%d')
 # Fetch the ids
-GROUPIDS=$(shell xml tr ${IDXSLT} -s category=group ${DB})
-PROJECTIDS=$(shell xml tr ${IDXSLT} -s category=project ${DB})
-MEMBERIDS=$(shell xml tr ${IDXSLT} -s category=member ${DB})
-RELPAGEIDS=$(shell xml tr ${IDXSLT} -s category=page ${DB})
+GROUPIDS=$(shell ${XML} tr ${IDXSLT} -s category=group ${DB})
+PROJECTIDS=$(shell ${XML} tr ${IDXSLT} -s category=project ${DB})
+MEMBERIDS=$(shell ${XML} tr ${IDXSLT} -s category=member ${DB})
+RELPAGEIDS=$(shell ${XML} tr ${IDXSLT} -s category=page ${DB})
 # yearly report
 CURRENT_YEAR=$(shell date +'%Y')
 
@@ -136,46 +139,46 @@ clean:
 
 phone: ${DB}
 	@echo "Creating phone catalog"
-	@xml tr ${PHONEXSLT} ${DB} > ${HTML}/misc/catalog.html
+	@${XML} tr ${PHONEXSLT} ${DB} > ${HTML}/misc/catalog.html
 
 val: ${DB}
 	@echo '---> Checking group data XML files ... '
 	@-for file in $(GROUPFILES); \
 	do \
-		xml val -d schema/istlab-group.dtd $$file > /dev/null 2>xmlval.out; \
+		${XML} val -d schema/istlab-group.dtd $$file > /dev/null 2>xmlval.out; \
 		if [ $$? != "0" ]; then cat xmlval.out; fi; \
 		rm xmlval.out; \
 	done 
 	@echo '---> Checking member data XML files ...'
 	@-for file in $(MEMBERFILES); \
 	do \
-		xml val -d schema/istlab-member.dtd $$file > /dev/null 2>xmlval.out; \
+		${XML} val -d schema/istlab-member.dtd $$file > /dev/null 2>xmlval.out; \
 		if [ $$? != "0" ]; then cat xmlval.out; fi; \
 		rm xmlval.out; \
 	done
 	@echo '---> Checking project data XML files ...'
 	@-for file in $(PROJECTFILES); \
 	do \
-		xml val -d schema/istlab-project.dtd $$file > /dev/null 2>xmlval.out; \
+		${XML} val -d schema/istlab-project.dtd $$file > /dev/null 2>xmlval.out; \
 		if [ $$? != "0" ]; then cat xmlval.out; fi; \
 		rm xmlval.out; \
 	done
 	@echo '---> Checking additional HTML pages ...'
 	@-for file in $(RELPAGEFILES); \
 	do \
-		xml val -d schema/istlab-page.dtd $$file > /dev/null 2>xmlval.out; \
+		${XML} val -d schema/istlab-page.dtd $$file > /dev/null 2>xmlval.out; \
 		if [ $$? != "0" ]; then cat xmlval.out; fi; \
 		rm xmlval.out; \
 	done
 	@echo '---> Checking announcements ...'
 	@-for file in $(ANNOUNCEFILES); \
 	do \
-		xml val -d schema/istlab-announce.dtd $$file > /dev/null 2>xmlval.out; \
+		${XML} val -d schema/istlab-announce.dtd $$file > /dev/null 2>xmlval.out; \
 		if [ $$? != "0" ]; then cat xmlval.out; fi; \
 		rm xmlval.out; \
 	done
 	@echo '---> Checking db.xml ...'
-	@xml val -e -d schema/istlab.dtd $(DB)
+	@${XML} val -e -d schema/istlab.dtd $(DB)
 
 html: verify ${DB} groups projects members rel_pages announcements publications phone email-lists phd-students report brochure
 
@@ -198,7 +201,7 @@ report: ${DB}
 		if [ $$? != "0" ] ; then cat bibval.out; fi; rm bibval.out ; \
 		perl tools/typeyear.pl data/publications/workingpaper.bib $$year > $(BUILD)/$$year-workingpaper.aux 2>bibval.out ; \
 		if [ $$? != "0" ] ; then cat bibval.out; fi; rm bibval.out ; \
-		xml tr ${REPORTXSLT} -s year=$$year -s cyear=$(CURRENT_YEAR) ${DB} > ${HTML}/reports/istlab-report-$$year.html 2>bibval.out ; \
+		${XML} tr ${REPORTXSLT} -s year=$$year -s cyear=$(CURRENT_YEAR) ${DB} > ${HTML}/reports/istlab-report-$$year.html 2>bibval.out ; \
 		if [ $$? != "0" ] ; then cat bibval.out; fi; rm bibval.out ; \
 		perl tools/bib2html -c -r -b "$(BIBTEX_OPTIONS)" -s empty $(BUILD)/$$year-article.aux $(BUILD)/$$year-article.html 2>bibval.out ; \
 		if [ $$? != "0" ] ; then cat bibval.out; fi; rm bibval.out ; \
@@ -218,8 +221,8 @@ report: ${DB}
 		if [ $$? != "0" ] ; then cat bibval.out; fi; rm bibval.out ; \
 		year=`expr $$year + 1`; \
 	done ; \
-	cd public_html/reports ; xml ls > ../../$(BUILD)/ls.xml ; cd ../.. ; \
-	xml tr ${REPIDXXSLT} $(BUILD)/ls.xml > ${HTML}/reports/index.html
+	cd public_html/reports ; ${XML} ls > ../../$(BUILD)/ls.xml ; cd ../.. ; \
+	${XML} tr ${REPIDXXSLT} $(BUILD)/ls.xml > ${HTML}/reports/index.html
 
 brochure: ${DB}
 	@echo "Creating ISTLab brochure"
@@ -244,7 +247,7 @@ brochure: ${DB}
 	if [ $$? != "0" ] ; then cat bibval.out; fi; rm bibval.out ; \
 	perl tools/typeyear.pl data/publications/workingpaper.bib $$years > $(BUILD)/brochure-workingpaper.aux 2>bibval.out ; \
 	if [ $$? != "0" ] ; then cat bibval.out; fi; rm bibval.out ; \
-	xml tr ${BROCHXSLT} -s today=`expr $(CURRENT_YEAR) - 2`0101 ${DB} > ${HTML}/brochure/istlab-brochure.html 2>bibval.out ; \
+	${XML} tr ${BROCHXSLT} -s today=`expr $(CURRENT_YEAR) - 2`0101 ${DB} > ${HTML}/brochure/istlab-brochure.html 2>bibval.out ; \
 	if [ $$? != "0" ] ; then cat bibval.out; fi; rm bibval.out ; \
 	perl tools/bib2html -c -r -b "$(BIBTEX_OPTIONS)" -s empty $(BUILD)/brochure-article.aux $(BUILD)/brochure-article.html 2>bibval.out ; \
 	if [ $$? != "0" ] ; then cat bibval.out; fi; rm bibval.out ; \
@@ -267,40 +270,40 @@ groups: ${DB}
 	@echo "Creating groups"
 	@for group in $(GROUPIDS) ; \
 	do \
-		xml tr ${PXSLT} -s today=${TODAY} -s ogroup=$$group -s what=group-details ${DB} >${HTML}/groups/$$group-details.html ; \
-		xml tr ${PXSLT} -s today=${TODAY} -s ogroup=$$group -s what=completed-projects ${DB} >${HTML}/groups/$$group-completed-projects.html ; \
-		xml tr ${PXSLT} -s today=${TODAY} -s ogroup=$$group -s what=current-projects ${DB} >${HTML}/groups/$$group-current-projects.html ; \
-		xml tr ${PXSLT} -s today=${TODAY} -s ogroup=$$group -s what=members ${DB} >${HTML}/groups/$$group-members.html ; \
-		xml tr ${PXSLT} -s today=${TODAY} -s ogroup=$$group -s what=alumni ${DB} >${HTML}/groups/$$group-alumni.html ; \
-		xml tr ${PXSLT} -s ogroup=$$group -s what=group-publications -s menu=off ${DB} >${HTML}/publications/$$group-publications.html ; \
+		${XML} tr ${PXSLT} -s today=${TODAY} -s ogroup=$$group -s what=group-details ${DB} >${HTML}/groups/$$group-details.html ; \
+		${XML} tr ${PXSLT} -s today=${TODAY} -s ogroup=$$group -s what=completed-projects ${DB} >${HTML}/groups/$$group-completed-projects.html ; \
+		${XML} tr ${PXSLT} -s today=${TODAY} -s ogroup=$$group -s what=current-projects ${DB} >${HTML}/groups/$$group-current-projects.html ; \
+		${XML} tr ${PXSLT} -s today=${TODAY} -s ogroup=$$group -s what=members ${DB} >${HTML}/groups/$$group-members.html ; \
+		${XML} tr ${PXSLT} -s today=${TODAY} -s ogroup=$$group -s what=alumni ${DB} >${HTML}/groups/$$group-alumni.html ; \
+		${XML} tr ${PXSLT} -s ogroup=$$group -s what=group-publications -s menu=off ${DB} >${HTML}/publications/$$group-publications.html ; \
 	done
 
 projects: ${DB}
 	@echo "Creating projects"
 	@for project in $(PROJECTIDS) ; \
 	do \
-		xml tr ${PXSLT} -s oproject=$$project -s what=project-details -s menu=off ${DB} >${HTML}/projects/$$project.html ; \
-		xml tr ${PXSLT} -s oproject=$$project -s what=project-publications -s menu=off ${DB} >${HTML}/publications/$$project-publications.html ; \
+		${XML} tr ${PXSLT} -s oproject=$$project -s what=project-details -s menu=off ${DB} >${HTML}/projects/$$project.html ; \
+		${XML} tr ${PXSLT} -s oproject=$$project -s what=project-publications -s menu=off ${DB} >${HTML}/publications/$$project-publications.html ; \
 	done
 
 members: ${DB}
 	@echo "Creating members"
 	@for member in $(MEMBERIDS) ; \
 	do \
-		xml tr ${PXSLT} -s omember=$$member -s what=member-details -s menu=off ${DB} >${HTML}/members/$$member.html ; \
-		xml tr ${PXSLT} -s omember=$$member -s what=member-publications -s menu=off ${DB} >${HTML}/publications/$$member-publications.html ; \
+		${XML} tr ${PXSLT} -s omember=$$member -s what=member-details -s menu=off ${DB} >${HTML}/members/$$member.html ; \
+		${XML} tr ${PXSLT} -s omember=$$member -s what=member-publications -s menu=off ${DB} >${HTML}/publications/$$member-publications.html ; \
 	done
 
 rel_pages: ${DB}
 	@echo "Creating additional HTML pages"
 	@for page in $(RELPAGEIDS) ; \
 	do \
-		xml tr ${PXSLT} -s opage=$$page -s what=rel-pages ${DB} >${HTML}/rel_pages/$$page-page.html ; \
+		${XML} tr ${PXSLT} -s opage=$$page -s what=rel-pages ${DB} >${HTML}/rel_pages/$$page-page.html ; \
 	done
 
 announcements: ${DB}
 	@echo "Creating announcements"
-	@xml tr ${PXSLT} -s ogroup=g_istlab -s what=announce ${DB} >${HTML}/announce/announcements.html
+	@${XML} tr ${PXSLT} -s ogroup=g_istlab -s what=announce ${DB} >${HTML}/announce/announcements.html
 
 publications: ${DB}
 	@echo "Creating publications"
@@ -308,19 +311,19 @@ publications: ${DB}
 
 phd-students: ${DB}
 	@echo "Creating PhD Students list"
-	@xml tr ${STUDXSLT} -s completed=0 ${DB} > ${HTML}/misc/phd-students.html
+	@${XML} tr ${STUDXSLT} -s completed=0 ${DB} > ${HTML}/misc/phd-students.html
 	@echo "Creating Awarded PhD's list"
-	@xml tr ${STUDXSLT} -s completed=1 ${DB} > ${HTML}/misc/awarded-phd-students.html
+	@${XML} tr ${STUDXSLT} -s completed=1 ${DB} > ${HTML}/misc/awarded-phd-students.html
 
 email-lists: ${DB}
 	@echo "Creating email lists"
 	@mkdir -p lists
 	@for group in $(GROUPIDS) ; \
 	do \
-		xml tr ${EMAILXSLT} -s ogroup=$$group -s what=members-all ${DB} > lists/$$group-all.txt ; \
-		xml tr ${EMAILXSLT} -s ogroup=$$group -s what=members-phd ${DB} > lists/$$group-phd.txt ; \
-		xml tr ${EMAILXSLT} -s ogroup=$$group -s what=members-alumni ${DB} > lists/$$group-alumni.txt ; \
-		xml tr ${EMAILXSLT} -s ogroup=$$group -s what=members-gl ${DB} > lists/$$group-gl.txt ; \
+		${XML} tr ${EMAILXSLT} -s ogroup=$$group -s what=members-all ${DB} > lists/$$group-all.txt ; \
+		${XML} tr ${EMAILXSLT} -s ogroup=$$group -s what=members-phd ${DB} > lists/$$group-phd.txt ; \
+		${XML} tr ${EMAILXSLT} -s ogroup=$$group -s what=members-alumni ${DB} > lists/$$group-alumni.txt ; \
+		${XML} tr ${EMAILXSLT} -s ogroup=$$group -s what=members-gl ${DB} > lists/$$group-gl.txt ; \
 	done
 
 stats:
