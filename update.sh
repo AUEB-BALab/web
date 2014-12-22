@@ -26,4 +26,5 @@ fi
 git merge origin
 
 make clean html report brochure && \
+rm -rf /home/dds/web/istlab/content/* && \
 tar -C public_html -cf - . | tar -mU -C /home/dds/web/istlab/content -xf -
