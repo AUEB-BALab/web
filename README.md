@@ -8,7 +8,7 @@ This is the repository for the [ISTLab](http://istlab.dmst.aueb.gr/) web site. T
 * research projects
 * publications
 
-The technologies that are used are Git, XML, XSLT, make, grep, BiBTeX, and bib2html
+The technologies that are used are Git, XML, XSLT, make, grep, BiBTeX, and bib2xhtml
 
 Data are kept in XML form (groups, members, projects) and for the publications BiBTeX is used. Data are transformed into static HTML pages by XSLT scripts and data validation checks are performed by XML validator (DTD schemas).
 

@@ -74,7 +74,7 @@ END {
 				print OUT '\bibdata{macro,magazine,book,article,inproceedings,incollection,whitepaper,techreport,workingpaper}';
 				print OUT "\n$citations{$group}{$id}{$type}";
 				close OUT;
- 				print RUN qq{perl tools/bib2html $includepath -c -r -s empty $auxfile public_html/publications/${id}-publications.html\n} unless($type eq 'any');
+ 				print RUN qq{perl tools/bib2xhtml $includepath -c -r -s empty $auxfile public_html/publications/${id}-publications.html\n} unless($type eq 'any');
 			}
 			print "\t</publication_type>\n";
 		}
@@ -82,7 +82,7 @@ END {
 	print "</publication_type_list>\n";
 	print RUN q{ ) 2>&1 |
 perl -n -e '
-# Remove bib2html noise
+# Remove bib2xhtml noise
 	next if (/^Use of uninitialized/);
 	next if (/^The /);
 	next if (/^This is /);

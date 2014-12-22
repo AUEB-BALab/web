@@ -203,19 +203,19 @@ report: ${DB}
 		if [ $$? != "0" ] ; then cat bibval.out; fi; rm bibval.out ; \
 		${XML} tr ${REPORTXSLT} -s year=$$year -s cyear=$(CURRENT_YEAR) ${DB} > ${HTML}/reports/istlab-report-$$year.html 2>bibval.out ; \
 		if [ $$? != "0" ] ; then cat bibval.out; fi; rm bibval.out ; \
-		perl tools/bib2html -c -r -b "$(BIBTEX_OPTIONS)" -s empty $(BUILD)/$$year-article.aux $(BUILD)/$$year-article.html 2>bibval.out ; \
+		perl tools/bib2xhtml -c -r -b "$(BIBTEX_OPTIONS)" -s empty $(BUILD)/$$year-article.aux $(BUILD)/$$year-article.html 2>bibval.out ; \
 		if [ $$? != "0" ] ; then cat bibval.out; fi; rm bibval.out ; \
-		perl tools/bib2html -c -r -b "$(BIBTEX_OPTIONS)" -s empty $(BUILD)/$$year-book.aux $(BUILD)/$$year-book.html 2>bibval.out ; \
+		perl tools/bib2xhtml -c -r -b "$(BIBTEX_OPTIONS)" -s empty $(BUILD)/$$year-book.aux $(BUILD)/$$year-book.html 2>bibval.out ; \
 		if [ $$? != "0" ] ; then cat bibval.out; fi; rm bibval.out ; \
-		perl tools/bib2html -c -r -b "$(BIBTEX_OPTIONS)" -s empty $(BUILD)/$$year-incollection.aux $(BUILD)/$$year-incollection.html 2>bibval.out ; \
+		perl tools/bib2xhtml -c -r -b "$(BIBTEX_OPTIONS)" -s empty $(BUILD)/$$year-incollection.aux $(BUILD)/$$year-incollection.html 2>bibval.out ; \
 		if [ $$? != "0" ] ; then cat bibval.out; fi; rm bibval.out ; \
-		perl tools/bib2html -c -r -b "$(BIBTEX_OPTIONS)" -s empty $(BUILD)/$$year-inproceedings.aux $(BUILD)/$$year-inproceedings.html 2>bibval.out ; \
+		perl tools/bib2xhtml -c -r -b "$(BIBTEX_OPTIONS)" -s empty $(BUILD)/$$year-inproceedings.aux $(BUILD)/$$year-inproceedings.html 2>bibval.out ; \
 		if [ $$? != "0" ] ; then cat bibval.out; fi; rm bibval.out ; \
-		perl tools/bib2html -c -r -b "$(BIBTEX_OPTIONS)" -s empty $(BUILD)/$$year-techreport.aux $(BUILD)/$$year-techreport.html 2>bibval.out ; \
+		perl tools/bib2xhtml -c -r -b "$(BIBTEX_OPTIONS)" -s empty $(BUILD)/$$year-techreport.aux $(BUILD)/$$year-techreport.html 2>bibval.out ; \
 		if [ $$? != "0" ] ; then cat bibval.out; fi; rm bibval.out ; \
-		perl tools/bib2html -c -r -b "$(BIBTEX_OPTIONS)" -s empty $(BUILD)/$$year-whitepaper.aux $(BUILD)/$$year-whitepaper.html 2>bibval.out ; \
+		perl tools/bib2xhtml -c -r -b "$(BIBTEX_OPTIONS)" -s empty $(BUILD)/$$year-whitepaper.aux $(BUILD)/$$year-whitepaper.html 2>bibval.out ; \
 		if [ $$? != "0" ] ; then cat bibval.out; fi; rm bibval.out ; \
-		perl tools/bib2html -c -r -b "$(BIBTEX_OPTIONS)" -s empty $(BUILD)/$$year-workingpaper.aux $(BUILD)/$$year-workingpaper.html 2>bibval.out; \
+		perl tools/bib2xhtml -c -r -b "$(BIBTEX_OPTIONS)" -s empty $(BUILD)/$$year-workingpaper.aux $(BUILD)/$$year-workingpaper.html 2>bibval.out; \
 		if [ $$? != "0" ] ; then cat bibval.out; fi; rm bibval.out ; \
 		perl tools/prepare-pubs.pl $$year public_html/reports/istlab-report-$$year.html 2>bibval.out ; \
 		if [ $$? != "0" ] ; then cat bibval.out; fi; rm bibval.out ; \
@@ -249,19 +249,19 @@ brochure: ${DB}
 	if [ $$? != "0" ] ; then cat bibval.out; fi; rm bibval.out ; \
 	${XML} tr ${BROCHXSLT} -s today=`expr $(CURRENT_YEAR) - 2`0101 ${DB} > ${HTML}/brochure/istlab-brochure.html 2>bibval.out ; \
 	if [ $$? != "0" ] ; then cat bibval.out; fi; rm bibval.out ; \
-	perl tools/bib2html -c -r -b "$(BIBTEX_OPTIONS)" -s empty $(BUILD)/brochure-article.aux $(BUILD)/brochure-article.html 2>bibval.out ; \
+	perl tools/bib2xhtml -c -r -b "$(BIBTEX_OPTIONS)" -s empty $(BUILD)/brochure-article.aux $(BUILD)/brochure-article.html 2>bibval.out ; \
 	if [ $$? != "0" ] ; then cat bibval.out; fi; rm bibval.out ; \
-	perl tools/bib2html -c -r -b "$(BIBTEX_OPTIONS)" -s empty $(BUILD)/brochure-book.aux $(BUILD)/brochure-book.html 2>bibval.out ; \
+	perl tools/bib2xhtml -c -r -b "$(BIBTEX_OPTIONS)" -s empty $(BUILD)/brochure-book.aux $(BUILD)/brochure-book.html 2>bibval.out ; \
 	if [ $$? != "0" ] ; then cat bibval.out; fi; rm bibval.out ; \
-	perl tools/bib2html -c -r -b "$(BIBTEX_OPTIONS)" -s empty $(BUILD)/brochure-incollection.aux $(BUILD)/brochure-incollection.html 2>bibval.out ; \
+	perl tools/bib2xhtml -c -r -b "$(BIBTEX_OPTIONS)" -s empty $(BUILD)/brochure-incollection.aux $(BUILD)/brochure-incollection.html 2>bibval.out ; \
 	if [ $$? != "0" ] ; then cat bibval.out; fi; rm bibval.out ; \
-	perl tools/bib2html -c -r -b "$(BIBTEX_OPTIONS)" -s empty $(BUILD)/brochure-inproceedings.aux $(BUILD)/brochure-inproceedings.html 2>bibval.out ; \
+	perl tools/bib2xhtml -c -r -b "$(BIBTEX_OPTIONS)" -s empty $(BUILD)/brochure-inproceedings.aux $(BUILD)/brochure-inproceedings.html 2>bibval.out ; \
 	if [ $$? != "0" ] ; then cat bibval.out; fi; rm bibval.out ; \
-	perl tools/bib2html -c -r -b "$(BIBTEX_OPTIONS)" -s empty $(BUILD)/brochure-techreport.aux $(BUILD)/brochure-techreport.html 2>bibval.out ; \
+	perl tools/bib2xhtml -c -r -b "$(BIBTEX_OPTIONS)" -s empty $(BUILD)/brochure-techreport.aux $(BUILD)/brochure-techreport.html 2>bibval.out ; \
 	if [ $$? != "0" ] ; then cat bibval.out; fi; rm bibval.out ; \
-	perl tools/bib2html -c -r -b "$(BIBTEX_OPTIONS)" -s empty $(BUILD)/brochure-whitepaper.aux $(BUILD)/brochure-whitepaper.html 2>bibval.out ; \
+	perl tools/bib2xhtml -c -r -b "$(BIBTEX_OPTIONS)" -s empty $(BUILD)/brochure-whitepaper.aux $(BUILD)/brochure-whitepaper.html 2>bibval.out ; \
 	if [ $$? != "0" ] ; then cat bibval.out; fi; rm bibval.out ; \
-	perl tools/bib2html -c -r -b "$(BIBTEX_OPTIONS)" -s empty $(BUILD)/brochure-workingpaper.aux $(BUILD)/brochure-workingpaper.html 2>bibval.out ; \
+	perl tools/bib2xhtml -c -r -b "$(BIBTEX_OPTIONS)" -s empty $(BUILD)/brochure-workingpaper.aux $(BUILD)/brochure-workingpaper.html 2>bibval.out ; \
 	if [ $$? != "0" ] ; then cat bibval.out; fi; rm bibval.out ; \
 	perl tools/prepare-pubs.pl brochure public_html/brochure/istlab-brochure.html 2>bibval.out ; \
 	if [ $$? != "0" ] ; then cat bibval.out; fi; rm bibval.out ; \
