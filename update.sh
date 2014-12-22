@@ -25,5 +25,5 @@ fi
 # There is work to integrate; rebuild
 git merge origin
 
-gmake clean html report brochure && \
+make clean html report brochure && \
 tar -C public_html -cf - . | tar -mU -C /home/dds/web/istlab/content -xf -
