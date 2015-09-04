@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project id="p_seneca" group="g_istlab g_sense" contact="m_mfrag" scientific_coordinator="m_dds" international="yes" type="rtd" project_manager="m_mfrag">
+	<shortname>SENECA</shortname>
+	<projtitle>Software ENgineering in Enterprise Cloud Applications</projtitle>
+	<startdate>20150101</startdate>
+	<enddate>20181231</enddate>
+	<!-- our_budget>242,387 euro</our_budget -->
+	<total_budget>2,236,902 euro</total_budget>
+	<funding_agency>SENECA is a European Industrial Doctorate project, funded under Marie-Skłodowska Curie Actions.</funding_agency>
+	<funding_programme>Marie Curie</funding_programme>
+	<project_code>(2014)4071968</project_code>
+    <logo>../images/marie-curie.jpg</logo>
+	<partner>
+		<shortname>Software Imrovement Group</shortname>
+		<country>NL</country>
+		<web_site>https://www.sig.eu/en/</web_site>
+	</partner>
+    	<partner>
+		<shortname>SINGULARLOGIC Anonymi Etairia Pliroforiakon Sistimaton Kai Efarmogon Pliroforikis</shortname>
+		<country>GR</country>
+		<web_site>http://portal.singularlogic.eu/en</web_site>
+	</partner>
+    	<partner>
+		<shortname>Athens University of Economics and Business - Reseach Center</shortname>
+		<country>GR</country>
+		<web_site>http://www.aueb.gr</web_site>
+	</partner>
+    	<partner>
+		<shortname>Universidad Rey Juan Carlos</shortname>
+		<country>ES</country>
+		<web_site>https://www.urjc.es/en/</web_site>
+	</partner>
+    	<partner>
+		<shortname>Bitergium SLL</shortname>
+		<country>ES</country>
+		<web_site>http://bitergia.com</web_site>
+	</partner>
+    	<partner>
+		<shortname>Technische Universiteit Delft</shortname>
+		<country>NL</country>
+		<web_site>http://www.tudelft.nl/en/</web_site>
+	</partner>
+	<description>
+	The project provides the opportunity to nine early-stage researchers to pursue their PhD in the area of software engineering of cloud-based systems. The research programme is organized in three research streams: A) Product quality in cloud-related software development projects B) Process quality in cloud-related software development C) Operations' quality in cloud systems.
+	</description>
+</project>
