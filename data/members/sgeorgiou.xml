@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<member id="sgeorgiou" group="g_istlab g_sense" joined="20151216">
+  <givenname>Stefanos</givenname>
+  <surname>Georgiou</surname>
+  <memb_title>Mr.</memb_title>
+  <email>stefanos1316@gmail.com</email>
+  <!-- <web_site></web_site> -->
+  <photo></photo>
+  <shortcv>
+    <p><i>Stefanos Georgiou</i> is a PhD
+      Candidate at SENECA which is an idustrial PhD position
+      and it's expected to be in Athens University of Economics
+      and Bisuness, company Singular Logic and Delft University. 
+      He holds a BSc in Networks and Systems Programming 
+      from University of Cyprus and a MSc in PERCCOM (PERvasive Computing
+      and COMmunications for sustainable development) a joint Master Degree
+      between 4 differnet Universities (University of Lorraine, Lappeenranta
+      University of Technology, Lulea Univsity of Technology, and
+      ITMO University of Saint Petersburg)</p>
+    <p>His research interests are Green IT, Cloud Computing, Distributed Applications,
+     Big Data Transfer, and IoT (Internet of Things)
+    </p>
+    <p>His current PhD position is founded by Marie Skłodowska-Curie from
+    framework Horizon 2020.</p>
+  </shortcv>
+  <phd-info completed="0" supervisor="m_dds" startdate="20160104">
+    <phd-title>Energy Efficiency in Cloud Computing</phd-title>
+    <phd-summary></phd-summary>
+  </phd-info>
+</member>
