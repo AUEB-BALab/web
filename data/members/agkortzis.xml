@@ -6,7 +6,7 @@
   <memb_title>Mr.</memb_title>
   <email>antoniosgkortzis@aueb.gr</email>
   <!-- <web_site></web_site> -->
-  <photo></photo>
+  <photo>../images/agkortzis.jpg</photo>
   
   <shortcv>
 		<p><i>Antonios Gkortzis</i> is a PhD Candidate at the SENECA (http://senecaproject.github.io/) project. The reasearch topic of this industrial PhD position is "Secure Systems on Cloud Computing Infrastructures" and is offered by Singular Logic, the Athens University of Economics and Bussiness, and the King Juan Carlos University. He holds a BSc in Information Technology Engineering from the Alexandreio Technological Educational Institute of Thessaloniki and a Master Degree in Computing Science (Software Engineering and Distributed Systems) from the University of Gronignen.</p>
