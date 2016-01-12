@@ -6,12 +6,12 @@
   <memb_title>Mr.</memb_title>
   <email>antoniosgkortzis@aueb.gr</email>
   <!-- <web_site></web_site> -->
-  <photo></photo>
+  <photo>../images/agkortzis_ssmall.jpg</photo>
   
   <shortcv>
-		<p><i>Antonios Gkortzis</i> is a PhD Candidate at the SENECA (http://senecaproject.github.io/) project. The reasearch topic of this industrial PhD position is "Secure Systems on Cloud Computing Infrastructures" and is offered by Singular Logic, the Athens University of Economics and Bussiness, and the King Juan Carlos University. He holds a BSc in Information Technology Engineering from the Alexandreio Technological Educational Institute of Thessaloniki and a Master Degree in Computing Science (Software Engineering and Distributed Systems) from the University of Gronignen.</p>
-		<p>His main research interests are: Cloud Computing, Security, Software Engineering, Software Quality Assurance and Code Analysis.</p>
-		<p>His current PhD position is founded by Marie Skłodowska-Curie from the framework Horizon 2020.</p>
+	<p><i>Antonios Gkortzis</i> is a PhD Candidate at the SENECA (http://senecaproject.github.io/) project. The reasearch topic of this industrial PhD position is "Secure Systems on Cloud Computing Infrastructures" and is offered by Singular Logic, the Athens University of Economics and Bussiness, and the King Juan Carlos University. He holds a BSc in Information Technology Engineering from the Alexandreio Technological Educational Institute of Thessaloniki and a Master Degree in Computing Science (Software Engineering and Distributed Systems) from the University of Gronignen.</p>
+	<p>His main research interests are: Cloud Computing, Security, Software Engineering, Software Quality Assurance and Code Analysis.</p>
+	<p>His current PhD position is founded by Marie Skłodowska-Curie from the framework Horizon 2020.</p>
   </shortcv>
   
   <phd-info completed="0" 
