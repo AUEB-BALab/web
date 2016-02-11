@@ -188,37 +188,37 @@ report: ${DB}
 	while [ $$year -le $(CURRENT_YEAR) ] ; \
 	do \
 		perl tools/typeyear.pl data/publications/article.bib $$year > $(BUILD)/$$year-article.aux 2>bibval.out ; \
-		if [ $$? != "0" ] ; then cat bibval.out; fi; rm bibval.out ; \
+		test -s bibval.out && cat bibval.out; rm bibval.out ; \
 		perl tools/typeyear.pl data/publications/book.bib $$year > $(BUILD)/$$year-book.aux 2>bibval.out ; \
-		if [ $$? != "0" ] ; then cat bibval.out; fi; rm bibval.out ; \
+		test -s bibval.out && cat bibval.out; rm bibval.out ; \
 		perl tools/typeyear.pl data/publications/incollection.bib $$year > $(BUILD)/$$year-incollection.aux 2>bibval.out ; \
-		if [ $$? != "0" ] ; then cat bibval.out; fi; rm bibval.out ; \
+		test -s bibval.out && cat bibval.out; rm bibval.out ; \
 		perl tools/typeyear.pl data/publications/inproceedings.bib $$year > $(BUILD)/$$year-inproceedings.aux 2>bibval.out ; \
-		if [ $$? != "0" ] ; then cat bibval.out; fi; rm bibval.out ; \
+		test -s bibval.out && cat bibval.out; rm bibval.out ; \
 		perl tools/typeyear.pl data/publications/techreport.bib $$year > $(BUILD)/$$year-techreport.aux 2>bibval.out ; \
-		if [ $$? != "0" ] ; then cat bibval.out; fi; rm bibval.out ; \
+		test -s bibval.out && cat bibval.out; rm bibval.out ; \
 		perl tools/typeyear.pl data/publications/whitepaper.bib $$year > $(BUILD)/$$year-whitepaper.aux 2>bibval.out ; \
-		if [ $$? != "0" ] ; then cat bibval.out; fi; rm bibval.out ; \
+		test -s bibval.out && cat bibval.out; rm bibval.out ; \
 		perl tools/typeyear.pl data/publications/workingpaper.bib $$year > $(BUILD)/$$year-workingpaper.aux 2>bibval.out ; \
-		if [ $$? != "0" ] ; then cat bibval.out; fi; rm bibval.out ; \
+		test -s bibval.out && cat bibval.out; rm bibval.out ; \
 		${XML} tr ${REPORTXSLT} -s year=$$year -s cyear=$(CURRENT_YEAR) ${DB} > ${HTML}/reports/istlab-report-$$year.html 2>bibval.out ; \
-		if [ $$? != "0" ] ; then cat bibval.out; fi; rm bibval.out ; \
+		test -s bibval.out && cat bibval.out; rm bibval.out ; \
 		perl tools/bib2xhtml -c -r -b "$(BIBTEX_OPTIONS)" -s empty $(BUILD)/$$year-article.aux $(BUILD)/$$year-article.html 2>bibval.out ; \
-		if [ $$? != "0" ] ; then cat bibval.out; fi; rm bibval.out ; \
+		test -s bibval.out && cat bibval.out; rm bibval.out ; \
 		perl tools/bib2xhtml -c -r -b "$(BIBTEX_OPTIONS)" -s empty $(BUILD)/$$year-book.aux $(BUILD)/$$year-book.html 2>bibval.out ; \
-		if [ $$? != "0" ] ; then cat bibval.out; fi; rm bibval.out ; \
+		test -s bibval.out && cat bibval.out; rm bibval.out ; \
 		perl tools/bib2xhtml -c -r -b "$(BIBTEX_OPTIONS)" -s empty $(BUILD)/$$year-incollection.aux $(BUILD)/$$year-incollection.html 2>bibval.out ; \
-		if [ $$? != "0" ] ; then cat bibval.out; fi; rm bibval.out ; \
+		test -s bibval.out && cat bibval.out; rm bibval.out ; \
 		perl tools/bib2xhtml -c -r -b "$(BIBTEX_OPTIONS)" -s empty $(BUILD)/$$year-inproceedings.aux $(BUILD)/$$year-inproceedings.html 2>bibval.out ; \
-		if [ $$? != "0" ] ; then cat bibval.out; fi; rm bibval.out ; \
+		test -s bibval.out && cat bibval.out; rm bibval.out ; \
 		perl tools/bib2xhtml -c -r -b "$(BIBTEX_OPTIONS)" -s empty $(BUILD)/$$year-techreport.aux $(BUILD)/$$year-techreport.html 2>bibval.out ; \
-		if [ $$? != "0" ] ; then cat bibval.out; fi; rm bibval.out ; \
+		test -s bibval.out && cat bibval.out; rm bibval.out ; \
 		perl tools/bib2xhtml -c -r -b "$(BIBTEX_OPTIONS)" -s empty $(BUILD)/$$year-whitepaper.aux $(BUILD)/$$year-whitepaper.html 2>bibval.out ; \
-		if [ $$? != "0" ] ; then cat bibval.out; fi; rm bibval.out ; \
+		test -s bibval.out && cat bibval.out; rm bibval.out ; \
 		perl tools/bib2xhtml -c -r -b "$(BIBTEX_OPTIONS)" -s empty $(BUILD)/$$year-workingpaper.aux $(BUILD)/$$year-workingpaper.html 2>bibval.out; \
-		if [ $$? != "0" ] ; then cat bibval.out; fi; rm bibval.out ; \
+		test -s bibval.out && cat bibval.out; rm bibval.out ; \
 		perl tools/prepare-pubs.pl $$year public_html/reports/istlab-report-$$year.html 2>bibval.out ; \
-		if [ $$? != "0" ] ; then cat bibval.out; fi; rm bibval.out ; \
+		test -s bibval.out && cat bibval.out; rm bibval.out ; \
 		year=`expr $$year + 1`; \
 	done ; \
 	cd public_html/reports ; ${XML} ls | grep -v istlab-report-$(CURRENT_YEAR) >../../$(BUILD)/ls.xml ; cd ../.. ; \
