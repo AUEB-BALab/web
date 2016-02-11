@@ -221,7 +221,7 @@ report: ${DB}
 		if [ $$? != "0" ] ; then cat bibval.out; fi; rm bibval.out ; \
 		year=`expr $$year + 1`; \
 	done ; \
-	cd public_html/reports ; ${XML} ls > ../../$(BUILD)/ls.xml ; cd ../.. ; \
+	cd public_html/reports ; ${XML} ls | grep -v $$(date +'istlab-report-%Y') >../../$(BUILD)/ls.xml ; cd ../.. ; \
 	${XML} tr ${REPIDXXSLT} $(BUILD)/ls.xml > ${HTML}/reports/index.html
 
 brochure: ${DB}
