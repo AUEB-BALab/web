@@ -12,12 +12,12 @@ sub get_pubs {
 
 	open(my $HTML_PUB, '<', "build/$year-$_[0].html") || die "Unable to open build/$year-$_[0].html: $!\n";
 	for (<$HTML_PUB>) {
-		$flag = 1 if (m/<ul>/g);
+		$flag = 1 if (m/<ul/);
 		if (m/<\/ul>/g) {
 			$buf .= '</ul>';
 			$flag = 0;
 		}
-		$li_found = 1 if (m/<li>/g);
+		$li_found = 1 if (m/<li>/);
 		$buf .= $_ if ($flag);
 	}
 	close($HTML_PUB);
