@@ -221,7 +221,7 @@ report: ${DB}
 		test -s bibval.out && cat bibval.out; rm bibval.out ; \
 		year=`expr $$year + 1`; \
 	done ; \
-	cd public_html/reports ; ${XML} ls | grep -v istlab-report-$(CURRENT_YEAR) >../../$(BUILD)/ls.xml ; cd ../.. ; \
+	cd public_html/reports ; ${XML} ls > ../../$(BUILD)/ls.xml ; cd ../.. ; \
 	${XML} tr ${REPIDXXSLT} $(BUILD)/ls.xml > ${HTML}/reports/index.html
 
 brochure: ${DB}
