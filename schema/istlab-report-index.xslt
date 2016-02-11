@@ -28,7 +28,7 @@
 		<xsl:for-each select="f">
 			<xsl:sort select="substring(current()/@n, 15, 4)" order="descending"/>
 			<xsl:if test="starts-with(current()/@n,'istlab')">
-				<li><a href="{current()/@n}"><xsl:value-of select="substring(current()/@n, 1, string-length(current()/@n) - 5)" /></a></li>
+				<li><a href="{current()/@n}">Yearly Report <xsl:value-of select="substring(current()/@n, 15, 4)" /></a></li>
 			</xsl:if>
 		</xsl:for-each>
 		</ul>
