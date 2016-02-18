@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<member id="m_giannopoulos" group="g_istlab g_ois" joined="20141212">
+	<givenname>Thanos</givenname>
+	<surname>Giannopoulos</surname>
+	<memb_title>Mr.</memb_title>
+	<email>tgianno@aueb.gr</email>
+	<office_phone></office_phone>
+	<!-- <mobile_phone></mobile_phone> -->
+	<!--fax></fax> -->
+	<!-- <alumnus/>--><!-- Optional -->
+	<office_address></office_address>
+	<postal_address>
+		
+	</postal_address>
+	<photo></photo>
+	<shortcv></shortcv>
+	<phd-info completed="0" supervisor="m_giannopoulos" startdate="201212">
+    <phd-title>Business Value of IT</phd-title>
+    <phd-summary></phd-summary>
+  </phd-info>
+</member>
