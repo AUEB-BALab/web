@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<member id="m_kapergis" group="g_istlab" joined="20160218">
+	<givenname>Konstantinos</givenname>
+	<surname>Apergis</surname>
+	<email>kostas.aperg@gmail.com</email>
+	<!-- <web_site></web_site> -->
+	<!-- <photo></photo> -->
+	<shortcv>
+		<p>
+			<i>Konstantinos Apergis</i> is an undergraduate student 
+			at the Department of Informatics of the Athens University of Economics and Business. 
+		</p>
+	</shortcv>
+</member>
