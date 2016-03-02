@@ -57,7 +57,7 @@ EOF
   rm -rf ../sandbox
   exit 1
 fi
-cd ../web
+cd /home/iweb/web
 rm -rf ../sandbox
 
 make clean html report brochure && \
