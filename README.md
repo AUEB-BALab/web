@@ -14,43 +14,43 @@ Data are kept in XML form (groups, members, projects) and for the publications B
 
 Quick HOWTO
 -----------
-* To add a new publication edit the file in **data/publications** corresponding to
+* To add a new publication edit the file in `data/publications` corresponding to
 the type of the publication you are adding.
 You can use a BibTeX entry exported from a digital library.
 However, you need to add the  `XEmember` and `XEgroup` fields;
 look at existing entries for examples.
-* To add a new member, add a file under **data/members**;
-to add a new project, add a file under **data/projects**;
+* To add a new member, add a file under `data/members`;
+to add a new project, add a file under `data/projects`;
 to modify an existing one, edit the corresponding file.
-Again, when adding, you can get a head-start by copy-pasting the contents
-of a member that matches the new addition.
+Again, when adding, you can get a head-start by copy-pasting a template
+(see below).
 
 Project Structure
 -----------------
-* **bin** : win32 version of binaries that are needed by the system _note : OS X and Linux users and should install them separetaly._
-* **build** : Temporary files that are used to locally build the website
-* **data** : XML and bibtex user data
-  * _groups_ : Research group data (XML)
-  * _members_ : Members' information (XML)
-  * _projects_ : Project information (XML)
-  * _publications_ : Bibliographic data (Bibtex)
-  * _rel_pages_ : Rogue HTML pages, which are assigned to a research group
-* **doc** : System's documentation (still work in progress)
-* **lists** : 
-* **public_html** : 
-* **schema** : System's DTDs and transformation scripts
-* **tools** : Scripts and tools used by the system to build reports
-* _Makefile_ : The system's operation is orchestrated by this make file. Common commands include
-  * _html_ : Build the website locally
-  * _val_ : Validate local data and report problems
-  * _clean_ : Delete temporary build files (usually run this before using the _html_ target)
+* `bin` : win32 version of binaries that are needed by the system _note : OS X and Linux users and should install them separetaly._
+* `build` : Temporary files that are used to locally build the website
+* `data` : XML and bibtex user data
+  * `groups` : Research group data (XML)
+  * `members` : Members' information (XML)
+  * `projects` : Project information (XML)
+  * `publications` : Bibliographic data (Bibtex)
+  * `rel_pages` : Rogue HTML pages, which are assigned to a research group
+* `doc` : System's documentation (still work in progress)
+* `lists` : 
+* `public_html` : 
+* `schema` : System's DTDs and transformation scripts
+* `tools` : Scripts and tools used by the system to build reports
+* `Makefile` : The system's operation is orchestrated by this make file. Common commands include
+  * `html` : Build the website locally
+  * `val` : Validate local data and report problems
+  * `clean` : Delete temporary build files (usually run this before using the `html` target)
   
 Dependencies
 ------------
 * *make* : GNU make
 * *bibtex* : LaTeX's bibtex tool
 * *perl* : Perl programming Language (used only on reporting)
-* *xmlstarlet* : A command-line tool that exposes _libxml_ basic facilities
+* *xmlstarlet* : A command-line tool that exposes `libxml` basic facilities
 
 **Note**: The win32 version of these utilities are included in the basic distribution ot the system.
 
@@ -81,19 +81,19 @@ and then open <code>public_html/index.html</code> file with your favorite web br
 
 ### Document Templates ###
 
-* **doc/templates/group-sample.xml** : XML Template for a research group
-* **doc/templates/member-example.xml** : XML Template for a group member 
-* **doc/templates/project-example.xml** : XML Template for a research project
-* **doc/templates/rel_page-example.xml** : XML Template for a group HTML page
-* **doc/templates/publication-schema.bib** : Bibtex entries templates
+* `doc/templates/group-sample.xml` : XML Template for a research group
+* `doc/templates/member-example.xml` : XML Template for a group member 
+* `doc/templates/project-example.xml` : XML Template for a research project
+* `doc/templates/rel_page-example.xml` : XML Template for a group HTML page
+* `doc/templates/publication-schema.bib` : Bibtex entries templates
 
 To create,
 
-* _a new group_, copy the template file to the _data/groups/_ directory
-* _a new member_, copy the template file to the _data/members/_ directory 
-* _a new project_, copy the template file to the _data/projects/_ directory
-* _a group HTML page_, copy the template file to the _data/rel_page/_ directory
-* _a new publication_, update the appropriate bib file in _data/publications/_ directory (common files for all groups)
+* _a new group_, copy the template file to the `data/groups/` directory
+* _a new member_, copy the template file to the `data/members/` directory 
+* _a new project_, copy the template file to the `data/projects/` directory
+* _a group HTML page_, copy the template file to the `data/rel_page/` directory
+* _a new publication_, update the appropriate bib file in `data/publications/` directory (common files for all groups)
 
 ### Validate Local Data ###
 
