@@ -33,7 +33,7 @@ mkdir ../sandbox
 cp -r * ../sandbox
 cd ../sandbox
 
-if ! make >&make.out ; then
+if ! make >make.out 2>&1 ; then
   (
     cat <<EOF
 From: ISTLab web continuous integration <iweb@istlab.dmst.aueb.gr>
@@ -57,7 +57,7 @@ EOF
   rm -rf ../sandbox
   exit 1
 fi
-cd /home/iweb/web
+cd ../web
 rm -rf ../sandbox
 
 make clean html report brochure && \
