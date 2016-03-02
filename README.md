@@ -12,6 +12,19 @@ The technologies that are used are Git, XML, XSLT, make, grep, BiBTeX, and bib2x
 
 Data are kept in XML form (groups, members, projects) and for the publications BiBTeX is used. Data are transformed into static HTML pages by XSLT scripts and data validation checks are performed by XML validator (DTD schemas).
 
+Quick HOWTO
+-----------
+* To add a new publication edit the file in **data/publications** corresponding to
+the type of the publication you are adding.
+You can use a BibTeX entry exported from a digital library.
+However, you need to add the  `XEmember` and `XEgroup` fields;
+look at existing entries for examples.
+* To add a new member, add a file under **data/members**;
+to add a new project, add a file under **data/projects**;
+to modify an existing one, edit the corresponding file.
+Again, when adding, you can get a head-start by copy-pasting the contents
+of a member that matches the new addition.
+
 Project Structure
 -----------------
 * **bin** : win32 version of binaries that are needed by the system _note : OS X and Linux users and should install them separetaly._
