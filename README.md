@@ -110,6 +110,3 @@ Creating unified database
 ---> Checking announcements ...
 ---> Checking db.xml ...
 </pre>
-
-
-
