@@ -4,17 +4,18 @@
 	<surname>Giannopoulos</surname>
 	<memb_title>Mr.</memb_title>
 	<email>tgianno@aueb.gr</email>
-	<office_phone></office_phone>
+	<office_phone>+30 210 8203663</office_phone>
 	<!-- <mobile_phone></mobile_phone> -->
 	<!--fax></fax> -->
 	<!-- <alumnus/>--><!-- Optional -->
-	<office_address></office_address>
-	<postal_address>
-		
-	</postal_address>
+	<office_address>Evelpidon 47A & Lefkados, 33, Athens, Greece</office_address>
+	<postal_address>76 Patission str, 104 34, Athens, Greece</postal_address>
 	<photo></photo>
-	<shortcv></shortcv>
-	<phd-info completed="0" supervisor="m_apk" startdate="20141212">
+	<shortcv>
+		<p><i>Thanos Giannopoulos</i> is a PhD candidate at Athens University of Economics and Business, in the Department of Management Science and Technology. He holds a first degree in Information Technology and an MSc in Business Systems Integration with SAP technology (both from Brunel University London). In the context of his MSc he was certified by SAP for the Associate Business Foundation & Integration with SAP ERP 6.0 EHP5.</p>
+	        <p>His main research interests include business value of information technology and strategic implications of information technology.</p>
+	</shortcv>
+	<phd-info completed="0" supervisor="m_akp" startdate="20141212">
     <phd-title>Business Value of IT</phd-title>
     <phd-summary></phd-summary>
   </phd-info>
