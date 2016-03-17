@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<project id="Energy Code Smells" 
+	 group="g_istlab" 
+	 scientific_coordinator="m_dds" 
+	 contact="sgeorgiou@aueb.gr" 
+	 international="no" <!-- possible values: "yes" or "no" -->
+	 type="rtd"  <!-- possible values: "consulting" or "rtd" or "training" or "dissemination" -->
+	 project_manager="sgeorgiou">
+	 
+	<shortname>ECO-Smells</shortname>
+	<projtitle>Energy-Efficiency in Cloud Computing Systems</projtitle>
+	<startdate>20160317</startdate> <!-- YYYYMMDD -->
+	<enddate>20190101</enddate>
+	<!-- <web_site>Optional</web_site> -->
+	<!-- <our_budget>Optional</our_budget> -->
+	<total_budget>€2,236,902</total_budget>
+	<funding_agency>Research Executive Agency</funding_agency>
+	<funding_programme>Marie Curie Actions</funding_programme>
+	<project_code>(2014)4071968(International)</project_code>
+	<!-- each project has zero or more <partner> tags -->
+	
+	<partner>
+		<shortname>Athens University of Economics and Business</shortname>
+		<country>GR</country>
+		<web_site>http://www.aueb.gr/index_en.php</web_site>
+	</partner>
+	
+	<partner>
+		<shortname>SingularLogic Inegrator S.A.</shortname>
+		<country>GR</country>
+		<web_site>http://portal.singularlogic.eu/en</web_site>
+	</partner>
+	
+	<partner>
+		<shortname>Delft University of Technology</shortname>
+		<country>NL</country>
+		<web_site>http://tudelft.nl/en/</web_site>
+	</partner>
+	
+	<!-- <logo>Optional</logo> -->
+	<description>
+	    ECO-Smells (Energy COde Smells) detector is a Java-based source code analysis tool; it's responsible for analyzing source code, in order to identify greedy energy usage parts of it (source code), and proposing modifications that can help developers for reducing energy consumption.
+	    <!-- HTML -->
+	</description>
+</project>
