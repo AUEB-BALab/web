@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<project id="evotingIndia" 
+	 group="g_istlab g_ois" 
+	 scientific_coordinator="m_akp" 
+	 contact="m_akp" 
+	 international="yes" <!-- possible values: "yes" or "no" -->
+	 type="rtd"  <!-- possible values: "consulting" or "rtd" or "training" or "dissemination" -->
+	 project_manager="m_akp">
+	 
+	<shortname> e-voting in India </shortname>
+	<projtitle> e-voting in India </projtitle>
+	<startdate>20160201</startdate> <!-- YYYYMMDD -->
+	<enddate>20161231</enddate>
+	<!--<web_site>Optional</web_site> -->
+	<!--<our_budget>Optional</our_budget>-->
+	<!--<total_budget>Optional</total_budget>-->
+	<!--<funding_agency>Optional</funding_agency>-->
+	<funding_programme>AUEB 2016 fund for faculty basic research</funding_programme>
+	<!--<project_code>Optional</project_code>-->
+	<!-- each project has zero or more <partner> tags -->
+	<partner>
+		<shortname>Information Systems and Innovation Group, Department of Management, London School of Economics and Political Science</shortname>
+		<country>EN</country>
+		<!--<web_site>Optional</web_site>-->
+	</partner>
+	<!--<logo>Optional</logo>-->
+	<description>
+	     <p>
+.
+</p>
+	    <!-- HTML -->
+	</description>
+</project>
