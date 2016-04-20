@@ -3,8 +3,8 @@
 	 group="g_istlab g_ois" 
 	 scientific_coordinator="m_akp" 
 	 contact="m_akp" 
-	 international="yes" <!-- possible values: "yes" or "no" -->
-	 type="rtd"  <!-- possible values: "consulting" or "rtd" or "training" or "dissemination" -->
+	 international="yes"
+	 type="rtd"
 	 project_manager="m_akp">
 	 
 	<shortname>refugeeCrisis2016 </shortname>
