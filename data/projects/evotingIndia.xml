@@ -1,14 +1,7 @@
 <?xml version="1.0"?>
-<project id="p_evotingIndia" 
-	 group="g_istlab g_ois" 
-	 scientific_coordinator="m_akp" 
-	 contact="m_akp" 
-	 international="yes"
-	 type="rtd"
-	 project_manager="m_akp">
-	 
-	<shortname> e-voting in India </shortname>
-	<projtitle> e-voting in India </projtitle>
+<project id="p_evotingIndia" group="g_istlab g_ois" scientific_coordinator="m_akp" contact="m_akp" international="yes" type="rtd" project_manager="m_akp">
+	<shortname>e-voting in India</shortname>
+	<projtitle>e-voting in India</projtitle>
 	<startdate>20160201</startdate> <!-- YYYYMMDD -->
 	<enddate>20161231</enddate>
 	<!--<web_site>Optional</web_site> -->
