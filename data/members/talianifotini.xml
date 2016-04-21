@@ -11,7 +11,7 @@
 	<!-- <alumnus/>--><!-- Optional -->
 	<office_address>Derigny 12, 7th floor</office_address>
 	<postal_address>76 Patission str, 104 34, Athens, Greece</postal_address>
-	<!--<photo></photo>-->
+	<photo>../images/Taliani.jpg</photo>
 	<shortcv>
 		<p>Fotini Kariniotaki-Taliani holds a first class degree in Management Science and Technology (specialization: Information Systems and E-Commerce),  from the Athens University of Economic and Business. She has participated in various start-up and entrepreneurship projects and since 2015 joined OIS as a research assistant on Systems Analysis and Modelling and organizational interventions.</p>
 	</shortcv>
