@@ -10,7 +10,7 @@
     <p><i>Stefanos Georgiou</i> is a PhD Candidate in SENECA (Software ENineering in Enterprise Cloud Applications) project.<br /> 
     In the context of his European Industrial Doctorate (EID) he is expected to conduct his research at <br /> 
     AUEB (Athens University of Economics and Business) and TU Deflt (Delft University) as academic partners <br /> 
-    and with  SLG (Singular Logic) as industrial partner. 
+    and with  SLG (Singular Logic) as industrial partner. <br />
     He holds a BSc in Networks and Systems Programming from University of Cyprus and a MSc in PERCCOM <br /> 
     (PERvasive Computing and COMmunications for sustainable development), a joint Master Degree from four <br /> 
     different Universities (i.e., University of Lorraine, Lappeenranta University of Technology, Lulea University of Technology,<br /> 
@@ -18,8 +18,11 @@
     <p>His research interests lays at Green IT, Cloud Computing, Distributed Applications,Big Data Transfer,<br /> 
     and IoT (Internet of Things)
     </p>
-    <p>His current PhD position is founded by Marie Skłodowska-Curie from
-    framework Horizon 2020.</p>
+    <p>His current PhD position is founded by Marie Skłodowska-Curie from framework Horizon 2020.<br />  
+    As a PhD is to provide energy-efficient approach on cloud computing systems using software<br /> 
+    engineering techniques and practices. <br /> 
+    However, in the context of his industrial PhD position task such as RIA (Research Innovation Actions)<br /> 
+    proposals is one of his duties in SLG.</p>
   </shortcv>
   <phd-info completed="0" supervisor="m_dds" startdate="20160104">
     <phd-title>Energy Efficiency in Cloud Computing</phd-title>
