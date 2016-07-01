@@ -2,14 +2,14 @@
 <member id="lattas" group="g_istlab g_sense" joined="20160701">
 	<givenname>Alexandros</givenname>
 	<surname>Lattas</surname>
-	<memb_title></memb_title>
+	<!-- memb_title></memb_title -->
 	<email>alattas@dmst.aueb.gr</email>
 	<web_site>lattas.eu</web_site>
-	<office_phone></office_phone>
-	<mobile_phone></mobile_phone>
-	<fax></fax>
-	<office_address></office_address>
-	<postal_address></postal_address>
+	<!--office_phone></office_phone-->
+	<!--mobile_phone></mobile_phone-->
+	<!--fax></fax-->
+	<!--office_address></office_address-->
+	<!--postal_address></postal_address-->
 	<photo>../images/alattas.jpg</photo>
 	<shortcv>
 	    <p>
@@ -24,7 +24,7 @@
 	    </p><p>
 		Main interests include Privacy and Security, Machine Learning and Entrepreneurship.
 	    </p><p>
-		Full CV at <a href="http://cv.lattas.eu">cv.lattas.eu </a>.
+		Full CV at <a href="http://cv.lattas.eu">cv.lattas.eu</a> .
 	    </p>
 	    <!-- XHTML -->
 	</shortcv>
