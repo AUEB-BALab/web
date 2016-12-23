@@ -11,7 +11,17 @@
 	<postal_address></postal_address>
 	<photo>../images/theosotr.jpg</photo>
 	<shortcv>
-		<p><i>Thodoris Sotiropoulos</i> is a undergraduate student at Department of Management Science and Technology of Athens University of Economics and Business. He is a member of <a href="http://istlab.dmst.aueb.gr/content/groups/g_sense-details.html">SENSE</a> group and he is currently working on <i>PDGuard</i> project.</p>
+        <p>
+            <i>Thodoris Sotiropoulos</i> is an undergraduate student at the
+            Department of Management Science and Technology of Athens University
+            of Economics and Business.
+            He is a member of
+            <a href="http://istlab.dmst.aueb.gr/content/groups/g_sense-details.html">SENSE</a> group.
+            He is currently working at the Greek Research &amp; Technology Network (GRNET)
+            as a software engineer and he has participated in two research projects
+            in the fields of a) Security and Privancy, b) Machine Learning and
+            Information Retrieval.
+        </p>
 	</shortcv>
 </member>
 
