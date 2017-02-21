@@ -3,6 +3,12 @@
 	<page_name>PhD Student Achievements</page_name>
 	<page_body>
 		<dl>
+			<dt>July 2016</dt><dd style="padding-bottom: 3em; max-width: 50em">
+				<b>Georgios Gousios</b> gets hired as an assistant professor
+				at the Web Information Systems group of the Faculty of Engineering,
+				Mathematics and Computer Science (EEMCS/EWI), Delft University of Technology.
+			</dd>
+
 			<dt>April 2015</dt><dd style="padding-bottom: 3em; max-width: 50em">
 			<img src="../images/phd.png" border="0" align="right" alt="PhD logo" />
 			<b>Vassilios Karakoidas</b> successfully defends his PhD thesis.
@@ -34,7 +40,7 @@
 			Countering code injection attacks: A unified approach.</a>
 			(<cite>Information Management and Computer Security</cite>, 19(3):177-194, 2011)
 			co-authored by <b>Dimitris Mitropoulos</b> and <b>Vassilios Karakoidas</b>
-			was awarded by
+			is awarded by
 			<a href="http://www.emeraldinsight.com/">Emerald</a>
 			publishers with the
 			"Highly Commended Paper" distinction.
