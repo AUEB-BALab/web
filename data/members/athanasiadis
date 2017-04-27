@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<member id="athanasiadis" group="g_istlab g_ois" joined="2015">
+	<givenname>Akis</givenname>
+	<surname>Athanasiadis</surname>
+	<memb_title>Mr.</memb_title>
+	<email>a.athanasiadis0@gmail.com</email>
+	<!-- <web_site> </web_site> -->
+	<office_phone>+30 210 8203466</office_phone>
+	<!-- <mobile_phone></mobile_phone> -->
+	<!--fax></fax> -->
+	<!-- <alumnus/>--><!-- Optional -->
+	<office_address>Derigny 12, 7th floor</office_address>
+	<postal_address>76 Patission str, 104 34, Athens, Greece</postal_address>
+	<photo>../images/athanasiadis.jpg</photo>
+	<shortcv>
+		<p>Akis Athanasiadis holds a bachelor’s degree in Business Administration and is a graduate of the MSc in Management Science and Technology.
+He participated in the InnoJam++ competition in CeBIT 2016 hosted by SAP and Volkswagen in Hanover, where he was the team leader and presenter of the team’s idea of “Mobility of the Future” and “Internet of Things”. 
+He was an intern at Hellenic Petroleum and SAP Hellas, where he was trained on SAP products and also had an active participation in TEDx Academy 2016 on Cloud and IoT Technologies. Akis has also presented on-stage at SAP Next-Gen Forum 2016, where he built an application in 10 minutes, using HANA Cloud Platform and was responsible for the Digital Boardroom showcase at SAP Forum Athens 2017, as an SAP expert.
+In 2017 Akis was also the team leader and presenter at the Beyond Hackathon competition hosted by Eurobank, where the FinTech idea he presented caught the attention of Eurobank and was asked to enter the EGG incubator and transform this idea into a start-up.
+He has also participated in Google Digital Talents Academy 2016, hosted by Google Hellas and delivered a two-day workshop for the students of MSc Business Analytics at AUEB.
+In 2014 Akis started his first business venture, 3A MotorSports, after building the first greek hand-made prototype all-terrain racing vehicle and got the 7th position in the E-nnovation 2016 global competition, out of 111 other ideas.
+Akis is a technology, innovation and creativity enthusiast and constantly trying to expand his knowledge and limits.
+He became a member of IST Lab/OIS on October 2015.
+
+https://www.linkedin.com/in/akisathanasiadis/
+</p>
+	</shortcv>
+	
+</member>
