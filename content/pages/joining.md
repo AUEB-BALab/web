@@ -34,7 +34,7 @@ slug: join_The_Lab
      Benefits include research collaboration opportunities, the participation in organised events, advance information on new activities,
      a listing of your organisation's name and logo in our site's web page, and periodic research intelligence updates.<br>
     </br>
-    <i>For more details contact the head of the group closest to your area of interest.</i>	 
+    <i>For more details contact the Lab's director.</i>	 
   </div>
 </div>
 

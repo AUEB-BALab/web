@@ -10,7 +10,7 @@ slug: services
     <li class="list-group-item">Studies on information systems strategy, deployment, and management</li>
     <li class="list-group-item">Design and implementation of software engineering process tools </li>
     <li class="list-group-item">Security evaluation of software protocols, software, and services</li>
-    <li class="panel-heading">For more details contact the head of the group closest to your area of interest.</li>
+    <li class="panel-heading">For more details contact the Lab's director.</li>
   </ul>
 </div>
 </br>
