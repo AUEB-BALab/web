@@ -6,6 +6,7 @@ This is the repository for the [BALab](http://istlab.dmst.aueb.gr/) web site. Th
 * group members and alumni
 * research projects
 * publications
+* software
 
 This is a responsive website (mobile, tablets and computers); using HTML, CSS & Boostrap 3.3.7
 
@@ -34,6 +35,7 @@ look at existing entries for examples. (`XEcategory` = 'Monographs and Edited Vo
 * To add a new member, add a file under `content/members`;
 * To add a new associate, add a file under `content/alumni`;
 * to add a new project, add a file under `content/projects`;
+* to add new software, add a file under `content/software`;
 * To update a static page (ex. PhD Student Achievements), go to `pages`, follow the existing stracture and use class="img-responsive" for images;
 * To modify an existing one, edit the corresponding file.
 

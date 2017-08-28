@@ -51,6 +51,20 @@
       </ul>
     </div>
 
+  <!-- Software Category -->
+  {% elif category|string() == 'software'%}
+    <div class="panel panel-default" id="px2">
+      <div class="panel-heading">
+        <h2>Software</h2>
+      </div>
+      <ul class="list-group">
+        <!-- Print every software linked to its url -->
+        {% for article in articles_page.object_list %}
+	<li class="list-group-item"><a href="{{article.url}}">{{article.title}}</a> — {{article.description}} </li>
+        {% endfor %}
+      </ul>
+    </div>
+
   <!-- Projects Category -->
   {% else %}
     <div class="panel panel-default">
