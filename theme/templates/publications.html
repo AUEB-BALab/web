@@ -1,0 +1,94 @@
+{% extends "base.html" %}
+{% block title %}{{ SITENAME }} publications{% endblock %}
+
+{% block content %}
+
+{% set publication_categories = ['Monographs and Edited Volumes','Journal Articles', 'Book Chapters', 'Conference Publications', 'Technical Reports','White Papers','Magazine Articles','Working Papers'] %}
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h2>Publications</h2>
+    </div>
+  </div>
+	<div class="row">
+    <!-- Publications Categories slidebar -->
+		<div class="hidden-xs hidden-sm col-md-3 col-lg-3 col-xl-3" id="printmenu">
+		  <nav id="myScrollspy" data-spy="affix" data-offset-top="50" style="position: fixed;">
+  			<div class="panel panel-default" >
+  			  <div class="panel-heading">
+  				Contents
+  			  </div>
+          <!-- Print publications categories that exist -->
+          <ul class="nav nav-pills nav-stacked">
+            {% for Category in publication_categories %}
+              {% for publication in publications %}
+                 {% if publication.XEcategory == Category %}
+                  <li><a href="#{{Category.partition(' ')[0]}}">{{Category}}</a></li>
+                  {% break %}
+                 {% endif %}
+              {% endfor %}
+            {% endfor %}
+          </ul>
+  			</div>
+		  </nav>
+		</div>
+    <!-- Publications Categories slidebar (mobile view) -->
+    <div class="col-xs-12 col-sm-12 hidden-md hidden-lg hidden-xl" id="printmenu">
+      <nav>
+        <div class="panel panel-default" >
+          <div class="panel-heading">
+          Contents
+          </div>
+          <!-- Print publications categories that exist -->
+          <ul class="nav nav-pills nav-stacked">
+          {% for Category in publication_categories %}
+            {% for publication in publications %}
+               {% if publication.XEcategory == Category %}
+                <li><a href="#{{Category.partition(' ')[0]}}">{{Category}}</a></li>
+                {% break %}
+               {% endif %}
+            {% endfor %}
+          {% endfor %}
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <!-- Print publcations list -->
+		<div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-9" id="printurl">
+      {% for Category in publication_categories %}
+         <div class="panel panel-default" id="px2">
+           <!-- Print publications categories thats exist -->
+           {% for publication in publications %}
+             {% if publication.XEcategory == Category %}
+                 <div class="panel-heading">
+                   <h3 id="{{Category.partition(' ')[0]}}">{{Category}}</h3>
+                 </div>
+                 {% break %}
+            {% endif %}
+          {% endfor %}
+           <!-- Print publications information by reverse chronological order -->
+           <div class="panel-body">
+             <ul class="list-group">
+               <ul>
+                {% for group in publications|groupby('XEcategory') %}
+                 {% for publication in group.list|sort(attribute='year')|reverse %}
+                  {% if  publication.XEcategory == Category %}
+                     <p>
+                     <li>{{ publication.text }} {% if  publication.url %} <a href="{{  publication.url }}"><span class="glyphicon glyphicon-new-window"></span></a> {% endif %} </li>
+                    </p>
+                  {% endif %}
+                 {% endfor %}
+                {% endfor %}
+               </ul>
+             </ul>
+           </div>
+         </div>
+      {% endfor %}
+      <div class="panel panel-default">
+        <div class="panel-body">
+          <i class="text-muted">Note: Some of the above data refer to grandfathered work conducted by BALab's members at its progenitor laboratory, <a href="https://istlab.dmst.aueb.gr">ISTLab</a>.</i>
+        </div>
+      </div>
+	 </div>
+	</div>
+{% endblock %}

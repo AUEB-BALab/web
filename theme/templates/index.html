@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+{% block content_title %}{% endblock %}
+{% set current_year = 2017 %}
+
+{% block content %}
+
+  <!-- Lab Description -->
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h2>Business Analytics Lab</h2>
+    </div>
+    <div class="panel-body">
+      <p>
+        Welcome to the Business Analytics Laboratory, established at the Department of Management Science and Technology
+        of the Athens University of Economics and Business. Here we explore, research, create, formulate, and integrate engineering and management
+        practices to increase the effectiveness of the information systems and their realisation and adoption process.
+      </p>
+    </div>
+  </div>
+
+  <!-- Recent Publications -->
+  <div class="panel panel-default" id="px2">
+    <div class="panel-heading">
+      <h3>Recent Publications</h3>
+    </div>
+    <div class="panel-body">
+      <ul class="list-group">
+        <ul>
+           <div>
+              {% for publication in publications|sort(attribute='year')|reverse if publication.year|int() == current_year %}
+                   <p>
+                    <li>{{ publication.text }} {% if  publication.url %} <a href="{{  publication.url }}"><span class="glyphicon glyphicon-new-window"></span></a> {% endif %} </li>
+                   </p>
+                   {% if loop.last and loop.index < 4 %}
+                      {% for publication in publications|sort(attribute='year')|reverse if publication.year|int() == current_year - 1 %}
+                          <p>
+                          <li>{{ publication.text }} {% if  publication.url %} <a href="{{  publication.url }}"><span class="glyphicon glyphicon-new-window"></span></a> {% endif %} </li>
+                         </p>
+                      {% endfor %}
+                   {% endif %}
+               {% else %} <!-- In case there is not even one publication the current year-->
+         					 {% for publication in publications|sort(attribute='year')|reverse if publication.year|int() == current_year - 1 %}
+         						 <p>
+         						 <li>{{ publication.text }} {% if  publication.url %} <a href="{{  publication.url }}"><span class="glyphicon glyphicon-new-window"></span></a> {% endif %} </li>
+         						</p>
+         					 {% endfor %}
+       				{% endfor %}
+            </div>
+        </ul>
+      </ul>
+    </div>
+  </div>
+
+{% endblock content %}

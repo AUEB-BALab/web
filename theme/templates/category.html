@@ -1,0 +1,135 @@
+{% extends "base.html" %}
+{% block content_title %}{% endblock %}
+
+{% block content %}
+
+{% if articles %}
+
+  <!-- Members & Alumni Category -->
+  {% if category|string() == 'members' or category|string() == 'alumni' %}
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        {% if category|string() == 'members'%}
+          <h2>Members & Associates</h2>
+        {% else %}
+          <h2>Alumni</h2>
+        {% endif %}
+      </div>
+    </div>
+    <!-- Print members by surname order -->
+    {% for article in articles_page.object_list|sort(attribute='surname') %}
+			<div class="col-xs-12 col-sm-4 col-md-3 col-lg-3" id="printphoto">
+			  <div class="thumbnail">
+          <!-- Print every member's photo or default photo linked to its profile -->
+          <a href="{{ SITEURL }}/{{ article.url }}">
+            {% if article.photo %}
+            <img src="{{ SITEURL }}/images/{{ article.photo }}" style="height:150px" class="img-responsive" alt="...">
+            {% else %}
+            <img src="{{ SITEURL }}/images/lamp.png" style="height:150px" class="img-responsive" alt="...">
+            {% endif %}
+            <!-- Print member's name & surname in seperated lines -->
+  					<div id="px1" class="caption">
+              <h5>{{article.givenname}}</h5>
+  					  <h5>{{article.surname}} <span class="glyphicon glyphicon-new-window pull-right"></span></h5>
+  					</div>
+          </a>
+			  </div>
+			</div>
+    {% endfor %}
+
+  <!-- Yearly Reports Category -->
+  {% elif category|string() == 'yearly reports'%}
+    <div class="panel panel-default" id="px2">
+      <div class="panel-heading">
+        <h2>Yearly Reports</h2>
+      </div>
+      <ul class="list-group">
+        <!-- Print every year linked to its report-->
+        {% for article in articles_page.object_list %}
+           <a href="{{ SITEURL }}/{{article.url}}"><li class="list-group-item">Yearly Report {{article.title}}</li></a>
+        {% endfor %}
+      </ul>
+    </div>
+
+  <!-- Projects Category -->
+  {% else %}
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h2>Projects</h2>
+      </div>
+    </div>
+    <div class="row">
+    <!-- Print projects cotegories slidebar-->
+		<div class="hidden-xs hidden-sm col-md-3 col-lg-3 col-xl-3" id="printmenu">
+		  <nav id="myScrollspy" data-spy="affix" data-offset-top="50" style="position: fixed;width:200px">
+  			<div class="panel panel-default">
+  			  <div class="panel-heading">
+  				Contents
+  			  </div>
+  			  <ul class="nav nav-pills nav-stacked">
+  						<li><a href="#Current">Current Projects</a></li>
+  						<li><a href="#Completed">Completed Projects</a></li>
+  			  </ul>
+  			</div>
+		  </nav>
+		</div>
+    <!-- Print projects cotegories slidebar (mobsile view)-->
+    <div class="col-xs-12 col-sm-12 hidden-md hidden-lg hidden-xl" id="printmenu">
+      <nav>
+        <div class="panel panel-default">
+          <div class="panel-heading">
+          Contents
+          </div>
+          <ul class="nav nav-pills nav-stacked">
+              <li><a href="#Current">Current Projects</a></li>
+              <li><a href="#Completed">Completed Projects</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+		<div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-9" id="printurl">
+       {% for i in range(2) %}
+          <div class="panel panel-default" id="px2">
+             <!-- Print projects cotegories -->
+             {% if loop.first %}
+               <div class="panel-heading">
+                 <h3 id="Current">Current Projects</h3>
+               </div>
+             {% else %}
+             <div class="panel-heading">
+               <h3 id="Completed">Completed Projects</h3>
+             </div>
+             {% endif%}
+
+           <!-- Print every project's title linked to its page -->
+           <div class="panel-body">
+             <ul class="list-group">
+               <ul>
+                 {% for article in articles|sort(attribute='title') %}
+                  {% if article.category|string() == 'projects' and article.completed == i|string %}
+                  <p>
+                   <li>{{ article.shortname }} &mdash; {{article.projtitle}} <a href="{{ SITEURL }}/{{ article.url }}"><span class="glyphicon glyphicon-new-window"></span></a></li>
+                  </p>
+                  {% endif %}
+                 {% endfor %}
+               </ul>
+             </ul>
+           </div>
+         </div>
+       {% endfor %}
+
+       <!-- Note: Grandfathered work -->
+       <div class="panel panel-default">
+         <div class="panel-body">
+           <i class="text-muted">Note: Some of the above data refer to grandfathered work conducted by BALab's members at its progenitor laboratory, <a href="https://istlab.dmst.aueb.gr">ISTLab</a>.</i>
+         </div>
+       </div>
+  	 </div>
+   </div>
+  {% endif %}
+</div>
+{% endif %}
+{% endblock content %}
+
+{% block title %}{{ SITENAME }} {{ category }}{% endblock %}

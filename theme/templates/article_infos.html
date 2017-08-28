@@ -1,0 +1,731 @@
+{% extends "base.html" %}
+{% block content_title %}{% endblock %}
+
+{% block content %}
+{% set publication_categories = ['Monographs and Edited Volumes','Journal Articles', 'Book Chapters', 'Conference Publications', 'Technical Reports','White Papers','Magazine Articles','Working Papers'] %}
+
+<!-- Template for members and alumni -->
+{% if article.category|string() == 'members' or  article.category|string() == 'alumni' %}
+
+  <div class="panel panel-default">
+    <!-- Print member's name & surname -->
+    <div class="panel-heading">
+      <h2> {{article.givenname}} {{article.surname}} </h2>
+    </div>
+    <div class="panel-body">
+      <div class="row">
+        <!-- Print member's photo or default photo -->
+        <div class="col-md-2">
+          <p>
+            {% if article.photo %}
+            <img src="{{ SITEURL }}/images/{{ article.photo }}" height="200" width="200" class="img-responsive" alt="...">
+            {% else %}
+            <img src="{{ SITEURL }}/images/lamp.png" height="200" width="200" class="img-responsive" alt="...">
+            {% endif %}
+          </p>
+        </div>
+        <!-- Print member's Contact & PhD Thesis details, if exists -->
+        <div class="col-md-9">
+      			<p>
+               {% if article.email %}<span class="glyphicon glyphicon-envelope"></span> <b>E-mail:</b> {{article.email}} </br>{% endif %}
+      			   {% if article.office_phone %}<span class="glyphicon glyphicon-phone-alt"></span> <b>Office phone:</b> {{article.office_phone}} </br>{% endif %}
+               {% if article.mobile_phone %}<span class="glyphicon glyphicon-phone"></span> <b>Mobile phone:</b> {{article.mobile_phone}} </br>{% endif %}
+      			   {% if article.office_address %}<span class="glyphicon glyphicon-briefcase"></span> <b>Office address:</b> {{article.office_address}} </br>{% endif %}
+      			   {% if article.postal_address %}<span class="glyphicon glyphicon-inbox"></span> <b>Postal address:</b> {{article.postal_address}} </br>{% endif %}
+               {% if article.web_site %}<span class="glyphicon glyphicon-globe"></span> <b>Web site:</b> <a href="{{article.web_site}}">{{article.web_site}}</a></br>{% endif %}
+               {% if article.web_log %}<span class="glyphicon glyphicon-bullhorn"></span> <b>Blog:</b> <a href="{{article.web_log}}">{{article.web_log}}</a></br>{% endif %}
+               {% if article.github %}<span class="fa fa-github"></span> <b>GitHub:</b> <a href="https://github.com/{{article.github}}/">https://github.com/{{article.github}}/</a></br>{% endif %}
+               {% if article.twitter %}<span class="fa fa-twitter"></span> <b>Twitter:</b> <a href="https://twitter.com/{{article.twitter}}/">@{{article.twitter}}</a></br>{% endif %}
+               {% if article.linkedin %}<span class="fa fa-linkedin-square"></span> <b>LinkedIn:</b> <a href="https://www.linkedin.com/in/{{article.linkedin}}/">https://www.linkedin.com/in/{{article.linkedin}}/</a></br>{% endif %}
+      			</p>
+            {% if (article.phd_title or article.phd_startdate) and article.phd_completed == '0' %}
+              <h4> Research area </h4>
+              {% if article.phd_title %}<b> Title:</b> {{article.phd_title}} </br>{% endif%}
+              {% if article.phd_supervisor %}
+                <b> Supervisor:</b>
+                 {% for member in articles if article.category|string() == 'members'  %}
+                      {% if member.id == article.phd_supervisor %}
+                          {{member.surname}} {{member.givenname}}
+                          <a href="{{ SITEURL }}/{{ member.url }}"><span class="glyphicon glyphicon-new-window"></span></a> </br>
+                      {% endif %}
+                  {% endfor %}
+              {% endif %}
+              {% if article.phd_startdate %}<b> Starting date:</b> {{article.phd_startdate[0:4]}}-{{article.phd_startdate[4:6]}}-{{article.phd_startdate[6:8]}} </br>{% endif %}
+            {% endif %}
+	      </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Print member's Biographical Information, if exists -->
+  {% if article.content %}
+    <div class="panel panel-default" id="px2">
+      <div class="panel-heading">
+        <h3> Biographical Information </h3>
+      </div>
+      <div class="panel-body">
+        {{ article.content }}
+      </div>
+    </div>
+  {% endif %}
+
+  <!-- Print member's publications, if exists -->
+  {% for publication in publications %}
+    {% if (publication.XEmember.split(' ')[0] == article.id or
+       publication.XEmember.split(' ')[1] == article.id or
+       publication.XEmember.split(' ')[2] == article.id or
+       publication.XEmember.split(' ')[3] == article.id or
+       publication.XEmember.split(' ')[4] == article.id)  %}
+       <div class="row">
+         <!-- Print member's Publications Contents Slidebar -->
+         <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3" id="printmenu">
+           <nav>
+             <div class="panel panel-default" >
+               <div class="panel-heading">
+               Publications Contents:
+               </div>
+               <!-- Print Publications Categories that exist-->
+               <ul class="nav nav-pills nav-stacked">
+                 {% for Category in publication_categories %}
+                     {% for publication in publications %}
+                     {% if publication.XEcategory == Category and
+                       (publication.XEmember.split(' ')[0] == article.id or
+                        publication.XEmember.split(' ')[1] == article.id or
+                        publication.XEmember.split(' ')[2] == article.id or
+                        publication.XEmember.split(' ')[3] == article.id or
+                        publication.XEmember.split(' ')[4] == article.id)  %}
+                       <li><a href="#{{Category.split(' ')[0]}}">{{Category}}</a></li>
+                     {% break %}
+                    {% endif %}
+                   {% endfor %}
+                 {% endfor %}
+               </ul>
+             </div>
+           </nav>
+         </div>
+
+         <!-- Print member's Publications List -->
+         <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-9">
+           <div class="panel panel-default" id="px2">
+             <div class="panel-heading">
+               <h3> Publications</h3>
+             </div>
+             <div class="panel-body">
+               <!-- Print Publications Categories that exist-->
+               {% for Category in publication_categories %}
+                 {% for publication in publications %}
+                  {% if publication.XEcategory == Category and
+                    (publication.XEmember.split(' ')[0] == article.id or
+                     publication.XEmember.split(' ')[1] == article.id or
+                     publication.XEmember.split(' ')[2] == article.id or
+                     publication.XEmember.split(' ')[3] == article.id or
+                     publication.XEmember.split(' ')[4] == article.id)  %}
+                   <h4 style="color:#203864;" id="{{Category.partition(' ')[0]}}">{{Category}}</h4>
+                   {% break %}
+                  {% endif %}
+                 {% endfor %}
+
+                 <!-- Print Publications information by reverse chronological order -->
+                 <ul class="list-group">
+                   <ul>
+                     {% for group in publications|groupby('XEcategory') %}
+                      {% for publication in group.list|sort(attribute='year')|reverse %}
+                     {% if publication.XEcategory == Category and
+                       (publication.XEmember.split(' ')[0] == article.id or
+                        publication.XEmember.split(' ')[1] == article.id or
+                        publication.XEmember.split(' ')[2] == article.id or
+                        publication.XEmember.split(' ')[3] == article.id or
+                        publication.XEmember.split(' ')[4] == article.id)  %}
+                        <p>
+                        <li>{{ publication.text }}
+                          {% if publication.url %}<a href="{{ publication.url }}"><span class="glyphicon glyphicon-new-window"></span></a>{% endif %}
+                        </li>
+                       </p>
+                      {% endif %}
+                     {% endfor %}
+                     {% endfor %}
+                   </ul>
+                 </ul>
+               {% endfor %}
+             </div>
+           </div>
+         </div>
+       </div>
+       {% break %}
+     {% endif %}
+    {% endfor %}
+{% endif %}
+
+<!-- Template for projects -->
+{% if article.category|string() == 'projects' %}
+  <div class="panel panel-default">
+    <!-- Print project's title -->
+    <div class="panel-heading">
+      <h2>{{ article.shortname }} &mdash; {{article.projtitle}}</h2>
+    </div>
+    <!-- Print project's photo or default photo -->
+    <div class="panel-body">
+      <p>
+        {% if article.logo %}
+        <img src="{{ SITEURL }}/images/{{ article.logo }}"  style = "width:200; height:200" />
+        {% endif %}
+      </p>
+      <!-- Print project's Details & Scientific cordinators/Projects managers, if exists -->
+      <p>
+        {% if article.project_code %}<b>Project Code:</b> {{article.project_code}} {% if article.international=='yes' %}(International){% endif %}</br>{% endif %}
+        {% if article.funding_programme %}<b>Funding programme:</b> {{article.funding_programme}}</br>{% endif %}
+        {% if article.funding_agency %}<b>Funding Agency:</b> {{article.funding_agency}}</br>{% endif %}
+        {% if article.type %}<b>Project type:</b> {{article.type.upper()}}</br>{% endif %}
+        {% if article.web_site %}<b>Web site:</b> <a href="{{article.web_site}}">{{article.web_site}}</a></br>{% endif %}
+        {% if article.startdate %}<b>Starting date:</b> {{article.startdate[0:4]}}-{{article.startdate[4:6]}}-{{article.startdate[6:8]}}</br>{% endif %}
+        {% if article.enddate %}<b>Ending date:</b> {{article.enddate[0:4]}}-{{article.enddate[4:6]}}-{{article.enddate[6:8]}}</br>{% endif %}
+        {% if article.our_budget %}<b>AUEB budget:</b> {{article.our_budget}}</br>{% endif %}
+        {% if article.total_budget %}<b>Total budget:</b> {{article.total_budget}}</br>{% endif %}
+
+        {% if article.scientific_coordinator or article.project_manager or article.contact or article.project_manager_name %}
+          <hr>
+        {% endif %}
+
+        {% for member in articles if member.category|string() == 'members'  %}
+           {% if member.id == article.scientific_coordinator %}
+              <b>Scientific coordinator:</b> {{member.givenname}} {{member.surname}}
+              <a href="{{ SITEURL }}/{{ member.url }}"><span class="glyphicon glyphicon-new-window"></span></a>
+              </br>
+           {% endif %}
+           {% if member.id == article.project_manager%}
+               <b>Project manager:</b> {{member.givenname}} {{member.surname}}
+               <a href="{{ SITEURL }}/{{ member.url }}"><span class="glyphicon glyphicon-new-window"></span></a>
+               </br>
+           {% endif %}
+           {% if member.id == article.contact %}
+                <b>Contact:</b> {{member.givenname}} {{member.surname}}
+                 <a href="{{ SITEURL }}/{{ member.url }}"><span class="glyphicon glyphicon-new-window"></span></a>
+                </br>
+            {% endif %}
+        {% endfor %}
+        {% if article.scientific_coordinator_name %}<b>Scientific coordinator:</b> {{article.scientific_coordinator_name}} <br> {% endif %}
+        {% if article.project_manager_name %}<b>Project manager:</b> {{article.project_manager_name}} <br> {% endif %}
+        {% if article.contact_name %}<b>Contact:</b> {{article.contact_name}} <br> {% endif %}
+      </p>
+    </div>
+  </div>
+
+  <!-- Print project's Description, if exists -->
+  {% if article.content %}
+    <div class="panel panel-default" id="px2">
+      <div class="panel-heading">
+        <h3>Description</h3>
+      </div>
+      <div class="panel-body">
+        <p> {{ article.content }} </p>
+      </div>
+    </div>
+  {% endif %}
+
+  <!-- Print project's Partners, if exist (max. number 10)-->
+  {% if article.partner_shortname1%}
+    <div class="panel panel-default" id="px2">
+      <div class="panel-heading">
+        <h3>Partners</h3>
+      </div>
+      <div class="panel-body">
+        <ul class="list-group">
+          <ul>
+            {% if article.partner_shortname1%}
+            <p><li>{{article.partner_shortname1}} ({{article.partner_country1}})
+              {% if article.partner_website1%}
+               <a href="{{article.partner_website1}}"><span class="glyphicon glyphicon-new-window"></span></a>
+              {% endif %}
+            </li></p>
+            {% endif %}
+            {% if article.partner_shortname2%}
+            <p><li>{{article.partner_shortname2}} ({{article.partner_country2}})
+              {% if article.partner_website2%}
+               <a href="{{article.partner_website2}}"><span class="glyphicon glyphicon-new-window"></span></a>
+              {% endif %}
+            </li></p>
+            {% endif %}
+            {% if article.partner_shortname3%}
+            <p><li>{{article.partner_shortname3}} ({{article.partner_country3}})
+              {% if article.partner_website3%}
+               <a href="{{article.partner_website3}}"><span class="glyphicon glyphicon-new-window"></span></a>
+              {% endif %}
+            </li></p>
+            {% endif %}
+            {% if article.partner_shortname4%}
+            <p><li>{{article.partner_shortname4}} ({{article.partner_country4}})
+              {% if article.partner_website4%}
+               <a href="{{article.partner_website4}}"><span class="glyphicon glyphicon-new-window"></span></a>
+              {% endif %}
+            </li></p>
+            {% endif %}
+            {% if article.partner_shortname5%}
+            <p><li>{{article.partner_shortname5}} ({{article.partner_country5}})
+              {% if article.partner_website5%}
+               <a href="{{article.partner_website5}}"><span class="glyphicon glyphicon-new-window"></span></a>
+              {% endif %}
+            </li></p>
+            {% endif %}
+            {% if article.partner_shortname6%}
+            <p><li>{{article.partner_shortname6}} ({{article.partner_country6}})
+              {% if article.partner_website6%}
+               <a href="{{article.partner_website6}}"><span class="glyphicon glyphicon-new-window"></span></a>
+              {% endif %}
+            </li></p>
+            {% endif %}
+            {% if article.partner_shortname7%}
+            <p><li>{{article.partner_shortname7}} ({{article.partner_country7}})
+              {% if article.partner_website7%}
+               <a href="{{article.partner_website7}}"><span class="glyphicon glyphicon-new-window"></span></a>
+              {% endif %}
+            </li></p>
+            {% endif %}
+            {% if article.partner_shortname8%}
+            <p><li>{{article.partner_shortname8}} ({{article.partner_country8}})
+              {% if article.partner_website8%}
+               <a href="{{article.partner_website8}}"><span class="glyphicon glyphicon-new-window"></span></a>
+              {% endif %}
+            </li></p>
+            {% endif %}
+            {% if article.partner_shortname9%}
+            <p><li>{{article.partner_shortname9}} ({{article.partner_country9}})
+              {% if article.partner_website9%}
+               <a href="{{article.partner_website9}}"><span class="glyphicon glyphicon-new-window"></span></a>
+              {% endif %}
+            </li></p>
+            {% endif %}
+            {% if article.partner_shortname10%}
+            <p><li>{{article.partner_shortname10}} ({{article.partner_country10}})
+              {% if article.partner_website10%}
+               <a href="{{article.partner_website10}}"><span class="glyphicon glyphicon-new-window"></span></a>
+              {% endif %}
+            </li></p>
+            {% endif %}
+          </ul>
+        </ul>
+    </div>
+  </div>
+{% endif %}
+
+<!-- Print member's publications, if exists -->
+{% for publication in publications %}
+  {% if publication.XEProject %}
+    {% if (publication.XEProject.split(' ')[0] == article.id or
+       publication.XEProject.split(' ')[1] == article.id or
+       publication.XEProject.split(' ')[2] == article.id or
+       publication.XEProject.split(' ')[3] == article.id or
+       publication.XEProject.split(' ')[4] == article.id) %}
+         <div class="row">
+           <!-- Print Oublications Contents -->
+           <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3" id="printmenu">
+             <nav>
+               <div class="panel panel-default" >
+                 <div class="panel-heading">
+                 Publications Contents:
+                 </div>
+                 <!-- Print Publications Categoriesthat exists -->
+                 <ul class="nav nav-pills nav-stacked">
+                   {% for Category in publication_categories %}
+                       {% for publication in publications %}
+                       {% if publication.XEcategory == Category and publication.XEProject %}
+                       {% if (publication.XEProject.split(' ')[0] == article.id or
+                          publication.XEProject.split(' ')[1] == article.id or
+                          publication.XEProject.split(' ')[2] == article.id or
+                          publication.XEProject.split(' ')[3] == article.id or
+                          publication.XEProject.split(' ')[4] == article.id) %}
+                         <li><a href="#{{Category.split(' ')[0]}}">{{Category}}</a></li>
+                       {% break %}
+                       {% endif %}
+                      {% endif %}
+                     {% endfor %}
+                   {% endfor %}
+                 </ul>
+                 </ul>
+               </div>
+             </nav>
+           </div>
+           <!-- Print member's publication list -->
+           <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-9">
+             <div class="panel panel-default" id="px2">
+               <div class="panel-heading">
+                 <h3> Publications</h3>
+               </div>
+               <div class="panel-body">
+                 {% for Category in publication_categories %}
+                     {% for publication in publications %}
+                      {% if publication.XEcategory == Category and publication.XEProject %}
+                      {% if (publication.XEProject.split(' ')[0] == article.id or
+                         publication.XEProject.split(' ')[1] == article.id or
+                         publication.XEProject.split(' ')[2] == article.id or
+                         publication.XEProject.split(' ')[3] == article.id or
+                         publication.XEProject.split(' ')[4] == article.id) %}
+                         <!-- Print Publications Categoriesthat exists -->
+                          <h4 style="color:#203864;" id="{{Category.partition(' ')[0]}}">{{Category}}</h4>
+                          {% break %}
+                        {% endif %}
+                      {% endif %}
+                     {% endfor %}
+                     <!-- Print Publications information by reverse chronological order -->
+                     <ul class="list-group">
+                       <ul>
+                         {% for group in publications|groupby('XEcategory') %}
+                          {% for publication in group.list|sort(attribute='year')|reverse %}
+                          {% if publication.XEcategory == Category and publication.XEProject %}
+                          {% if (publication.XEProject.split(' ')[0] == article.id or
+                             publication.XEProject.split(' ')[1] == article.id or
+                             publication.XEProject.split(' ')[2] == article.id or
+                             publication.XEProject.split(' ')[3] == article.id or
+                             publication.XEProject.split(' ')[4] == article.id) %}
+                              <p>
+                                <li>{{ publication.text }}
+                                  {% if publication.url %}<a href="{{ publication.url }}"><span class="glyphicon glyphicon-new-window"></span></a>{% endif %}
+                                </li>
+                             </p>
+                             {% endif %}
+                          {% endif %}
+                         {% endfor %}
+                        {% endfor %}
+                       </ul>
+                     </ul>
+                   {% endfor %}
+               </div>
+             </div>
+           </div>
+         </div>
+         {% break %}
+      {% endif %}
+   {% endif %}
+{% endfor %}
+{% endif %}
+
+<!-- Templete for yearly reports -->
+{% if article.category|string() == 'yearly reports' %}
+  <div class="panel panel-default">
+    <!-- Print year -->
+    <div class="panel-heading">
+      <h2>Yearly Report {{article.title}}</h2>
+    </div>
+  </div>
+  <div class="row">
+    <!-- Print Categories that exists-->
+    <div class="hidden-xs hidden-sm col-md-3 col-lg-3 col-xl-3" id="printmenu">
+      <nav id="myScrollspy" data-spy="affix" data-offset-top="50" style="position: fixed;">
+      <div class="panel panel-default" >
+        <div class="panel-heading">
+        Contents
+        </div>
+        <ul class="nav nav-pills nav-stacked">
+          {% for publication in publications %}
+            {% if publication.year == article.title %}
+             <li><a href="#publications">New Publications{{find}}</a></li>
+             {% break %}
+            {% endif %}
+          {% endfor %}
+          {% for project in articles if project.category|string() == 'projects' %}
+             {% if project.startdate[:4] == article.title%}
+                <li><a href="#new_projects">New Projects</a></li>
+                {% break %}
+              {% endif %}
+          {% endfor %}
+          {% for project in articles if project.category|string() == 'projects' %}
+           {% if project.startdate[:4]|int() < article.title|int() and project.enddate[:4]|int() > article.title|int()%}
+              <li><a href="#ongoing_projects">Ongoing Projects</a></li>
+              {% break %}
+            {% endif %}
+          {% endfor %}
+          {% for project in articles if project.category|string() == 'projects' %}
+             {% if project.enddate[:4] == article.title %}
+                <li><a href="#com_projects">Completed Projects</a></li>
+                {% break %}
+              {% endif %}
+          {% endfor %}
+          {% for member in articles if member.category|string() == 'members' %}
+              {% if member.joined_date[:4] == article.title %}
+                  <li><a href="#members">New Members</a></li>
+                  {% break %}
+                {% endif %}
+          {% endfor %}
+          {% for member in articles if member.category|string() == 'members' %}
+             {% if  member.phd_startdate%}
+                {% if (member.phd_enddate and member.phd_enddate[0:4] > article.title and member.phd_startdate[0:4] < article.title) or (member.phd_completed == '0' and member.phd_startdate[0:4] < article.title) %}
+                  <li><a href="#Ongoing_PhDs">Ongoing PhDs</a></li>
+                  {% break %}
+                {% endif %}
+             {% endif %}
+          {% endfor %}
+          {% for member in articles if member.category|string() == 'members' %}
+             {% if  member.phd_enddate%}
+                {% if member.phd_enddate[0:4] == article.title %}
+                  <li><a href="#PhDs">Completed PhDs</a></li>
+                  {% break %}
+                {% endif %}
+             {% endif %}
+          {% endfor %}
+        </ul>
+      </div>
+      </nav>
+    </div>
+
+    <!-- Print Categories that exists (mobile view) -->
+    <div class="col-xs-12 col-sm-12 hidden-md hidden-lg hidden-xl" id="printmenu">
+      <nav>
+      <div class="panel panel-default" >
+        <div class="panel-heading">
+        Contents
+        </div>
+        <ul class="nav nav-pills nav-stacked">
+          {% for publication in publications %}
+           {% if publication.year == article.title%}
+            <li><a href="#publications">New Publications</a></li>
+            {% break %}
+           {% endif %}
+          {% endfor %}
+          {% for project in articles if project.category|string() == 'projects' %}
+             {% if project.startdate[:4] == article.title%}
+                <li><a href="#new_projects">New Projects</a></li>
+                {% break %}
+              {% endif %}
+          {% endfor %}
+          {% for project in articles if project.category|string() == 'projects' %}
+           {% if project.startdate[:4]|int() < article.title|int() and project.enddate[:4]|int() > article.title|int()%}
+              <li><a href="#ongoing_projects">Ongoing Projects</a></li>
+              {% break %}
+            {% endif %}
+          {% endfor %}
+          {% for project in articles if project.category|string() == 'projects' %}
+             {% if project.enddate[:4] == article.title %}
+                <li><a href="#com_projects">Completed Projects</a></li>
+                {% break %}
+              {% endif %}
+          {% endfor %}
+          {% for member in articles if member.category|string() == 'members' %}
+             {% if member.joined_date[:4] == article.title %}
+                  <li><a href="#members">New Members</a></li>
+                  {% break %}
+              {% endif %}
+          {% endfor %}
+          {% for member in articles if member.category|string() == 'members' %}
+             {% if  member.phd_startdate%}
+                {% if (member.phd_enddate and member.phd_enddate[0:4] > article.title and member.phd_startdate[0:4] < article.title) or (member.phd_completed == '0' and member.phd_startdate[0:4] < article.title) %}
+                  <li><a href="#Ongoing_PhDs">Ongoing PhDs</a></li>
+                  {% break %}
+                {% endif %}
+             {% endif %}
+          {% endfor %}
+          {% for member in articles if member.category|string() == 'members' %}
+             {% if  member.phd_enddate%}
+                {% if member.phd_enddate[0:4] == article.title %}
+                  <li><a href="#PhDs">Completed PhDs</a></li>
+                  {% break %}
+                {% endif %}
+             {% endif %}
+          {% endfor %}
+        </ul>
+      </div>
+      </nav>
+    </div>
+
+    <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-9" id="printurl">
+
+      <!-- Print pulications of this year, if exists -->
+      {% for publication in publications %}
+       {% if publication.year == article.title%}
+         <div class="panel panel-default" id="px2">
+           <div class="panel-heading">
+               <h3 id="publications">New Publications</h3>
+           </div>
+           <div class="panel-body">
+             {% for Category in publication_categories %}
+                 {% for publication in publications %}
+                  {% if publication.XEcategory == Category and publication.year == article.title%}
+                   <h4 style="color:#203864;">{{Category}}</h4>
+                   {% break %}
+                  {% endif %}
+                 {% endfor %}
+                 <ul class="list-group">
+                   <ul>
+                     {% for group in publications|groupby('XEcategory') %}
+                      {% for publication in group.list|sort(attribute='year')|reverse %}
+                      {% if publication.year == article.title and publication.XEcategory == Category %}
+                       <p>
+                       <li>{{ publication.text }}
+                         {% if publication.url %}<a href="{{ publication.url }}"><span class="glyphicon glyphicon-new-window"></span></a>{% endif %}
+                       </li>
+                       </p>
+                      {% endif %}
+                     {% endfor %}
+                     {% endfor %}
+                   </ul>
+                 </ul>
+             {% endfor %}
+           </div>
+         </div>
+        {% break %}
+       {% endif %}
+      {% endfor %}
+
+      <!-- Print projects of this year, if exists -->
+      {% for project in articles  if project.category|string() == 'projects' %}
+         {% if  project.startdate[:4] == article.title or project.enddate[:4] == article.title %}
+           <div class="panel panel-default" id="px2">
+             <div class="panel-heading">
+                <h3>Projects</h3>
+             </div>
+             <div class="panel-body">
+               {% for project in articles %}
+                 {% if project.category|string() == 'projects' and  project.startdate[:4] == article.title %}
+                  <h4 id="new_projects" style="color:#203864;">New Projects</h4>
+                  {% break %}
+                 {% endif%}
+               {% endfor %}
+               <ul class="list-group">
+                 <ul>
+                   {% for project in articles %}
+                    {% if project.category|string() == 'projects' and project.startdate[:4] == article.title%}
+                      <p>
+                       <li>{{ project.shortname }} - {{project.projtitle}} <a href="{{ SITEURL }}/{{ project.url }}"><span class="glyphicon glyphicon-new-window"></span></a></li>
+                      </p>
+                    {% endif %}
+                   {% endfor %}
+                 </ul>
+               </ul>
+               {% for project in articles %}
+                 {% if project.category|string() == 'projects' and  project.startdate[:4]|int() < article.title|int() and project.enddate[:4]|int() > article.title|int() %}
+                  <h4 id="ongoing_projects" style="color:#203864;">Ongoing Projects</h4>
+                  {% break %}
+                 {% endif%}
+               {% endfor %}
+               <ul class="list-group">
+                 <ul>
+                   {% for project in articles %}
+                    {% if project.category|string() == 'projects' and project.startdate[:4]|int() < article.title|int() and project.enddate[:4]|int() > article.title|int() %}
+                      <p>
+                       <li>{{ project.shortname }} - {{project.projtitle}} <a href="{{ SITEURL }}/{{ project.url }}"><span class="glyphicon glyphicon-new-window"></span></a></li>
+                      </p>
+                    {% endif %}
+                   {% endfor %}
+                 </ul>
+               </ul>
+               {% for project in articles %}
+                 {% if project.category|string() == 'projects' and  project.enddate[:4] == article.title %}
+                  <h4 id="com_projects" style="color:#203864;">Completed Projects</h4>
+                  {% break %}
+                 {% endif%}
+               {% endfor %}
+               <ul class="list-group">
+                 <ul>
+                   {% for project in articles %}
+                    {% if project.category|string() == 'projects' and project.enddate[:4] == article.title%}
+                      <p>
+                       <li>{{ project.shortname }} - {{project.projtitle}} <a href="{{ SITEURL }}/{{ project.url }}"><span class="glyphicon glyphicon-new-window"></span></a></li>
+                      </p>
+                    {% endif %}
+                   {% endfor %}
+                 </ul>
+               </ul>
+             </div>
+          </div>
+          {% break %}
+        {% endif %}
+      {% endfor %}
+
+      <!-- Print members of this year, if exists -->
+      {% for member in articles if member.category|string() == 'members' %}
+       {% if member.joined_date[:4] == article.title %}
+           <div class="panel panel-default" id="px2">
+             <div class="panel-heading">
+                 <h3 id="members">New Members</h3>
+             </div>
+             <ul class="list-group">
+               <ul>
+                {% for member in articles %}
+                  {% if member.category|string() == 'members' %}
+                    {% if member.joined_date[:4] == article.title %}
+                      <p>
+                       <li>
+                         {{ member.givenname }} {{ member.surname }} {% if member.phd_title or member.phd_startdate %}(PhD student){% endif %}
+                         <a href="{{ SITEURL }}/{{ member.url }}"><span class="glyphicon glyphicon-new-window"></span></a>
+                       </li>
+                      </p>
+                    {% endif%}
+                  {% endif%}
+                {% endfor %}
+              </ul>
+            </ul>
+          </div>
+          {% break %}
+       {% endif %}
+      {% endfor %}
+
+      <!-- Print ongoing PhDs of this year, if exists -->
+       {% for member in articles if member.category|string() == 'members' %}
+    			{% if  member.phd_startdate%}
+    			  {% if (member.phd_enddate and member.phd_enddate[0:4] > article.title and member.phd_startdate[0:4] < article.title) or (member.phd_completed == '0' and member.phd_startdate[0:4] < article.title) %}
+    				 <div class="panel panel-default" id="px2">
+      				   <div class="panel-heading">
+      					   <h3 id="Ongoing_PhDs">Ongoing PhDs</h3>
+      				   </div>
+      				   <ul class="list-group">
+        					 <ul>
+        					  {% for member in articles if member.category|string() == 'members' %}
+          						{% if member.phd_startdate %}
+          						  {% if (member.phd_enddate and member.phd_enddate[0:4] > article.title and member.phd_startdate[0:4] < article.title) or (member.phd_completed == '0' and member.phd_startdate[0:4] < article.title) %}
+          						  <p>
+          						   <li>
+            							 {{ member.givenname }} {{ member.surname }} (PhD student)
+            							 <a href="{{ SITEURL }}/{{ member.url }}"><span class="glyphicon glyphicon-new-window"></span></a>
+          						   </li>
+          						  </p>
+          						  {% endif%}
+          						{% endif%}
+        					  {% endfor %}
+        					</ul>
+      				  </ul>
+    				 </div>
+    				 {% break %}
+    			  {% endif %}
+    			{% endif %}
+      {% endfor %}
+
+      <!-- Print completed PhDs of this year, if exists -->
+      {% for member in articles if member.category|string() == 'members' %}
+        {% if  member.phd_enddate%}
+          {% if member.phd_enddate[0:4] == article.title %}
+             <div class="panel panel-default" id="px2">
+               <div class="panel-heading">
+                   <h3 id="PhDs">Completed PhDs</h3>
+               </div>
+               <ul class="list-group">
+                 <ul>
+                  {% for member in articles if member.category|string() == 'members' %}
+                    {% if member.phd_enddate %}
+                      {% if member.phd_enddate[:4] == article.title%}
+                      <p>
+                       <li>
+                         {{ member.givenname }} {{ member.surname }} (PhD student)
+                         <a href="{{ SITEURL }}/{{ member.url }}"><span class="glyphicon glyphicon-new-window"></span></a>
+                       </li>
+                      </p>
+                      {% endif%}
+                    {% endif%}
+                  {% endfor %}
+                </ul>
+              </ul>
+             </div>
+             {% break %}
+          {% endif %}
+        {% endif %}
+      {% endfor %}
+
+    <!-- Note: Grandfathered work -->
+    <div class="panel panel-default">
+      <div class="panel-body">
+        <i class="text-muted">Note: Some of the above data refer to grandfathered work conducted by BALab's members at its progenitor laboratory, <a href="https://istlab.dmst.aueb.gr">ISTLab</a>.</i>
+      </div>
+    </div>
+  </div>
+</div>
+{% endif %}
+{% endblock content %}
+
+{% block title %}{{ SITENAME }} {{ article.category }} &mdash; {{ article.title }}{% endblock %}
