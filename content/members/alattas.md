@@ -1,25 +1,14 @@
-title: Alexandros Lattas
-Givenname: Alexandros
-Surname: Lattas
-date: 20160430
-joined_date: 20160430
-category: members
-Photo: alattas.jpg
-id: lattas
+Title: Alexander - Lattas
+Date: 20160712
+joined_date: 20160712
+Category: members
+Id: lattas
+givenname: Alexandros
+surname: Lattas
 email: alattas@dmst.aueb.gr
 web_site: http://lattas.eu
+github: a-lattas
+linkedin: aglattas
+photo: alattas.jpg
 
-<p>
-<i>Alexandros Lattas</i> is an undergraduate student at the Athens University of Economics and Business
-(AUEB), in the Department of Management Science and Technology
-and alumni of the University College London (UCL) School of Management.
-</p><p>
-Currently, he is the Co-Founder and International Coordinator of <a href="http://senja.gr/alumni">Junior Achievement
-Alumni Greece</a>. Previously, he was a Teaching Assistant at the AUEB, after being a
-research intern in the <a href="http://www.kepe.gr/index.php/en">Centre of Planning and Economic Research</a>, under the
-supervision of <a href="http://www.kepe.gr/index.php/el/profil-cb/userprofile/pjprodr">Dr. P. Prodromidis</a>.
-</p><p>
-Main interests include Privacy and Security, Machine Learning and Entrepreneurship.
-</p><p>
-Full CV at <a href="http://cv.lattas.eu">cv.lattas.eu</a> .
-</p>
+**Alexandros Lattas** is a postgraduate Advanced Computing student in Imperial College London, with an academic interest in Machine Learning, Security and Entrepreneurship. He holds a BSc in Management Science and Technology from Athens University of Economics and Business and has been an Innovation Management affiliate student at University College London. Alexandros has been a Security Consultant Intern at Oracle and a Co-Founder and Board Member at Junior Achievement Alumni Greece. He has been awarded the Hellenic Petroleum scholarship, the Social Impact Award (2014), the Junior Achievement Company Programme Award (2012), three honorary distinctions from Athens University of Economics and Business and one from the Greek Ministry of Education and has participated in the Edutrip 2016 program at UC Berkeley. Full CV is available at http://cv.lattas.eu. 
