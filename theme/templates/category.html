@@ -59,7 +59,7 @@
       </div>
       <ul class="list-group">
         <!-- Print every software linked to its url -->
-        {% for article in articles_page.object_list %}
+        {% for article in articles_page.object_list|sort(attribute='title') %}
 	<li class="list-group-item"><a href="{{article.url}}">{{article.title}}</a> — {{article.description}} </li>
         {% endfor %}
       </ul>
