@@ -8,6 +8,7 @@ surname: Stavrou
 email: stavrouv@aueb.gr
 office_phone: +302108203663
 office_address: Room 801, 47A Evelpidon St. & 33 Lefkados St., 113 62, Athens, Greece
+photo: stavrouv.jpg
 phd_title: Assessing the value of IoT-enabled information in the retail industry
 phd_supervisor: Katerina Pramatari
 phd_startdate: 20160511
