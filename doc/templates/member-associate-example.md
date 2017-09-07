@@ -15,12 +15,12 @@ web_log: (Optional - URL)
 github: (Optional - just the handle, e.g. dspinellis)
 twitter: (Optional - just the handle, e.g. CoolSWEng)
 linkedin: (Optional - just the handle, e.g. dspinellis)
-photo: xxx.jpg (Optional)
-phd_title: (Required)
+photo: filename.jpg (Optional - A 50-100kb JPEG is recommended)
+phd_title: (Required for PhD students)
 phd_supervisor: member-id (Optional)
-phd_startdate: YYYYMMDD (Required)
-phd_enddate: YYYYMMDD (Optional)
+phd_startdate: YYYYMMDD (Required for PhD students)
+phd_enddate: YYYYMMDD (Required for PhD students)
 phd_completed: 0(false) or 1(true) (Required)
-phd_summary: (Required) !BE CAREFUL: write the summary in one line without break lines
+phd_summary: (Required for PhD students) !BE CAREFUL: write the summary in one line without break lines
 
 WRITE HERE YOUR SHORTCV EITHER IN HTML FORM EITHER IN MARKDOWN FORM (Required)
