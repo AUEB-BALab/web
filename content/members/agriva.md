@@ -10,7 +10,7 @@ office_phone: +302108203664
 office_address: Room 801, 47A Evelpidon St. & 33 Lefkados St.
 postal_address: 11362
 linkedin: anastasiagriva
-photo: xxx.jpg (Optional)
+photo: agriva.jpg
 phd_title: Segmentation of shopper visits based on shopper interaction data in different retail contexts
 phd_supervisor: Katerina Pramatari
 phd_startdate: 20141001
