@@ -1,8 +1,8 @@
-Title: Vasilis Stavrou
+title: Vasilis - Stavrou
 Date: 20160511
 joined_date: 20160511
-Category: Members
-Id: stavrouv
+category: members
+id: stavrouv
 givenname: Vasilis
 surname: Stavrou
 email: stavrouv@aueb.gr
