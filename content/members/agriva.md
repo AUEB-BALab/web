@@ -2,7 +2,7 @@ title: Anastasia - Griva
 date: 20170907
 joined_date: 20170907
 category: members
-id: griva
+id: m_griva
 givenname: Anastasia
 surname: Griva
 email: an.griva@aueb.gr
