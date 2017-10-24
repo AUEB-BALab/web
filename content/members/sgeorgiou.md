@@ -2,7 +2,7 @@ title: Stefanos - Georgiou
 date: 20151216
 joined_date: 20151216
 category: members 
-id: sgeorgiou
+id: m_sgeorgiou
 givenname: Stefanos
 surname: Georgiou
 memb_title: Mr.
