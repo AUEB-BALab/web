@@ -10,7 +10,7 @@ umask 0002
 mkdir $BASE/new
 chgrp iweb $BASE/new
 chmod 2775 $BASE/new
-pelican ../content/ --output=$BASE/new
+pelican content/ --output=$BASE/new
 mv $BASE/current $BASE/old
 mv $BASE/new $BASE/current
 rm -rf $BASE/old

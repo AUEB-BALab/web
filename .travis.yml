@@ -1,3 +1,5 @@
+sudo: enabled
+
 language: python
 install:
 - pip install pelican
@@ -5,7 +7,6 @@ install:
 - pip install typogrify
 - pip install pybtex
 
-sudo: enabled
 
 language: bash
 script: ./bin/update
