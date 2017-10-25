@@ -8,4 +8,4 @@ install:
 
 
 language: bash
-script: ./bin/update
+script: sudo ./bin/update
