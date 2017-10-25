@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>A Pelican Blog</title><link href="/" rel="alternate"></link><link href="/feeds/projects.atom.xml" rel="self"></link><id>/</id><updated>2016-12-08T00:00:00+00:00</updated><entry><title>Action II(2)</title><link href="/action-ii2.html" rel="alternate"></link><published>2016-12-08T00:00:00+00:00</published><author><name></name></author><id>tag:,2016-12-08:action-ii2.html</id><summary type="html">&lt;p&gt;JavaScript is one of the most important elements of the web. It is being used by the majority of websites and it is supported by all modern browsers. On the other hand though, it can be a vector for many dangerous attacks like cross-site scripting (XSS). With the proposed research we will aim to examine the evolution of JavaScript code over time. Specifically, by using building blocks from our previous research thrusts we will create a framework that collects the scripts used by different websites on a daily basis. Then, we will analyze the resulting dataset to (a) observe if whitelisting defenses can be efficiently employed by websites, (b) examine the development pace of multiple web applications and (c) examine the evolution of potential bugs found in the JavaScript code.&lt;/p&gt;</summary></entry><entry><title>SENECA</title><link href="/seneca.html" rel="alternate"></link><published>2015-01-01T00:00:00+00:00</published><author><name></name></author><id>tag:,2015-01-01:seneca.html</id><summary type="html">&lt;p&gt;The project provides the opportunity to nine early-stage researchers to pursue their PhD in the area of software engineering of cloud-based systems. The research programme is organized in three research streams: A) Product quality in cloud-related software development projects B) Process quality in cloud-related software development C) Operations' quality in cloud systems.&lt;/p&gt;</summary></entry><entry><title>Action II</title><link href="/action-ii.html" rel="alternate"></link><published>2014-10-09T00:00:00+00:00</published><author><name></name></author><id>tag:,2014-10-09:action-ii.html</id><summary type="html">&lt;p&gt;Code injection attacks are considered as one of the most damaging classes of application attacks that can harm various entities existing either on a web server, a client machine or a mobile device. With the proposed research we will aim to synthesize empirical findings coming of the analysis of the evolution and the behavior of software bugs that lead to code injection attacks, with existing pieces of theoretical work into an approach that covers all types of code injection attacks. Then, we will try to apply out approach to tame such attacks in different problem domains (web, mobile, etc.). For every application of our method, we will provide corresponding prototypes, deploy them in real world conditions and test them in terms of accuracy, operation cost and maintenance cost.&lt;/p&gt;</summary></entry><entry><title>STEREO</title><link href="/stereo.html" rel="alternate"></link><published>2012-10-01T00:00:00+00:00</published><author><name></name></author><id>tag:,2012-10-01:stereo.html</id><summary type="html">&lt;p&gt;The project aims to provide an infrastructure that will facilitate research efforts by integrating
+data collection, data processing in large-scale infrastructures, and dissemination of results.
+In order to evaluate software quality,
+data from Free/Libre/Open Source Software (FLOSS) projects will be used.
+Such an infrastructure will consist of:
+1) Software, enabling researchers to develop and run experiments efficiently on large data volumes,
+along with a collection of readily available data processing, curating and analysis methods
+2) Pre-processed data, from FLOSS projects, in a form that is suitable for analysis
+3) A cloud based computation infrastructure, suitable for mass data processing.&lt;/p&gt;</summary></entry><entry><title>TRACER</title><link href="/tracer.html" rel="alternate"></link><published>2011-04-18T00:00:00+00:00</published><author><name></name></author><id>tag:,2011-04-18:tracer.html</id><summary type="html">&lt;p&gt;Legacy systems are likely to contain software vulnerabilities that can lead
+to various security breaches. On the other hand, these systems contain valuable
+information about the environment, the creation and the evolution of the
+organization they support. For this reason, redesigning large systems in order
+to be secure and compatible with new technologies is not a practical option,
+since the information mentioned above could be lost. In addition the cost of replacing
+such system and retrain its various users, could be prohibitive. In this project we
+propose a framework that shields legacy systems based on two basic steps:
+First, our framework analyzes the source code of the system to identify potential
+software vulnerabilities and eliminates them. Then, depending on the previous
+analysis the framework proposes solutions to protect
+the system from the most common web-application attacks.&lt;/p&gt;</summary></entry><entry><title>Iraklitos II</title><link href="/iraklitos-ii.html" rel="alternate"></link><published>2010-09-01T00:00:00+00:00</published><author><name></name></author><id>tag:,2010-09-01:iraklitos-ii.html</id><summary type="html">&lt;p&gt;Code injection attacks are one of the most damaging class of attacks because: they can occur in different layers, like databases, native code, applications, libraries and others; and they span a wide range of security and privacy issues, like viewing sensitive information, destruction or modification of sensitive data, or even stopping the execution of the entire application. Our research attempts to prevent a wide class of such attacks in a novel way.&lt;/p&gt;</summary></entry><entry><title>PEVE (ΠΕΒΕ)</title><link href="/peve-pebe.html" rel="alternate"></link><published>2009-03-01T00:00:00+00:00</published><author><name></name></author><id>tag:,2009-03-01:peve-pebe.html</id><summary type="html">&lt;p&gt;&lt;i&gt;Integrating Domain-Specific Languages with General-Purpose Languages&lt;/i&gt;
+&lt;br/&gt;&lt;br/&gt;
+Domain-specific languages (DSL) are small, usually declarative languages that focus
+on a specific problem domain. SQL and regular expressions are two of the most
+common DSL's. General-purpose languages (GPL) such as C, C++ and Java are
+covering a wider application domain, but lack expressive power when applicable to
+specific problems. Usually DSL's are implemented as external application libraries
+when used by GPLs and the compiler is unaware of the DSL syntax and data types,
+creating a series of problems in the software development process.&lt;br /&gt;
+&lt;br/&gt;&lt;br/&gt;
+Our approach attempts to fill this scientific gap will introduce J% (j-mod), a DSL-aware
+programming language. J% will be an extension of the Java programming language.
+Its prototype implementation consists of a pre-processor, which translates the J%
+source code to Java compatible code.
+&lt;br/&gt;&lt;br/&gt;
+The J% approach tries to give a more pragmatic approach to DSL integration. All
+research efforts so far, have one of the following weaknesses:
+&lt;ul&gt;
+    &lt;li&gt;They deal with the problem for one DSL and for one GPL.&lt;/li&gt;
+    &lt;li&gt;They propose complex solutions that act as a burden to mainstream programming languages, obliging programmers to remember difficult semantics.&lt;/li&gt;
+    &lt;li&gt;They offer a new programming language that deals with the problem efficiently, but usually require a complete rewrite of complex DSL systems.&lt;/li&gt;
+&lt;/ul&gt;
+In J% we will avoid the aforementioned weaknesses. In addition, we will address the
+theoretical aspects of the problem, like possible type system extension etc.
+&lt;br/&gt;&lt;br/&gt;
+Our prototype implementation will have as target the Java programming language. As
+a research result, we will provide a solid implementation and a more generalised
+methodology that could guide the application of our techniques to other programming
+languages like C and C++.&lt;/p&gt;</summary></entry><entry><title>SOPRANO</title><link href="/soprano.html" rel="alternate"></link><published>2007-01-01T00:00:00+00:00</published><author><name></name></author><id>tag:,2007-01-01:soprano.html</id><summary type="html">&lt;p&gt;SOPRANO aims to design a system that assists older people in coping with everyday life in greater comfort and safety, with integrated delivery of high quality support and care. The project also aims to help all Europeans to continue to live independently and play a full role in society. SOPRANO develops and adapts to normal home environments a sophisticated range of suitably unobtrusive components seamlessly linked to external service provision.&lt;/p&gt;
+&lt;p&gt;A major objective of SOPRANO is to take a leap forward in the way users can interact with and take charge of their living environment, as well as to develop the way professional care personnel can support the SOPRANO users when called on to do so. The SOPRANO system acts not as a traditional "smart home", passively receiving user commands, nor as pure "remote care", by alerting outside staff to act in case of an alarm. Instead, SOPRANO acts as an informed, friendly agent, taking orders, giving advice or reminders and ready to help, and get help when needed.&lt;/p&gt;</summary></entry><entry><title>S-OMA SMART CARDS</title><link href="/s-oma-smart-cards.html" rel="alternate"></link><published>2006-10-01T00:00:00+00:00</published><author><name></name></author><id>tag:,2006-10-01:s-oma-smart-cards.html</id><summary type="html">&lt;p&gt;The S-OMA Smart Cards project aims to exploit the technological
+opportunities arising from recent evolutions in the areas of secure
+smart cards. Moreover, the S-OMA SMART CARDS project will identify and
+propose best practices and methodologies regarding the design and
+testing of secure tamper-resistant multipurpose smart cards. Significant
+effort will be put towards the best utilization of the available
+resources and the enhancement of portability between different smart
+card technologies.&lt;/p&gt;</summary></entry><entry><title>eBusinessForum - Working Group IA4</title><link href="/ebusinessforum-working-group-ia4.html" rel="alternate"></link><published>2006-09-10T00:00:00+00:00</published><author><name></name></author><id>tag:,2006-09-10:ebusinessforum-working-group-ia4.html</id><summary type="html">&lt;p&gt;&lt;p&gt;
+    ISTLab/SENSE Members participate actively in E-Business Forum. In particular, working group IA4 focused its attention in the area of "Preliminary Actions for the Establishment of the Greek Computer Emergency Response Team (GR-CERT)".&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;GR-CERT is an initiative, which aims to provide timely notifications regarding software vulnerabilities, malware epidemics and fraud schemes.
+
+The IA4 working group focuses on non experts and SMEs not employing technical personnel  and therefore all the necessary information is provided in a simple and understandable manner for the average user.
+
+Results will be published in the form of reports and will be presented in a workshop.
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;/p&gt;</summary></entry><entry><title>SQO-OSS</title><link href="/sqo-oss.html" rel="alternate"></link><published>2006-09-01T00:00:00+00:00</published><author><name></name></author><id>tag:,2006-09-01:sqo-oss.html</id><summary type="html">&lt;p&gt;What do we know about the quality of the software you are using?  A well-known conjecture 
+in software engineering is that external quality characteristics are correlated to internal quality 
+characteristics and thus the measurement of source code provides useful data for the 
+assessment of its quality. Uniquely, open source software allows us to examine the actual 
+code and perform white box testing and analysis of it. In most open source projects we can 
+also access their version control system, mailing lists and issue databases.  We can use these 
+data sources to extract quality indicators through techniques, such as data mining. 
+SQO-OSS aims to increase the competitiveness of European software development SMEs 
+through a holistic approach of software quality assessment, initially targeting open source 
+software. The project seeks to use as many sources of quality indicators as possible so as to 
+create a set of metrics that can be applied automatically to a software project’s repository in 
+order to extract quantifiable measurements of its quality.  The project will deliver:&lt;/p&gt;
+&lt;p&gt;A plug-in based quality assessment platform, featuring a web and an idE front-end.
+An enhanced set of software metrics that will take into account quality indicators from data that is present in a project’s repository, but not yet used for quality assessment.
+A publicly available league of open source software applications, categorised by their quality characteristics.
+A methodology that will allow European SMEs to leverage the availability of quality-assessed open source software in the development of horizontal and vertical applications and the provision of value-added services.
+Experience reports of how the tool’s application affected a large open source project&lt;/p&gt;
+&lt;p&gt;The project leverages existing tools and will also create new ones in an effort to build an
+integrated quality assessment platform. The core will be released as open source software 
+under the BSD licence to stimulate business interest around it.&lt;/p&gt;</summary></entry><entry><title>PENED</title><link href="/pened.html" rel="alternate"></link><published>2005-09-01T00:00:00+00:00</published><author><name></name></author><id>tag:,2005-09-01:pened.html</id><summary type="html">&lt;p&gt;On-line business transaction processing systems have so far been based on centralized or client-server architectures. It is our firm belief and
+it has also been recognized by the research and industrial community–that such systems may also be based on the constantly evolving decentralized
+peer-to-peer architectures, as current peer-to-peer technology has evolved to the extent that it is able to fulfill many of these requirements
+to a large extent. The aim of the project is the research and design of eBusiness transaction processing systems based on entirely decentralised
+ peer-to-peer architectures, based on a detailed requirements definition and analysis. The proposed design will cover issues such as support
+for discovery of services, merchandise or trading parties; authentication and access control, and negotiating collaboration parameters;
+support for workflow and collaboration orchestration, logging and non-repudiation; user ranking and reputation management; various other
+generic non-functional requirements including security, availability and anonymity.&lt;/p&gt;</summary></entry><entry><title>EDUPORTAL</title><link href="/eduportal.html" rel="alternate"></link><published>2004-03-01T00:00:00+00:00</published><author><name></name></author><id>tag:,2004-03-01:eduportal.html</id><summary type="html">&lt;p&gt;Eduportal is a unified portal allowing access to academic information
+and content regarding undergraduate and graduate course curricula.
+&lt;br/&gt;&lt;br/&gt;
+It is opeational since March 2004, and currently hosts the DMST
+undergraduate Degree courses, the International MBA Courses and the
+Graduate Programme in Human Resources Management (MSc) Courses. It can
+be seamlessly expanded to cover other courses, without the need for
+software or hardware updates.
+&lt;br/&gt;&lt;br/&gt;
+A powerful "back-office" allows the teaching staff to individually:
+provide information about their courses, the teaching and laboratory
+support stuff, contact information etc; structure their courses,
+lectures and laboratories; upload material to be made available to the
+students; post announcements; etc.&lt;/p&gt;</summary></entry><entry><title>PRAXIS</title><link href="/praxis.html" rel="alternate"></link><published>2003-10-01T00:00:00+00:00</published><author><name></name></author><id>tag:,2003-10-01:praxis.html</id><summary type="html">&lt;p&gt;The aim of the project is the interconnection of commercial applications
+and the conduct of inter-business transactions through the internet,
+based on open standards. The resulting system will allow companies to
+carry out business transactions through the internet in an ad-hoc
+manner, minimizing the paperwork required. The system design will
+utilize know-how and standards based on the Extensible Markup Language
+(XML), such as ebXML, allows the effective design of e-business
+applications based on data interchange.&lt;/p&gt;</summary></entry><entry><title>Iraklitos</title><link href="/iraklitos.html" rel="alternate"></link><published>2002-11-08T00:00:00+00:00</published><author><name></name></author><id>tag:,2002-11-08:iraklitos.html</id><summary type="html">&lt;p&gt;During the last years several worm epidemics have emerged as major threats to critical digital infrastructures.
+To make large-scale networks more resilient against these kind of threats, we evaluate the usage of peer-to-peer architectures whereby each peer is responsible for
+&lt;ul&gt;
+&lt;li&gt;Detecting whether a virus or worm is uncontrollably propagating through the network resulting in an epidemic.&lt;/li&gt;
+&lt;li&gt;Automatically dispatching warnings and information to other peers of a security-focused group.&lt;/li&gt;
+&lt;li&gt;Taking specific precautions for their host by automatically hardening their security measures during the epidemic.&lt;/li&gt;&lt;br /&gt;
+&lt;/ul&gt;&lt;/p&gt;</summary></entry><entry><title>TEMPO</title><link href="/tempo.html" rel="alternate"></link><published>2002-03-26T00:00:00+00:00</published><author><name></name></author><id>tag:,2002-03-26:tempo.html</id><summary type="html">&lt;p&gt;The TEMPO project aims to:
+&lt;ul&gt;
+    &lt;li&gt;
+        Support the Hellenic Organization of Telecommunications national IP network and to address issues regarding it's further upgrading.
+    &lt;/li&gt;
+    &lt;li&gt;
+        Utilize the MPLS technology for the provision of Quality of Service (QoS) applications over IP networks
+    &lt;/li&gt;
+    &lt;li&gt;
+        Provide and support service level agreements (SLAs)
+    &lt;/li&gt;
+    &lt;li&gt;
+        Demonstrate services to customers (pre-sales support) and to present potential scenarios of Classes of Services
+    &lt;/li&gt;
+    &lt;li&gt;
+        Support the Hellenic Organization of Telecommunications international IP network and to address issues regarding it's further upgrading
+    &lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</summary></entry><entry><title>mExpress</title><link href="/mexpress.html" rel="alternate"></link><published>2002-03-05T00:00:00+00:00</published><author><name></name></author><id>tag:,2002-03-05:mexpress.html</id><summary type="html">&lt;p&gt;mEXPRESS aims to exploit the technological opportunities arising from
+evolution in the areas of wireless networks and positioning mechanisms in
+order to support and facilitate the professional exhibition industry in
+a context-aware manner. It will contribute to the economic development of
+the Community by providing means for efficient operation and interaction
+in information-rich environments such as exhibitions, and significantly
+enhancing promotional activities and business communications. The mEXPRESS
+project will provide an integrated mediation platform (mEXPRESS Service
+Provider) oriented to exhibition shows and events that will satisfy
+three types of objectives:
+&lt;ul&gt;
+    &lt;li&gt;Enhance and facilitate visitors experience in terms of interaction and functionality in an information-rich environment such as an exhibition show.&lt;/li&gt;
+    &lt;li&gt;Improve business communications and promotions within the exhibition and extend promotional effectiveness during and after the exhibition&lt;/li&gt;
+    &lt;li&gt;Assist and support exhibition management and operations by offering real-time location information of persons within the exhibition.&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</summary></entry><entry><title>TRAINSEE</title><link href="/trainsee.html" rel="alternate"></link><published>2002-02-01T00:00:00+00:00</published><author><name></name></author><id>tag:,2002-02-01:trainsee.html</id><summary type="html">&lt;p&gt;Train-SEE aims to develop a corporate e-learning environment for ICT skill development based on generic ICT skill profiles and targeted to the SE European market. The Athens University of Economics and Business helped in conducting training needs assessment in the market of SE Europe, was responsible for the preparation and delivery of the content in appropriate form, and helped in the evaluation and usability testing of the implemented training service.&lt;/p&gt;</summary></entry><entry><title>eAware</title><link href="/eaware.html" rel="alternate"></link><published>2002-01-01T00:00:00+00:00</published><author><name></name></author><id>tag:,2002-01-01:eaware.html</id><summary type="html">&lt;p&gt;eAWARe aims to educate the everyday Internet user about online risks and the
+steps users can take to protect themselves. eAWARe reaches out to the public
+through local events across Europe. We will also produce a free guide on how to&lt;/p&gt;
+&lt;p&gt;have and host your own event to promote information security awareness. eAWARe
+is supported by the Directorate General for Research of the European
+Commission. eAWARe will hold its final international conference during the
+first week of November 2003 in Rome, Italy. This event is part of the European
+Commission's initiatives in the context of European Science Week. eAWARe also
+supports the dissemination of the OECD Guidelines for Information and Network
+Security.&lt;/p&gt;</summary></entry><entry><title>GEMINI</title><link href="/gemini.html" rel="alternate"></link><published>2002-01-01T00:00:00+00:00</published><author><name></name></author><id>tag:,2002-01-01:gemini.html</id><summary type="html">&lt;p&gt;GEMNINI aims to explore the opportunities deriving from the convergence of different mass media (Digital Television, Internet, Newspapers, etc.), the ability to transfer digital content fast, accurately and at low cost, and the existence of several potential suppliers and customers. The project will contribute to the economic development of the European market by providing means for the initialization, development and maintenance of a dynamic constellation delivering value to all the participants in the media and entertainment sectors. The project introduces value-adding services to consumers by providing access to a large repository of (re-usable) content, based upon viewers’ requests and needs. In addition, GEMINI will pave the ground for additional interactive services related to provision of content in irrespective of format or type in a user-friendly manner. Specifically, the GEMINI project will develop an integrated mediation platform offering enhanced content services to viewers of sports events.&lt;/p&gt;</summary></entry><entry><title>CONTESSA</title><link href="/contessa.html" rel="alternate"></link><published>2001-06-15T00:00:00+00:00</published><author><name></name></author><id>tag:,2001-06-15:contessa.html</id><summary type="html">&lt;p&gt;CONTESSA aims to transform the content creation and distribution industry by
+allowing content to be automatically and cost effectively adapted
+to any requesting device (PC, smart phones, mobile phones, PDAs, DTV
+set-top-boxes, etc.) seamlessly over any network infrastructure. The
+main objectives of CONTESSA are:
+&lt;ul&gt;
+&lt;li&gt;Develop a content transformation engine that will provide translation
+and integration of content into device-tailored user interfaces through
+alternative communication channels. The system will track and manage
+alternative access devices while providing a personalized environment
+for content deployment based on a standardized XML framework that will
+allow the content to be extracted, converted and integrated, without
+the creator's interference.&lt;/li&gt;
+&lt;li&gt;Validate the system through a number of interactive transactional
+services to be delivered over multiple types of networks, to devices
+using different access protocols enabling e-Commerce and e-Business
+widespread application.&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</summary></entry><entry><title>myGrocer</title><link href="/mygrocer.html" rel="alternate"></link><published>2001-01-01T00:00:00+00:00</published><author><name></name></author><id>tag:,2001-01-01:mygrocer.html</id><summary type="html">&lt;p&gt;
+MyGROCER is a research project
+partially funded by the European Commission (IST Programme). The project
+spanned over two years (from January 2001 to November 2002) and exploited the
+potential of wireless technologies (namely Wireless LANs) and automatic product
+identification techniques (Radio Frequency identification, RF-id) to develop
+an innovative business and technological solution for the retail environment. &lt;br/&gt;&lt;br/&gt;
+
+In effect, MyGROCER implemented
+and field-tested a new and integrated shopping scheme
+that supports the shopper throughout his/her entire supermarket visit by means
+of a prototype shopping cart capable to automatically scan supermarket products
+while at the same time provide valuable information to the shopper through a display
+device thus, create a fully interactive shopping trip. The use of the system by
+supermarket shoppers revealed that the new shopping scheme can provide a more
+entertaining and efficient shopping trip compared to the conventional way of
+shopping, and thus generate new shopping experiences. &lt;br/&gt;&lt;br/&gt;
+&lt;/p&gt;</summary></entry><entry><title>Web</title><link href="/web.html" rel="alternate"></link><published>2001-01-01T00:00:00+00:00</published><author><name></name></author><id>tag:,2001-01-01:web.html</id><summary type="html">&lt;p&gt;The &lt;em&gt;Web site&lt;/em&gt; project aims to create a dynamic,
+distributed, and maintanable Web site for ISTLab.
+&lt;br/&gt;
+Traditionally, the realization of Web sites involves either
+static content developed using web authoring tools like
+Microsoft's Front Page and DreamWeaver, or dynamic
+content delivered by a database driven front-end,
+where the structured content is organized
+in a relational schema and dynamically generated on the fly.
+When our group faced the successive failure of both the above approaches,
+we decided to adopt the task of exploring ideas for a radically different
+implementation style, based on the declarative specification
+of all the site's elements.
+We believe that our approach and many of the lessons we learned
+can be applied numerous similar situations,
+leading to a lightweight, structured, consistent, and maintainable
+web site building method.
+&lt;br/&gt;
+The guiding principles behind our design are:
+&lt;ul&gt;
+&lt;li&gt;Openness&lt;/li&gt;
+&lt;li&gt;Observability&lt;/li&gt;
+&lt;li&gt;Robustness&lt;/li&gt;
+&lt;li&gt;Parsimony&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</summary></entry></feed>

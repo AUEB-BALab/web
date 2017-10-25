@@ -1,3 +1,11 @@
-language: bash
+language: python
+install:
+- pip install pelican
+- pip install Markdown
+- pip install typogrify
+- pip install pybtex
+
 sudo: enabled
+
+language: bash
 script: ./bin/update
