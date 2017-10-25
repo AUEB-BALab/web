@@ -1,8 +1,8 @@
 sudo: enabled
 
 language: python
-rvm: 3.6.3
 install:
+- pip install pyopenssl ndg-httpsclient pyasn1
 - pip install pelican
 - pip install Markdown
 - pip install typogrify
