@@ -1,69 +1,453 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="greek">
 <head>
         <meta charset="utf-8" />
-        <title>2004</title>
-        <link rel="stylesheet" href="/theme/css/main.css" />
-        <link href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="A Pelican Blog Atom Feed" />
-
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>BALab yearly reports &mdash; 2004</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="./theme/css/main.css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<link rel="shortcut icon" type="image/x-icon" href="./theme/images/BA_Logo.png"/>
+		
         <!--[if IE]>
             <script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
         <![endif]-->
 </head>
 
-<body id="index" class="home">
-        <header id="banner" class="body">
-                <h1><a href="/">A Pelican Blog </a></h1>
-                <nav><ul>
-                    <li><a href="/pages/contact.html">contact</a></li>
-                    <li><a href="/pages/join_The_Lab.html">joining the lab</a></li>
-                    <li><a href="/pages/phd_achievements.html">phd achievements</a></li>
-                    <li><a href="/pages/services.html">services</a></li>
-                    <li><a href="/category/alumni.html">alumni</a></li>
-                    <li><a href="/category/members.html">members</a></li>
-                    <li><a href="/category/projects.html">projects</a></li>
-                    <li><a href="/category/software.html">software</a></li>
-                    <li class="active"><a href="/category/yearly-reports.html">yearly reports</a></li>
-                </ul></nav>
-        </header><!-- /#banner -->
-<section id="content" class="body">
-  <article>
-    <header>
-      <h1 class="entry-title">
-        <a href="/2004.html" rel="bookmark"
-           title="Permalink to 2004">2004</a></h1>
-    </header>
+<body  data-spy="scroll" data-target="#myScrollspy" data-offset="20">
 
-    <div class="entry-content">
-<footer class="post-info">
-        <abbr class="published" title="2004-10-25T00:00:00+00:00">
-                Published: Mon 25 October 2004
-        </abbr>
+  <!-- Fixed Navbar -->
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a href="./index.html"> <img src="./theme/images/ba-logo2.png"  width="120" height="50" class="d-inline-block align-top" alt=""> </a>
+      </div>
+      <div id="navbar" class="collapse navbar-collapse">
+  			<ul class="nav navbar-nav navbar-right">
+  			  <li><a href="./index.html">Home</a></li>
+  			  <li class="dropdown">
+  				<a class="dropdown-toggle" data-toggle="dropdown" href="#">Staff
+  				<span class="caret"></span></a>
+  				<ul class="dropdown-menu">
+  				  <li><a href="./category/members.html">Members & Associates</a></li>
+  				  <li><a href="./category/alumni.html">Alumni</a></li>
+  				  <li><a href="./pages/phd_achievements.html">PhD Student Achievements</a></li>
+  				  <li><a href="./pages/join_The_Lab.html">Joining the lab</a></li>
+  				</ul>
+  			  </li>
+  			  <li><a href="./category/projects.html">Projects</a></li>
+  			  <li><a href="./publications.html">Publications</a></li>
+			  <li><a href="./category/software.html">Software</a></li>
+  			  <li><a href="./pages/services.html">Services</a></li>
+  			  <li><a href="./category/yearly-reports.html">Yearly Reports</a></li>
+          <li>
+            <a href="#modalSearch" data-toggle="modal" data-target="#modalSearch">
+              <span class="glyphicon glyphicon-search"></span> <span class="hidden-sm hidden-md hidden-lg">Search</span>
+            </a>
+          </li>
+  			</ul>
+      </div><!--/.nav-collapse -->
+    </div>
+  </nav>
 
-<p>In <a href="/category/yearly-reports.html">yearly reports</a>.</p>
+    <!-- Search Modal -->
+  <div id="modalSearch" class="modal fade" role="dialog">
+     <div class="modal-dialog">
 
-</footer><!-- /.post-info -->      
-    </div><!-- /.entry-content -->
+         <!-- Modal content-->
+         <div class="modal-content">
+             <div class="modal-header">
+                 <!-- <a type="button" class="close" data-dismiss="modal">&times;</a> -->
+                 <h4 class="modal-title">Search BALab</h4>
+             </div>
+             <div class="modal-body">
+               <!-- Replace the following with your own search script from https://www.google.com/cse. -->
+               <script>
+                 (function() {
+                   var cx = '005094385257090023838:r1endlwnp2e';
+                   var gcse = document.createElement('script');
+                   gcse.type = 'text/javascript';
+                   gcse.async = true;
+                   gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+                   var s = document.getElementsByTagName('script')[0];
+                   s.parentNode.insertBefore(gcse, s);
+                 })();
+               </script>
+               <gcse:search enableAutoComplete="true"></gcse:search>
+            </div>
+             <div class="modal-footer">
+                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+             </div>
+         </div>
 
-  </article>
-</section>
-        <section id="extras" class="body">
-                <div class="social">
-                        <h2>social</h2>
-                        <ul>
-                            <li><a href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">atom feed</a></li>
+     </div>
+  </div>
 
-                        </ul>
-                </div><!-- /.social -->
-        </section><!-- /#extras -->
+  <div class="container">
+    <!-- Show logo for printer -->
+    <p id="printlogo">
+      <img src="./theme/images/ba-logo2.png" height="200" width="200" class="img-responsive" alt="...">
+    </p>
 
-        <footer id="contentinfo" class="body">
-                <address id="about" class="vcard body">
-                Proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
-                </address><!-- /#about -->
 
-                <p>The theme is by <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
-        </footer><!-- /#contentinfo -->
+<!-- Template for members and alumni -->
+
+<!-- Template for projects -->
+
+<!-- Templete for yearly reports -->
+  <div class="panel panel-default">
+    <!-- Print year -->
+    <div class="panel-heading">
+      <h2>Yearly Report 2004</h2>
+    </div>
+  </div>
+  <div class="row">
+    <!-- Print Categories that exists-->
+    <div class="hidden-xs hidden-sm col-md-3 col-lg-3 col-xl-3" id="printmenu">
+      <nav id="myScrollspy" data-spy="affix" data-offset-top="50" style="position: fixed;">
+      <div class="panel panel-default" >
+        <div class="panel-heading">
+        Contents
+        </div>
+        <ul class="nav nav-pills nav-stacked">
+             <li><a href="#publications">New Publications</a></li>
+                <li><a href="#new_projects">New Projects</a></li>
+              <li><a href="#ongoing_projects">Ongoing Projects</a></li>
+                <li><a href="#com_projects">Completed Projects</a></li>
+                  <li><a href="#members">New Members</a></li>
+                  <li><a href="#Ongoing_PhDs">Ongoing PhDs</a></li>
+        </ul>
+      </div>
+      </nav>
+    </div>
+
+    <!-- Print Categories that exists (mobile view) -->
+    <div class="col-xs-12 col-sm-12 hidden-md hidden-lg hidden-xl" id="printmenu">
+      <nav>
+      <div class="panel panel-default" >
+        <div class="panel-heading">
+        Contents
+        </div>
+        <ul class="nav nav-pills nav-stacked">
+            <li><a href="#publications">New Publications</a></li>
+                <li><a href="#new_projects">New Projects</a></li>
+              <li><a href="#ongoing_projects">Ongoing Projects</a></li>
+                <li><a href="#com_projects">Completed Projects</a></li>
+                  <li><a href="#members">New Members</a></li>
+                  <li><a href="#Ongoing_PhDs">Ongoing PhDs</a></li>
+        </ul>
+      </div>
+      </nav>
+    </div>
+
+    <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-9" id="printurl">
+
+      <!-- Print pulications of this year, if exists -->
+         <div class="panel panel-default" id="px2">
+           <div class="panel-heading">
+               <h3 id="publications">New Publications</h3>
+           </div>
+           <div class="panel-body">
+                 <ul class="list-group">
+                   <ul>
+                   </ul>
+                 </ul>
+                   <h4 style="color:#203864;">Journal Articles</h4>
+                 <ul class="list-group">
+                   <ul>
+                       <p>
+                       <li>Vasileios Vlachos, Stefanos Androutsellis-Theotokis, and Diomidis Spinellis.
+Security applications of peer-to-peer networks.
+<em>Computer Networks</em>, 45(2):195–205, June 2004.
+<a href="http://www.dmst.aueb.gr/dds/pubs/jrnl/2004-CompSec-p2pav/html/VAS04.html"><span class="glyphicon glyphicon-new-window"></span></a>                       </li>
+                       </p>
+                       <p>
+                       <li>Diomidis Spinellis and Clements Szyperski.
+How is open source affecting software development?
+<em>IEEE Software</em>, 21(1):28–33, January/February 2004.
+<a href="http://www.dmst.aueb.gr/dds/pubs/jrnl/2004-IEEESW-OSS/html/ge-intro.html"><span class="glyphicon glyphicon-new-window"></span></a>                       </li>
+                       </p>
+                       <p>
+                       <li>Konstantinos Chorianopoulos and Diomidis Spinellis.
+User interface development for interactive television: extending a commercial <span class="bibtex-protected">DTV</span> platform to the virtual channel <span class="bibtex-protected">API</span>.
+<em>Computers &amp; Graphics</em>, 28(2):157–166, April 2004.
+<a href="http://www.dmst.aueb.gr/dds/pubs/jrnl/2004-CG-ITV/html/CS04.htm"><span class="glyphicon glyphicon-new-window"></span></a>                       </li>
+                       </p>
+                       <p>
+                       <li>Konstantinos Chorianopoulos and Diomidis Spinellis.
+Affective usability evaluation for an interactive music television channel.
+<em>Computers in Entertainment</em>, 2(3):14, July 2004.
+<a href="http://www.dmst.aueb.gr/dds/pubs/jrnl/2004-CIE-VC/html/CS04b.htm"><span class="glyphicon glyphicon-new-window"></span></a>                       </li>
+                       </p>
+                       <p>
+                       <li>Damianos Chatziantoniou and George&nbsp;I. Doukidis.
+<span class="bibtex-protected">SQL</span> extensions to enable decision support within database systems.
+<em>Journal of Decision Systems</em>, 13(2):155–172, 2004.
+                       </li>
+                       </p>
+                       <p>
+                       <li>Damianos Chatziantoniou and Achilleas Anagnostopoulos.
+<span class="bibtex-protected">NESTREAM:</span> querying nested streams.
+<em><span class="bibtex-protected">SIGMOD</span> Record</em>, 33(3):71–78, 2004.
+                       </li>
+                       </p>
+                       <p>
+                       <li>Stephanos Androutsellis-Theotokis and Diomidis Spinellis.
+A survey of peer-to-peer content distribution technologies.
+<em>acmcs</em>, 36(4):335–371, December 2004.
+<a href="http://www.dmst.aueb.gr/dds/pubs/jrnl/2004-ACMCS-p2p/html/AS04.html"><span class="glyphicon glyphicon-new-window"></span></a>                       </li>
+                       </p>
+                   </ul>
+                 </ul>
+                   <h4 style="color:#203864;">Book Chapters</h4>
+                 <ul class="list-group">
+                   <ul>
+                       <p>
+                       <li>Yannis Charalabidis, Vassilios Karakoidas, Stephanos Androutsellis-Theotokis, and Diomidis Spinellis.
+Enabling <span class="bibtex-protected">B2B</span> transactions over the internet through application interconnection: the <span class="bibtex-protected">PRAXIS</span> project.
+In Paul Cunningham and Miriam Cunningham, editors, <em>eAdoption and the Knowledge Economy: Issues, Applications and Case Studies</em>, chapter&nbsp;7, pages 1554–1561.
+IOS Press, October 2004.
+<a href="http://www.dmst.aueb.gr/dds/pubs/conf/2004-eChallenge-Praxis/html/CKAS04.htm"><span class="glyphicon glyphicon-new-window"></span></a>                       </li>
+                       </p>
+                   </ul>
+                 </ul>
+                   <h4 style="color:#203864;">Conference Publications</h4>
+                 <ul class="list-group">
+                   <ul>
+                       <p>
+                       <li>Angeliki Tsilira, Adamantia Pateli, Erast Athanasiadis, and Diomidis Spinellis.
+Targeted messages in indoor mobile environment: a software-oriented approach.
+In M.&nbsp;H. Hamza, editor, <em>Proceedings of the IASTED International Conference on Software Engineering</em>, 734–739. IASTED, ACTA Press, February 2004.
+<a href="http://www.dmst.aueb.gr/dds/pubs/conf/2004-IASTED-mExpress/html/TPAS04.htm"><span class="glyphicon glyphicon-new-window"></span></a>                       </li>
+                       </p>
+                       <p>
+                       <li>Diomidis Spinellis, Yannis Charalabidis, and Vassilios Karakoidas.
+Application interconnection and execution of business to business transactions over the internet.
+In <em>20th European Conference on Operational Research (EURO-XX)</em>. The Association of European Operational Research Societies, July 2004.
+Poster.
+<a href="http://www.dmst.aueb.gr/dds/pubs/conf/2004-EuroXX-Praxis/html/SCK04.pdf"><span class="glyphicon glyphicon-new-window"></span></a>                       </li>
+                       </p>
+                       <p>
+                       <li>George Roussos, George Samaras, and Diomidis Spinellis.
+Editorial message: special track on ubiquitous computing.
+In Hisham&nbsp;M. Haddad, Andrea Omicini, Roger&nbsp;L. Wainwright, and Lorie&nbsp;M. Liebrock, editors, <em>Proceedings of the 2004 <span class="bibtex-protected">ACM</span> Symposium on Applied Computing</em>, 1565–1566. ACM Press, 2004.
+<a href="http://www.dmst.aueb.gr/dds/pubs/conf/2004-SAC-UC/html/RSM04.html"><span class="glyphicon glyphicon-new-window"></span></a>                       </li>
+                       </p>
+                       <p>
+                       <li>Ada Pateli, Diomidis Spinellis, and Giorgos Giaglis.
+Wireless info-communication and navigation services in exhibition shows.
+In Mel Horwitch, editor, <em>Third International Conference on Mobile Business (ICMB): mBusiness 2004</em>. July 2004.
+<a href="http://www.dmst.aueb.gr/dds/pubs/conf/2004-mBusiness/html/ASG04.htm"><span class="glyphicon glyphicon-new-window"></span></a>                       </li>
+                       </p>
+                       <p>
+                       <li>Apostolos Kritikopoulos, Martha Sideri, and Konstantinos Stroggylos.
+Crawlwave: a distributed crawler.
+In <em>Proceedings of the 3rd Hellenic Conference on Artificial Intelligence</em>. May 2004.
+                       </li>
+                       </p>
+                       <p>
+                       <li>Vassilios Karakoidas, Stephanos Androutsellis-Theotokis, Diomidis Spinellis, and Yannis Charalabidis.
+Applying <span class="bibtex-protected">MDA</span> in enterprise application interoperability: the <span class="bibtex-protected">PRAXIS</span> project.
+In Harald K<span class="bibtex-protected">ü</span>hn, editor, <em>Workshop on Ontology and Enterprise Modelling: Ingredients for Interoperability</em>, 76–84. December 2004.
+<a href="http://www.dmst.aueb.gr/dds/pubs/conf/2004-PAKMOEM-MDA/html/KATSC04.htm"><span class="glyphicon glyphicon-new-window"></span></a>                       </li>
+                       </p>
+                       <p>
+                       <li>Damianos Chatziantoniou and Achilleas Anagnostopoulos.
+Hierarchical stream aggregates: querying nested stream sessions.
+In <em>Proceedings of the 16th International Conference on Scientific and Statistical Database Management <span class="bibtex-protected">(SSDBM</span> 2004), 21-23 June 2004, Santorini Island, Greece</em>, 439–440. 2004.
+                       </li>
+                       </p>
+                       <p>
+                       <li>Yannis Charalabidis, Vassilios Karakoidas, Stephanos Androutsellis-Theotokis, and Diomidis Spinellis.
+Enabling <span class="bibtex-protected">B2B</span> transactions over the internet through application interconnection: the <span class="bibtex-protected">PRAXIS</span> project.
+In <em>e-Challenges Conference</em>. European Commission, October 2004.
+<a href="http://www.dmst.aueb.gr/dds/pubs/conf/2004-eChallenge-Praxis/html/CKAS04.htm"><span class="glyphicon glyphicon-new-window"></span></a>                       </li>
+                       </p>
+                       <p>
+                       <li>Stephanos Androutsellis-Theotokis, Diomidis Spinellis, and Vassilios Karakoidas.
+Performing peer-to-peer e-business transactions: a requirements analysis and preliminary design proposal.
+In <em>Proceedings of the IADIS International e-Commerce 2004 Conference</em>, 399–404. Lisbon, Portugal, December 14-16 2004.
+<a href="http://www.dmst.aueb.gr/dds/pubs/conf/2004-IADIS-Praxis/html/ASK04.html"><span class="glyphicon glyphicon-new-window"></span></a>                       </li>
+                       </p>
+                       <p>
+                       <li>S.&nbsp;Androutsellis-Theotokis.
+Social behaviour, incentives and technology in peer-to-peer content distribution networks.
+In <em>Proceedings of the Ethicomp2004 Conference</em>. Syros, Greece, April 2004.
+                       </li>
+                       </p>
+                   </ul>
+                 </ul>
+                 <ul class="list-group">
+                   <ul>
+                   </ul>
+                 </ul>
+                   <h4 style="color:#203864;">White Papers</h4>
+                 <ul class="list-group">
+                   <ul>
+                       <p>
+                       <li>Markos Gogoulos.
+(almost) never owned!
+Technical Report WHP-2004-006, SAGE, 2004.
+<a href="http://www.sage.org/whitepapers/markos.mm"><span class="glyphicon glyphicon-new-window"></span></a>                       </li>
+                       </p>
+                   </ul>
+                 </ul>
+                 <ul class="list-group">
+                   <ul>
+                   </ul>
+                 </ul>
+                   <h4 style="color:#203864;">Working Papers</h4>
+                 <ul class="list-group">
+                   <ul>
+                       <p>
+                       <li>D.&nbsp;Spinellis, V.&nbsp;Karakoidas, and D.&nbsp;Chatziantoniou.
+A software development metaphor for developing semi-dynamic web sites through declarative specifications.
+WP 2004-007, Eltrun Working Paper Series, 2004.
+<a href="http://www.eltrun.aueb.gr/working-papers/WP_2004007.pdf"><span class="glyphicon glyphicon-new-window"></span></a>                       </li>
+                       </p>
+                       <p>
+                       <li>D.&nbsp;Spinellis.
+Browsing and refactoring program collections written in <span class="bibtex-protected">C</span>.
+WP 2004-006, Eltrun Working Paper Series, 2004.
+<a href="http://www.eltrun.aueb.gr/working-papers/WP_2004006.pdf"><span class="glyphicon glyphicon-new-window"></span></a>                       </li>
+                       </p>
+                   </ul>
+                 </ul>
+           </div>
+         </div>
+
+      <!-- Print projects of this year, if exists -->
+           <div class="panel panel-default" id="px2">
+             <div class="panel-heading">
+                <h3>Projects</h3>
+             </div>
+             <div class="panel-body">
+                  <h4 id="new_projects" style="color:#203864;">New Projects</h4>
+               <ul class="list-group">
+                 <ul>
+                      <p>
+                       <li>EDUPORTAL - Eduportal <a href="./eduportal.html"><span class="glyphicon glyphicon-new-window"></span></a></li>
+                      </p>
+                 </ul>
+               </ul>
+                  <h4 id="ongoing_projects" style="color:#203864;">Ongoing Projects</h4>
+               <ul class="list-group">
+                 <ul>
+                      <p>
+                       <li>PRAXIS - Interconnection of Applications and conduct of inter-business transactions through the internet <a href="./praxis.html"><span class="glyphicon glyphicon-new-window"></span></a></li>
+                      </p>
+                      <p>
+                       <li>Iraklitos - Security Applications for Peer-to-Peer Networks <a href="./iraklitos.html"><span class="glyphicon glyphicon-new-window"></span></a></li>
+                      </p>
+                 </ul>
+               </ul>
+                  <h4 id="com_projects" style="color:#203864;">Completed Projects</h4>
+               <ul class="list-group">
+                 <ul>
+                      <p>
+                       <li>EDUPORTAL - Eduportal <a href="./eduportal.html"><span class="glyphicon glyphicon-new-window"></span></a></li>
+                      </p>
+                      <p>
+                       <li>mExpress - mobile in-EXhibition PRovision of Electronic Support Services <a href="./mexpress.html"><span class="glyphicon glyphicon-new-window"></span></a></li>
+                      </p>
+                      <p>
+                       <li>GEMINI - Global Electronic Medium ConstellatIon for Dynamic CoNtent Integration <a href="./gemini.html"><span class="glyphicon glyphicon-new-window"></span></a></li>
+                      </p>
+                      <p>
+                       <li>Web - The ISTLab Web Site <a href="./web.html"><span class="glyphicon glyphicon-new-window"></span></a></li>
+                      </p>
+                 </ul>
+               </ul>
+             </div>
+          </div>
+
+      <!-- Print members of this year, if exists -->
+           <div class="panel panel-default" id="px2">
+             <div class="panel-heading">
+                 <h3 id="members">New Members</h3>
+             </div>
+             <ul class="list-group">
+               <ul>
+                      <p>
+                       <li>
+                         Georgios Gousios (PhD student)                         <a href="./georgios-gousios.html"><span class="glyphicon glyphicon-new-window"></span></a>
+                       </li>
+                      </p>
+              </ul>
+            </ul>
+          </div>
+
+      <!-- Print ongoing PhDs of this year, if exists -->
+    				 <div class="panel panel-default" id="px2">
+      				   <div class="panel-heading">
+      					   <h3 id="Ongoing_PhDs">Ongoing PhDs</h3>
+      				   </div>
+      				   <ul class="list-group">
+        					 <ul>
+          						  <p>
+          						   <li>
+            							 Stefanos Androutsellis-Theotokis (PhD student)
+            							 <a href="./stefanos-androutsellis-theotokis.html"><span class="glyphicon glyphicon-new-window"></span></a>
+          						   </li>
+          						  </p>
+          						  <p>
+          						   <li>
+            							 Vasileios Vlachos (PhD student)
+            							 <a href="./vasileios-vlachos.html"><span class="glyphicon glyphicon-new-window"></span></a>
+          						   </li>
+          						  </p>
+          						  <p>
+          						   <li>
+            							 Vassilios Karakoidas (PhD student)
+            							 <a href="./vassilios-karakoidas.html"><span class="glyphicon glyphicon-new-window"></span></a>
+          						   </li>
+          						  </p>
+        					</ul>
+      				  </ul>
+    				 </div>
+
+      <!-- Print completed PhDs of this year, if exists -->
+
+    <!-- Note: Grandfathered work -->
+    <div class="panel panel-default">
+      <div class="panel-body">
+        <i class="text-muted">Note: Some of the above data refer to grandfathered work conducted by BALab's members at its progenitor laboratory, <a href="https://istlab.dmst.aueb.gr">ISTLab</a>.</i>
+      </div>
+    </div>
+  </div>
+</div>
+  </div>
+
+  <!-- Fixed footer -->
+  <footer>
+    <div class="container">
+      <p class="text-muted">
+        <span><a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons Licence" style="max-height: 31px; margin-left:20px" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a></span>
+        <span class="hidden-xs hidden-sm"> This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.</span>
+        <span class="hidden-md hidden-lg hidden-xl"> CC BY-SA 4.0 </a></span>
+        <span class="pull-right"><a href="./pages/contact.html" style="color: white">Contact</a></span>
+      </p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/9.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="bootstrap-3.3.7/assets/js/vendor/jquery.min.js"><\/script>')</script>
+  <!-- <script src="bootstrap-3.3.7/dist/js/bootstrap.min.js"></script> -->
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <script src="bootstrap-3.3.7/assets/js/ie10-viewport-bug-workaround.js"></script>
 
 </body>
 </html>

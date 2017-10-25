@@ -1,69 +1,463 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="greek">
 <head>
         <meta charset="utf-8" />
-        <title>2014</title>
-        <link rel="stylesheet" href="/theme/css/main.css" />
-        <link href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="A Pelican Blog Atom Feed" />
-
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>BALab yearly reports &mdash; 2014</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="./theme/css/main.css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<link rel="shortcut icon" type="image/x-icon" href="./theme/images/BA_Logo.png"/>
+		
         <!--[if IE]>
             <script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
         <![endif]-->
 </head>
 
-<body id="index" class="home">
-        <header id="banner" class="body">
-                <h1><a href="/">A Pelican Blog </a></h1>
-                <nav><ul>
-                    <li><a href="/pages/contact.html">contact</a></li>
-                    <li><a href="/pages/join_The_Lab.html">joining the lab</a></li>
-                    <li><a href="/pages/phd_achievements.html">phd achievements</a></li>
-                    <li><a href="/pages/services.html">services</a></li>
-                    <li><a href="/category/alumni.html">alumni</a></li>
-                    <li><a href="/category/members.html">members</a></li>
-                    <li><a href="/category/projects.html">projects</a></li>
-                    <li><a href="/category/software.html">software</a></li>
-                    <li class="active"><a href="/category/yearly-reports.html">yearly reports</a></li>
-                </ul></nav>
-        </header><!-- /#banner -->
-<section id="content" class="body">
-  <article>
-    <header>
-      <h1 class="entry-title">
-        <a href="/2014.html" rel="bookmark"
-           title="Permalink to 2014">2014</a></h1>
-    </header>
+<body  data-spy="scroll" data-target="#myScrollspy" data-offset="20">
 
-    <div class="entry-content">
-<footer class="post-info">
-        <abbr class="published" title="2014-10-25T00:00:00+00:00">
-                Published: Sat 25 October 2014
-        </abbr>
+  <!-- Fixed Navbar -->
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a href="./index.html"> <img src="./theme/images/ba-logo2.png"  width="120" height="50" class="d-inline-block align-top" alt=""> </a>
+      </div>
+      <div id="navbar" class="collapse navbar-collapse">
+  			<ul class="nav navbar-nav navbar-right">
+  			  <li><a href="./index.html">Home</a></li>
+  			  <li class="dropdown">
+  				<a class="dropdown-toggle" data-toggle="dropdown" href="#">Staff
+  				<span class="caret"></span></a>
+  				<ul class="dropdown-menu">
+  				  <li><a href="./category/members.html">Members & Associates</a></li>
+  				  <li><a href="./category/alumni.html">Alumni</a></li>
+  				  <li><a href="./pages/phd_achievements.html">PhD Student Achievements</a></li>
+  				  <li><a href="./pages/join_The_Lab.html">Joining the lab</a></li>
+  				</ul>
+  			  </li>
+  			  <li><a href="./category/projects.html">Projects</a></li>
+  			  <li><a href="./publications.html">Publications</a></li>
+			  <li><a href="./category/software.html">Software</a></li>
+  			  <li><a href="./pages/services.html">Services</a></li>
+  			  <li><a href="./category/yearly-reports.html">Yearly Reports</a></li>
+          <li>
+            <a href="#modalSearch" data-toggle="modal" data-target="#modalSearch">
+              <span class="glyphicon glyphicon-search"></span> <span class="hidden-sm hidden-md hidden-lg">Search</span>
+            </a>
+          </li>
+  			</ul>
+      </div><!--/.nav-collapse -->
+    </div>
+  </nav>
 
-<p>In <a href="/category/yearly-reports.html">yearly reports</a>.</p>
+    <!-- Search Modal -->
+  <div id="modalSearch" class="modal fade" role="dialog">
+     <div class="modal-dialog">
 
-</footer><!-- /.post-info -->      
-    </div><!-- /.entry-content -->
+         <!-- Modal content-->
+         <div class="modal-content">
+             <div class="modal-header">
+                 <!-- <a type="button" class="close" data-dismiss="modal">&times;</a> -->
+                 <h4 class="modal-title">Search BALab</h4>
+             </div>
+             <div class="modal-body">
+               <!-- Replace the following with your own search script from https://www.google.com/cse. -->
+               <script>
+                 (function() {
+                   var cx = '005094385257090023838:r1endlwnp2e';
+                   var gcse = document.createElement('script');
+                   gcse.type = 'text/javascript';
+                   gcse.async = true;
+                   gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+                   var s = document.getElementsByTagName('script')[0];
+                   s.parentNode.insertBefore(gcse, s);
+                 })();
+               </script>
+               <gcse:search enableAutoComplete="true"></gcse:search>
+            </div>
+             <div class="modal-footer">
+                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+             </div>
+         </div>
 
-  </article>
-</section>
-        <section id="extras" class="body">
-                <div class="social">
-                        <h2>social</h2>
-                        <ul>
-                            <li><a href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">atom feed</a></li>
+     </div>
+  </div>
 
-                        </ul>
-                </div><!-- /.social -->
-        </section><!-- /#extras -->
+  <div class="container">
+    <!-- Show logo for printer -->
+    <p id="printlogo">
+      <img src="./theme/images/ba-logo2.png" height="200" width="200" class="img-responsive" alt="...">
+    </p>
 
-        <footer id="contentinfo" class="body">
-                <address id="about" class="vcard body">
-                Proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
-                </address><!-- /#about -->
 
-                <p>The theme is by <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
-        </footer><!-- /#contentinfo -->
+<!-- Template for members and alumni -->
+
+<!-- Template for projects -->
+
+<!-- Templete for yearly reports -->
+  <div class="panel panel-default">
+    <!-- Print year -->
+    <div class="panel-heading">
+      <h2>Yearly Report 2014</h2>
+    </div>
+  </div>
+  <div class="row">
+    <!-- Print Categories that exists-->
+    <div class="hidden-xs hidden-sm col-md-3 col-lg-3 col-xl-3" id="printmenu">
+      <nav id="myScrollspy" data-spy="affix" data-offset-top="50" style="position: fixed;">
+      <div class="panel panel-default" >
+        <div class="panel-heading">
+        Contents
+        </div>
+        <ul class="nav nav-pills nav-stacked">
+             <li><a href="#publications">New Publications</a></li>
+                <li><a href="#new_projects">New Projects</a></li>
+              <li><a href="#ongoing_projects">Ongoing Projects</a></li>
+                <li><a href="#com_projects">Completed Projects</a></li>
+                  <li><a href="#members">New Members</a></li>
+                  <li><a href="#Ongoing_PhDs">Ongoing PhDs</a></li>
+                  <li><a href="#PhDs">Completed PhDs</a></li>
+        </ul>
+      </div>
+      </nav>
+    </div>
+
+    <!-- Print Categories that exists (mobile view) -->
+    <div class="col-xs-12 col-sm-12 hidden-md hidden-lg hidden-xl" id="printmenu">
+      <nav>
+      <div class="panel panel-default" >
+        <div class="panel-heading">
+        Contents
+        </div>
+        <ul class="nav nav-pills nav-stacked">
+            <li><a href="#publications">New Publications</a></li>
+                <li><a href="#new_projects">New Projects</a></li>
+              <li><a href="#ongoing_projects">Ongoing Projects</a></li>
+                <li><a href="#com_projects">Completed Projects</a></li>
+                  <li><a href="#members">New Members</a></li>
+                  <li><a href="#Ongoing_PhDs">Ongoing PhDs</a></li>
+                  <li><a href="#PhDs">Completed PhDs</a></li>
+        </ul>
+      </div>
+      </nav>
+    </div>
+
+    <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-9" id="printurl">
+
+      <!-- Print pulications of this year, if exists -->
+         <div class="panel panel-default" id="px2">
+           <div class="panel-heading">
+               <h3 id="publications">New Publications</h3>
+           </div>
+           <div class="panel-body">
+                 <ul class="list-group">
+                   <ul>
+                   </ul>
+                 </ul>
+                   <h4 style="color:#203864;">Journal Articles</h4>
+                 <ul class="list-group">
+                   <ul>
+                       <p>
+                       <li>Diomidis Spinellis and Stephanos Androutsellis-Theotokis.
+Tools of the trade: a ten-year recap.
+<em>IEEE Software</em>, November/December 2014.
+                       </li>
+                       </p>
+                       <p>
+                       <li>Diomidis Spinellis and Stephanos Androutsellis-Theotokis.
+Software development tooling: information, opinion, guidelines, and tools.
+<em>IEEE Software</em>, 31(6):21–23, November/December 2014.
+<a href="http://www.computer.org/csdl/mags/so/2014/06/mso2014060021.pdf"><span class="glyphicon glyphicon-new-window"></span></a>                       </li>
+                       </p>
+                       <p>
+                       <li>Diomidis Spinellis.
+Service orchestration with <span class="bibtex-protected">R</span>undeck.
+<em>IEEE Software</em>, 31(4):16–18, July/August 2014.
+<a href="http://www.dmst.aueb.gr/dds/pubs/jrnl/2005-IEEESW-TotT/html/v31n4.html"><span class="glyphicon glyphicon-new-window"></span></a>                       </li>
+                       </p>
+                       <p>
+                       <li>Diomidis Spinellis.
+First, do no harm.
+<em>IEEE Software</em>, 31(5):12–14, September/October 2014.
+<a href="http://www.dmst.aueb.gr/dds/pubs/jrnl/2005-IEEESW-TotT/html/v31n5.html"><span class="glyphicon glyphicon-new-window"></span></a>                       </li>
+                       </p>
+                       <p>
+                       <li>Diomidis Spinellis.
+Developing in the cloud.
+<em>IEEE Software</em>, 31(2):41–43, March/April 2014.
+<a href="http://www.dmst.aueb.gr/dds/pubs/jrnl/2005-IEEESW-TotT/html/v31n2.html"><span class="glyphicon glyphicon-new-window"></span></a>                       </li>
+                       </p>
+                       <p>
+                       <li>Diomidis Spinellis.
+Bespoke infrastructures.
+<em>IEEE Software</em>, 31(1):23–25, January/February 2014.
+<a href="http://www.dmst.aueb.gr/dds/pubs/jrnl/2005-IEEESW-TotT/html/v31n1.html"><span class="glyphicon glyphicon-new-window"></span></a>                       </li>
+                       </p>
+                   </ul>
+                 </ul>
+                   <h4 style="color:#203864;">Book Chapters</h4>
+                 <ul class="list-group">
+                   <ul>
+                       <p>
+                       <li>Diomidis Spinellis.
+The information train.
+In Newton Lee, editor, <em>Digital <span class="bibtex-protected">Da Vinci</span>: Computers in the Arts and Sciences</em>, chapter&nbsp;7, pages 129–142.
+Springer, 2014.
+<a href="http://www.dmst.aueb.gr/dds/pubs/inbook/2014-DaVinci-Infotrain/html/Spi14k.htm"><span class="glyphicon glyphicon-new-window"></span></a>                       </li>
+                       </p>
+                       <p>
+                       <li>Diomidis Spinellis.
+Guerrilla tactics in public administration.
+In <em>From the University to Public Administration: A Return Trip</em>, pages 115–146.
+Papazisis, Athens, Greece, 2014.
+                       </li>
+                       </p>
+                   </ul>
+                 </ul>
+                   <h4 style="color:#203864;">Conference Publications</h4>
+                 <ul class="list-group">
+                   <ul>
+                       <p>
+                       <li>Konstantinos Stroggylos, Dimitris Mitropoulos, Zacharias Tzermias, Panagiotis Papadopoulos, Fotios Rafailidis, Diomidis Spinellis, Sotiris Ioannidis, and Panagiotis Katsaros.
+<span class="bibtex-protected">TRACER</span>: a platform for securing legacy code.
+In <em>TRUST '14: Proceedings of 7th International Conference on Trust &amp; Trustworthy Computing - Poster Presentation Track</em>, 218–219. Springer, June 2014.
+                       </li>
+                       </p>
+                       <p>
+                       <li>Konstantinos Stroggylos, Dimitris Mitropoulos, Zacharias Tzermias, Panagiotis Papadopoulos, Fotios Rafailidis, Diomidis Spinellis, Sotiris Ioannidis, and Panagiotis Katsaros.
+Securing legacy code with the <span class="bibtex-protected">TRACER</span> platform.
+In <em>PCI 2014: Proceedings of 18th Panhellenic Conference on Informatics</em>, 25:1&ndash;25:6. ACM, 2014.
+                       </li>
+                       </p>
+                       <p>
+                       <li>Diomidis Spinellis.
+Against the odds: managing the unmanagable in a time of crisis.
+In Matthias Jarke, John Mylopoulos, Christoph Quix, Colette Rolland, Yannis Manolopoulos, Haralambos Mouratidis, and Jennifer Horkoff, editors, <em>CAiSE 2014: Proceedings of the 26th International Conference on Advanced Information Systems Engineering</em>, 24–41. Springer Verlag, June 2014.
+Lecture Notes in Computer Science 8484.
+<a href="http://www.dmst.aueb.gr/dds/pubs/conf/2014-06-CAiSE-crisis-mgmt/html/Spi14c.html"><span class="glyphicon glyphicon-new-window"></span></a>                       </li>
+                       </p>
+                       <p>
+                       <li>Yannis Sotiropoulos and Damianos Chatziantoniou.
+Linkviews: an integration framework for relational and stream systems.
+In <em>Enabling Real-Time Business Intelligence - International Workshops, <span class="bibtex-protected">BIRTE</span> 2013, Riva del Garda, Italy, August 26, 2013, and <span class="bibtex-protected">BIRTE</span> 2014, Hangzhou, China, September 1, 2014, Revised Selected Papers</em>, 65–80. 2014.
+                       </li>
+                       </p>
+                       <p>
+                       <li>Dimitris Mitropoulos, Vassilios Karakoidas, Panos Louridas, Georgios Gousios, and Diomidis Spinellis.
+The bug catalog of the <span class="bibtex-protected">M</span>aven ecosystem.
+In <em>MSR '14: Proceedings of the 2014 International Working Conference on Mining Software Repositories</em>, 372–365. ACM, June 2014.
+                       </li>
+                       </p>
+                       <p>
+                       <li>Dimitris Mitropoulos, Georgios Gousios, Panagiotis Papadopoulos, Vassilios Karakoidas, Panos Louridas, and Diomidis Spinellis.
+The vulnerability dataset of a large software ecosystem.
+In <em>Proceedings of the 3rd International Workshop on Building Analysis Datasets and Gathering Experience Returns for Security (BADGERS 2014), colocated with the 19th European Symposium on Research in Computer Security (ESORICS 2014)</em>. IEEE Computer Society, September 2014.
+                       </li>
+                       </p>
+                       <p>
+                       <li>Maria Kechagia and Diomidis Spinellis.
+Undocumented and unchecked: exceptions that spell trouble.
+In <em>MSR '14: Proceedings of the 11th Working Conference on Mining Software Repositories</em>, 312–315. ACM, June 2014.
+<a href="http://doi.acm.org/10.1145/2597073.2597089"><span class="glyphicon glyphicon-new-window"></span></a>                       </li>
+                       </p>
+                       <p>
+                       <li>Maria Kechagia.
+Improvement of applications' stability through robust <span class="bibtex-protected">APIs</span>.
+In <em>Proceedings of the 29th ACM/IEEE International Conference on Automated Software Engineering</em>, ASE '14, 907–910. New York, NY, USA, 2014. ACM.
+Doctoral Symposium.
+<a href="http://doi.acm.org/10.1145/2642937.2653473"><span class="glyphicon glyphicon-new-window"></span></a>                       </li>
+                       </p>
+                       <p>
+                       <li>Marios Fragkoulis, Diomidis Spinellis, Panos Louridas, and Angelos Bilas.
+Relational access to unix kernel data structures.
+In <em>Proceedings of the Ninth European Conference on Computer Systems</em>, EuroSys '14, 12:1&ndash;12:14. New York, NY, USA, 2014. ACM.
+<a href="http://doi.acm.org/10.1145/2592798.2592802"><span class="glyphicon glyphicon-new-window"></span></a>                       </li>
+                       </p>
+                       <p>
+                       <li>Damianos Chatziantoniou and Florents Tselai.
+Introducing data connectivity in a big data web.
+In <em>Proceedings of the Third Workshop on Data analytics in the Cloud, DanaC 2014, June 22, 2014, Snowbird, Utah, USA, In conjunction with <span class="bibtex-protected">ACM</span> <span class="bibtex-protected">SIGMOD/PODS</span> Conference</em>, 7:1&ndash;7:4. 2014.
+                       </li>
+                       </p>
+                       <p>
+                       <li>Proceedings of 8th Mediterranean Conference on Information Systems (MCIS 2014)
+                       </li>
+                       </p>
+                   </ul>
+                 </ul>
+                 <ul class="list-group">
+                   <ul>
+                   </ul>
+                 </ul>
+                 <ul class="list-group">
+                   <ul>
+                   </ul>
+                 </ul>
+                   <h4 style="color:#203864;">Magazine Articles</h4>
+                 <ul class="list-group">
+                   <ul>
+                       <p>
+                       <li>Maria Kechagia.
+Why to get involved in the open source community?
+<em>XRDS</em>, 21(1):14–15, October 2014.
+                       </li>
+                       </p>
+                       <p>
+                       <li>Vassilios Karakoidas.
+On domain-specific languages usage (why dsls really matter).
+<em>XRDS: Crossroads, The ACM Magazine for Students</em>, 20(3):16–17, March 2014.
+                       </li>
+                       </p>
+                   </ul>
+                 </ul>
+                 <ul class="list-group">
+                   <ul>
+                   </ul>
+                 </ul>
+           </div>
+         </div>
+
+      <!-- Print projects of this year, if exists -->
+           <div class="panel panel-default" id="px2">
+             <div class="panel-heading">
+                <h3>Projects</h3>
+             </div>
+             <div class="panel-body">
+                  <h4 id="new_projects" style="color:#203864;">New Projects</h4>
+               <ul class="list-group">
+                 <ul>
+                      <p>
+                       <li>Action II - Taming Code Injection Attacks Across Multiple Domains <a href="./action-ii.html"><span class="glyphicon glyphicon-new-window"></span></a></li>
+                      </p>
+                 </ul>
+               </ul>
+                  <h4 id="ongoing_projects" style="color:#203864;">Ongoing Projects</h4>
+               <ul class="list-group">
+                 <ul>
+                      <p>
+                       <li>STEREO - Software research platform on software quality and engineering <a href="./stereo.html"><span class="glyphicon glyphicon-new-window"></span></a></li>
+                      </p>
+                 </ul>
+               </ul>
+                  <h4 id="com_projects" style="color:#203864;">Completed Projects</h4>
+               <ul class="list-group">
+                 <ul>
+                      <p>
+                       <li>TRACER - identifying software vulnerabilities and securing legacy systems <a href="./tracer.html"><span class="glyphicon glyphicon-new-window"></span></a></li>
+                      </p>
+                 </ul>
+               </ul>
+             </div>
+          </div>
+
+      <!-- Print members of this year, if exists -->
+           <div class="panel panel-default" id="px2">
+             <div class="panel-heading">
+                 <h3 id="members">New Members</h3>
+             </div>
+             <ul class="list-group">
+               <ul>
+                      <p>
+                       <li>
+                         Christos Oikonomou                          <a href="./christos-oikonomou.html"><span class="glyphicon glyphicon-new-window"></span></a>
+                       </li>
+                      </p>
+              </ul>
+            </ul>
+          </div>
+
+      <!-- Print ongoing PhDs of this year, if exists -->
+    				 <div class="panel panel-default" id="px2">
+      				   <div class="panel-heading">
+      					   <h3 id="Ongoing_PhDs">Ongoing PhDs</h3>
+      				   </div>
+      				   <ul class="list-group">
+        					 <ul>
+          						  <p>
+          						   <li>
+            							 Marios Fragkoulis (PhD student)
+            							 <a href="./marios-fragkoulis.html"><span class="glyphicon glyphicon-new-window"></span></a>
+          						   </li>
+          						  </p>
+          						  <p>
+          						   <li>
+            							 Maria Kechagia (PhD student)
+            							 <a href="./maria-kechagia.html"><span class="glyphicon glyphicon-new-window"></span></a>
+          						   </li>
+          						  </p>
+          						  <p>
+          						   <li>
+            							 Konstantinos Stroggylos (PhD student)
+            							 <a href="./konstantinos-stroggylos.html"><span class="glyphicon glyphicon-new-window"></span></a>
+          						   </li>
+          						  </p>
+          						  <p>
+          						   <li>
+            							 Vassilios Karakoidas (PhD student)
+            							 <a href="./vassilios-karakoidas.html"><span class="glyphicon glyphicon-new-window"></span></a>
+          						   </li>
+          						  </p>
+        					</ul>
+      				  </ul>
+    				 </div>
+
+      <!-- Print completed PhDs of this year, if exists -->
+             <div class="panel panel-default" id="px2">
+               <div class="panel-heading">
+                   <h3 id="PhDs">Completed PhDs</h3>
+               </div>
+               <ul class="list-group">
+                 <ul>
+                      <p>
+                       <li>
+                         Dimitris Mitropoulos (PhD student)
+                         <a href="./dimitris-mitropoulos.html"><span class="glyphicon glyphicon-new-window"></span></a>
+                       </li>
+                      </p>
+                </ul>
+              </ul>
+             </div>
+
+    <!-- Note: Grandfathered work -->
+    <div class="panel panel-default">
+      <div class="panel-body">
+        <i class="text-muted">Note: Some of the above data refer to grandfathered work conducted by BALab's members at its progenitor laboratory, <a href="https://istlab.dmst.aueb.gr">ISTLab</a>.</i>
+      </div>
+    </div>
+  </div>
+</div>
+  </div>
+
+  <!-- Fixed footer -->
+  <footer>
+    <div class="container">
+      <p class="text-muted">
+        <span><a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons Licence" style="max-height: 31px; margin-left:20px" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a></span>
+        <span class="hidden-xs hidden-sm"> This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.</span>
+        <span class="hidden-md hidden-lg hidden-xl"> CC BY-SA 4.0 </a></span>
+        <span class="pull-right"><a href="./pages/contact.html" style="color: white">Contact</a></span>
+      </p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/9.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="bootstrap-3.3.7/assets/js/vendor/jquery.min.js"><\/script>')</script>
+  <!-- <script src="bootstrap-3.3.7/dist/js/bootstrap.min.js"></script> -->
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <script src="bootstrap-3.3.7/assets/js/ie10-viewport-bug-workaround.js"></script>
 
 </body>
 </html>

@@ -1,69 +1,500 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="greek">
 <head>
         <meta charset="utf-8" />
-        <title>2007</title>
-        <link rel="stylesheet" href="/theme/css/main.css" />
-        <link href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="A Pelican Blog Atom Feed" />
-
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>BALab yearly reports &mdash; 2007</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="./theme/css/main.css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<link rel="shortcut icon" type="image/x-icon" href="./theme/images/BA_Logo.png"/>
+		
         <!--[if IE]>
             <script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
         <![endif]-->
 </head>
 
-<body id="index" class="home">
-        <header id="banner" class="body">
-                <h1><a href="/">A Pelican Blog </a></h1>
-                <nav><ul>
-                    <li><a href="/pages/contact.html">contact</a></li>
-                    <li><a href="/pages/join_The_Lab.html">joining the lab</a></li>
-                    <li><a href="/pages/phd_achievements.html">phd achievements</a></li>
-                    <li><a href="/pages/services.html">services</a></li>
-                    <li><a href="/category/alumni.html">alumni</a></li>
-                    <li><a href="/category/members.html">members</a></li>
-                    <li><a href="/category/projects.html">projects</a></li>
-                    <li><a href="/category/software.html">software</a></li>
-                    <li class="active"><a href="/category/yearly-reports.html">yearly reports</a></li>
-                </ul></nav>
-        </header><!-- /#banner -->
-<section id="content" class="body">
-  <article>
-    <header>
-      <h1 class="entry-title">
-        <a href="/2007.html" rel="bookmark"
-           title="Permalink to 2007">2007</a></h1>
-    </header>
+<body  data-spy="scroll" data-target="#myScrollspy" data-offset="20">
 
-    <div class="entry-content">
-<footer class="post-info">
-        <abbr class="published" title="2007-10-25T00:00:00+00:00">
-                Published: Thu 25 October 2007
-        </abbr>
+  <!-- Fixed Navbar -->
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a href="./index.html"> <img src="./theme/images/ba-logo2.png"  width="120" height="50" class="d-inline-block align-top" alt=""> </a>
+      </div>
+      <div id="navbar" class="collapse navbar-collapse">
+  			<ul class="nav navbar-nav navbar-right">
+  			  <li><a href="./index.html">Home</a></li>
+  			  <li class="dropdown">
+  				<a class="dropdown-toggle" data-toggle="dropdown" href="#">Staff
+  				<span class="caret"></span></a>
+  				<ul class="dropdown-menu">
+  				  <li><a href="./category/members.html">Members & Associates</a></li>
+  				  <li><a href="./category/alumni.html">Alumni</a></li>
+  				  <li><a href="./pages/phd_achievements.html">PhD Student Achievements</a></li>
+  				  <li><a href="./pages/join_The_Lab.html">Joining the lab</a></li>
+  				</ul>
+  			  </li>
+  			  <li><a href="./category/projects.html">Projects</a></li>
+  			  <li><a href="./publications.html">Publications</a></li>
+			  <li><a href="./category/software.html">Software</a></li>
+  			  <li><a href="./pages/services.html">Services</a></li>
+  			  <li><a href="./category/yearly-reports.html">Yearly Reports</a></li>
+          <li>
+            <a href="#modalSearch" data-toggle="modal" data-target="#modalSearch">
+              <span class="glyphicon glyphicon-search"></span> <span class="hidden-sm hidden-md hidden-lg">Search</span>
+            </a>
+          </li>
+  			</ul>
+      </div><!--/.nav-collapse -->
+    </div>
+  </nav>
 
-<p>In <a href="/category/yearly-reports.html">yearly reports</a>.</p>
+    <!-- Search Modal -->
+  <div id="modalSearch" class="modal fade" role="dialog">
+     <div class="modal-dialog">
 
-</footer><!-- /.post-info -->      
-    </div><!-- /.entry-content -->
+         <!-- Modal content-->
+         <div class="modal-content">
+             <div class="modal-header">
+                 <!-- <a type="button" class="close" data-dismiss="modal">&times;</a> -->
+                 <h4 class="modal-title">Search BALab</h4>
+             </div>
+             <div class="modal-body">
+               <!-- Replace the following with your own search script from https://www.google.com/cse. -->
+               <script>
+                 (function() {
+                   var cx = '005094385257090023838:r1endlwnp2e';
+                   var gcse = document.createElement('script');
+                   gcse.type = 'text/javascript';
+                   gcse.async = true;
+                   gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+                   var s = document.getElementsByTagName('script')[0];
+                   s.parentNode.insertBefore(gcse, s);
+                 })();
+               </script>
+               <gcse:search enableAutoComplete="true"></gcse:search>
+            </div>
+             <div class="modal-footer">
+                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+             </div>
+         </div>
 
-  </article>
-</section>
-        <section id="extras" class="body">
-                <div class="social">
-                        <h2>social</h2>
-                        <ul>
-                            <li><a href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">atom feed</a></li>
+     </div>
+  </div>
 
-                        </ul>
-                </div><!-- /.social -->
-        </section><!-- /#extras -->
+  <div class="container">
+    <!-- Show logo for printer -->
+    <p id="printlogo">
+      <img src="./theme/images/ba-logo2.png" height="200" width="200" class="img-responsive" alt="...">
+    </p>
 
-        <footer id="contentinfo" class="body">
-                <address id="about" class="vcard body">
-                Proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
-                </address><!-- /#about -->
 
-                <p>The theme is by <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
-        </footer><!-- /#contentinfo -->
+<!-- Template for members and alumni -->
+
+<!-- Template for projects -->
+
+<!-- Templete for yearly reports -->
+  <div class="panel panel-default">
+    <!-- Print year -->
+    <div class="panel-heading">
+      <h2>Yearly Report 2007</h2>
+    </div>
+  </div>
+  <div class="row">
+    <!-- Print Categories that exists-->
+    <div class="hidden-xs hidden-sm col-md-3 col-lg-3 col-xl-3" id="printmenu">
+      <nav id="myScrollspy" data-spy="affix" data-offset-top="50" style="position: fixed;">
+      <div class="panel panel-default" >
+        <div class="panel-heading">
+        Contents
+        </div>
+        <ul class="nav nav-pills nav-stacked">
+             <li><a href="#publications">New Publications</a></li>
+                <li><a href="#new_projects">New Projects</a></li>
+              <li><a href="#ongoing_projects">Ongoing Projects</a></li>
+                <li><a href="#com_projects">Completed Projects</a></li>
+                  <li><a href="#members">New Members</a></li>
+                  <li><a href="#Ongoing_PhDs">Ongoing PhDs</a></li>
+                  <li><a href="#PhDs">Completed PhDs</a></li>
+        </ul>
+      </div>
+      </nav>
+    </div>
+
+    <!-- Print Categories that exists (mobile view) -->
+    <div class="col-xs-12 col-sm-12 hidden-md hidden-lg hidden-xl" id="printmenu">
+      <nav>
+      <div class="panel panel-default" >
+        <div class="panel-heading">
+        Contents
+        </div>
+        <ul class="nav nav-pills nav-stacked">
+            <li><a href="#publications">New Publications</a></li>
+                <li><a href="#new_projects">New Projects</a></li>
+              <li><a href="#ongoing_projects">Ongoing Projects</a></li>
+                <li><a href="#com_projects">Completed Projects</a></li>
+                  <li><a href="#members">New Members</a></li>
+                  <li><a href="#Ongoing_PhDs">Ongoing PhDs</a></li>
+                  <li><a href="#PhDs">Completed PhDs</a></li>
+        </ul>
+      </div>
+      </nav>
+    </div>
+
+    <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-9" id="printurl">
+
+      <!-- Print pulications of this year, if exists -->
+         <div class="panel panel-default" id="px2">
+           <div class="panel-heading">
+               <h3 id="publications">New Publications</h3>
+           </div>
+           <div class="panel-body">
+                 <ul class="list-group">
+                   <ul>
+                   </ul>
+                 </ul>
+                   <h4 style="color:#203864;">Journal Articles</h4>
+                 <ul class="list-group">
+                   <ul>
+                       <p>
+                       <li>Vasileios Vlachos and Diomidis Spinellis.
+A <span class="bibtex-protected">PRoactive</span> malware identification system based on the computer hygiene principles.
+<em>Information Management and Computer Security</em>, 15(4):295–312, 2007.
+<a href="http://www.dmst.aueb.gr/dds/pubs/jrnl/2007-IMCS-Promise/html/VS07.html"><span class="glyphicon glyphicon-new-window"></span></a>                       </li>
+                       </p>
+                       <p>
+                       <li>Diomidis Spinellis, Panagiotis Zaharias, and Adam Vrechopoulos.
+Coping with plagiarism and grading load: randomized programming assignments and reflective grading.
+<em>Computer Applications in Engineering Education</em>, 15(2):113–123, 2007.
+<a href="http://www.dmst.aueb.gr/dds/pubs/jrnl/2007-CAEE-jarpeb/html/SZV07.htm"><span class="glyphicon glyphicon-new-window"></span></a>                       </li>
+                       </p>
+                       <p>
+                       <li>Diomidis Spinellis and Panagiotis Louridas.
+A framework for the static verification of <span class="bibtex-protected">API</span> calls.
+<em>Journal of Systems and Software</em>, 80(7):1156–1168, July 2007.
+<a href="http://www.dmst.aueb.gr/dds/pubs/jrnl/2007-JSS-api-verify/html/SL07b.html"><span class="glyphicon glyphicon-new-window"></span></a>                       </li>
+                       </p>
+                       <p>
+                       <li>Diomidis Spinellis.
+The tools we use.
+<em>IEEE Software</em>, 24(4):20–21, July/August 2007.
+<a href="http://www.dmst.aueb.gr/dds/pubs/jrnl/2005-IEEESW-TotT/html/v24n4.html"><span class="glyphicon glyphicon-new-window"></span></a>                       </li>
+                       </p>
+                       <p>
+                       <li>Diomidis Spinellis.
+Silver bullets and other mysteries.
+<em>IEEE Software</em>, 24(3):22–23, May/June 2007.
+<a href="http://www.dmst.aueb.gr/dds/pubs/jrnl/2005-IEEESW-TotT/html/v24n3.html"><span class="glyphicon glyphicon-new-window"></span></a>                       </li>
+                       </p>
+                       <p>
+                       <li>Diomidis Spinellis.
+On paper.
+<em>IEEE Software</em>, 24(6):24–25, November/December 2007.
+<a href="http://www.dmst.aueb.gr/dds/pubs/jrnl/2005-IEEESW-TotT/html/v24n6.html"><span class="glyphicon glyphicon-new-window"></span></a>                       </li>
+                       </p>
+                       <p>
+                       <li>Diomidis Spinellis.
+I spy.
+<em>IEEE Software</em>, 24(2):16–17, March/April 2007.
+<a href="http://www.dmst.aueb.gr/dds/pubs/jrnl/2005-IEEESW-TotT/html/v24n2.html"><span class="glyphicon glyphicon-new-window"></span></a>                       </li>
+                       </p>
+                       <p>
+                       <li>Diomidis Spinellis.
+Cracking software reuse.
+<em>IEEE Software</em>, 24(1):12–13, January/February 2007.
+<a href="http://www.dmst.aueb.gr/dds/pubs/jrnl/2005-IEEESW-TotT/html/v24n1.html"><span class="glyphicon glyphicon-new-window"></span></a>                       </li>
+                       </p>
+                       <p>
+                       <li>Diomidis Spinellis.
+Abstraction and variation.
+<em>IEEE Software</em>, 24(5):24–25, September/October 2007.
+<a href="http://www.dmst.aueb.gr/dds/pubs/jrnl/2005-IEEESW-TotT/html/v24n5.html"><span class="glyphicon glyphicon-new-window"></span></a>                       </li>
+                       </p>
+                       <p>
+                       <li>Vassilis Prevelakis and Diomidis Spinellis.
+The <span class="bibtex-protected">A</span>thens affair.
+<em>IEEE Spectrum</em>, 44(7):26–33, July 2007.
+<a href="http://www.dmst.aueb.gr/dds/pubs/jrnl/2007-Spectrum-AA/html/PS07.html"><span class="glyphicon glyphicon-new-window"></span></a>                       </li>
+                       </p>
+                       <p>
+                       <li>Panagiotis Louridas.
+Declarative <span class="bibtex-protected">GUI</span> programming in <span class="bibtex-protected">Microsoft</span> <span class="bibtex-protected">Windows</span>.
+<em>IEEE Software</em>, 24(4):16–19, July/August 2007.
+                       </li>
+                       </p>
+                       <p>
+                       <li>Dimitrios Lekkas and Diomidis Spinellis.
+Implementing regular cash with blind fixed-value electronic coins.
+<em>Computer Standards &amp; Interfaces</em>, 29(3):277–288, March 2007.
+<a href="http://www.dmst.aueb.gr/dds/pubs/jrnl/2006-CSI-epay/html/LS07.html"><span class="glyphicon glyphicon-new-window"></span></a>                       </li>
+                       </p>
+                       <p>
+                       <li>Konstantinos Chorianopoulos and Diomidis Spinellis.
+Coping with <span class="bibtex-protected">TiVo</span>: opportunities of the networked digital video recorder.
+<em>Telematics and Informatics</em>, 24(1):48–58, February 2007.
+<a href="http://www.dmst.aueb.gr/dds/pubs/jrnl/2006-TelInf-CopingWithTivo/html/CS06b.htm"><span class="glyphicon glyphicon-new-window"></span></a>                       </li>
+                       </p>
+                       <p>
+                       <li>Damianos Chatziantoniou and Kenneth&nbsp;A. Ross.
+Partitioned optimization of complex queries.
+<em>Inf. Syst.</em>, 32(2):248–282, 2007.
+                       </li>
+                       </p>
+                       <p>
+                       <li>Damianos Chatziantoniou.
+Using grouping variables to express complex decision support queries.
+<em>Data Knowl. Eng.</em>, 61(1):114–136, 2007.
+                       </li>
+                       </p>
+                   </ul>
+                 </ul>
+                   <h4 style="color:#203864;">Book Chapters</h4>
+                 <ul class="list-group">
+                   <ul>
+                       <p>
+                       <li>Diomidis Spinellis.
+Foreword.
+In Sulayman&nbsp;K. Sowe, Ioannis&nbsp;G. Stamelos, and Ioannis Samoladas, editors, <em>Emerging Free and Open Source Software Practices</em>, pages vi–vii.
+IGI Publishing, Hershey, PA, 2007.
+<a href="http://www.dmst.aueb.gr/dds/pubs/inbook/2007-OSS-Practices/html/Spi07h.html"><span class="glyphicon glyphicon-new-window"></span></a>                       </li>
+                       </p>
+                       <p>
+                       <li>Diomidis Spinellis.
+Another level of indirection.
+In Andy Oram and Greg Wilson, editors, <em>Beautiful Code: Leading Programmers Explain How They Think</em>, chapter&nbsp;17, pages 279–291.
+O'Reilly and Associates, Sebastopol, CA, 2007.
+<a href="http://www.oreilly.com/catalog/9780596510046/"><span class="glyphicon glyphicon-new-window"></span></a>                       </li>
+                       </p>
+                   </ul>
+                 </ul>
+                   <h4 style="color:#203864;">Conference Publications</h4>
+                 <ul class="list-group">
+                   <ul>
+                       <p>
+                       <li>Vasileios Vlachos, Eirini Kalliamvakou, and Diomidis Spinellis.
+Simulating bandwidth-limited worms: one graph to rule them all?
+In Theodore&nbsp;S. Papatheodorou, Dimitris&nbsp;N. Christodoulakis, and Nikitas&nbsp;N. Karanikolas, editors, <em>Current Trends in Informatics: 11th Panhellenic Conference on Informatics, <span class="bibtex-protected">PCI</span> 2007</em>, volume&nbsp;B, 151–162. Athens, May 2007. New Technologies Publications.
+<a href="http://www.dmst.aueb.gr/dds/pubs/conf/2007-PCI-Network/html/VKS07.htm"><span class="glyphicon glyphicon-new-window"></span></a>                       </li>
+                       </p>
+                       <p>
+                       <li>Konstantinos Stroggylos and Diomidis Spinellis.
+Refactoring: does it improve software quality?
+In <em>Proceedings of the 5th Workshop on Software Quality (WoSQ '07), colocated with the 29th International Conference on Software Engineering (ICSE '07)</em>. May 2007.
+<a href="http://www.dmst.aueb.gr/dds/pubs/conf/2007-WoSQ-Refactor/html/SS07.html"><span class="glyphicon glyphicon-new-window"></span></a>                       </li>
+                       </p>
+                       <p>
+                       <li>Dimitris Mitropoulos and Diomidis Spinellis.
+Countering <span class="bibtex-protected">SQL</span> injection attacks with a database driver.
+In Theodore&nbsp;S. Papatheodorou, Dimitris&nbsp;N. Christodoulakis, and Nikitas&nbsp;N. Karanikolas, editors, <em>Current Trends in Informatics: 11th Panhellenic Conference on Informatics, <span class="bibtex-protected">PCI</span> 2007</em>, volume&nbsp;B, 105–115. Athens, May 2007. New Technologies Publications.
+<a href="http://www.dmst.aueb.gr/dds/pubs/conf/2007-PCI-SQLIA/html/MS07.htm"><span class="glyphicon glyphicon-new-window"></span></a>                       </li>
+                       </p>
+                       <p>
+                       <li>Georgios Gousios, Vassilios Karakoidas, Konstantinos Stroggylos, Panagiotis Louridas, Vasileios Vlachos, and Diomidis Spinellis.
+Software quality assessment of open source software.
+In <em>Proceedings of the 11th Panhellenic Conference on Informatics</em>. May 2007.
+<a href="http://istlab.dmst.aueb.gr/\~george/pubs/2007-PCI-GKSLVS/paper.pdf"><span class="glyphicon glyphicon-new-window"></span></a>                       </li>
+                       </p>
+                       <p>
+                       <li>Georgios Gousios.
+The <span class="bibtex-protected">J</span>ikes<span class="bibtex-protected">X</span>en <span class="bibtex-protected">J</span>ava server platform.
+In <em>Companion to the 22nd ACM SIGPLAN conference on Object-oriented programming systems, languages, and applications (OOPSLA)</em>. Oct 21-25 2007.
+<a href="http://istlab.dmst.aueb.gr/\~george/pubs/2007-OOPSLA-G/paper.pdf"><span class="glyphicon glyphicon-new-window"></span></a>                       </li>
+                       </p>
+                       <p>
+                       <li>Damianos Chatziantoniou and Yannis Sotiropoulos.
+Stream variables: <span class="bibtex-protected">A</span> quick but not dirty <span class="bibtex-protected">SQL</span> extension for continuous queries.
+In <em>Proceedings of the 23rd International Conference on Data Engineering Workshops, <span class="bibtex-protected">ICDE</span> 2007, 15-20 April 2007, Istanbul, Turkey</em>, 19–28. 2007.
+                       </li>
+                       </p>
+                       <p>
+                       <li>Jeff&nbsp;W. Boote, Andreas Hanemann, Loukik Kudarimoti, Panagiotis Louridas&nbsp;Lu<span class="bibtex-protected">í</span>s Marta, Michalis Michael, Nicolas Simar, and Ilias Tsompanidis.
+Quality assurance in <span class="bibtex-protected">perfSONAR</span> release management.
+In <em><span class="bibtex-protected">QUATIC</span> 2007: Proceedings of the 6th International Conference on the Quality of Information and Communications Technology</em>, 131–142. IEEE, September 2007.
+                       </li>
+                       </p>
+                       <p>
+                       <li>Stephanos Androutsellis-Theotokis and Diomidis Spinellis.
+Ptrim: <span class="bibtex-protected">A</span> <span class="bibtex-protected">M</span>arket-<span class="bibtex-protected">B</span>ased <span class="bibtex-protected">A</span>pproach to <span class="bibtex-protected">M</span>anaging the <span class="bibtex-protected">R</span>isk of <span class="bibtex-protected">P</span>eer-<span class="bibtex-protected">T</span>o-<span class="bibtex-protected">P</span>eer.
+In <em>Proceedings of the Fifth International Workshop on Databases, Information Systems and Peer-to-Peer Computing (DBISP2P 2007), in conjunction with VLDB2007, Springer Lecture Notes in Computer Science</em>. September 2007.
+                       </li>
+                       </p>
+                   </ul>
+                 </ul>
+                 <ul class="list-group">
+                   <ul>
+                   </ul>
+                 </ul>
+                 <ul class="list-group">
+                   <ul>
+                   </ul>
+                 </ul>
+                 <ul class="list-group">
+                   <ul>
+                   </ul>
+                 </ul>
+                 <ul class="list-group">
+                   <ul>
+                   </ul>
+                 </ul>
+           </div>
+         </div>
+
+      <!-- Print projects of this year, if exists -->
+           <div class="panel panel-default" id="px2">
+             <div class="panel-heading">
+                <h3>Projects</h3>
+             </div>
+             <div class="panel-body">
+                  <h4 id="new_projects" style="color:#203864;">New Projects</h4>
+               <ul class="list-group">
+                 <ul>
+                      <p>
+                       <li>SOPRANO - Service-oriented Programmable Smart Environments for Older Europeans <a href="./soprano.html"><span class="glyphicon glyphicon-new-window"></span></a></li>
+                      </p>
+                 </ul>
+               </ul>
+                  <h4 id="ongoing_projects" style="color:#203864;">Ongoing Projects</h4>
+               <ul class="list-group">
+                 <ul>
+                      <p>
+                       <li>S-OMA SMART CARDS - Security in Open Multi-Application SMART CARDS <a href="./s-oma-smart-cards.html"><span class="glyphicon glyphicon-new-window"></span></a></li>
+                      </p>
+                      <p>
+                       <li>SQO-OSS - Source Quality Observatory for Open Source Software <a href="./sqo-oss.html"><span class="glyphicon glyphicon-new-window"></span></a></li>
+                      </p>
+                      <p>
+                       <li>PENED - Designing a Peer-to-Peer e-Business Transaction Processing System <a href="./pened.html"><span class="glyphicon glyphicon-new-window"></span></a></li>
+                      </p>
+                 </ul>
+               </ul>
+                  <h4 id="com_projects" style="color:#203864;">Completed Projects</h4>
+               <ul class="list-group">
+                 <ul>
+                      <p>
+                       <li>eBusinessForum - Working Group IA4 - Greek Computer Emergency Response Team (GR-CERT) <a href="./ebusinessforum-working-group-ia4.html"><span class="glyphicon glyphicon-new-window"></span></a></li>
+                      </p>
+                      <p>
+                       <li>Iraklitos - Security Applications for Peer-to-Peer Networks <a href="./iraklitos.html"><span class="glyphicon glyphicon-new-window"></span></a></li>
+                      </p>
+                 </ul>
+               </ul>
+             </div>
+          </div>
+
+      <!-- Print members of this year, if exists -->
+           <div class="panel panel-default" id="px2">
+             <div class="panel-heading">
+                 <h3 id="members">New Members</h3>
+             </div>
+             <ul class="list-group">
+               <ul>
+                      <p>
+                       <li>
+                         Dimitris Mitropoulos (PhD student)                         <a href="./dimitris-mitropoulos.html"><span class="glyphicon glyphicon-new-window"></span></a>
+                       </li>
+                      </p>
+                      <p>
+                       <li>
+                         Vasiliki Efstathiou (PhD student)                         <a href="./vasiliki-efstathiou.html"><span class="glyphicon glyphicon-new-window"></span></a>
+                       </li>
+                      </p>
+              </ul>
+            </ul>
+          </div>
+
+      <!-- Print ongoing PhDs of this year, if exists -->
+    				 <div class="panel panel-default" id="px2">
+      				   <div class="panel-heading">
+      					   <h3 id="Ongoing_PhDs">Ongoing PhDs</h3>
+      				   </div>
+      				   <ul class="list-group">
+        					 <ul>
+          						  <p>
+          						   <li>
+            							 Konstantinos Stroggylos (PhD student)
+            							 <a href="./konstantinos-stroggylos.html"><span class="glyphicon glyphicon-new-window"></span></a>
+          						   </li>
+          						  </p>
+          						  <p>
+          						   <li>
+            							 Georgios Gousios (PhD student)
+            							 <a href="./georgios-gousios.html"><span class="glyphicon glyphicon-new-window"></span></a>
+          						   </li>
+          						  </p>
+          						  <p>
+          						   <li>
+            							 Stefanos Androutsellis-Theotokis (PhD student)
+            							 <a href="./stefanos-androutsellis-theotokis.html"><span class="glyphicon glyphicon-new-window"></span></a>
+          						   </li>
+          						  </p>
+          						  <p>
+          						   <li>
+            							 Vassilios Karakoidas (PhD student)
+            							 <a href="./vassilios-karakoidas.html"><span class="glyphicon glyphicon-new-window"></span></a>
+          						   </li>
+          						  </p>
+        					</ul>
+      				  </ul>
+    				 </div>
+
+      <!-- Print completed PhDs of this year, if exists -->
+             <div class="panel panel-default" id="px2">
+               <div class="panel-heading">
+                   <h3 id="PhDs">Completed PhDs</h3>
+               </div>
+               <ul class="list-group">
+                 <ul>
+                      <p>
+                       <li>
+                         Vasileios Vlachos (PhD student)
+                         <a href="./vasileios-vlachos.html"><span class="glyphicon glyphicon-new-window"></span></a>
+                       </li>
+                      </p>
+                </ul>
+              </ul>
+             </div>
+
+    <!-- Note: Grandfathered work -->
+    <div class="panel panel-default">
+      <div class="panel-body">
+        <i class="text-muted">Note: Some of the above data refer to grandfathered work conducted by BALab's members at its progenitor laboratory, <a href="https://istlab.dmst.aueb.gr">ISTLab</a>.</i>
+      </div>
+    </div>
+  </div>
+</div>
+  </div>
+
+  <!-- Fixed footer -->
+  <footer>
+    <div class="container">
+      <p class="text-muted">
+        <span><a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons Licence" style="max-height: 31px; margin-left:20px" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a></span>
+        <span class="hidden-xs hidden-sm"> This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.</span>
+        <span class="hidden-md hidden-lg hidden-xl"> CC BY-SA 4.0 </a></span>
+        <span class="pull-right"><a href="./pages/contact.html" style="color: white">Contact</a></span>
+      </p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/9.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="bootstrap-3.3.7/assets/js/vendor/jquery.min.js"><\/script>')</script>
+  <!-- <script src="bootstrap-3.3.7/dist/js/bootstrap.min.js"></script> -->
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <script src="bootstrap-3.3.7/assets/js/ie10-viewport-bug-workaround.js"></script>
 
 </body>
 </html>

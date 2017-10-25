@@ -1,69 +1,398 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="greek">
 <head>
         <meta charset="utf-8" />
-        <title>2010</title>
-        <link rel="stylesheet" href="/theme/css/main.css" />
-        <link href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="A Pelican Blog Atom Feed" />
-
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>BALab yearly reports &mdash; 2010</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="./theme/css/main.css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<link rel="shortcut icon" type="image/x-icon" href="./theme/images/BA_Logo.png"/>
+		
         <!--[if IE]>
             <script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
         <![endif]-->
 </head>
 
-<body id="index" class="home">
-        <header id="banner" class="body">
-                <h1><a href="/">A Pelican Blog </a></h1>
-                <nav><ul>
-                    <li><a href="/pages/contact.html">contact</a></li>
-                    <li><a href="/pages/join_The_Lab.html">joining the lab</a></li>
-                    <li><a href="/pages/phd_achievements.html">phd achievements</a></li>
-                    <li><a href="/pages/services.html">services</a></li>
-                    <li><a href="/category/alumni.html">alumni</a></li>
-                    <li><a href="/category/members.html">members</a></li>
-                    <li><a href="/category/projects.html">projects</a></li>
-                    <li><a href="/category/software.html">software</a></li>
-                    <li class="active"><a href="/category/yearly-reports.html">yearly reports</a></li>
-                </ul></nav>
-        </header><!-- /#banner -->
-<section id="content" class="body">
-  <article>
-    <header>
-      <h1 class="entry-title">
-        <a href="/2010.html" rel="bookmark"
-           title="Permalink to 2010">2010</a></h1>
-    </header>
+<body  data-spy="scroll" data-target="#myScrollspy" data-offset="20">
 
-    <div class="entry-content">
-<footer class="post-info">
-        <abbr class="published" title="2010-10-25T00:00:00+00:00">
-                Published: Mon 25 October 2010
-        </abbr>
+  <!-- Fixed Navbar -->
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a href="./index.html"> <img src="./theme/images/ba-logo2.png"  width="120" height="50" class="d-inline-block align-top" alt=""> </a>
+      </div>
+      <div id="navbar" class="collapse navbar-collapse">
+  			<ul class="nav navbar-nav navbar-right">
+  			  <li><a href="./index.html">Home</a></li>
+  			  <li class="dropdown">
+  				<a class="dropdown-toggle" data-toggle="dropdown" href="#">Staff
+  				<span class="caret"></span></a>
+  				<ul class="dropdown-menu">
+  				  <li><a href="./category/members.html">Members & Associates</a></li>
+  				  <li><a href="./category/alumni.html">Alumni</a></li>
+  				  <li><a href="./pages/phd_achievements.html">PhD Student Achievements</a></li>
+  				  <li><a href="./pages/join_The_Lab.html">Joining the lab</a></li>
+  				</ul>
+  			  </li>
+  			  <li><a href="./category/projects.html">Projects</a></li>
+  			  <li><a href="./publications.html">Publications</a></li>
+			  <li><a href="./category/software.html">Software</a></li>
+  			  <li><a href="./pages/services.html">Services</a></li>
+  			  <li><a href="./category/yearly-reports.html">Yearly Reports</a></li>
+          <li>
+            <a href="#modalSearch" data-toggle="modal" data-target="#modalSearch">
+              <span class="glyphicon glyphicon-search"></span> <span class="hidden-sm hidden-md hidden-lg">Search</span>
+            </a>
+          </li>
+  			</ul>
+      </div><!--/.nav-collapse -->
+    </div>
+  </nav>
 
-<p>In <a href="/category/yearly-reports.html">yearly reports</a>.</p>
+    <!-- Search Modal -->
+  <div id="modalSearch" class="modal fade" role="dialog">
+     <div class="modal-dialog">
 
-</footer><!-- /.post-info -->      
-    </div><!-- /.entry-content -->
+         <!-- Modal content-->
+         <div class="modal-content">
+             <div class="modal-header">
+                 <!-- <a type="button" class="close" data-dismiss="modal">&times;</a> -->
+                 <h4 class="modal-title">Search BALab</h4>
+             </div>
+             <div class="modal-body">
+               <!-- Replace the following with your own search script from https://www.google.com/cse. -->
+               <script>
+                 (function() {
+                   var cx = '005094385257090023838:r1endlwnp2e';
+                   var gcse = document.createElement('script');
+                   gcse.type = 'text/javascript';
+                   gcse.async = true;
+                   gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+                   var s = document.getElementsByTagName('script')[0];
+                   s.parentNode.insertBefore(gcse, s);
+                 })();
+               </script>
+               <gcse:search enableAutoComplete="true"></gcse:search>
+            </div>
+             <div class="modal-footer">
+                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+             </div>
+         </div>
 
-  </article>
-</section>
-        <section id="extras" class="body">
-                <div class="social">
-                        <h2>social</h2>
-                        <ul>
-                            <li><a href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">atom feed</a></li>
+     </div>
+  </div>
 
-                        </ul>
-                </div><!-- /.social -->
-        </section><!-- /#extras -->
+  <div class="container">
+    <!-- Show logo for printer -->
+    <p id="printlogo">
+      <img src="./theme/images/ba-logo2.png" height="200" width="200" class="img-responsive" alt="...">
+    </p>
 
-        <footer id="contentinfo" class="body">
-                <address id="about" class="vcard body">
-                Proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
-                </address><!-- /#about -->
 
-                <p>The theme is by <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
-        </footer><!-- /#contentinfo -->
+<!-- Template for members and alumni -->
+
+<!-- Template for projects -->
+
+<!-- Templete for yearly reports -->
+  <div class="panel panel-default">
+    <!-- Print year -->
+    <div class="panel-heading">
+      <h2>Yearly Report 2010</h2>
+    </div>
+  </div>
+  <div class="row">
+    <!-- Print Categories that exists-->
+    <div class="hidden-xs hidden-sm col-md-3 col-lg-3 col-xl-3" id="printmenu">
+      <nav id="myScrollspy" data-spy="affix" data-offset-top="50" style="position: fixed;">
+      <div class="panel panel-default" >
+        <div class="panel-heading">
+        Contents
+        </div>
+        <ul class="nav nav-pills nav-stacked">
+             <li><a href="#publications">New Publications</a></li>
+                <li><a href="#new_projects">New Projects</a></li>
+                <li><a href="#com_projects">Completed Projects</a></li>
+                  <li><a href="#Ongoing_PhDs">Ongoing PhDs</a></li>
+        </ul>
+      </div>
+      </nav>
+    </div>
+
+    <!-- Print Categories that exists (mobile view) -->
+    <div class="col-xs-12 col-sm-12 hidden-md hidden-lg hidden-xl" id="printmenu">
+      <nav>
+      <div class="panel panel-default" >
+        <div class="panel-heading">
+        Contents
+        </div>
+        <ul class="nav nav-pills nav-stacked">
+            <li><a href="#publications">New Publications</a></li>
+                <li><a href="#new_projects">New Projects</a></li>
+                <li><a href="#com_projects">Completed Projects</a></li>
+                  <li><a href="#Ongoing_PhDs">Ongoing PhDs</a></li>
+        </ul>
+      </div>
+      </nav>
+    </div>
+
+    <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-9" id="printurl">
+
+      <!-- Print pulications of this year, if exists -->
+         <div class="panel panel-default" id="px2">
+           <div class="panel-heading">
+               <h3 id="publications">New Publications</h3>
+           </div>
+           <div class="panel-body">
+                 <ul class="list-group">
+                   <ul>
+                   </ul>
+                 </ul>
+                   <h4 style="color:#203864;">Journal Articles</h4>
+                 <ul class="list-group">
+                   <ul>
+                       <p>
+                       <li>Diomidis Spinellis.
+<span class="bibtex-protected">UML</span> everywhere.
+<em>IEEE Software</em>, 27(5):90–91, September/October 2010.
+<a href="http://www.dmst.aueb.gr/dds/pubs/jrnl/2005-IEEESW-TotT/html/v27n5.html"><span class="glyphicon glyphicon-new-window"></span></a>                       </li>
+                       </p>
+                       <p>
+                       <li>Diomidis Spinellis.
+<span class="bibtex-protected">CScout</span>: a refactoring browser for <span class="bibtex-protected">C</span>.
+<em>Science of Computer Programming</em>, 75(4):216–231, April 2010.
+                       </li>
+                       </p>
+                       <p>
+                       <li>Diomidis Spinellis.
+Software tracks.
+<em>IEEE Software</em>, 27(2):10–11, March/April 2010.
+<a href="http://www.dmst.aueb.gr/dds/pubs/jrnl/2005-IEEESW-TotT/html/v27n2.html"><span class="glyphicon glyphicon-new-window"></span></a>                       </li>
+                       </p>
+                       <p>
+                       <li>Diomidis Spinellis.
+Farewell to disks.
+<em>IEEE Software</em>, 27(6):82–83, November/December 2010.
+<a href="http://www.dmst.aueb.gr/dds/pubs/jrnl/2005-IEEESW-TotT/html/v27n6.html"><span class="glyphicon glyphicon-new-window"></span></a>                       </li>
+                       </p>
+                       <p>
+                       <li>Diomidis Spinellis.
+Code documentation.
+<em>IEEE Software</em>, 27(4):18–19, July/August 2010.
+<a href="http://www.dmst.aueb.gr/dds/pubs/jrnl/2005-IEEESW-TotT/html/v27n4.html"><span class="glyphicon glyphicon-new-window"></span></a>                       </li>
+                       </p>
+                       <p>
+                       <li>Eleni Konidari and Panos Louridas.
+When students are not programmers.
+<em>ACM Inroads</em>, 1(1):55–60, March 2010.
+                       </li>
+                       </p>
+                       <p>
+                       <li>Stephanos Androutsellis-Theotokis, Diomidis Spinellis, Panos Louridas, and Kostas Stroggylos.
+A market-based approach to managing the risk of peer-to-peer transactions.
+<em>Computer Networks</em>, 54(5):675–688, April 2010.
+                       </li>
+                       </p>
+                       <p>
+                       <li>Stephanos Androutsellis-Theotokis, Diomidis Spinellis, Maria Kechagia, and Georgios Gousios.
+Open source software: a survey from 10,000 feet.
+<em>Foundations and Trends in Technology, Information and Operations Management</em>, 4(3–4):187–347, 2010.
+<a href="http://www.spinellis.gr/pubs/jrnl/2010-TOMS-OSS-Survey/html/ASKG10.html"><span class="glyphicon glyphicon-new-window"></span></a>                       </li>
+                       </p>
+                   </ul>
+                 </ul>
+                   <h4 style="color:#203864;">Book Chapters</h4>
+                 <ul class="list-group">
+                   <ul>
+                       <p>
+                       <li>Diomidis Spinellis.
+The <span class="bibtex-protected">U</span>nix tools are your friends.
+In Kevlin Henney, editor, <em>97 Things Every Programmer Should Know</em>, pages 176–177.
+O'Reilly, Sebastopol, CA, 2010.
+<a href="http://programmer.97things.oreilly.com/wiki/index.php/The_Unix_Tools_Are_Your_Friends"><span class="glyphicon glyphicon-new-window"></span></a>                       </li>
+                       </p>
+                       <p>
+                       <li>Diomidis Spinellis.
+Quality wars: open source versus proprietary software.
+In Andy Oram and Greg Wilson, editors, <em>Making Software: What Really Works, and Why We Believe It</em>, chapter&nbsp;15, pages 259–293.
+O'Reilly and Associates, Sebastopol, CA, 2010.
+<a href="http://my.safaribooksonline.com/9780596808310/dds"><span class="glyphicon glyphicon-new-window"></span></a>                       </li>
+                       </p>
+                       <p>
+                       <li>Diomidis Spinellis.
+Put everything under version control.
+In Kevlin Henney, editor, <em>97 Things Every Programmer Should Know</em>, pages 136–137.
+O'Reilly, Sebastopol, CA, 2010.
+<a href="http://programmer.97things.oreilly.com/wiki/index.php/Put_Everything_Under_Version_Control"><span class="glyphicon glyphicon-new-window"></span></a>                       </li>
+                       </p>
+                       <p>
+                       <li>Diomidis Spinellis.
+Large interconnected data belongs to a database.
+In Kevlin Henney, editor, <em>97 Things Every Programmer Should Know</em>, pages 96–97.
+O'Reilly, Sebastopol, CA, 2010.
+<a href="http://programmer.97things.oreilly.com/wiki/index.php/Large_Interconnected_Data_Belongs_to_a_Database"><span class="glyphicon glyphicon-new-window"></span></a>                       </li>
+                       </p>
+                   </ul>
+                 </ul>
+                   <h4 style="color:#203864;">Conference Publications</h4>
+                 <ul class="list-group">
+                   <ul>
+                       <p>
+                       <li>Konstantinos Kravvaritis, Dimitris Mitropoulos, and Diomidis Spinellis.
+Cyberdiversity: measures and initial results.
+In Costas Vassilakis and Nikolaos Tselikas, editors, <em>PCI 2010: Proceedings of 14th Panhellenic Conference on Informatics (PCI 2010)</em>, 135–140. IEEE Computer Society, September 2010.
+<a href="http://www.dmst.aueb.gr/dds/pubs/conf/2010-PCI-Cyberdiversity/html/KMS10.htm"><span class="glyphicon glyphicon-new-window"></span></a>                       </li>
+                       </p>
+                       <p>
+                       <li>Maria Kechagia, Diomidis Spinellis, and Stephanos Androutsellis-Theotokis.
+Open source licensing across package dependencies.
+In Costas Vassilakis and Nikolaos Tselikas, editors, <em>PCI 2010: Proceedings of 14th Panhelenic Conference on Informatics</em>, 27–32. Los Alamitos, CA, USA, September 2010. IEEE Computer Society.
+                       </li>
+                       </p>
+                       <p>
+                       <li>Marian Jureczko and Diomidis Spinellis.
+Using object-oriented design metrics to predict software defects.
+In <em>Models and Methodology of System Dependability. Proceedings of <span class="bibtex-protected">RELCOMEX</span> 2010: Fifth International Conference on Dependability of Computer Systems <span class="bibtex-protected">DepCoS</span></em>, Monographs of System Dependability, 69–81. Wroc<span class="bibtex-protected">ł</span>aw, Poland, 2010. Oficyna Wydawnicza Politechniki Wroc<span class="bibtex-protected">ł</span>awskiej.
+<a href="http://www.dmst.aueb.gr/dds/pubs/conf/2010-DepCoS-RELCOMEX-ckjm-defects/html/JS10.html"><span class="glyphicon glyphicon-new-window"></span></a>                       </li>
+                       </p>
+                       <p>
+                       <li>Vasiliki Efstathiou and Anthony Hunter.
+Jargue: an implemented argumentation system for classical propositional logic.
+In <em>Third International Conference on Computational Models of Argument</em>. 2010.
+                       </li>
+                       </p>
+                   </ul>
+                 </ul>
+                 <ul class="list-group">
+                   <ul>
+                   </ul>
+                 </ul>
+                 <ul class="list-group">
+                   <ul>
+                   </ul>
+                 </ul>
+                 <ul class="list-group">
+                   <ul>
+                   </ul>
+                 </ul>
+                 <ul class="list-group">
+                   <ul>
+                   </ul>
+                 </ul>
+           </div>
+         </div>
+
+      <!-- Print projects of this year, if exists -->
+           <div class="panel panel-default" id="px2">
+             <div class="panel-heading">
+                <h3>Projects</h3>
+             </div>
+             <div class="panel-body">
+                  <h4 id="new_projects" style="color:#203864;">New Projects</h4>
+               <ul class="list-group">
+                 <ul>
+                      <p>
+                       <li>Iraklitos II - Secure Software Development Technologies <a href="./iraklitos-ii.html"><span class="glyphicon glyphicon-new-window"></span></a></li>
+                      </p>
+                 </ul>
+               </ul>
+               <ul class="list-group">
+                 <ul>
+                 </ul>
+               </ul>
+                  <h4 id="com_projects" style="color:#203864;">Completed Projects</h4>
+               <ul class="list-group">
+                 <ul>
+                      <p>
+                       <li>PEVE (ΠΕΒΕ) - Funding Programme for Basic Research <a href="./peve-pebe.html"><span class="glyphicon glyphicon-new-window"></span></a></li>
+                      </p>
+                      <p>
+                       <li>SOPRANO - Service-oriented Programmable Smart Environments for Older Europeans <a href="./soprano.html"><span class="glyphicon glyphicon-new-window"></span></a></li>
+                      </p>
+                 </ul>
+               </ul>
+             </div>
+          </div>
+
+      <!-- Print members of this year, if exists -->
+
+      <!-- Print ongoing PhDs of this year, if exists -->
+    				 <div class="panel panel-default" id="px2">
+      				   <div class="panel-heading">
+      					   <h3 id="Ongoing_PhDs">Ongoing PhDs</h3>
+      				   </div>
+      				   <ul class="list-group">
+        					 <ul>
+          						  <p>
+          						   <li>
+            							 Dimitris Mitropoulos (PhD student)
+            							 <a href="./dimitris-mitropoulos.html"><span class="glyphicon glyphicon-new-window"></span></a>
+          						   </li>
+          						  </p>
+          						  <p>
+          						   <li>
+            							 Vasiliki Efstathiou (PhD student)
+            							 <a href="./vasiliki-efstathiou.html"><span class="glyphicon glyphicon-new-window"></span></a>
+          						   </li>
+          						  </p>
+          						  <p>
+          						   <li>
+            							 Konstantinos Stroggylos (PhD student)
+            							 <a href="./konstantinos-stroggylos.html"><span class="glyphicon glyphicon-new-window"></span></a>
+          						   </li>
+          						  </p>
+          						  <p>
+          						   <li>
+            							 Vassilios Karakoidas (PhD student)
+            							 <a href="./vassilios-karakoidas.html"><span class="glyphicon glyphicon-new-window"></span></a>
+          						   </li>
+          						  </p>
+        					</ul>
+      				  </ul>
+    				 </div>
+
+      <!-- Print completed PhDs of this year, if exists -->
+
+    <!-- Note: Grandfathered work -->
+    <div class="panel panel-default">
+      <div class="panel-body">
+        <i class="text-muted">Note: Some of the above data refer to grandfathered work conducted by BALab's members at its progenitor laboratory, <a href="https://istlab.dmst.aueb.gr">ISTLab</a>.</i>
+      </div>
+    </div>
+  </div>
+</div>
+  </div>
+
+  <!-- Fixed footer -->
+  <footer>
+    <div class="container">
+      <p class="text-muted">
+        <span><a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons Licence" style="max-height: 31px; margin-left:20px" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a></span>
+        <span class="hidden-xs hidden-sm"> This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.</span>
+        <span class="hidden-md hidden-lg hidden-xl"> CC BY-SA 4.0 </a></span>
+        <span class="pull-right"><a href="./pages/contact.html" style="color: white">Contact</a></span>
+      </p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/9.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="bootstrap-3.3.7/assets/js/vendor/jquery.min.js"><\/script>')</script>
+  <!-- <script src="bootstrap-3.3.7/dist/js/bootstrap.min.js"></script> -->
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <script src="bootstrap-3.3.7/assets/js/ie10-viewport-bug-workaround.js"></script>
 
 </body>
 </html>

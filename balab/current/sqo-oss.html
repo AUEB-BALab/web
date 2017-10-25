@@ -1,48 +1,141 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="greek">
 <head>
         <meta charset="utf-8" />
-        <title>SQO-OSS</title>
-        <link rel="stylesheet" href="/theme/css/main.css" />
-        <link href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="A Pelican Blog Atom Feed" />
-
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>BALab projects &mdash; SQO-OSS</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="./theme/css/main.css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<link rel="shortcut icon" type="image/x-icon" href="./theme/images/BA_Logo.png"/>
+		
         <!--[if IE]>
             <script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
         <![endif]-->
 </head>
 
-<body id="index" class="home">
-        <header id="banner" class="body">
-                <h1><a href="/">A Pelican Blog </a></h1>
-                <nav><ul>
-                    <li><a href="/pages/contact.html">contact</a></li>
-                    <li><a href="/pages/join_The_Lab.html">joining the lab</a></li>
-                    <li><a href="/pages/phd_achievements.html">phd achievements</a></li>
-                    <li><a href="/pages/services.html">services</a></li>
-                    <li><a href="/category/alumni.html">alumni</a></li>
-                    <li><a href="/category/members.html">members</a></li>
-                    <li class="active"><a href="/category/projects.html">projects</a></li>
-                    <li><a href="/category/software.html">software</a></li>
-                    <li><a href="/category/yearly-reports.html">yearly reports</a></li>
-                </ul></nav>
-        </header><!-- /#banner -->
-<section id="content" class="body">
-  <article>
-    <header>
-      <h1 class="entry-title">
-        <a href="/sqo-oss.html" rel="bookmark"
-           title="Permalink to SQO-OSS">SQO-OSS</a></h1>
-    </header>
+<body  data-spy="scroll" data-target="#myScrollspy" data-offset="20">
 
-    <div class="entry-content">
-<footer class="post-info">
-        <abbr class="published" title="2006-09-01T00:00:00+00:00">
-                Published: Fri 01 September 2006
-        </abbr>
+  <!-- Fixed Navbar -->
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a href="./index.html"> <img src="./theme/images/ba-logo2.png"  width="120" height="50" class="d-inline-block align-top" alt=""> </a>
+      </div>
+      <div id="navbar" class="collapse navbar-collapse">
+  			<ul class="nav navbar-nav navbar-right">
+  			  <li><a href="./index.html">Home</a></li>
+  			  <li class="dropdown">
+  				<a class="dropdown-toggle" data-toggle="dropdown" href="#">Staff
+  				<span class="caret"></span></a>
+  				<ul class="dropdown-menu">
+  				  <li><a href="./category/members.html">Members & Associates</a></li>
+  				  <li><a href="./category/alumni.html">Alumni</a></li>
+  				  <li><a href="./pages/phd_achievements.html">PhD Student Achievements</a></li>
+  				  <li><a href="./pages/join_The_Lab.html">Joining the lab</a></li>
+  				</ul>
+  			  </li>
+  			  <li><a href="./category/projects.html">Projects</a></li>
+  			  <li><a href="./publications.html">Publications</a></li>
+			  <li><a href="./category/software.html">Software</a></li>
+  			  <li><a href="./pages/services.html">Services</a></li>
+  			  <li><a href="./category/yearly-reports.html">Yearly Reports</a></li>
+          <li>
+            <a href="#modalSearch" data-toggle="modal" data-target="#modalSearch">
+              <span class="glyphicon glyphicon-search"></span> <span class="hidden-sm hidden-md hidden-lg">Search</span>
+            </a>
+          </li>
+  			</ul>
+      </div><!--/.nav-collapse -->
+    </div>
+  </nav>
 
-<p>In <a href="/category/projects.html">projects</a>.</p>
+    <!-- Search Modal -->
+  <div id="modalSearch" class="modal fade" role="dialog">
+     <div class="modal-dialog">
 
-</footer><!-- /.post-info -->      <p>What do we know about the quality of the software you are using?  A well-known conjecture 
+         <!-- Modal content-->
+         <div class="modal-content">
+             <div class="modal-header">
+                 <!-- <a type="button" class="close" data-dismiss="modal">&times;</a> -->
+                 <h4 class="modal-title">Search BALab</h4>
+             </div>
+             <div class="modal-body">
+               <!-- Replace the following with your own search script from https://www.google.com/cse. -->
+               <script>
+                 (function() {
+                   var cx = '005094385257090023838:r1endlwnp2e';
+                   var gcse = document.createElement('script');
+                   gcse.type = 'text/javascript';
+                   gcse.async = true;
+                   gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+                   var s = document.getElementsByTagName('script')[0];
+                   s.parentNode.insertBefore(gcse, s);
+                 })();
+               </script>
+               <gcse:search enableAutoComplete="true"></gcse:search>
+            </div>
+             <div class="modal-footer">
+                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+             </div>
+         </div>
+
+     </div>
+  </div>
+
+  <div class="container">
+    <!-- Show logo for printer -->
+    <p id="printlogo">
+      <img src="./theme/images/ba-logo2.png" height="200" width="200" class="img-responsive" alt="...">
+    </p>
+
+
+<!-- Template for members and alumni -->
+
+<!-- Template for projects -->
+  <div class="panel panel-default">
+    <!-- Print project's title -->
+    <div class="panel-heading">
+      <h2>SQO-OSS &mdash; Source Quality Observatory for Open Source Software</h2>
+    </div>
+    <!-- Print project's photo or default photo -->
+    <div class="panel-body">
+      <p>
+        <img src="./images/sqo-oss.png"  style = "width:200; height:200" />
+      </p>
+      <!-- Print project's Details & Scientific cordinators/Projects managers, if exists -->
+      <p>
+<b>Project Code:</b> IST-2005-33331 (International)</br><b>Funding programme:</b> FP6/IST</br><b>Funding Agency:</b> European Commission</br><b>Project type:</b> RTD</br><b>Web site:</b> <a href="http://www.sqo-oss.eu/">http://www.sqo-oss.eu/</a></br><b>Starting date:</b> 2006-09-01</br><b>Ending date:</b> 2008-10-31</br><b>AUEB budget:</b> 378,000</br><b>Total budget:</b> 1,638,800</br>
+          <hr>
+
+               <b>Project manager:</b> Georgios Gousios
+               <a href="./georgios-gousios.html"><span class="glyphicon glyphicon-new-window"></span></a>
+               </br>
+              <b>Scientific coordinator:</b> Diomidis Spinellis
+              <a href="./diomidis-spinellis.html"><span class="glyphicon glyphicon-new-window"></span></a>
+              </br>
+                <b>Contact:</b> Diomidis Spinellis
+                 <a href="./diomidis-spinellis.html"><span class="glyphicon glyphicon-new-window"></span></a>
+                </br>
+      </p>
+    </div>
+  </div>
+
+  <!-- Print project's Description, if exists -->
+    <div class="panel panel-default" id="px2">
+      <div class="panel-heading">
+        <h3>Description</h3>
+      </div>
+      <div class="panel-body">
+        <p> <p>What do we know about the quality of the software you are using?  A well-known conjecture 
 in software engineering is that external quality characteristics are correlated to internal quality 
 characteristics and thus the measurement of source code provides useful data for the 
 assessment of its quality. Uniquely, open source software allows us to examine the actual 
@@ -61,28 +154,226 @@ A methodology that will allow European SMEs to leverage the availability of qual
 Experience reports of how the tool’s application affected a large open source project</p>
 <p>The project leverages existing tools and will also create new ones in an effort to build an
 integrated quality assessment platform. The core will be released as open source software 
-under the BSD licence to stimulate business interest around it.</p>
-    </div><!-- /.entry-content -->
+under the BSD licence to stimulate business interest around it.</p> </p>
+      </div>
+    </div>
 
-  </article>
-</section>
-        <section id="extras" class="body">
-                <div class="social">
-                        <h2>social</h2>
-                        <ul>
-                            <li><a href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">atom feed</a></li>
+  <!-- Print project's Partners, if exist (max. number 10)-->
+    <div class="panel panel-default" id="px2">
+      <div class="panel-heading">
+        <h3>Partners</h3>
+      </div>
+      <div class="panel-body">
+        <ul class="list-group">
+          <ul>
+            <p><li>DB-NET (GR)
+               <a href="http://www.db-net.aueb.gr/"><span class="glyphicon glyphicon-new-window"></span></a>
+            </li></p>
+            <p><li>AUTH-PLASE (GR)
+               <a href="http://plase.csd.auth.gr/"><span class="glyphicon glyphicon-new-window"></span></a>
+            </li></p>
+            <p><li>PROSYST (DE)
+               <a href="http://www.prosyst.de"><span class="glyphicon glyphicon-new-window"></span></a>
+            </li></p>
+            <p><li>SIRIUS (UK)
+               <a href="http://www.siriusit.co.uk"><span class="glyphicon glyphicon-new-window"></span></a>
+            </li></p>
+            <p><li>KDAB (SE)
+               <a href="http://www.kdab.net/"><span class="glyphicon glyphicon-new-window"></span></a>
+            </li></p>
+            <p><li>KDE (DE)
+               <a href="http://www.kde.org"><span class="glyphicon glyphicon-new-window"></span></a>
+            </li></p>
+          </ul>
+        </ul>
+    </div>
+  </div>
 
-                        </ul>
-                </div><!-- /.social -->
-        </section><!-- /#extras -->
+<!-- Print member's publications, if exists -->
+         <div class="row">
+           <!-- Print Oublications Contents -->
+           <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3" id="printmenu">
+             <nav>
+               <div class="panel panel-default" >
+                 <div class="panel-heading">
+                 Publications Contents:
+                 </div>
+                 <!-- Print Publications Categoriesthat exists -->
+                 <ul class="nav nav-pills nav-stacked">
+                         <li><a href="#Journal">Journal Articles</a></li>
+                         <li><a href="#Conference">Conference Publications</a></li>
+                 </ul>
+                 </ul>
+               </div>
+             </nav>
+           </div>
+           <!-- Print member's publication list -->
+           <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-9">
+             <div class="panel panel-default" id="px2">
+               <div class="panel-heading">
+                 <h3> Publications</h3>
+               </div>
+               <div class="panel-body">
+                     <!-- Print Publications information by reverse chronological order -->
+                     <ul class="list-group">
+                       <ul>
+                       </ul>
+                     </ul>
+                         <!-- Print Publications Categoriesthat exists -->
+                          <h4 style="color:#203864;" id="Journal">Journal Articles</h4>
+                     <!-- Print Publications information by reverse chronological order -->
+                     <ul class="list-group">
+                       <ul>
+                              <p>
+                                <li>Diomidis Spinellis.
+Optimizing header file include directives.
+<em>Journal of Software Maintenance and Evolution: Research and Practice</em>, 21(4):233–251, July/August 2009.
+<a href="http://www.dmst.aueb.gr/dds/pubs/jrnl/2009-JSME-include/html/Spi08e.html"><span class="glyphicon glyphicon-new-window"></span></a>                                </li>
+                             </p>
+                              <p>
+                                <li>Diomidis Spinellis and Panagiotis Louridas.
+The collaborative organization of knowledge.
+<em>Communications of the ACM</em>, 51(8):68–73, August 2008.
+<a href="http://www.dmst.aueb.gr/dds/pubs/jrnl/2008-CACM-Wikipedia/html/SL08.html"><span class="glyphicon glyphicon-new-window"></span></a>                                </li>
+                             </p>
+                              <p>
+                                <li>Diomidis Spinellis.
+The <span class="bibtex-protected">A</span>ntikythera mechanism: a computer science perspective.
+<em>IEEE Computer</em>, 41(5):22–27, May 2008.
+<a href="http://www.dmst.aueb.gr/dds/pubs/jrnl/2008-Computer-Antikythera/html/Spi08d.htm"><span class="glyphicon glyphicon-new-window"></span></a>                                </li>
+                             </p>
+                              <p>
+                                <li>Panagiotis Louridas, Diomidis Spinellis, and Vasileios Vlachos.
+Power laws in software.
+<em>ACM Transactions on Software Engineering and Methodology</em>, 18(1):1–26, September 2008.
+Article 2.
+<a href="http://www.dmst.aueb.gr/dds/pubs/jrnl/2008-TOSEM-PowerLaws/html/LSV08.html"><span class="glyphicon glyphicon-new-window"></span></a>                                </li>
+                             </p>
+                       </ul>
+                     </ul>
+                     <!-- Print Publications information by reverse chronological order -->
+                     <ul class="list-group">
+                       <ul>
+                       </ul>
+                     </ul>
+                         <!-- Print Publications Categoriesthat exists -->
+                          <h4 style="color:#203864;" id="Conference">Conference Publications</h4>
+                     <!-- Print Publications information by reverse chronological order -->
+                     <ul class="list-group">
+                       <ul>
+                              <p>
+                                <li>Georgios Gousios and Diomidis Spinellis.
+Alitheia core: an extensible software quality monitoring platform.
+In <em><span class="bibtex-protected">ICSE</span> '09: Proceedings of the 31st International Conference on Software Engineering – Formal Research Demonstrations Track</em>, 579–582. IEEE, May 2009.
+<a href="http://istlab.dmst.aueb.gr/\~george/pubs/2009-ICSERD-GS/2009-ICSERD-GS.pdf"><span class="glyphicon glyphicon-new-window"></span></a>                                </li>
+                             </p>
+                              <p>
+                                <li>Georgios Gousios and Diomidis Spinellis.
+A platform for software engineering research.
+In Michael&nbsp;W. Godfrey and Jim Whitehead, editors, <em><span class="bibtex-protected">MSR</span> '09: Proceedings of the 6th Working Conference on Mining Software Repositories</em>, 31–40. IEEE, May 2009.
+<a href="http://istlab.dmst.aueb.gr/\~george/pubs/2009-MSR-GS/2009-MSR-GS.pdf"><span class="glyphicon glyphicon-new-window"></span></a>                                </li>
+                             </p>
+                              <p>
+                                <li>Diomidis Spinellis, Georgios Gousios, Vassilios Karakoidas, Panagiotis Louridas, Paul&nbsp;J. Adams, Ioannis&nbsp;Samoladas c, and Ioannis Stamelos.
+Evaluating the quality of open source software.
+In <em>SQM 2008: Second International Workshop on Software Quality and Maintainability—12th European Conference on Software Maintenance and Reengineering (CSMR 2008) satellite event</em>, 5–28. The Reengineering Forum, April 2008.
+Electronic Notes in Theoretical Computer Science Volume 233 (March 2009).
+<a href="http://www.dmst.aueb.gr/dds/pubs/conf/2008-SQM-SQOOSS/html/SGKL09.html"><span class="glyphicon glyphicon-new-window"></span></a>                                </li>
+                             </p>
+                              <p>
+                                <li>Diomidis Spinellis.
+A tale of four kernels.
+In Wilhem Sch<span class="bibtex-protected">ä</span>fer, Matthew&nbsp;B. Dwyer, and Volker Gruhn, editors, <em><span class="bibtex-protected">ICSE</span> '08: Proceedings of the 30th International Conference on Software Engineering</em>, 381–390. New York, May 2008. Association for Computing Machinery.
+<a href="http://www.dmst.aueb.gr/dds/pubs/conf/2008-ICSE-4kernel/html/Spi08b.html"><span class="glyphicon glyphicon-new-window"></span></a>                                </li>
+                             </p>
+                              <p>
+                                <li>Ioannis Samoladas, Georgios Gousios, Diomidis Spinellis, and Ioannis Stamelos.
+The <span class="bibtex-protected">SQO-OSS</span> quality model: measurement based open source software evaluation.
+In Ernesto Damiani and Giancarlo Succi, editors, <em>Open Source Development, Communities and Quality — <span class="bibtex-protected">OSS</span> 2008: 4th International Conference on Open Source Systems</em>, 237–248. Boston, September 2008. IFIP 20th World Computer Congress, Working Group 2.3 on Open Source Software, Springer.
+<a href="http://www.dmst.aueb.gr/dds/pubs/conf/2008-OSS-qmodel/html/SGSS08.htm"><span class="glyphicon glyphicon-new-window"></span></a>                                </li>
+                             </p>
+                              <p>
+                                <li>Georgios Gousios, Eirini Kalliamvakou, and Diomidis Spinellis.
+Measuring developer contribution from software repository data.
+In <em>MSR '08: Proceedings of the 2008 International Working Conference on Mining Software Repositories</em>, 129–132. New York, NY, USA, 2008. ACM.
+<a href="http://istlab.dmst.aueb.gr/\~george/pubs/2008-MSR-GKS/2008-MSR-GKS.pdf"><span class="glyphicon glyphicon-new-window"></span></a>                                </li>
+                             </p>
+                              <p>
+                                <li>Dimitris Mitropoulos and Diomidis Spinellis.
+Countering <span class="bibtex-protected">SQL</span> injection attacks with a database driver.
+In Theodore&nbsp;S. Papatheodorou, Dimitris&nbsp;N. Christodoulakis, and Nikitas&nbsp;N. Karanikolas, editors, <em>Current Trends in Informatics: 11th Panhellenic Conference on Informatics, <span class="bibtex-protected">PCI</span> 2007</em>, volume&nbsp;B, 105–115. Athens, May 2007. New Technologies Publications.
+<a href="http://www.dmst.aueb.gr/dds/pubs/conf/2007-PCI-SQLIA/html/MS07.htm"><span class="glyphicon glyphicon-new-window"></span></a>                                </li>
+                             </p>
+                              <p>
+                                <li>Georgios Gousios, Vassilios Karakoidas, Konstantinos Stroggylos, Panagiotis Louridas, Vasileios Vlachos, and Diomidis Spinellis.
+Software quality assessment of open source software.
+In <em>Proceedings of the 11th Panhellenic Conference on Informatics</em>. May 2007.
+<a href="http://istlab.dmst.aueb.gr/\~george/pubs/2007-PCI-GKSLVS/paper.pdf"><span class="glyphicon glyphicon-new-window"></span></a>                                </li>
+                             </p>
+                              <p>
+                                <li>Vasileios Vlachos, Andreas Raptis, and Diomidis Spinellis.
+Promising steps towards computer hygiene.
+In Steven Furnell, editor, <em>International Network Conference (INC2006)</em>, 229–236. July 2006.
+                                </li>
+                             </p>
+                              <p>
+                                <li>Adriaan de&nbsp;Groot, Sebastian K<span class="bibtex-protected">ü</span>gler, Paul Adams, and Georgios Gousios.
+Call for quality: open source software quality observation.
+In <em>Proceedings of the Second International Conference on Open Source Systems</em>. June 2006.
+<a href="http://istlab.dmst.aueb.gr/\~george/pubs/2006-OSS-GKAG/paper.pdf"><span class="glyphicon glyphicon-new-window"></span></a>                                </li>
+                             </p>
+                       </ul>
+                     </ul>
+                     <!-- Print Publications information by reverse chronological order -->
+                     <ul class="list-group">
+                       <ul>
+                       </ul>
+                     </ul>
+                     <!-- Print Publications information by reverse chronological order -->
+                     <ul class="list-group">
+                       <ul>
+                       </ul>
+                     </ul>
+                     <!-- Print Publications information by reverse chronological order -->
+                     <ul class="list-group">
+                       <ul>
+                       </ul>
+                     </ul>
+                     <!-- Print Publications information by reverse chronological order -->
+                     <ul class="list-group">
+                       <ul>
+                       </ul>
+                     </ul>
+               </div>
+             </div>
+           </div>
+         </div>
 
-        <footer id="contentinfo" class="body">
-                <address id="about" class="vcard body">
-                Proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
-                </address><!-- /#about -->
+<!-- Templete for yearly reports -->
+  </div>
 
-                <p>The theme is by <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
-        </footer><!-- /#contentinfo -->
+  <!-- Fixed footer -->
+  <footer>
+    <div class="container">
+      <p class="text-muted">
+        <span><a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons Licence" style="max-height: 31px; margin-left:20px" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a></span>
+        <span class="hidden-xs hidden-sm"> This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.</span>
+        <span class="hidden-md hidden-lg hidden-xl"> CC BY-SA 4.0 </a></span>
+        <span class="pull-right"><a href="./pages/contact.html" style="color: white">Contact</a></span>
+      </p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/9.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="bootstrap-3.3.7/assets/js/vendor/jquery.min.js"><\/script>')</script>
+  <!-- <script src="bootstrap-3.3.7/dist/js/bootstrap.min.js"></script> -->
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <script src="bootstrap-3.3.7/assets/js/ie10-viewport-bug-workaround.js"></script>
 
 </body>
 </html>

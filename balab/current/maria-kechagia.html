@@ -1,70 +1,347 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="greek">
 <head>
         <meta charset="utf-8" />
-        <title>Maria - Kechagia</title>
-        <link rel="stylesheet" href="/theme/css/main.css" />
-        <link href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="A Pelican Blog Atom Feed" />
-
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>BALab members &mdash; Maria - Kechagia</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="./theme/css/main.css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<link rel="shortcut icon" type="image/x-icon" href="./theme/images/BA_Logo.png"/>
+		
         <!--[if IE]>
             <script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
         <![endif]-->
 </head>
 
-<body id="index" class="home">
-        <header id="banner" class="body">
-                <h1><a href="/">A Pelican Blog </a></h1>
-                <nav><ul>
-                    <li><a href="/pages/contact.html">contact</a></li>
-                    <li><a href="/pages/join_The_Lab.html">joining the lab</a></li>
-                    <li><a href="/pages/phd_achievements.html">phd achievements</a></li>
-                    <li><a href="/pages/services.html">services</a></li>
-                    <li><a href="/category/alumni.html">alumni</a></li>
-                    <li class="active"><a href="/category/members.html">members</a></li>
-                    <li><a href="/category/projects.html">projects</a></li>
-                    <li><a href="/category/software.html">software</a></li>
-                    <li><a href="/category/yearly-reports.html">yearly reports</a></li>
-                </ul></nav>
-        </header><!-- /#banner -->
-<section id="content" class="body">
-  <article>
-    <header>
-      <h1 class="entry-title">
-        <a href="/maria-kechagia.html" rel="bookmark"
-           title="Permalink to Maria - Kechagia">Maria - Kechagia</a></h1>
-    </header>
+<body  data-spy="scroll" data-target="#myScrollspy" data-offset="20">
 
-    <div class="entry-content">
-<footer class="post-info">
-        <abbr class="published" title="2009-09-07T00:00:00+00:00">
-                Published: Mon 07 September 2009
-        </abbr>
+  <!-- Fixed Navbar -->
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a href="./index.html"> <img src="./theme/images/ba-logo2.png"  width="120" height="50" class="d-inline-block align-top" alt=""> </a>
+      </div>
+      <div id="navbar" class="collapse navbar-collapse">
+  			<ul class="nav navbar-nav navbar-right">
+  			  <li><a href="./index.html">Home</a></li>
+  			  <li class="dropdown">
+  				<a class="dropdown-toggle" data-toggle="dropdown" href="#">Staff
+  				<span class="caret"></span></a>
+  				<ul class="dropdown-menu">
+  				  <li><a href="./category/members.html">Members & Associates</a></li>
+  				  <li><a href="./category/alumni.html">Alumni</a></li>
+  				  <li><a href="./pages/phd_achievements.html">PhD Student Achievements</a></li>
+  				  <li><a href="./pages/join_The_Lab.html">Joining the lab</a></li>
+  				</ul>
+  			  </li>
+  			  <li><a href="./category/projects.html">Projects</a></li>
+  			  <li><a href="./publications.html">Publications</a></li>
+			  <li><a href="./category/software.html">Software</a></li>
+  			  <li><a href="./pages/services.html">Services</a></li>
+  			  <li><a href="./category/yearly-reports.html">Yearly Reports</a></li>
+          <li>
+            <a href="#modalSearch" data-toggle="modal" data-target="#modalSearch">
+              <span class="glyphicon glyphicon-search"></span> <span class="hidden-sm hidden-md hidden-lg">Search</span>
+            </a>
+          </li>
+  			</ul>
+      </div><!--/.nav-collapse -->
+    </div>
+  </nav>
 
-<p>In <a href="/category/members.html">members</a>.</p>
+    <!-- Search Modal -->
+  <div id="modalSearch" class="modal fade" role="dialog">
+     <div class="modal-dialog">
 
-</footer><!-- /.post-info -->      <p><em>Maria Kechagia</em> is a PhD candidate at Athens University of Economics and Business, in the Department of Management Science and Technology. She holds a BSc in Management Science and Technology and an MSc in Computing (Software Engineering) from Imperial College London. She has participated in EU funded R&amp;D projects. From October 2012 until November 2015 she was the project manager of the <a href="../projects/p_stereo.html">STEREO</a> project. She is an IEEE student and IEEE Women In Engineering (WIE) member, as well as an ACM student and ACM-Women (ACM-W) member. Her research interests include the design and implementation of Application Programming Interfaces (APIs) and the study of open source software.</p>
+         <!-- Modal content-->
+         <div class="modal-content">
+             <div class="modal-header">
+                 <!-- <a type="button" class="close" data-dismiss="modal">&times;</a> -->
+                 <h4 class="modal-title">Search BALab</h4>
+             </div>
+             <div class="modal-body">
+               <!-- Replace the following with your own search script from https://www.google.com/cse. -->
+               <script>
+                 (function() {
+                   var cx = '005094385257090023838:r1endlwnp2e';
+                   var gcse = document.createElement('script');
+                   gcse.type = 'text/javascript';
+                   gcse.async = true;
+                   gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+                   var s = document.getElementsByTagName('script')[0];
+                   s.parentNode.insertBefore(gcse, s);
+                 })();
+               </script>
+               <gcse:search enableAutoComplete="true"></gcse:search>
+            </div>
+             <div class="modal-footer">
+                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+             </div>
+         </div>
+
+     </div>
+  </div>
+
+  <div class="container">
+    <!-- Show logo for printer -->
+    <p id="printlogo">
+      <img src="./theme/images/ba-logo2.png" height="200" width="200" class="img-responsive" alt="...">
+    </p>
+
+
+<!-- Template for members and alumni -->
+
+  <div class="panel panel-default">
+    <!-- Print member's name & surname -->
+    <div class="panel-heading">
+      <h2> Maria Kechagia </h2>
+    </div>
+    <div class="panel-body">
+      <div class="row">
+        <!-- Print member's photo or default photo -->
+        <div class="col-md-2">
+          <p>
+            <img src="./images/m_maria.jpg" height="200" width="200" class="img-responsive" alt="...">
+          </p>
+        </div>
+        <!-- Print member's Contact & PhD Thesis details, if exists -->
+        <div class="col-md-9">
+      			<p>
+<span class="glyphicon glyphicon-envelope"></span> <b>E-mail:</b> mkechagia@aueb.gr </br><span class="glyphicon glyphicon-phone-alt"></span> <b>Office phone:</b> +30 2108203370 </br><span class="glyphicon glyphicon-briefcase"></span> <b>Office address:</b> Athens University of Economics and Business Main Building, Derigny ct, 3rd fl </br><span class="glyphicon glyphicon-inbox"></span> <b>Postal address:</b> 76 Patission str, 104 34, Athens, Greece </br>      			</p>
+              <h4> Research area </h4>
+<b> Title:</b> Empirical Software Engineering </br>                <b> Supervisor:</b>
+                          Spinellis Diomidis
+                          <a href="./diomidis-spinellis.html"><span class="glyphicon glyphicon-new-window"></span></a> </br>
+<b> Starting date:</b> 2011-12-07 </br>	      </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Print member's Biographical Information, if exists -->
+    <div class="panel panel-default" id="px2">
+      <div class="panel-heading">
+        <h3> Biographical Information </h3>
+      </div>
+      <div class="panel-body">
+        <p><em>Maria Kechagia</em> is a PhD candidate at Athens University of Economics and Business, in the Department of Management Science and Technology. She holds a BSc in Management Science and Technology and an MSc in Computing (Software Engineering) from Imperial College London. She has participated in EU funded R&amp;D projects. From October 2012 until November 2015 she was the project manager of the <a href="../projects/p_stereo.html">STEREO</a> project. She is an IEEE student and IEEE Women In Engineering (WIE) member, as well as an ACM student and ACM-Women (ACM-W) member. Her research interests include the design and implementation of Application Programming Interfaces (APIs) and the study of open source software.</p>
 <p>She is a member of the <a href="../groups/g_sense-details.html">SENSE</a> group.</p>
-    </div><!-- /.entry-content -->
+      </div>
+    </div>
 
-  </article>
-</section>
-        <section id="extras" class="body">
-                <div class="social">
-                        <h2>social</h2>
-                        <ul>
-                            <li><a href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">atom feed</a></li>
+  <!-- Print member's publications, if exists -->
+       <div class="row">
+         <!-- Print member's Publications Contents Slidebar -->
+         <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3" id="printmenu">
+           <nav>
+             <div class="panel panel-default" >
+               <div class="panel-heading">
+               Publications Contents:
+               </div>
+               <!-- Print Publications Categories that exist-->
+               <ul class="nav nav-pills nav-stacked">
+                       <li><a href="#Journal">Journal Articles</a></li>
+                       <li><a href="#Conference">Conference Publications</a></li>
+                       <li><a href="#Magazine">Magazine Articles</a></li>
+               </ul>
+             </div>
+           </nav>
+         </div>
 
-                        </ul>
-                </div><!-- /.social -->
-        </section><!-- /#extras -->
+         <!-- Print member's Publications List -->
+         <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-9">
+           <div class="panel panel-default" id="px2">
+             <div class="panel-heading">
+               <h3> Publications</h3>
+             </div>
+             <div class="panel-body">
+               <!-- Print Publications Categories that exist-->
 
-        <footer id="contentinfo" class="body">
-                <address id="about" class="vcard body">
-                Proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
-                </address><!-- /#about -->
+                 <!-- Print Publications information by reverse chronological order -->
+                 <ul class="list-group">
+                   <ul>
+                   </ul>
+                 </ul>
+                   <h4 style="color:#203864;" id="Journal">Journal Articles</h4>
 
-                <p>The theme is by <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
-        </footer><!-- /#contentinfo -->
+                 <!-- Print Publications information by reverse chronological order -->
+                 <ul class="list-group">
+                   <ul>
+                        <p>
+                        <li>Maria Kechagia, Dimitris Mitropoulos, and Diomidis Spinellis.
+Charting the <span class="bibtex-protected">API</span> minefield using software telemetry data.
+<em>Empirical Software Engineering</em>, 20(6):1785–1830, December 2015.
+<a href="http://dx.doi.org/10.1007/s10664-014-9343-7"><span class="glyphicon glyphicon-new-window"></span></a>                        </li>
+                       </p>
+                        <p>
+                        <li>Stephanos Androutsellis-Theotokis, Diomidis Spinellis, Maria Kechagia, and Georgios Gousios.
+Open source software: a survey from 10,000 feet.
+<em>Foundations and Trends in Technology, Information and Operations Management</em>, 4(3–4):187–347, 2010.
+<a href="http://www.spinellis.gr/pubs/jrnl/2010-TOMS-OSS-Survey/html/ASKG10.html"><span class="glyphicon glyphicon-new-window"></span></a>                        </li>
+                       </p>
+                   </ul>
+                 </ul>
+
+                 <!-- Print Publications information by reverse chronological order -->
+                 <ul class="list-group">
+                   <ul>
+                   </ul>
+                 </ul>
+                   <h4 style="color:#203864;" id="Conference">Conference Publications</h4>
+
+                 <!-- Print Publications information by reverse chronological order -->
+                 <ul class="list-group">
+                   <ul>
+                        <p>
+                        <li>Maria Kechagia and Diomidis Spinellis.
+Type checking for reliable <span class="bibtex-protected">API</span>s.
+In <em>WAPI '17: 1st International Workshop on API Usage and Evolution</em>. 2017.
+To appear.
+                        </li>
+                       </p>
+                        <p>
+                        <li>Maria Kechagia, Tushar Sharma, and Diomidis Spinellis.
+Towards a context dependent <span class="bibtex-protected">J</span>ava exceptions hierarchy.
+In <em>ICSE '17: Poster Track Session</em>, 347–349. IEEE Press, 2017.
+URL: <a href="https://doi.org/10.1109/ICSE-C.2017.134">https://doi.org/10.1109/ICSE-C.2017.134</a>, <a href="https://doi.org/10.1109/ICSE-C.2017.134">doi:10.1109/ICSE-C.2017.134</a>.
+                        </li>
+                       </p>
+                        <p>
+                        <li>Diomidis Spinellis, Panos Louridas, and Maria Kechagia.
+The evolution of <span class="bibtex-protected">C</span> programming practices: a study of the <span class="bibtex-protected">U</span>nix operating system 1973–2015.
+In Willem Visser and Laurie Williams, editors, <em><span class="bibtex-protected">ICSE</span> '16: Proceedings of the 38th International Conference on Software Engineering</em>. New York, May 2016. Association for Computing Machinery.
+                        </li>
+                       </p>
+                        <p>
+                        <li>Diomidis Spinellis, Panagiotis Louridas, and Maria Kechagia.
+An exploratory study on the evolution of <span class="bibtex-protected">C</span> programming in the <span class="bibtex-protected">U</span>nix operating system.
+In Qing Wang and Guenther Ruhe, editors, <em>ESEM '15: 9th International Symposium on Empirical Software Engineering and Measurement</em>, 54–57. IEEE, October 2015.
+<a href="http://www.dmst.aueb.gr/dds/pubs/conf/2015-ESEM-CodeStyle/html/SLK15.html"><span class="glyphicon glyphicon-new-window"></span></a>                        </li>
+                       </p>
+                        <p>
+                        <li>Maria Kechagia and Diomidis Spinellis.
+Undocumented and unchecked: exceptions that spell trouble.
+In <em>MSR '14: Proceedings of the 11th Working Conference on Mining Software Repositories</em>, 312–315. ACM, June 2014.
+<a href="http://doi.acm.org/10.1145/2597073.2597089"><span class="glyphicon glyphicon-new-window"></span></a>                        </li>
+                       </p>
+                        <p>
+                        <li>Maria Kechagia.
+Improvement of applications' stability through robust <span class="bibtex-protected">APIs</span>.
+In <em>Proceedings of the 29th ACM/IEEE International Conference on Automated Software Engineering</em>, ASE '14, 907–910. New York, NY, USA, 2014. ACM.
+Doctoral Symposium.
+<a href="http://doi.acm.org/10.1145/2642937.2653473"><span class="glyphicon glyphicon-new-window"></span></a>                        </li>
+                       </p>
+                        <p>
+                        <li>Maria Kechagia, Dimitris Mitropoulos, and Diomidis Spinellis.
+<span class="bibtex-protected">Improving the quality of APIs through the analysis of software crash reports</span>.
+In Andrew&nbsp;V. Jones and Nicholas Ng, editors, <em>2013 Imperial College Computing Student Workshop</em>, volume&nbsp;35 of OpenAccess Series in Informatics (OASIcs), 57–64. Dagstuhl, Germany, 2013. Schloss Dagstuhl–Leibniz-Zentrum fuer Informatik.
+<a href="http://drops.dagstuhl.de/opus/volltexte/2013/4272"><span class="glyphicon glyphicon-new-window"></span></a>                        </li>
+                       </p>
+                        <p>
+                        <li>Maria Kechagia, Diomidis Spinellis, and Stephanos Androutsellis-Theotokis.
+Open source licensing across package dependencies.
+In Costas Vassilakis and Nikolaos Tselikas, editors, <em>PCI 2010: Proceedings of 14th Panhelenic Conference on Informatics</em>, 27–32. Los Alamitos, CA, USA, September 2010. IEEE Computer Society.
+                        </li>
+                       </p>
+                        <p>
+                        <li>Maria Kechagia and Angeliki Karagiannaki.
+Modelling the warehouse operations to reveal the value of rfid.
+In Angeliki Poulymenakou, Nancy Pouloudi, and Katerina Pramatari, editors, <em><span class="bibtex-protected">MCIS</span> '09: Proceedings of the 4th Mediterranean Conference on Information Systems</em>, 1063–1076. September 2009.
+                        </li>
+                       </p>
+                        <p>
+                        <li>Vaggelis Giannikas, Maria Kechagia, Diamantis Falidas, and Katerina Pramatari.
+Benchmarking and evaluation of e-shops.
+In Ioannis Nikolaou, editor, <em>Proceedings of 6th Student Conference on Management Science and Technology</em>, 87–92. May 2009.
+In Greek.
+                        </li>
+                       </p>
+                        <p>
+                        <li>Vaggelis Giannikas, Maria Kechagia, Nikos Tsamis, and Aristeidis Theotokis.
+Dynamic pricing of grocery products in supermarket: a supply management tool or a viable growth strategy?
+In Christos Tarantilis and Ioannis Nikolaou, editors, <em>Proceedings of 5th Student Conference on Management Science and Technology</em>, 208–214. May 2008.
+In Greek.
+                        </li>
+                       </p>
+                   </ul>
+                 </ul>
+
+                 <!-- Print Publications information by reverse chronological order -->
+                 <ul class="list-group">
+                   <ul>
+                   </ul>
+                 </ul>
+
+                 <!-- Print Publications information by reverse chronological order -->
+                 <ul class="list-group">
+                   <ul>
+                   </ul>
+                 </ul>
+                   <h4 style="color:#203864;" id="Magazine">Magazine Articles</h4>
+
+                 <!-- Print Publications information by reverse chronological order -->
+                 <ul class="list-group">
+                   <ul>
+                        <p>
+                        <li>Maria Kechagia.
+Exception handling evaluation of large <span class="bibtex-protected">API</span>s.
+<em>XRDS</em>, 21(3):16–17, March 2015.
+                        </li>
+                       </p>
+                        <p>
+                        <li>Maria Kechagia.
+Why to get involved in the open source community?
+<em>XRDS</em>, 21(1):14–15, October 2014.
+                        </li>
+                       </p>
+                   </ul>
+                 </ul>
+
+                 <!-- Print Publications information by reverse chronological order -->
+                 <ul class="list-group">
+                   <ul>
+                   </ul>
+                 </ul>
+             </div>
+           </div>
+         </div>
+       </div>
+
+<!-- Template for projects -->
+
+<!-- Templete for yearly reports -->
+  </div>
+
+  <!-- Fixed footer -->
+  <footer>
+    <div class="container">
+      <p class="text-muted">
+        <span><a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons Licence" style="max-height: 31px; margin-left:20px" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a></span>
+        <span class="hidden-xs hidden-sm"> This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.</span>
+        <span class="hidden-md hidden-lg hidden-xl"> CC BY-SA 4.0 </a></span>
+        <span class="pull-right"><a href="./pages/contact.html" style="color: white">Contact</a></span>
+      </p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/9.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="bootstrap-3.3.7/assets/js/vendor/jquery.min.js"><\/script>')</script>
+  <!-- <script src="bootstrap-3.3.7/dist/js/bootstrap.min.js"></script> -->
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <script src="bootstrap-3.3.7/assets/js/ie10-viewport-bug-workaround.js"></script>
 
 </body>
 </html>
