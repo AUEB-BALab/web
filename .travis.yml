@@ -2,6 +2,7 @@ sudo: enabled
 
 language: python
 install:
+- pip install requests[security]
 - pip install pyopenssl ndg-httpsclient pyasn1
 - pip install pelican
 - pip install Markdown
