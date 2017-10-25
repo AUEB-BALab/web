@@ -3,7 +3,7 @@ sudo: enabled
 language: python
 install:
 - pip install requests[security]
-- pip install pelican
+- sudo pip install pelican
 - pip install Markdown
 - pip install typogrify
 - pip install pybtex
