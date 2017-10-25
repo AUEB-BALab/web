@@ -1,0 +1,3 @@
+language: bash
+sudo: enabled
+install: ./bin/update

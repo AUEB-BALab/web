@@ -1,0 +1,2408 @@
+<!DOCTYPE html>
+<html lang="greek">
+<head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>BALab publications</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="./theme/css/main.css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<link rel="shortcut icon" type="image/x-icon" href="./theme/images/BA_Logo.png"/>
+		
+        <!--[if IE]>
+            <script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+</head>
+
+<body  data-spy="scroll" data-target="#myScrollspy" data-offset="20">
+
+  <!-- Fixed Navbar -->
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a href="./index.html"> <img src="./theme/images/ba-logo2.png"  width="120" height="50" class="d-inline-block align-top" alt=""> </a>
+      </div>
+      <div id="navbar" class="collapse navbar-collapse">
+  			<ul class="nav navbar-nav navbar-right">
+  			  <li><a href="./index.html">Home</a></li>
+  			  <li class="dropdown">
+  				<a class="dropdown-toggle" data-toggle="dropdown" href="#">Staff
+  				<span class="caret"></span></a>
+  				<ul class="dropdown-menu">
+  				  <li><a href="./category/members.html">Members & Associates</a></li>
+  				  <li><a href="./category/alumni.html">Alumni</a></li>
+  				  <li><a href="./pages/phd_achievements.html">PhD Student Achievements</a></li>
+  				  <li><a href="./pages/join_The_Lab.html">Joining the lab</a></li>
+  				</ul>
+  			  </li>
+  			  <li><a href="./category/projects.html">Projects</a></li>
+  			  <li><a href="./publications.html">Publications</a></li>
+			  <li><a href="./category/software.html">Software</a></li>
+  			  <li><a href="./pages/services.html">Services</a></li>
+  			  <li><a href="./category/yearly-reports.html">Yearly Reports</a></li>
+          <li>
+            <a href="#modalSearch" data-toggle="modal" data-target="#modalSearch">
+              <span class="glyphicon glyphicon-search"></span> <span class="hidden-sm hidden-md hidden-lg">Search</span>
+            </a>
+          </li>
+  			</ul>
+      </div><!--/.nav-collapse -->
+    </div>
+  </nav>
+
+    <!-- Search Modal -->
+  <div id="modalSearch" class="modal fade" role="dialog">
+     <div class="modal-dialog">
+
+         <!-- Modal content-->
+         <div class="modal-content">
+             <div class="modal-header">
+                 <!-- <a type="button" class="close" data-dismiss="modal">&times;</a> -->
+                 <h4 class="modal-title">Search BALab</h4>
+             </div>
+             <div class="modal-body">
+               <!-- Replace the following with your own search script from https://www.google.com/cse. -->
+               <script>
+                 (function() {
+                   var cx = '005094385257090023838:r1endlwnp2e';
+                   var gcse = document.createElement('script');
+                   gcse.type = 'text/javascript';
+                   gcse.async = true;
+                   gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+                   var s = document.getElementsByTagName('script')[0];
+                   s.parentNode.insertBefore(gcse, s);
+                 })();
+               </script>
+               <gcse:search enableAutoComplete="true"></gcse:search>
+            </div>
+             <div class="modal-footer">
+                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+             </div>
+         </div>
+
+     </div>
+  </div>
+
+  <div class="container">
+    <!-- Show logo for printer -->
+    <p id="printlogo">
+      <img src="./theme/images/ba-logo2.png" height="200" width="200" class="img-responsive" alt="...">
+    </p>
+
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h2>Publications</h2>
+    </div>
+  </div>
+	<div class="row">
+    <!-- Publications Categories slidebar -->
+		<div class="hidden-xs hidden-sm col-md-3 col-lg-3 col-xl-3" id="printmenu">
+		  <nav id="myScrollspy" data-spy="affix" data-offset-top="50" style="position: fixed;">
+  			<div class="panel panel-default" >
+  			  <div class="panel-heading">
+  				Contents
+  			  </div>
+          <!-- Print publications categories that exist -->
+          <ul class="nav nav-pills nav-stacked">
+                  <li><a href="#Monographs">Monographs and Edited Volumes</a></li>
+                  <li><a href="#Journal">Journal Articles</a></li>
+                  <li><a href="#Book">Book Chapters</a></li>
+                  <li><a href="#Conference">Conference Publications</a></li>
+                  <li><a href="#Technical">Technical Reports</a></li>
+                  <li><a href="#White">White Papers</a></li>
+                  <li><a href="#Magazine">Magazine Articles</a></li>
+                  <li><a href="#Working">Working Papers</a></li>
+          </ul>
+  			</div>
+		  </nav>
+		</div>
+    <!-- Publications Categories slidebar (mobile view) -->
+    <div class="col-xs-12 col-sm-12 hidden-md hidden-lg hidden-xl" id="printmenu">
+      <nav>
+        <div class="panel panel-default" >
+          <div class="panel-heading">
+          Contents
+          </div>
+          <!-- Print publications categories that exist -->
+          <ul class="nav nav-pills nav-stacked">
+                <li><a href="#Monographs">Monographs and Edited Volumes</a></li>
+                <li><a href="#Journal">Journal Articles</a></li>
+                <li><a href="#Book">Book Chapters</a></li>
+                <li><a href="#Conference">Conference Publications</a></li>
+                <li><a href="#Technical">Technical Reports</a></li>
+                <li><a href="#White">White Papers</a></li>
+                <li><a href="#Magazine">Magazine Articles</a></li>
+                <li><a href="#Working">Working Papers</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <!-- Print publcations list -->
+		<div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-9" id="printurl">
+         <div class="panel panel-default" id="px2">
+           <!-- Print publications categories thats exist -->
+                 <div class="panel-heading">
+                   <h3 id="Monographs">Monographs and Edited Volumes</h3>
+                 </div>
+           <!-- Print publications information by reverse chronological order -->
+           <div class="panel-body">
+             <ul class="list-group">
+               <ul>
+                     <p>
+                     <li>Diomidis Spinellis.
+<em>Effective Debugging: 52 Specific Ways to Debug Software and Systems</em>.
+Addison-Wesley Professional, Boston, MA, 2016.
+ISBN 978-0134394794.
+To appear.  </li>
+                    </p>
+                     <p>
+                     <li>Diomidis Spinellis and Georgios&nbsp;Gousios (editors).
+<em>Beautiful Architecture: Leading Software Engineers Explain How They Think</em>.
+O'Reilly Media, Inc, Sebastopol, CA, 2009.
+ISBN 978-0-596-51798-4.  <a href="http://oreilly.com/catalog/9780596517984/"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Chrissoleon&nbsp;T. Papadopoulos, Michael E.&nbsp;J. O'Kelly, Michael&nbsp;J. Vidalis, and Diomidis Spinellis.
+<em>Analysis and Design of Discrete Part Production Lines</em>.
+Springer, 2009.
+ISBN 978-0-387-89493-5.  <a href="http://www.springer.com/math/book/978-0-387-89493-5"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Diomidis Spinellis.
+<em>Code Quality: The Open Source Perspective</em>.
+Addison-Wesley, Boston, MA, 2006.
+ISBN 0-321-16607-8.  <a href="http://www.spinellis.gr/codequality"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Diomidis Spinellis, editor.
+<em>Cross-Media Service Delivery</em>.
+Volume 740 of The Kluwer international series in engineering and computer science.
+Kluwer Academic Publishers, Boston, MA, 2003.
+ISBN 1-4020-7480-8.  <a href="http://www.dmst.aueb.gr/dds/pubs/books/2003-cmsd/html/index.html"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Diomidis Spinellis.
+<em>Code Reading: The Open Source Perspective</em>.
+Addison-Wesley, Boston, MA, 2003.
+ISBN 0-201-79940-5.  <a href="http://www.spinellis.gr/codereading"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+               </ul>
+             </ul>
+           </div>
+         </div>
+         <div class="panel panel-default" id="px2">
+           <!-- Print publications categories thats exist -->
+                 <div class="panel-heading">
+                   <h3 id="Journal">Journal Articles</h3>
+                 </div>
+           <!-- Print publications information by reverse chronological order -->
+           <div class="panel-body">
+             <ul class="list-group">
+               <ul>
+                     <p>
+                     <li>Diomidis Spinellis.
+The social responsibility of software development.
+<em>IEEE Software</em>, 34(2):4–6, March 2017.  <a href="https://doi.org/10.1109/MS.2017.48"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Diomidis Spinellis.
+Software-engineering the internet of things.
+<em>IEEE Software</em>, 34(1):4–6, January 2017.  <a href="https://www.computer.org/csdl/mags/so/2017/01/mso2017010004.pdf"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Diomidis Spinellis.
+A repository of <span class="bibtex-protected">U</span>nix history and evolution.
+<em>Empirical Software Engineering</em>, 2017.  <a href="http://www.dmst.aueb.gr/dds/pubs/jrnl/2016-EMPSE-unix-history/html/unix-history.html"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Dimitris Mitropoulos, Panos Louridas, Michalis Polychronakis, and Angelos&nbsp;D. Keromytis.
+Defending against <span class="bibtex-protected">W</span>eb application attacks: approaches, challenges and implications.
+<em>IEEE Transactions on Dependable and Secure Computing</em>, March 2017.  <a href="http://ieeexplore.ieee.org/document/7865911/"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Les Hatton, Diomidis Spinellis, and Michiel van Genuchten.
+The long-term growth rate of evolving software: empirical results and implications.
+<em>Journal of Software: Evolution and Process</em>, 2017.  </li>
+                    </p>
+                     <p>
+                     <li>Diomidis Spinellis.
+The changing role of the software architect.
+<em>IEEE Software</em>, 33(6):4–6, November 2016.  <a href="https://www.computer.org/csdl/mags/so/2016/06/mso2016060004.pdf"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Diomidis Spinellis.
+Serving professionals.
+<em>IEEE Software</em>, 33(2):4–6, Mar/Apr 2016.  <a href="https://www.computer.org/csdl/mags/so/2016/02/mso2016020004.pdf"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Diomidis Spinellis.
+Reflecting on quality.
+<em>IEEE Software</em>, 33(4):4–5, July 2016.
+Also republished in Computing Edge (November 2016).  <a href="https://www.computer.org/csdl/mags/so/2016/04/mso2016040004.pdf"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Diomidis Spinellis.
+Managing a software business.
+<em>IEEE Software</em>, 33(5):4–7, September 2016.  <a href="https://www.computer.org/csdl/mags/so/2016/05/mso2016050004.pdf"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Diomidis Spinellis.
+Developer, debug thyself.
+<em>IEEE Software</em>, 33(1):3–5, Jan/Feb 2016.  <a href="http://www.computer.org/csdl/mags/so/2016/01/mso2016010003.pdf"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Diomidis Spinellis.
+Being a <span class="bibtex-protected">DevOps</span> developer.
+<em>IEEE Software</em>, 33(3):4–5, May/Jun 2016.
+Also republished in Computing Edge (July 2016).  <a href="https://www.computer.org/csdl/mags/so/2016/03/mso2016030004.pdf"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Diomidis Spinellis.
+A <span class="bibtex-protected">DIY</span> <span class="bibtex-protected">L</span>ego controller: a low-cost way to program <span class="bibtex-protected">L</span>ego machines.
+<em>IEEE Spectrum</em>, 53(11):21–22, November 2016.  <a href="http://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=7607018"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Dimitris Mitropoulos, Konstantinos Stroggylos, Diomidis Spinellis, and Angelos&nbsp;D. Keromytis.
+How to train your browser: preventing <span class="bibtex-protected">XSS</span> attacks using contextual script fingerprints.
+<em>ACM Transactions on Privacy and Security</em>, 19(1):2:1&ndash;2:31, July 2016.  </li>
+                    </p>
+                     <p>
+                     <li>Kalaidopoulou K. and Griva A.
+Extract purchasing patterns for a focal product category using sales data: the case of skincare products (in greek).
+<em>Astrolavos Journal of new Technologies</em>, 25:3&ndash;18, Optional 2016.  </li>
+                    </p>
+                     <p>
+                     <li>Marios Fragkoulis, Diomidis Spinellis, and Panos Louridas.
+Pico ql: a software library for runtime interactive queries on program data.
+<em>SoftwareX</em>, 5():134 &ndash; 138, 2016.  <a href="http://www.sciencedirect.com/science/article/pii/S2352711016300176"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Vaggelis Atlidakis, Jeremy Andrus, Roxana Geambasu, Dimitris Mitropoulos, and Jason Nieh.
+<span class="bibtex-protected">POSIX</span> has become outdated.
+<em>USENIX ;login: Magazine</em>, Fall 2016.  </li>
+                    </p>
+                     <p>
+                     <li>Diomidis Spinellis.
+The strategic importance of release engineering.
+<em>IEEE Software</em>, 32(2):3–5, March/April 2015.  <a href="http://www.computer.org/csdl/mags/so/2015/02/mso2015020003.pdf"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Diomidis Spinellis.
+Recruiting a star team.
+<em>IEEE Software</em>, 32(3):3–5, May/June 2015.  <a href="http://www.computer.org/csdl/mags/so/2015/03/mso2015030003.pdf"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Diomidis Spinellis.
+Introductions.
+<em>IEEE Software</em>, 32(4):3–5, July/Aug 2015.  <a href="http://www.computer.org/csdl/mags/so/2015/04/mso2015040003.pdf"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Diomidis Spinellis.
+Fewer dead trees, more engagement.
+<em>IEEE Software</em>, 32(1):4–6, January/February 2015.  <a href="https://www.computer.org/csdl/mags/so/2015/01/mso2015010004.pdf"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Diomidis Spinellis.
+Extending our field's reach.
+<em>IEEE Software</em>, 32(6):4&ndash;06, Nov/Dec 2015.  <a href="https://www.computer.org/csdl/mags/so/2015/06/mso2015060004.pdf"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Diomidis Spinellis.
+Architecture from a developer's perspective.
+<em>IEEE Software</em>, 32(5):4–7, Sep/Oct 2015.  <a href="http://www.computer.org/csdl/mags/so/2015/05/mso2015050004.pdf"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Maria Kechagia, Dimitris Mitropoulos, and Diomidis Spinellis.
+Charting the <span class="bibtex-protected">API</span> minefield using software telemetry data.
+<em>Empirical Software Engineering</em>, 20(6):1785–1830, December 2015.  <a href="http://dx.doi.org/10.1007/s10664-014-9343-7"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Vassilios Karakoidas, Dimitris Mitropoulos, Panagiotis Louridas, and Diomidis Spinellis.
+A type-safe embedding of <span class="bibtex-protected">SQL</span> into <span class="bibtex-protected">J</span>ava using the extensible compiler framework <span class="bibtex-protected">J</span>.
+<em>Computer Languages, Systems &amp; Structures</em>, 41:1&ndash;20, April 2015.  <a href="http://www.sciencedirect.com/science/article/pii/S1477842415000020"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Marios Fragkoulis, Diomidis Spinellis, and Panos Louridas.
+An interactive <span class="bibtex-protected">SQL</span> relational interface for querying main-memory data structures.
+<em>Computing</em>, 97(12):1141&ndash;1164, 2015.  <a href="http://link.springer.com/article/10.1007/s00607-015-0452-y"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Mal<span class="bibtex-protected"><span class="bibtex-protected">ú</span></span> Castellanos, Umeshwar Dayal, Nesime Tatbul, Damianos Chatziantoniou, and Qiming Chen.
+Report on the 8th international workshop on business intelligence for the real-time enterprise (birte'14).
+<em><span class="bibtex-protected">SIGMOD</span> Record</em>, 44(3):62–63, 2015.  </li>
+                    </p>
+                     <p>
+                     <li>Diomidis Spinellis and Stephanos Androutsellis-Theotokis.
+Tools of the trade: a ten-year recap.
+<em>IEEE Software</em>, November/December 2014.  </li>
+                    </p>
+                     <p>
+                     <li>Diomidis Spinellis and Stephanos Androutsellis-Theotokis.
+Software development tooling: information, opinion, guidelines, and tools.
+<em>IEEE Software</em>, 31(6):21–23, November/December 2014.  <a href="http://www.computer.org/csdl/mags/so/2014/06/mso2014060021.pdf"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Diomidis Spinellis.
+Service orchestration with <span class="bibtex-protected">R</span>undeck.
+<em>IEEE Software</em>, 31(4):16–18, July/August 2014.  <a href="http://www.dmst.aueb.gr/dds/pubs/jrnl/2005-IEEESW-TotT/html/v31n4.html"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Diomidis Spinellis.
+First, do no harm.
+<em>IEEE Software</em>, 31(5):12–14, September/October 2014.  <a href="http://www.dmst.aueb.gr/dds/pubs/jrnl/2005-IEEESW-TotT/html/v31n5.html"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Diomidis Spinellis.
+Developing in the cloud.
+<em>IEEE Software</em>, 31(2):41–43, March/April 2014.  <a href="http://www.dmst.aueb.gr/dds/pubs/jrnl/2005-IEEESW-TotT/html/v31n2.html"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Diomidis Spinellis.
+Bespoke infrastructures.
+<em>IEEE Software</em>, 31(1):23–25, January/February 2014.  <a href="http://www.dmst.aueb.gr/dds/pubs/jrnl/2005-IEEESW-TotT/html/v31n1.html"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Diomidis Spinellis and Panos Louridas.
+The carbon footprint of conference papers.
+<em>PLoS ONE</em>, 8(6):e66508, May 2013.  <a href="http://www.dmst.aueb.gr/dds/pubs/jrnl/2013-PLOS-ConfCarbon/html/SL13.html"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Diomidis Spinellis.
+The importance of being declarative.
+<em>IEEE Software</em>, 30(1):90–91, January/February 2013.  <a href="http://www.dmst.aueb.gr/dds/pubs/jrnl/2005-IEEESW-TotT/html/v30n1.html"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Diomidis Spinellis.
+The frictionless development environment scorecard.
+<em>IEEE Software</em>, 30(6):30–32, November/December 2013.  <a href="http://www.dmst.aueb.gr/dds/pubs/jrnl/2005-IEEESW-TotT/html/v30n6.html"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Diomidis Spinellis.
+Systems software.
+<em>IEEE Software</em>, 30(3):18–19, May/June 2013.  <a href="http://www.dmst.aueb.gr/dds/pubs/jrnl/2005-IEEESW-TotT/html/v30n3.html"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Diomidis Spinellis.
+Portability: <span class="bibtex-protected">G</span>oodies vs. the hair shirt.
+<em>IEEE Software</em>, 30(4):22–23, July/August 2013.  <a href="http://www.dmst.aueb.gr/dds/pubs/jrnl/2005-IEEESW-TotT/html/v30n4.html"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Diomidis Spinellis.
+Differential debugging.
+<em>IEEE Software</em>, 30(5):19–21, September/October 2013.  <a href="http://www.dmst.aueb.gr/dds/pubs/jrnl/2005-IEEESW-TotT/html/v30n5.html"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Georgios Gousios and Diomidis Spinellis.
+Conducting quantitative software engineering studies with <span class="bibtex-protected">A</span>litheia <span class="bibtex-protected">C</span>ore.
+<em>Empirical Software Engineering</em>, pages 1–41, 2013.  </li>
+                    </p>
+                     <p>
+                     <li>Diomidis Spinellis and Vaggelis Giannikas.
+Organizational adoption of open source software.
+<em>Journal of Systems and Software</em>, 85:665–681, 2012.  </li>
+                    </p>
+                     <p>
+                     <li>Diomidis Spinellis.
+<span class="bibtex-protected">APIs</span>, libraries, and code.
+<em>IEEE Software</em>, 29(6):85–86, November/December 2012.  <a href="http://www.dmst.aueb.gr/dds/pubs/jrnl/2005-IEEESW-TotT/html/v29n6.html"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Diomidis Spinellis.
+Virtualize me.
+<em>IEEE Software</em>, 29(5):91–93, September/October 2012.  <a href="http://www.dmst.aueb.gr/dds/pubs/jrnl/2005-IEEESW-TotT/html/v29n5.html"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Diomidis Spinellis.
+Refactoring on the cheap.
+<em>IEEE Software</em>, 29(1):96–95, January/February 2012.  <a href="http://www.dmst.aueb.gr/dds/pubs/jrnl/2005-IEEESW-TotT/html/v29n1.html"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Diomidis Spinellis.
+Package management systems.
+<em>IEEE Software</em>, 29(2):84–86, March/April 2012.  <a href="http://www.dmst.aueb.gr/dds/pubs/jrnl/2005-IEEESW-TotT/html/v29n2.html"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Diomidis Spinellis.
+Git.
+<em>IEEE Software</em>, 29(3):100–101, May/June 2012.  <a href="http://www.dmst.aueb.gr/dds/pubs/jrnl/2005-IEEESW-TotT/html/v29n3.html"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Diomidis Spinellis.
+Don't install software by hand.
+<em>IEEE Software</em>, 29(4):86–87, July/August 2012.  <a href="http://www.dmst.aueb.gr/dds/pubs/jrnl/2005-IEEESW-TotT/html/v29n4.html"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Panos Louridas and Georgios Gousios.
+A note on rigour and replicability.
+<em>SIGSOFT Softw. Eng. Notes</em>, 37(5):1–4, September 2012.  <a href="http://doi.acm.org/10.1145/2347696.2347706"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>George&nbsp;M. Giaglis and Diomidis Spinellis.
+Division of effort, productivity, quality, and relationships in <span class="bibtex-protected">FLOSS</span> virtual teams: evidence from the <span class="bibtex-protected">FreeBSD</span> project.
+<em>Journal of Universal Computer Science</em>, 18(19):2625–2645, November 2012.  <a href="http://www.dmst.aueb.gr/dds/pubs/jrnl/2012-JUCS-GSD/html/GS12b.html"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Diomidis Spinellis and Henry Spencer.
+Lessons from space.
+<em>IEEE Software</em>, 28(6):26–28, November/December 2011.  <a href="http://www.dmst.aueb.gr/dds/pubs/jrnl/2005-IEEESW-TotT/html/v28n6.html"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Diomidis Spinellis.
+Elyts edoc.
+<em>IEEE Software</em>, 28(2):104–103, March/April 2011.  <a href="http://www.dmst.aueb.gr/dds/pubs/jrnl/2005-IEEESW-TotT/html/v28n2.html"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Diomidis Spinellis.
+Faking it.
+<em>IEEE Software</em>, 28(5):96, 95, September/October 2011.  <a href="http://www.dmst.aueb.gr/dds/pubs/jrnl/2005-IEEESW-TotT/html/v28n5.html"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Diomidis Spinellis.
+Choosing and using open source components.
+<em>IEEE Software</em>, 28(3):96, 95, May/June 2011.  <a href="http://www.dmst.aueb.gr/dds/pubs/jrnl/2005-IEEESW-TotT/html/v28n3.html"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Diomidis Spinellis.
+Agility drivers.
+<em>IEEE Software</em>, 28(4):96, 95, July/August 2011.  <a href="http://www.dmst.aueb.gr/dds/pubs/jrnl/2005-IEEESW-TotT/html/v28n4.html"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Dimitris Mitropoulos, Vassilios Karakoidas, Panagiotis Louridas, and Diomidis Spinellis.
+Countering code injection attacks: a unified approach.
+<em>Information Management and Computer Security</em>, 19(3):177–194, 2011.
+Highly Commended Paper Award.  <a href="http://www.dmst.aueb.gr/dds/pubs/jrnl/2011-IMCS-CodeInjection/html/MKLS12.html"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Panos Louridas.
+Test management.
+<em>IEEE Software</em>, 28(5):86–91, September/October 2011.  </li>
+                    </p>
+                     <p>
+                     <li>Euripides Loukis, Diomidis Spinellis, and Anastasios Katsigiannis.
+Barriers to the adoption of <span class="bibtex-protected">B2B</span> e-marketplaces by large enterprises: lessons learned from the <span class="bibtex-protected">H</span>ellenic <span class="bibtex-protected">A</span>erospace <span class="bibtex-protected">I</span>ndustry.
+<em>Information Systems Management</em>, 28(2):130–146, 2011.  </li>
+                    </p>
+                     <p>
+                     <li>Maria Halkidi, Diomidis Spinellis, George Tsatsaronis, and Michalis Vazirgiannis.
+Data mining in software engineering.
+<em>Intelligent Data Analysis</em>, 15(3):413–441, 2011.  </li>
+                    </p>
+                     <p>
+                     <li>Vasiliki Efstathiou and Anthony Hunter.
+Algorithms for generating arguments and counterarguments in propositional logic.
+<em>International Journal of Approximate Reasoning</em>, 52(6):672–704, 2011.  </li>
+                    </p>
+                     <p>
+                     <li>Damianos Chatziantoniou, Katerina Pramatari, and Yannis Sotiropoulos.
+Supporting real-time supply chain decisions based on <span class="bibtex-protected">RFID</span> data streams.
+<em>Journal of Systems and Software</em>, 84(4):700–710, 2011.  </li>
+                    </p>
+                     <p>
+                     <li>Michael&nbsp;O. Akinde, Michael&nbsp;H. B<span class="bibtex-protected"><span class="bibtex-protected">ö</span></span>hlen, Damianos Chatziantoniou, and Johann Gamper.
+Theta-constrained multi-dimensional aggregation.
+<em>Inf. Syst.</em>, 36(2):341–358, 2011.  </li>
+                    </p>
+                     <p>
+                     <li>Diomidis Spinellis.
+<span class="bibtex-protected">UML</span> everywhere.
+<em>IEEE Software</em>, 27(5):90–91, September/October 2010.  <a href="http://www.dmst.aueb.gr/dds/pubs/jrnl/2005-IEEESW-TotT/html/v27n5.html"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Diomidis Spinellis.
+<span class="bibtex-protected">CScout</span>: a refactoring browser for <span class="bibtex-protected">C</span>.
+<em>Science of Computer Programming</em>, 75(4):216–231, April 2010.  </li>
+                    </p>
+                     <p>
+                     <li>Diomidis Spinellis.
+Software tracks.
+<em>IEEE Software</em>, 27(2):10–11, March/April 2010.  <a href="http://www.dmst.aueb.gr/dds/pubs/jrnl/2005-IEEESW-TotT/html/v27n2.html"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Diomidis Spinellis.
+Farewell to disks.
+<em>IEEE Software</em>, 27(6):82–83, November/December 2010.  <a href="http://www.dmst.aueb.gr/dds/pubs/jrnl/2005-IEEESW-TotT/html/v27n6.html"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Diomidis Spinellis.
+Code documentation.
+<em>IEEE Software</em>, 27(4):18–19, July/August 2010.  <a href="http://www.dmst.aueb.gr/dds/pubs/jrnl/2005-IEEESW-TotT/html/v27n4.html"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Eleni Konidari and Panos Louridas.
+When students are not programmers.
+<em>ACM Inroads</em>, 1(1):55–60, March 2010.  </li>
+                    </p>
+                     <p>
+                     <li>Stephanos Androutsellis-Theotokis, Diomidis Spinellis, Panos Louridas, and Kostas Stroggylos.
+A market-based approach to managing the risk of peer-to-peer transactions.
+<em>Computer Networks</em>, 54(5):675–688, April 2010.  </li>
+                    </p>
+                     <p>
+                     <li>Stephanos Androutsellis-Theotokis, Diomidis Spinellis, Maria Kechagia, and Georgios Gousios.
+Open source software: a survey from 10,000 feet.
+<em>Foundations and Trends in Technology, Information and Operations Management</em>, 4(3–4):187–347, 2010.  <a href="http://www.spinellis.gr/pubs/jrnl/2010-TOMS-OSS-Survey/html/ASKG10.html"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Jonathan Sprinkle, Marjan Mernik, Juha-Pekka Tolvanen, and Diomidis Spinellis.
+What kinds of nails need a domain-specific hammer?
+<em>IEEE Software</em>, 26(4):15–18, July/August 2009.
+Guest Editors' Introduction: Domain Specific Modelling.  <a href="http://www.dmst.aueb.gr/dds/pubs/jrnl/2009-IEEESW-DSLM/html/SMTS09.htm"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Diomidis Spinellis, Georgios Gousios, Vassilios Karakoidas, Panagiotis Louridas, Paul&nbsp;J. Adams, Ioannis Samoladas, and Ioannis Stamelos.
+Evaluating the quality of open source software.
+<em>Electronic Notes in Theoretical Computer Science</em>, 233:5 – 28, 2009.
+Proceedings of the International Workshop on Software Quality and Maintainability (SQM 2008).  <a href="http://www.dmst.aueb.gr/dds/pubs/conf/2008-SQM-SQOOSS/html/SGKL09.html"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Diomidis Spinellis.
+User-level operating system transactions.
+<em>spande</em>, 39(14):1215–1233, 2009.  </li>
+                    </p>
+                     <p>
+                     <li>Diomidis Spinellis.
+Start with the most difficult part.
+<em>IEEE Software</em>, 26(2):70–71, March/April 2009.  <a href="http://www.dmst.aueb.gr/dds/pubs/jrnl/2005-IEEESW-TotT/html/v26n2.html"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Diomidis Spinellis.
+Optimizing header file include directives.
+<em>Journal of Software Maintenance and Evolution: Research and Practice</em>, 21(4):233–251, July/August 2009.  <a href="http://www.dmst.aueb.gr/dds/pubs/jrnl/2009-JSME-include/html/Spi08e.html"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Diomidis Spinellis.
+Job security.
+<em>IEEE Software</em>, 26(5):14–15, Sep/Oct 2009.  <a href="http://www.dmst.aueb.gr/dds/pubs/jrnl/2005-IEEESW-TotT/html/v26n5.html"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Diomidis Spinellis.
+Drawing tools.
+<em>IEEE Software</em>, 26(3):12–13, May/June 2009.  <a href="http://www.dmst.aueb.gr/dds/pubs/jrnl/2005-IEEESW-TotT/html/v26n3.html"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Dimitris Mitropoulos and Diomidis Spinellis.
+<span class="bibtex-protected">SDriver</span>: location-specific signatures prevent <span class="bibtex-protected">SQL</span> injection attacks.
+<em>Computers &amp; Security</em>, 28:121–129, May 2009.  <a href="http://www.dmst.aueb.gr/dds/pubs/jrnl/2009-CompSec-SQLIA/html/sqlia.html"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Damianos Chatziantoniou and Elias Tzortzakakis.
+<span class="bibtex-protected">ASSET</span> queries: a declarative alternative to mapreduce.
+<em><span class="bibtex-protected">SIGMOD</span> Record</em>, 38(2):35–41, 2009.  </li>
+                    </p>
+                     <p>
+                     <li>Diomidis Spinellis and Panagiotis Louridas.
+The collaborative organization of knowledge.
+<em>Communications of the ACM</em>, 51(8):68–73, August 2008.  <a href="http://www.dmst.aueb.gr/dds/pubs/jrnl/2008-CACM-Wikipedia/html/SL08.html"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Diomidis Spinellis.
+Using and abusing <span class="bibtex-protected">XML</span>.
+<em>IEEE Software</em>, 25(2):88–89, March/April 2008.  <a href="http://www.dmst.aueb.gr/dds/pubs/jrnl/2005-IEEESW-TotT/html/v25n2.html"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Diomidis Spinellis.
+The <span class="bibtex-protected">A</span>ntikythera mechanism: a computer science perspective.
+<em>IEEE Computer</em>, 41(5):22–27, May 2008.  <a href="http://www.dmst.aueb.gr/dds/pubs/jrnl/2008-Computer-Antikythera/html/Spi08d.htm"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Diomidis Spinellis.
+The way we program.
+<em>IEEE Software</em>, 25(4):89–91, July/August 2008.  <a href="http://www.dmst.aueb.gr/dds/pubs/jrnl/2005-IEEESW-TotT/html/v25n4.html"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Diomidis Spinellis.
+Software builders.
+<em>IEEE Software</em>, 25(3):22–23, May/June 2008.  <a href="http://www.dmst.aueb.gr/dds/pubs/jrnl/2005-IEEESW-TotT/html/v25n3.html"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Diomidis Spinellis.
+Rational metaprogramming.
+<em>IEEE Software</em>, 25(1):78–79, January/February 2008.  <a href="http://www.dmst.aueb.gr/dds/pubs/jrnl/2005-IEEESW-TotT/html/v25n1.html"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Panagiotis Louridas, Diomidis Spinellis, and Vasileios Vlachos.
+Power laws in software.
+<em>ACM Transactions on Software Engineering and Methodology</em>, 18(1):1–26, September 2008.
+Article 2.  <a href="http://www.dmst.aueb.gr/dds/pubs/jrnl/2008-TOSEM-PowerLaws/html/LSV08.html"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Vassilios Karakoidas and Diomidis Spinellis.
+<span class="bibtex-protected">FIRE/J</span>: <span class="bibtex-protected">O</span>ptimizing regular expression searches with generative programming.
+<em>Software: Practice and Experience</em>, 38(6):557–573, May 2008.  <a href="http://www.dmst.aueb.gr/dds/pubs/jrnl/2007-SPANDE-FIRE/html/KS07.html"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Simon Helsen, Arthur Ryman, and Diomidis Spinellis.
+Where's my jetpack?
+<em>IEEE Software</em>, 25(5):18–21, September/October 2008.
+Guest Editors' Introduction: Software Development Tools.  <a href="http://www.dmst.aueb.gr/dds/pubs/jrnl/2008-IEEESW-DevInf/html/HRS08.htm"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Simon Frankau, Diomidis Spinellis, Nick Nassuphis, and Christoph Burgard.
+Commercial uses: going functional on exotic trades.
+<em>Journal of Functional Programming</em>, 19(1):27–45, October 2008.  <a href="http://www.dmst.aueb.gr/dds/pubs/jrnl/2008-JFP-ExoticTrades/html/FSNB08.html"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Damianos Chatziantoniou and Achilleas Anagnostopoulos.
+A session-oriented approach in modeling hierarchies of streams.
+<em>Softw., Pract. Exper.</em>, 38(1):95–115, 2008.  </li>
+                    </p>
+                     <p>
+                     <li>Vasileios Vlachos and Diomidis Spinellis.
+A <span class="bibtex-protected">PRoactive</span> malware identification system based on the computer hygiene principles.
+<em>Information Management and Computer Security</em>, 15(4):295–312, 2007.  <a href="http://www.dmst.aueb.gr/dds/pubs/jrnl/2007-IMCS-Promise/html/VS07.html"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Diomidis Spinellis, Panagiotis Zaharias, and Adam Vrechopoulos.
+Coping with plagiarism and grading load: randomized programming assignments and reflective grading.
+<em>Computer Applications in Engineering Education</em>, 15(2):113–123, 2007.  <a href="http://www.dmst.aueb.gr/dds/pubs/jrnl/2007-CAEE-jarpeb/html/SZV07.htm"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Diomidis Spinellis and Panagiotis Louridas.
+A framework for the static verification of <span class="bibtex-protected">API</span> calls.
+<em>Journal of Systems and Software</em>, 80(7):1156–1168, July 2007.  <a href="http://www.dmst.aueb.gr/dds/pubs/jrnl/2007-JSS-api-verify/html/SL07b.html"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Diomidis Spinellis.
+The tools we use.
+<em>IEEE Software</em>, 24(4):20–21, July/August 2007.  <a href="http://www.dmst.aueb.gr/dds/pubs/jrnl/2005-IEEESW-TotT/html/v24n4.html"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Diomidis Spinellis.
+Silver bullets and other mysteries.
+<em>IEEE Software</em>, 24(3):22–23, May/June 2007.  <a href="http://www.dmst.aueb.gr/dds/pubs/jrnl/2005-IEEESW-TotT/html/v24n3.html"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Diomidis Spinellis.
+On paper.
+<em>IEEE Software</em>, 24(6):24–25, November/December 2007.  <a href="http://www.dmst.aueb.gr/dds/pubs/jrnl/2005-IEEESW-TotT/html/v24n6.html"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Diomidis Spinellis.
+I spy.
+<em>IEEE Software</em>, 24(2):16–17, March/April 2007.  <a href="http://www.dmst.aueb.gr/dds/pubs/jrnl/2005-IEEESW-TotT/html/v24n2.html"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Diomidis Spinellis.
+Cracking software reuse.
+<em>IEEE Software</em>, 24(1):12–13, January/February 2007.  <a href="http://www.dmst.aueb.gr/dds/pubs/jrnl/2005-IEEESW-TotT/html/v24n1.html"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Diomidis Spinellis.
+Abstraction and variation.
+<em>IEEE Software</em>, 24(5):24–25, September/October 2007.  <a href="http://www.dmst.aueb.gr/dds/pubs/jrnl/2005-IEEESW-TotT/html/v24n5.html"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Vassilis Prevelakis and Diomidis Spinellis.
+The <span class="bibtex-protected">A</span>thens affair.
+<em>IEEE Spectrum</em>, 44(7):26–33, July 2007.  <a href="http://www.dmst.aueb.gr/dds/pubs/jrnl/2007-Spectrum-AA/html/PS07.html"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Panagiotis Louridas.
+Declarative <span class="bibtex-protected">GUI</span> programming in <span class="bibtex-protected">Microsoft</span> <span class="bibtex-protected">Windows</span>.
+<em>IEEE Software</em>, 24(4):16–19, July/August 2007.  </li>
+                    </p>
+                     <p>
+                     <li>Dimitrios Lekkas and Diomidis Spinellis.
+Implementing regular cash with blind fixed-value electronic coins.
+<em>Computer Standards &amp; Interfaces</em>, 29(3):277–288, March 2007.  <a href="http://www.dmst.aueb.gr/dds/pubs/jrnl/2006-CSI-epay/html/LS07.html"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Konstantinos Chorianopoulos and Diomidis Spinellis.
+Coping with <span class="bibtex-protected">TiVo</span>: opportunities of the networked digital video recorder.
+<em>Telematics and Informatics</em>, 24(1):48–58, February 2007.  <a href="http://www.dmst.aueb.gr/dds/pubs/jrnl/2006-TelInf-CopingWithTivo/html/CS06b.htm"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Damianos Chatziantoniou and Kenneth&nbsp;A. Ross.
+Partitioned optimization of complex queries.
+<em>Inf. Syst.</em>, 32(2):248–282, 2007.  </li>
+                    </p>
+                     <p>
+                     <li>Damianos Chatziantoniou.
+Using grouping variables to express complex decision support queries.
+<em>Data Knowl. Eng.</em>, 61(1):114–136, 2007.  </li>
+                    </p>
+                     <p>
+                     <li>Diomidis Spinellis.
+Some types of memory are more equal than others.
+<em>;login:</em>, 31(2):29–36, April 2006.  <a href="http://www.dmst.aueb.gr/dds/pubs/trade/2006-login-memhier/html/memhier.html"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Diomidis Spinellis.
+Project asset portability.
+<em>IEEE Software</em>, 23(1):100–101, January/February 2006.  <a href="http://www.dmst.aueb.gr/dds/pubs/jrnl/2005-IEEESW-TotT/html/v23n1.html"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Diomidis Spinellis.
+Debuggers and logging frameworks.
+<em>IEEE Software</em>, 23(3):98–99, May/June 2006.  <a href="http://www.dmst.aueb.gr/dds/pubs/jrnl/2005-IEEESW-TotT/html/v23n3.html"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Diomidis Spinellis.
+Bug busters.
+<em>IEEE Software</em>, 23(2):92–93, March/April 2006.  <a href="http://www.dmst.aueb.gr/dds/pubs/jrnl/2005-IEEESW-TotT/html/v23n2.html"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Adamantia&nbsp;D. Pateli, George&nbsp;M. Giaglis, and Diomidis&nbsp;D. Spinellis.
+Wireless value-added services in exhibition shows.
+<em>International Journal of Mobile Communications</em>, 4(2):193–209, 2006.  </li>
+                    </p>
+                     <p>
+                     <li>Panagiotis Louridas.
+<span class="bibtex-protected">SOAP</span> and web services.
+<em>IEEE Software</em>, 23(6):62–67, November/December 2006.  </li>
+                    </p>
+                     <p>
+                     <li>Panagiotis Louridas.
+Version control.
+<em>IEEE Software</em>, 23(1):104–107, January/February 2006.  </li>
+                    </p>
+                     <p>
+                     <li>Panagiotis Louridas.
+Using wikis in software development.
+<em>IEEE Software</em>, 23(2):88–91, March/April 2006.  </li>
+                    </p>
+                     <p>
+                     <li>Panagiotis Louridas.
+Static code analysis.
+<em>IEEE Software</em>, 23(4):58–61, July/August 2006.  </li>
+                    </p>
+                     <p>
+                     <li>Markos Gogoulos and Diomidis Spinellis.
+Using linux live <span class="bibtex-protected">CDs</span> for penetration testing.
+<em>;login:</em>, 31(3):40–45, June 2006.  <a href="http://www.dmst.aueb.gr/dds/pubs/trade/2006-login-PenTesting/html/GS06.html"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Christos&nbsp;D. Tarantilis, Diomidis Spinellis, and Michel Gendreau.
+Advanced heuristics in transportation and logistics.
+<em>IEEE Intelligent Systems</em>, 20(4):16–18, July 2005.  <a href="http://www.dmst.aueb.gr/dds/pubs/jrnl/2005-IEEEIntSys-Metaheuristics/html/TSG05.htm"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Diomidis Spinellis.
+Working with <span class="bibtex-protected">Unix</span> tools.
+<em>IEEE Software</em>, 22(6):9–11, November/December 2005.  <a href="http://www.dmst.aueb.gr/dds/pubs/jrnl/2005-IEEESW-TotT/html/v22n6.html"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Diomidis Spinellis.
+Version control systems.
+<em>IEEE Software</em>, 22(5):108–109, September/October 2005.  <a href="http://www.dmst.aueb.gr/dds/pubs/jrnl/2005-IEEESW-TotT/html/v22n5.html"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Diomidis Spinellis.
+Tool writing: a forgotten art?
+<em>IEEE Software</em>, 22(4):9–11, July/August 2005.  <a href="http://www.dmst.aueb.gr/dds/pubs/jrnl/2005-IEEESW-TotT/html/v22n4.html"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Diomidis Spinellis.
+Software engineering glossary, version control, part <span class="bibtex-protected">I</span>.
+<em>IEEE Software</em>, 22(5):107, September/October 2005.  <a href="http://www.dmst.aueb.gr/dds/pubs/jrnl/2005-IEEESW-VCS/html/VCS-Glossary-I.html"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Diomidis Spinellis.
+Java makes scripting languages irrelevant?
+<em>IEEE Software</em>, 22(3):70–71, May/June 2005.  <a href="http://www.dmst.aueb.gr/dds/pubs/jrnl/2005-IEEESW-TotT/html/v22n3.html"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Diomidis Spinellis.
+Index-based persistent document identifiers.
+<em>Information Retrieval</em>, 8(1):5–24, January 2005.  <a href="http://www.dmst.aueb.gr/dds/pubs/jrnl/2005-IR-PDI/html/Spi04b.html"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Panagiotis Louridas.
+<span class="bibtex-protected">JUnit</span>: unit testing and coding in tandem.
+<em>IEEE Software</em>, 22(4):12–15, July/August 2005.  </li>
+                    </p>
+                     <p>
+                     <li>Dimitrios Lekkas and Diomidis Spinellis.
+Handling and reporting security advisories: a scorecard approach.
+<em>IEEE Security and Privacy</em>, July/August 2005.  <a href="http://www.dmst.aueb.gr/dds/pubs/jrnl/2005-CS-SecAdvisory/html/LS05.htm"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Georgios Gousios, Eyfthymia Aivaloglou, and Stefanos Gritzallis.
+Distributed component architectures security issues.
+<em>Computer Standards &amp; Interfaces</em>, 27(3):269–284, March 2005.  <a href="http://istlab.dmst.aueb.gr/\~george/pubs/2004-CSI-GAG/master.pdf"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Damianos Chatziantoniou and Theodore Johnson.
+Decision support queries on a tape-resident data warehouse.
+<em>Inf. Syst.</em>, 30(2):133–149, 2005.  </li>
+                    </p>
+                     <p>
+                     <li>Vasileios Vlachos, Stefanos Androutsellis-Theotokis, and Diomidis Spinellis.
+Security applications of peer-to-peer networks.
+<em>Computer Networks</em>, 45(2):195–205, June 2004.  <a href="http://www.dmst.aueb.gr/dds/pubs/jrnl/2004-CompSec-p2pav/html/VAS04.html"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Diomidis Spinellis and Clements Szyperski.
+How is open source affecting software development?
+<em>IEEE Software</em>, 21(1):28–33, January/February 2004.  <a href="http://www.dmst.aueb.gr/dds/pubs/jrnl/2004-IEEESW-OSS/html/ge-intro.html"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Konstantinos Chorianopoulos and Diomidis Spinellis.
+User interface development for interactive television: extending a commercial <span class="bibtex-protected">DTV</span> platform to the virtual channel <span class="bibtex-protected">API</span>.
+<em>Computers &amp; Graphics</em>, 28(2):157–166, April 2004.  <a href="http://www.dmst.aueb.gr/dds/pubs/jrnl/2004-CG-ITV/html/CS04.htm"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Konstantinos Chorianopoulos and Diomidis Spinellis.
+Affective usability evaluation for an interactive music television channel.
+<em>Computers in Entertainment</em>, 2(3):14, July 2004.  <a href="http://www.dmst.aueb.gr/dds/pubs/jrnl/2004-CIE-VC/html/CS04b.htm"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Damianos Chatziantoniou and George&nbsp;I. Doukidis.
+<span class="bibtex-protected">SQL</span> extensions to enable decision support within database systems.
+<em>Journal of Decision Systems</em>, 13(2):155–172, 2004.  </li>
+                    </p>
+                     <p>
+                     <li>Damianos Chatziantoniou and Achilleas Anagnostopoulos.
+<span class="bibtex-protected">NESTREAM:</span> querying nested streams.
+<em><span class="bibtex-protected">SIGMOD</span> Record</em>, 33(3):71–78, 2004.  </li>
+                    </p>
+                     <p>
+                     <li>Stephanos Androutsellis-Theotokis and Diomidis Spinellis.
+A survey of peer-to-peer content distribution technologies.
+<em>acmcs</em>, 36(4):335–371, December 2004.  <a href="http://www.dmst.aueb.gr/dds/pubs/jrnl/2004-ACMCS-p2p/html/AS04.html"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Diomidis Spinellis.
+The information furnace: consolidated home control.
+<em>Personal and Ubiquitous Computing</em>, 7(1):53–69, 2003.  <a href="http://www.dmst.aueb.gr/dds/pubs/jrnl/2003-PUC-ifurnace/html/furnace.html"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Diomidis Spinellis.
+The decay and failures of web references.
+<em>casm</em>, 46(1):71–77, January 2003.  <a href="http://www.dmst.aueb.gr/dds/pubs/jrnl/2003-CACM-URLcite/html/urlcite.html"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Diomidis Spinellis.
+Reliable identification of bounded-length viruses is <span class="bibtex-protected">NP</span>-complete.
+<em>IEEE Transactions on Information Theory</em>, 49(1):280–284, January 2003.  <a href="http://www.dmst.aueb.gr/dds/pubs/jrnl/2002-ieeetit-npvirus/html/npvirus.html"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Diomidis Spinellis.
+Reflections on trusting trust revisited.
+<em>casm</em>, 46(6):112, June 2003.  <a href="http://www.dmst.aueb.gr/dds/pubs/jrnl/2003-CACM-Reflections2/html/reflections2.html"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Diomidis Spinellis.
+Reading, writing, and code.
+<em>ACM Queue</em>, 1(7):84–89, October 2003.  <a href="http://www.dmst.aueb.gr/dds/pubs/jrnl/2003-ACMQ-CR/html/article.html"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Diomidis Spinellis.
+Position-annotated photographs: a geotemporal web.
+<em>IEEE Pervasive Computing</em>, 2(2):72–79, April-June 2003.  <a href="http://www.dmst.aueb.gr/dds/pubs/jrnl/2003-PC-GTWeb/html/gtweb.html"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Diomidis Spinellis.
+Organized pruning of file sets.
+<em>;login:</em>, 28(3):39–42, June 2003.  <a href="http://www.dmst.aueb.gr/dds/pubs/trade/2003-login-prune/html/prune.html"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Diomidis Spinellis.
+On the declarative specification of models.
+<em>IEEE Software</em>, 20(2):94–96, March/April 2003.  <a href="http://www.dmst.aueb.gr/dds/pubs/jrnl/2003-IEEESW-umlgraph/html/article.html"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Diomidis Spinellis.
+Global analysis and transformations in preprocessed languages.
+<em>ieeese</em>, 29(11):1019–1030, November 2003.  <a href="http://www.dmst.aueb.gr/dds/pubs/jrnl/2003-TSE-Refactor/html/Spi03r.html"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Victoria Skoularidou and Diomidis Spinellis.
+Security architectures for network clients.
+<em>Information Management and Computer Security</em>, 11(2):84–91, 2003.  <a href="http://www.dmst.aueb.gr/dds/pubs/jrnl/2003-IMCS-clisec/html/cli-sec.html"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Kostas Kalaitzakis, Eftichios Koutroulis, and Vassilios Vlachos.
+Development of a data acquisition system for remote monitoring of renewable energy systems.
+<em>Measurement</em>, 34(2):75–83, September 2003.  </li>
+                    </p>
+                     <p>
+                     <li>John Iliadis, Stefanos Gritzalis, Diomidis Spinellis, Danny de&nbsp;Cock, Bart Preneel, and Dimitris Gritzalis.
+Towards a framework for evaluating certificate status information mechanisms.
+<em>Computer Communications</em>, 26(16):1839&ndash;1850, October 2003.  <a href="http://www.dmst.aueb.gr/dds/pubs/jrnl/2003-CompComm-Cert/html/csi.htm"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Diomidis Spinellis and Dimitris Gritzalis.
+Panoptis: intrusion detection using a domain-specific language.
+<em>Journal of Computer Security</em>, 10:159–176, 2002.  <a href="http://www.dmst.aueb.gr/dds/pubs/jrnl/2002-JCS-Panoptis/html/paper.html"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Diomidis Spinellis.
+Unix tools as visual programming components in a <span class="bibtex-protected">GUI</span>-builder environment.
+<em>spande</em>, 32(1):57–71, January 2002.  <a href="http://www.dmst.aueb.gr/dds/pubs/jrnl/2001-SPANDE-VUFC/html/vufc.html"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Diomidis Spinellis.
+A modest proposal for curing the public field phobia.
+<em>sigplan</em>, 37(4):54–56, April 2002.  <a href="http://www.dmst.aueb.gr/dds/pubs/jrnl/2001-SIGPLAN-access/html/phobia.html"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>D.&nbsp;Spinellis, K.&nbsp;Moulinos, J.&nbsp;Iliadis, D.&nbsp;Gritzalis, S.&nbsp;Gritzalis, and S.&nbsp;Katsikas.
+Deploying a secure cyberbazaar by adding trust on commercial transactions.
+<em>eJETA.org</em>, November 2002.
+Available online http://minbar.cs.dartmouth.edu/greecom/ejeta/second-issue.php?download=ejeta-2002.05.10.15.43.34.pdf.  <a href="http://www.dmst.aueb.gr/dds/pubs/jrnl/2002-eJETA-Cosacc/html/cyberbazaar.htm"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Ioannis Papadakis, Vassileios Karakoidas, and Vassileios Chrissikopoulos.
+<span class="bibtex-protected">DocML</span>: a digital library of university data.
+<em>Library Hi-Tech</em>, 20(3):378–387, 2002.  <a href="http://www.emeraldinsight.com/0737-8831.htm"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Diomidis Spinellis and Chrissoleon Papadopoulos.
+Modular production line optimization: the ex<span class="bibtex-protected">PLO</span>re architecture.
+<em>Mathematical Problems in Engineering</em>, 6:527–541, 2001.  <a href="http://www.dmst.aueb.gr/dds/pubs/jrnl/2000-MPE-exPLOre/html/explore.html"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Diomidis Spinellis.
+Notable design patterns for domain specific languages.
+<em>Journal of Systems and Software</em>, 56(1):91–99, February 2001.  <a href="http://www.dmst.aueb.gr/dds/pubs/jrnl/2000-JSS-DSLPatterns/html/dslpat.html"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Diomidis Spinellis.
+Fear of coding, and how to reduce it.
+<em>IEEE Computer</em>, 34(8):98–100, August 2001.  <a href="http://www.dmst.aueb.gr/dds/pubs/jrnl/2001-05-Computer-Fear-of-Coding/html/foc.html"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Konstantinos Raptis, Diomidis Spinellis, and Sokratis Katsikas.
+Multi-technology distributed objects and their integration.
+<em>Computer Standards &amp; Interfaces</em>, 23:157–168, July 2001.  <a href="http://www.dmst.aueb.gr/dds/pubs/jrnl/2001-CSI-Components/html/imtd.html"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Euripides Loukis and Diomidis Spinellis.
+Information systems security in the <span class="bibtex-protected">G</span>reek public sector.
+<em>Information Management and Computer Security</em>, 9(1):21–31, 2001.  <a href="http://www.dmst.aueb.gr/dds/pubs/jrnl/2000-IMCS-pubsec/html/ispa.html"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Diomidis Spinellis and Konstantinos Raptis.
+Component mining: a process and its pattern language.
+<em>Information and Software Technology</em>, 42(9):609–617, June 2000.  <a href="http://www.dmst.aueb.gr/dds/pubs/jrnl/2000-IST-Components/html/comp.html"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Diomidis Spinellis and Chrissoleon&nbsp;T. Papadopoulos.
+A simulated annealing approach for buffer allocation in reliable production lines.
+<em>Annals of Operations Research</em>, 93:373–384, 2000.  <a href="http://www.dmst.aueb.gr/dds/pubs/jrnl/1997-AOR-Anneal/html/anneal.html"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Diomidis Spinellis, Chrissoleon Papadopoulos, and Jim <span class="bibtex-protected">MacGregor Smith</span>.
+Large production line optimization using simulated annealing.
+<em>International Journal of Production Research</em>, 38(3):509–541, February 2000.  <a href="http://www.dmst.aueb.gr/dds/pubs/jrnl/1999-IJPR-Optim/html/bap.html"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Diomidis Spinellis and Chrissoleon Papadopoulos.
+Stochastic algorithms for buffer allocation in reliable production lines.
+<em>Mathematical Problems in Engineering</em>, 5:441–458, 2000.  <a href="http://www.dmst.aueb.gr/dds/pubs/jrnl/1999-MPE-GASA/html/gasa.html"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Diomidis Spinellis.
+Reflection as a mechanism for software integrity verification.
+<em>ACM Transactions on Information and System Security</em>, 3(1):51–62, February 2000.  <a href="http://www.dmst.aueb.gr/dds/pubs/jrnl/1999-TISS-Reflect/html/reflect.html"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Konstantinos Raptis, Diomidis Spinellis, and Sokratis Katsikas.
+Distributed object bridges and a <span class="bibtex-protected">J</span>ava-based object mediator.
+<em>Informatik / Informatique</em>, 2:4–8, April 2000.  <a href="http://www.dmst.aueb.gr/dds/pubs/jrnl/2000-Inf-dobjom/html/dobjom.html"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Panagiotis Louridas and Pericles Loucopoulos.
+A generic approach for reflective design.
+<em>ACM Transactions on Software Engineering Methodology</em>, 9(2):199–237, April 2000.  <a href="http://www.dmst.aueb.gr/louridas/pubs/louridas-dr.pdf"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Panagiotis Louridas.
+Some guidelines for non-repudiation protocols.
+<em>ACM Computer Communication Review</em>, October 2000.  <a href="http://www.dmst.aueb.gr/louridas/pubs/louridas-nonrep.pdf"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Diomidis Spinellis, Spyros Kokolakis, and Stephanos Gritzalis.
+Security requirements, risks, and recommendations for small enterprise and home-office environments.
+<em>Information Management and Computer Security</em>, 7(3):121–128, 1999.  <a href="http://www.dmst.aueb.gr/dds/pubs/jrnl/1999-IMCS-Soft-Risk/html/soho.html"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Diomidis Spinellis, Stefanos Gritzalis, John Iliadis, Dimitris Gritzalis, and Sokratis Katsikas.
+Trusted third party services for deploying secure telemedical applications over the <span class="bibtex-protected">WWW</span>.
+<em>Computers and Security</em>, 18(7):627–639, 1999.  <a href="http://www.dmst.aueb.gr/dds/pubs/jrnl/1999-CompSec-euromed/html/ttpwww.html"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Diomidis Spinellis.
+Optimal peripheral access using pipe-based double-buffering.
+<em>;login:</em>, 24(4):43–45, August 1999.  <a href="http://www.dmst.aueb.gr/dds/pubs/trade/1999-login-dd/html/dd.html"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Diomidis Spinellis.
+Explore, excogitate, exploit: component mining.
+<em>IEEE Computer</em>, 32(9):114–116, September 1999.  <a href="http://www.dmst.aueb.gr/dds/pubs/jrnl/1999-Computer-Components/html/comp.html"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Diomidis Spinellis.
+Declarative peephole optimization using string pattern matching.
+<em>sigplan</em>, 34(2):47–51, February 1999.  <a href="http://www.dmst.aueb.gr/dds/pubs/jrnl/1999-SIGPLAN-Optim/html/patop.html"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Panagiotis Louridas.
+Design as bricolage: anthropology meets design thinking.
+<em>Design Studies</em>, 20(6):517–535, November 1999.  <a href="http://www.dmst.aueb.gr/louridas/pubs/louridas-bric.pdf"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Stephanos Gritzalis, John Iliadis, Dimitris Gritzalis, Diomidis Spinellis, and Sokratis Katsikas.
+Developing secure <span class="bibtex-protected">Web-based</span> medical applications.
+<em>Medical Informatics and the Internet in Medicine</em>, 24(1):75–90, March 1999.  <a href="http://www.dmst.aueb.gr/dds/pubs/jrnl/1999-MedInf-Euromed/html/euromed.html"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Stefanos Gritzalis, Diomidis Spinellis, and Panagiotis Georgiadis.
+Security protocols over open networks and distributed systems: formal methods for their analysis, design, and verification.
+<em>Computer Communications</em>, 22(8):695–707, May 1999.  <a href="http://www.dmst.aueb.gr/dds/pubs/jrnl/1997-CompComm-Formal/html/formal.htm"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Stefanos Gritzalis, George Aggelis, and Diomidis Spinellis.
+Architectures for secure portable executable content.
+<em>Internet Research</em>, 9(1):16–24, 1999.  <a href="http://www.dmst.aueb.gr/dds/pubs/jrnl/1998-InetRes-ExeSec/html/exesec.htm"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Diomidis Spinellis.
+The computer's new clothes.
+<em>IEEE Software</em>, 15(6):14–17, November/December 1998.  <a href="http://www.dmst.aueb.gr/dds/pubs/jrnl/1998-IEEESoft-CliServ/html/CliServ.html"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Diomidis Spinellis.
+Small tools for automatic text generation.
+<em>;login:</em>, 23(4):44–47, August 1998.  <a href="http://www.dmst.aueb.gr/dds/pubs/trade/1998-Login-TextTools/html/paper.html"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Diomidis Spinellis.
+Palmtop programmable appliance controls.
+<em>Personal Technologies (Personal and Ubiquitous Computing)</em>, 2(1):11–17, March 1998.  <a href="http://www.dmst.aueb.gr/dds/pubs/jrnl/1998-PeTe-Remote/html/article.html"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Diomidis Spinellis.
+A critique of the <span class="bibtex-protected">W</span>indows application programming interface.
+<em>Computer Standards &amp; Interfaces</em>, 20(1):1–8, November 1998.  <a href="http://www.dmst.aueb.gr/dds/pubs/jrnl/1997-CSI-WinApi/html/win.html"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Sokratis Katsikas, Diomidis Spinellis, John Iliadis, and Bernd Blobel.
+Using trusted third parties for secure telemedical applications over the <span class="bibtex-protected">WWW</span>: the <span class="bibtex-protected">EUROMED-ETS</span> approach.
+<em>International Journal of Medical Informatics</em>, 49(1):59–68, March 1998.  <a href="http://www.dmst.aueb.gr/dds/pubs/jrnl/1998-IJMI-ETS/html/euromed.html"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Stefanos Gritzalis and Diomidis Spinellis.
+The cascade vulnerability problem: the detection problem and a simulated annealing approach for its correction.
+<em>Microprocessors and Microsystems</em>, 21(10):621–628, April 1998.  <a href="http://www.dmst.aueb.gr/dds/pubs/jrnl/1997-uProcessors-Cascade/html/casc.html"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Diomidis Spinellis and Rob Kolstad.
+A conversation about <span class="bibtex-protected">P</span>erl and the shell: choosing the implementation vehicle.
+<em>;login:</em>, 22(3):25–31, June 1997.  <a href="http://www.dmst.aueb.gr/dds/pubs/trade/1997-login-Perl/html/shperl.html"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>A.&nbsp;Tsalgatidou, P.&nbsp;Louridas, G.&nbsp;Schizas, and T.&nbsp;Fesakis.
+Multilevel <span class="bibtex-protected">P</span>etri nets for modeling and simulating organizational dynamic behaviour.
+<em>Simulation &amp; Gaming</em>, 27(4):485–506, December 1996.
+Special Issue on Simulation of Information Systems.  <a href="http://www.dmst.aueb.gr/louridas/pubs/louridas-petri.ps"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Diomidis Spinellis, Sophia Drossopoulou, and Susan Eisenbach.
+Object-oriented technology in multiparadigm language implementation.
+<em>Journal of Object-Oriented Programming</em>, 8(1):33–38, March/April 1995.  <a href="http://www.dmst.aueb.gr/dds/pubs/jrnl/1995-JOOP-Multipar/html/paper.html"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Diomidis Spinellis.
+Trace: a tool for logging operating system call transactions.
+<em>Operating Systems Review</em>, 28(4):56–63, October 1994.  <a href="http://www.dmst.aueb.gr/dds/pubs/jrnl/1994-SIGOS-Trace/html/article.html"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Diomidis Spinellis.
+Implementing <span class="bibtex-protected">H</span>askell: language implementation as a tool building exercise.
+<em>Structured Programming (Software Concepts and Tools)</em>, 14:37–48, 1993.  <a href="http://www.dmst.aueb.gr/dds/pubs/jrnl/1993-StrProg-Haskell/html/exp.html"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Diomidis Spinellis.
+Checking <span class="bibtex-protected">C</span> declarations at link time.
+<em>The Journal of C Language Translation</em>, 4(3):238–249, March 1993.  <a href="http://www.dmst.aueb.gr/dds/pubs/jrnl/1993-JCLT-CType/html/tsl.html"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Diomidis Spinellis.
+Type-safe linkage for variables and functions.
+<em>sigplan</em>, 26(8):74–79, August 1991.  <a href="http://www.dmst.aueb.gr/dds/pubs/jrnl/1991-SIGPLAN-CType/html/tsl.html"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+               </ul>
+             </ul>
+           </div>
+         </div>
+         <div class="panel panel-default" id="px2">
+           <!-- Print publications categories thats exist -->
+                 <div class="panel-heading">
+                   <h3 id="Book">Book Chapters</h3>
+                 </div>
+           <!-- Print publications information by reverse chronological order -->
+           <div class="panel-body">
+             <ul class="list-group">
+               <ul>
+                     <p>
+                     <li>Diomidis Spinellis.
+Tools! tools! we need tools!
+In Tim Menzies, Laurie Williams, and Thomas Zimmermann, editors, <em>Perspectives on Data Science for Software Engineering</em>, pages 143–148.
+Morgan Kaufmann, 2016.  <a href="http://www.dmst.aueb.gr/dds/pubs/inbook/2016-ds4se-tools/html/tools.html"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Dimitris Mitropoulos.
+Securing software.
+In Phillip&nbsp;A. Laplante, editor, <em>Encyclopedia of Computer Science and Technology, Second Edition</em>.
+CRC Press, Taylor and Francis Group, 2016.  </li>
+                    </p>
+                     <p>
+                     <li>Vassilios Karakoidas.
+Domain-specific languages.
+In Phillip&nbsp;A. Laplante, editor, <em>Encyclopedia of Computer Science and Technology, Second Edition</em>.
+CRC Press, Taylor and Francis Group, 2016.  </li>
+                    </p>
+                     <p>
+                     <li>Diomidis Spinellis.
+Tools and techniques for analyzing product and process data.
+In Tim Menzies, Christian Bird, and Thomas Zimmermann, editors, <em>The Art and Science of Analyzing Software Data</em>, pages 161–212.
+Morgan-Kaufmann, 2015.  </li>
+                    </p>
+                     <p>
+                     <li>Diomidis Spinellis.
+The information train.
+In Newton Lee, editor, <em>Digital <span class="bibtex-protected">Da Vinci</span>: Computers in the Arts and Sciences</em>, chapter&nbsp;7, pages 129–142.
+Springer, 2014.  <a href="http://www.dmst.aueb.gr/dds/pubs/inbook/2014-DaVinci-Infotrain/html/Spi14k.htm"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Diomidis Spinellis.
+Guerrilla tactics in public administration.
+In <em>From the University to Public Administration: A Return Trip</em>, pages 115–146.
+Papazisis, Athens, Greece, 2014.  </li>
+                    </p>
+                     <p>
+                     <li>Diomidis Spinellis.
+The <span class="bibtex-protected">U</span>nix tools are your friends.
+In Kevlin Henney, editor, <em>97 Things Every Programmer Should Know</em>, pages 176–177.
+O'Reilly, Sebastopol, CA, 2010.  <a href="http://programmer.97things.oreilly.com/wiki/index.php/The_Unix_Tools_Are_Your_Friends"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Diomidis Spinellis.
+Quality wars: open source versus proprietary software.
+In Andy Oram and Greg Wilson, editors, <em>Making Software: What Really Works, and Why We Believe It</em>, chapter&nbsp;15, pages 259–293.
+O'Reilly and Associates, Sebastopol, CA, 2010.  <a href="http://my.safaribooksonline.com/9780596808310/dds"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Diomidis Spinellis.
+Put everything under version control.
+In Kevlin Henney, editor, <em>97 Things Every Programmer Should Know</em>, pages 136–137.
+O'Reilly, Sebastopol, CA, 2010.  <a href="http://programmer.97things.oreilly.com/wiki/index.php/Put_Everything_Under_Version_Control"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Diomidis Spinellis.
+Large interconnected data belongs to a database.
+In Kevlin Henney, editor, <em>97 Things Every Programmer Should Know</em>, pages 96–97.
+O'Reilly, Sebastopol, CA, 2010.  <a href="http://programmer.97things.oreilly.com/wiki/index.php/Large_Interconnected_Data_Belongs_to_a_Database"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Panagiotis Louridas.
+Rereading the classics.
+In Diomidis Spinellis and Georgios Gousios, editors, <em>Beautiful Architecture: Leading Software Engineers Explain How They Think</em>, chapter&nbsp;14, pages 349–382.
+O'Reilly and Associates, Sebastopol, CA, 2008.  <a href="http://www.oreilly.com/catalog/9780596517984/"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Diomidis Spinellis.
+Foreword.
+In Sulayman&nbsp;K. Sowe, Ioannis&nbsp;G. Stamelos, and Ioannis Samoladas, editors, <em>Emerging Free and Open Source Software Practices</em>, pages vi–vii.
+IGI Publishing, Hershey, PA, 2007.  <a href="http://www.dmst.aueb.gr/dds/pubs/inbook/2007-OSS-Practices/html/Spi07h.html"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Diomidis Spinellis.
+Another level of indirection.
+In Andy Oram and Greg Wilson, editors, <em>Beautiful Code: Leading Programmers Explain How They Think</em>, chapter&nbsp;17, pages 279–291.
+O'Reilly and Associates, Sebastopol, CA, 2007.  <a href="http://www.oreilly.com/catalog/9780596510046/"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>George Pyrounakis, Kostas Saidis, Mara Nikolaidou, and Vassilios Karakoidas.
+Introducing pergamos: a fedora-based dl system utilizing digital object prototypes.
+In <em>Research and Advanced Technology for Digital Libraries</em>, pages 500&ndash;503.
+Springer Berlin / Heidelberg, September 2006.  <a href="http://www.springerlink.com/content/88m56972365x5k66/"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Stephanos Androutsellis-Theotokis, Vassilios Karakoidas, Georgios Gousios, Diomidis Spinellis, and Yannis Charalambidis.
+Building an e-business platform: an experience report.
+In Paul Cunningham and Miriam Cunningham, editors, <em>Innovation and the knowledge Economy — Issues, Applications Case Studies</em>, pages 199&ndash;206.
+IOS Press, Amsterdam, Nethedlands, October 2005.  <a href="http://www.dmst.aueb.gr/dds/pubs/conf/2005-eChallenge-Praxis/html/AKGSC05.html"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Yannis Charalabidis, Vassilios Karakoidas, Stephanos Androutsellis-Theotokis, and Diomidis Spinellis.
+Enabling <span class="bibtex-protected">B2B</span> transactions over the internet through application interconnection: the <span class="bibtex-protected">PRAXIS</span> project.
+In Paul Cunningham and Miriam Cunningham, editors, <em>eAdoption and the Knowledge Economy: Issues, Applications and Case Studies</em>, chapter&nbsp;7, pages 1554–1561.
+IOS Press, October 2004.  <a href="http://www.dmst.aueb.gr/dds/pubs/conf/2004-eChallenge-Praxis/html/CKAS04.htm"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+               </ul>
+             </ul>
+           </div>
+         </div>
+         <div class="panel panel-default" id="px2">
+           <!-- Print publications categories thats exist -->
+                 <div class="panel-heading">
+                   <h3 id="Conference">Conference Publications</h3>
+                 </div>
+           <!-- Print publications information by reverse chronological order -->
+           <div class="panel-body">
+             <ul class="list-group">
+               <ul>
+                     <p>
+                     <li>Stathis Plitsos, Panagiotis&nbsp;P. Repoussis, Ioannis Mourtos, and Christos&nbsp;D. Tarantilis.
+<span class="bibtex-protected">Energy-aware decision support for production scheduling</span>.
+<em><span class="bibtex-protected">DECISION SUPPORT SYSTEMS</span></em>, <span class="bibtex-protected">93</span>:<span class="bibtex-protected">88-97</span>, <span class="bibtex-protected">JAN</span> <span class="bibtex-protected">2017</span>.  </li>
+                    </p>
+                     <p>
+                     <li>Trivikram Dokka, Ioannis Mourtos, and Frits C.&nbsp;R. Spieksma.
+<span class="bibtex-protected">Fast separation for the three-index assignment problem</span>.
+<em><span class="bibtex-protected">MATHEMATICAL PROGRAMMING COMPUTATION</span></em>, <span class="bibtex-protected">9</span>(<span class="bibtex-protected">1</span>):<span class="bibtex-protected">39-59</span>, <span class="bibtex-protected">MAR</span> <span class="bibtex-protected">2017</span>.  </li>
+                    </p>
+                     <p>
+                     <li>Ioannis Mourtos.
+<span class="bibtex-protected">Cardinality constraints and systems of restricted representatives</span>.
+<em><span class="bibtex-protected">JOURNAL OF COMBINATORIAL OPTIMIZATION</span></em>, <span class="bibtex-protected">31</span>(<span class="bibtex-protected">3</span>):<span class="bibtex-protected">1061-1089</span>, <span class="bibtex-protected">APR</span> <span class="bibtex-protected">2016</span>.  </li>
+                    </p>
+                     <p>
+                     <li>Katarina Cechlarova, Pavlos Eirinakis, Tamas Fleiner, Dimitrios Magos, David Manlove, Ioannis Mourtos, Eva Ocelakova, and Baharak Rastegari.
+<span class="bibtex-protected">Pareto Optimal Matchings in Many-to-Many Markets with Ties</span>.
+<em><span class="bibtex-protected">THEORY OF COMPUTING SYSTEMS</span></em>, <span class="bibtex-protected">59</span>(<span class="bibtex-protected">4, SI</span>):<span class="bibtex-protected">700-721</span>, <span class="bibtex-protected">NOV</span> <span class="bibtex-protected">2016</span>.  </li>
+                    </p>
+                     <p>
+                     <li>G.&nbsp;Appa, R.&nbsp;Euler, A.&nbsp;Kouvela, D.&nbsp;Magos, and I.&nbsp;Mourtos.
+<span class="bibtex-protected">On the completability of incomplete orthogonal Latin rectangles</span>.
+<em><span class="bibtex-protected">DISCRETE MATHEMATICS</span></em>, <span class="bibtex-protected">339</span>(<span class="bibtex-protected">6</span>):<span class="bibtex-protected">1771-1794</span>, <span class="bibtex-protected">JUN 6</span> <span class="bibtex-protected">2016</span>.  </li>
+                    </p>
+                     <p>
+                     <li>Eleni Zampou, Stathis Plitsos, Angeliki Karagiannaki, and Ioannis Mourtos.
+<span class="bibtex-protected">Towards a framework for energy-aware information systems in manufacturing</span>.
+<em><span class="bibtex-protected">COMPUTERS IN INDUSTRY</span></em>, <span class="bibtex-protected">65</span>(<span class="bibtex-protected">3, SI</span>):<span class="bibtex-protected">419-433</span>, <span class="bibtex-protected">APR</span> <span class="bibtex-protected">2014</span>.  </li>
+                    </p>
+                     <p>
+                     <li>Pavlos Eirinakis, Dimitrios Magos, Ioannis Mourtos, and Panayiotis Miliotis.
+<span class="bibtex-protected">Polyhedral Aspects of Stable Marriage</span>.
+<em><span class="bibtex-protected">MATHEMATICS OF OPERATIONS RESEARCH</span></em>, <span class="bibtex-protected">39</span>(<span class="bibtex-protected">3</span>):<span class="bibtex-protected">656-671</span>, <span class="bibtex-protected">AUG</span> <span class="bibtex-protected">2014</span>.  </li>
+                    </p>
+                     <p>
+                     <li>Pavlos Eirinakis, Dimitrios Magos, and Ioannis Mourtos.
+<span class="bibtex-protected">FROM ONE STABLE MARRIAGE TO THE NEXT: HOW LONG IS THE WAY?</span>
+<em><span class="bibtex-protected">SIAM JOURNAL ON DISCRETE MATHEMATICS</span></em>, <span class="bibtex-protected">28</span>(<span class="bibtex-protected">4</span>):<span class="bibtex-protected">1971-1979</span>, <span class="bibtex-protected">2014</span>.  </li>
+                    </p>
+                     <p>
+                     <li>Katarina Cechlarova, Pavlos Eirinakis, Tamas Fleiner, Dimitrios Magos, Ioannis Mourtos, and Eva Potpinkova.
+<span class="bibtex-protected">Pareto optimality in many-to-many matching problems</span>.
+<em><span class="bibtex-protected">DISCRETE OPTIMIZATION</span></em>, <span class="bibtex-protected">14</span>:<span class="bibtex-protected">160-169</span>, <span class="bibtex-protected">NOV</span> <span class="bibtex-protected">2014</span>.  </li>
+                    </p>
+                     <p>
+                     <li>D.&nbsp;Magos and I.&nbsp;Mourtos.
+<span class="bibtex-protected">A characterization of odd-hole inequalities related to Latin squares</span>.
+<em><span class="bibtex-protected">OPTIMIZATION</span></em>, <span class="bibtex-protected">62</span>(<span class="bibtex-protected">9</span>):<span class="bibtex-protected">1169-1201</span>, <span class="bibtex-protected">SEP 1</span> <span class="bibtex-protected">2013</span>.  </li>
+                    </p>
+                     <p>
+                     <li>Pavlos Eirinakis, Dimitrios Magos, Ioannis Mourtos, and Panayiotis Miliotis.
+<span class="bibtex-protected">Finding a minimum-regret many-to-many Stable Matching</span>.
+<em><span class="bibtex-protected">OPTIMIZATION</span></em>, <span class="bibtex-protected">62</span>(<span class="bibtex-protected">8, SI</span>):<span class="bibtex-protected">1007-1018</span>, <span class="bibtex-protected">AUG 1</span> <span class="bibtex-protected">2013</span>.  </li>
+                    </p>
+                     <p>
+                     <li>D.&nbsp;Magos, I.&nbsp;Mourtos, and G.&nbsp;Appa.
+<span class="bibtex-protected">A polyhedral approach to the alldifferent system</span>.
+<em><span class="bibtex-protected">MATHEMATICAL PROGRAMMING</span></em>, <span class="bibtex-protected">132</span>(<span class="bibtex-protected">1-2</span>):<span class="bibtex-protected">209-260</span>, <span class="bibtex-protected">APR</span> <span class="bibtex-protected">2012</span>.  </li>
+                    </p>
+                     <p>
+                     <li>Konstantinos Kounetas, Ioannis Mourtos, and Konstantinos Tsekouras.
+<span class="bibtex-protected">Is energy intensity important for the productivity growth of EET adopters?</span>
+<em><span class="bibtex-protected">ENERGY ECONOMICS</span></em>, <span class="bibtex-protected">34</span>(<span class="bibtex-protected">4</span>):<span class="bibtex-protected">930-941</span>, <span class="bibtex-protected">JUL</span> <span class="bibtex-protected">2012</span>.  </li>
+                    </p>
+                     <p>
+                     <li>Alexandra Kontolaimou, Konstantinos Kounetas, Ioannis Mourtos, and Kostas Tsekouras.
+<span class="bibtex-protected">Technology gaps in European banking: Put the blame on inputs or outputs?</span>
+<em><span class="bibtex-protected">ECONOMIC MODELLING</span></em>, <span class="bibtex-protected">29</span>(<span class="bibtex-protected">5</span>):<span class="bibtex-protected">1798-1808</span>, <span class="bibtex-protected">SEP</span> <span class="bibtex-protected">2012</span>.  </li>
+                    </p>
+                     <p>
+                     <li>Pavlos Eirinakis, Dimitrios Magos, Ioannis Mourtos, and Panayiotis Miliotis.
+<span class="bibtex-protected">Finding All Stable Pairs and Solutions to the Many-to-Many Stable Matching Problem</span>.
+<em><span class="bibtex-protected">INFORMS JOURNAL ON COMPUTING</span></em>, <span class="bibtex-protected">24</span>(<span class="bibtex-protected">2</span>):<span class="bibtex-protected">245-259</span>, <span class="bibtex-protected">SPR</span> <span class="bibtex-protected">2012</span>.  </li>
+                    </p>
+                     <p>
+                     <li>D.&nbsp;Magos and I.&nbsp;Mourtos.
+<span class="bibtex-protected">ON THE FACIAL STRUCTURE OF THE ALLDIFFERENT SYSTEM</span>.
+<em><span class="bibtex-protected">SIAM JOURNAL ON DISCRETE MATHEMATICS</span></em>, <span class="bibtex-protected">25</span>(<span class="bibtex-protected">1</span>):<span class="bibtex-protected">130-158</span>, <span class="bibtex-protected">2011</span>.  </li>
+                    </p>
+                     <p>
+                     <li>D.&nbsp;Magos and I.&nbsp;Mourtos.
+<span class="bibtex-protected">Clique facets of the axial and planar assignment polytopes</span>.
+<em><span class="bibtex-protected">DISCRETE OPTIMIZATION</span></em>, <span class="bibtex-protected">6</span>(<span class="bibtex-protected">4</span>):<span class="bibtex-protected">394-413</span>, <span class="bibtex-protected">NOV</span> <span class="bibtex-protected">2009</span>.  </li>
+                    </p>
+                     <p>
+                     <li>Konstantinos Kounetas, Ioannis Mourtos, and Konstantinos Tsekouras.
+<span class="bibtex-protected">Efficiency decompositions for heterogeneous technologies</span>.
+<em><span class="bibtex-protected">EUROPEAN JOURNAL OF OPERATIONAL RESEARCH</span></em>, <span class="bibtex-protected">199</span>(<span class="bibtex-protected">1</span>):<span class="bibtex-protected">209-218</span>, <span class="bibtex-protected">NOV 16</span> <span class="bibtex-protected">2009</span>.  </li>
+                    </p>
+                     <p>
+                     <li>D.&nbsp;Magos and I.&nbsp;Mourtos.
+<span class="bibtex-protected">The wheels of the OLS polytope: Facets and separation</span>.
+<em><span class="bibtex-protected">DISCRETE MATHEMATICS</span></em>, <span class="bibtex-protected">308</span>(<span class="bibtex-protected">16</span>):<span class="bibtex-protected">3634-3651</span>, <span class="bibtex-protected">AUG 28</span> <span class="bibtex-protected">2008</span>.  </li>
+                    </p>
+                     <p>
+                     <li>D&nbsp;Magos, I&nbsp;Mourtos, and L&nbsp;Pitsoulis.
+<span class="bibtex-protected">Consistency of the matching predicate</span>.
+In <span class="bibtex-protected">Antoniou, G and Potamias, G and Spyropoulos, C and Plexousakis, D</span>, editor, <em><span class="bibtex-protected">ADVANCES IN ARTIFICIAL INTELLIGENCE, PROCEEDINGS</span></em>, volume <span class="bibtex-protected">3955</span> of <span class="bibtex-protected">LECTURE NOTES IN COMPUTER SCIENCE</span>, <span class="bibtex-protected">555-558</span>. <span class="bibtex-protected">EETN</span>, <span class="bibtex-protected">2006</span>.
+<span class="bibtex-protected">4th Helenic Conference on Artifical Intelligence, Univ Crete, Heraklion, GREECE, MAY 18-20, 2006</span>.  </li>
+                    </p>
+                     <p>
+                     <li>G.&nbsp;Appa, D.&nbsp;Magos, and I.&nbsp;Mourtos.
+<span class="bibtex-protected">Searching for mutually orthogonal Latin squares via integer and constraint programming</span>.
+<em><span class="bibtex-protected">EUROPEAN JOURNAL OF OPERATIONAL RESEARCH</span></em>, <span class="bibtex-protected">173</span>(<span class="bibtex-protected">2</span>):<span class="bibtex-protected">519-530</span>, <span class="bibtex-protected">SEP 1</span> <span class="bibtex-protected">2006</span>.  </li>
+                    </p>
+                     <p>
+                     <li>G.&nbsp;Appa, D.&nbsp;Magos, and I.&nbsp;Mourtos.
+<span class="bibtex-protected">On multi-index assignment polytopes</span>.
+<em><span class="bibtex-protected">LINEAR ALGEBRA AND ITS APPLICATIONS</span></em>, <span class="bibtex-protected">416</span>(<span class="bibtex-protected">2-3</span>):<span class="bibtex-protected">224-241</span>, <span class="bibtex-protected">JUL 15</span> <span class="bibtex-protected">2006</span>.  </li>
+                    </p>
+                     <p>
+                     <li>G&nbsp;Appa, D&nbsp;Magos, I&nbsp;Mourtos, and JCM Janssen.
+<span class="bibtex-protected">On the orthogonal Latin squares polytope</span>.
+<em><span class="bibtex-protected">DISCRETE MATHEMATICS</span></em>, <span class="bibtex-protected">306</span>(<span class="bibtex-protected">2</span>):<span class="bibtex-protected">171-187</span>, <span class="bibtex-protected">FEB 6</span> <span class="bibtex-protected">2006</span>.  </li>
+                    </p>
+                     <p>
+                     <li>G&nbsp;Appa, D&nbsp;Magos, and I&nbsp;Mourtos.
+<span class="bibtex-protected">A new class of facets for the Latin square polytope</span>.
+<em><span class="bibtex-protected">DISCRETE APPLIED MATHEMATICS</span></em>, <span class="bibtex-protected">154</span>(<span class="bibtex-protected">6</span>):<span class="bibtex-protected">900-911</span>, <span class="bibtex-protected">APR 15</span> <span class="bibtex-protected">2006</span>.  </li>
+                    </p>
+                     <p>
+                     <li>G&nbsp;Appa, D&nbsp;Magos, and I&nbsp;Mourtos.
+<span class="bibtex-protected">The wheels of the Orthogonal Latin Squares polytope: Classification and valid inequalities</span>.
+<em><span class="bibtex-protected">JOURNAL OF COMBINATORIAL OPTIMIZATION</span></em>, <span class="bibtex-protected">10</span>(<span class="bibtex-protected">4</span>):<span class="bibtex-protected">365-389</span>, <span class="bibtex-protected">DEC</span> <span class="bibtex-protected">2005</span>.  </li>
+                    </p>
+                     <p>
+                     <li>G&nbsp;Appa, D&nbsp;Magos, and I&nbsp;Mourtos.
+<span class="bibtex-protected">On the system of two all_different predicates</span>.
+<em><span class="bibtex-protected">INFORMATION PROCESSING LETTERS</span></em>, <span class="bibtex-protected">94</span>(<span class="bibtex-protected">3</span>):<span class="bibtex-protected">99-105</span>, <span class="bibtex-protected">MAY 16</span> <span class="bibtex-protected">2005</span>.  </li>
+                    </p>
+                     <p>
+                     <li>G&nbsp;Appa, D&nbsp;Magos, and I&nbsp;Mourtos.
+<span class="bibtex-protected">LP relaxations of multiple all-different predicates</span>.
+In <span class="bibtex-protected">Regin, JC and Rueher, M</span>, editor, <em><span class="bibtex-protected">INTEGRATION OF AI AND OR TECHNIQUES IN CONSTRAINT PROGRAMMING FOR COMBINATORIAL OPTIMIZATION PROBLEMS</span></em>, volume <span class="bibtex-protected">3011</span> of <span class="bibtex-protected">LECTURE NOTES IN COMPUTER SCIENCE</span>, <span class="bibtex-protected">364-369</span>. <span class="bibtex-protected">INRIA; Bouygues; Cosytec SA; Carmen Syst; CoLogNET; ESSI; I3S CNRS; Intelligent Informat Syst Inst; ILOG SA</span>, <span class="bibtex-protected">2004</span>.
+<span class="bibtex-protected">1st International Conference on Integration of AI and OR Techniques in Constraint Programming for Combinatorial Optimization Problems, Nice, FRANCE, APR 20-22, 2004</span>.  </li>
+                    </p>
+                     <p>
+                     <li>G&nbsp;Appa, D&nbsp;Magos, and I&nbsp;Mourtos.
+<span class="bibtex-protected">An LP-based proof for the non-existence of a pair of orthogonal Latin squares of order 6</span>.
+<em><span class="bibtex-protected">OPERATIONS RESEARCH LETTERS</span></em>, <span class="bibtex-protected">32</span>(<span class="bibtex-protected">4</span>):<span class="bibtex-protected">336-344</span>, <span class="bibtex-protected">JUL</span> <span class="bibtex-protected">2004</span>.  </li>
+                    </p>
+                     <p>
+                     <li>G&nbsp;Appa, D&nbsp;Magos, and I&nbsp;Mourtos.
+<span class="bibtex-protected">A Branch &amp; Cut algorithm for a four-index assignment problem</span>.
+<em><span class="bibtex-protected">JOURNAL OF THE OPERATIONAL RESEARCH SOCIETY</span></em>, <span class="bibtex-protected">55</span>(<span class="bibtex-protected">3</span>):<span class="bibtex-protected">298-307</span>, <span class="bibtex-protected">MAR</span> <span class="bibtex-protected">2004</span>.  </li>
+                    </p>
+                     <p>
+                     <li>K&nbsp;Antonis, J&nbsp;Garofalakis, I&nbsp;Mourtos, and P&nbsp;Spirakis.
+<span class="bibtex-protected">A hierarchical adaptive distributed algorithm for load balancing</span>.
+<em><span class="bibtex-protected">JOURNAL OF PARALLEL AND DISTRIBUTED COMPUTING</span></em>, <span class="bibtex-protected">64</span>(<span class="bibtex-protected">1</span>):<span class="bibtex-protected">151-162</span>, <span class="bibtex-protected">JAN</span> <span class="bibtex-protected">2004</span>.  </li>
+                    </p>
+                     <p>
+                     <li>CTF Ross, I&nbsp;Mourtos, and G&nbsp;Papanikolaou.
+<span class="bibtex-protected">Effect of longitudinal bulkheads on damage stability of model RO/RO ferries</span>.
+<em><span class="bibtex-protected">MARINE TECHNOLOGY AND SNAME NEWS</span></em>, <span class="bibtex-protected">40</span>(<span class="bibtex-protected">1</span>):<span class="bibtex-protected">20-24</span>, <span class="bibtex-protected">JAN</span> <span class="bibtex-protected">2003</span>.  </li>
+                    </p>
+                     <p>
+                     <li>Tushar Sharma, Marios Fragkoulis, and Diomidis Spinellis.
+House of cards: code smells in open-source c# repositories.
+In <em>ESEM 2017</em>. 2017.
+To appear.  </li>
+                    </p>
+                     <p>
+                     <li>Proceedings of 14th Student Conference of Management Science and Technology  </li>
+                    </p>
+                     <p>
+                     <li>D.&nbsp;Magos and I.&nbsp;Mourtos.
+Submodularity and its application to some global constraints.
+<em>ANNALS OF MATHEMATICS AND ARTIFICIAL INTELLIGENCE</em>, 79(4):267&ndash;289, APR 2017.  </li>
+                    </p>
+                     <p>
+                     <li>Maria Kechagia and Diomidis Spinellis.
+Type checking for reliable <span class="bibtex-protected">API</span>s.
+In <em>WAPI '17: 1st International Workshop on API Usage and Evolution</em>. 2017.
+To appear.  </li>
+                    </p>
+                     <p>
+                     <li>Maria Kechagia, Tushar Sharma, and Diomidis Spinellis.
+Towards a context dependent <span class="bibtex-protected">J</span>ava exceptions hierarchy.
+In <em>ICSE '17: Poster Track Session</em>, 347–349. IEEE Press, 2017.
+URL: <a href="https://doi.org/10.1109/ICSE-C.2017.134">https://doi.org/10.1109/ICSE-C.2017.134</a>, <a href="https://doi.org/10.1109/ICSE-C.2017.134">doi:10.1109/ICSE-C.2017.134</a>.  </li>
+                    </p>
+                     <p>
+                     <li>Proceedings of the 11th Mediterranean Conference on Information Systems (MCIS 2017)  </li>
+                    </p>
+                     <p>
+                     <li>Diomidis Spinellis, Panos Louridas, and Maria Kechagia.
+The evolution of <span class="bibtex-protected">C</span> programming practices: a study of the <span class="bibtex-protected">U</span>nix operating system 1973–2015.
+In Willem Visser and Laurie Williams, editors, <em><span class="bibtex-protected">ICSE</span> '16: Proceedings of the 38th International Conference on Software Engineering</em>. New York, May 2016. Association for Computing Machinery.  </li>
+                    </p>
+                     <p>
+                     <li>Tushar Sharma, Marios Fragkoulis, and Diomidis Spinellis.
+Does your configuration code smell?
+In <em>Proceedings of the 13th International Conference on Mining Software Repositories</em>, 189–200. ACM, 2016.  <a href="http://doi.acm.org/10.1145/2901739.2901761"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Proceeding of AMBS Big Data Forum  </li>
+                    </p>
+                     <p>
+                     <li>Proceedings of 13th Student Conference of Management Science and Technology  </li>
+                    </p>
+                     <p>
+                     <li>Proceedings of 13th Student Conference of Management Science and Technology  </li>
+                    </p>
+                     <p>
+                     <li>A.&nbsp;Gkortzis, S.&nbsp;Rizou, and D.&nbsp;Spinellis.
+An empirical analysis of vulnerabilities in virtualization technologies.
+In <em>2016 IEEE International Conference on Cloud Computing Technology and Science (CloudCom)</em>, 533&ndash;538. IEEE, Dec 2016.  </li>
+                    </p>
+                     <p>
+                     <li>Damianos Chatziantoniou and Florents Tselai.
+The data management entity: <span class="bibtex-protected">A</span> simple abstraction to facilitate big data systems interoperability.
+In <em>Proceedings of the Workshops of the <span class="bibtex-protected">EDBT/ICDT</span> 2016 Joint Conference, <span class="bibtex-protected">EDBT/ICDT</span> Workshops 2016, Bordeaux, France, March 15, 2016.</em> 2016.  </li>
+                    </p>
+                     <p>
+                     <li>Vaggelis Atlidakis, Jeremy Andrus, Roxana Geambasu, Dimitris Mitropoulos, and Jason Nieh.
+<span class="bibtex-protected">POSIX</span> abstractions in modern operating systems: the old, the new, and the missing.
+In <em>Proceedings of the 11th European Conference on Computer Systems (EuroSys '16)</em>, 19:1&ndash;19:17. ACM, 2016.  </li>
+                    </p>
+                     <p>
+                     <li>1st EURO Working Group on Retail Operations  </li>
+                    </p>
+                     <p>
+                     <li>Proceedings of 24th European Conference on Information Systems (ECIS 2016)  </li>
+                    </p>
+                     <p>
+                     <li>Proceedings of pre-International Conference on Information Systems (pre-ICIS 2016), Special Interest Group on Decision Support and Analytics (SIGDSA)/ IFIP WG8.3 symposium: Innovations in Data Analytics
+(Best Paper Award).  </li>
+                    </p>
+                     <p>
+                     <li>Diomidis Spinellis, Panagiotis Louridas, and Maria Kechagia.
+An exploratory study on the evolution of <span class="bibtex-protected">C</span> programming in the <span class="bibtex-protected">U</span>nix operating system.
+In Qing Wang and Guenther Ruhe, editors, <em>ESEM '15: 9th International Symposium on Empirical Software Engineering and Measurement</em>, 54–57. IEEE, October 2015.  <a href="http://www.dmst.aueb.gr/dds/pubs/conf/2015-ESEM-CodeStyle/html/SLK15.html"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Diomidis Spinellis.
+A repository with 44 years of <span class="bibtex-protected">Unix</span> evolution.
+In <em>MSR '15: Proceedings of the 12th Working Conference on Mining Software Repositories</em>, 13–16. IEEE, 2015.
+Best Data Showcase Award.  <a href="http://www.dmst.aueb.gr/dds/pubs/conf/2015-MSR-Unix-History/html/Spi15c.html"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Vassilios Karakoidas, Dimitris Mitropoulos, Panos Louridas, Georgios Gousios, and Diomidis Spinellis.
+Generating the blueprints of the <span class="bibtex-protected">J</span>ava ecosystem.
+In <em>MSR '15: Proceedings of the 2015 International Working Conference on Mining Software Repositories</em>, 510–513. IEEE Computer Society, 2015.  </li>
+                    </p>
+                     <p>
+                     <li>Proceedings of 12th Student Conference of Management Science and Technology  </li>
+                    </p>
+                     <p>
+                     <li>Proceedings of 9th Mediterranean Conference on Information Systems (MCIS 2015)  </li>
+                    </p>
+                     <p>
+                     <li>Proceedings of 12th Student Conference of Management Science and Technology  </li>
+                    </p>
+                     <p>
+                     <li>Konstantinos Stroggylos, Dimitris Mitropoulos, Zacharias Tzermias, Panagiotis Papadopoulos, Fotios Rafailidis, Diomidis Spinellis, Sotiris Ioannidis, and Panagiotis Katsaros.
+<span class="bibtex-protected">TRACER</span>: a platform for securing legacy code.
+In <em>TRUST '14: Proceedings of 7th International Conference on Trust &amp; Trustworthy Computing - Poster Presentation Track</em>, 218–219. Springer, June 2014.  </li>
+                    </p>
+                     <p>
+                     <li>Konstantinos Stroggylos, Dimitris Mitropoulos, Zacharias Tzermias, Panagiotis Papadopoulos, Fotios Rafailidis, Diomidis Spinellis, Sotiris Ioannidis, and Panagiotis Katsaros.
+Securing legacy code with the <span class="bibtex-protected">TRACER</span> platform.
+In <em>PCI 2014: Proceedings of 18th Panhellenic Conference on Informatics</em>, 25:1&ndash;25:6. ACM, 2014.  </li>
+                    </p>
+                     <p>
+                     <li>Diomidis Spinellis.
+Against the odds: managing the unmanagable in a time of crisis.
+In Matthias Jarke, John Mylopoulos, Christoph Quix, Colette Rolland, Yannis Manolopoulos, Haralambos Mouratidis, and Jennifer Horkoff, editors, <em>CAiSE 2014: Proceedings of the 26th International Conference on Advanced Information Systems Engineering</em>, 24–41. Springer Verlag, June 2014.
+Lecture Notes in Computer Science 8484.  <a href="http://www.dmst.aueb.gr/dds/pubs/conf/2014-06-CAiSE-crisis-mgmt/html/Spi14c.html"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Yannis Sotiropoulos and Damianos Chatziantoniou.
+Linkviews: an integration framework for relational and stream systems.
+In <em>Enabling Real-Time Business Intelligence - International Workshops, <span class="bibtex-protected">BIRTE</span> 2013, Riva del Garda, Italy, August 26, 2013, and <span class="bibtex-protected">BIRTE</span> 2014, Hangzhou, China, September 1, 2014, Revised Selected Papers</em>, 65–80. 2014.  </li>
+                    </p>
+                     <p>
+                     <li>Dimitris Mitropoulos, Vassilios Karakoidas, Panos Louridas, Georgios Gousios, and Diomidis Spinellis.
+The bug catalog of the <span class="bibtex-protected">M</span>aven ecosystem.
+In <em>MSR '14: Proceedings of the 2014 International Working Conference on Mining Software Repositories</em>, 372–365. ACM, June 2014.  </li>
+                    </p>
+                     <p>
+                     <li>Dimitris Mitropoulos, Georgios Gousios, Panagiotis Papadopoulos, Vassilios Karakoidas, Panos Louridas, and Diomidis Spinellis.
+The vulnerability dataset of a large software ecosystem.
+In <em>Proceedings of the 3rd International Workshop on Building Analysis Datasets and Gathering Experience Returns for Security (BADGERS 2014), colocated with the 19th European Symposium on Research in Computer Security (ESORICS 2014)</em>. IEEE Computer Society, September 2014.  </li>
+                    </p>
+                     <p>
+                     <li>Maria Kechagia and Diomidis Spinellis.
+Undocumented and unchecked: exceptions that spell trouble.
+In <em>MSR '14: Proceedings of the 11th Working Conference on Mining Software Repositories</em>, 312–315. ACM, June 2014.  <a href="http://doi.acm.org/10.1145/2597073.2597089"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Maria Kechagia.
+Improvement of applications' stability through robust <span class="bibtex-protected">APIs</span>.
+In <em>Proceedings of the 29th ACM/IEEE International Conference on Automated Software Engineering</em>, ASE '14, 907–910. New York, NY, USA, 2014. ACM.
+Doctoral Symposium.  <a href="http://doi.acm.org/10.1145/2642937.2653473"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Marios Fragkoulis, Diomidis Spinellis, Panos Louridas, and Angelos Bilas.
+Relational access to unix kernel data structures.
+In <em>Proceedings of the Ninth European Conference on Computer Systems</em>, EuroSys '14, 12:1&ndash;12:14. New York, NY, USA, 2014. ACM.  <a href="http://doi.acm.org/10.1145/2592798.2592802"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Damianos Chatziantoniou and Florents Tselai.
+Introducing data connectivity in a big data web.
+In <em>Proceedings of the Third Workshop on Data analytics in the Cloud, DanaC 2014, June 22, 2014, Snowbird, Utah, USA, In conjunction with <span class="bibtex-protected">ACM</span> <span class="bibtex-protected">SIGMOD/PODS</span> Conference</em>, 7:1&ndash;7:4. 2014.  </li>
+                    </p>
+                     <p>
+                     <li>Proceedings of 8th Mediterranean Conference on Information Systems (MCIS 2014)  </li>
+                    </p>
+                     <p>
+                     <li>Dimitris Mitropoulos, Vassilios Karakoidas, Panos Louridas, Georgios Gousios, and Diomidis Spinellis.
+Dismal code: studying the evolution of security bugs.
+In <em>Proceedings of the <span class="bibtex-protected">LASER</span> Workshop 2013, Learning from Authoritative Security Experiment Results</em>, 37–48. Usenix Association, October 2013.  <a href="https://www.usenix.org/laser2013/program/mitropoulos"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Georgios Meditskos, Stamatia Dasiopoulou, Vasiliki Efstathiou, and Ioannis Kompatsiaris.
+Sp-act: a hybrid framework for complex activity recognition combining owl and sparql rules.
+In <em>Pervasive Computing and Communications Workshops (PERCOM Workshops), 2013 IEEE International Conference on</em>, 25–30. 2013.  </li>
+                    </p>
+                     <p>
+                     <li>Georgios Meditskos, Stamatia Dasiopoulou, Vasiliki Efstathiou, and Ioannis Kompatsiaris.
+Ontology patterns for complex activity modelling.
+In <em>International Workshop on Rules and Rule Markup Languages for the Semantic Web</em>, 144–157. Springer, 2013.  </li>
+                    </p>
+                     <p>
+                     <li>Maria Kechagia, Dimitris Mitropoulos, and Diomidis Spinellis.
+<span class="bibtex-protected">Improving the quality of APIs through the analysis of software crash reports</span>.
+In Andrew&nbsp;V. Jones and Nicholas Ng, editors, <em>2013 Imperial College Computing Student Workshop</em>, volume&nbsp;35 of OpenAccess Series in Informatics (OASIcs), 57–64. Dagstuhl, Germany, 2013. Schloss Dagstuhl–Leibniz-Zentrum fuer Informatik.  <a href="http://drops.dagstuhl.de/opus/volltexte/2013/4272"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Diomidis Spinellis, Vassilios Karakoidas, and Panagiotis Louridas.
+Comparative language fuzz testing: programming languages vs. fat fingers.
+In <em>PLATEAU 2012: 4th Annual International Workshop on Evaluation and Usability of Programming Languages and Tools—Systems, Programming, Languages and Applications: Software for Humanity (SPLASH 2012)</em>. ACM, October 2012.  <a href="http://www.dmst.aueb.gr/dds/pubs/conf/2012-PLATEAU-Fuzzer/pub/html/fuzzer.html"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Dimitris Mitropoulos, Georgios Gousios, and Diomidis Spinellis.
+Measuring the occurrence of security-related bugs through software evolution.
+In <em>PCI 2012: Proceedings of 16th Panhellenic Conference on Informatics (PCI 2012)</em>, 117–122. IEEE Computer Society, 2012.  </li>
+                    </p>
+                     <p>
+                     <li>Georgios Gousios and Diomidis Spinellis.
+<span class="bibtex-protected">GHTorrent</span>: <span class="bibtex-protected">G</span>ithub's data from a firehose.
+In Michele Lanza, Massimiliano&nbsp;Di Penta, and Tao Xie, editors, <em>9th IEEE Working Conference on Mining Software Repositories (MSR)</em>, 12–21. IEEE, June 2012.  </li>
+                    </p>
+                     <p>
+                     <li>Steven Fraser, Kendra Cooper, Jim Coplien, Ruth&nbsp;G. Lennon, Ramya Ravichandar, Diomidis Spinellis, and Giancarlo Succi.
+Software tools research: a matter of scale and scope — or commoditization?
+In Gary&nbsp;T. Leavens, editor, <em>SPLASH '12: Conference on Systems, Programming, and Applications: Software for Humanity</em>, 59–62. ACM, October 2012.  <a href="http://www.dmst.aueb.gr/dds/pubs/conf/2012-SPLASH-Panel/html/FCCL.pdf"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Andreas Williams, Pavlos Mitsoulis<span class="bibtex-protected">-</span>Ntompos, and Damianos Chatziantoniou.
+Tagged mapreduce: efficiently computing multi-analytics using mapreduce.
+In <em>Data Warehousing and Knowledge Discovery - 13th International Conference, DaWaK 2011, Toulouse, France, August 29-September 2,2011. Proceedings</em>, 240–251. 2011.  </li>
+                    </p>
+                     <p>
+                     <li>Konstantinos Kravvaritis, Dimitris Mitropoulos, and Diomidis Spinellis.
+Cyberdiversity: measures and initial results.
+In Costas Vassilakis and Nikolaos Tselikas, editors, <em>PCI 2010: Proceedings of 14th Panhellenic Conference on Informatics (PCI 2010)</em>, 135–140. IEEE Computer Society, September 2010.  <a href="http://www.dmst.aueb.gr/dds/pubs/conf/2010-PCI-Cyberdiversity/html/KMS10.htm"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Maria Kechagia, Diomidis Spinellis, and Stephanos Androutsellis-Theotokis.
+Open source licensing across package dependencies.
+In Costas Vassilakis and Nikolaos Tselikas, editors, <em>PCI 2010: Proceedings of 14th Panhelenic Conference on Informatics</em>, 27–32. Los Alamitos, CA, USA, September 2010. IEEE Computer Society.  </li>
+                    </p>
+                     <p>
+                     <li>Marian Jureczko and Diomidis Spinellis.
+Using object-oriented design metrics to predict software defects.
+In <em>Models and Methodology of System Dependability. Proceedings of <span class="bibtex-protected">RELCOMEX</span> 2010: Fifth International Conference on Dependability of Computer Systems <span class="bibtex-protected">DepCoS</span></em>, Monographs of System Dependability, 69–81. Wroc<span class="bibtex-protected">ł</span>aw, Poland, 2010. Oficyna Wydawnicza Politechniki Wroc<span class="bibtex-protected">ł</span>awskiej.  <a href="http://www.dmst.aueb.gr/dds/pubs/conf/2010-DepCoS-RELCOMEX-ckjm-defects/html/JS10.html"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Vasiliki Efstathiou and Anthony Hunter.
+Jargue: an implemented argumentation system for classical propositional logic.
+In <em>Third International Conference on Computational Models of Argument</em>. 2010.  </li>
+                    </p>
+                     <p>
+                     <li>Vasileios Vlachos, Diomidis Spinellis, and Stefanos Androutsellis-Theotokis.
+Biological aspects of computer virology.
+In <em>3rd International Conference on e-Democracy</em>. September 2009.  <a href="http://www.dmst.aueb.gr/dds/pubs/conf/2009-edem-virus/html/VSA09.html"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Vasileios Vlachos and Vassilios Karakoidas.
+Chaperone: a content filtering web proxy based on public health policies.
+In Vassilios Chrissikopoulos, Nikolaos Alexandris, Christos Douligeris, and Spyros Sioutas, editors, <em>Proceedings of 13th Panhelenic Conference on Informatics (PCI 2009)</em>. EPY, September 2009.  </li>
+                    </p>
+                     <p>
+                     <li>Diomidis Spinellis and Vaggelis Giannikas.
+Open source adoption by large <span class="bibtex-protected">US</span> companies.
+In Angeliki Poulymenakou, Nancy Pouloudi, and Katerina Pramatari, editors, <em><span class="bibtex-protected">MCIS</span> '09: Proceedings of the 4th Mediterranean Conference on Information Systems</em>, 580–587. September 2009.  <a href="http://www.dmst.aueb.gr/dds/pubs/conf/2009-MCIS-OSSAdopt/html/SG09.htm"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Dimitris Mitropoulos and Diomidis Spinellis.
+Securing e-voting against <span class="bibtex-protected">MITM</span> attacks.
+In Vassilios Chrissikopoulos, Nikolaos Alexandris, Christos Douligeris, and Spyros Sioutas, editors, <em>Proceedings of the 13th Pan-Hellenic Conference on Informatics (PCI 2009)</em>. September 2009.  <a href="http://www.dmst.aueb.gr/dds/pubs/conf/2009-PCI-MITM/html/MS09b.html"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Dimitris Mitropoulos, Vassilios Karakoidas, and Diomidis Spinellis.
+Fortifying applications against <span class="bibtex-protected">XP</span>ath injection attacks.
+In A.&nbsp;Poulymenakou, N.&nbsp;Pouloudi, and K.&nbsp;Pramatari, editors, <em>4th <span class="bibtex-protected">M</span>editerranean Conference on Information Systems</em>, 1169–1179. September 2009.  <a href="http://www.dmst.aueb.gr/dds/pubs/conf/2009-MCIS-XPath/html/MKS09.htm"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Maria Kechagia and Angeliki Karagiannaki.
+Modelling the warehouse operations to reveal the value of rfid.
+In Angeliki Poulymenakou, Nancy Pouloudi, and Katerina Pramatari, editors, <em><span class="bibtex-protected">MCIS</span> '09: Proceedings of the 4th Mediterranean Conference on Information Systems</em>, 1063–1076. September 2009.  </li>
+                    </p>
+                     <p>
+                     <li>Vassilios Karakoidas and Diomidis Spinellis.
+J%: integrating domain specific languages with java.
+In Vassilios Chrissikopoulos, Nikolaos Alexandris, Christos Douligeris, and Spyros Sioutas, editors, <em>Proceedings of 13th Panhelenic Conference on Informatics (PCI 2009)</em>, 109–113. IEEE Computer Society, September 2009.  <a href="http://www.dmst.aueb.gr/dds/pubs/conf/2009-PCI-Jmod/html/KS09.html"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Eirini Kalliamvakou, Georgios Gousios, Diomidis Spinellis, and Nancy Pouloudi.
+Measuring developer contribution from software repository data.
+In A.&nbsp;Poulymenakou, N.&nbsp;Pouloudi, and K.&nbsp;Pramatari, editors, <em>MCIS 2009: 4th <span class="bibtex-protected">M</span>editerranean Conference on Information Systems</em>, 600–611. September 2009.  <a href="http://www.dmst.aueb.gr/dds/pubs/conf/2009-MCIS-Quality/html/KGSP09.htm"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Georgios Gousios and Diomidis Spinellis.
+Alitheia core: an extensible software quality monitoring platform.
+In <em><span class="bibtex-protected">ICSE</span> '09: Proceedings of the 31st International Conference on Software Engineering – Formal Research Demonstrations Track</em>, 579–582. IEEE, May 2009.  <a href="http://istlab.dmst.aueb.gr/\~george/pubs/2009-ICSERD-GS/2009-ICSERD-GS.pdf"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Georgios Gousios and Diomidis Spinellis.
+A platform for software engineering research.
+In Michael&nbsp;W. Godfrey and Jim Whitehead, editors, <em><span class="bibtex-protected">MSR</span> '09: Proceedings of the 6th Working Conference on Mining Software Repositories</em>, 31–40. IEEE, May 2009.  <a href="http://istlab.dmst.aueb.gr/\~george/pubs/2009-MSR-GS/2009-MSR-GS.pdf"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Vaggelis Giannikas, Maria Kechagia, Diamantis Falidas, and Katerina Pramatari.
+Benchmarking and evaluation of e-shops.
+In Ioannis Nikolaou, editor, <em>Proceedings of 6th Student Conference on Management Science and Technology</em>, 87–92. May 2009.
+In Greek.  </li>
+                    </p>
+                     <p>
+                     <li>Vasiliki Efstathiou and Anthony Hunter.
+An algorithm for generating arguments in classical predicate logic.
+In <em>European Conference on Symbolic and Quantitative Approaches to Reasoning and Uncertainty</em>, 119–130. Springer, 2009.  </li>
+                    </p>
+                     <p>
+                     <li>Damianos Chatziantoniou and Yannis Sotiropoulos.
+<span class="bibtex-protected">ASSET</span> queries: <span class="bibtex-protected">A</span> set-oriented and column-wise approach to modern <span class="bibtex-protected">OLAP</span>.
+In <em>Enabling Real-Time Business Intelligence - Third International Workshop, <span class="bibtex-protected">BIRTE</span> 2009, Held at the 35th International Conference on Very Large Databases, <span class="bibtex-protected">VLDB</span> 2009, Lyon, France, August 24, 2009, Revised Selected Papers</em>, 66–83. 2009.  </li>
+                    </p>
+                     <p>
+                     <li>A.&nbsp;Candiello, D.&nbsp;Cresti, T.&nbsp;Ferrari, F.&nbsp;Karagiannis, D.&nbsp;Kranzlmueller, P.&nbsp;Louridas, M.&nbsp;Mazzucato, L.&nbsp;Matyska, L.&nbsp;Perini, K.&nbsp;Schauerhammer, K.&nbsp;Ullmann, and M.&nbsp;Wilson.
+A business model for the establishment of the <span class="bibtex-protected">E</span>uropean <span class="bibtex-protected">G</span>rid <span class="bibtex-protected">I</span>nfrastructure.
+In <em><span class="bibtex-protected">CHEP 2009</span>: Proceedings of Computing in High Energy and Nuclear Physics</em>. March 2009.  </li>
+                    </p>
+                     <p>
+                     <li>Diomidis Spinellis, Georgios Gousios, Vassilios Karakoidas, Panagiotis Louridas, Paul&nbsp;J. Adams, Ioannis&nbsp;Samoladas c, and Ioannis Stamelos.
+Evaluating the quality of open source software.
+In <em>SQM 2008: Second International Workshop on Software Quality and Maintainability—12th European Conference on Software Maintenance and Reengineering (CSMR 2008) satellite event</em>, 5–28. The Reengineering Forum, April 2008.
+Electronic Notes in Theoretical Computer Science Volume 233 (March 2009).  <a href="http://www.dmst.aueb.gr/dds/pubs/conf/2008-SQM-SQOOSS/html/SGKL09.html"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Diomidis Spinellis.
+A tale of four kernels.
+In Wilhem Sch<span class="bibtex-protected">ä</span>fer, Matthew&nbsp;B. Dwyer, and Volker Gruhn, editors, <em><span class="bibtex-protected">ICSE</span> '08: Proceedings of the 30th International Conference on Software Engineering</em>, 381–390. New York, May 2008. Association for Computing Machinery.  <a href="http://www.dmst.aueb.gr/dds/pubs/conf/2008-ICSE-4kernel/html/Spi08b.html"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Ioannis Samoladas, Georgios Gousios, Diomidis Spinellis, and Ioannis Stamelos.
+The <span class="bibtex-protected">SQO-OSS</span> quality model: measurement based open source software evaluation.
+In Ernesto Damiani and Giancarlo Succi, editors, <em>Open Source Development, Communities and Quality — <span class="bibtex-protected">OSS</span> 2008: 4th International Conference on Open Source Systems</em>, 237–248. Boston, September 2008. IFIP 20th World Computer Congress, Working Group 2.3 on Open Source Software, Springer.  <a href="http://www.dmst.aueb.gr/dds/pubs/conf/2008-OSS-qmodel/html/SGSS08.htm"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Constantinos Kotsokallis, Tizianna Ferrari, Panagiotis Louridas, Elisabetta Ronchieri, and Panayiotis Tsanakas.
+Grid enabled instrument representation and reservation.
+In <em><span class="bibtex-protected">eScience</span> '08: Proceedings of the <span class="bibtex-protected">IEEE</span> 4th International Conference on <span class="bibtex-protected">eScience</span></em>, 16–22. IEEE, December 2008.  </li>
+                    </p>
+                     <p>
+                     <li>Georgios Gousios and Diomidis Spinellis.
+Java performance evaluation using external instrumentation.
+In <em>Proceedings of the 12th Pan-Hellenic Conference on Informatics</em>. 2008.  <a href="http://istlab.dmst.aueb.gr/\~george/pubs/2008-PCI-GS/paper.pdf"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Georgios Gousios, Eirini Kalliamvakou, and Diomidis Spinellis.
+Measuring developer contribution from software repository data.
+In <em>MSR '08: Proceedings of the 2008 International Working Conference on Mining Software Repositories</em>, 129–132. New York, NY, USA, 2008. ACM.  <a href="http://istlab.dmst.aueb.gr/\~george/pubs/2008-MSR-GKS/2008-MSR-GKS.pdf"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Vaggelis Giannikas, Maria Kechagia, Nikos Tsamis, and Aristeidis Theotokis.
+Dynamic pricing of grocery products in supermarket: a supply management tool or a viable growth strategy?
+In Christos Tarantilis and Ioannis Nikolaou, editors, <em>Proceedings of 5th Student Conference on Management Science and Technology</em>, 208–214. May 2008.
+In Greek.  </li>
+                    </p>
+                     <p>
+                     <li>Vasiliki Efstathiou and Anthony Hunter.
+Focused search for arguments from propositional knowledge.
+In <em>Second International Conference on Computational Models of Argument</em>, 159–170. 2008.  </li>
+                    </p>
+                     <p>
+                     <li>Vasiliki Efstathiou and Anthony Hunter.
+Algorithms for effective argumentation in classical propositional logic: a connection graph approach.
+In <em>International Symposium on Foundations of Information and Knowledge Systems</em>, 272–290. Springer, 2008.  </li>
+                    </p>
+                     <p>
+                     <li>Damianos Chatziantoniou, Katerina Pramatari, and Yannis Sotiropoulos.
+<span class="bibtex-protected">COSTES:</span> continuous spreadsheet-like computations.
+In <em>Proceedings of the 24th International Conference on Data Engineering Workshops, <span class="bibtex-protected">ICDE</span> 2008, April 7-12, 2008, Canc<span class="bibtex-protected"><span class="bibtex-protected">ú</span></span>n, M<span class="bibtex-protected"><span class="bibtex-protected">é</span></span>xico</em>, 82–87. 2008.  </li>
+                    </p>
+                     <p>
+                     <li>Vasileios Vlachos, Eirini Kalliamvakou, and Diomidis Spinellis.
+Simulating bandwidth-limited worms: one graph to rule them all?
+In Theodore&nbsp;S. Papatheodorou, Dimitris&nbsp;N. Christodoulakis, and Nikitas&nbsp;N. Karanikolas, editors, <em>Current Trends in Informatics: 11th Panhellenic Conference on Informatics, <span class="bibtex-protected">PCI</span> 2007</em>, volume&nbsp;B, 151–162. Athens, May 2007. New Technologies Publications.  <a href="http://www.dmst.aueb.gr/dds/pubs/conf/2007-PCI-Network/html/VKS07.htm"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Konstantinos Stroggylos and Diomidis Spinellis.
+Refactoring: does it improve software quality?
+In <em>Proceedings of the 5th Workshop on Software Quality (WoSQ '07), colocated with the 29th International Conference on Software Engineering (ICSE '07)</em>. May 2007.  <a href="http://www.dmst.aueb.gr/dds/pubs/conf/2007-WoSQ-Refactor/html/SS07.html"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Dimitris Mitropoulos and Diomidis Spinellis.
+Countering <span class="bibtex-protected">SQL</span> injection attacks with a database driver.
+In Theodore&nbsp;S. Papatheodorou, Dimitris&nbsp;N. Christodoulakis, and Nikitas&nbsp;N. Karanikolas, editors, <em>Current Trends in Informatics: 11th Panhellenic Conference on Informatics, <span class="bibtex-protected">PCI</span> 2007</em>, volume&nbsp;B, 105–115. Athens, May 2007. New Technologies Publications.  <a href="http://www.dmst.aueb.gr/dds/pubs/conf/2007-PCI-SQLIA/html/MS07.htm"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Georgios Gousios, Vassilios Karakoidas, Konstantinos Stroggylos, Panagiotis Louridas, Vasileios Vlachos, and Diomidis Spinellis.
+Software quality assessment of open source software.
+In <em>Proceedings of the 11th Panhellenic Conference on Informatics</em>. May 2007.  <a href="http://istlab.dmst.aueb.gr/\~george/pubs/2007-PCI-GKSLVS/paper.pdf"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Georgios Gousios.
+The <span class="bibtex-protected">J</span>ikes<span class="bibtex-protected">X</span>en <span class="bibtex-protected">J</span>ava server platform.
+In <em>Companion to the 22nd ACM SIGPLAN conference on Object-oriented programming systems, languages, and applications (OOPSLA)</em>. Oct 21-25 2007.  <a href="http://istlab.dmst.aueb.gr/\~george/pubs/2007-OOPSLA-G/paper.pdf"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Damianos Chatziantoniou and Yannis Sotiropoulos.
+Stream variables: <span class="bibtex-protected">A</span> quick but not dirty <span class="bibtex-protected">SQL</span> extension for continuous queries.
+In <em>Proceedings of the 23rd International Conference on Data Engineering Workshops, <span class="bibtex-protected">ICDE</span> 2007, 15-20 April 2007, Istanbul, Turkey</em>, 19–28. 2007.  </li>
+                    </p>
+                     <p>
+                     <li>Jeff&nbsp;W. Boote, Andreas Hanemann, Loukik Kudarimoti, Panagiotis Louridas&nbsp;Lu<span class="bibtex-protected">í</span>s Marta, Michalis Michael, Nicolas Simar, and Ilias Tsompanidis.
+Quality assurance in <span class="bibtex-protected">perfSONAR</span> release management.
+In <em><span class="bibtex-protected">QUATIC</span> 2007: Proceedings of the 6th International Conference on the Quality of Information and Communications Technology</em>, 131–142. IEEE, September 2007.  </li>
+                    </p>
+                     <p>
+                     <li>Stephanos Androutsellis-Theotokis and Diomidis Spinellis.
+Ptrim: <span class="bibtex-protected">A</span> <span class="bibtex-protected">M</span>arket-<span class="bibtex-protected">B</span>ased <span class="bibtex-protected">A</span>pproach to <span class="bibtex-protected">M</span>anaging the <span class="bibtex-protected">R</span>isk of <span class="bibtex-protected">P</span>eer-<span class="bibtex-protected">T</span>o-<span class="bibtex-protected">P</span>eer.
+In <em>Proceedings of the Fifth International Workshop on Databases, Information Systems and Peer-to-Peer Computing (DBISP2P 2007), in conjunction with VLDB2007, Springer Lecture Notes in Computer Science</em>. September 2007.  </li>
+                    </p>
+                     <p>
+                     <li>Vasileios Vlachos, Andreas Raptis, and Diomidis Spinellis.
+Promising steps towards computer hygiene.
+In Steven Furnell, editor, <em>International Network Conference (INC2006)</em>, 229–236. July 2006.  </li>
+                    </p>
+                     <p>
+                     <li>Diomidis Spinellis.
+Global software development in the <span class="bibtex-protected">FreeBSD</span> project.
+In P.&nbsp;Kruchten, Y.&nbsp;Hsieh, E.&nbsp;MacGregor, D.&nbsp;Moitra, and W.&nbsp;Strigel, editors, <em>International Workshop on Global Software Development for the Practitioner</em>, 73–79. ACM Press, May 2006.  <a href="http://www.dmst.aueb.gr/dds/pubs/conf/2006-GSD-FreeBSD/html/GSD-FreeBSD.html"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>George Oikonomou, Vassilios Karakoidas, and Theodoros Apostolopoulos.
+<span class="bibtex-protected">PEGASUS</span>: <span class="bibtex-protected">C</span>ompetitive load balancing using inetd.
+In Alexios Zavras, editor, <em>Proceedings of the 5th International System Administration and Network Engineering Conference SANE 06</em>. NLUUG, Stichting SANE, May 2006.  </li>
+                    </p>
+                     <p>
+                     <li>Georgios Gousios, Vassilios Karakoidas, and Diomidis Spinellis.
+Tuning <span class="bibtex-protected">J</span>ava's memory manager for high performance server applications.
+In Alexios Zavras, editor, <em>Proceedings of the 5th International System Administration and Network Engineering Conference SANE 06</em>, 69–83. NLUUG, Stichting SANE, May 2006.  <a href="http://istlab.dmst.aueb.gr/\~george/pubs/2006-SANE-GKS/paper.pdf"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Adriaan de&nbsp;Groot, Sebastian K<span class="bibtex-protected">ü</span>gler, Paul Adams, and Georgios Gousios.
+Call for quality: open source software quality observation.
+In <em>Proceedings of the Second International Conference on Open Source Systems</em>. June 2006.  <a href="http://istlab.dmst.aueb.gr/\~george/pubs/2006-OSS-GKAG/paper.pdf"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Stephanos Androutsellis-Theotokis, Diomidis Spinellis, and Vasileios Vlachos.
+The <span class="bibtex-protected">M</span>o<span class="bibtex-protected">R</span>-<span class="bibtex-protected">T</span>rust distributed trust management system: <span class="bibtex-protected">D</span>esign and simulation results.
+In <em>proceedings of the 2nd International workshop on security and trust management (STM'06)</em>. September 2006.  <a href="http://www.dmst.aueb.gr/dds/pubs/conf/2006-STM-MoR-Trust/html/ASV.html"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Vasileios Vlachos, Vassiliki Vouzi, Damianos Chatziantoniou, and Diomidis Spinellis.
+<span class="bibtex-protected">NGCE</span> — network graphs for computer epidemiologists.
+In Panagiotis Bozanis and Elias&nbsp;N. Houstis, editors, <em>Advances in Informatics: 10th Panhellenic Conference on Informatics, <span class="bibtex-protected">PCI</span> 2005</em>, 672–683. Springer-Verlag, November 2005.
+Lecture Notes in Computer Science 3746.  <a href="http://www.dmst.aueb.gr/dds/pubs/conf/2005-PCI-NGCE/html/NGFF.html"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Adamantia&nbsp;G. Pateli, George&nbsp;M. Giaglis, and Diomidis&nbsp;D. Spinellis.
+Trial evaluation of wireless info-communication and indoor location-based services in exhibition shows.
+In Panagiotis Bozanis and Elias&nbsp;N. Houstis, editors, <em>Advances in Informatics: 10th Panhellenic Conference on Informatics, <span class="bibtex-protected">PCI</span> 2005</em>, 199–210. Springer-Verlag, November 2005.
+Lecture Notes in Computer Science 3746.  <a href="http://www.dmst.aueb.gr/dds/pubs/conf/2005-PCI-mExpress/html/PCI-mExpress.htm"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Apostolos Malatras, George Pavlou, Sivapathalingham Sivavakeesar, and Vassilios Karakoidas.
+Self-configuring and optimizing mobile ad hoc networks.
+In <em>ICAC '05: Proceedings of the Second International Conference on Automatic Computing</em>, 372–373. Washington, DC, USA, 2005. IEEE Computer Society.  </li>
+                    </p>
+                     <p>
+                     <li>Markos Gogoulos.
+Building and maintaining a public access linux server.
+In <em>Proceedings of the 6th Informatics Workshop for Research Students</em>, 59&ndash;62. University of Bradford, Mar 2005 2005.  </li>
+                    </p>
+                     <p>
+                     <li>Stephanos Androutsellis-Theotokis, Vassilios Karakoidas, Georgios Gousios, Diomidis Spinellis, and Yannis Charalambidis.
+Building an e-business platform: an experience report.
+In <em>Proceedings of the eChallenges 2005</em>. October 2005.  </li>
+                    </p>
+                     <p>
+                     <li>Angeliki Tsilira, Adamantia Pateli, Erast Athanasiadis, and Diomidis Spinellis.
+Targeted messages in indoor mobile environment: a software-oriented approach.
+In M.&nbsp;H. Hamza, editor, <em>Proceedings of the IASTED International Conference on Software Engineering</em>, 734–739. IASTED, ACTA Press, February 2004.  <a href="http://www.dmst.aueb.gr/dds/pubs/conf/2004-IASTED-mExpress/html/TPAS04.htm"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Diomidis Spinellis, Yannis Charalabidis, and Vassilios Karakoidas.
+Application interconnection and execution of business to business transactions over the internet.
+In <em>20th European Conference on Operational Research (EURO-XX)</em>. The Association of European Operational Research Societies, July 2004.
+Poster.  <a href="http://www.dmst.aueb.gr/dds/pubs/conf/2004-EuroXX-Praxis/html/SCK04.pdf"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>George Roussos, George Samaras, and Diomidis Spinellis.
+Editorial message: special track on ubiquitous computing.
+In Hisham&nbsp;M. Haddad, Andrea Omicini, Roger&nbsp;L. Wainwright, and Lorie&nbsp;M. Liebrock, editors, <em>Proceedings of the 2004 <span class="bibtex-protected">ACM</span> Symposium on Applied Computing</em>, 1565–1566. ACM Press, 2004.  <a href="http://www.dmst.aueb.gr/dds/pubs/conf/2004-SAC-UC/html/RSM04.html"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Ada Pateli, Diomidis Spinellis, and Giorgos Giaglis.
+Wireless info-communication and navigation services in exhibition shows.
+In Mel Horwitch, editor, <em>Third International Conference on Mobile Business (ICMB): mBusiness 2004</em>. July 2004.  <a href="http://www.dmst.aueb.gr/dds/pubs/conf/2004-mBusiness/html/ASG04.htm"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Apostolos Kritikopoulos, Martha Sideri, and Konstantinos Stroggylos.
+Crawlwave: a distributed crawler.
+In <em>Proceedings of the 3rd Hellenic Conference on Artificial Intelligence</em>. May 2004.  </li>
+                    </p>
+                     <p>
+                     <li>Vassilios Karakoidas, Stephanos Androutsellis-Theotokis, Diomidis Spinellis, and Yannis Charalabidis.
+Applying <span class="bibtex-protected">MDA</span> in enterprise application interoperability: the <span class="bibtex-protected">PRAXIS</span> project.
+In Harald K<span class="bibtex-protected">ü</span>hn, editor, <em>Workshop on Ontology and Enterprise Modelling: Ingredients for Interoperability</em>, 76–84. December 2004.  <a href="http://www.dmst.aueb.gr/dds/pubs/conf/2004-PAKMOEM-MDA/html/KATSC04.htm"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Damianos Chatziantoniou and Achilleas Anagnostopoulos.
+Hierarchical stream aggregates: querying nested stream sessions.
+In <em>Proceedings of the 16th International Conference on Scientific and Statistical Database Management <span class="bibtex-protected">(SSDBM</span> 2004), 21-23 June 2004, Santorini Island, Greece</em>, 439–440. 2004.  </li>
+                    </p>
+                     <p>
+                     <li>Yannis Charalabidis, Vassilios Karakoidas, Stephanos Androutsellis-Theotokis, and Diomidis Spinellis.
+Enabling <span class="bibtex-protected">B2B</span> transactions over the internet through application interconnection: the <span class="bibtex-protected">PRAXIS</span> project.
+In <em>e-Challenges Conference</em>. European Commission, October 2004.  <a href="http://www.dmst.aueb.gr/dds/pubs/conf/2004-eChallenge-Praxis/html/CKAS04.htm"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Stephanos Androutsellis-Theotokis, Diomidis Spinellis, and Vassilios Karakoidas.
+Performing peer-to-peer e-business transactions: a requirements analysis and preliminary design proposal.
+In <em>Proceedings of the IADIS International e-Commerce 2004 Conference</em>, 399–404. Lisbon, Portugal, December 14-16 2004.  <a href="http://www.dmst.aueb.gr/dds/pubs/conf/2004-IADIS-Praxis/html/ASK04.html"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>S.&nbsp;Androutsellis-Theotokis.
+Social behaviour, incentives and technology in peer-to-peer content distribution networks.
+In <em>Proceedings of the Ethicomp2004 Conference</em>. Syros, Greece, April 2004.  </li>
+                    </p>
+                     <p>
+                     <li>George Roussos, Panos Kourouthanasis, Diomidis Spinellis, Eugene Gryazin, Mike Pryzbliski, George Kalpogiannis, and George Giaglis.
+Systems architecture for pervasive retail.
+In <em>ACM Symposium on Applied Computing</em>, 631–636. New York, March 2003. ACM, ACM Press.  <a href="http://www.dmst.aueb.gr/dds/pubs/conf/2003-SAC-retail/html/paper.htm"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Konstantinos Chorianopoulos and Diomidis Spinellis.
+Usability design for the home media station.
+In Constantine Stephanidis, editor, <em>Proceedings of the 10th HCI International 2003 conferece</em>, 439–443. Lawrence Erlbaum Associates, Inc, 2003.  <a href="http://www.dmst.aueb.gr/dds/pubs/conf/2003-HCI-HMS/html/CS03.htm"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Konstantinos Chorianopoulos, George Lekakos, and Diomidis Spinellis.
+The virtual channel model for personalized television.
+In Judith Masthoff, Richard Griffiths, and Lyn Pemberton, editors, <em>Proceedings of the European Conference on Interactive Television: from Viewers to Actors?</em>, 59–67. 2003.  <a href="http://www.dmst.aueb.gr/dds/pubs/conf/2003-ECITV-VCM/html/CLS03b.htm"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Konstantinos Chorianopoulos, George Lekakos, and Diomidis Spinellis.
+Intelligent user interfaces in the living room: usability design for personalized television applications.
+In <em>Proceedings of the 2003 international conference on Intelligent user interfaces</em>, 230–232. ACM Press, 2003.  <a href="http://www.dmst.aueb.gr/dds/pubs/conf/2003-IUI-PTV/html/paper.htm"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Diomidis Spinellis.
+The information furnace: user-friendly home control.
+In <em>Proceedings of the 3rd International System Administration and Networking Conference <span class="bibtex-protected">SANE 2002</span></em>, 145–174. May 2002.  <a href="http://www.dmst.aueb.gr/dds/pubs/conf/2002-SANE-iFurnace/html/ifurnace.html"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Victoria Skoularidou and Diomidis Spinellis.
+Securing the network client.
+In <em>Proceedings of the Third International Network Conference <span class="bibtex-protected">INC '02</span></em>, 389–396. July 2002.  <a href="http://www.dmst.aueb.gr/dds/pubs/conf/2002-INC-Sec/html/inc2002.html"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Ada Pateli, Giorgos Giaglis, and Diomidis Spinellis.
+Indoor application environments and location-based services.
+In <em>Proceedings of Workshop on Location-based Services for Accelerating the European-wide Deployment of Services for the Mobile User and Worker</em>. The LOBSTER IST Cluster, October 2002.  </li>
+                    </p>
+                     <p>
+                     <li>Ioannis Mathes, Adamantia Pateli, Argiris Tsamakos, and Diomidis Spinellis.
+Context aware services in an exhibition environment- the <span class="bibtex-protected">mEXPRESS</span> approach.
+In B.&nbsp;Stanford-Smith et&nbsp;al., editor, <em>Challenges and Achievements in E-business and E-work: Proceedings of the E-business and E-work Conference</em>, 685–692. IOS Press, October 2002.  <a href="http://www.dmst.aueb.gr/dds/pubs/conf/2002-EBEW-mExpress/html/MPTS02.html"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>I.&nbsp;Mathes, A.&nbsp;Pateli, A.&nbsp;Tsamakos, and D.&nbsp;Spinellis.
+Context aware services in an exhibition environment-the mexpress approach.
+In <em>Challenges and Achievements in E-business and E-work: Proceedings of the E-business and E-work Conference</em>, 685–692. October 2002.  </li>
+                    </p>
+                     <p>
+                     <li>Panos Kourouthanasis, Diomidis Spinellis, Giorgos Roussos, and Giorgos Giaglis.
+Intelligent cokes and diapers: <span class="bibtex-protected">MyGrocer</span> ubiquitous computing environment.
+In <em>First International Mobile Business Conference</em>, 150–172. July 2002.  <a href="http://www.dmst.aueb.gr/dds/pubs/conf/2002-MBus-MyGrocer/html/paper.htm"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Georgios Gousios and Diomidis Spinellis.
+A comparison of portable dynamic web content technologies for the apache web server.
+In <em>Proceedings of the 3rd International System Administration and Networking Conference <span class="bibtex-protected">SANE 2002</span></em>, 103–119. May 2002.
+Best refereed paper award.  <a href="http://www.dmst.aueb.gr/dds/pubs/conf/2002-SANE-DynCont/html/dyncont.html"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>K.&nbsp;Fouskas, A.&nbsp;Pateli, D.&nbsp;Spinellis, and H.&nbsp;Virola.
+Applying contextual inquiry for capturing end-users behaviour requirements for mobile exhibition services.
+In <em>1st International Conference on Mobile Business</em>. July 2002.  </li>
+                    </p>
+                     <p>
+                     <li>Konstantinos Chorianopoulos and Diomidis Spinellis.
+A metaphor for personalized television programming.
+In Noelle Carbonelle and Constantine Stephanides, editors, <em>Proceedings of the 7th ERCIM Workshop on User Interfaces for All</em>, 139&ndash;146. Springer-Verlag, October 2002.
+LORIA Report.  <a href="http://www.dmst.aueb.gr/dds/pubs/conf/2002-UI4All-PTV/html/CS02.html"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Marios Sintichakis, Theodore Kalamboukis, and Diomidis Spinellis.
+A computer-assisted lexicographic application.
+In <em>15th International Symposium on Theoretical &amp; Applied Linguistics</em>. May 2001.  </li>
+                    </p>
+                     <p>
+                     <li>Vassilis Prevelakis and Diomidis Spinellis.
+Sandboxing applications.
+In <em><span class="bibtex-protected">USENIX</span> 2001 Technical Conference Proceedings: FreeNIX Track</em>. Berkeley, CA, June 2001. Usenix Association.  <a href="http://www.dmst.aueb.gr/dds/pubs/conf/2001-Freenix-Sandbox/html/sandbox32final.html"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Giorgos Lekakos, Kostas Chorianopoulos, and Diomidis Spinellis.
+Information systems in the living room: a case study of personalized interactive <span class="bibtex-protected">TV</span> design.
+In <em>Proceedings of the 9th European Conference on Information Systems</em>. June 2001.  <a href="http://www.dmst.aueb.gr/dds/pubs/conf/2001-ECIS-iTV/html/itv.htm"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Evangelia Kopanaki, Vangelis Karkaletsis, Constantine&nbsp;D. Spyropoulos, Nikos Avradinis, Nikos Fakotakis, Theodore Kalamboukis, Basilis Kladis, Yannis Lazarou, Themis Panayiotopoulos, and Diomidis Spinellis.
+<span class="bibtex-protected">MITOS</span>: an integrated web-based system for information management.
+In <em>8th Panhellenic Informatics Conference</em>. Greek Computer Society, November 2001.  <a href="http://www.dmst.aueb.gr/dds/pubs/conf/2001-EPY-Mitos/html/mitos.html"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Damianos Chatziantoniou, Michael&nbsp;O. Akinde, Theodore Johnson, and Samuel Kim.
+The md-join: an operator for complex <span class="bibtex-protected">OLAP</span>.
+In <em>Proceedings of the 17th International Conference on Data Engineering, April 2-6, 2001, Heidelberg, Germany</em>, 524–533. 2001.  </li>
+                    </p>
+                     <p>
+                     <li>Theodoros Bozios, Georgios Lekakos, Victoria Skoularidou, and Konstantinos Chorianopouloss.
+Advanced techniques for personalized advertising in a digital tv environment: the imedia system.
+In <em>Proceedings of the eBusiness and eWork Conference</em>. 2001.  <a href="http://istlab.dmst.aueb.gr/~vsko/pubs/confs/ebew2002_paper2.html"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Diomidis Spinellis and Dimitris Gritzalis.
+A domain-specific language of intrusion detection.
+In <em>Proceedings of the 1st ACM Workshop on Intrusion Detection Systems</em>. ACM, November 2000.  <a href="http://www.dmst.aueb.gr/dds/pubs/conf/2000-CCS-DSLID/html/paper.html"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Diomidis Spinellis.
+Outwit: <span class="bibtex-protected">Unix</span> tool-based programming meets the <span class="bibtex-protected">Windows</span> world.
+In Christopher Small, editor, <em><span class="bibtex-protected">USENIX</span> 2000 Technical Conference Proceedings</em>, 149–158. Berkeley, CA, June 2000. Usenix Association.  <a href="http://www.dmst.aueb.gr/dds/pubs/conf/2000-Usenix-outwit/html/utool.html"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Konstantinos Raptis, Diomidis Spinellis, and Sokratis Katsikas.
+Java as distributed object glue.
+In <em>World Computer Congress 2000</em>. International Federation for Information Processing, August 2000.  <a href="http://www.dmst.aueb.gr/dds/pubs/conf/2000-WCC-JGlue/html/jdog.html"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>John Iliadis, Diomidis Spinellis, Dimitris Gritzalis, Bart Preneel, and Sokratis Katsikas.
+Evaluating certificate status information mechanisms.
+In <em>Proceedinds of the 7th ACM Conference on Computer and Communication Security: CCS '2000</em>, 1–8. ACM, November 2000.  <a href="http://www.dmst.aueb.gr/dds/pubs/conf/2000-CCS-CSI-Eval/html/csi-eval.html"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Ioannis&nbsp;S. Iliadis, Diomidis Spinellis, Sokratis Katsikas, and Bart Preneel.
+A taxonomy of certificate status information mechanisms.
+In <em>Information Security Solutions Europe ISSE 2000</em>. European Forum for Electronic Business, September 2000.  <a href="http://www.dmst.aueb.gr/dds/pubs/conf/2000-ISSE-CSI-Taxon/html/csi_taxonomy.htm"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>G.&nbsp;Zervas and S.&nbsp;Roger.
+The curse of dimensionality and document clustering.
+In <em>Proceedings of the IEE Searching for Information: AI and IR Approaches</em>. 1999.  </li>
+                    </p>
+                     <p>
+                     <li>John Tait, Jeremy Ellman, and Diomidis Spinellis.
+<span class="bibtex-protected">MABLe</span>: a multilingual authoring tool for business letters.
+In <em>ASLIB: 21st International Conference on Translating and the Computer</em>. The Association for Information Management, November 1999.  </li>
+                    </p>
+                     <p>
+                     <li>Diomidis Spinellis and Chrissoleon&nbsp;T. Papadopoulos.
+Production line buffer allocation: genetic algorithms versus simulated annealing.
+In <em>Second International Aegean Conference on the Analysis and Modelling of Manufacturing Systems</em>, 89–101. University of the Aegean, Department of Business Administration, May 1999.  <a href="http://www.dmst.aueb.gr/dds/pubs/conf/1999-Perf-GASA/html/gasa.html"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Diomidis Spinellis and Chrissoleon&nbsp;T. Papadopoulos.
+Ex<span class="bibtex-protected">PLO</span>re: a modular architecture for production line optimisation.
+In Dimitris&nbsp;K. Despotis and Constantin Zopounidis, editors, <em>Proceedings of the 5th International Conference of the Decision Sciences Institute, <span class="bibtex-protected">DSI '99</span></em>, 1446–1449. Decision Sciences Institute, July 1999.  <a href="http://www.dmst.aueb.gr/dds/pubs/conf/1999-DSI-exPLOre/html/explore.html"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Diomidis Spinellis and Dimitris Gritzalis.
+Information security best practice dissemination: the <span class="bibtex-protected">ISA-EUNET</span> approach.
+In Louise Yngstr<span class="bibtex-protected">ö</span>m and Simone Fisher-H<span class="bibtex-protected">ü</span>bner, editors, <em><span class="bibtex-protected">WISE</span> 1: First World Conference on Information Security Education</em>, 111&ndash;136. IFIP TC11 WG 11.8, June 1999.  <a href="http://www.dmst.aueb.gr/dds/pubs/conf/1999-WISE-TEKNO/html/wise.html"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Diomidis Spinellis.
+Software reliability: modern challenges.
+In G.&nbsp;I. Schu<span class="bibtex-protected">ë</span>ller and P.&nbsp;Kafka, editors, <em>Proceedings <span class="bibtex-protected">ESREL</span> '99 — The Tenth European Conference on Safety and Reliability</em>, 589–592. Rotterdam, September 1999. ESRA, VDI, TUM, A. A. Balkema.  <a href="http://www.dmst.aueb.gr/dds/pubs/conf/1999-ESREL-SoftRel/html/chal.html"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Diomidis Spinellis.
+Reliable software implementation using domain specific languages.
+In G.&nbsp;I. Schu<span class="bibtex-protected">ë</span>ller and P.&nbsp;Kafka, editors, <em>Proceedings <span class="bibtex-protected">ESREL</span> '99 — The Tenth European Conference on Safety and Reliability</em>, 627–631. Rotterdam, September 1999. ESRA, VDI, TUM, A. A. Balkema.  <a href="http://www.dmst.aueb.gr/dds/pubs/conf/1999-ESREL-SoftRel/html/dsl.html"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Dimitrios Lekkas, Sokratis&nbsp;K. Katsikas, Diomidis Spinellis, Pavel Gladychev, and Ahmed Patel.
+User requirements of trusted third parties in <span class="bibtex-protected">E</span>urope.
+In Simone Fisher-H<span class="bibtex-protected">ü</span>bner, Gerald Quirchmayr, and Louise Yngstr<span class="bibtex-protected">ö</span>m, editors, <em>User Identification &amp; Privacy Protection: Applications in Public Administration &amp; Electronic Commerce</em>, 229–242. IFIP WG 8.5 and WS 9.6, June 1999.  <a href="http://www.dmst.aueb.gr/dds/pubs/conf/1999-WISE-TTP/html/ttp.html"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Theodore Johnson and Damianos Chatziantoniou.
+Joining very large data sets.
+In <em>Databases in Telecommunications, International Workshop Co-located with VLDB-99, Edinburgh, Scotland, UK, September 6, 1999, Proceedings</em>, 118–132. 1999.  </li>
+                    </p>
+                     <p>
+                     <li>Theodore Johnson and Damianos Chatziantoniou.
+Extending complex ad-hoc <span class="bibtex-protected">OLAP</span>.
+In <em>Proceedings of the 1999 <span class="bibtex-protected">ACM</span> <span class="bibtex-protected">CIKM</span> International Conference on Information and Knowledge Management, Kansas City, Missouri, USA, November 2-6, 1999</em>, 170–179. 1999.  </li>
+                    </p>
+                     <p>
+                     <li>Stephen&nbsp;B. Johnson and Damianos Chatziantoniou.
+Extended <span class="bibtex-protected">SQL</span> for manipulating clinical warehouse data.
+In <em><span class="bibtex-protected">AMIA</span> 1999, American Medical Informatics Association Annual Symposium, Washington, DC, USA, November 6-10, 1999</em>. 1999.  </li>
+                    </p>
+                     <p>
+                     <li>Damianos Chatziantoniou.
+The panq tool and <span class="bibtex-protected">EMF</span> <span class="bibtex-protected">SQL</span> for complex data management.
+In <em>Proceedings of the Fifth <span class="bibtex-protected">ACM</span> <span class="bibtex-protected">SIGKDD</span> International Conference on Knowledge Discovery and Data Mining, San Diego, CA, USA, August 15-18, 1999</em>, 420–424. 1999.  </li>
+                    </p>
+                     <p>
+                     <li>Damianos Chatziantoniou.
+Evaluation of ad hoc <span class="bibtex-protected">OLAP:</span> in-place computation.
+In <em>11th International Conference on Scientific and Statistical Database Management, Proceedings, Cleveland, Ohio, USA, 28-30 July, 1999</em>, 34–43. 1999.  </li>
+                    </p>
+                     <p>
+                     <li>Damianos Chatziantoniou.
+Ad hoc <span class="bibtex-protected">OLAP:</span> expression and evaluation.
+In <em>Proceedings of the 15th International Conference on Data Engineering, Sydney, Austrialia, March 23-26, 1999</em>, 250. 1999.  </li>
+                    </p>
+                     <p>
+                     <li>Kenneth&nbsp;A. Ross, Divesh Srivastava, and Damianos Chatziantoniou.
+Complex aggregation at multiple granularities.
+In <em>Advances in Database Technology - EDBT'98, 6th International Conference on Extending Database Technology, Valencia, Spain, March 23-27, 1998, Proceedings</em>, 263–277. 1998.  </li>
+                    </p>
+                     <p>
+                     <li>Stefanos Gritzalis, George Aggelis, and Diomidis Spinellis.
+Programming languages for mobile code: a problems viewpoint.
+In <em>Proceedings of the First International Network Conference <span class="bibtex-protected">INC '98</span></em>, 210–217. IEE, Internet Research, July 1998.  <a href="http://www.dmst.aueb.gr/dds/pubs/conf/1998-INC-Mobcode/html/inc98.htm"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Diomidis Spinellis and Chrisoleon&nbsp;T. Papadopoulos.
+A simulated annealing approach for buffer allocation in reliable production lines.
+In <em>International Workshop on Performance Evaluation and Optimization of Production Lines</em>, 365–375. University of the Aegean, Department of Mathematics, May 1997.  <a href="http://www.dmst.aueb.gr/dds/pubs/conf/1997-Perf-Anneal/html/anneal.html"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Diomidis Spinellis and V.&nbsp;Guruprasad.
+Lightweight languages as software engineering tools.
+In <em><span class="bibtex-protected">USENIX</span> Conference on Domain-Specific Languages</em>, 67–76. Berkeley, CA, October 1997. Usenix Association.  <a href="http://www.dmst.aueb.gr/dds/pubs/conf/1997-DSL-Lightweight/html/paper.html"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Soktratis Katsikas, Diomidis Spinellis, John Iliadis, and Bernd Blobel.
+Using <span class="bibtex-protected">TTP</span>s for secure telemedical applications over the <span class="bibtex-protected">WWW</span>: the <span class="bibtex-protected">EUROMED-ETS</span> approach.
+In <em>Pre-proceedings of the <span class="bibtex-protected">IMIA</span> <span class="bibtex-protected">WG4</span> working Conference on Common security solutions for communicating patient data</em>. International Medical Informatics Association (IMIA), November 1997.  </li>
+                    </p>
+                     <p>
+                     <li>S.N. Gupta, J.L. Prince, and S.&nbsp;Androutsellis-Theotokis.
+Bandpass optical flow for tagged mr images.
+In <em>Proceedings of IEEE International Conference in Image Processing</em>. San Francisco, USA, September 1997.  </li>
+                    </p>
+                     <p>
+                     <li>Stefanos Gritzalis and Diomidis Spinellis.
+The cascade vulnerability problem for open distributed systems: a review.
+In <em><span class="bibtex-protected">IFIP TC5 WG5.4</span> 3rd International Conference on Reliability, Quality &amp; Safety of Software-Intensive Systems, ENCRESS '97</em>, 175–185. IFIP, Chapman \\&amp; Hall, May 1997.  <a href="http://www.dmst.aueb.gr/dds/pubs/conf/1997-Encress-Cascade/html/casc.html"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Stefanos Gritzalis and Diomidis Spinellis.
+Cryptographic protocols over open distributed systems: a taxonomy of flaws and related protocol analysis tools.
+In Peter Daniel, editor, <em>16th International Conference on Computer Safety, Reliability and Security: <span class="bibtex-protected">SAFECOMP</span> '97</em>, 123–137. European Workshop on Industrial Computer Systems: <span class="bibtex-protected">TC</span>-7, Springer Verlag, September 1997.  <a href="http://www.dmst.aueb.gr/dds/pubs/conf/1997-SafeComp-Formal/html/doc.html"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Stefanos Gritzalis and Diomidis Spinellis.
+Addressing threats and security issues in <span class="bibtex-protected">W</span>orld <span class="bibtex-protected">W</span>ide <span class="bibtex-protected">W</span>eb technology.
+In <em>Proceedings <span class="bibtex-protected">CMS '97</span> 3rd <span class="bibtex-protected">IFIP TC6/TC11</span> International joint working Conference on Communications and Multimedia Security</em>, 33–46. IFIP, Chapman \\&amp; Hall, September 1997.  <a href="http://www.dmst.aueb.gr/dds/pubs/conf/1997-CMS-WebSec/html/w3sec.html"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Damianos Chatziantoniou and Kenneth&nbsp;A. Ross.
+Groupwise processing of relational queries.
+In <em>VLDB'97, Proceedings of 23rd International Conference on Very Large Data Bases, August 25-29, 1997, Athens, Greece</em>, 476–485. 1997.  </li>
+                    </p>
+                     <p>
+                     <li>Panos Louridas and Peri Loucopoulos.
+A framework for evaluating design rationale methods.
+In <em>Workshop on the Evaluation of Modeling Methods in Systems Analysis and Design (<span class="bibtex-protected">EMMSAD</span> '96, in conjunction with <span class="bibtex-protected">CAiSE</span> '96)</em>. Crete, 20–21 May 1996.  </li>
+                    </p>
+                     <p>
+                     <li>P.&nbsp;Louridas and P.&nbsp;Loucopoulos.
+A reasoning framework for information systems development.
+In <em>Fourth Conference on Information Systems Methodologies of the British Computer Society Information Systems Methodologies Specialist Group</em>, 57–67. Cork, Ireland, 12–14 September 1996.  </li>
+                    </p>
+                     <p>
+                     <li>Damianos Chatziantoniou and Kenneth&nbsp;A. Ross.
+Querying multiple features of groups in relational databases.
+In <em>VLDB'96, Proceedings of 22th International Conference on Very Large Data Bases, September 3-6, 1996, Mumbai (Bombay), India</em>, 295–306. 1996.  </li>
+                    </p>
+                     <p>
+                     <li>S.&nbsp;Androutsellis-Theotokis and J.L. Prince.
+Experiments in multiresolution motion estimation for multifrequency tagged cardiac mr images.
+In <em>Proceedings of IEEE International Conference in Image Processing</em>. Lausanne, Switzerland, September 1996.  </li>
+                    </p>
+                     <p>
+                     <li>Diomidis Spinellis.
+<span class="bibtex-protected">DIKAIO</span>: high court decisions on the internet and on <span class="bibtex-protected">CD-ROM</span>.
+In <em>First Greek Technical Chamber Informatics Conference: The Information Society</em>, 546–555. Technical Chamber of Greece, December 1995.
+In Greek.  <a href="http://www.dmst.aueb.gr/dds/pubs/conf/1995-TEE-InfSoc-Dikaio/html/dikaio.html"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Diomidis Spinellis.
+Integrated aluminum hot milling automation.
+In <em>Modern Modern Automated Control Technologies</em>, 218–221. Technical Chamber of Greece, December 1995.
+In Greek.  <a href="http://www.dmst.aueb.gr/dds/pubs/conf/1995-TEE-Control-OIS/html/teeconf1.html"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Diomidis Spinellis, Sophia Drossopoulou, and Susan Eisenbach.
+Language and architecture paradigms as object classes: a unified approach towards multiparadigm programming.
+In J<span class="bibtex-protected">ü</span>rg Gutknecht, editor, <em>Programming Languages and System Architectures International Conference</em>, 191–207. Springer-Verlag, March 1994.
+Lecture Notes in Computer Science 782.  <a href="http://www.dmst.aueb.gr/dds/pubs/conf/1994-PLSA-Multipar/html/paper.html"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Diomidis Spinellis, Sophia Drossopoulou, and Susan Eisenbach.
+An object model for multiparadigm programming.
+In Dennis Kafura, Greg Lavender, and Siva Challa, editors, <em><span class="bibtex-protected">OOPSLA</span> '94 Workshop on Multi-Language Object Models</em>. October 1994.
+http://actor.cs.vt.edu/\~siva/wshop.html.  <a href="http://www.dmst.aueb.gr/dds/pubs/conf/1994-OOPSLA-Multipar/html/mlom.html"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Diomidis Spinellis.
+Wux: <span class="bibtex-protected">U</span>nix tools under <span class="bibtex-protected">W</span>indows.
+In <em><span class="bibtex-protected">USENIX</span> Conference Proceedings</em>, 325&ndash;336. Berkeley, CA, Winter 1994. Usenix Association.  <a href="http://www.dmst.aueb.gr/dds/pubs/conf/1994-Usenix-Wux/html/wux.html"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Diomidis Spinellis.
+The design and implementation of a legal text database.
+In Dimitris Karagiannis, editor, <em><span class="bibtex-protected">DEXA</span> 94: 5th International Conference on Database and Expert Systems Applications</em>, 339–348. Springer-Verlag, September 1994.
+Lecture Notes in Computer Science 856.  <a href="http://www.dmst.aueb.gr/dds/pubs/conf/1994-DEXA-Dikaio/html/dexa.html"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Diomidis Spinellis.
+Tekton: a program for the composition, design and three-dimensional view of architectural subjects.
+In <em>4th Panhellenic Informatics Conference</em>, volume&nbsp;I, 361–372. Greek Computer Society, December 1993.
+In Greek.  <a href="http://www.dmst.aueb.gr/dds/pubs/conf/1993-EPY-Tekton/html/tekton.html"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Diomidis Spinellis.
+The implementation of multimedia applications.
+In <em>Multimedia: Theory and Experience</em>, 23–37. Greek Computer Society, December 1992.
+In Greek.  <a href="http://www.dmst.aueb.gr/dds/pubs/conf/1992-EPY-Multimedia-SM/html/epy-mlm2.html"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+               </ul>
+             </ul>
+           </div>
+         </div>
+         <div class="panel panel-default" id="px2">
+           <!-- Print publications categories thats exist -->
+                 <div class="panel-heading">
+                   <h3 id="Technical">Technical Reports</h3>
+                 </div>
+           <!-- Print publications information by reverse chronological order -->
+           <div class="panel-body">
+             <ul class="list-group">
+               <ul>
+                     <p>
+                     <li>Theofilos Petsios, Adrian Tang, Dimitris Mitropoulos, Salvatore&nbsp;J. Stolfo, Angelos&nbsp;D. Keromytis, and Suman Jana.
+Tug-of-war: observations on unified content handling.
+Technical Report, CoRR abs/1708.09334, 2017.  <a href="https://arxiv.org/abs/1708.09334"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Roxana Geambasu, Dimitris Mitropoulos, Simha Sethumadhavan, Junfeng Yang, Angelos Stravrou, Dan Fleck, Matthew Elder, and Azzedine Benameur.
+Maintaining enterprise resiliency via kaleidoscopic adaption and transformation of software services (<span class="bibtex-protected">MEERKATS</span>).
+Technical Report, Air Force Research Laboratory, Sensors Directorate, Wright-Patterson, Air Force Base, OH 45433-7320, Air Force Materiel Command, United States Air Force, April 2016.  <a href="http://www.dtic.mil/docs/citations/AD1007307"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Diomidis Spinellis.
+Greek character encoding for electronic mail messages.
+Technical Report, Network Information Center, May 1996.
+RFC-1947.  <a href="http://www.dmst.aueb.gr/dds/pubs/tr/rfc-1947/html/RFC1947.html"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+               </ul>
+             </ul>
+           </div>
+         </div>
+         <div class="panel panel-default" id="px2">
+           <!-- Print publications categories thats exist -->
+                 <div class="panel-heading">
+                   <h3 id="White">White Papers</h3>
+                 </div>
+           <!-- Print publications information by reverse chronological order -->
+           <div class="panel-body">
+             <ul class="list-group">
+               <ul>
+                     <p>
+                     <li>Markos Gogoulos.
+(almost) never owned!
+Technical Report WHP-2004-006, SAGE, 2004.  <a href="http://www.sage.org/whitepapers/markos.mm"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>V.&nbsp;Vlachos.
+Scheduling algorithms for real time operating systems.
+Technical Report WHP-2003-002, ELTRUN, 2003.  <a href="http://www.eltrun.gr/whitepapers/#5th"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>M.&nbsp;Benou, V.&nbsp;Skoularidou, and D.&nbsp;Spinellis.
+Internet security guide.
+Technical Report WHP-2003-001, ELTRUN, 2003.  <a href="http://www.eltrun.gr/whitepapers/#4th"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>S.&nbsp;Androutsellis-Theotokis.
+A survey of peer-to-peer file sharing technologies.
+Technical Report WHP-2002-003, ELTRUN, 2003.  <a href="http://www.eltrun.gr/whitepapers/#3rd"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+               </ul>
+             </ul>
+           </div>
+         </div>
+         <div class="panel panel-default" id="px2">
+           <!-- Print publications categories thats exist -->
+                 <div class="panel-heading">
+                   <h3 id="Magazine">Magazine Articles</h3>
+                 </div>
+           <!-- Print publications information by reverse chronological order -->
+           <div class="panel-body">
+             <ul class="list-group">
+               <ul>
+                     <p>
+                     <li>Dimitris Mitropoulos.
+How 1 million app calls can tell you a bit about malware.
+<em>XRDS: Crossroads, The ACM Magazine for Students</em>, 24(1):17–19, 2017.  </li>
+                    </p>
+                     <p>
+                     <li>Dimitris Mitropoulos.
+On the evolution of security bugs.
+<em>XRDS: Crossroads, The ACM Magazine for Students</em>, 21(3):18–19, 2015.  <a href="http://xrds.acm.org/blog/2014/12/measuring-the-occurrence-of-security-bugs-through-software-evolution-part-2/"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Maria Kechagia.
+Exception handling evaluation of large <span class="bibtex-protected">API</span>s.
+<em>XRDS</em>, 21(3):16–17, March 2015.  </li>
+                    </p>
+                     <p>
+                     <li>Maria Kechagia.
+Why to get involved in the open source community?
+<em>XRDS</em>, 21(1):14–15, October 2014.  </li>
+                    </p>
+                     <p>
+                     <li>Vassilios Karakoidas.
+On domain-specific languages usage (why dsls really matter).
+<em>XRDS: Crossroads, The ACM Magazine for Students</em>, 20(3):16–17, March 2014.  </li>
+                    </p>
+                     <p>
+                     <li>Dimitris Mitropoulos.
+Security bugs in large software ecosystems.
+<em>XRDS: Crossroads, The ACM Magazine for Students</em>, 20(2):15–16, 2013.  <a href="http://xrds.acm.org/blog/2013/07/security-bugs-in-large-software-ecosystems/"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Dimitris Mitropoulos.
+Data security in the cloud environment.
+<em>XRDS: Crossroads, The ACM Magazine for Students</em>, 19(3):11–11, 2013.  <a href="http://xrds.acm.org/blog/2012/11/data-security-in-the-cloud-environment/"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Dimitris Mitropoulos.
+How secure is your software?
+<em>XRDS: Crossroads, The ACM Magazine for Students</em>, 19(1):11–13, 2012.  <a href="http://xrds.acm.org/blog/2012/06/how-secure-is-your-software/"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Dimitris Mitropoulos.
+Fatal injection: the server's side.
+<em>XRDS: Crossroads, The ACM Magazine for Students</em>, 19(2):12–14, 2012.  <a href="http://xrds.acm.org/blog/2012/08/fatal-injection-the-servers-side/"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>Dimitris Mitropoulos.
+Better safe than sorry: backup your backups.
+<em>XRDS: Crossroads, The ACM Magazine for Students</em>, 18(2):6–6, 2012.  <a href="http://xrds.acm.org/article.cfm?aid=2173642"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+               </ul>
+             </ul>
+           </div>
+         </div>
+         <div class="panel panel-default" id="px2">
+           <!-- Print publications categories thats exist -->
+                 <div class="panel-heading">
+                   <h3 id="Working">Working Papers</h3>
+                 </div>
+           <!-- Print publications information by reverse chronological order -->
+           <div class="panel-body">
+             <ul class="list-group">
+               <ul>
+                     <p>
+                     <li>D.&nbsp;Spinellis, A.&nbsp;Vrechopoulos, and I.&nbsp;Kaliamvakou.
+Evaluation of open source applications.
+-, 2006.  </li>
+                    </p>
+                     <p>
+                     <li>D.&nbsp;Spinellis, V.&nbsp;Karakoidas, and D.&nbsp;Chatziantoniou.
+A software development metaphor for developing semi-dynamic web sites through declarative specifications.
+WP 2004-007, Eltrun Working Paper Series, 2004.  <a href="http://www.eltrun.aueb.gr/working-papers/WP_2004007.pdf"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>D.&nbsp;Spinellis.
+Browsing and refactoring program collections written in <span class="bibtex-protected">C</span>.
+WP 2004-006, Eltrun Working Paper Series, 2004.  <a href="http://www.eltrun.aueb.gr/working-papers/WP_2004006.pdf"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+                     <p>
+                     <li>V.&nbsp;Skoularidou and D.&nbsp;Spinellis.
+Secure computing in untrustworthy environments: is the aspect-oriented programming paradigm a practical solution?
+WP 2003-008, Eltrun Working Paper Series, 2003.  <a href="http://www.eltrun.aueb.gr/working-papers/WP_2003008_abstract.pdf"><span class="glyphicon glyphicon-new-window"></span></a>  </li>
+                    </p>
+               </ul>
+             </ul>
+           </div>
+         </div>
+      <div class="panel panel-default">
+        <div class="panel-body">
+          <i class="text-muted">Note: Some of the above data refer to grandfathered work conducted by BALab's members at its progenitor laboratory, <a href="https://istlab.dmst.aueb.gr">ISTLab</a>.</i>
+        </div>
+      </div>
+	 </div>
+	</div>
+  </div>
+
+  <!-- Fixed footer -->
+  <footer>
+    <div class="container">
+      <p class="text-muted">
+        <span><a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons Licence" style="max-height: 31px; margin-left:20px" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a></span>
+        <span class="hidden-xs hidden-sm"> This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.</span>
+        <span class="hidden-md hidden-lg hidden-xl"> CC BY-SA 4.0 </a></span>
+        <span class="pull-right"><a href="./pages/contact.html" style="color: white">Contact</a></span>
+      </p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/9.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="bootstrap-3.3.7/assets/js/vendor/jquery.min.js"><\/script>')</script>
+  <!-- <script src="bootstrap-3.3.7/dist/js/bootstrap.min.js"></script> -->
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <script src="bootstrap-3.3.7/assets/js/ie10-viewport-bug-workaround.js"></script>
+
+</body>
+</html>

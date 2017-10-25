@@ -3,7 +3,8 @@
 # Refresh the site's content
 #
 
-BASE=/home/dds/web/balab
+#BASE=/home/dds/web/balab
+BASE=../balab
 
 umask 0002
 mkdir $BASE/new
