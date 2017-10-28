@@ -6,9 +6,48 @@
 #BASE=/home/dds/web/balab
 BASE=balab
 
+#Getting available disk space and converting it into bytes
+availableSize=$(df -h --total | grep total | awk '{print $3}')
+if [ "${availableSize: -1}" == "T" ]
+then
+	availableSize=$(echo ${availableSize::-1})
+	availableSize=$(($availableSize * 1099511627776))
+else
+	if [ "${availableSize: -1}" == "G" ]
+	then
+		availableSize=$(echo ${availableSize::-1})
+		availableSize=$(($availableSize * 1073741842))
+	else
+		if [ "${availableSize: -1}" == "M" ]
+		then
+			availableSize=$(echo ${availableSize::-1})
+			availableSize=$(($availableSize * 1048576))
+		else
+			if [ "${availableSize: -1}" == "K" ]
+			then
+				availableSize=$(echo ${availableSize::-1})
+				availableSize=$(($availableSize * 1048576))
+			fi
+		fi
+	fi
+fi
+
+if [ -z "$availableSize" ]
+then
+	echo "[Warning] Maybe the available is larger that 1000 Terra Bytes or less than a Kilo Byte, please add the rule to proceed"
+	exit	
+fi
+
+#Sanity check before installing
+test $(stat -c %s $BASE/current/category/members.html) -gt $availableSize && { echo "[Error] File $BASE/current/category/members.html is over 20000 bytes, please free some space before updating!"; exit; }
+test $(stat -c %s $BASE/current/category/software.html) -gt $availableSize && { echo "[Error] File $BASE/current/category/software.html is over 20000 bytes, please free some space before updating!"; exit; }
+test $(stat -c %s $BASE/current/category/projects.html) -gt $availableSize && { echo "[Error] File $BASE/current/category/projects.html is over 20000 bytes, please free some space before updating!"; exit; }
+test $(stat -c %s $BASE/current/category/alumni.html) -gt $availableSize && { echo "[Error] File $BASE/current/category/alumni.html is over 20000 bytes, please free some space before updating!"; exit; }
+test $(stat -c %s $BASE/current/category/yearly-reports.html) -gt $availableSize && { echo "[Error] File $BASE/current/category/yearly-reports.html is over 20000 bytes, please free some space before updating!"; exit; }
+
 umask 0002
 mkdir $BASE/new
-chgrp iweb $BASE/new
+test $(hostname) == istlab &&  chgrp iweb $BASE/new 
 chmod 2775 $BASE/new
 pelican content/ --output=$BASE/new
 mv $BASE/current $BASE/old
