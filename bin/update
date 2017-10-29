@@ -8,7 +8,8 @@ BASE=balab
 
 #Getting available disk space and converting it into bytes
 availableSize=$(df -h --total | grep total | awk '{print $4}')
-echo "${availableSize[@]: -1}"
+cat /etc/*-release
+echo -n "$availableSize" | tail -c 1
 exit
 if [ "${availableSize: -1}" == "T" ]
 then
