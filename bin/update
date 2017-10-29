@@ -9,24 +9,23 @@ BASE=balab
 #Getting available disk space and converting it into bytes
 availableSize=$(df -h --total | grep total | awk '{print $4}')
 cat /etc/*-release
-echo -n "$availableSize" | tail -c 1
-exit
-if [ "${availableSize: -1}" == "T" ]
+typeOfSize=$(echo -n "$availableSize" | tail -c 1)
+if [ "$typeOfSize" == "T" ]
 then
 	availableSize=$(echo ${availableSize::-1})
 	availableSize=$(($availableSize * 1099511627776))
 else
-	if [ "${availableSize: -1}" == "G" ]
+	if [ "$typeOfSize" == "G" ]
 	then
 		availableSize=$(echo ${availableSize::-1})
 		availableSize=$(($availableSize * 1073741842))
 	else
-		if [ "${availableSize: -1}" == "M" ]
+		if [ "$typeOfSize" == "M" ]
 		then
 			availableSize=$(echo ${availableSize::-1})
 			availableSize=$(($availableSize * 1048576))
 		else
-			if [ "${availableSize: -1}" == "K" ]
+			if [ "$typeOfSize" == "K" ]
 			then
 				availableSize=$(echo ${availableSize::-1})
 				availableSize=$(($availableSize * 1048576))
@@ -37,7 +36,7 @@ fi
 
 if [ -z "$availableSize" ]
 then
-	echo "[Warning] Maybe the available is larger that 1000 Terra Bytes or less than a Kilo Byte, please add the rule to proceed"
+	echo "[Warning] Maybe the available free space is larger that 1000 Terra Bytes or less than a Kilo Byte, please add the rule to proceed"
 	exit	
 fi
 
