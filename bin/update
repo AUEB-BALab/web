@@ -8,7 +8,6 @@ BASE=balab
 
 #Getting available disk space and converting it into bytes
 availableSize=$(df -h --total | grep total | awk '{print $4}')
-cat /etc/*-release
 typeOfSize=$(echo -n "$availableSize" | tail -c 1)
 if [ "$typeOfSize" == "T" ]
 then
@@ -40,7 +39,6 @@ then
 	exit	
 fi
 
-#Sanity check before installing
 test $(stat -c %s $BASE/current/category/members.html) -gt $availableSize && { echo "[Error] File $BASE/current/category/members.html is over 20000 bytes, please free some space before updating!"; exit; }
 test $(stat -c %s $BASE/current/category/software.html) -gt $availableSize && { echo "[Error] File $BASE/current/category/software.html is over 20000 bytes, please free some space before updating!"; exit; }
 test $(stat -c %s $BASE/current/category/projects.html) -gt $availableSize && { echo "[Error] File $BASE/current/category/projects.html is over 20000 bytes, please free some space before updating!"; exit; }

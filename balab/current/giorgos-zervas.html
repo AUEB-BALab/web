@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="greek">
+<head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>BALab alumni &mdash; Giorgos - Zervas</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="./theme/css/main.css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<link rel="shortcut icon" type="image/x-icon" href="./theme/images/BA_Logo.png"/>
+		
+        <!--[if IE]>
+            <script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+</head>
+
+<body  data-spy="scroll" data-target="#myScrollspy" data-offset="20">
+
+  <!-- Fixed Navbar -->
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a href="./index.html"> <img src="./theme/images/ba-logo2.png"  width="120" height="50" class="d-inline-block align-top" alt=""> </a>
+      </div>
+      <div id="navbar" class="collapse navbar-collapse">
+  			<ul class="nav navbar-nav navbar-right">
+  			  <li><a href="./index.html">Home</a></li>
+  			  <li class="dropdown">
+  				<a class="dropdown-toggle" data-toggle="dropdown" href="#">Staff
+  				<span class="caret"></span></a>
+  				<ul class="dropdown-menu">
+  				  <li><a href="./category/members.html">Members & Associates</a></li>
+  				  <li><a href="./category/alumni.html">Alumni</a></li>
+  				  <li><a href="./pages/phd_achievements.html">PhD Student Achievements</a></li>
+  				  <li><a href="./pages/join_The_Lab.html">Joining the lab</a></li>
+  				</ul>
+  			  </li>
+  			  <li><a href="./category/projects.html">Projects</a></li>
+  			  <li><a href="./publications.html">Publications</a></li>
+			  <li><a href="./category/software.html">Software</a></li>
+  			  <li><a href="./pages/services.html">Services</a></li>
+  			  <li><a href="./category/yearly-reports.html">Yearly Reports</a></li>
+          <li>
+            <a href="#modalSearch" data-toggle="modal" data-target="#modalSearch">
+              <span class="glyphicon glyphicon-search"></span> <span class="hidden-sm hidden-md hidden-lg">Search</span>
+            </a>
+          </li>
+  			</ul>
+      </div><!--/.nav-collapse -->
+    </div>
+  </nav>
+
+    <!-- Search Modal -->
+  <div id="modalSearch" class="modal fade" role="dialog">
+     <div class="modal-dialog">
+
+         <!-- Modal content-->
+         <div class="modal-content">
+             <div class="modal-header">
+                 <!-- <a type="button" class="close" data-dismiss="modal">&times;</a> -->
+                 <h4 class="modal-title">Search BALab</h4>
+             </div>
+             <div class="modal-body">
+               <!-- Replace the following with your own search script from https://www.google.com/cse. -->
+               <script>
+                 (function() {
+                   var cx = '005094385257090023838:r1endlwnp2e';
+                   var gcse = document.createElement('script');
+                   gcse.type = 'text/javascript';
+                   gcse.async = true;
+                   gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+                   var s = document.getElementsByTagName('script')[0];
+                   s.parentNode.insertBefore(gcse, s);
+                 })();
+               </script>
+               <gcse:search enableAutoComplete="true"></gcse:search>
+            </div>
+             <div class="modal-footer">
+                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+             </div>
+         </div>
+
+     </div>
+  </div>
+
+  <div class="container">
+    <!-- Show logo for printer -->
+    <p id="printlogo">
+      <img src="./theme/images/ba-logo2.png" height="200" width="200" class="img-responsive" alt="...">
+    </p>
+
+
+<!-- Template for members and alumni -->
+
+  <div class="panel panel-default">
+    <!-- Print member's name & surname -->
+    <div class="panel-heading">
+      <h2> Giorgos Zervas </h2>
+    </div>
+    <div class="panel-body">
+      <div class="row">
+        <!-- Print member's photo or default photo -->
+        <div class="col-md-2">
+          <p>
+            <img src="./images/lamp.png" height="200" width="200" class="img-responsive" alt="...">
+          </p>
+        </div>
+        <!-- Print member's Contact & PhD Thesis details, if exists -->
+        <div class="col-md-9">
+      			<p>
+<span class="glyphicon glyphicon-envelope"></span> <b>E-mail:</b> gzervas@aueb.gr </br>      			</p>
+	      </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Print member's Biographical Information, if exists -->
+    <div class="panel panel-default" id="px2">
+      <div class="panel-heading">
+        <h3> Biographical Information </h3>
+      </div>
+      <div class="panel-body">
+        <p><em>Giorgos Zervas</em> holds an MSc in Advanced Computing and a BEng in Computing both from Imperial College (University of London, UK) and an MA in Interactive Multimedia from the London College of Printing (London Institute). His research interests include Information Retrieval, Distributed Computing and Open Source Software. He is the author of the open source <em><a href="http://www.perlfect.com/freescripts/search">Perlfect Search</a></em> search engine.</p>
+      </div>
+    </div>
+
+  <!-- Print member's publications, if exists -->
+       <div class="row">
+         <!-- Print member's Publications Contents Slidebar -->
+         <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3" id="printmenu">
+           <nav>
+             <div class="panel panel-default" >
+               <div class="panel-heading">
+               Publications Contents:
+               </div>
+               <!-- Print Publications Categories that exist-->
+               <ul class="nav nav-pills nav-stacked">
+                       <li><a href="#Conference">Conference Publications</a></li>
+               </ul>
+             </div>
+           </nav>
+         </div>
+
+         <!-- Print member's Publications List -->
+         <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-9">
+           <div class="panel panel-default" id="px2">
+             <div class="panel-heading">
+               <h3> Publications</h3>
+             </div>
+             <div class="panel-body">
+               <!-- Print Publications Categories that exist-->
+
+                 <!-- Print Publications information by reverse chronological order -->
+                 <ul class="list-group">
+                   <ul>
+                   </ul>
+                 </ul>
+
+                 <!-- Print Publications information by reverse chronological order -->
+                 <ul class="list-group">
+                   <ul>
+                   </ul>
+                 </ul>
+
+                 <!-- Print Publications information by reverse chronological order -->
+                 <ul class="list-group">
+                   <ul>
+                   </ul>
+                 </ul>
+                   <h4 style="color:#203864;" id="Conference">Conference Publications</h4>
+
+                 <!-- Print Publications information by reverse chronological order -->
+                 <ul class="list-group">
+                   <ul>
+                        <p>
+                        <li>G.&nbsp;Zervas and S.&nbsp;Roger.
+The curse of dimensionality and document clustering.
+In <em>Proceedings of the IEE Searching for Information: AI and IR Approaches</em>. 1999.
+                        </li>
+                       </p>
+                   </ul>
+                 </ul>
+
+                 <!-- Print Publications information by reverse chronological order -->
+                 <ul class="list-group">
+                   <ul>
+                   </ul>
+                 </ul>
+
+                 <!-- Print Publications information by reverse chronological order -->
+                 <ul class="list-group">
+                   <ul>
+                   </ul>
+                 </ul>
+
+                 <!-- Print Publications information by reverse chronological order -->
+                 <ul class="list-group">
+                   <ul>
+                   </ul>
+                 </ul>
+
+                 <!-- Print Publications information by reverse chronological order -->
+                 <ul class="list-group">
+                   <ul>
+                   </ul>
+                 </ul>
+             </div>
+           </div>
+         </div>
+       </div>
+
+<!-- Template for projects -->
+
+<!-- Templete for yearly reports -->
+  </div>
+
+  <!-- Fixed footer -->
+  <footer>
+    <div class="container">
+      <p class="text-muted">
+        <span><a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons Licence" style="max-height: 31px; margin-left:20px" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a></span>
+        <span class="hidden-xs hidden-sm"> This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.</span>
+        <span class="hidden-md hidden-lg hidden-xl"> CC BY-SA 4.0 </a></span>
+        <span class="pull-right"><a href="./pages/contact.html" style="color: white">Contact</a></span>
+      </p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/9.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="bootstrap-3.3.7/assets/js/vendor/jquery.min.js"><\/script>')</script>
+  <!-- <script src="bootstrap-3.3.7/dist/js/bootstrap.min.js"></script> -->
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <script src="bootstrap-3.3.7/assets/js/ie10-viewport-bug-workaround.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="greek">
+<head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>BALab yearly reports &mdash; 2017</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="./theme/css/main.css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<link rel="shortcut icon" type="image/x-icon" href="./theme/images/BA_Logo.png"/>
+		
+        <!--[if IE]>
+            <script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+</head>
+
+<body  data-spy="scroll" data-target="#myScrollspy" data-offset="20">
+
+  <!-- Fixed Navbar -->
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a href="./index.html"> <img src="./theme/images/ba-logo2.png"  width="120" height="50" class="d-inline-block align-top" alt=""> </a>
+      </div>
+      <div id="navbar" class="collapse navbar-collapse">
+  			<ul class="nav navbar-nav navbar-right">
+  			  <li><a href="./index.html">Home</a></li>
+  			  <li class="dropdown">
+  				<a class="dropdown-toggle" data-toggle="dropdown" href="#">Staff
+  				<span class="caret"></span></a>
+  				<ul class="dropdown-menu">
+  				  <li><a href="./category/members.html">Members & Associates</a></li>
+  				  <li><a href="./category/alumni.html">Alumni</a></li>
+  				  <li><a href="./pages/phd_achievements.html">PhD Student Achievements</a></li>
+  				  <li><a href="./pages/join_The_Lab.html">Joining the lab</a></li>
+  				</ul>
+  			  </li>
+  			  <li><a href="./category/projects.html">Projects</a></li>
+  			  <li><a href="./publications.html">Publications</a></li>
+			  <li><a href="./category/software.html">Software</a></li>
+  			  <li><a href="./pages/services.html">Services</a></li>
+  			  <li><a href="./category/yearly-reports.html">Yearly Reports</a></li>
+          <li>
+            <a href="#modalSearch" data-toggle="modal" data-target="#modalSearch">
+              <span class="glyphicon glyphicon-search"></span> <span class="hidden-sm hidden-md hidden-lg">Search</span>
+            </a>
+          </li>
+  			</ul>
+      </div><!--/.nav-collapse -->
+    </div>
+  </nav>
+
+    <!-- Search Modal -->
+  <div id="modalSearch" class="modal fade" role="dialog">
+     <div class="modal-dialog">
+
+         <!-- Modal content-->
+         <div class="modal-content">
+             <div class="modal-header">
+                 <!-- <a type="button" class="close" data-dismiss="modal">&times;</a> -->
+                 <h4 class="modal-title">Search BALab</h4>
+             </div>
+             <div class="modal-body">
+               <!-- Replace the following with your own search script from https://www.google.com/cse. -->
+               <script>
+                 (function() {
+                   var cx = '005094385257090023838:r1endlwnp2e';
+                   var gcse = document.createElement('script');
+                   gcse.type = 'text/javascript';
+                   gcse.async = true;
+                   gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+                   var s = document.getElementsByTagName('script')[0];
+                   s.parentNode.insertBefore(gcse, s);
+                 })();
+               </script>
+               <gcse:search enableAutoComplete="true"></gcse:search>
+            </div>
+             <div class="modal-footer">
+                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+             </div>
+         </div>
+
+     </div>
+  </div>
+
+  <div class="container">
+    <!-- Show logo for printer -->
+    <p id="printlogo">
+      <img src="./theme/images/ba-logo2.png" height="200" width="200" class="img-responsive" alt="...">
+    </p>
+
+
+<!-- Template for members and alumni -->
+
+<!-- Template for projects -->
+
+<!-- Templete for yearly reports -->
+  <div class="panel panel-default">
+    <!-- Print year -->
+    <div class="panel-heading">
+      <h2>Yearly Report 2017</h2>
+    </div>
+  </div>
+  <div class="row">
+    <!-- Print Categories that exists-->
+    <div class="hidden-xs hidden-sm col-md-3 col-lg-3 col-xl-3" id="printmenu">
+      <nav id="myScrollspy" data-spy="affix" data-offset-top="50" style="position: fixed;">
+      <div class="panel panel-default" >
+        <div class="panel-heading">
+        Contents
+        </div>
+        <ul class="nav nav-pills nav-stacked">
+             <li><a href="#publications">New Publications</a></li>
+              <li><a href="#ongoing_projects">Ongoing Projects</a></li>
+                <li><a href="#com_projects">Completed Projects</a></li>
+                  <li><a href="#members">New Members</a></li>
+                  <li><a href="#Ongoing_PhDs">Ongoing PhDs</a></li>
+                  <li><a href="#PhDs">Completed PhDs</a></li>
+        </ul>
+      </div>
+      </nav>
+    </div>
+
+    <!-- Print Categories that exists (mobile view) -->
+    <div class="col-xs-12 col-sm-12 hidden-md hidden-lg hidden-xl" id="printmenu">
+      <nav>
+      <div class="panel panel-default" >
+        <div class="panel-heading">
+        Contents
+        </div>
+        <ul class="nav nav-pills nav-stacked">
+            <li><a href="#publications">New Publications</a></li>
+              <li><a href="#ongoing_projects">Ongoing Projects</a></li>
+                <li><a href="#com_projects">Completed Projects</a></li>
+                  <li><a href="#members">New Members</a></li>
+                  <li><a href="#Ongoing_PhDs">Ongoing PhDs</a></li>
+                  <li><a href="#PhDs">Completed PhDs</a></li>
+        </ul>
+      </div>
+      </nav>
+    </div>
+
+    <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-9" id="printurl">
+
+      <!-- Print pulications of this year, if exists -->
+         <div class="panel panel-default" id="px2">
+           <div class="panel-heading">
+               <h3 id="publications">New Publications</h3>
+           </div>
+           <div class="panel-body">
+                 <ul class="list-group">
+                   <ul>
+                   </ul>
+                 </ul>
+                   <h4 style="color:#203864;">Journal Articles</h4>
+                 <ul class="list-group">
+                   <ul>
+                       <p>
+                       <li>Diomidis Spinellis.
+The social responsibility of software development.
+<em>IEEE Software</em>, 34(2):4–6, March 2017.
+<a href="https://doi.org/10.1109/MS.2017.48"><span class="glyphicon glyphicon-new-window"></span></a>                       </li>
+                       </p>
+                       <p>
+                       <li>Diomidis Spinellis.
+Software-engineering the internet of things.
+<em>IEEE Software</em>, 34(1):4–6, January 2017.
+<a href="https://www.computer.org/csdl/mags/so/2017/01/mso2017010004.pdf"><span class="glyphicon glyphicon-new-window"></span></a>                       </li>
+                       </p>
+                       <p>
+                       <li>Diomidis Spinellis.
+A repository of <span class="bibtex-protected">U</span>nix history and evolution.
+<em>Empirical Software Engineering</em>, 2017.
+<a href="http://www.dmst.aueb.gr/dds/pubs/jrnl/2016-EMPSE-unix-history/html/unix-history.html"><span class="glyphicon glyphicon-new-window"></span></a>                       </li>
+                       </p>
+                       <p>
+                       <li>Dimitris Mitropoulos, Panos Louridas, Michalis Polychronakis, and Angelos&nbsp;D. Keromytis.
+Defending against <span class="bibtex-protected">W</span>eb application attacks: approaches, challenges and implications.
+<em>IEEE Transactions on Dependable and Secure Computing</em>, March 2017.
+<a href="http://ieeexplore.ieee.org/document/7865911/"><span class="glyphicon glyphicon-new-window"></span></a>                       </li>
+                       </p>
+                       <p>
+                       <li>Les Hatton, Diomidis Spinellis, and Michiel van Genuchten.
+The long-term growth rate of evolving software: empirical results and implications.
+<em>Journal of Software: Evolution and Process</em>, 2017.
+                       </li>
+                       </p>
+                   </ul>
+                 </ul>
+                 <ul class="list-group">
+                   <ul>
+                   </ul>
+                 </ul>
+                   <h4 style="color:#203864;">Conference Publications</h4>
+                 <ul class="list-group">
+                   <ul>
+                       <p>
+                       <li>Tushar Sharma, Marios Fragkoulis, and Diomidis Spinellis.
+House of cards: code smells in open-source c# repositories.
+In <em>ESEM 2017</em>. 2017.
+To appear.
+                       </li>
+                       </p>
+                       <p>
+                       <li>Proceedings of 14th Student Conference of Management Science and Technology
+                       </li>
+                       </p>
+                       <p>
+                       <li>D.&nbsp;Magos and I.&nbsp;Mourtos.
+Submodularity and its application to some global constraints.
+<em>ANNALS OF MATHEMATICS AND ARTIFICIAL INTELLIGENCE</em>, 79(4):267&ndash;289, APR 2017.
+                       </li>
+                       </p>
+                       <p>
+                       <li>Maria Kechagia and Diomidis Spinellis.
+Type checking for reliable <span class="bibtex-protected">API</span>s.
+In <em>WAPI '17: 1st International Workshop on API Usage and Evolution</em>. 2017.
+To appear.
+                       </li>
+                       </p>
+                       <p>
+                       <li>Maria Kechagia, Tushar Sharma, and Diomidis Spinellis.
+Towards a context dependent <span class="bibtex-protected">J</span>ava exceptions hierarchy.
+In <em>ICSE '17: Poster Track Session</em>, 347–349. IEEE Press, 2017.
+URL: <a href="https://doi.org/10.1109/ICSE-C.2017.134">https://doi.org/10.1109/ICSE-C.2017.134</a>, <a href="https://doi.org/10.1109/ICSE-C.2017.134">doi:10.1109/ICSE-C.2017.134</a>.
+                       </li>
+                       </p>
+                       <p>
+                       <li>Proceedings of the 11th Mediterranean Conference on Information Systems (MCIS 2017)
+                       </li>
+                       </p>
+                   </ul>
+                 </ul>
+                   <h4 style="color:#203864;">Technical Reports</h4>
+                 <ul class="list-group">
+                   <ul>
+                       <p>
+                       <li>Theofilos Petsios, Adrian Tang, Dimitris Mitropoulos, Salvatore&nbsp;J. Stolfo, Angelos&nbsp;D. Keromytis, and Suman Jana.
+Tug-of-war: observations on unified content handling.
+Technical Report, CoRR abs/1708.09334, 2017.
+<a href="https://arxiv.org/abs/1708.09334"><span class="glyphicon glyphicon-new-window"></span></a>                       </li>
+                       </p>
+                   </ul>
+                 </ul>
+                 <ul class="list-group">
+                   <ul>
+                   </ul>
+                 </ul>
+                   <h4 style="color:#203864;">Magazine Articles</h4>
+                 <ul class="list-group">
+                   <ul>
+                       <p>
+                       <li>Dimitris Mitropoulos.
+How 1 million app calls can tell you a bit about malware.
+<em>XRDS: Crossroads, The ACM Magazine for Students</em>, 24(1):17–19, 2017.
+                       </li>
+                       </p>
+                   </ul>
+                 </ul>
+                 <ul class="list-group">
+                   <ul>
+                   </ul>
+                 </ul>
+           </div>
+         </div>
+
+      <!-- Print projects of this year, if exists -->
+           <div class="panel panel-default" id="px2">
+             <div class="panel-heading">
+                <h3>Projects</h3>
+             </div>
+             <div class="panel-body">
+               <ul class="list-group">
+                 <ul>
+                 </ul>
+               </ul>
+                  <h4 id="ongoing_projects" style="color:#203864;">Ongoing Projects</h4>
+               <ul class="list-group">
+                 <ul>
+                      <p>
+                       <li>SENECA - Software ENgineering in Enterprise Cloud Applications <a href="./seneca.html"><span class="glyphicon glyphicon-new-window"></span></a></li>
+                      </p>
+                 </ul>
+               </ul>
+                  <h4 id="com_projects" style="color:#203864;">Completed Projects</h4>
+               <ul class="list-group">
+                 <ul>
+                      <p>
+                       <li>Action II - The "Meta-Life" of JavaScript <a href="./action-ii2.html"><span class="glyphicon glyphicon-new-window"></span></a></li>
+                      </p>
+                 </ul>
+               </ul>
+             </div>
+          </div>
+
+      <!-- Print members of this year, if exists -->
+           <div class="panel panel-default" id="px2">
+             <div class="panel-heading">
+                 <h3 id="members">New Members</h3>
+             </div>
+             <ul class="list-group">
+               <ul>
+                      <p>
+                       <li>
+                         Yiannis-Γιάννης Mourtos-Μούρτος                          <a href="./ioannis-mourtos.html"><span class="glyphicon glyphicon-new-window"></span></a>
+                       </li>
+                      </p>
+                      <p>
+                       <li>
+                         George Metaxopoulos                          <a href="./george-metaxopoulos.html"><span class="glyphicon glyphicon-new-window"></span></a>
+                       </li>
+                      </p>
+                      <p>
+                       <li>
+                         Stefanos Chaliasos                          <a href="./stefanos-chaliaso.html"><span class="glyphicon glyphicon-new-window"></span></a>
+                       </li>
+                      </p>
+                      <p>
+                       <li>
+                         Anastasia Griva (PhD student)                         <a href="./anastasia-griva.html"><span class="glyphicon glyphicon-new-window"></span></a>
+                       </li>
+                      </p>
+                      <p>
+                       <li>
+                         Ioannis Batas                          <a href="./ioannis-batas.html"><span class="glyphicon glyphicon-new-window"></span></a>
+                       </li>
+                      </p>
+                      <p>
+                       <li>
+                         Efstathia Chioteli                          <a href="./efstathia-chioteli.html"><span class="glyphicon glyphicon-new-window"></span></a>
+                       </li>
+                      </p>
+                      <p>
+                       <li>
+                         Theodore Stassinopoulos (PhD student)                         <a href="./theodore-stassinopoulos.html"><span class="glyphicon glyphicon-new-window"></span></a>
+                       </li>
+                      </p>
+              </ul>
+            </ul>
+          </div>
+
+      <!-- Print ongoing PhDs of this year, if exists -->
+    				 <div class="panel panel-default" id="px2">
+      				   <div class="panel-heading">
+      					   <h3 id="Ongoing_PhDs">Ongoing PhDs</h3>
+      				   </div>
+      				   <ul class="list-group">
+        					 <ul>
+          						  <p>
+          						   <li>
+            							 Anastasia Griva (PhD student)
+            							 <a href="./anastasia-griva.html"><span class="glyphicon glyphicon-new-window"></span></a>
+          						   </li>
+          						  </p>
+          						  <p>
+          						   <li>
+            							 Vasilis Stavrou (PhD student)
+            							 <a href="./vasilis-stavrou.html"><span class="glyphicon glyphicon-new-window"></span></a>
+          						   </li>
+          						  </p>
+          						  <p>
+          						   <li>
+            							 Antonios Gkortzis (PhD student)
+            							 <a href="./antonios-gkortzis.html"><span class="glyphicon glyphicon-new-window"></span></a>
+          						   </li>
+          						  </p>
+          						  <p>
+          						   <li>
+            							 Stefanos Georgiou (PhD student)
+            							 <a href="./stefanos-georgiou.html"><span class="glyphicon glyphicon-new-window"></span></a>
+          						   </li>
+          						  </p>
+          						  <p>
+          						   <li>
+            							 Tushar Sharma (PhD student)
+            							 <a href="./tushar-sharma.html"><span class="glyphicon glyphicon-new-window"></span></a>
+          						   </li>
+          						  </p>
+          						  <p>
+          						   <li>
+            							 Maria Kechagia (PhD student)
+            							 <a href="./maria-kechagia.html"><span class="glyphicon glyphicon-new-window"></span></a>
+          						   </li>
+          						  </p>
+          						  <p>
+          						   <li>
+            							 Konstantinos Stroggylos (PhD student)
+            							 <a href="./konstantinos-stroggylos.html"><span class="glyphicon glyphicon-new-window"></span></a>
+          						   </li>
+          						  </p>
+        					</ul>
+      				  </ul>
+    				 </div>
+
+      <!-- Print completed PhDs of this year, if exists -->
+             <div class="panel panel-default" id="px2">
+               <div class="panel-heading">
+                   <h3 id="PhDs">Completed PhDs</h3>
+               </div>
+               <ul class="list-group">
+                 <ul>
+                      <p>
+                       <li>
+                         Marios Fragkoulis (PhD student)
+                         <a href="./marios-fragkoulis.html"><span class="glyphicon glyphicon-new-window"></span></a>
+                       </li>
+                      </p>
+                </ul>
+              </ul>
+             </div>
+
+    <!-- Note: Grandfathered work -->
+    <div class="panel panel-default">
+      <div class="panel-body">
+        <i class="text-muted">Note: Some of the above data refer to grandfathered work conducted by BALab's members at its progenitor laboratory, <a href="https://istlab.dmst.aueb.gr">ISTLab</a>.</i>
+      </div>
+    </div>
+  </div>
+</div>
+  </div>
+
+  <!-- Fixed footer -->
+  <footer>
+    <div class="container">
+      <p class="text-muted">
+        <span><a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons Licence" style="max-height: 31px; margin-left:20px" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a></span>
+        <span class="hidden-xs hidden-sm"> This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.</span>
+        <span class="hidden-md hidden-lg hidden-xl"> CC BY-SA 4.0 </a></span>
+        <span class="pull-right"><a href="./pages/contact.html" style="color: white">Contact</a></span>
+      </p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/9.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="bootstrap-3.3.7/assets/js/vendor/jquery.min.js"><\/script>')</script>
+  <!-- <script src="bootstrap-3.3.7/dist/js/bootstrap.min.js"></script> -->
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <script src="bootstrap-3.3.7/assets/js/ie10-viewport-bug-workaround.js"></script>
+
+</body>
+</html>
