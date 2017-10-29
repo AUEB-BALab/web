@@ -8,7 +8,7 @@ BASE=balab
 
 #Getting available disk space and converting it into bytes
 availableSize=$(df -h --total | grep total | awk '{print $4}')
-echo "${availableSize: -1}"
+echo "${availableSize:(-1)}"
 exit
 if [ "${availableSize: -1}" == "T" ]
 then
