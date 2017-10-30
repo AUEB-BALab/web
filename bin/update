@@ -6,50 +6,19 @@
 #BASE=/home/dds/web/balab
 BASE=balab
 
-#Getting available disk space and converting it into bytes
-availableSize=$(df -h --total | grep total | awk '{print $4}')
-typeOfSize=$(echo -n "$availableSize" | tail -c 1)
-if [ "$typeOfSize" == "T" ]
-then
-	availableSize=$(echo ${availableSize::-1})
-	availableSize=$(($availableSize * 1099511627776))
-else
-	if [ "$typeOfSize" == "G" ]
-	then
-		availableSize=$(echo ${availableSize::-1})
-		availableSize=$(($availableSize * 1073741842))
-	else
-		if [ "$typeOfSize" == "M" ]
-		then
-			availableSize=$(echo ${availableSize::-1})
-			availableSize=$(($availableSize * 1048576))
-		else
-			if [ "$typeOfSize" == "K" ]
-			then
-				availableSize=$(echo ${availableSize::-1})
-				availableSize=$(($availableSize * 1048576))
-			fi
-		fi
-	fi
-fi
-
-if [ -z "$availableSize" ]
-then
-	echo "[Warning] Maybe the available free space is larger that 1000 Terra Bytes or less than a Kilo Byte, please add the rule to proceed"
-	exit	
-fi
-
-test $(stat -c %s $BASE/current/category/members.html) -gt $availableSize && { echo "[Error] File $BASE/current/category/members.html is over 20000 bytes, please free some space before updating!"; exit; }
-test $(stat -c %s $BASE/current/category/software.html) -gt $availableSize && { echo "[Error] File $BASE/current/category/software.html is over 20000 bytes, please free some space before updating!"; exit; }
-test $(stat -c %s $BASE/current/category/projects.html) -gt $availableSize && { echo "[Error] File $BASE/current/category/projects.html is over 20000 bytes, please free some space before updating!"; exit; }
-test $(stat -c %s $BASE/current/category/alumni.html) -gt $availableSize && { echo "[Error] File $BASE/current/category/alumni.html is over 20000 bytes, please free some space before updating!"; exit; }
-test $(stat -c %s $BASE/current/category/yearly-reports.html) -gt $availableSize && { echo "[Error] File $BASE/current/category/yearly-reports.html is over 20000 bytes, please free some space before updating!"; exit; }
-
 umask 0002
 mkdir $BASE/new
 test $(hostname) == istlab &&  chgrp iweb $BASE/new 
 chmod 2775 $BASE/new
 pelican content/ --output=$BASE/new
+
+#Sanity check
+test $(stat -c %s $BASE/current/category/members.html) -lt 20000 && { echo "[Error] File $BASE/current/category/members.html might be not created, please check members file and update again!"; exit; }
+test $(stat -c %s $BASE/current/category/software.html) -lt 7000 && { echo "[Error] File $BASE/current/category/software.html might be not created, please check software file and update again!"; exit; }
+test $(stat -c %s $BASE/current/category/projects.html) -lt 10000 && { echo "[Error] File $BASE/current/category/projects.html might be not created, please check projects file and update again!"; exit; }
+test $(stat -c %s $BASE/current/category/alumni.html) -lt 5000 && { echo "[Error] File $BASE/current/category/alumni.html might be not created, please check alumni file and update again!"; exit; }
+test $(stat -c %s $BASE/current/category/yearly-reports.html) -lt 5000 && { echo "[Error] File $BASE/current/category/yearly-reports.html might be not created, please check yearly-reports file and update again!"; exit; }
+
 mv $BASE/current $BASE/old
 mv $BASE/new $BASE/current
 rm -rf $BASE/old
