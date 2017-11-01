@@ -3,13 +3,22 @@
 # Refresh the site's content
 #
 
-BASE=/home/dds/web/balab
+#BASE=/home/dds/web/balab
+BASE=balab
 
 umask 0002
 mkdir $BASE/new
-chgrp iweb $BASE/new
+test $(hostname) == istlab &&  chgrp iweb $BASE/new 
 chmod 2775 $BASE/new
 pelican content/ --output=$BASE/new
+
+#Sanity check
+test $(stat -c %s $BASE/current/category/members.html) -lt 20000 && { echo "[Error] File $BASE/current/category/members.html might be not created, please check members file and update again!"; exit; }
+test $(stat -c %s $BASE/current/category/software.html) -lt 7000 && { echo "[Error] File $BASE/current/category/software.html might be not created, please check software file and update again!"; exit; }
+test $(stat -c %s $BASE/current/category/projects.html) -lt 10000 && { echo "[Error] File $BASE/current/category/projects.html might be not created, please check projects file and update again!"; exit; }
+test $(stat -c %s $BASE/current/category/alumni.html) -lt 5000 && { echo "[Error] File $BASE/current/category/alumni.html might be not created, please check alumni file and update again!"; exit; }
+test $(stat -c %s $BASE/current/category/yearly-reports.html) -lt 5000 && { echo "[Error] File $BASE/current/category/yearly-reports.html might be not created, please check yearly-reports file and update again!"; exit; }
+
 mv $BASE/current $BASE/old
 mv $BASE/new $BASE/current
 rm -rf $BASE/old
