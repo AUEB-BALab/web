@@ -2,9 +2,9 @@ title: Ioannis -- Mourtos
 date: 20171020
 joined_date: 20171020
 category: members
-id: mourtos
-givenname: Yiannis-Γιάννης
-surname: Mourtos-Μούρτος
+id: m_mourtos
+givenname: Yiannis
+surname: Mourtos
 memb_title: Dr.
 email: mourtos@aueb.gr
 web_site: https://www.aueb.gr/en/faculty_page/mourtos-ioannis
@@ -15,8 +15,8 @@ postal_address: Patision 76, GR-104 34 Athens, Greece
 photo: imourtos.jpg
 web_log: https://scholar.google.gr/citations?user=0d5lliEAAAAJ&hl=el
 github: mourtos
-twitter: @Yiannis_Mourtos
-linkedin: https://www.linkedin.com/in/yiannis-mourtos-73a1ab2a/
+twitter: Yiannis_Mourtos
+linkedin: yiannis-mourtos-73a1ab2a
 
 **Yiannis Mourtos** is an Associate Professor in "Mathematics of Operations Research" at the Department of Management Science & Technology, Athens University of Economics and Business. He studied Computer Engineering and Informatics at the corresponding department of the University of Patras and obtained both his MSc and PhD from the Operational Research Department, London School of Economics and Political Science. He has worked as a Lecturer at the Department of Economics, University of Patras.
 
