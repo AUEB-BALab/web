@@ -1,8 +1,8 @@
-Title: GivenName - Surname (Required)
-Date: YYYYMMDD !write the date that you joined (Required)
+title: GivenName - Surname (Required)
+date: YYYYMMDD !write the date that you joined (Required)
 joined_date: YYYYMMDD !write the date that you joined (Required)
-Category: Members (if member) or Alumni (if alumni) BE CAREFUL: write it exactly as you see it
-Id: (Required)
+category: members (if member) or alumni (if alumni) BE CAREFUL: write it exactly as you see it
+id: (Required)
 givenname: (Required)
 surname: (Required)
 email: (Required)
@@ -23,4 +23,4 @@ phd_enddate: YYYYMMDD (Required for PhD students)
 phd_completed: 0(false) or 1(true) (Required)
 phd_summary: (Required for PhD students) !BE CAREFUL: write the summary in one line without break lines
 
-WRITE HERE YOUR SHORTCV EITHER IN HTML FORM EITHER IN MARKDOWN FORM (Required)
+WRITE HERE YOUR SHORT CV EITHER IN HTML FORM OR IN MARKDOWN FORM (Required)

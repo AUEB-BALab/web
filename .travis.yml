@@ -1,0 +1,11 @@
+language: python
+install:
+- pip install requests[security]
+- sudo pip install pelican
+- sudo pip install Markdown
+- sudo pip install typogrify
+- sudo pip install pybtex
+
+
+language: bash
+script: sudo ./bin/update
