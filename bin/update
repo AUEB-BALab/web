@@ -11,7 +11,7 @@ if [ $(hostname) = istlab ] ; then
   chgrp iweb $BASE/new
 else
   BASE=balab
-  mkdir $BASE/new
+  mkdir -p $BASE/new
 fi
 
 chmod 2775 $BASE/new
