@@ -7,11 +7,22 @@ umask 0002
 
 if [ $(hostname) = istlab ] ; then
   BASE=/home/dds/web/balab
+  rm -rf $BASE/new
   mkdir $BASE/new
   chgrp iweb $BASE/new
 else
   BASE=balab
   mkdir -p $BASE/new
+fi
+
+# See if used categories are valid
+if ! find content -type f |
+  xargs grep -h '^category:' |
+  sed 's/ *$//' |
+  sort -u |
+  diff doc/valid_categories - ; then
+    echo 'Invalid content category used; see above'
+    exit 1
 fi
 
 chmod 2775 $BASE/new
