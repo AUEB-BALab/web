@@ -36,7 +36,12 @@ To contribute to the web site you need to follow these steps.
 * Press the `Propose file change` button.
 * When you've finished all your related changes, press the `Create pull request`
   button.
-
+* Navigate to the [BALab web site repository](https://github.com/AUEB-BALab/web) again.
+* Click on the `New pull request` button on the left.
+* In the new page (`Compare changes`), press the `compare accross forks` link.
+* From the `head fork` drop-down menu, choose the `Head Repository` (yourusername/web)
+  and, then, the branch where you made the changes in the forked repository.
+* Press the `Create pull request` button.
 
 ### Making specific contributions
 * All text is formatted using Markdown.
