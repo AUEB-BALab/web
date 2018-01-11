@@ -1,3 +1,4 @@
 *.swp
 pelicanconf.pyc
 balab/
+output/
