@@ -57,6 +57,7 @@ def add_publications(generator):
         logger.error('`pelican_bibtex` failed to parse file %s: %s' % (
             refs_file,
             str(e)))
+        exit(1)
         return
 
     publications = []
