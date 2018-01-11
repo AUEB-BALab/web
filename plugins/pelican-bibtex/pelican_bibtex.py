@@ -54,7 +54,7 @@ def add_publications(generator):
     try:
         bibdata_all = Parser().parse_file(refs_file)
     except PybtexError as e:
-        logger.warn('`pelican_bibtex` failed to parse file %s: %s' % (
+        logger.error('`pelican_bibtex` failed to parse file %s: %s' % (
             refs_file,
             str(e)))
         return
