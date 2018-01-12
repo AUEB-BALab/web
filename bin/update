@@ -31,6 +31,12 @@ if ! find content -type f |
     error 'Invalid content category used; see above'
 fi
 
+# Check for common errors in publications
+grep -iHn 'doi.*=.*https://doi\.org' content/pubs.bib && error 'DOIs should not include a URL'
+grep -iHn '^[ 	]*year.*=[ 	]*{{' content/pubs.bib && error 'Years should not be specified with double braces'
+grep -iHn '^[ 	]*doi[ 	]=' content/pubs.bib && error 'Specify XEdoi rather than DOI'
+grep -iHn '^[ 	]*url[ 	]*=' content/pubs.bib && error 'Specify XEurl rather than URL'
+
 chmod 2775 $BASE/new
 pelican content/ --output=$BASE/new
 
