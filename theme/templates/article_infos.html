@@ -726,6 +726,39 @@
   </div>
 </div>
 {% endif %}
+
+<!-- Template for seminars -->
+{% if article.category|string() == 'seminars' %}
+  <div class="panel panel-default">
+    <!-- Print seminars's title -->
+    <div class="panel-heading">
+      <h2>{{ article.title }}</h2>
+    </div>
+    <!-- Print project's photo or default photo -->
+    <div class="panel-body">
+      <!-- Print seminar's Details -->
+      <p>
+        {% if article.presenter %}<b>Presenter:</b> {{article.presenter}} </br>{% endif %}
+        {% if article.date %}<b>Date:</b> {{article.date|strftime('%d %B %Y')}} </br>{% endif %}
+      </p>
+    </div>
+  </div>
+
+  <!-- Print project's Description, if exists -->
+  {% if article.content %}
+    <div class="panel panel-default" id="px2">
+      <div class="panel-heading">
+        <h3>Abstract</h3>
+      </div>
+      <div class="panel-body">
+        <p> {{ article.content }} </p>
+      </div>
+    </div>
+  {% endif %}
+
+  </div>
+{% endif %}
+
 {% endblock content %}
 
 {% block title %}{{ SITENAME }} {{ article.category }} &mdash; {{ article.title }}{% endblock %}

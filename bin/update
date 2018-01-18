@@ -67,6 +67,12 @@ else
  error "File $BASE/new/category/alumni.html appears truncated, please check alumni file and update again!"
 fi
 
+if test $(stat -c %s $BASE/new/category/seminars.html) -gt 9000 ; then
+  echo "Seminars: OK"
+else
+ error "File $BASE/new/category/seminars.html appears truncated, please check the seminars files and update again!"
+fi
+
 if test $(stat -c %s $BASE/new/category/yearly-reports.html) -gt 5000 ; then
   echo "Yearly reports: OK"
 else

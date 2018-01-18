@@ -65,6 +65,20 @@
       </ul>
     </div>
 
+  <!-- Seminars Category -->
+  {% elif category|string() == 'seminars'%}
+    <div class="panel panel-default" id="px2">
+      <div class="panel-heading">
+        <h2>Seminars</h2>
+      </div>
+      <ul class="list-group">
+        <!-- Print every seminar linked to its url -->
+        {% for article in articles_page.object_list|sort(attribute='date', reverse=(True)) %}
+	<li class="list-group-item">{{article.date|strftime('%d %b %Y')}}: <a href="{{ SITEURL }}/{{article.url}}">{{article.title}}</a></li>
+        {% endfor %}
+      </ul>
+    </div>
+
   <!-- Projects Category -->
   {% else %}
     <div class="panel panel-default">
