@@ -78,6 +78,8 @@ To contribute to the web site you need to follow these steps.
 
 ## Technical details
 
+The site is implemented using [Pelican](http://docs.getpelican.com/en/stable/).
+
 ### Project Structure
 * `content` : MD and bibtex user data
   * `members` : Members' information (MD)
