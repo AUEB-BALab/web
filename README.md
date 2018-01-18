@@ -48,6 +48,8 @@ To contribute to the web site you need to follow these steps.
   See [this guide](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) for a quick introduction.
 * Some pages have `Key: Value` lines at the beginning.
   Keep these in a separate line each.
+* To add a new seminar, add a file under `content/seminars`,
+  using [this template](https://raw.githubusercontent.com/AUEB-BALab/web/master/doc/templates/seminar-example.md).
 * To add a new member, add a file under `content/members`,
   using [this template](https://raw.githubusercontent.com/AUEB-BALab/web/master/doc/templates/member-associate-example.md).
 * To add a new publication edit the file in `content/pubs.bib`.
