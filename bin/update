@@ -12,7 +12,7 @@ error()
   exit 1
 }
 
-if [ $(hostname) = istlab ] ; then
+if [ $(hostname) = balab ] ; then
   BASE=/home/dds/web/balab
   rm -rf $BASE/new
   mkdir $BASE/new
