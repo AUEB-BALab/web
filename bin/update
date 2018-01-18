@@ -17,6 +17,8 @@ if [ $(hostname) = istlab ] ; then
   rm -rf $BASE/new
   mkdir $BASE/new
   chgrp iweb $BASE/new
+
+  awk '/^email:/{print $2}' content/members/* >lists/balab.txt
 else
   BASE=balab
   mkdir -p $BASE/new
