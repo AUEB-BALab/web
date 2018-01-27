@@ -12,7 +12,7 @@ error()
   exit 1
 }
 
-if [ $(hostname) = balab ] ; then
+if [ $(whoami) = www-data ] ; then
   BASE=/var/www/balab/web-contents
 
   mkdir -p $BASE/lists
