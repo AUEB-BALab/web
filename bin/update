@@ -15,7 +15,8 @@ error()
 if [ $(hostname) = balab ] ; then
   BASE=/var/www/balab/web-contents
 
-  awk '/^email:/{print $2}' content/members/* >lists/balab.txt
+  mkdir -p $BASE/lists
+  awk '/^email:/{print $2}' content/members/* >$BASE/lists/balab.txt
 else
   BASE=balab
 fi
