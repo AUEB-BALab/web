@@ -14,14 +14,14 @@ error()
 
 if [ $(hostname) = balab ] ; then
   BASE=/var/www/balab/web-contents
-  rm -rf $BASE/stage
-  mkdir $BASE/stage
 
   awk '/^email:/{print $2}' content/members/* >lists/balab.txt
 else
   BASE=balab
-  mkdir -p $BASE/stage
 fi
+
+rm -rf $BASE/stage
+mkdir -p $BASE/stage
 
 # See if used categories are valid
 if ! find content -type f |
@@ -77,7 +77,7 @@ else
  error "File $BASE/stage/category/yearly-reports.html appears truncated, please check yearly-reports file and update again!"
 fi
 
-if [ $(whoami = www-data) ; then
+if [ $(whoami) = www-data ] ; then
   # Deploy
   rm -rf $BASE/old
   test -d $BASE/deploy && mv $BASE/deploy $BASE/old
