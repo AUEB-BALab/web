@@ -13,15 +13,14 @@ error()
 }
 
 if [ $(hostname) = balab ] ; then
-  BASE=/home/dds/web/balab
-  rm -rf $BASE/new
-  mkdir $BASE/new
-  chgrp iweb $BASE/new
+  BASE=/var/www/balab/web-contents
+  rm -rf $BASE/stage
+  mkdir $BASE/stage
 
   awk '/^email:/{print $2}' content/members/* >lists/balab.txt
 else
   BASE=balab
-  mkdir -p $BASE/new
+  mkdir -p $BASE/stage
 fi
 
 # See if used categories are valid
@@ -39,46 +38,48 @@ grep -iHn '^[ 	]*year.*=[ 	]*{{' content/pubs.bib && error 'Years should not be 
 grep -iHn '^[ 	]*doi[ 	]=' content/pubs.bib && error 'Specify XEdoi rather than DOI'
 grep -iHn '^[ 	]*url[ 	]*=' content/pubs.bib && error 'Specify XEurl rather than URL'
 
-chmod 2775 $BASE/new
-pelican content/ --output=$BASE/new
+pelican content/ --output=$BASE/stage
 
 #Sanity check
-if test $(stat -c %s $BASE/new/category/members.html) -gt 20000 ; then
+if test $(stat -c %s $BASE/stage/category/members.html) -gt 20000 ; then
   echo "Members: OK"
 else
- error "File $BASE/new/category/members.html appears truncated, please check members file and update again!"
+ error "File $BASE/stage/category/members.html appears truncated, please check members file and update again!"
 fi
 
-if test $(stat -c %s $BASE/new/category/software.html) -gt 7000 ; then
+if test $(stat -c %s $BASE/stage/category/software.html) -gt 7000 ; then
   echo "Software: OK"
 else
- error "File $BASE/new/category/software.html appears truncated, please check software file and update again!"
+ error "File $BASE/stage/category/software.html appears truncated, please check software file and update again!"
 fi
 
-if test $(stat -c %s $BASE/new/category/projects.html) -gt 10000 ; then
+if test $(stat -c %s $BASE/stage/category/projects.html) -gt 10000 ; then
   echo "Projects: OK"
 else
- error "File $BASE/new/category/projects.html appears truncated, please check projects file and update again!"
+ error "File $BASE/stage/category/projects.html appears truncated, please check projects file and update again!"
 fi
 
-if test $(stat -c %s $BASE/new/category/alumni.html) -gt 5000 ; then
+if test $(stat -c %s $BASE/stage/category/alumni.html) -gt 5000 ; then
   echo "Alumni: OK"
 else
- error "File $BASE/new/category/alumni.html appears truncated, please check alumni file and update again!"
+ error "File $BASE/stage/category/alumni.html appears truncated, please check alumni file and update again!"
 fi
 
-if test $(stat -c %s $BASE/new/category/seminars.html) -gt 9000 ; then
+if test $(stat -c %s $BASE/stage/category/seminars.html) -gt 9000 ; then
   echo "Seminars: OK"
 else
- error "File $BASE/new/category/seminars.html appears truncated, please check the seminars files and update again!"
+ error "File $BASE/stage/category/seminars.html appears truncated, please check the seminars files and update again!"
 fi
 
-if test $(stat -c %s $BASE/new/category/yearly-reports.html) -gt 5000 ; then
+if test $(stat -c %s $BASE/stage/category/yearly-reports.html) -gt 5000 ; then
   echo "Yearly reports: OK"
 else
- error "File $BASE/new/category/yearly-reports.html appears truncated, please check yearly-reports file and update again!"
+ error "File $BASE/stage/category/yearly-reports.html appears truncated, please check yearly-reports file and update again!"
 fi
 
-test -d $BASE/current && mv $BASE/current $BASE/old
-mv $BASE/new $BASE/current
-rm -rf $BASE/old
+if [ $(whoami = www-data) ; then
+  # Deploy
+  rm -rf $BASE/old
+  test -d $BASE/deploy && mv $BASE/deploy $BASE/old
+  mv $BASE/stage $BASE/deploy
+fi
