@@ -6,7 +6,7 @@ id: botisn
 givenname: Nikiforos
 surname: Botis
 memb_title: Mr.
-email: nmpotis@dmst.aueb.gr
+email: nikiforosbotis@gmail.com
 github: nikiforosbotis
 linkedin: nikiforosbotis
 photo: Botis.jpg

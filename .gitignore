@@ -1,4 +1,5 @@
 *.swp
 pelicanconf.pyc
 balab/
+lists/
 output/
