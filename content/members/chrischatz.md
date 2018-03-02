@@ -1,5 +1,5 @@
 title: Christos - Chatzilenas date: 20180222 joined_date: 20180222 
-category: members id: chris_chatz 
+category: members id: m_chrischatz 
 givenname: Christos surname: Chatzilenas email: chrischatzilenas@gmail.com github: ChrisChatz
 
 CChristos holds his Bachelor Degree from the Department of Informatics and Telematics by Harokopeio Univesity of Athens 
