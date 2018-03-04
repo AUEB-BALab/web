@@ -16,7 +16,9 @@ if [ $(whoami) = www-data ] ; then
   BASE=/var/www/balab/web-contents
 
   mkdir -p $BASE/lists
-  awk '/^email:/{print $2}' content/members/* >$BASE/lists/balab.txt
+  { awk '/^email:/{print $2}' content/members/*
+    cat content/mail-extra
+  } >$BASE/lists/balab.txt
 else
   BASE=balab
 fi
