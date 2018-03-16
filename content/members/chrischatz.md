@@ -5,7 +5,7 @@ category: members
 id: m_chrischatz 
 givenname: Christos 
 surname: Chatzilenas 
-email: chrischatzilenas@gmail.com 
+email: chrischatzilenas@protonmail.com 
 github: ChrisChatz
 
 Christos holds his Bachelor Degree from the Department of Informatics and Telematics by Harokopeio Univesity of Athens 
