@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
+from datetime import datetime
 
 JINJA_EXTENSIONS = ['jinja2.ext.loopcontrols']
 
@@ -49,3 +50,6 @@ STATIC_PATHS = ['img', 'css', 'js','images/']
 # very useful for debugging purposes
 DELETE_OUTPUT_DIRECTORY = True
 RELATIVE_URLS = True
+
+# Current year for recent publiations
+CURRYEAR = datetime.today().year
