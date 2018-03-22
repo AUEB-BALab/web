@@ -12,7 +12,7 @@ PATH = 'content'
 
 TIMEZONE = 'Europe/Athens'
 
-DEFAULT_LANG = 'Greek'
+DEFAULT_LANG = 'English'
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
