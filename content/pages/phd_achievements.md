@@ -9,11 +9,35 @@ slug: phd_achievements
   <div class="panel-body">
     <div class="row">
     <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+      <h3>March 2018</h3>
+      <p>
+        Three PhD students,
+        <b>Tushar Sharma</b>,
+        <b>Antonis Gkortzis</b>, and
+        <b>Stefanos Georgiou</b>,
+	have papers/briefings accepted for presentation at the
+	International Conference on Software Engineering and the
+	Mining Software Repositories conferences.
+      </p>
+
+      <h3>November 2017</h3>
+      <p>
+      <img src="../images/phd.png" border="0" align="right" alt="PhD logo">
+      <b>Maria Kechagia</b> successfully defends her PhD thesis.
+      </p>
+
+      <h3>March 2017</h3>
+      <p>
+      <img src="../images/phd.png" border="0" align="right" alt="PhD logo">
+      <b>Marios Fragkoulis</b> successfully defends his PhD thesis.
+      </p>
+
       <h3>July 2016</h3>
       <p>
         <b>Georgios Gousios</b> gets hired as an assistant professor
         at the Web Information Systems group of the Faculty of Engineering,
-        Mathematics and Computer Science (EEMCS/EWI), Delft University of Technology.
+        Mathematics and Computer Science (EEMCS/EWI),
+	Delft University of Technology (TUDelft).
       </p>
 
       <h3>January 2016</h3>
