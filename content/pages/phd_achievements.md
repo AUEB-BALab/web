@@ -9,6 +9,17 @@ slug: phd_achievements
   <div class="panel-body">
     <div class="row">
     <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+
+      <h3>April 2018</h3>
+      <p>
+        <b>Tushar Sharma</b> publishes a paper in a high-impact journal:
+        <a href="https://doi.org/10.1016/j.jss.2017.12.034">
+	A survey on software smells
+        </a>.
+        <cite>Journal of Systems and Software</cite>, April 2018.
+      </p>
+
+
       <h3>March 2018</h3>
       <p>
         Three PhD students,
@@ -62,7 +73,7 @@ slug: phd_achievements
       <h3>December 2015</h3>
       <p>
         <b>Maria Kechagia</b> publishes a paper in a high-impact journal:
-        <a href="http://link.springer.com/article/10.1007%2Fs10664-014-9343-7">
+        <a href="https://doi.org/10.1007/s10664-014-9343-7">
           Charting the API minefield using software telemetry data
         </a>.
         <cite>Empirical Software Engineering</cite>, 2015.
