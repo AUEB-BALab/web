@@ -29,7 +29,7 @@ mkdir -p $BASE/stage
 # See if used categories are valid
 if ! find content -type f |
   xargs grep -h '^category:' |
-  sed 's/ *$//' |
+  sed 's/[ \r]*$//' |
   sort -u |
   diff doc/valid_categories - ; then
     error 'Invalid content category used; see above'

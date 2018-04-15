@@ -1,6 +1,5 @@
 {% extends "base.html" %}
 {% block content_title %}{% endblock %}
-{% set current_year = 2017 %}
 
 {% block content %}
 
@@ -39,19 +38,19 @@
       <ul class="list-group">
         <ul>
            <div>
-              {% for publication in publications|sort(attribute='year')|reverse if publication.year|int() == current_year %}
+              {% for publication in publications|sort(attribute='year')|reverse if publication.year|int() == CURRYEAR %}
                    <p>
                     <li>{{ publication.text }} {% if  publication.url %} <a href="{{  publication.url }}"><span class="glyphicon glyphicon-new-window"></span></a> {% endif %} </li>
                    </p>
                    {% if loop.last and loop.index < 4 %}
-                      {% for publication in publications|sort(attribute='year')|reverse if publication.year|int() == current_year - 1 %}
+                      {% for publication in publications|sort(attribute='year')|reverse if publication.year|int() == CURRYEAR - 1 %}
                           <p>
                           <li>{{ publication.text }} {% if  publication.url %} <a href="{{  publication.url }}"><span class="glyphicon glyphicon-new-window"></span></a> {% endif %} </li>
                          </p>
                       {% endfor %}
                    {% endif %}
                {% else %} <!-- In case there is not even one publication the current year-->
-         					 {% for publication in publications|sort(attribute='year')|reverse if publication.year|int() == current_year - 1 %}
+         					 {% for publication in publications|sort(attribute='year')|reverse if publication.year|int() == CURRYEAR - 1 %}
          						 <p>
          						 <li>{{ publication.text }} {% if  publication.url %} <a href="{{  publication.url }}"><span class="glyphicon glyphicon-new-window"></span></a> {% endif %} </li>
          						</p>
