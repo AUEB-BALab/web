@@ -13,9 +13,7 @@ slug: phd_achievements
       <h3>May 2018</h3>
       <p>
         <b>Stefanos Georgiou</b> received best paper award:
-        <a href="https://doi.org/10.1145/3196398.3196414">
 	What Are Your Programming Language's Energy-Delay Implications?
-        </a>.
         <cite>15th Annual DMST Student Conference</cite>, May 2018.
       </p>
 
