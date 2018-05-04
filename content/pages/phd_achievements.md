@@ -10,6 +10,14 @@ slug: phd_achievements
     <div class="row">
     <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
 
+      <h3>May 2018</h3>
+      <p>
+        <b>Stefanos Georgiou</b> received best paper award:
+	What Are Your Programming Language's Energy-Delay Implications?
+        <cite>15th Annual DMST Student Conference</cite>, May 2018.
+      </p>
+
+
       <h3>April 2018</h3>
       <p>
         <b>Tushar Sharma</b> publishes a paper in a high-impact journal:
