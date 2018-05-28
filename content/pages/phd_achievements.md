@@ -12,8 +12,19 @@ slug: phd_achievements
 
       <h3>May 2018</h3>
       <p>
-        <b>Stefanos Georgiou</b> received best paper award:
-	What Are Your Programming Language's Energy-Delay Implications?
+        <b>Antonis Gkortzis</b> received the Best Data Showcase Award
+	for his paper
+	"VulinOSS: A Dataset of Security Vulnerabilities in Open-source Systems"
+	published at the
+        <cite>15th International Conference on Mining Software Repositories</cite>.
+      </p>
+
+      <h3>May 2018</h3>
+      <p>
+        <b>Stefanos Georgiou</b> received the Best Paper Award for his paper
+	titled
+	"What Are Your Programming Language's Energy-Delay Implications?"
+	published at the
         <cite>15th Annual DMST Student Conference</cite>, May 2018.
       </p>
 
