@@ -41,6 +41,13 @@ grep -iHn '^[ 	]*year.*=[ 	]*{{' content/pubs.bib && error 'Years should not be 
 grep -iHn '^[ 	]*doi[ 	]=' content/pubs.bib && error 'Specify XEdoi rather than DOI'
 grep -iHn '^[ 	]*url[ 	]*=' content/pubs.bib && error 'Specify XEurl rather than URL'
 
+# Check for required seminar fields
+for i in presenter: date: 'category: seminars' ; do
+  for f in content/seminars/* ; do
+    grep "^$i" $f >/dev/null || error "Missing field $i in $f"
+  done
+done
+
 pelican content/ --output=$BASE/stage
 
 #Sanity check
