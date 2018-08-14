@@ -1,6 +1,6 @@
 # BALab-Web
 
-This is the repository for the [BALab](http://istlab.dmst.aueb.gr/) web site. This system is used to create and maintain the website. The system manages information regarding:
+This is the repository for the [BALab](https://www.balab.aueb.gr) web site. This system is used to create and maintain the website. The system manages information regarding:
 
 * group members and alumni,
 * research projects,
