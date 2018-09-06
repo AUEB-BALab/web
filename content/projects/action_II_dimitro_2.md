@@ -1,7 +1,7 @@
 title: Action II(2)
 date:  20161208
 category: projects
-completed: 0
+completed: 1
 id: p_action_dimitro_2
 shortname: Action II
 projtitle: The "Meta-Life" of JavaScript

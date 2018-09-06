@@ -16,7 +16,9 @@ if [ $(whoami) = www-data ] ; then
   BASE=/var/www/balab/web-contents
 
   mkdir -p $BASE/lists
-  awk '/^email:/{print $2}' content/members/* >$BASE/lists/balab.txt
+  { awk '/^email:/{print $2}' content/members/*
+    cat content/mail-extra
+  } >$BASE/lists/balab.txt
 else
   BASE=balab
 fi
@@ -27,7 +29,7 @@ mkdir -p $BASE/stage
 # See if used categories are valid
 if ! find content -type f |
   xargs grep -h '^category:' |
-  sed 's/ *$//' |
+  sed 's/[ \r]*$//' |
   sort -u |
   diff doc/valid_categories - ; then
     error 'Invalid content category used; see above'
@@ -38,6 +40,13 @@ grep -iHn 'doi.*=.*https://doi\.org' content/pubs.bib && error 'DOIs should not 
 grep -iHn '^[ 	]*year.*=[ 	]*{{' content/pubs.bib && error 'Years should not be specified with double braces'
 grep -iHn '^[ 	]*doi[ 	]=' content/pubs.bib && error 'Specify XEdoi rather than DOI'
 grep -iHn '^[ 	]*url[ 	]*=' content/pubs.bib && error 'Specify XEurl rather than URL'
+
+# Check for required seminar fields
+for i in presenter: date: 'category: seminars' ; do
+  for f in content/seminars/* ; do
+    grep "^$i" $f >/dev/null || error "Missing field $i in $f"
+  done
+done
 
 pelican content/ --output=$BASE/stage
 

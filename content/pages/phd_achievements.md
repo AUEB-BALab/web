@@ -9,11 +9,65 @@ slug: phd_achievements
   <div class="panel-body">
     <div class="row">
     <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+
+      <h3>May 2018</h3>
+      <p>
+        <b>Antonis Gkortzis</b> received the Best Data Showcase Award
+	for his paper
+	"VulinOSS: A Dataset of Security Vulnerabilities in Open-source Systems"
+	published at the
+        <cite>15th International Conference on Mining Software Repositories</cite>.
+      </p>
+
+      <h3>May 2018</h3>
+      <p>
+        <b>Stefanos Georgiou</b> received the Best Paper Award for his paper
+	titled
+	"What Are Your Programming Language's Energy-Delay Implications?"
+	published at the
+        <cite>15th Annual DMST Student Conference</cite>, May 2018.
+      </p>
+
+
+      <h3>April 2018</h3>
+      <p>
+        <b>Tushar Sharma</b> publishes a paper in a high-impact journal:
+        <a href="https://doi.org/10.1016/j.jss.2017.12.034">
+	A survey on software smells
+        </a>.
+        <cite>Journal of Systems and Software</cite>, April 2018.
+      </p>
+
+
+      <h3>March 2018</h3>
+      <p>
+        Three PhD students,
+        <b>Tushar Sharma</b>,
+        <b>Antonis Gkortzis</b>, and
+        <b>Stefanos Georgiou</b>,
+	have papers/briefings accepted for presentation at the
+	International Conference on Software Engineering and the
+	Mining Software Repositories conferences.
+      </p>
+
+      <h3>November 2017</h3>
+      <p>
+      <img src="../images/phd.png" border="0" align="right" alt="PhD logo">
+      <b>Maria Kechagia</b> successfully defends her PhD thesis.
+      </p>
+
+      <h3>March 2017</h3>
+      <p>
+      <img src="../images/phd.png" border="0" align="right" alt="PhD logo">
+      <b>Marios Fragkoulis</b> successfully defends his PhD thesis.
+      </p>
+
       <h3>July 2016</h3>
       <p>
         <b>Georgios Gousios</b> gets hired as an assistant professor
         at the Web Information Systems group of the Faculty of Engineering,
-        Mathematics and Computer Science (EEMCS/EWI), Delft University of Technology.
+        Mathematics and Computer Science (EEMCS/EWI),
+	Delft University of Technology (TUDelft).
       </p>
 
       <h3>January 2016</h3>
@@ -38,7 +92,7 @@ slug: phd_achievements
       <h3>December 2015</h3>
       <p>
         <b>Maria Kechagia</b> publishes a paper in a high-impact journal:
-        <a href="http://link.springer.com/article/10.1007%2Fs10664-014-9343-7">
+        <a href="https://doi.org/10.1007/s10664-014-9343-7">
           Charting the API minefield using software telemetry data
         </a>.
         <cite>Empirical Software Engineering</cite>, 2015.

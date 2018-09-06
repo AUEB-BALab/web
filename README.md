@@ -1,6 +1,6 @@
 # BALab-Web
 
-This is the repository for the [BALab](http://istlab.dmst.aueb.gr/) web site. This system is used to create and maintain the website. The system manages information regarding:
+This is the repository for the [BALab](https://www.balab.aueb.gr) web site. This system is used to create and maintain the website. The system manages information regarding:
 
 * group members and alumni,
 * research projects,
@@ -73,6 +73,7 @@ To contribute to the web site you need to follow these steps.
   using [this template](https://raw.githubusercontent.com/AUEB-BALab/web/master/doc/templates/project-example.md).
 * To add new software, add a file under `content/software`,
   using [this template](https://raw.githubusercontent.com/AUEB-BALab/web/master/doc/templates/software-example.md).
+* To add a new email recipient add the name in the file `content/mail-extra`.
 * To update a static page (ex. PhD Student Achievements), go to `pages`, follow the existing structure and use class="img-responsive" for images.
 * To modify an existing page, edit the corresponding file.
 
