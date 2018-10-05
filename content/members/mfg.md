@@ -7,6 +7,7 @@ givenname: Marios
 surname: Fragkoulis
 memb_title: Dr.
 email: mfg@aueb.gr
+web_site: http://mariosfragkoulis.gr
 photo: m_mfg.jpg
 phd_title: Technologies for main memory data analysis
 phd_supervisor: m_dds
