@@ -10,16 +10,18 @@
     <div class="panel panel-default">
       <div class="panel-heading">
         {% if category|string() == 'members'%}
-          <h2>Members & Associates</h2>
-        {% else %}
-          <h2>Alumni</h2>
-	  <p>BALab alumni have been associated with the lab in the past, e.g. as faculty members, PhD students, or
-	  research associates, and have published at least one paper or substantially contributed to a software project
-	  or data set as BALab members.
-	  </p>
-        {% endif %}
+	    <h2>Members & Associates</h2>
+	</div>
       </div>
-    </div>
+        {% else %}
+	  <h2>Alumni</h2>
+	</div>
+      </div>
+      <p>BALab alumni have been associated with the lab in the past, e.g. as faculty members, PhD students, or
+      research associates, and have published at least one paper or substantially contributed to a software project
+      or data set as BALab members.
+      </p>
+        {% endif %}
     <!-- Print members by surname order -->
     {% for article in articles_page.object_list|sort(attribute='surname') %}
 			<div class="col-xs-12 col-sm-4 col-md-3 col-lg-3" id="printphoto">
