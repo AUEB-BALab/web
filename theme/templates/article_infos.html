@@ -664,7 +664,7 @@
 		{% for member in articles if member.category|string() == 'members' and  member.phd_startdate and member.phd_startdate[0:4] <= article.title and (not member.phd_enddate or member.phd_enddate[0:4] > article.title) %}
 		  <p>
 		   <li>
-			 {{ member.givenname }} {{ member.surname }} (PhD student)
+			 {{ member.givenname }} {{ member.surname }}
 			 <a href="{{ SITEURL }}/{{ member.url }}"><span class="glyphicon glyphicon-new-window"></span></a>
 		   </li>
 		  </p>
