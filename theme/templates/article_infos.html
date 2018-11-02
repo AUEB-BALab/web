@@ -445,21 +445,13 @@
                   {% break %}
                 {% endif %}
           {% endfor %}
-          {% for member in articles if member.category|string() == 'members' %}
-             {% if  member.phd_startdate%}
-                {% if (member.phd_enddate and member.phd_enddate[0:4] > article.title and member.phd_startdate[0:4] < article.title) or (member.phd_completed == '0' and member.phd_startdate[0:4] < article.title) %}
-                  <li><a href="#Ongoing_PhDs">Ongoing PhDs</a></li>
-                  {% break %}
-                {% endif %}
-             {% endif %}
+          {% for member in articles if member.category|string() == 'members' and  member.phd_startdate and member.phd_startdate[0:4] <= article.title and (not member.phd_enddate or member.phd_enddate[0:4] > article.title) %}
+              <li><a href="#Ongoing_PhDs">Ongoing PhDs</a></li>
+              {% break %}
           {% endfor %}
-          {% for member in articles if member.category|string() == 'members' %}
-             {% if  member.phd_enddate%}
-                {% if member.phd_enddate[0:4] == article.title %}
-                  <li><a href="#PhDs">Completed PhDs</a></li>
-                  {% break %}
-                {% endif %}
-             {% endif %}
+          {% for member in articles if member.category|string() == 'members' and  member.phd_enddate and member.phd_enddate[0:4] == article.title and member.phd_completed == '1' %}
+	      <li><a href="#PhDs">Completed PhDs</a></li>
+	      {% break %}
           {% endfor %}
           {% for seminar in articles if seminar.category|string() == 'seminars' %}
              {% if seminar.date|strftime('%Y') == article.title %}
@@ -510,21 +502,13 @@
                   {% break %}
               {% endif %}
           {% endfor %}
-          {% for member in articles if member.category|string() == 'members' %}
-             {% if  member.phd_startdate%}
-                {% if (member.phd_enddate and member.phd_enddate[0:4] > article.title and member.phd_startdate[0:4] < article.title) or (member.phd_completed == '0' and member.phd_startdate[0:4] < article.title) %}
-                  <li><a href="#Ongoing_PhDs">Ongoing PhDs</a></li>
-                  {% break %}
-                {% endif %}
-             {% endif %}
+          {% for member in articles if member.category|string() == 'members' and  member.phd_startdate and member.phd_startdate[0:4] <= article.title and (not member.phd_enddate or member.phd_enddate[0:4] > article.title) %}
+              <li><a href="#Ongoing_PhDs">Ongoing PhDs</a></li>
+              {% break %}
           {% endfor %}
-          {% for member in articles if member.category|string() == 'members' %}
-             {% if  member.phd_enddate%}
-                {% if member.phd_enddate[0:4] == article.title %}
-                  <li><a href="#PhDs">Completed PhDs</a></li>
-                  {% break %}
-                {% endif %}
-             {% endif %}
+          {% for member in articles if member.category|string() == 'members' and  member.phd_enddate and member.phd_enddate[0:4] == article.title and member.phd_completed == '1' %}
+	      <li><a href="#PhDs">Completed PhDs</a></li>
+	      {% break %}
           {% endfor %}
           {% for seminar in articles if seminar.category|string() == 'seminars' %}
              {% if seminar.date|strftime('%Y') == article.title %}
@@ -670,63 +654,47 @@
       {% endfor %}
 
       <!-- Print ongoing PhDs of this year, if exists -->
-       {% for member in articles if member.category|string() == 'members' %}
-    			{% if  member.phd_startdate%}
-    			  {% if (member.phd_enddate and member.phd_enddate[0:4] > article.title and member.phd_startdate[0:4] < article.title) or (member.phd_completed == '0' and member.phd_startdate[0:4] < article.title) %}
-    				 <div class="panel panel-default" id="px2">
-      				   <div class="panel-heading">
-      					   <h3 id="Ongoing_PhDs">Ongoing PhDs</h3>
-      				   </div>
-      				   <ul class="list-group">
-        					 <ul>
-        					  {% for member in articles if member.category|string() == 'members' %}
-          						{% if member.phd_startdate %}
-          						  {% if (member.phd_enddate and member.phd_enddate[0:4] > article.title and member.phd_startdate[0:4] < article.title) or (member.phd_completed == '0' and member.phd_startdate[0:4] < article.title) %}
-          						  <p>
-          						   <li>
-            							 {{ member.givenname }} {{ member.surname }} (PhD student)
-            							 <a href="{{ SITEURL }}/{{ member.url }}"><span class="glyphicon glyphicon-new-window"></span></a>
-          						   </li>
-          						  </p>
-          						  {% endif%}
-          						{% endif%}
-        					  {% endfor %}
-        					</ul>
-      				  </ul>
-    				 </div>
-    				 {% break %}
-    			  {% endif %}
-    			{% endif %}
+       {% for member in articles if member.category|string() == 'members' and  member.phd_startdate and member.phd_startdate[0:4] <= article.title and (not member.phd_enddate or member.phd_enddate[0:4] > article.title) %}
+	 <div class="panel panel-default" id="px2">
+	   <div class="panel-heading">
+		   <h3 id="Ongoing_PhDs">Ongoing PhDs</h3>
+	   </div>
+	   <ul class="list-group">
+	     <ul>
+		{% for member in articles if member.category|string() == 'members' and  member.phd_startdate and member.phd_startdate[0:4] <= article.title and (not member.phd_enddate or member.phd_enddate[0:4] > article.title) %}
+		  <p>
+		   <li>
+			 {{ member.givenname }} {{ member.surname }} (PhD student)
+			 <a href="{{ SITEURL }}/{{ member.url }}"><span class="glyphicon glyphicon-new-window"></span></a>
+		   </li>
+		  </p>
+		{% endfor %}
+	    </ul>
+	  </ul>
+	 </div>
+	 {% break %}
       {% endfor %}
 
       <!-- Print completed PhDs of this year, if exists -->
-      {% for member in articles if member.category|string() == 'members' %}
-        {% if  member.phd_enddate%}
-          {% if member.phd_enddate[0:4] == article.title %}
+      {% for member in articles if member.category|string() == 'members' and  member.phd_enddate and member.phd_enddate[0:4] == article.title and member.phd_completed == '1' %}
              <div class="panel panel-default" id="px2">
                <div class="panel-heading">
                    <h3 id="PhDs">Completed PhDs</h3>
                </div>
                <ul class="list-group">
                  <ul>
-                  {% for member in articles if member.category|string() == 'members' %}
-                    {% if member.phd_enddate %}
-                      {% if member.phd_enddate[:4] == article.title%}
+		  {% for member in articles if member.category|string() == 'members' and  member.phd_enddate and member.phd_enddate[0:4] == article.title and member.phd_completed == '1' %}
                       <p>
                        <li>
-                         {{ member.givenname }} {{ member.surname }} (PhD student)
+                         {{ member.givenname }} {{ member.surname }}
                          <a href="{{ SITEURL }}/{{ member.url }}"><span class="glyphicon glyphicon-new-window"></span></a>
                        </li>
                       </p>
-                      {% endif%}
-                    {% endif%}
                   {% endfor %}
                 </ul>
               </ul>
              </div>
              {% break %}
-          {% endif %}
-        {% endif %}
       {% endfor %}
 
       <!-- Print seminars of this year, if some exist -->
