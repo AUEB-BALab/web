@@ -6,6 +6,7 @@ id: m_damianos
 givenname: Damianos
 surname: Chatziantoniou
 memb_title: Dr.
+photo: Damianos_Chatziantoniou.jpg
 email: damianos@aueb.gr
 web_site: http://dmst.aueb.gr/damianos/
 <p>
