@@ -11,8 +11,9 @@ photo: thodoras.jpg
 phd_title:
 phd_supervisor: m_dds
 phd_startdate: 20172804
-phd_completed: 0
+phd_enddate: 20180329
+phd_completed: A
 
-_Theodore Stassinopoulos_ is a PhD candidate in AUEB (Athens University of Economics and Business) and currently works on CROSSMINER project. Holds an MSc in theoretical mathematics from University of Athens and a BSc in mathematics from the saeme university.
+_Theodore Stassinopoulos_ holds an MSc in theoretical mathematics from University of Athens and a BSc in mathematics from the same university.
 
 His research interests lie at algorithm design and analysis, design patterns and best practices for clean code.
