@@ -688,14 +688,14 @@
       {% endfor %}
 
       <!-- Print seminars of this year, if some exist -->
-      {% for check_sem_year in articles if check_sem_year.category|string() == 'seminars' and check_sem_year.date|strftime('%Y') == article.title %}
+      {% for seminar in articles if seminar.category|string() == 'seminars' and seminar.date|strftime('%Y') == article.title %}
            <div class="panel panel-default" id="px2">
              <div class="panel-heading">
                  <h3 id="seminars">Seminars</h3>
              </div>
              <ul class="list-group">
                <ul>
-                {% for seminar in articles if seminar.category|string() == 'seminars' and seminar.date|strftime('%Y') == article.title %}
+                {% for seminar in articles|sort(attribute='date') if seminar.category|string() == 'seminars' and seminar.date|strftime('%Y') == article.title  %}
 		    <h4>{{seminar.title}}</h4>
 		    <p>
 		      <b>Date: </b>{{seminar.date|strftime('%d %B %Y')}}<br>
