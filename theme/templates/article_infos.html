@@ -398,7 +398,7 @@
 {% endfor %}
 {% endif %}
 
-<!-- Templete for yearly reports -->
+<!-- Template for yearly reports -->
 {% if article.category|string() == 'yearly reports' %}
   <div class="panel panel-default">
     <!-- Print year -->
@@ -461,12 +461,18 @@
                 {% endif %}
              {% endif %}
           {% endfor %}
+          {% for seminar in articles if seminar.category|string() == 'seminars' %}
+             {% if seminar.date|strftime('%Y') == article.title %}
+	     <li><a href="#seminars">Seminars</a></li>
+                {% break %}
+             {% endif %}
+          {% endfor %}
         </ul>
       </div>
       </nav>
     </div>
 
-    <!-- Print Categories that exists (mobile view) -->
+    <!-- Print Categories that exist (mobile view) -->
     <div class="col-xs-12 col-sm-12 hidden-md hidden-lg hidden-xl" id="printmenu">
       <nav>
       <div class="panel panel-default" >
@@ -518,6 +524,12 @@
                   <li><a href="#PhDs">Completed PhDs</a></li>
                   {% break %}
                 {% endif %}
+             {% endif %}
+          {% endfor %}
+          {% for seminar in articles if seminar.category|string() == 'seminars' %}
+             {% if seminar.date|strftime('%Y') == article.title %}
+	     <li><a href="#seminars">Seminars</a></li>
+                {% break %}
              {% endif %}
           {% endfor %}
         </ul>
@@ -716,6 +728,30 @@
           {% endif %}
         {% endif %}
       {% endfor %}
+
+      <!-- Print seminars of this year, if some exist -->
+      {% for check_sem_year in articles if check_sem_year.category|string() == 'seminars' and check_sem_year.date|strftime('%Y') == article.title %}
+           <div class="panel panel-default" id="px2">
+             <div class="panel-heading">
+                 <h3 id="seminars">Seminars</h3>
+             </div>
+             <ul class="list-group">
+               <ul>
+                {% for seminar in articles if seminar.category|string() == 'seminars' and seminar.date|strftime('%Y') == article.title %}
+		    <h4>{{seminar.title}}</h4>
+		    <p>
+		      <b>Date: </b>{{seminar.date|strftime('%d %B %Y')}}<br>
+		      <b>Presenter: </b>{{seminar.presenter}}<br>
+		      <b>Abstract </b>{{seminar.content}}
+                    </p>
+		    <hr>
+                {% endfor %}
+              </ul>
+            </ul>
+          </div>
+          {% break %}
+      {% endfor %}
+
 
     <!-- Note: Grandfathered work -->
     <div class="panel panel-default">
