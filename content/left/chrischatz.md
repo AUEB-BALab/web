@@ -1,7 +1,7 @@
 title: Christos - Chatzilenas 
 date: 20180222 
 joined_date: 20180222 
-category: members 
+category: left 
 id: m_chrischatz 
 givenname: Christos 
 surname: Chatzilenas 

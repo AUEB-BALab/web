@@ -1,7 +1,7 @@
 title: Theodore - Stassinopoulos
 date: 20170428
 joined_date: 20170428
-category: members
+category: left
 id: tstassinopoulos
 givenname: Theodore
 surname: Stassinopoulos

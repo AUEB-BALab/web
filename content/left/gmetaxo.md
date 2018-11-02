@@ -1,7 +1,7 @@
 title: George - Metaxopoulos
 date: 20171015 
 joined_date: 20171015 
-category: members 
+category: left 
 id: gmetaxo 
 givenname: George 
 surname: Metaxopoulos 

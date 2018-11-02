@@ -1,7 +1,7 @@
 title: Vasileios - Vlachos
 date: 20031114
 joined_date: 20031114
-category: members
+category: alumni
 id: m_vlachos
 givenname: Vasileios
 surname: Vlachos

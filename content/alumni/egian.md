@@ -1,7 +1,7 @@
 title: Vaggelis - Giannikas
 date: 20090904
 joined_date: 20090904
-category: members 
+category: alumni 
 id: m_egian
 givenname: Vaggelis
 surname: Giannikas

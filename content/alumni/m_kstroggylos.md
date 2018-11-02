@@ -1,7 +1,7 @@
 title: Konstantinos - Stroggylos
 date: 20051110
 joined_date: 20051110
-category: members
+category: alumni
 id: m_kstroggylos
 givenname: Konstantinos
 surname: Stroggylos

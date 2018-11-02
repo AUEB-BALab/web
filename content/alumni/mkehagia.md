@@ -1,7 +1,7 @@
 title: Maria - Kechagia
 date: 20090907
 joined_date: 20090907
-category: members 
+category: alumni 
 id: m_mkehagia
 givenname: Maria
 surname: Kechagia
