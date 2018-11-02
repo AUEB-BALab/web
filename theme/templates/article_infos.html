@@ -666,6 +666,7 @@
 		   <li>
 			 {{ member.givenname }} {{ member.surname }}
 			 <a href="{{ SITEURL }}/{{ member.url }}"><span class="glyphicon glyphicon-new-window"></span></a>
+			 Topic: {{ member.phd_title }}
 		   </li>
 		  </p>
 		{% endfor %}
@@ -687,7 +688,8 @@
                       <p>
                        <li>
                          {{ member.givenname }} {{ member.surname }}
-                         <a href="{{ SITEURL }}/{{ member.url }}"><span class="glyphicon glyphicon-new-window"></span></a>
+			 <a href="{{ SITEURL }}/{{ member.url }}"><span class="glyphicon glyphicon-new-window"></span></a>
+			 Topic: {{ member.phd_title }}
                        </li>
                       </p>
                   {% endfor %}
