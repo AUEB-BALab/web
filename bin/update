@@ -51,7 +51,7 @@ done
 pelican content/ --output=$BASE/stage
 
 #Sanity check
-if test $(stat -c %s $BASE/stage/category/members.html) -gt 20000 ; then
+if test $(stat -c %s $BASE/stage/category/members.html) -gt 15000 ; then
   echo "Members: OK"
 else
  error "File $BASE/stage/category/members.html appears truncated, please check members file and update again!"
@@ -69,7 +69,7 @@ else
  error "File $BASE/stage/category/projects.html appears truncated, please check projects file and update again!"
 fi
 
-if test $(stat -c %s $BASE/stage/category/alumni.html) -gt 5000 ; then
+if test $(stat -c %s $BASE/stage/category/alumni.html) -gt 10000 ; then
   echo "Alumni: OK"
 else
  error "File $BASE/stage/category/alumni.html appears truncated, please check alumni file and update again!"
