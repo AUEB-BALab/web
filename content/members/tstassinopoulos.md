@@ -8,7 +8,7 @@ surname: Stassinopoulos
 memb_title: Mr.
 email: tstassinopoulos@aueb.gr
 photo: thodoras.jpg
-phd_title:
+phd_title: Data and Quality Metrics of System Configuration Code 
 phd_supervisor: m_dds
 phd_startdate: 20172804
 phd_enddate: 20180329
