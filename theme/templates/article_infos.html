@@ -630,7 +630,8 @@
                 {% for member in articles if member.joined_date and member.joined_date[:4] == article.title %}
 		    <p>
 		     <li>
-		       {{ member.givenname }} {{ member.surname }} {% if member.phd_title or member.phd_startdate %}(PhD student){% endif %}
+		       {{ member.givenname }} {{ member.surname }}
+		       {% if member.phd_startdate and member.phd_startdate[:4] == article.title %}(PhD student){% endif %}
 		       <a href="{{ SITEURL }}/{{ member.url }}"><span class="glyphicon glyphicon-new-window"></span></a>
 		     </li>
 		    </p>
