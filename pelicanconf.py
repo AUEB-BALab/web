@@ -3,7 +3,7 @@
 from __future__ import unicode_literals
 from datetime import datetime
 
-JINJA_EXTENSIONS = ['jinja2.ext.loopcontrols']
+JINJA_ENVIRONMENT = {'extensions': ['jinja2.ext.loopcontrols']}
 
 AUTHOR = 'Efstathia Chioteli, Ioannis Batas'
 SITENAME = 'BALab'
