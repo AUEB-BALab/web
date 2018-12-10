@@ -6,8 +6,7 @@ id: m_theosot
 givenname: Thodoris
 surname: Sotiropoulos
 memb_title: 
-email: theosotr@windowslive.com
-mobile_phone: 6984721291
+email: theosotr@aueb.gr
 fax: 
 office_address: 
 postal_address: 
@@ -18,8 +17,7 @@ phd_startdate: 20181203
 phd_completed: 0
 
 _Thodoris Sotiropoulos_ is a PhD candidate
-at the Department of Management Science and Technology of
-Athens University of Economics and Business.
+at the Department of Management Science and Technology.
 He holds an MSc with distinction in Advanced Computing from Imperial College London,
 and a BSc in Management Science and Technology from Athens University of Economics and Business.
 He has previously worked in industry as a software engineer
