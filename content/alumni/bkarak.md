@@ -8,7 +8,7 @@ surname: Karakoidas
 memb_title: Dr.
 email: bkarak@aueb.gr
 web_site: http://bkarak.wizhut.com/www/index.html
-office_phone: +30 2108203370
+office_phone: -
 photo: m_bkarak.jpg
 web_log: http://bkarak.wizhut.com/blog/
 github: https://github.com/bkarak
