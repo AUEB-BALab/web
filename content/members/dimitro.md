@@ -8,7 +8,7 @@ surname: Mitropoulos
 memb_title: Dr.
 email: dimitro@aueb.gr
 web_site: https://dimitro.gr
-photo: m_dimitro_2.jpeg
+photo: m_dimitro_3.png
 web_log: http://xrds.acm.org/blog/author/dimitrism/
 phd_title: Secure Software Development Technologies
 phd_supervisor: m_dds
