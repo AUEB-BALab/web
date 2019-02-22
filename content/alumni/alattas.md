@@ -1,7 +1,7 @@
 Title: Alexander - Lattas
 Date: 20160712
 joined_date: 20160712
-Category: members
+Category: alumni
 Id: lattas
 givenname: Alexandros
 surname: Lattas
