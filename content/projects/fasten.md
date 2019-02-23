@@ -10,6 +10,7 @@ enddate: 20211231
 web_site: https://www.fasten-project.eu/
 total_budget: 3,219,697 euros
 funding_agency: EU H2020
+logo: fasten.png
 type: rtd
 international: yes
 partner_shortname1: Athens University of Economics & Business
