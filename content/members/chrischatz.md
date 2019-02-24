@@ -4,7 +4,8 @@ joined_date: 20180222
 category: members 
 id: m_chrischatz 
 givenname: Christos 
-surname: Chatzilenas 
+surname: Chatzilenas
+photo: chrischatz.jpg
 email: chrischatzilenas@protonmail.com 
 github: ChrisChatz
 linkedin: christoschatzilenas
