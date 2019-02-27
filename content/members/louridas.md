@@ -7,12 +7,28 @@ givenname: Panos (Panagiotis)
 surname: Louridas
 memb_title: Dr.
 email: louridas@aueb.gr
-web_site: http://www.dmst.aueb.gr/louridas
-office_phone: +30 2107475686
-fax: +30 2107474490
-office_address: Greek Research Technology Network 56 Messogion Ave., 11527 Athens, Greece
+web_site: https://www.balab.aueb.gr/panos-panagiotis-louridas.html
+office_phone: +30 2108203153
+office_address: 56, Patision Avenue, 10434, Athens, Greece
 photo: m_louridas.jpg
+github: louridas
+twitter: louridas
+linkedin: louridas
 
-_Panos (Panagiotis) Louridas_ holds an MSc by Research and a PhD in Computation from the University of Manchester Institute of Science and Technology (UMIST). He is a consultant at the Greek Research & Technology Network, focusing on electronic infrastructures. Prior to that he has worked as a Software Engineer in the banking sector, developing applications using open source software, and as a consultant in various European projects. His research interests include Software Engineering, Software Design, and Security.
+_Panos (Panagiotis) Louridas_ is an Associate Professor at the
+[Department of Management Science and
+Technology](https://www.dept.aueb.gr/dmst), [Athens University of
+Economics and Business](https://www.aueb.gr/en). He holds an MSc by
+Research and a PhD in Computation from the University of Manchester.
+He is the author of [Real World Algorithms: A Beginner's
+Guide](https://mitpress.mit.edu/books/real-world-algorithms), adopted
+by various universities around the world, and translated in Russian,
+Korean, and traditional Chinese. His research spans many different
+areas, including Software Engineering, Software Design, Security,
+Practical Cryptograpy, Data Analytics. He has also been responsible
+for the [Zeus e-voting system](https://zeus.grnet.gr/zeus/), an open
+source, verifiable secure e-voting system, used by people and
+organisations all around the world.
 
-Dr. Louridas is a member of the ACM, the IEEE, and the AAAS. He is the recipient of a cheque by Donald Knuth.
+Panos Louridas is a member of the ACM, the IEEE, USENIX, and the AAAS.
+He is the recipient of three cheques by Donald Knuth.
