@@ -35,7 +35,7 @@ PUBLICATIONS_SRC = 'content/pubs.bib'
 
 THEME = 'theme'
 
-DIRECT_TEMPLATES = ('publications','index')
+DIRECT_TEMPLATES = ('publications','index', 'datasets')
 
 DEFAULT_PAGINATION = False
 
@@ -43,6 +43,7 @@ DISPLAY_CATEGORIES_ON_MENU = True
 DISPLAY_PAGES_ON_MENU = True
 MENUITEMS = (
     ('Publications', 'publications.html'),
+    ('Datasets', 'datasets.html')
 )
 
 # directories to be copied into output/static/

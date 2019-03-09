@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block title %}{{ SITENAME }} datasets{% endblock %}
+
+{% block content %}
+
+  <div class="panel panel-default" id="px2">
+    <div class="panel-heading">
+      <h2>Datasets</h2>
+    </div>
+    <ul class="list-group">
+      <!-- Print every dataset linked to its url -->
+      {% for publication in publications|sort(attribute='year')|reverse %}
+         {% if publication.XEcategory == 'Dataset' %}
+          <li class="list-group-item"> {{ publication.text }} {% if  publication.url %} <a href="{{  publication.url }}"></a>{% endif %}</li>
+          {% endif %}
+       {% endfor %}
+    </ul>
+  </div>
+{% endblock %}
