@@ -10,7 +10,7 @@
     <ul class="list-group">
       <!-- Print every dataset linked to its url -->
       {% for publication in publications|sort(attribute='year')|reverse %}
-         {% if publication.XEcategory == 'Dataset' %}
+         {% if publication.XEcategory == 'Datasets' %}
           <li class="list-group-item"> {{ publication.text }} {% if  publication.url %} <a href="{{  publication.url }}"></a>{% endif %}</li>
           {% endif %}
        {% endfor %}

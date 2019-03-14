@@ -2,7 +2,7 @@
 {% block content_title %}{% endblock %}
 
 {% block content %}
-{% set publication_categories = ['Monographs and Edited Volumes','Journal Articles', 'Book Chapters', 'Conference Publications', 'Technical Reports','White Papers','Magazine Articles','Working Papers'] %}
+{% set publication_categories = ['Monographs and Edited Volumes','Journal Articles', 'Book Chapters', 'Conference Publications', 'Technical Reports','White Papers','Magazine Articles','Working Papers', 'Datasets'] %}
 
 <!-- Template for members and alumni -->
 {% if article.category|string() == 'members' or  article.category|string() == 'alumni' %}
@@ -69,9 +69,6 @@
 
   <!-- Print member's publications, if exists -->
   {% for publication in publications %}
-    {% if (publication.XEcategory == 'Dataset') %}
-      {% continue %}
-    {% endif %}
     {% if (publication.XEmember.split(' ')[0] == article.id or
        publication.XEmember.split(' ')[1] == article.id or
        publication.XEmember.split(' ')[2] == article.id or
@@ -99,6 +96,17 @@
                      {% break %}
                     {% endif %}
                    {% endfor %}
+                 {% endfor %}
+                 <!-- Print Software Category if exists-->
+                 {% for article2 in articles %}
+                  {% if article2.category|string() == 'software' %}
+                    {% if article2.member.split(' ')[0] == article.id or
+                       article2.member.split(' ')[1] == article.id or
+                       article2.member.split(' ')[2] == article.id%}
+                        <li><a href="#Software">Software</a></li>
+                        {% break %}
+                    {% endif %}
+                  {% endif %}
                  {% endfor %}
                </ul>
              </div>
@@ -148,6 +156,31 @@
                    </ul>
                  </ul>
                {% endfor %}
+               <!-- Print Software information if exists -->
+               {% for article2 in articles %}
+                {% if article2.category|string() == 'software' %}
+                  {% if article2.member.split(' ')[0] == article.id or
+                     article2.member.split(' ')[1] == article.id or
+                     article2.member.split(' ')[2] == article.id%}
+                      <h4 style="color:#203864;" id="Software">Software</h4>
+                      {% break %}
+                  {% endif %}
+                {% endif %}
+               {% endfor %}
+               <ul class="list-group">
+                 <ul>
+                   {% for article2 in articles|sort(attribute='title') %}
+                    {% if article2.category|string() == 'software' %}
+                      {% if article2.member.split(' ')[0] == article.id or
+                         article2.member.split(' ')[1] == article.id or
+                         article2.member.split(' ')[2] == article.id%}
+                         <li><a href="{{article2.url}}">{{article2.title}}</a> — {{article2.description}} </li>
+                      {% endif %}
+                    {% endif %}
+                   {% endfor %}
+                 </ul>
+               </ul>
+
              </div>
            </div>
          </div>
