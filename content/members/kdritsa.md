@@ -2,6 +2,7 @@ title: Konstantina - Dritsa
 date: 20151001
 joined_date: 20151001
 category: members
+member_category: Researchers
 id: m_kdritsa
 givenname: Konstantina
 surname: Dritsa

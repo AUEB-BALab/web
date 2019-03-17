@@ -2,6 +2,7 @@ title: Christos - Chatzilenas
 date: 20180222 
 joined_date: 20180222 
 category: members 
+member_category: Researchers
 id: m_chrischatz 
 givenname: Christos 
 surname: Chatzilenas

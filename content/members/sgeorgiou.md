@@ -2,6 +2,7 @@ title: Stefanos - Georgiou
 date: 20151216
 joined_date: 20151216
 category: members 
+member_category: Associate Researchers
 id: m_sgeorgiou
 givenname: Stefanos
 surname: Georgiou

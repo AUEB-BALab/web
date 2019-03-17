@@ -2,6 +2,7 @@ title: Zoe - Kotti
 date: 20181204
 joined_date: 20181204
 category: members
+member_category: Researchers
 id: m_zkotti
 givenname: Zoe
 surname: Kotti

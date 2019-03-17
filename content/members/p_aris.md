@@ -2,6 +2,7 @@ title: Aris - Pattakos
 date: 20171001
 joined_date: 20171001
 category: members
+member_category: Researchers
 id: a_pattakos
 givenname: Aris
 surname: Pattakos

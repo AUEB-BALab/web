@@ -4,6 +4,7 @@ Surname: Batas
 date: 20170819
 joined_date: 20170301
 category: members
+member_category: Researchers
 Photo: impatas.jpg
 web_site: https://www.linkedin.com/in/giannisbatas/
 id: impatas
