@@ -2,6 +2,7 @@ title: Vitalis - Salis
 date: 20160715
 joined_date: 20160715
 category: members
+member_category: Researchers
 id: m_vitsalis
 givenname: Vitalis
 surname: Salis

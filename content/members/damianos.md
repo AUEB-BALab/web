@@ -2,6 +2,7 @@ title: Damianos - Chatziantoniou
 date: 20130219
 joined_date: 20130219
 category: members
+member_category: Faculty Members
 id: m_damianos
 givenname: Damianos
 surname: Chatziantoniou

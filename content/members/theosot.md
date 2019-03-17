@@ -2,6 +2,7 @@ title: Thodoris - Sotiropoulos
 joined_date: 20151105
 date: 20151105
 category: members 
+member_category: Associate Researchers
 id: m_theosot
 givenname: Thodoris
 surname: Sotiropoulos

@@ -2,6 +2,7 @@ title: Marios - Papachristou
 date: 20180823
 joined_date: 20180823
 category: members
+member_category: Researchers
 id: m_papachristoumarios
 givenname: Marios
 surname: Papachristou

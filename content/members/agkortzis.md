@@ -2,6 +2,7 @@ title: Antonios - Gkortzis
 date: 20151220
 joined_date: 20151220
 category: members 
+member_category: Associate Researchers
 id: m_agkortzis
 givenname: Antonios
 surname: Gkortzis
