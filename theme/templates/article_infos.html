@@ -3,6 +3,7 @@
 
 {% block content %}
 {% set publication_categories = ['Monographs and Edited Volumes','Journal Articles', 'Book Chapters', 'Conference Publications', 'Technical Reports','White Papers','Magazine Articles','Working Papers', 'Datasets'] %}
+{% set member_categories = ['Faculty Members' , 'Senior Researchers', 'Associate Researchers', 'Researchers'] %}
 
 <!-- Template for members and alumni -->
 {% if article.category|string() == 'members' or  article.category|string() == 'alumni' %}
@@ -449,9 +450,10 @@
         Contents
         </div>
         <ul class="nav nav-pills nav-stacked">
+          <li><a href="#overview">Overview in numbers</a></li>
           {% for publication in publications %}
             {% if publication.year == article.title %}
-             <li><a href="#publications">New Publications{{find}}</a></li>
+             <li><a href="#publications">New Publications</a></li>
              {% break %}
             {% endif %}
           {% endfor %}
@@ -504,47 +506,147 @@
         Contents
         </div>
         <ul class="nav nav-pills nav-stacked">
+          <li><a href="#overview">Overview in numbers</a></li>
+          {% set total_new_publications = namespace(a=0) %}
+          {% set total_monographs_volumes = namespace(a=0) %}
+          {% set total_journals_articles = namespace(a=0) %}
+          {% set total_book_chapters = namespace(a=0) %}
+          {% set total_conferences = namespace(a=0) %}
+          {% set total_technical_reports = namespace(a=0) %}
+          {% set total_white_papers = namespace(a=0) %}
+          {% set total_magazine_articles = namespace(a=0) %}
+          {% set total_working_papers = namespace(a=0) %}
+          {% set total_datasets = namespace(a=0) %}
           {% for publication in publications %}
-           {% if publication.year == article.title%}
-            <li><a href="#publications">New Publications</a></li>
-            {% break %}
+           {% if publication.year == article.title %}
+             {% if total_new_publications.a == 0 %}
+              <li><a href="#publications">New Publications</a></li>
+             {% endif %}
+             <!-- Counting number of new_publications -->
+             {% set total_new_publications.a = total_new_publications.a + 1 %}
+
+             {% if publication.XEcategory == 'Monographs and Edited Volumes' %}
+              {% set total_monographs_volumes.a = total_monographs_volumes.a + 1 %}
+             {% endif %}
+             {% if publication.XEcategory == 'Journal Articles' %}
+              {% set total_journals_articles.a = total_journals_articles.a + 1 %}
+             {% endif %}
+             {% if publication.XEcategory == 'Book Chapters' %}
+              {% set total_book_chapters.a = total_book_chapters.a + 1 %}
+             {% endif %}
+             {% if publication.XEcategory == 'Conference Publications' %}
+              {% set total_conferences.a = total_conferences.a + 1 %}
+             {% endif %}
+             {% if publication.XEcategory == 'Technical Reports' %}
+              {% set total_technical_reports.a = total_technical_reports.a + 1 %}
+             {% endif %}
+             {% if publication.XEcategory == 'White Papers' %}
+              {% set total_white_papers.a = total_white_papers.a + 1 %}
+             {% endif %}
+             {% if publication.XEcategory == 'Magazine Articles' %}
+              {% set total_magazine_articles.a = total_magazine_articles.a + 1 %}
+             {% endif %}
+             {% if publication.XEcategory == 'Working Papers' %}
+              {% set total_working_papers.a = total_working_papers.a + 1 %}
+             {% endif %}
+             {% if publication.XEcategory == 'Datasets' %}
+              {% set total_datasets.a = total_datasets.a + 1 %}
+             {% endif %}
            {% endif %}
+
           {% endfor %}
+
+          {% set total_new_projects = namespace(a=0) %}
           {% for project in articles if project.category|string() == 'projects' %}
              {% if project.startdate[:4] == article.title%}
+              {% if total_new_projects.a == 0 %}
                 <li><a href="#new_projects">New Projects</a></li>
-                {% break %}
+              {% endif %}
+                <!-- Counting number of new_projects -->
+                {% set total_new_projects.a = total_new_projects.a + 1 %}
               {% endif %}
           {% endfor %}
+
+          {% set total_ongoing_projects = namespace(a=0) %}
           {% for project in articles if project.category|string() == 'projects' %}
            {% if project.startdate[:4]|int() < article.title|int() and project.enddate[:4]|int() > article.title|int()%}
+             {% if total_ongoing_projects.a == 0 %}
               <li><a href="#ongoing_projects">Ongoing Projects</a></li>
-              {% break %}
+             {% endif %}
+              <!-- Counting number of ongoing_projects -->
+              {% set total_ongoing_projects.a = total_ongoing_projects.a + 1 %}
             {% endif %}
           {% endfor %}
+
+          {% set total_completed_projects = namespace(a=0) %}
           {% for project in articles if project.category|string() == 'projects' %}
              {% if project.enddate[:4] == article.title %}
+               {% if total_completed_projects.a == 0 %}
                 <li><a href="#com_projects">Completed Projects</a></li>
-                {% break %}
+               {% endif %}
+                <!-- Counting number of completed_projects -->
+                {% set total_completed_projects.a = total_completed_projects.a + 1 %}
               {% endif %}
           {% endfor %}
-          {% for member in articles if member.joined_date and member.joined_date[:4] == article.title %}
-		<li><a href="#members">New Members</a></li>
-		{% break %}
+
+          {% set total_members = namespace(a=0) %}
+          {% set total_new_members = namespace(a=0) %}
+          {% set total_faculty_members = namespace(a=0) %}
+          {% set total_senior_researchers = namespace(a=0) %}
+          {% set total_associate_researchers = namespace(a=0) %}
+          {% set total_researchers = namespace(a=0) %}
+          {% for member in articles if member.category|string() == 'members' or member.category|string() == 'alumni' %}
+            {% if (not member.end_date and member.joined_date[:4] <= article.title) or (member.end_date and member.joined_date[:4] <= article.title and member.end_date[:4] >= article.title) %}
+              {% set total_members.a = total_members.a + 1 %}
+              {% if member.member_category == 'Faculty Members' %}
+                {% set total_faculty_members.a = total_faculty_members.a + 1 %}
+              {% endif %}
+              {% if member.member_category == 'Senior Researchers' %}
+                {% set total_senior_researchers.a = total_senior_researchers.a + 1 %}
+              {% endif %}
+              {% if member.member_category == 'Associate Researchers' %}
+                {% set total_associate_researchers.a = total_associate_researchers.a + 1 %}
+              {% endif %}
+              {% if member.member_category == 'Researchers' %}
+                {% set total_researchers.a = total_researchers.a + 1 %}
+              {% endif %}
+              {% if member.joined_date[:4] == article.title %}
+               {% if total_new_members.a == 0 %}
+          		  <li><a href="#members">New Members</a></li>
+               {% endif %}
+                <!-- Counting number of new_members -->
+                {% set total_new_members.a = total_new_members.a + 1 %}
+              {% endif %}
+            {% endif %}
           {% endfor %}
+
+          {% set total_ongoing_phds = namespace(a=0) %}
           {% for member in articles if member.phd_startdate and member.phd_startdate[0:4] <= article.title and (not member.phd_enddate or member.phd_enddate[0:4] > article.title) %}
+            {% if total_ongoing_phds.a == 0 %}
               <li><a href="#Ongoing_PhDs">Ongoing PhDs</a></li>
-              {% break %}
+            {% endif %}
+            <!-- Counting number of ongoing_phds -->
+            {% set total_ongoing_phds.a = total_ongoing_phds.a + 1 %}
           {% endfor %}
+
+          {% set total_completed_phds = namespace(a=0) %}
           {% for member in articles if member.phd_enddate and member.phd_enddate[0:4] == article.title and member.phd_completed == '1' %}
-	      <li><a href="#PhDs">Completed PhDs</a></li>
-	      {% break %}
+           {% if total_completed_phds.a == 0 %}
+             <li><a href="#PhDs">Completed PhDs</a></li>
+           {% endif %}
+           <!-- Counting number of completed_phds -->
+           {% set total_completed_phds.a = total_completed_phds.a + 1 %}
           {% endfor %}
+
+          {% set total_new_seminars = namespace(a=0) %}
           {% for seminar in articles if seminar.category|string() == 'seminars' %}
-             {% if seminar.date|strftime('%Y') == article.title %}
-	     <li><a href="#seminars">Seminars</a></li>
-                {% break %}
-             {% endif %}
+           {% if seminar.date|strftime('%Y') == article.title %}
+            {% if total_new_seminars.a == 0 %}
+      	     <li><a href="#seminars">Seminars</a></li>
+            {% endif %}
+             <!-- Counting number of new_seminars -->
+             {% set total_new_seminars.a = total_new_seminars.a + 1 %}
+           {% endif %}
           {% endfor %}
         </ul>
       </div>
@@ -552,6 +654,156 @@
     </div>
 
     <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-9" id="printurl">
+
+      <div class="panel panel-default" id="px2">
+        <div class="panel-heading">
+            <h3 id="overview">Overview in numbers</h3>
+        </div>
+        <div class="panel-body">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>New Publications</th>
+                <th>Number</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Monographs and Edited Volumes</td>
+                <td>{{ total_monographs_volumes.a }}</td>
+              </tr>
+              <tr>
+                <td>Journal Articles</td>
+                <td>{{ total_journals_articles.a }}</td>
+              </tr>
+              <tr>
+                <td>Book Chapters</td>
+                <td>{{ total_book_chapters.a }}</td>
+              </tr>
+              <tr>
+                <td>Conference Publications</td>
+                <td>{{ total_conferences.a }}</td>
+              </tr>
+              <tr>
+                <td>Technical Reports</td>
+                <td>{{ total_technical_reports.a }}</td>
+              </tr>
+              <tr>
+                <td>White Papers</td>
+                <td>{{ total_white_papers.a }}</td>
+              </tr>
+              <tr>
+                <td>Magazine Articles</td>
+                <td>{{ total_magazine_articles.a }}</td>
+              </tr>
+              <tr>
+                <td>Working Papers</td>
+                <td>{{ total_working_papers.a }}</td>
+              </tr>
+              <tr>
+                <td>Datasets</td>
+                <td>{{ total_datasets.a }}</td>
+              </tr>
+              <tr>
+                <td>Total New Publications</td>
+                <td>{{ total_new_publications.a }}</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Projects</th>
+                <th>Number</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>New Projects</td>
+                <td>{{ total_new_projects.a }}</td>
+              </tr>
+              <tr>
+                <td>Ongoing Projects</td>
+                <td>{{ total_ongoing_projects.a }}</td>
+              </tr>
+              <tr>
+                <td>Completed Projects</td>
+                <td>{{ total_completed_projects.a }}</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Members</th>
+                <th>Number</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Faculty Members</td>
+                <td>{{ total_faculty_members.a }}</td>
+              </tr>
+              <tr>
+                <td>Senior Researchers</td>
+                <td>{{ total_senior_researchers.a }}</td>
+              </tr>
+              <tr>
+                <td>Associate Researchers</td>
+                <td>{{ total_associate_researchers.a }}</td>
+              </tr>
+              <tr>
+                <td>Researchers</td>
+                <td>{{ total_researchers.a }}</td>
+              </tr>
+              <tr>
+                <td>Total Members</td>
+                <td>{{ total_members.a }}</td>
+              </tr>
+              <tr>
+                <td>New Members</td>
+                <td>{{ total_new_members.a }}</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <table class="table">
+            <thead>
+              <tr>
+                <th>PhDs</th>
+                <th>Number</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Ongoing PhDs</td>
+                <td>{{ total_ongoing_phds.a }}</td>
+              </tr>
+              <tr>
+                <td>Completed PhDs</td>
+                <td>{{ total_completed_phds.a }}</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <table class="table">
+            <thead>
+              <tr>
+                <th>New Seminars</th>
+                <th>Number</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>New Seminars</td>
+                <td>{{ total_new_seminars.a }}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
 
       <!-- Print pulications of this year, if exists -->
       {% for publication in publications %}

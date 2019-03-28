@@ -1,7 +1,9 @@
 title: Christos - Oikonomou
 date: 20140115
 joined_date: 20140115
+end_date: 20170530
 category: alumni
+member_category: Researchers
 id: m_chrikon
 givenname: Christos
 surname: Oikonomou
