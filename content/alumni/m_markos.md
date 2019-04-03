@@ -1,7 +1,9 @@
 title: Markos - Gogoulos
 date: 20060901
 joined_date: 20060901
+end_date: 20070531
 category: alumni
+member_category: Researchers
 id: m_markos
 givenname: Markos
 surname: Gogoulos

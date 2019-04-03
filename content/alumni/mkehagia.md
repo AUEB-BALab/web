@@ -1,12 +1,14 @@
 title: Maria - Kechagia
 date: 20090907
 joined_date: 20090907
-category: alumni 
+end_date: 20171109
+category: alumni
+member_category: Senior Researchers
 id: m_mkehagia
 givenname: Maria
 surname: Kechagia
 memb_title: Dr.
-email: mkechagia@aueb.gr 
+email: mkechagia@aueb.gr
 photo: m_maria.jpg
 phd_title: Tools and Techniques for Reliable Application Programming Interfaces
 phd_supervisor: m_dds
