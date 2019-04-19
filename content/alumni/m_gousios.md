@@ -1,7 +1,9 @@
 title: Georgios - Gousios
 date: 20041115
 joined_date: 20041115
+end_date: 20090703
 category: alumni
+member_category: Senior Researchers
 id: m_gousios
 givenname: Georgios
 surname: Gousios

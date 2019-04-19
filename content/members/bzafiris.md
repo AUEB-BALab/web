@@ -2,6 +2,7 @@ title: Vassilis - Zafeiris
 date: 20190213
 joined_date: 20190213
 category: members
+member_category: Researchers
 id: bzafiris
 givenname: Vassilis
 surname: Zafeiris

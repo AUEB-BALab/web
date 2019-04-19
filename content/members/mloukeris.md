@@ -2,6 +2,7 @@ title: Michael - Loukeris
 date: 20190205
 joined_date: 20190205
 category: members
+member_category: Researchers
 id: mloukeris
 givenname: Michael
 surname: Loukeris
