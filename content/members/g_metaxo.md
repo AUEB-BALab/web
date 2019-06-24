@@ -2,13 +2,13 @@ title: George - Metaxopoulos
 date: 20190621 
 joined_date: 20190621 
 category: members 
-id: gmetaxo 
+id: g_metaxo 
 givenname: George 
 surname: Metaxopoulos 
 email: george.metaxopoulos@gmail.com 
 github: gmetaxo
 linkedin: gmetaxo
-photo: gmetaxo.jpg
+photo: g_metaxo.jpg
 
 **George Metaxopoulos** graduated with first-class honors from the Department of Management Science and Technology(AUEB) in 2018(specialization: Software Engineering and Data Science).
 
