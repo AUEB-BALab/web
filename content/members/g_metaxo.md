@@ -2,7 +2,7 @@ title: George - Metaxopoulos
 date: 20190621 
 joined_date: 20190621 
 category: members
-member_category: Researcher
+member_category: Researchers
 id: g_metaxo 
 givenname: George 
 surname: Metaxopoulos 
