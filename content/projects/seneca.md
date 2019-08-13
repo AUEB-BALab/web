@@ -1,7 +1,7 @@
 title: SENECA
 date:  20150101
 category: projects
-completed: 0
+completed: 1
 id: p_seneca
 shortname: SENECA
 projtitle: Software ENgineering in Enterprise Cloud Applications
