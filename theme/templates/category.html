@@ -217,14 +217,14 @@
                   <p>
               		  <li>
                       <a href="{{ SITEURL }}/{{ article.url }}">{{ article.shortname }}</a>
+                      <span>&mdash; {{article.projtitle}}</span>
                       {% if article.completed == '1' %}
                         {% if article.startdate[0:4] == article.enddate[0:4] %}
                           <span>({{article.enddate[0:4]}})</span>
                         {% else %}
-                          <span>({{article.startdate[0:4]}} - {{article.enddate[0:4]}})</span>
+                          <span>({{article.startdate[0:4]}}&ndash;{{article.enddate[0:4]}})</span>
                         {% endif%}
                       {% endif%}
-                      <span>&mdash; {{article.projtitle}}</span>
                     </li>
                   </p>
                   {% endif %}
