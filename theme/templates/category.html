@@ -212,10 +212,20 @@
            <div class="panel-body">
              <ul class="list-group">
                <ul>
-                 {% for article in articles|sort(attribute='title') %}
+                 {% for article in articles|sort(attribute='startdate',reverse=True) %}
                   {% if article.category|string() == 'projects' and article.completed == i|string %}
                   <p>
-		  <li><a href="{{ SITEURL }}/{{ article.url }}">{{ article.shortname }}</a> &mdash; {{article.projtitle}}</li>
+              		  <li>
+                      <a href="{{ SITEURL }}/{{ article.url }}">{{ article.shortname }}</a>
+                      {% if article.completed == '1' %}
+                        {% if article.startdate[0:4] == article.enddate[0:4] %}
+                          <span>({{article.enddate[0:4]}})</span>
+                        {% else %}
+                          <span>({{article.startdate[0:4]}} - {{article.enddate[0:4]}})</span>
+                        {% endif%}
+                      {% endif%}
+                      <span>&mdash; {{article.projtitle}}</span>
+                    </li>
                   </p>
                   {% endif %}
                  {% endfor %}
