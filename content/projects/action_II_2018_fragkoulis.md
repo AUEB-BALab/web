@@ -1,7 +1,7 @@
 title: Action II(3)
 date:  20180101
 category: projects
-completed: 0
+completed: 1
 id: p_action_fragkoulis
 shortname: Action II(3)
 projtitle: Software Engineering UNified MEmory Computing (SEUNMEC)

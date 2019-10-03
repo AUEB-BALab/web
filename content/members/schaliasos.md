@@ -1,17 +1,15 @@
-title: Stefanos - Chaliaso
-date: 20171015 
-joined_date: 20171015 
-category: members 
+title: Stefanos - Chaliasos
+date: 20171015
+joined_date: 20171015
+category: members
 member_category: Researchers
-id: schaliasos 
-givenname: Stefanos 
-surname: Chaliasos 
-email: stefanoshaliassos@gmail.com 
-github: StefanosChaliasos 
+id: m_schaliasos
+givenname: Stefanos
+surname: Chaliasos
+email: stefanoshaliassos@gmail.com
+github: StefanosChaliasos
 photo: schaliasos.jpg
 
-**Stefanos Chaliasos** is an undergraduate student at the Athens University of Economics and Business (AUEB) in the Department of Management Science and Technology. 
+**Stefanos Chaliasos** is a postgraduate Computer Science student in University of Athens (UOA). He holds a BSc in Management Science and Technology from Athens University of Economics and Business (major: Software Engineering and Data Science). He has previously worked in industry as a software engineer at Greek Research and Technology Network (GRNET).
 
-His research interests are in the areas of Security and Privacy.
-
-He is a member of the [ISTLab](http://istlab.dmst.aueb.gr/) group.
+His main research interests involve Software Security, Privacy, and Program Analysis.

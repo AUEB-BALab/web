@@ -161,7 +161,7 @@
   {% elif category|string() == 'projects'%}
     <div class="panel panel-default">
       <div class="panel-heading">
-        <h2>Projects</h2>
+        <h2>Research Projects</h2>
       </div>
     </div>
     <div class="row">
@@ -212,10 +212,20 @@
            <div class="panel-body">
              <ul class="list-group">
                <ul>
-                 {% for article in articles|sort(attribute='title') %}
+                 {% for article in articles|sort(attribute='startdate',reverse=True) %}
                   {% if article.category|string() == 'projects' and article.completed == i|string %}
                   <p>
-		  <li><a href="{{ SITEURL }}/{{ article.url }}">{{ article.shortname }}</a> &mdash; {{article.projtitle}}</li>
+              		  <li>
+                      <a href="{{ SITEURL }}/{{ article.url }}">{{ article.shortname }}</a>
+                      <span>&mdash; {{article.projtitle}}</span>
+                      {% if article.completed == '1' %}
+                        {% if article.startdate[0:4] == article.enddate[0:4] %}
+                          <span>({{article.enddate[0:4]}})</span>
+                        {% else %}
+                          <span>({{article.startdate[0:4]}}&ndash;{{article.enddate[0:4]}})</span>
+                        {% endif%}
+                      {% endif%}
+                    </li>
                   </p>
                   {% endif %}
                  {% endfor %}
