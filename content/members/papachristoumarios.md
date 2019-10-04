@@ -8,7 +8,7 @@ givenname: Marios
 surname: Papachristou
 memb_title:
 email: papachristoumarios@gmail.com
-web_site: papachristoumarios.github.io
+web_site: https://papachristoumarios.github.io
 github: papachristoumarios
 linkedin: papachristoumarios
 fax:
