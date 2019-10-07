@@ -2,6 +2,7 @@ title: Konstantinos - Kravvaritis
 date: 20180509
 joined_date: 20180509
 category: members 
+member_category: Associate Researchers
 id: blueoly
 givenname: Konstantinos
 surname: Kravvaritis

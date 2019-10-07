@@ -1,7 +1,9 @@
 title: Stefanos - Androutsellis-Theotokis
 date: 20031114
 joined_date: 20031114
-category: members
+end_date: 20090714
+category: alumni
+member_category: Senior Researchers
 id: m_androutsellis
 givenname: Stefanos
 surname: Androutsellis-Theotokis

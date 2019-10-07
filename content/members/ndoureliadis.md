@@ -2,6 +2,7 @@
  date: 20170213
  joined_date: 20170213
  category: members
+ member_category: Researchers
  id: ndoureliadis
  givenname: Nikolas
  surname: Doureliadis

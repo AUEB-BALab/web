@@ -5,7 +5,7 @@ completed: 1
 id: p_web
 shortname: Web
 projtitle: The ISTLab Web Site
-startdate:  
+startdate: 20040116
 enddate: 20040401
 web_site: http://istlab.dmst.aueb.gr/
 our_budget:

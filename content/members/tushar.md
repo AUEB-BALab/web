@@ -2,6 +2,7 @@ title: Tushar - Sharma
 date: 20151214
 joined_date: 20151214
 category: members 
+member_category: Associate Researchers
 id: m_tushar
 givenname: Tushar
 surname: Sharma

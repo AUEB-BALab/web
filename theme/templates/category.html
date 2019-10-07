@@ -5,27 +5,99 @@
 
 {% if articles %}
 
-  <!-- Members & Alumni Category -->
-  {% if category|string() == 'members' or category|string() == 'alumni' %}
+<!-- Members Category -->
+{% if category|string() == 'members' %}
+  {% set member_categories = ['Faculty Members' , 'Senior Researchers', 'Associate Researchers', 'Researchers'] %}
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h2>Members & Associates</h2>
+    </div>
+  </div>
+    <!-- Print member's cotegories slidebar-->
+		<div class="hidden-xs hidden-sm col-md-3 col-lg-3 col-xl-3" id="printmenu">
+		  <nav id="myScrollspy" data-spy="affix" data-offset-top="50" style="position: fixed;width:200px">
+  			<div class="panel panel-default">
+  			  <div class="panel-heading">
+  				Contents
+  			  </div>
+  			  <ul class="nav nav-pills nav-stacked">
+  						<li><a href="#Faculty">Faculty Members</a></li>
+              <li><a href="#Senior">Senior Researchers</a></li>
+  						<li><a href="#Associate">Associate Researchers</a></li>
+              <li><a href="#Researchers">Researchers</a></li>
+  			  </ul>
+  			</div>
+		  </nav>
+		</div>
+    <!-- Print member's cotegories slidebar (mobsile view)-->
+    <div class="col-xs-12 col-sm-12 hidden-md hidden-lg hidden-xl" id="printmenu">
+      <nav>
+        <div class="panel panel-default">
+          <div class="panel-heading">
+          Contents
+          </div>
+          <ul class="nav nav-pills nav-stacked">
+            <li><a href="#Faculty">Faculty Members</a></li>
+            <li><a href="#Senior">Senior Researchers</a></li>
+            <li><a href="#Associate">Associate Researchers</a></li>
+            <li><a href="#Researchers">Researchers</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <div class="col-xs-12 col-sm-9 col-md-9 col-lg-9" id="printphoto">
+      {% for Category in member_categories %}
+        <!-- Print member categories -->
+        {% for article in articles_page.object_list %}
+          {% if article.member_category == Category %}
+            <div class = "row">
+              <h3 id="{{Category.partition(' ')[0]}}">{{Category}}</h3>
+            </div>
+            {% break %}
+         {% endif %}
+        {% endfor %}
+        <div class = "row">
+          <!-- Print members by surname order -->
+          {% for article in articles_page.object_list|sort(attribute='surname') %}
+            {% if article.member_category == Category %}
+        			<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4" id="printphoto">
+        			  <div class="thumbnail">
+                  <!-- Print every member's photo or default photo linked to its profile -->
+                  <a href="{{ SITEURL }}/{{ article.url }}">
+                    {% if article.photo %}
+                      <img src="{{ SITEURL }}/images/{{ article.photo }}" style="height:150px" class="img-responsive" alt="...">
+                    {% else %}
+                      <img src="{{ SITEURL }}/images/lamp.png" style="height:150px" class="img-responsive" alt="...">
+                    {% endif %}
+                    <!-- Print member's name & surname in seperated lines -->
+          					<div id="px1" class="caption">
+                      <h5>{{article.givenname}}</h5>
+          					  <h5>{{article.surname}}</h5>
+          					</div>
+                  </a>
+        			  </div>
+        			</div>
+            {% endif %}
+          {% endfor %}
+        </div>
+      {% endfor %}
+    </div>
+
+  <!-- Alumni Category -->
+  {% elif category|string() == 'alumni'%}
     <div class="panel panel-default">
       <div class="panel-heading">
-        {% if category|string() == 'members'%}
-	    <h2>Members & Associates</h2>
-	</div>
+        <h2>Alumni</h2>
       </div>
-        {% else %}
-	  <h2>Alumni</h2>
-	</div>
-      </div>
-      <p>BALab alumni have been associated with the lab in the past, e.g. as faculty members, PhD students, or
-      research associates, and have published at least one paper or substantially contributed to a software project
-      or data set as BALab members.
-      </p>
-        {% endif %}
+    </div>
+    <p>BALab alumni have been associated with the lab in the past, e.g. as faculty members, PhD students, or
+    research associates, and have published at least one paper or substantially contributed to a software project
+    or data set as BALab members.
+    </p>
     <!-- Print members by surname order -->
     {% for article in articles_page.object_list|sort(attribute='surname') %}
-			<div class="col-xs-12 col-sm-4 col-md-3 col-lg-3" id="printphoto">
-			  <div class="thumbnail">
+      <div class="col-xs-12 col-sm-4 col-md-3 col-lg-3" id="printphoto">
+        <div class="thumbnail">
           <!-- Print every member's photo or default photo linked to its profile -->
           <a href="{{ SITEURL }}/{{ article.url }}">
             {% if article.photo %}
@@ -34,13 +106,13 @@
             <img src="{{ SITEURL }}/images/lamp.png" style="height:150px" class="img-responsive" alt="...">
             {% endif %}
             <!-- Print member's name & surname in seperated lines -->
-  					<div id="px1" class="caption">
+            <div id="px1" class="caption">
               <h5>{{article.givenname}}</h5>
-  					  <h5>{{article.surname}}</h5>
-  					</div>
+              <h5>{{article.surname}}</h5>
+            </div>
           </a>
-			  </div>
-			</div>
+        </div>
+      </div>
     {% endfor %}
 
   <!-- Yearly Reports Category -->
@@ -86,10 +158,10 @@
     </div>
 
   <!-- Projects Category -->
-  {% else %}
+  {% elif category|string() == 'projects'%}
     <div class="panel panel-default">
       <div class="panel-heading">
-        <h2>Projects</h2>
+        <h2>Research Projects</h2>
       </div>
     </div>
     <div class="row">
@@ -140,10 +212,20 @@
            <div class="panel-body">
              <ul class="list-group">
                <ul>
-                 {% for article in articles|sort(attribute='title') %}
+                 {% for article in articles|sort(attribute='startdate',reverse=True) %}
                   {% if article.category|string() == 'projects' and article.completed == i|string %}
                   <p>
-		  <li><a href="{{ SITEURL }}/{{ article.url }}">{{ article.shortname }}</a> &mdash; {{article.projtitle}}</li>
+              		  <li>
+                      <a href="{{ SITEURL }}/{{ article.url }}">{{ article.shortname }}</a>
+                      <span>&mdash; {{article.projtitle}}</span>
+                      {% if article.completed == '1' %}
+                        {% if article.startdate[0:4] == article.enddate[0:4] %}
+                          <span>({{article.enddate[0:4]}})</span>
+                        {% else %}
+                          <span>({{article.startdate[0:4]}}&ndash;{{article.enddate[0:4]}})</span>
+                        {% endif%}
+                      {% endif%}
+                    </li>
                   </p>
                   {% endif %}
                  {% endfor %}

@@ -2,13 +2,14 @@ title: Dimitris - Mitropoulos
 date: 20070301
 joined_date: 20070301
 category: members
+member_category: Senior Researchers
 id: m_dimitro
 givenname: Dimitris
 surname: Mitropoulos
 memb_title: Dr.
 email: dimitro@aueb.gr
 web_site: https://dimitro.gr
-photo: m_dimitro_2.jpeg
+photo: m_dimitro_3.png
 web_log: http://xrds.acm.org/blog/author/dimitrism/
 phd_title: Secure Software Development Technologies
 phd_supervisor: m_dds
