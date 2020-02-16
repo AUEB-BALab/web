@@ -1,7 +1,7 @@
 title: SENECA
 date:  20150101
 category: projects
-completed: 0
+completed: 1
 id: p_seneca
 shortname: SENECA
 projtitle: Software ENgineering in Enterprise Cloud Applications
@@ -31,7 +31,7 @@ partner_website3: http://www.aueb.gr
 partner_shortname4: Universidad Rey Juan Carlos
 partner_country4: ES
 partner_website4: https://www.urjc.es/en/
-partner_shortname5: Bitergium SLL
+partner_shortname5: Bitergia SLL
 partner_country5: ES
 partner_website5: http://bitergia.com
 partner_shortname6: Technische Universiteit Delft
