@@ -6,9 +6,11 @@ member_category: Researchers
 id: m_zkotti
 givenname: Zoe
 surname: Kotti
-email: zoekotti@hotmail.com
-github: zoekt
+email: zoekotti@aueb.gr
+github: zkotti
 linkedin: zoe-kotti
 photo: zkotti.jpg
 
-Zoe is currently an undergraduate student at the Athens University of Economics and Business, Greece in the Department of Management Science and Technology. She is specializing in Operations Research and Business Analytics. Her interests vary from business to anything technology-related.
+Zoe holds a BSc in Management Science and Technology
+from the Athens University of Economics and Business.
+Her research interests lie in the areas of Data Science and Software Engineering.
