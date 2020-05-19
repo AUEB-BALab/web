@@ -1,7 +1,7 @@
 title: Tushar - Sharma
 date: 20151214
 joined_date: 20151214
-category: members 
+category: alumni
 member_category: Associate Researchers
 id: m_tushar
 givenname: Tushar
@@ -18,7 +18,8 @@ photo: m_tushar.jpg
 phd_title: Software Engineering in Enterprise Cloud Applications
 phd_supervisor: m_dds
 phd_startdate: 20151214
-phd_completed: 0
+phd_enddate: 20190502
+phd_completed: 1
 
 _Tushar Sharma_ is a researcher and PhD candidate at the Athens University of Economics and Business (AUEB), Department of Management Science and Technology. 
 
