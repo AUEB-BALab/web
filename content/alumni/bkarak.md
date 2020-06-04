@@ -1,7 +1,9 @@
 title: Vassilios - Karakoidas
 date: 20031114
 joined_date: 20031114
+end_date: 20150429
 category: alumni
+member_category: Senior Researchers
 id: m_bkarak
 givenname: Vassilios
 surname: Karakoidas

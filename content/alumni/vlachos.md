@@ -1,7 +1,9 @@
 title: Vasileios - Vlachos
 date: 20031114
 joined_date: 20031114
+end_date: 20070724
 category: alumni
+member_category: Senior Researchers
 id: m_vlachos
 givenname: Vasileios
 surname: Vlachos

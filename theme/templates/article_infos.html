@@ -3,6 +3,7 @@
 
 {% block content %}
 {% set publication_categories = ['Monographs and Edited Volumes','Journal Articles', 'Book Chapters', 'Conference Publications', 'Technical Reports','White Papers','Magazine Articles','Working Papers', 'Datasets'] %}
+{% set member_categories = ['Faculty Members' , 'Senior Researchers', 'Associate Researchers', 'Researchers'] %}
 
 <!-- Template for members and alumni -->
 {% if article.category|string() == 'members' or  article.category|string() == 'alumni' %}
@@ -449,9 +450,10 @@
         Contents
         </div>
         <ul class="nav nav-pills nav-stacked">
+          <li><a href="#overview">Overview in numbers</a></li>
           {% for publication in publications %}
             {% if publication.year == article.title %}
-             <li><a href="#publications">New Publications{{find}}</a></li>
+             <li><a href="#publications">New Publications</a></li>
              {% break %}
             {% endif %}
           {% endfor %}
@@ -504,47 +506,155 @@
         Contents
         </div>
         <ul class="nav nav-pills nav-stacked">
+          <li><a href="#overview">Overview in numbers</a></li>
+          <!-- Solution for Jinja 2.8.1. thanks to Jahid (https://stackoverflow.com/questions/7537439/how-to-increment-a-variable-on-a-for-loop-in-jinja-template?rq=1) -->
+          <!-- Put all the counters in a dictionary: -->
+          {% set counter = {
+            'total_new_publications': 0,
+            'total_monographs_volumes': 0,
+            'total_journals_articles': 0,
+            'total_book_chapters': 0,
+            'total_conferences': 0,
+            'total_technical_reports': 0,
+            'total_white_papers': 0,
+            'total_magazine_articles': 0,
+            'total_working_papers': 0,
+            'total_datasets': 0,
+            'total_new_projects': 0,
+            'total_ongoing_projects': 0,
+            'total_completed_projects': 0,
+            'total_members': 0,
+            'total_new_members': 0,
+            'total_faculty_members': 0,
+            'total_senior_researchers': 0,
+            'total_associate_researchers': 0,
+            'total_researchers': 0,
+            'total_ongoing_phds': 0,
+            'total_completed_phds': 0,
+            'total_new_seminars': 0,
+            } %}
+          <!-- Define a macro to increment them easily: -->
+          {% macro increment(dct, key, inc=1)%}
+              {% if dct.update({key: dct[key] + inc}) %} {% endif %}
+          {% endmacro %}
+
           {% for publication in publications %}
-           {% if publication.year == article.title%}
-            <li><a href="#publications">New Publications</a></li>
-            {% break %}
+           {% if publication.year == article.title %}
+             {% if counter['total_new_publications'] == 0 %}
+              <li><a href="#publications">New Publications</a></li>
+             {% endif %}
+             <!-- Counting number of new_publications -->
+             {{ increment(counter, 'total_new_publications') }}
+
+             {% if publication.XEcategory == 'Monographs and Edited Volumes' %}
+              {{ increment(counter, 'total_monographs_volumes') }}
+             {% endif %}
+             {% if publication.XEcategory == 'Journal Articles' %}
+              {{ increment(counter, 'total_journals_articles') }}
+             {% endif %}
+             {% if publication.XEcategory == 'Book Chapters' %}
+              {{ increment(counter, 'total_book_chapters') }}
+             {% endif %}
+             {% if publication.XEcategory == 'Conference Publications' %}
+              {{ increment(counter, 'total_conferences') }}
+             {% endif %}
+             {% if publication.XEcategory == 'Technical Reports' %}
+              {{ increment(counter, 'total_technical_reports') }}
+             {% endif %}
+             {% if publication.XEcategory == 'White Papers' %}
+              {{ increment(counter, 'total_white_papers') }}
+             {% endif %}
+             {% if publication.XEcategory == 'Magazine Articles' %}
+              {{ increment(counter, 'total_magazine_articles') }}
+             {% endif %}
+             {% if publication.XEcategory == 'Working Papers' %}
+              {{ increment(counter, 'total_working_papers') }}
+             {% endif %}
+             {% if publication.XEcategory == 'Datasets' %}
+              {{ increment(counter, 'total_datasets') }}
+             {% endif %}
            {% endif %}
           {% endfor %}
+
           {% for project in articles if project.category|string() == 'projects' %}
              {% if project.startdate[:4] == article.title%}
+              {% if counter['total_new_projects'] == 0 %}
                 <li><a href="#new_projects">New Projects</a></li>
-                {% break %}
+              {% endif %}
+                <!-- Counting number of new_projects -->
+               {{ increment(counter, 'total_new_projects') }}
               {% endif %}
           {% endfor %}
+
           {% for project in articles if project.category|string() == 'projects' %}
            {% if project.startdate[:4]|int() < article.title|int() and project.enddate[:4]|int() > article.title|int()%}
+             {% if counter['total_ongoing_projects'] == 0 %}
               <li><a href="#ongoing_projects">Ongoing Projects</a></li>
-              {% break %}
+             {% endif %}
+              <!-- Counting number of ongoing_projects -->
+              {{ increment(counter, 'total_ongoing_projects') }}
             {% endif %}
           {% endfor %}
+
           {% for project in articles if project.category|string() == 'projects' %}
              {% if project.enddate[:4] == article.title %}
+               {% if counter['total_completed_projects'] == 0 %}
                 <li><a href="#com_projects">Completed Projects</a></li>
-                {% break %}
+               {% endif %}
+                <!-- Counting number of completed_projects -->
+                {{ increment(counter, 'total_completed_projects') }}
               {% endif %}
           {% endfor %}
-          {% for member in articles if member.joined_date and member.joined_date[:4] == article.title %}
-		<li><a href="#members">New Members</a></li>
-		{% break %}
+
+          {% for member in articles if member.category|string() == 'members' or member.category|string() == 'alumni' %}
+            {% if (not member.end_date and member.joined_date[:4] <= article.title) or (member.end_date and member.joined_date[:4] <= article.title and member.end_date[:4] >= article.title) %}
+              {{ increment(counter, 'total_members') }}
+              {% if member.member_category == 'Faculty Members' %}
+                {{ increment(counter, 'total_faculty_members') }}
+              {% endif %}
+              {% if member.member_category == 'Senior Researchers' %}
+                {{ increment(counter, 'total_senior_researchers') }}
+              {% endif %}
+              {% if member.member_category == 'Associate Researchers' %}
+                {{ increment(counter, 'total_associate_researchers') }}
+              {% endif %}
+              {% if member.member_category == 'Researchers' %}
+                {{ increment(counter, 'total_researchers') }}
+              {% endif %}
+              {% if member.joined_date[:4] == article.title %}
+               {% if counter['total_new_members'] == 0 %}
+          		  <li><a href="#members">New Members</a></li>
+               {% endif %}
+                <!-- Counting number of new_members -->
+                {{ increment(counter, 'total_new_members') }}
+              {% endif %}
+            {% endif %}
           {% endfor %}
+
           {% for member in articles if member.phd_startdate and member.phd_startdate[0:4] <= article.title and (not member.phd_enddate or member.phd_enddate[0:4] > article.title) %}
+            {% if counter['total_ongoing_phds'] == 0 %}
               <li><a href="#Ongoing_PhDs">Ongoing PhDs</a></li>
-              {% break %}
+            {% endif %}
+            <!-- Counting number of ongoing_phds -->
+            {{ increment(counter, 'total_ongoing_phds') }}
           {% endfor %}
+
           {% for member in articles if member.phd_enddate and member.phd_enddate[0:4] == article.title and member.phd_completed == '1' %}
-	      <li><a href="#PhDs">Completed PhDs</a></li>
-	      {% break %}
+           {% if counter['total_completed_phds'] == 0 %}
+             <li><a href="#PhDs">Completed PhDs</a></li>
+           {% endif %}
+           <!-- Counting number of completed_phds -->
+           {{ increment(counter, 'total_completed_phds') }}
           {% endfor %}
+
           {% for seminar in articles if seminar.category|string() == 'seminars' %}
-             {% if seminar.date|strftime('%Y') == article.title %}
-	     <li><a href="#seminars">Seminars</a></li>
-                {% break %}
-             {% endif %}
+           {% if seminar.date|strftime('%Y') == article.title %}
+            {% if counter['total_new_seminars'] == 0 %}
+      	     <li><a href="#seminars">Seminars</a></li>
+            {% endif %}
+             <!-- Counting number of new_seminars -->
+             {{ increment(counter, 'total_new_seminars') }}
+           {% endif %}
           {% endfor %}
         </ul>
       </div>
@@ -552,6 +662,144 @@
     </div>
 
     <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-9" id="printurl">
+
+      <div class="panel panel-default" id="px2">
+        <div class="panel-heading">
+            <h3 id="overview">Overview in numbers</h3>
+        </div>
+        <div class="panel-body">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>New Publications</th>
+                <th style="text-align:right">Number</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Monographs and Edited Volumes</td>
+                <td style="text-align:right">{{ counter['total_monographs_volumes']}}</td>
+              </tr>
+              <tr>
+                <td>Journal Articles</td>
+                <td style="text-align:right">{{ counter['total_journals_articles'] }}</td>
+              </tr>
+              <tr>
+                <td>Book Chapters</td>
+                <td style="text-align:right">{{ counter['total_book_chapters'] }}</td>
+              </tr>
+              <tr>
+                <td>Conference Publications</td>
+                <td style="text-align:right">{{ counter['total_conferences'] }}</td>
+              </tr>
+              <tr>
+                <td>Technical Reports</td>
+                <td style="text-align:right">{{ counter['total_technical_reports'] }}</td>
+              </tr>
+              <tr>
+                <td>White Papers</td>
+                <td style="text-align:right">{{ counter['total_white_papers'] }}</td>
+              </tr>
+              <tr>
+                <td>Magazine Articles</td>
+                <td style="text-align:right">{{ counter['total_magazine_articles'] }}</td>
+              </tr>
+              <tr>
+                <td>Working Papers</td>
+                <td style="text-align:right">{{ counter['total_working_papers'] }}</td>
+              </tr>
+              <tr>
+                <td>Datasets</td>
+                <td style="text-align:right">{{ counter['total_datasets'] }}</td>
+              </tr>
+              <tr>
+                <td>Total New Publications</td>
+                <td style="text-align:right">{{ counter['total_new_publications'] }}</td>
+              </tr>
+            </tbody>
+            <thead>
+              <tr>
+                <th>Projects</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>New Projects</td>
+                <td style="text-align:right">{{ counter['total_new_projects'] }}</td>
+              </tr>
+              <tr>
+                <td>Ongoing Projects</td>
+                <td style="text-align:right">{{ counter['total_ongoing_projects'] }}</td>
+              </tr>
+              <tr>
+                <td>Completed Projects</td>
+                <td style="text-align:right">{{ counter['total_completed_projects'] }}</td>
+              </tr>
+            </tbody>
+            <thead>
+              <tr>
+                <th>Members</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Faculty Members</td>
+                <td style="text-align:right">{{ counter['total_faculty_members'] }}</td>
+              </tr>
+              <tr>
+                <td>Senior Researchers</td>
+                <td style="text-align:right">{{ counter['total_senior_researchers'] }}</td>
+              </tr>
+              <tr>
+                <td>Associate Researchers</td>
+                <td style="text-align:right">{{ counter['total_associate_researchers'] }}</td>
+              </tr>
+              <tr>
+                <td>Researchers</td>
+                <td style="text-align:right">{{ counter['total_researchers'] }}</td>
+              </tr>
+              <tr>
+                <td>Total Members</td>
+                <td style="text-align:right">{{ counter['total_members'] }}</td>
+              </tr>
+              <tr>
+                <td>New Members</td>
+                <td style="text-align:right">{{ counter['total_new_members'] }}</td>
+              </tr>
+            </tbody>
+            <thead>
+              <tr>
+                <th>PhDs</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Ongoing PhDs</td>
+                <td style="text-align:right">{{ counter['total_ongoing_phds'] }}</td>
+              </tr>
+              <tr>
+                <td>Completed PhDs</td>
+                <td style="text-align:right">{{ counter['total_completed_phds'] }}</td>
+              </tr>
+            </tbody>
+            <thead>
+              <tr>
+                <th>New Seminars</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>New Seminars</td>
+                <td style="text-align:right">{{ counter['total_new_seminars'] }}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
 
       <!-- Print pulications of this year, if exists -->
       {% for publication in publications %}
