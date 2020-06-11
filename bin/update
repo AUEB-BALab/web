@@ -12,6 +12,30 @@ error()
   exit 1
 }
 
+# See if used attributes (first argument)
+# are valid according to given file (second argument)
+validate_content_field()
+{
+  if ! find content -type f |
+  xargs grep -h '^'$1':' |
+  sed 's/[ \r]*$//' |
+  sort -u |
+  diff $2 -; then
+    error "Invalid $1 used; see above"
+  fi
+}
+
+# Check if all the files in the given folder (first argument)
+# have all the attributes listed in the given file (second argument)
+check_required_fields()
+{
+  for i in $(cat $2); do
+    for f in $(find $1 -type f); do
+      grep --ignore-case "$i" $f >/dev/null || error "Missing field $i in $f"
+    done
+  done
+}
+
 if [ $(whoami) = www-data ] ; then
   BASE=/var/www/balab/web-contents
 
@@ -26,14 +50,8 @@ fi
 rm -rf $BASE/stage
 mkdir -p $BASE/stage
 
-# See if used categories are valid
-if ! find content -type f |
-  xargs grep -h '^category:' |
-  sed 's/[ \r]*$//' |
-  sort -u |
-  diff doc/valid_categories - ; then
-    error 'Invalid content category used; see above'
-fi
+validate_content_attribute 'category' 'doc/valid_categories'
+validate_content_attribute 'member_category' 'doc/valid_member_categories'
 
 # Check for common errors in publications
 grep -iHn 'doi.*=.*https://doi\.org' content/pubs.bib && error 'DOIs should not include a URL'
@@ -41,12 +59,8 @@ grep -iHn '^[ 	]*year.*=[ 	]*{{' content/pubs.bib && error 'Years should not be 
 grep -iHn '^[ 	]*doi[ 	]=' content/pubs.bib && error 'Specify XEdoi rather than DOI'
 grep -iHn '^[ 	]*url[ 	]*=' content/pubs.bib && error 'Specify XEurl rather than URL'
 
-# Check for required seminar fields
-for i in presenter: date: 'category: seminars' ; do
-  for f in content/seminars/* ; do
-    grep "^$i" $f >/dev/null || error "Missing field $i in $f"
-  done
-done
+check_required_fields content/members doc/required_member_fields
+check_required_fields content/seminars doc/required_seminar_fields
 
 pelican content/ --output=$BASE/stage
 
