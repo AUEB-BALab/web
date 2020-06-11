@@ -14,6 +14,8 @@ error()
 
 # See if used attributes (first argument)
 # are valid according to given file (second argument)
+# e.g validate_content_field 'category' 'doc/valid_categories'
+# Where 'doc/valid_categories' has a valid value in every line
 validate_content_field()
 {
   if ! find content -type f |
@@ -27,6 +29,8 @@ validate_content_field()
 
 # Check if all the files in the given folder (first argument)
 # have all the attributes listed in the given file (second argument)
+# e.g check_required_fields 'content/members' 'doc/required_member_fields'
+# Where 'doc/required_seminar_fields' has required fields, in every line
 check_required_fields()
 {
   for i in $(cat $2); do
