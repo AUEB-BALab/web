@@ -33,11 +33,12 @@ validate_content_field()
 # Where 'doc/required_seminar_fields' has required fields, in every line
 check_required_fields()
 {
-  for i in $(cat $2); do
-    for f in $(find $1 -type f); do
-      grep --ignore-case "$i" $f >/dev/null || error "Missing field $i in $f"
+    find $1 -type f |
+    while IFS= read -r file; do
+      while IFS= read -r field || [ -n "${field}" ]; do
+        grep "^$field" $file > /dev/null || error "Missing field: $field in file $file"
+      done < $2
     done
-  done
 }
 
 if [ $(whoami) = www-data ] ; then
@@ -63,8 +64,8 @@ grep -iHn '^[ 	]*year.*=[ 	]*{{' content/pubs.bib && error 'Years should not be 
 grep -iHn '^[ 	]*doi[ 	]=' content/pubs.bib && error 'Specify XEdoi rather than DOI'
 grep -iHn '^[ 	]*url[ 	]*=' content/pubs.bib && error 'Specify XEurl rather than URL'
 
-check_required_fields content/members doc/required_member_fields
-check_required_fields content/seminars doc/required_seminar_fields
+check_required_fields content/members doc/required_member_fields || error "Could not read required member fields"
+check_required_fields content/seminars doc/required_seminar_fields || error "Could not read required seminar fields"
 
 pelican content/ --output=$BASE/stage
 
