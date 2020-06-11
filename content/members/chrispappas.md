@@ -2,6 +2,7 @@ title: Christos - Pappas
 date: 20200610
 joined_date: 20200610
 category: members
+member_category: Researchers
 id: chrispappas
 givenname: Christos
 surname: Pappas

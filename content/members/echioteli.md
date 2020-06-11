@@ -1,11 +1,11 @@
 title: Efstathia Chioteli
-Givenname: Efstathia
-Surname: Chioteli
+givenname: Efstathia
+surname: Chioteli
 date: 20170818
 joined_date: 20170701
 category: members
 member_category: Researchers
-Photo: stathoula.jpg
+photo: stathoula.jpg
 id: echioteli
 email: hioteli_st@hotmail.com
 github: stathoula

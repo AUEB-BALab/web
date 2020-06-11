@@ -1,11 +1,11 @@
 title: Ioannis Batas
-Givenname: Ioannis
-Surname: Batas
+givenname: Ioannis
+surname: Batas
 date: 20170819
 joined_date: 20170301
 category: members
 member_category: Researchers
-Photo: impatas.jpg
+photo: impatas.jpg
 web_site: https://www.linkedin.com/in/giannisbatas/
 id: impatas
 email: impatas@dmst.aueb.gr

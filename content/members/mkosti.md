@@ -2,6 +2,7 @@ title: Makrina Viola - Kosti
 date: 20200117
 joined_date: 20200117
 category: members
+member_category: Researchers
 id: mkosti
 givenname: Makrina Viola
 surname: Kosti
