@@ -2,7 +2,6 @@ title: GivenName - Surname (Required)
 date: YYYYMMDD !write the date that you joined (Required)
 joined_date: YYYYMMDD !write the date that you joined (Required)
 category: members (if member) or alumni (if alumni) BE CAREFUL: write it exactly as you see it
-member_category: Researchers or Associate Researchers or Senior Researchers or Faculty Members BE CAREFUL: write it exactly as you see it
 id: (Required)
 givenname: (Required)
 surname: (Required)
