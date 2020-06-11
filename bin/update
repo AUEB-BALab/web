@@ -50,8 +50,8 @@ fi
 rm -rf $BASE/stage
 mkdir -p $BASE/stage
 
-validate_content_attribute 'category' 'doc/valid_categories'
-validate_content_attribute 'member_category' 'doc/valid_member_categories'
+validate_content_field 'category' 'doc/valid_categories'
+validate_content_field 'member_category' 'doc/valid_member_categories'
 
 # Check for common errors in publications
 grep -iHn 'doi.*=.*https://doi\.org' content/pubs.bib && error 'DOIs should not include a URL'
