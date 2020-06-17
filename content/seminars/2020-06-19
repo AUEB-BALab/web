@@ -1,0 +1,4 @@
+title: Use of Neural Networks to Improve Fuzzing: Charalambos Mitropoulos date: 2020-06-19 category: seminars
+
+Abstract: In this short seminar, after we present our recent work in fuzzing Android Native Libraries,
+we will say a few words, how we can improve fuzzing with the use of Neural Networks.
