@@ -1,7 +1,7 @@
 title: Aris - Pattakos
 date: 20171001
 joined_date: 20171001
-end_date: 20200622
+end_date: 20200621
 category: members
 member_category: Researchers
 id: a_pattakos
