@@ -2,7 +2,7 @@ Title: Alexandros - Lattas
 Date: 20200405
 joined_date: 20160712
 end_date: 20170530
-Category: alumni
+category: alumni
 member_category: Researchers
 Id: lattas
 givenname: Alexandros
