@@ -1,5 +1,6 @@
 title: Nikolas - Doureliadis
 date: 20170213
+end_date: 20200622
 joined_date: 20170213
 category: members
 member_category: Researchers
