@@ -76,6 +76,8 @@ To contribute to the web site you need to follow these steps.
 * To add a new email recipient add the name in the file `content/mail-extra`.
 * To update a static page (ex. PhD Student Achievements), go to `pages`, follow the existing structure and use class="img-responsive" for images.
 * To modify an existing page, edit the corresponding file.
+* To add a yearly report (e.g. _Yearly Report 2020_),
+  create a file under `content/yearly_reports`.
 
 ## Technical details
 
