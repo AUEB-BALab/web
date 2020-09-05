@@ -3,12 +3,35 @@ slug: phd_achievements
 
 <div class="panel panel-default" id="achievements">
   <div class="panel-heading">
-    <h2>PhD Student Achievements</h2>
+    <h2>Member Achievements</h2>
   </div>
 
   <div class="panel-body">
     <div class="row">
     <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+
+      <h3>June 2020</h3>
+      <p>
+        <b>Thodoris Sotiropoulos</b>
+	publishes a paper in a top-rated conference:
+	"Practical fault detection in Puppet programs"
+	<cite>42nd International Conference on Software Engineering</cite>.
+      </p>
+
+      <h3>May 2019</h3>
+      <p>
+        <b>Zoe Kotti</b> received the ACM SIGSOFT Distinguished Paper Award
+	for her conference paper
+	"Standing on Shoulders or Feet? The Usage of the MSR Data Papers"
+	published at the
+	<cite>16th International Conference on Mining Software Repositories</cite>
+      </p>
+
+      <h3>May 2019</h3>
+      <p>
+      <img src="../images/phd.png" border="0" align="right" alt="PhD logo">
+      <b>Tushar Sharma</b> successfully defends his PhD thesis.
+      </p>
 
       <h3>May 2018</h3>
       <p>
@@ -37,7 +60,6 @@ slug: phd_achievements
         </a>.
         <cite>Journal of Systems and Software</cite>, April 2018.
       </p>
-
 
       <h3>March 2018</h3>
       <p>
