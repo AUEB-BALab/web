@@ -78,7 +78,8 @@ To contribute to the web site you need to follow these steps.
 * To modify an existing page, edit the corresponding file.
 * To add a yearly report (e.g. _Yearly Report 2020_),
   create a file under `content/yearly_reports`.
-
+* To make members alumni, move them to the `alumni` directory and change
+  their `category` from `members` to `alumni`.
 ## Technical details
 
 The site is implemented using [Pelican](http://docs.getpelican.com/en/stable/).
