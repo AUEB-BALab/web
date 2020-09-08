@@ -67,7 +67,7 @@ To contribute to the web site you need to follow these steps.
     * 'White Papers'
     * 'Magazine Articles'
     * 'Working Papers'
-* To add a new associate, add a file under `content/alumni`,
+* To add a new associate, add a file under `content/members`,
   using [this template](https://raw.githubusercontent.com/AUEB-BALab/web/master/doc/templates/member-associate-example.md).
 * To add a new project, add a file under `content/projects`,
   using [this template](https://raw.githubusercontent.com/AUEB-BALab/web/master/doc/templates/project-example.md).
