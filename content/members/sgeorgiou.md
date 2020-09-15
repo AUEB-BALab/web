@@ -14,20 +14,15 @@ phd_supervisor: m_dds
 phd_startdate: 20160104
 phd_completed: 0
 
-_Stefanos Georgiou_ is a PhD Candidate in SENECA (Software ENineering in Enterprise Cloud Applications) project.  
-In the context of his European Industrial Doctorate (Eid) he is expected to conduct his research at  
-AUEB (Athens University of Economics and Business) and TU Deflt (Delft University) as academic partners  
-and with SLG (Singular Logic) as industrial partner.  
-He holds a BSc in Networks and Systems Programming from University of Cyprus and a MSc in PERCCOM  
-(PERvasive Computing and COMmunications for sustainable development), a joint Master Degree from four  
-different Universities (i.e., University of Lorraine, Lappeenranta University of Technology, Lulea University of Technology,  
-and ITMO University of Saint Petersburg).
+_Stefanos Georgiou_ is a PhD candidate at Athens University of Economics and Business (AUEB).
+Currently, he is pursuing his PhD, which is part of the Software ENgineering in Enterprise Cloud Applications
+project ([SENECA](https://cordis.europa.eu/project/id/642954)), a Marie-Curie European Industrial Doctorate funded  program.
+For his PhD studies, he is supervised by [Prof. Diomidis Spinellis](https://www2.dmst.aueb.gr/dds/) from AUEB,
+and together they have performed several empirical research studies to identify software engineering practices
+and techniques to reduce software’s energy consumption.   
+Stefanos also holds a BSc in Networks and Systems Programming from the University of Cyprus
+and an MSc in PERvasive Computing and COMmunications for sustainable development ([PERCCOM](http://perccom.univ-lorraine.fr/)),
+a joint Master Degree from four different Universities.
 
-His research interests lie at Green IT, Cloud Computing, Distributed Applications,Big Data Transfer,  
-and IoT (Internet of Things)
-
-His current PhD position is founded by Marie Sklodowska-Curie from framework Horizon 2020.  
-As a PhD is to provide energy-efficient approach on cloud computing systems using software  
-engineering techniques and practices.  
-However, in the context of his industrial PhD position task like writing proposals  
-, such as RIA (Research Innovation Action) is one of his duties in SLG.
+His research interests lie primarily in the area of Energy-Efficient Software Development, Mining Software Repositories,
+and Web Technologies.
