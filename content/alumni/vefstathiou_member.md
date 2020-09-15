@@ -1,7 +1,7 @@
 title: Vasiliki - Efstathiou
 date: 20170410
 joined_date: 20170410
-category: members
+category: alumni
 member_category: Senior Researchers
 id: v_efstathiou
 givenname: Vasiliki
