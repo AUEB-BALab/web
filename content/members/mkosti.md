@@ -9,6 +9,7 @@ surname: Kosti
 memb_title: Dr.
 email: mkosti@csd.auth.gr
 phd_completed: 1
+photo: mkosti.jpg
 
 
 Dr. Makrina Viola Kosti received her BSc degree in Informatics at the Aristotle University of Thessaloniki (AUTh). 
