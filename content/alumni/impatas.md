@@ -3,19 +3,19 @@ givenname: Ioannis
 surname: Batas
 date: 20170819
 joined_date: 20170301
+end_date: 20200131
 category: alumni
 member_category: Researchers
 photo: impatas.jpg
-web_site: https://www.linkedin.com/in/giannisbatas/
+web_site: https://batas.io
+github: ioannisbat
+linkedin: ioannisbatas
 id: impatas
-email: impatas@dmst.aueb.gr
+email: ibatas@protonmail.com
 
 <p>
-Ioannis Batas is an undergraduate Management Science and Technology student at the Athens University of Economics and Business (AUEB)
+Ioannis holds a degree in Management Science and Technology from the Athens University of Economics and Business. During his active years at the Business Analytics Laboratory, he did a research ("Does Unit-Tested Code Crash? A Case Study of Eclipse") with Efstathia Chioteli and Diomidis Spinellis and developed the Laboratory's website with the same collegues. 
 </p>
 <p>
-Ioannis has a passion for tech-related startups; being co-founder of MyPharmacy, TripSleep, Instashop and Yayaka and mentor at Junior Achievement. Furthermore, he gets involved in many social activities; being in the Organizing Committee of TEDxAcademy, Athens Startup Weekend University and DMST Student Conference and member of AIESEC.
-</p>
-<p>
-Since the first year of university, Ioannis has acquired fundamental programming skills (programming languages, data structures and web frameworks) and has developed several web applications.
+He did his one-year internship at CERN, where he developed websites for the Theoretical Physics department. Ioannis has also developed and designed his own web and mobile apps which you can find in his portfolio (https://batas.io)
 </p>
