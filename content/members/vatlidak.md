@@ -15,10 +15,7 @@ phd_supervisor: Roxana Geambasu
 phd_startdate: 2013101
 phd_enddate: 20201111
 phd_completed: 1
-phd_summary: The main focus of my Ph.D. was how to build systems 
-that test cloud services in an automatic, efficient, and 
-learning-based way for reliability, scalability, and 
-performance issues through their APIs.
+phd_summary: The main focus of my Ph.D. was how to build systems  that test cloud services in an automatic, efficient, and  learning-based way for reliability, scalability, and  performance issues through their APIs.
 
 
 _Vaggelis Atlidakis_ is a post doctoral researcher at [Brown University](https://www.brown.edu/),
