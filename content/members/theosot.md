@@ -12,7 +12,7 @@ fax:
 office_address: 
 postal_address: 
 photo: theosotr.jpg
-phd_title: Techniques for Improving the Reliability of Event-Driven Programs
+phd_title: Techniques for Improving the Reliability of the Event-Driven Programs
 phd_supervisor: m_dds
 phd_startdate: 20181203
 phd_completed: 0
@@ -20,9 +20,9 @@ phd_completed: 0
 _Thodoris Sotiropoulos_ is a PhD candidate
 at the Department of Management Science and Technology.
 He holds an MSc with distinction in Advanced Computing from Imperial College London,
-and a BSc in Management Science and Technology from Athens University of Economics and Business.
+and a BSc in Management Science and Technology from the Athens University of Economics and Business.
 He has previously worked in industry as a software engineer
-at Greek Research and Technology Network (GRNET).
+at the Greek Research and Technology Network (GRNET).
 
 His main research interests include programming languages,
 program analysis,
