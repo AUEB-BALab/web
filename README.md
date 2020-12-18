@@ -59,7 +59,7 @@ To contribute to the web site you need to follow these steps.
     and change the url field to XEurl field and the doi field to XEdoi.
   * Look at existing entries for examples.
   * Use only the following text in `XEcategory`:
-    * 'Monographs and Edited Volumes'
+    * 'Monographs and Edited Volumes' 
     * 'Journal Articles'
     * 'Book Chapters'
     * 'Conference Publications'
