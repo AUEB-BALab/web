@@ -74,9 +74,12 @@ To contribute to the web site you need to follow these steps.
 * To add new software, add a file under `content/software`,
   using [this template](https://raw.githubusercontent.com/AUEB-BALab/web/master/doc/templates/software-example.md).
 * To add a new email recipient add the name in the file `content/mail-extra`.
-* To update a static page (ex. PhD Student Achievements), go to `pages`, follow the existing structure and use class="img-responsive" for images.
+* To update a static page (ex. Member Achievements), go to `pages`, follow the existing structure and use class="img-responsive" for images.
 * To modify an existing page, edit the corresponding file.
-
+* To add a yearly report (e.g. _Yearly Report 2020_),
+  create a file under `content/yearly_reports`.
+* To make members alumni, move them to the `alumni` directory and change
+  their `category` from `members` to `alumni`.
 ## Technical details
 
 The site is implemented using [Pelican](http://docs.getpelican.com/en/stable/).

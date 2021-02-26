@@ -2,32 +2,23 @@ title: Stefanos - Georgiou
 date: 20151216
 joined_date: 20151216
 category: members 
-member_category: Associate Researchers
+member_category: Senior Researchers
 id: m_sgeorgiou
 givenname: Stefanos
 surname: Georgiou
-memb_title: Mr.
+memb_title: Dr.
 email: sgeorgiou@aueb.gr
+web_site: https://stefanos1316.github.io/my_portfolio/home.html
 photo: sgeorgiou_small.jpg
-phd_title: Energy Efficiency in Cloud Computing
+phd_title: Energy and Run-Time Performance Practices in Software Engineering
 phd_supervisor: m_dds
 phd_startdate: 20160104
-phd_completed: 0
+phd_enddate: 20210201
+phd_completed: 1
+phd_summary: Energy efficiency for computer systems is an ever-growing matter that has caught the attention of the software engineering community. Although hardware design and utilization are undoubtedly key factors affecting energy consumption, there is solid evidence that software design can also significantly alter the energy consumption of IT products. In this thesis, we investigate the energy and run-time performance implications of various programming languages and remote Inter-Process Communication technologies in order to suggest which to use for specific cases. Moreover, through our investigation, we find that security mechanisms can affect real-world applications (i.e., Apache, Nginx, Redis, Memcached) energy and run-time performance up to 20%.
 
-_Stefanos Georgiou_ is a PhD Candidate in SENECA (Software ENineering in Enterprise Cloud Applications) project.  
-In the context of his European Industrial Doctorate (Eid) he is expected to conduct his research at  
-AUEB (Athens University of Economics and Business) and TU Deflt (Delft University) as academic partners  
-and with SLG (Singular Logic) as industrial partner.  
-He holds a BSc in Networks and Systems Programming from University of Cyprus and a MSc in PERCCOM  
-(PERvasive Computing and COMmunications for sustainable development), a joint Master Degree from four  
-different Universities (i.e., University of Lorraine, Lappeenranta University of Technology, Lulea University of Technology,  
-and ITMO University of Saint Petersburg).
-
-His research interests lie at Green IT, Cloud Computing, Distributed Applications,Big Data Transfer,  
-and IoT (Internet of Things)
-
-His current PhD position is founded by Marie Sklodowska-Curie from framework Horizon 2020.  
-As a PhD is to provide energy-efficient approach on cloud computing systems using software  
-engineering techniques and practices.  
-However, in the context of his industrial PhD position task like writing proposals  
-, such as RIA (Research Innovation Action) is one of his duties in SLG.
+_Stefanos Georgiou_ is a PostDoctoral Researcher at the [Software Evolution & Analytics Lab (SEAL)](https://seal-queensu.github.io/)
+of Queen's University in Kingston, Canada.
+He holds a PhD in Computer Science from the Athens University of Economics and Business
+and he was supervised by [Prof. Diomidis Spinellis](https://www2.dmst.aueb.gr/dds/).
+His research interest lies in energy-efficiency, mining software repositories, and software engineering.
