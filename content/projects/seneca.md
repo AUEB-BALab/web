@@ -12,7 +12,7 @@ our_budget:
 total_budget: 2,236,902 euro
 funding_agency: SENECA is a European Industrial Doctorate project, funded under Marie-Skłodowska Curie Actions.
 funding_programme: European Industrial Doctorates
-project_code: (2014)4071968
+project_code: H2020-MSCA-ITN-2014 642954
 logo: marie-curie.jpg  
 scientific_coordinator: m_dds
 contact: m_mfrag
