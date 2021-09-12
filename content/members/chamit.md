@@ -9,12 +9,12 @@ surname: Mitropoulos
 memb_title: 
 email: charalambos.mitropoulos@gmail.com 
 web_site: 
-mobile_phone: +30 6980645191
 fax: 
 office_address: 
 postal_address: 
 photo: chamit.jpg
 
-Mitropoulos Charalambos-Ioannis holds an MSc in Information Systems 
-from the Department Of Informatics of Athens University of Economics and Business and 
-a BSc from the Department of Informatics and Telecommunications of the National and Kapodistrian University of Athens.
+Charalambos Mitropoulos is a PhD student at the [Technical University of Crete](https://www.tuc.gr/).
+Charalambos holds an MSc in Information Systems 
+from the Department of Informatics of the Athens University of Economics and Business,
+and a BSc from the Department of Informatics and Telecommunications of the National and Kapodistrian University of Athens.
