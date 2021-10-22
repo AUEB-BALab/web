@@ -1,7 +1,7 @@
 title: Michael - Loukeris
 date: 20190205
 joined_date: 20190205
-category: members
+category: alumni
 member_category: Researchers
 id: mloukeris
 givenname: Michael
