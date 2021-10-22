@@ -1,7 +1,7 @@
 title: George - Theodorou
 date: 20200909
 joined_date: 20200909
-category: members
+category: alumni
 member_category: Researchers
 id: (Required)
 givenname: George
