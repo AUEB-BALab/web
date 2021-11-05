@@ -1,7 +1,7 @@
 title: Stefanos - Georgiou
 date: 20151216
 joined_date: 20151216
-category: members 
+category: alumni
 member_category: Senior Researchers
 id: m_sgeorgiou
 givenname: Stefanos
