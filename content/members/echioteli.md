@@ -3,8 +3,7 @@ givenname: Efstathia
 surname: Chioteli
 date: 20170818
 joined_date: 20170701
-end_date: 20200331
-category: alumni
+category: members
 member_category: Researchers
 photo: stathoula.jpg
 id: echioteli

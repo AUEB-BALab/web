@@ -3,8 +3,7 @@ givenname: Ioannis
 surname: Batas
 date: 20170819
 joined_date: 20170301
-end_date: 20200131
-category: alumni
+category: members
 member_category: Researchers
 photo: impatas.jpg
 web_site: https://batas.io
