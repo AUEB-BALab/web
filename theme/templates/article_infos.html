@@ -671,57 +671,19 @@
 	<div class="panel-body">
 
 	  <!-- Print faculty members of this year -->
-	  <h4 id="faculty_members">Faculty Members</h3>
-	  <ul>
-	    {% for member in articles if member.joined_date and member.joined_date[:4] <= article.title and (not member.end_date or member.end_date >= article.title) and member.member_category == 'Faculty Members' %}
-		<p>
-		 <li>
-		   {{ member.givenname }} {{ member.surname }}
-		   <a href="{{ SITEURL }}/{{ member.url }}"><span class="glyphicon glyphicon-new-window"></span></a>
-		 </li>
-		</p>
-	    {% endfor %}
-	  </ul>
-
-	 <!-- Print senior researchers of this year -->
-	 <h4 id="senior_researchers">Senior Researchers</h3>
-	  <ul>
-	    {% for member in articles if member.joined_date and member.joined_date[:4] <= article.title and (not member.end_date or member.end_date >= article.title) and member.member_category == 'Senior Researchers' %}
-		<p>
-		 <li>
-		   {{ member.givenname }} {{ member.surname }}
-		   <a href="{{ SITEURL }}/{{ member.url }}"><span class="glyphicon glyphicon-new-window"></span></a>
-		 </li>
-		</p>
-	    {% endfor %}
-	  </ul>
-
-      	    <!-- Print associate researchers of this year -->
-	    <h4 id="associate_researchers">Associate Researchers</h3>
+	  {% for Category in member_categories %}
+	    <h4 id="{{Category}}">{{Category}}</h3>
 	    <ul>
-	    {% for member in articles if member.joined_date and member.joined_date[:4] <= article.title and (not member.end_date or member.end_date >= article.title) and member.member_category == 'Associate Researchers' %}
-		<p>
-		 <li>
-		   {{ member.givenname }} {{ member.surname }}
-		   <a href="{{ SITEURL }}/{{ member.url }}"><span class="glyphicon glyphicon-new-window"></span></a>
-		 </li>
-		</p>
-	    {% endfor %}
-	  </ul>
-
-	    <!-- Print researchers of this year -->
-	    <h4 id="researchers">Researchers</h3>
-	    <ul>
-	    {% for member in articles if member.joined_date and member.joined_date[:4] <= article.title and (not member.end_date or member.end_date >= article.title) and member.member_category == 'Researchers' %}
-		<p>
-		 <li>
-		   {{ member.givenname }} {{ member.surname }}
-		   <a href="{{ SITEURL }}/{{ member.url }}"><span class="glyphicon glyphicon-new-window"></span></a>
-		 </li>
-		</p>
-	    {% endfor %}
-	  </ul>
-	</ul>
+	      {% for member in articles if member.joined_date and member.joined_date[:4] <= article.title and (not member.end_date or member.end_date >= article.title) and member.member_category == Category %}
+		  <p>
+		   <li>
+		     {{ member.givenname }} {{ member.surname }}
+		     <a href="{{ SITEURL }}/{{ member.url }}"><span class="glyphicon glyphicon-new-window"></span></a>
+		   </li>
+		  </p>
+	      {% endfor %}
+	    </ul>
+	  {% endfor %}
       </div>
 
       <div class="panel panel-default" id="px2">
@@ -964,7 +926,7 @@
         {% endif %}
       {% endfor %}
 
-      <!-- Print members of this year, if exists -->
+      <!-- Print new members of this year, if exists -->
       {% for member in articles if member.joined_date and member.joined_date[:4] == article.title %}
            <div class="panel panel-default" id="px2">
              <div class="panel-heading">
