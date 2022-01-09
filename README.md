@@ -118,3 +118,4 @@ To install Pelican you need:
 ### Creating the site
 * Locally: `pelican content/`
 * To update the web site on the server: `bin/update/`
+* For a quick update (without pull and verifications) run `pelican content/ --output=balab/stage/`.
