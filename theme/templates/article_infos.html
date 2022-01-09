@@ -450,6 +450,7 @@
         Contents
         </div>
         <ul class="nav nav-pills nav-stacked">
+	  <li><a href="#members">Members</a></li>
           <li><a href="#overview">Overview in numbers</a></li>
           {% for publication in publications %}
             {% if publication.year == article.title %}
@@ -476,7 +477,7 @@
               {% endif %}
           {% endfor %}
           {% for member in articles if member.joined_date and member.joined_date[:4] == article.title %}
-	      <li><a href="#members">New Members</a></li>
+	      <li><a href="#new_members">New Members</a></li>
 	      {% break %}
           {% endfor %}
           {% for member in articles if member.phd_startdate and member.phd_startdate[0:4] <= article.title and (not member.phd_enddate or member.phd_enddate[0:4] > article.title) %}
@@ -623,7 +624,7 @@
               {% endif %}
               {% if member.joined_date[:4] == article.title %}
                {% if counter['total_new_members'] == 0 %}
-          		  <li><a href="#members">New Members</a></li>
+          		  <li><a href="#new_members">New Members</a></li>
                {% endif %}
                 <!-- Counting number of new_members -->
                 {{ increment(counter, 'total_new_members') }}
@@ -662,6 +663,66 @@
     </div>
 
     <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-9" id="printurl">
+
+      <div class="panel panel-default" id="px2">
+        <div class="panel-heading">
+	     <h3 id="members">Members</h3>
+	</div>
+	<div class="panel-body">
+
+	  <!-- Print faculty members of this year -->
+	  <h4 id="faculty_members">Faculty Members</h3>
+	  <ul>
+	    {% for member in articles if member.joined_date and member.joined_date[:4] <= article.title and (not member.end_date or member.end_date >= article.title) and member.member_category == 'Faculty Members' %}
+		<p>
+		 <li>
+		   {{ member.givenname }} {{ member.surname }}
+		   <a href="{{ SITEURL }}/{{ member.url }}"><span class="glyphicon glyphicon-new-window"></span></a>
+		 </li>
+		</p>
+	    {% endfor %}
+	  </ul>
+
+	 <!-- Print senior researchers of this year -->
+	 <h4 id="senior_researchers">Senior Researchers</h3>
+	  <ul>
+	    {% for member in articles if member.joined_date and member.joined_date[:4] <= article.title and (not member.end_date or member.end_date >= article.title) and member.member_category == 'Senior Researchers' %}
+		<p>
+		 <li>
+		   {{ member.givenname }} {{ member.surname }}
+		   <a href="{{ SITEURL }}/{{ member.url }}"><span class="glyphicon glyphicon-new-window"></span></a>
+		 </li>
+		</p>
+	    {% endfor %}
+	  </ul>
+
+      	    <!-- Print associate researchers of this year -->
+	    <h4 id="associate_researchers">Associate Researchers</h3>
+	    <ul>
+	    {% for member in articles if member.joined_date and member.joined_date[:4] <= article.title and (not member.end_date or member.end_date >= article.title) and member.member_category == 'Associate Researchers' %}
+		<p>
+		 <li>
+		   {{ member.givenname }} {{ member.surname }}
+		   <a href="{{ SITEURL }}/{{ member.url }}"><span class="glyphicon glyphicon-new-window"></span></a>
+		 </li>
+		</p>
+	    {% endfor %}
+	  </ul>
+
+	    <!-- Print researchers of this year -->
+	    <h4 id="researchers">Researchers</h3>
+	    <ul>
+	    {% for member in articles if member.joined_date and member.joined_date[:4] <= article.title and (not member.end_date or member.end_date >= article.title) and member.member_category == 'Researchers' %}
+		<p>
+		 <li>
+		   {{ member.givenname }} {{ member.surname }}
+		   <a href="{{ SITEURL }}/{{ member.url }}"><span class="glyphicon glyphicon-new-window"></span></a>
+		 </li>
+		</p>
+	    {% endfor %}
+	  </ul>
+	</ul>
+      </div>
 
       <div class="panel panel-default" id="px2">
         <div class="panel-heading">
@@ -812,7 +873,7 @@
              {% for Category in publication_categories %}
                  {% for publication in publications %}
                   {% if publication.XEcategory == Category and publication.year == article.title%}
-                   <h4 style="color:#203864;">{{Category}}</h4>
+		  <h4 style="color:#203864;" id="{{Category}}">{{Category}}</h4>
                    {% break %}
                   {% endif %}
                  {% endfor %}
@@ -907,7 +968,7 @@
       {% for member in articles if member.joined_date and member.joined_date[:4] == article.title %}
            <div class="panel panel-default" id="px2">
              <div class="panel-heading">
-                 <h3 id="members">New Members</h3>
+                 <h3 id="new_members">New Members</h3>
              </div>
              <ul class="list-group">
                <ul>
