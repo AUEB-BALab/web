@@ -6,7 +6,7 @@ Id: fasten
 shortname: FASTEN
 projtitle: Fine-Grained Analysis of Software Ecosystems as Networks
 startdate: 20190101
-enddate: 20211231
+enddate: 20220630
 web_site: https://www.fasten-project.eu/
 total_budget: 3,219,697 euros
 funding_agency: EU H2020
