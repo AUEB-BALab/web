@@ -19,6 +19,14 @@ slug: phd_achievements
 	<cite>43rd International Conference on Software Engineering</cite>
       </p>
 
+	  <h3>April 2021</h3>
+      <p>
+        <b>Dimitris Mitropoulos</b> gets hired as an assistant professor
+        at the National and Kapodistrian University of Athens in
+		the Department of Business Administration.
+      </p>
+
+
       <h3>February 2021</h3>
       <p>
       <img src="../images/phd.png" border="0" align="right" alt="PhD logo">
