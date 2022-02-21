@@ -2,7 +2,7 @@ title: Stefanos - Chaliasos
 date: 20171015
 joined_date: 20171015
 category: members
-member_category: Researchers
+member_category: Associate Researchers
 id: m_schaliasos
 givenname: Stefanos
 surname: Chaliasos
