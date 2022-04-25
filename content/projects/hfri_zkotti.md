@@ -16,4 +16,16 @@ contact: m_zkotti
 type: rtd
 international: no
 
-The HFRI scholarship aims to support PhD candidate [Zoe Kotti](https://www.balab.aueb.gr/zoe-kotti.html) to conduct her doctoral dissertation in the Department of Management Science and Technology at the Athens University of Economics and Business, Greece.
+The project aims to improve the robustness of software packages by reforming unstable packages
+identified through the analysis of ecosystem-wide fine-grained dependency networks.
+Objectives include the intrinsic improvement of the robustness of software packages,
+the assistance of package managers (e.g., Maven, PyPI) in maintaining, improving,
+and extending their packages in a robust manner through change impact estimation
+(without, e.g., breaking downstream applications due to changes in their own methods and interfaces),
+and the indirect assistance of developers in including more stable packages in their projects.
+Existing work is limited to the construction and analysis of fine-grained package dependency networks,
+without systematically resolving any identified unstable packages,
+leaving the required action to the developers’ and package managers’ discretion.
+Therefore, the proposed research extends and advances existing work
+by practically resolving unstable packages resulting from the analysis of
+fine-grained dependency networks through their systematic reformation.
