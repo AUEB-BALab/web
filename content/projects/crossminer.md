@@ -1,7 +1,7 @@
 title: CROSSMINER
 date: 20170101
 category: projects
-completed: 0
+completed: 1
 id: crossminer
 shortname: CROSSMINER
 projtitle: Developer-Centric Knowledge Mining from Large Open-Source Software Repositories
