@@ -1,5 +1,5 @@
 title: Rafaila - Galanopoulou
-date: 20200529
+date: 20220512
 joined_date: 20200529
 category: members
 member_category: Researchers
@@ -7,10 +7,9 @@ id: m_rafailagln
 givenname: Rafaila
 surname: Galanopoulou
 email: rafgalan98@gmail.com
-github: Rafaila98
+github: rafailagln
 linkedin: rafaila-galanopoulou
 photo: rafailagln.jpg
 <p>
-Rafaila Galanopoulou is an undergraduate student at the Athens University of Economics and Business (AUEB) in the Department of Management Science and Technology. Her major field is Software and Data Analysis Technologies.
-Her research interests include Software Engineering, Software Quality Analysis and Security.
+_Rafaila Galanopoulou_ holds a Bachelor from the Department of Management Science & Technology. Her major field was Software and Data Analysis Technologies. She is an independent researcher associated with the Business Analytics Laboratory while her research interests include Software Engineering, Machine Learning and Software Quality Analysis.
 </p>
