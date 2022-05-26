@@ -17,14 +17,16 @@ phd_supervisor: m_dds
 phd_startdate: 20181203
 phd_completed: 0
 
-_Thodoris Sotiropoulos_ is a PhD candidate
-at the Department of Management Science and Technology.
-He holds an MSc with distinction in Advanced Computing from Imperial College London,
-and a BSc in Management Science and Technology from the Athens University of Economics and Business.
-He has previously worked in industry as a software engineer
-at the Greek Research and Technology Network (GRNET).
+_Thodoris Sotiropoulos_ is a PhD student at the Athens University of Economics and Business
+working in the areas of programming languages, program analysis, and testing under the
+supervision of Prof Diomidis Spinellis. His research focuses on the design of appropriate
+abstractions that help examine the reliability of complex software, such as compilers
+data-oriented systems, or software that heavily relies on the file system. Thodoris holds an
+MSc with distinction in Advanced Computing from Imperial College London and he has previously
+worked as a software engineer at the Greek Research and Technology Network (GRNET). Recently,
+he was an applied scientist intern at Amazon Web Services (AWS) where he worked on the design
+and implementation of static analysis techniques for detecting security issues.
 
 His main research interests include programming languages,
-program analysis,
 software testing,
-and software reliability.
+and compilers.
