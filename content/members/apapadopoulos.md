@@ -13,3 +13,5 @@ photo: alexpap.jpg
 **Alexios Papadopoulos Siountris** is an undergraduate Computer Science student in Athens University of Business and Economics (AUEB).
 
 His main research interests are Software Engineering and Compiler Testing.
+
+Within BALab he is contributing to the [Hephaestus compiler checker](https://github.com/hephaestus-compiler-project/hephaestus) as a Google Summer of Code student for the GFOSS 2022 cycle.
