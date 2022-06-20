@@ -3,7 +3,7 @@ date: 20220620
 joined_date: 20220620
 category: members
 member_category: Senior Researchers
-id: (Required)
+id: nalexopoulos
 givenname: Nikolaos
 surname: Alexopoulos
 email: alexopoulos@tk.tu-darmstadt.de
