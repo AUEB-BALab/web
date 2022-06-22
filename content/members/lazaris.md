@@ -7,6 +7,8 @@ id: lazaris
 givenname: Chris
 surname: Lazaris
 email: lazaris@aueb.gr
+office_address: 80, Patission Str., 2nd Floor
+web_site: https://www.aueb.gr/en/faculty_page/lazaris-christos
 github: chrislazaris
 linkedin: lazarischris
 photo: lazaris.jpg
