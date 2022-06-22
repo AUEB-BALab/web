@@ -9,6 +9,7 @@ surname: Alexopoulos
 email: alexopoulos@tk.tu-darmstadt.de
 github: nikalexo
 twitter: nikanta0
+photo: nalexopoulos.jpg
 
 Nikolaos (Nikos) Alexopoulos is a researcher at the Telecooperation lab of the Technical University of Darmstadt (TU Darmstadt) since May 2016, currently on a research visit at BALab.
 Prior to joining TU Darmstadt, he obtained his diploma from the School of Electrical and Computer Engineering (ECE) of the National Technical University of Athens (NTUA).
