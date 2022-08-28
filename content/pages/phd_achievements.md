@@ -10,6 +10,15 @@ slug: phd_achievements
     <div class="row">
     <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
 
+      <h3>June 2022</h3>
+      <p>
+        <b>Thodoris Sotiropoulos</b> received the Distinguished Paper Award
+        and the Best Artifact Award for his conference paper "Finding Typing
+        Compiler Bugs" published at the
+	   <cite>43rd ACM SIGPLAN Conference on Programming Language Design and
+       Implementation (PLDI 2022)</cite>
+      </p>
+
       <h3>May 2021</h3>
       <p>
         <b>Thodoris Sotiropoulos</b> received the Distinguished Artifact Award
