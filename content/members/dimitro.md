@@ -2,7 +2,7 @@ title: Dimitris - Mitropoulos
 date: 20070301
 joined_date: 20070301
 category: members
-member_category: Senior Researchers
+member_category: Faculty Members
 id: m_dimitro
 givenname: Dimitris
 surname: Mitropoulos
