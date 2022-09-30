@@ -13,9 +13,8 @@ photo: ibalampanis.jpg
 phd_title: Cybersecurity & Data Analytics
 phd_supervisor: m_dds
 phd_startdate: 20220929
-phd_enddate: YYYYMMDD (Required for PhD students)
 phd_completed: 0
-phd_summary: (Required for PhD students) !BE CAREFUL: write the summary in one line without break lines
+phd_summary: Information systems security
 
 _Ilias Balampanis_ is a PhD candidate at the Department of Management Science and Technology. He holds an (Integrated) Master from the School of Electrical and Computer Engineering by the Technical University of Crete. 
 
