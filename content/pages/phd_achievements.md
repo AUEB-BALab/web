@@ -10,6 +10,12 @@ slug: phd_achievements
     <div class="row">
     <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
 
+      <h3>October 2022</h3>
+      <p>
+      <img src="../images/phd.png" border="0" align="right" alt="PhD logo">
+      <b>Thodoris Sotiropoulos</b> successfully defends his PhD thesis.
+      </p>
+
       <h3>June 2022</h3>
       <p>
         <b>Thodoris Sotiropoulos</b> received the Distinguished Paper Award
