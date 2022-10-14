@@ -18,7 +18,7 @@ phd_startdate: 20181203
 phd_enddate: 20221003
 phd_completed: 1
 
-_Thodoris Sotiropoulos_ is a PhD student at the Athens University of Economics and Business
+_Thodoris Sotiropoulos_ completed his PhD at the Athens University of Economics and Business
 working in the areas of programming languages, program analysis, and testing under the
 supervision of Prof Diomidis Spinellis. His research focuses on the design of appropriate
 abstractions that help examine the reliability of complex software, such as compilers
