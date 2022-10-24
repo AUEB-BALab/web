@@ -14,4 +14,8 @@ photo: alexpap.jpg
 
 His main research interests are Software Engineering and Compiler Testing.
 
-Within BALab he is contributing to the [Hephaestus compiler checker](https://github.com/hephaestus-compiler-project/hephaestus) as a Google Summer of Code student for the GFOSS 2022 cycle.
+He first joined the lab by contributing to the [Hephaestus compiler checker](https://github.com/hephaestus-compiler-project/hephaestus) as a Google Summer of Code student for the GFOSS 2022 cycle.
+
+A [detailed review of his experience and contributions](https://github.com/alexisthedev/hephaestus/blob/main/GSOC.md) during the Google Summer of Code program is available.
+
+Currently, he is active within BALab as a member of the Hephaestus team.
