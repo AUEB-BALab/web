@@ -8,7 +8,7 @@ givenname: Apostolos
 surname: Garos
 email: apostolisgaros@gmail.com
 github: ApostolisGaros
-linkedin: Apostolis Garos
+linkedin: apostolis-garos-603902197
 photo: agaros.jpg
 
 **Apostolis Garos** is an undergraduate Electrical and Computer Engineering student at the National Technical University of Athens (NTUA). 
