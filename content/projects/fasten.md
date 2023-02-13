@@ -1,7 +1,7 @@
 Title: FASTEN
 Date:  20190101
 Category: projects
-Completed: 0
+Completed: 1
 Id: fasten
 shortname: FASTEN
 projtitle: Fine-Grained Analysis of Software Ecosystems as Networks
