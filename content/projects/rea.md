@@ -1,12 +1,12 @@
 title: REA
 date:  20180731
 category: projects
-completed: 0
+completed: 1
 id: p_rea
 shortname: REA
 projtitle: Real Estate Analytics
 startdate: 20180731
-enddate: 20210730
+enddate: 20220930
 web_site:  
 our_budget:
 total_budget: 727,060.00 euros
