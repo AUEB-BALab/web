@@ -6,7 +6,7 @@ member_category: Associate Researchers
 id: m_ibalampanis
 givenname: Ilias
 surname: Balampanis
-email: ilbalampan@aueb.gr
+email: ibalampanis@aueb.gr
 github: ibalampanis
 linkedin: ibalampanis
 photo: ibalampanis.jpg
