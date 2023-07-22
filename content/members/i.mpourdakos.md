@@ -9,7 +9,8 @@ surname: Mpourdakos
 email: iliasmpourdakos2003@yahoo.gr
 mobile_phone:  6955670144
 github: HliasMpGH
-linkedin: hlias-bourdakos-581514247
+linkedin: hlias-bourdakos
+photo: impourdakos.jpg
 
 A driven 2nd year undergraduate student looking to earn experience in the 
 IT/Software branch as well as in Business & Data Analysis. Interests include,
