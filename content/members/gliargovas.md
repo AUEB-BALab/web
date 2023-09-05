@@ -1,17 +1,26 @@
-title: George - Liargkovas
+title: Georgios - Liargkovas
 joined_date: 20200529
-date: 20200529
+date: 20230902
 category: members
 member_category: Researchers
 id: m_gliargovas
-givenname: George
+givenname: Georgios
 surname: Liargkovas
-email: g.liargo@hotmail.com
+email: gliargovas@aueb.gr
+web_site: https://gliargovas.github.io
 github: gliargovas
 linkedin: george-liargovas-796259175
 twitter: gliargko
 photo: gliargovas.jpg
 
-**George Liargkovas** is an undergraduate student in the Department of Management Science & Technology in Athens University of Economics and Business (AUEB).
+**Georgios Liargkovas** graduated with a Bachelor's Degree from the Department of Management Science & Technology at the Athens University of Economics and Business (AUEB). Currently, he delves deep into research spanning a variety of areas.
 
-His main research interests include programming languages, software engineering and data analysis.
+His prime research interests encompass:
+
+- **Computer Systems**, with a keen focus on operating system design and implementation, distributed systems, scheduling, concurrency, file systems, and kernel-level programming.
+
+- **Empirical Software Engineering**, particularly in the realms of software analytics and mining software repositories.
+
+- **Programming Languages**, where he has a growing interest in compilers and program analysis.
+
+- An emerging interest in **Machine Learning**, especially considering its potential synergy with the domains mentioned above.
