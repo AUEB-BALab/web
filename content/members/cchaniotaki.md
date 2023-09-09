@@ -12,8 +12,6 @@ linkedin: christina-chaniotaki
 web_site: https://cchaniotaki.github.io
 photo: cchaniotaki.jpg
 
-**Christina Chaniotaki** is an MSc graduate of Information Systems Development & Security in Athens University of Economics and Business (AUEB). She is currently working as a Senior Software Engineer at UBITECH LTD.
-
 **Christina Chaniotaki** was born in Athens, Greece. 
 She finished her bachelor's degree in 2018 in Management Science and 
 Technology at Athens University of Economics and Business in Greece. 
