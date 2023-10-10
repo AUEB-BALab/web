@@ -6,10 +6,16 @@ member_category: Researchers
 id: m_rafailagln
 givenname: Rafaila
 surname: Galanopoulou
-email: rafgalan98@gmail.com
+email: rafaila.gln@gmail.com
 github: rafailagln
 linkedin: rafaila-galanopoulou
 photo: rafailagln.jpg
-<p>
-_Rafaila Galanopoulou_ holds a Bachelor from the Department of Management Science & Technology. Her major field was Software and Data Analysis Technologies. She is an independent researcher associated with the Business Analytics Laboratory while her research interests include Software Engineering, Machine Learning and Software Quality Analysis.
-</p>
+
+_Rafaila Galanopoulou_ is a postgraduate Computer Science student in
+University of Athens (UoA). She holds a Bachelor from the Department
+of Management Science & Technology. She is currently working as
+researcher in [SecOPERA European Research project](https://secopera.eu/).
+
+Ηer research interests include Software Security,
+Machine Learning and
+Software Engineering.
