@@ -8,7 +8,7 @@ givenname: Rafaila
 surname: Galanopoulou
 email: rafaila.gln@gmail.com
 github: rafailagln
-linkedin: rafaila-galanopoulou
+linkedin: rafaila-galanopoulou-216460168
 photo: rafailagln.jpg
 
 _Rafaila Galanopoulou_ is a postgraduate Computer Science student in
