@@ -34,7 +34,7 @@ slug: join_The_Lab
     contact a member of the staff who matches your research interests
     with your CV.
     If interested in pursuing a PhD consider including a
-    <href="https://www.dept.aueb.gr/PhD/PhD%20Proposal%20Guidelines.pdf">PhD research proposal</a>.
+    <a href="https://www.dept.aueb.gr/PhD/PhD%20Proposal%20Guidelines.pdf">PhD research proposal</a>.
     Calls for open PhD positions are published on the
         <a href="https://www.dept.aueb.gr/dmst">Department's web site</a>.
     Calls for funded research positions are published on the
