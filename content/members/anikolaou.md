@@ -2,7 +2,7 @@ title: Andriani - Nikolaou
 date: 20231128 
 joined_date: 20231128  
 category: members 
-member_category: Associate Researchers 
+member_category: Researchers
 id: m_anikolaou
 givenname: Andriani
 surname: Nikolaou
