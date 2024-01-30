@@ -1,7 +1,7 @@
 title: Makrina Viola - Kosti
 date: 20200117
 joined_date: 20200117
-category: members
+category: alumni
 member_category: Senior Researchers
 id: mkosti
 givenname: Makrina Viola

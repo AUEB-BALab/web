@@ -1,7 +1,7 @@
 title: Christina Zacharoula - Chaniotaki
 date: 20220126
 joined_date: 20220126
-category: members
+category: alumni
 member_category: Researchers
 id: c_chaniotaki
 givenname: Christina Zacharoula
