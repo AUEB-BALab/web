@@ -1,5 +1,5 @@
 Title: SPUCS
-Date:  20240201 (Required)
+Date:  20240201
 Category: Projects
 Completed: 0
 Id: spucs
