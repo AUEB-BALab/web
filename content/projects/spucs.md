@@ -1,6 +1,6 @@
 Title: SPUCS
 Date:  20240201
-Category: Projects
+Category: projects
 Completed: 0
 Id: spucs
 shortname: SPUCS
