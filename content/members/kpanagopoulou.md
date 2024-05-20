@@ -1,8 +1,12 @@
-title: Konstantina Panagopoulou
+title: Konstantina - Panagopoulou
+date: 20240520
+joined_date: 20240520
+category: members
+member_category: Associate Researchers
+id: m_kpanagopoulou
 givenname: Konstantina
 surname: Panagopoulou
-category: members
-member_category: Researchers
+email: panagopkonst@aueb.gr
 photo: kpanagopoulou.jpg
 
 
