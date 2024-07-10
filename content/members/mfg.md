@@ -1,7 +1,7 @@
 title: Marios - Fragkoulis
 date: 20091101
 joined_date: 20091101
-category: alumni 
+category: members
 member_category: Senior Researchers
 id: m_mfrag
 givenname: Marios
