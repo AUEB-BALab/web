@@ -72,13 +72,13 @@ def add_publications(generator):
         entry = bibdata_all.entries[key]
         year = entry.fields.get('year')
         if not year:
-            logger.error(f'`pelican_bibtex` Missing year field for {entry}')
+            logger.error(f'`pelican_bibtex` Missing year field for {key}')
         XEcategory = entry.fields.get('XEcategory')
         if not XEcategory:
-            logger.error(f'`pelican_bibtex` Missing XEcategory field for {entry}')
+            logger.error(f'`pelican_bibtex` Missing XEcategory field for {key}')
         XEmember = entry.fields.get('XEmember')
         if not XEmember:
-            logger.error(f'`pelican_bibtex` Missing XEmember field for {entry}')
+            logger.error(f'`pelican_bibtex` Missing XEmember field for {key}')
 
         XEProject = entry.fields.get('XEProject')
         url = entry.fields.get('XEurl')
