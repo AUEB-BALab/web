@@ -119,3 +119,4 @@ To install Pelican you need:
 * Locally: `pelican content/`
 * To update the web site on the server: `bin/update/`
 * For a quick update (without pull and verifications) run `pelican content/ --output=balab/stage/`.
+* GitHub update on commit is done by a GET on the web-deploy endpoint

@@ -58,6 +58,9 @@ mkdir -p $BASE/stage
 validate_content_field 'category' 'doc/valid_categories'
 validate_content_field 'member_category' 'doc/valid_member_categories'
 
+# Check for large images
+ls -l content/images/ | awk '$5 > 500000 {print "File larger than limit of 500 kB:", $9; exit 1}' || error 'Overly large file found; please fix and update again!'
+
 # Check for common errors in publications
 grep -iHn 'doi.*=.*https://doi\.org' content/pubs.bib && error 'DOIs should not include a URL'
 grep -iHn '^[ 	]*year.*=[ 	]*{{' content/pubs.bib && error 'Years should not be specified with double braces'
