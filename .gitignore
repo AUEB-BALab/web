@@ -4,4 +4,5 @@ pelicanconf.pyc
 balab/
 lists/
 output/
+venv/
 __pycache__

@@ -106,17 +106,11 @@ The site is implemented using [Pelican](http://docs.getpelican.com/en/stable/).
 * `doc/templates/project-example.md` : Template for a research project
 * `doc/templates/publication-schema.bib` : Bibtex entries templates
 
-### Web site installation and deployment
-To install Pelican you need:
-
-* `python`
-* `pelican` : pip install pelican
-* `markdown` : pip install Markdown
-* `typogrify` : pip install typogrify
-* `pybtex`:  pip install pybtex
+The required _pelican_ package and its dependencies are automatically
+installed in a virtual environment when the `bin/update` command is
+first run.
 
 ### Creating the site
-* Locally: `pelican content/`
-* To update the web site on the server: `bin/update/`
-* For a quick update (without pull and verifications) run `pelican content/ --output=balab/stage/`.
+* Locally: `bin/update/`
+* To update the web site on the server: `sudo -u www-data bin/update/`
 * GitHub update on commit is done by a GET on the web-deploy endpoint
