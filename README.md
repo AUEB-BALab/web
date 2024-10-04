@@ -106,6 +106,7 @@ The site is implemented using [Pelican](http://docs.getpelican.com/en/stable/).
 * `doc/templates/project-example.md` : Template for a research project
 * `doc/templates/publication-schema.bib` : Bibtex entries templates
 
+### Web site installation
 The required _pelican_ package and its dependencies are automatically
 installed in a virtual environment when the `bin/update` command is
 first run.
