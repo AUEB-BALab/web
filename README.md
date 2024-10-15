@@ -113,5 +113,5 @@ first run.
 
 ### Creating the site
 * Locally: `bin/update/`
-* To update the web site on the server: `sudo -u www-data bin/update/`
+* To update the web site on the server: `git pull && sudo -u www-data bin/updat/`
 * GitHub update on commit is done by a GET on the web-deploy endpoint
