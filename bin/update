@@ -73,7 +73,6 @@ check_required_fields content/members doc/required_member_fields || error "Could
 check_required_fields content/seminars doc/required_seminar_fields || error "Could not read required seminar fields"
 
 # Create and activate the required Python environment
-set -x
 if ! [ -d venv ] ; then
   python3 -m venv venv
   . venv/bin/activate
