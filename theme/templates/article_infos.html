@@ -28,11 +28,13 @@
         <!-- Print member's Contact & PhD Thesis details, if exists -->
         <div class="col-md-9">
       			<p>
+           {% if article.category|string() != 'alumni' %}
                {% if article.email %}<span class="glyphicon glyphicon-envelope"></span> <b>E-mail:</b> {{article.email}} </br>{% endif %}
       			   {% if article.office_phone %}<span class="glyphicon glyphicon-phone-alt"></span> <b>Office phone:</b> {{article.office_phone}} </br>{% endif %}
                {% if article.mobile_phone %}<span class="glyphicon glyphicon-phone"></span> <b>Mobile phone:</b> {{article.mobile_phone}} </br>{% endif %}
       			   {% if article.office_address %}<span class="glyphicon glyphicon-briefcase"></span> <b>Office address:</b> {{article.office_address}} </br>{% endif %}
       			   {% if article.postal_address %}<span class="glyphicon glyphicon-inbox"></span> <b>Postal address:</b> {{article.postal_address}} </br>{% endif %}
+	   {% endif %} <!-- Current members -->
                {% if article.web_site %}<span class="glyphicon glyphicon-globe"></span> <b>Web site:</b> <a href="{{article.web_site}}">{{article.web_site}}</a></br>{% endif %}
                {% if article.web_log %}<span class="glyphicon glyphicon-bullhorn"></span> <b>Blog:</b> <a href="{{article.web_log}}">{{article.web_log}}</a></br>{% endif %}
                {% if article.github %}<span class="fa fa-github"></span> <b>GitHub:</b> <a href="https://github.com/{{article.github}}/">https://github.com/{{article.github}}/</a></br>{% endif %}
