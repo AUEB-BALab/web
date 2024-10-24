@@ -2,7 +2,7 @@
 {% block content_title %}{% endblock %}
 
 {% block content %}
-{% set publication_categories = ['Monographs and Edited Volumes','Journal Articles', 'Book Chapters', 'Conference Publications', 'Technical Reports','White Papers','Magazine Articles','Working Papers', 'Datasets'] %}
+{% set publication_categories = ['Monographs and Edited Volumes','PhD Theses','Journal Articles', 'Book Chapters', 'Conference Publications', 'Technical Reports','White Papers','Magazine Articles','Working Papers', 'Datasets'] %}
 {% set member_categories = ['Faculty Members' , 'Senior Researchers', 'Associate Researchers', 'Researchers'] %}
 
 <!-- Template for members and alumni -->
@@ -513,6 +513,7 @@
           {% set counter = {
             'total_new_publications': 0,
             'total_monographs_volumes': 0,
+            'total_phd_theses': 0,
             'total_journals_articles': 0,
             'total_book_chapters': 0,
             'total_conferences': 0,
@@ -549,6 +550,9 @@
 
              {% if publication.XEcategory == 'Monographs and Edited Volumes' %}
               {{ increment(counter, 'total_monographs_volumes') }}
+             {% endif %}
+             {% if publication.XEcategory == 'PhD Theses' %}
+              {{ increment(counter, 'total_phd_theses') }}
              {% endif %}
              {% if publication.XEcategory == 'Journal Articles' %}
               {{ increment(counter, 'total_journals_articles') }}
@@ -702,6 +706,10 @@
               <tr>
                 <td>Monographs and Edited Volumes</td>
                 <td style="text-align:right">{{ counter['total_monographs_volumes']}}</td>
+              </tr>
+              <tr>
+                <td>PhD Theses</td>
+                <td style="text-align:right">{{ counter['total_phd_theses']}}</td>
               </tr>
               <tr>
                 <td>Journal Articles</td>
