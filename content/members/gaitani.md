@@ -9,3 +9,6 @@ surname: Gaitani
 email: gaitmarilia@gmail.com
 github: MariliaGait
 linkedin: mariagaitani
+photo:
+
+ Maria Gaitani is an undergraduate student in the Department of Management Science & Technology at Athens University of Economics and Business. 
