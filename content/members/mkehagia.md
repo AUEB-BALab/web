@@ -1,7 +1,7 @@
 title: Maria - Kechagia
 date: 20090907
 joined_date: 20090907
-end_date: 
+category: members
 member_category: Faculty Members
 id: m_mkehagia
 givenname: Maria
