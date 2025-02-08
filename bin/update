@@ -84,6 +84,9 @@ fi
 
 pelican content/ --output=$BASE/stage
 
+# Copy static content
+cp -r static/* $BASE/stage
+
 #Sanity check
 if test $(stat -c %s $BASE/stage/category/members.html) -gt 15000 ; then
   echo "Members: OK"

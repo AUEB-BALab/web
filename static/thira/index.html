@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Μέγεθος σεισμών ΒΑ της Σαντορίνης</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/moment"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-moment"></script>
+    <script src="https://cdn.jsdelivr.net/npm/luxon"></script>
+</head>
+<body>
+    <h2>Μέγεθος σεισμών ΒΑ της Σαντορίνης</h2>
+    <canvas id="scatterChart"></canvas>
+
+    <script>
+        async function fetchData() {
+            try {
+                const response = await fetch("data.csv"); // Static file on server
+                if (!response.ok) {
+                    throw new Error(`HTTP error! Status: ${response.status}`);
+                }
+                const csvText = await response.text();
+                return parseCSV(csvText);
+            } catch (error) {
+                console.error("Error fetching data:", error);
+                return [];
+            }
+        }
+
+         function parseCSV(csvText) {
+            const DateTime = luxon.DateTime; // Get Luxon DateTime
+            const rows = csvText.split("\n").slice(1); // Skip header
+
+            return rows.map(row => {
+                const cols = row.split(",");
+                if (cols.length < 6) return null;
+
+
+                // Parse CSV timestamp as UTC
+                const cleanedDate = cols[0].trim().replace(/\s+/g, " "); // Normalize spaces
+                const utcDate = DateTime.fromFormat(cleanedDate, "yyyy/MM/dd HH:mm:ss.SSS", { zone: "UTC" });
+
+
+                if (!utcDate.isValid) {
+                    console.error("Invalid date format:", cols[0].trim());
+                    return null;
+                }
+
+                // Convert to Europe/Athens timezone and use as a JS Date object
+                const athensDate = utcDate.setZone("Europe/Athens").toJSDate();
+
+                return {
+                    date: athensDate,
+                    magnitude: parseFloat(cols[4].trim())
+                };
+            }).filter(item => item !== null);
+        }
+
+        async function drawChart() {
+            const data = await fetchData();
+            const ctx = document.getElementById("scatterChart").getContext("2d");
+
+            new Chart(ctx, {
+                type: "scatter",
+                data: {
+                    datasets: [{
+                        data: data.map(d => ({ x: d.date, y: d.magnitude })),
+                        backgroundColor: "rgba(255, 99, 132, 0.5)",
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    plugins: {
+                        legend: {
+                            display: false
+                        }
+                    },
+                    scales: {
+                        x: {
+                            type: "time",
+                            time: {
+                                unit: "day",
+                                tooltipFormat: "DD/MM/YY HH:mm:ss",
+                                displayFormats: {
+                                  day: "D/M/YY"
+                                }
+                            },
+                            title: {
+                                display: true,
+                                text: "Ημερομηνία"
+                            }
+                        },
+                        y: {
+                            title: {
+                                display: true,
+                                text: "Μέγεθος"
+                            },
+                          min: 0,
+                          max: 6
+                        }
+                    }
+                }
+            });
+        }
+
+        drawChart();
+    </script>
+    <p>
+    Τα <a href="data.csv">χρησιμοποιούμενα δεδομένα</a> προέρχονται από τον <a href="http://www.geophysics.geol.uoa.gr/stations/maps/recent_eq_2d_el.htm">κατάλογο γεγονότων</a> του Εργαστηρίου Σεισμολογίας του Πανεπιστημίου Αθηνών και
+    ενημερώνονται από εκεί κάθε 15 λεπτά.
+    Ο <a href="http://www.geophysics.geol.uoa.gr/stations/maps/recent_eq_2d_el.htm">κατάλογος γεγονότων</a> του Εργαστηρίου Σεισμολογίας έχει την πιο πρόσφατη ενημέρωση.
+    Η αναφερόμενη ώρα στο διάγραμμα είναι τοπική ώρα Ελλάδος.
+    </p>
+    <p>
+      Το διάγραμμα δείχνει δυο χρήσιμα στοιχεία <b>για τη μέχρι τώρα
+      εξέλιξη του φαινομένου</b>: τη συχνότητα και το μέγεθος των σεισμών.
+      <b>Δεν έχει δημιουργηθεί ως οδηγός για μελλοντικές προβλέψεις.</b>
+      Αυτές πρέπει να τις κάνουν μόνο ειδικοί.
+    </p>
+    <p>
+      Το διάγραμμα δημιούργησε ο
+      <a href="https://www.spinellis.gr/">Διομήδης Σπινέλλης</a>
+      με <a href="https://chatgpt.com/share/67a255ce-0618-8011-957f-5bcf1b401de9">σημαντική βοήθεια από το ChatGPT (4o), αλλά και πολλές προτροπές προς αυτό</a>.
+      (Μη φανταστείτε ότι έχει αχρηστεύσει τους προγραμματιστές: κάθε άλλο.)
+      Την ιστοσελίδα αυτή φιλοξενεί το
+      <a href="https://www.balab.aueb.gr/">Εργαστήριο Επιχειρηματικής Αναλυτικής</a>
+      του <a href="https://www.aueb.gr">Οικονομικού Πανεπιστημίου Αθηνών</a>
+      σε υποδομές που παρέχει το
+      <a href="https://grnet.gr/">Εθνικό Δίκτυο Υποδομών Τεχνολογίας και Έρευνας (ΕΔΥΤΕ)</a>.
+    </p>
+</body>
+</html>
