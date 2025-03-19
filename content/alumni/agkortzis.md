@@ -1,6 +1,7 @@
 title: Antonios - Gkortzis
 date: 20151220
 joined_date: 20151220
+end_date: 20230401
 category: alumni
 member_category: Associate Researchers
 id: m_agkortzis
