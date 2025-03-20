@@ -1,7 +1,7 @@
 title: Konstantinos - Kravvaritis
 date: 20180509
 joined_date: 20180509
-end_date: 20241115
+end_date: 20241023
 category: alumni
 member_category: Associate Researchers
 id: blueoly
