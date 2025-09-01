@@ -1,7 +1,7 @@
 title: HFRI III (PhD Scholarship)
 date: 20220414
 category: projects
-completed: 0
+completed: 1
 id: p_hfri_zkotti
 shortname: HFRI III (PhD Scholarship)
 projtitle: Data Analysis Applications in Software Engineering
