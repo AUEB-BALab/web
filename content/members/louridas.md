@@ -16,20 +16,21 @@ github: louridas
 twitter: louridas
 linkedin: louridas
 
-_Panos (Panagiotis) Louridas_ is an Associate Professor at the
-[Department of Management Science and
-Technology](https://www.dept.aueb.gr/dmst), [Athens University of
-Economics and Business](https://www.aueb.gr/en). He holds an MSc by
-Research and a PhD in Computation from the University of Manchester.
-He is the author of [Real World Algorithms: A Beginner's
-Guide](https://mitpress.mit.edu/books/real-world-algorithms), adopted
-by various universities around the world, and translated in Russian,
-Korean, and traditional Chinese. His research spans many different
-areas, including Software Engineering, Software Design, Security,
-Practical Cryptograpy, Data Analytics. He has also been responsible
-for the [Zeus e-voting system](https://zeus.grnet.gr/zeus/), an open
-source, verifiable secure e-voting system, used by people and
-organisations all around the world.
+Panos (Panagiotis) Louridas is a Professor at the [Department of
+Management Science and Technology](https://www.dept.aueb.gr/dmst),
+[Athens University of Economics and Business](https://www.aueb.gr/en).
+He holds an MSc by Research and a PhD in Computation from the
+University of Manchester. He is the author of [Real-World Algorithms:
+A Beginner's
+Guide](https://mitpress.mit.edu/books/real-world-algorithms),
+[Algorithms](https://mitpress.mit.edu/9780262539029/algorithms/), and
+[Cryptography](https://mitpress.mit.edu/9780262549028/cryptography/).
+His research spans many different areas, including Software
+Engineering, Software Design, Security, Practical Cryptograpy, Data
+Analytics. He has also been responsible for the [Zeus e-voting
+system](https://zeus.grnet.gr/zeus/), an open source, verifiable
+secure e-voting system, used by people and organisations all around
+the world.
 
-Panos Louridas is a member of the ACM, the IEEE, USENIX, and the AAAS.
+Panos Louridas is a member of the ACM, the IEEE, and the AAAS.
 He is the recipient of three cheques by Donald Knuth.
