@@ -6,7 +6,7 @@ member_category: Researchers
 id: m_anikolaou
 givenname: Andriani
 surname: Nikolaou
-email: t8200121@aueb.gr
+email: anikolaou@uniai.gr
 linkedin: andriani-n-4b078914b
 photo: anikolaou.jpg
 
