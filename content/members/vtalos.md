@@ -1,18 +1,16 @@
 title: Evangelos - Talos
 date: 20230411
 joined_date: 20230411
-category: members 
-member_category: Researchers 
+category: members
+member_category: Researchers
 id: vtalos
-givenname: Evangelos 
+givenname: Evangelos
 surname: Talos
-email: v.talos23@gmail.com
-mobile_phone: 6906502673
-github: vtalos 
-linkedin: evangelos-talos-566801266 
-twitter: VTalos23
+email: vtalos@aueb.gr
+github: vtalos
+linkedin: evangelos-talos-566801266
 photo: vtalos.jpg
 
-Evangelos Talos is an undergraduate student in the Department of Management Science & Technology in Athens University of Economics and Business (AUEB).
+Evangelos Talos holds a BSc in Management Science & Technology from the Athens University of Economics and Business (AUEB) and is pursuing an MSc in Data Science & Machine Learning at the National Technical University of Athens (NTUA).
 
-His main research interests focus on software engineering and data analysis.
+His main research interests focus on Machine Learning, Software Engineering, and Software Security.
