@@ -48,3 +48,7 @@ category: seminars
 
 #### Biography
 EOF
+
+$EDITOR $1.md
+
+git add $1.md
