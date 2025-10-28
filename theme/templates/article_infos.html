@@ -72,11 +72,7 @@
 
   <!-- Print member's publications, if exists -->
   {% for publication in publications %}
-    {% if (publication.XEmember.split(' ')[0] == article.id or
-       publication.XEmember.split(' ')[1] == article.id or
-       publication.XEmember.split(' ')[2] == article.id or
-       publication.XEmember.split(' ')[3] == article.id or
-       publication.XEmember.split(' ')[4] == article.id)  %}
+    {% if article.id in publication.XEmember.split(' ') %}
        <div class="row">
          <!-- Print member's Publications Contents Slidebar -->
          <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3" id="printmenu">
@@ -90,11 +86,7 @@
                  {% for Category in publication_categories %}
                      {% for publication in publications %}
                      {% if publication.XEcategory == Category and
-                       (publication.XEmember.split(' ')[0] == article.id or
-                        publication.XEmember.split(' ')[1] == article.id or
-                        publication.XEmember.split(' ')[2] == article.id or
-                        publication.XEmember.split(' ')[3] == article.id or
-                        publication.XEmember.split(' ')[4] == article.id)  %}
+                       article.id in publication.XEmember.split(' ') %}
                        <li><a href="#{{Category.split(' ')[0]}}">{{Category}}</a></li>
                      {% break %}
                     {% endif %}
@@ -127,11 +119,7 @@
                {% for Category in publication_categories %}
                  {% for publication in publications %}
                   {% if publication.XEcategory == Category and
-                    (publication.XEmember.split(' ')[0] == article.id or
-                     publication.XEmember.split(' ')[1] == article.id or
-                     publication.XEmember.split(' ')[2] == article.id or
-                     publication.XEmember.split(' ')[3] == article.id or
-                     publication.XEmember.split(' ')[4] == article.id)  %}
+                       article.id in publication.XEmember.split(' ') %}
                    <h4 style="color:#203864;" id="{{Category.partition(' ')[0]}}">{{Category}}</h4>
                    {% break %}
                   {% endif %}
@@ -143,11 +131,7 @@
                      {% for group in publications|groupby('XEcategory') %}
                       {% for publication in group.list|sort(attribute='year')|reverse %}
                      {% if publication.XEcategory == Category and
-                       (publication.XEmember.split(' ')[0] == article.id or
-                        publication.XEmember.split(' ')[1] == article.id or
-                        publication.XEmember.split(' ')[2] == article.id or
-                        publication.XEmember.split(' ')[3] == article.id or
-                        publication.XEmember.split(' ')[4] == article.id)  %}
+                       article.id in publication.XEmember.split(' ') %}
                         <p>
                         <li>{{ publication.text }}
                           {% if publication.url %}<a href="{{ publication.url }}"><span class="glyphicon glyphicon-new-window"></span></a>{% endif %}
