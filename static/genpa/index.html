@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Γεννήτρια γραμμάτων προσωπικού αριθμού</title>
+<style>
+  body {
+    font-family: system-ui, sans-serif;
+    background: #fafafa;
+    padding: 2em;
+    max-width: 600px;
+    margin: auto;
+  }
+  input {
+    font-size: 1.2em;
+    padding: 0.5em;
+    width: 100px;
+    text-transform: uppercase;
+  }
+  button {
+    padding: 0.5em 1em;
+    margin-left: 1em;
+  }
+  pre {
+    background: #f0f0f0;
+    padding: 1em;
+    border-radius: 0.5em;
+  }
+  .result {
+    margin-top: 1.5em;
+  }
+</style>
+</head>
+<body>
+<h2>Γεννήτρια γραμμάτων προσωπικού αριθμού</h2>
+<p>Δώστε οποιαδήποτε τρία επιτρεπτά γράμματα (π.χ., <code>ABP</code>)
+από την
+<a href="https://www.gov.gr/ipiresies/polites-kai-kathemerinoteta/stoikheia-polite-kai-tautopoietika-eggrapha/pa">υπηρεσία έκδοσης προσωπικού αριθμού</a>,
+προκειμένου να δείτε πολλούς αναγνωρίσιμους επιτρεπτούς συνδυασμούς.</p>
+
+<input id="inputCode" maxlength="3" placeholder="ABK">
+<button onclick="generate()">Δημιουργία</button>
+
+<div class="result">
+  <h3>Αποτελέσματα:</h3>
+  <pre id="output">(Εδώ θα δείτε ιδέες για τα πρώτα γράμματα του προσωπκού αριθμού σας.)</pre>
+</div>
+
+<script>
+const letters = ['A', 'B', 'E', 'Z', 'H', 'I', 'K', 'M',
+                 'N', 'O', 'P', 'T', 'Y', 'X'];
+
+const charToValue = {};
+const checkValue = {};
+const checkLetter = {};
+
+// 0–9
+for (let d = 0; d < 10; d++) {
+  charToValue[d.toString()] = d;
+}
+
+// Letters A–X (Greek-like)
+for (let d = 0; d < letters.length; d++) {
+  charToValue[letters[d]] = d + 10;
+  checkValue[letters[d]] = letters.length - 1 - d;
+  checkLetter[letters.length - 1 - d] = letters[d];
+}
+
+// Normalize input letters: map uppercase Greek look-alikes to Latin equivalents
+const greekToLatin = {
+  'Α': 'A', 'Β': 'B', 'Ε': 'E', 'Ζ': 'Z', 'Η': 'H', 'Ι': 'I', 'Κ': 'K',
+  'Μ': 'M', 'Ν': 'N', 'Ο': 'O', 'Ρ': 'P', 'Τ': 'T', 'Υ': 'Y', 'Χ': 'X'
+};
+
+function normalizeChar(ch) {
+  return greekToLatin[ch] || ch;
+}
+// Add same values for Greek look-alike characters
+
+function checksum(i1, i2, afmChecksumPart) {
+  let v1 = i1;
+  let v2 = i2 * 2;
+  if (v2 >= Object.keys(charToValue).length) {
+    v2 -= 9;
+  }
+  return (v1 + v2 + afmChecksumPart) % letters.length;
+}
+
+const dictionary = [
+"AAM", "ABA", "ABB", "ABE", "ABO", "ABY", "AEI", "AHA", "AHO", "AHT",
+"AIA", "AIK", "AIM", "AIT", "AIX", "AKA", "AKE", "AKH", "AKO", "AMA",
+"AME", "AMI", "AMT", "AMY", "ANA", "ANI", "ANN", "ANT", "ANY", "APA",
+"APE", "APH", "APK", "APM", "APT", "APY", "ATA", "ATE", "ATH", "ATI",
+"ATM", "ATO", "AXE", "AXO", "AYE", "AZO", "BAA", "BAB", "BAE", "BAH",
+"BAM", "BAN", "BAP", "BAT", "BAX", "BAY", "BEA", "BEE", "BEN", "BET",
+"BEY", "BIA", "BIB", "BIE", "BIH", "BIM", "BIN", "BIO", "BIT", "BIZ",
+"BOA", "BOB", "BOH", "BOM", "BON", "BOO", "BOP", "BOT", "BOY", "BPE",
+"BYE", "EAM", "EAN", "EAP", "EAT", "EBB", "EKE", "EKO", "EMA", "EME",
+"EMM", "ENA", "EOK", "EON", "EPA", "ETA", "ETH", "ETI", "EXE", "EYA",
+"EYE", "EYH", "EYN", "HAH", "HAK", "HAM", "HAN", "HAO", "HAP", "HAT",
+"HAY", "HBH", "HEI", "HEM", "HEN", "HEP", "HET", "HEX", "HEY", "HIA",
+"HIE", "HIM", "HIN", "HIP", "HIT", "HMI", "HOB", "HOE", "HOI", "HON",
+"HOP", "HOT", "HOX", "HOY", "HPA", "HPE", "HTA", "HXO", "HYP", "IAN",
+"IAO", "IBA", "IBO", "IHI", "IKA", "IKE", "IMA", "IMI", "IMP", "INA",
+"INK", "INN", "INO", "IOI", "ION", "IOY", "ITA", "ITO", "IYO", "KAI",
+"KAN", "KAT", "KAY", "KBO", "KEA", "KEB", "KEE", "KEI", "KEN", "KEP",
+"KET", "KEX", "KEY", "KHA", "KIM", "KIN", "KIP", "KIT", "KIX", "KKE",
+"KOA", "KOB", "KOI", "KOK", "KON", "KOP", "KOX", "KYP", "MAB", "MAE",
+"MAH", "MAI", "MAM", "MAN", "MAO", "MAP", "MAT", "MAX", "MAY", "MEI",
+"MEM", "MEN", "MEO", "MET", "MHN", "MHO", "MIA", "MIB", "MIM", "MIN",
+"MIX", "MME", "MNA", "MOB", "MOE", "MOI", "MON", "MOO", "MOP", "MOT",
+"MOY", "MYA", "MYN", "NAA", "NAB", "NAE", "NAI", "NAK", "NAM", "NAN",
+"NAO", "NAP", "NAT", "NAY", "NEA", "NEB", "NEE", "NEI", "NEO", "NEP",
+"NET", "NIA", "NIB", "NIK", "NIM", "NIN", "NIO", "NIP", "NIT", "NIX",
+"NOA", "NOB", "NON", "NOT", "NOY", "NTA", "NTE", "NTH", "NTI", "NTO",
+"NYE", "NYN", "OAK", "OAM", "OAT", "OBE", "OBI", "OHE", "OHM", "OHO",
+"OIA", "OIH", "OII", "OKA", "OKI", "ONA", "ONE", "ONO", "OPA", "OPE",
+"OPH", "OPO", "OPT", "OTE", "OTI", "OTO", "OXI", "OXY", "OYK", "OZO",
+"PAH", "PAI", "PAM", "PAN", "PAP", "PAT", "PAX", "PAY", "PEA", "PEE",
+"PEI", "PEN", "PEP", "PET", "PHI", "PHO", "PIA", "PIE", "PIK", "PIM",
+"PIN", "PIO", "PIP", "PIT", "PIX", "POA", "POB", "POE", "POH", "POI",
+"POK", "POM", "PON", "POP", "POT", "POX", "POY", "POZ", "PYA", "PYX",
+"TAA", "TAB", "TAE", "TAI", "TAK", "TAM", "TAN", "TAO", "TAP", "TAT",
+"TAX", "TAY", "TEA", "TEE", "TEI", "TEN", "TET", "TEZ", "THA", "THE",
+"THN", "THO", "THY", "TIB", "TIE", "TIK", "TIM", "TIN", "TIP", "TIT",
+"TNT", "TOA", "TOE", "TOI", "TOK", "TOM", "TON", "TOO", "TOP", "TOT",
+"TOX", "TOY", "TYE", "TYT", "TZO", "XAH", "XAI", "XAN", "XEI", "XIA",
+"XIO", "XOH", "YAH", "YAK", "YAM", "YAN", "YAO", "YAP", "YAT", "YBA",
+"YBE", "YBH", "YBO", "YEA", "YEE", "YEN", "YEO", "YEP", "YET", "YEX",
+"YEZ", "YIE", "YIN", "YIO", "YIP", "YNI", "YOE", "YOI", "YOK", "YOM",
+"YON", "YOT", "YOX", "YOY", "ZAK", "ZAN", "ZAT", "ZAX", "ZEA", "ZEE",
+"ZEH", "ZEI", "ZEN", "ZEP", "ZHN", "ZIP", "ZOA", "ZOO",
+];
+
+function generate() {
+  const input = document.getElementById("inputCode").value.toUpperCase();
+  const out = document.getElementById("output");
+  if (input.length !== 3) {
+    out.textContent = "Παρακαλώ δώστε ακριβώς τρεις χαρακτήρες.";
+    return;
+  }
+
+  const i1 = charToValue[normalizeChar(input[0])];
+  const i2 = charToValue[normalizeChar(input[1])];
+  const check = checkValue[normalizeChar(input[2])];
+
+  if (i1 === undefined || i2 === undefined || check === undefined) {
+    out.textContent = "Λανθασμένα στοιχεία: επιτρέπονται μόνο τα ψηφία 0–9 και τα γράμματα A,B,E,Z,H,I,K,M,N,O,P,T,Y,X.";
+    return;
+  }
+
+  let letterChecksum = null;
+  for (let i = 0; i < 14; i++) {
+    if (checksum(i1, i2, i) === check) {
+      letterChecksum = i;
+      break;
+    }
+  }
+
+  if (letterChecksum === null) {
+    out.textContent = "Δεν βρέθηκε το ψηφίο ελέγχου.";
+    return;
+  }
+
+  const results = [];
+  const keys = Object.keys(charToValue);
+  for (const c1 of keys) {
+    for (const c2 of keys) {
+      const checkVal = checksum(charToValue[c1], charToValue[c2], letterChecksum);
+      const c3 = checkLetter[checkVal];
+      const word = c1 + c2 + c3;
+      if (dictionary.includes(word)) {
+        results.push(word);
+      }
+    }
+  }
+
+  out.textContent = results.length
+    ? results.join("\n")
+    : "(no matches in dictionary)";
+}
+</script>
+</body>
+</html>
