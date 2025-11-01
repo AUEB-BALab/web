@@ -64,7 +64,7 @@
 <p>Δώστε οποιαδήποτε τρία επιτρεπτά γράμματα (π.χ., <code>ABP</code>)
 από την
 <a href="https://www.gov.gr/ipiresies/polites-kai-kathemerinoteta/stoikheia-polite-kai-tautopoietika-eggrapha/pa">υπηρεσία έκδοσης προσωπικού αριθμού</a>,
-προκειμένου να δείτε πολλούς τους επιτρεπτούς συνδυασμούς.</p>
+προκειμένου να δείτε τους επιτρεπτούς συνδυασμούς.</p>
 
 <input id="inputCode" maxlength="3" placeholder="ABK" pattern="[0-9A-Za-zΑ-Ωα-ω]+">
 <button onclick="generate()">Δημιουργία</button>
@@ -90,6 +90,10 @@
       <a href="https://chatgpt.com/share/69049fe6-7410-8011-a34e-f5d10e0fcce8">ChatGPT (5) με αρκετές προτροπές</a> μετέτρεψε τον κώδικα σε JavaScript
       και ιστοσελίδα.
       (Μη φανταστείτε ότι το ChatGPT έχει αχρηστεύσει τους προγραμματιστές: κάθε άλλο.)
+      Δείτε και <a href="https://gist.github.com/zvr/87d07e98e70edb0aedea8ebe429945ad">αυτή</a> την υλοποίηση του αλγορίθμου ελέγχου από τον
+      <a href="https://github.com/zvr">Αλέξιο Ζάβρα</a>.
+    </p>
+    <p>
       Οι επιτρεπτές λέξεις προέρχονται από αναζήτηση σε λεξικά με
       τις εντολές του Unix “<code>grep -hEi '^[ΑΒΕΖΗΙΚΜΝΟΡΤΥΧΆΈΉΊΪΌΎΫABEZHIKMNOPTYX]{3}$' /usr/share/dict/words /usr/share/dict/words-el | sed 'y/ΑΒΕΖΗΙΚΜΝΟΡΤΥΧαβεζηικμνορτυχΆΈΉΊΪΌΎΫάέήίϊόύϋ/ABEZHIKMNOPTYXABEZHIKMNOPTYXAEHIIOYYAEHIIOYY/' | tr a-z A-Z | sort -u | sed 's/.*/"&amp;",/' | fmt</code>”.
       Αν θέλετε να μάθετε κι εσείς να γράφετε τέτοιες εντολές, δείτε
