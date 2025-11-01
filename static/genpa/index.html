@@ -26,38 +26,72 @@
     background: #f0f0f0;
     padding: 1em;
     border-radius: 0.5em;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    overflow-wrap: anywhere;
   }
   .result {
     margin-top: 1.5em;
+  }
+  div.colophon {
+    font-size: 0.9em;
+    line-height: 1.4;
+    margin: 0.5em 0;
   }
 </style>
 </head>
 <body>
 <h2>Γεννήτρια γραμμάτων προσωπικού αριθμού</h2>
+<p>Η γεννήτρια αυτή σας επιτρέπει να βρείτε εύκολα έναν ενδιαφέροντα
+και ευκολομνημόνευτο συνδυασμό γραμμάτων για τον προσωπικό σας αριθμό.
+Για να τη χρησιμοποιήσετε ακολουθήστε τα εξής βήματα.
+<ol>
+  <li> Μεταβείτε στην
+    <a href="https://www.gov.gr/ipiresies/polites-kai-kathemerinoteta/stoikheia-polite-kai-tautopoietika-eggrapha/pa">υπηρεσία έκδοσης προσωπικού αριθμού</a>.
+  </li>
+  <li> Προχωρήστε τη διαδικασία μέχρι το στάδιο που σας ζητείται να
+    επιλέξετε τον προσωπικό σας αριθμό.</li>
+  <li> Επιλέξτε έναν οποιοδήποτε συνδυασμό γραμμάτων και ψηφίων,
+    <em>χωρίς όμως να οριστικοποιήσετε την επιλογή σας</em>.</li>
+  <li> Καταγράψτε τους τρεις χαρακτήρες και γράψτε τους στο πλαίσιο που
+    εμφανίζεται σ' αυτή τη σελίδα.</li>
+  <li> Πατήστε <em>Δημιουργία</em>. </li>
+  <li> Επιλέξτε το συνδυασμό που σας αρέσει και δώστε τα δύο πρώτα
+    ψηφία στην υπηρεσία έκδοσης προσωπικού αριθμού.
+    Το τρίτο ψηφίο θα είναι αυτό που έχετε επιλέξει. </li>
+</ol>
+
 <p>Δώστε οποιαδήποτε τρία επιτρεπτά γράμματα (π.χ., <code>ABP</code>)
 από την
 <a href="https://www.gov.gr/ipiresies/polites-kai-kathemerinoteta/stoikheia-polite-kai-tautopoietika-eggrapha/pa">υπηρεσία έκδοσης προσωπικού αριθμού</a>,
-προκειμένου να δείτε πολλούς αναγνωρίσιμους επιτρεπτούς συνδυασμούς.</p>
+προκειμένου να δείτε πολλούς τους επιτρεπτούς συνδυασμούς.</p>
 
-<input id="inputCode" maxlength="3" placeholder="ABK">
+<input id="inputCode" maxlength="3" placeholder="ABK" pattern="[0-9A-Za-zΑ-Ωα-ω]+">
 <button onclick="generate()">Δημιουργία</button>
 
 <div class="result">
-  <h3>Αποτελέσματα:</h3>
-  <pre id="output">(Εδώ θα δείτε ιδέες για τα πρώτα γράμματα του προσωπκού αριθμού σας.)</pre>
+  <h3>Προτεινόμενοι συνδυασμοί:</h3>
+  <pre id="output">(Εδώ θα δείτε ιδέες για τα πρώτα γράμματα του προσωπικού αριθμού σας.)</pre>
 </div>
 
-<h3>Κολοφώνας</h3>
+<div class="result">
+  <h3>Όλοι οι συνδυασμοί:</h3>
+  <pre id="all-output">(Εδώ θα δείτε όλα τα επιτρεπτά πρώτα γράμματα του προσωπικού αριθμού σας.)</pre>
+</div>
+
+
+<div class="colophon">
+  <h3>Κολοφώνας</h3>
     <p>
-      Την εφαρμογή δημιούργησε
-      <a href="https://www.spinellis.gr/">Διομήδης Σπινέλλης</a>,
-      αρχικά σε Python.
+      Τον αλγόριθμο δημιουργίας του ψηφίου ελέγχου του προσωπικού αριθμού
+      ανέλυσε ο <a href="https://www.spinellis.gr/">Διομήδης Σπινέλλης</a>
+      και τον υλοποίησε αρχικά σε Python.
       Στη συνέχεια το
-      <a href="https://chatgpt.com/share/69049fe6-7410-8011-a34e-f5d10e0fcce8">ChatGPT (5) με αρκετές προτροπές</a> τη μετέτρεψε σε JavaScript
+      <a href="https://chatgpt.com/share/69049fe6-7410-8011-a34e-f5d10e0fcce8">ChatGPT (5) με αρκετές προτροπές</a> μετέτρεψε τον κώδικα σε JavaScript
       και ιστοσελίδα.
       (Μη φανταστείτε ότι το ChatGPT έχει αχρηστεύσει τους προγραμματιστές: κάθε άλλο.)
       Οι επιτρεπτές λέξεις προέρχονται από αναζήτηση σε λεξικά με
-      τις εντολές Unix “<code>grep -hEi '^[ΑΒΕΖΗΙΚΜΝΟΡΤΥΧΆΈΉΊΪΌΎΫABEZHIKMNOPTYX]{3}$' /usr/share/dict/words /usr/share/dict/words-el | sed 'y/ΑΒΕΖΗΙΚΜΝΟΡΤΥΧαβεζηικμνορτυχΆΈΉΊΪΌΎΫάέήίϊόύϋ/ABEZHIKMNOPTYXABEZHIKMNOPTYXAEHIIOYYAEHIIOYY/' | tr a-z A-Z | sort -u | sed 's/.*/"&amp;",/' | fmt</code>”.
+      τις εντολές του Unix “<code>grep -hEi '^[ΑΒΕΖΗΙΚΜΝΟΡΤΥΧΆΈΉΊΪΌΎΫABEZHIKMNOPTYX]{3}$' /usr/share/dict/words /usr/share/dict/words-el | sed 'y/ΑΒΕΖΗΙΚΜΝΟΡΤΥΧαβεζηικμνορτυχΆΈΉΊΪΌΎΫάέήίϊόύϋ/ABEZHIKMNOPTYXABEZHIKMNOPTYXAEHIIOYYAEHIIOYY/' | tr a-z A-Z | sort -u | sed 's/.*/"&amp;",/' | fmt</code>”.
       Αν θέλετε να μάθετε κι εσείς να γράφετε τέτοιες εντολές, δείτε
       <a href="https://www.spinellis.gr/unix?genpa">αυτό το δωρεάν
         μαζικό ανοιχτό διαδικτυακό μάθημα</a>.
@@ -67,6 +101,7 @@
       σε υποδομές που παρέχει το
       <a href="https://grnet.gr/">Εθνικό Δίκτυο Υποδομών Τεχνολογίας και Έρευνας (ΕΔΥΤΕ)</a>.
     </p>
+</div>
 <script>
 const letters = ['A', 'B', 'E', 'Z', 'H', 'I', 'K', 'M',
                  'N', 'O', 'P', 'T', 'Y', 'X'];
@@ -156,6 +191,7 @@ const dictionary = [
 function generate() {
   const input = document.getElementById("inputCode").value.toUpperCase();
   const out = document.getElementById("output");
+  const all_out = document.getElementById("all-output");
   if (input.length !== 3) {
     out.textContent = "Παρακαλώ δώστε ακριβώς τρεις χαρακτήρες.";
     return;
@@ -163,7 +199,8 @@ function generate() {
 
   const i1 = charToValue[normalizeChar(input[0])];
   const i2 = charToValue[normalizeChar(input[1])];
-  const check = checkValue[normalizeChar(input[2])];
+  const c3 = normalizeChar(input[2]);
+  const check = checkValue[c3] ?? charToValue[c3];
 
   if (i1 === undefined || i2 === undefined || check === undefined) {
     out.textContent = "Λανθασμένα στοιχεία: επιτρέπονται μόνο τα ψηφία 0–9 και τα γράμματα A,B,E,Z,H,I,K,M,N,O,P,T,Y,X.";
@@ -184,6 +221,7 @@ function generate() {
   }
 
   const results = [];
+  const all_results = [];
   const keys = Object.keys(charToValue);
   for (const c1 of keys) {
     for (const c2 of keys) {
@@ -193,12 +231,14 @@ function generate() {
       if (dictionary.includes(word)) {
         results.push(word);
       }
+      all_results.push(word);
     }
   }
 
   out.textContent = results.length
     ? results.join("\n")
-    : "(no matches in dictionary)";
+    : "(Δεν βρέθηκαν συνδυασμοί στο λεξικό)";
+  all_out.textContent = all_results.join(" ")
 }
 </script>
 </body>
