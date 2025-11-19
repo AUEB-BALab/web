@@ -9,6 +9,6 @@ surname: Patska
 email: t8240110@aueb.gr
 github: MariaElizaPatska
 linkedin: maria-eliza-patska
-photo: patska.jpg
+photo: mpatska.jpg
 
 **Maria-Eliza Patska** is an undergraduate student in the Department of Management Science and Technology at the Athens University of Economics and Business (AUEB). She is interested in software development and data analytics.
