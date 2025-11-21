@@ -2,7 +2,7 @@ title: Lampropoulos-Andreas
 date: 20250710
 joined_date: 20250710
 category: members
-member_category: Researchers
+member_category: Associate Researchers
 id: alampropoulos
 givenname: Andreas
 surname: Lampropoulos
