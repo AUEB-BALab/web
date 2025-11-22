@@ -43,6 +43,28 @@ check_required_fields()
     done
 }
 
+check_md_images() 
+{
+    git fetch origin master
+    new_md_files=$(git diff --name-only origin/master...HEAD | grep '\.md$' || true)
+
+    error_found=0
+
+    for file in $new_md_files; do
+        # extract the image name from lines starting with photo:
+        img_name=$(sed -n 's/^photo:[[:space:]]*//p' "$file")
+        img_path="content/images/$img_name"
+
+        # if the image file does not exist
+        if [ ! -f "$img_path" ]; then
+            echo "Missing file: $img_path (referenced in $file)" 1>&2
+            error_found=1
+        fi
+    done
+
+    return $error_found
+}
+
 if [ $(whoami) = www-data ] ; then
   BASE=/var/www/balab/web-contents
 
@@ -71,6 +93,8 @@ grep -iHn '^[ 	]*url[ 	]*=' content/pubs.bib && error 'Specify XEurl rather than
 
 check_required_fields content/members doc/required_member_fields || error "Could not read required member fields"
 check_required_fields content/seminars doc/required_seminar_fields || error "Could not read required seminar fields"
+
+check_md_images || error "Some images are missing."
 
 # Create and activate the required Python environment
 if ! [ -d venv ] ; then
