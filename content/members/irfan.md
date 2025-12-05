@@ -7,5 +7,5 @@ id: m_irfan
 givenname: Muhammad Irfan
 surname: Khalid
 email: mikhalid@singularlogic.eu
-photo: kpanagopoulou.jpg
+photo: irfan.jpg
 
