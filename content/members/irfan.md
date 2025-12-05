@@ -1,4 +1,6 @@
 title: Engr
-First Name: Muhammad Irfan
-Last Name: Khalid
-Category: Associate Researcher
+givenname: Muhammad Irfan
+surname: Khalid
+category:
+member_category: Associate Researcher
+photo:
