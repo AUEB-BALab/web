@@ -114,5 +114,9 @@ first run.
 
 ### Creating the site
 * Locally: `bin/update/`
-* To update the web site on the server: `git pull && sudo -u www-data bin/updat/`
+* To update the web site on the server:
+```sh
+cd /var/www/balab/web-repo
+sudo -u www-data 'git pull && bin/update'
+```
 * GitHub update on commit is done by a GET on the web-deploy endpoint
