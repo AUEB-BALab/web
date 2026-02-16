@@ -41,7 +41,7 @@
                {% if article.twitter %}<span class="fa fa-twitter"></span> <b>Twitter:</b> <a href="https://twitter.com/{{article.twitter}}/">@{{article.twitter}}</a></br>{% endif %}
                {% if article.linkedin %}<span class="fa fa-linkedin-square"></span> <b>LinkedIn:</b> <a href="https://www.linkedin.com/in/{{article.linkedin}}/">https://www.linkedin.com/in/{{article.linkedin}}/</a></br>{% endif %}
       			</p>
-            {% if (article.phd_title or article.phd_startdate) and article.phd_completed == '0' %}
+            {% if (article.phd_title or article.phd_startdate) and article.phd_completed == '0' and not article.end_date %}
               <h4> Research area </h4>
               {% if article.phd_title %}<b> Title:</b> {{article.phd_title}} </br>{% endif%}
               {% if article.phd_supervisor %}
@@ -466,7 +466,7 @@
 	      <li><a href="#new_members">New Members</a></li>
 	      {% break %}
           {% endfor %}
-          {% for member in articles if member.phd_startdate and member.phd_startdate[0:4] <= article.title and (not member.phd_enddate or member.phd_enddate[0:4] > article.title) %}
+          {% for member in articles if member.phd_startdate and member.phd_startdate[0:4] <= article.title and (not member.phd_enddate or member.phd_enddate[0:4] > article.title) and not member.end_date %}
               <li><a href="#Ongoing_PhDs">Ongoing PhDs</a></li>
               {% break %}
           {% endfor %}
@@ -622,7 +622,7 @@
             {% endif %}
           {% endfor %}
 
-          {% for member in articles if member.phd_startdate and member.phd_startdate[0:4] <= article.title and (not member.phd_enddate or member.phd_enddate[0:4] > article.title) %}
+          {% for member in articles if member.phd_startdate and member.phd_startdate[0:4] <= article.title and (not member.phd_enddate or member.phd_enddate[0:4] > article.title) and not member.end_date %}
             {% if counter['total_ongoing_phds'] == 0 %}
               <li><a href="#Ongoing_PhDs">Ongoing PhDs</a></li>
             {% endif %}
@@ -932,7 +932,7 @@
 		    <p>
 		     <li>
 		       {{ member.givenname }} {{ member.surname }}
-		       {% if member.phd_startdate and member.phd_startdate[:4] == article.title %}(PhD student){% endif %}
+		       {% if member.phd_startdate and member.phd_startdate[:4] == article.title and not member.end_date %}(PhD student){% endif %}
 		       <a href="{{ SITEURL }}/{{ member.url }}"><span class="glyphicon glyphicon-new-window"></span></a>
 		     </li>
 		    </p>
@@ -944,14 +944,14 @@
       {% endfor %}
 
       <!-- Print ongoing PhDs of this year, if exists -->
-       {% for member in articles if member.phd_startdate and member.phd_startdate[0:4] <= article.title and (not member.phd_enddate or member.phd_enddate[0:4] > article.title) %}
+       {% for member in articles if member.phd_startdate and member.phd_startdate[0:4] <= article.title and (not member.phd_enddate or member.phd_enddate[0:4] > article.title) and not member.end_date %}
 	 <div class="panel panel-default" id="px2">
 	   <div class="panel-heading">
 		   <h3 id="Ongoing_PhDs">Ongoing PhDs</h3>
 	   </div>
 	   <ul class="list-group">
 	     <ul>
-		{% for member in articles if member.phd_startdate and member.phd_startdate[0:4] <= article.title and (not member.phd_enddate or member.phd_enddate[0:4] > article.title) %}
+		{% for member in articles if member.phd_startdate and member.phd_startdate[0:4] <= article.title and (not member.phd_enddate or member.phd_enddate[0:4] > article.title) and not member.end_date %}
 		  <p>
 		   <li>
 			 {{ member.givenname }} {{ member.surname }}
