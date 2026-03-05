@@ -1,7 +1,8 @@
 title: Rafaila - Galanopoulou
 date: 20220512
 joined_date: 20200529
-category: members
+end_date: 20251231
+category: alumni
 member_category: Researchers
 id: m_rafailagln
 givenname: Rafaila
