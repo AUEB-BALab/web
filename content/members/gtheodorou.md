@@ -6,7 +6,7 @@ member_category: Researchers
 id: gtheodorou
 givenname: George
 surname: Theodorou
-email: geo.a.theodorou@gmail.com
+email: gtheodorou@aueb.gr
 github: gthd
 linkedin: georgios-theodorou
 photo: gthd.jpg
