@@ -2,7 +2,7 @@ title: George - Theodorou
 date: 20200909
 joined_date: 20200909
 category: members
-member_category: Researchers
+member_category: Associate Researchers
 id: gtheodorou
 givenname: George
 surname: Theodorou
