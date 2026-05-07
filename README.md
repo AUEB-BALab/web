@@ -120,3 +120,5 @@ cd /var/www/balab/web-repo
 sudo -u www-data 'git pull && bin/update'
 ```
 * GitHub update on commit is done by a GET on the web-deploy endpoint
+
+* Look for errors at `/var/log/apache2/www.balab.aueb.gr-443_error_ssl.log` and  `/var/log/balab-deploy`.
