@@ -2,7 +2,7 @@ title: Vaggelis - Atlidakis
 date: 20201116
 joined_date: 20201116
 category: members
-member_category: Senior Researchers
+member_category: Faculty Members
 id: vatlidak
 givenname: Vaggelis
 surname: Atlidakis
