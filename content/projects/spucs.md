@@ -14,7 +14,7 @@ funding_agency: EU HORIZON
 funding_programme: Marie Skłodowska-Curie Actions (MSCA)
 logo: marie-curie.jpg
 scientific_coordinator: m_dds
-contact: nalexopoulos
+contact: m_nalexopoulos
 type: rtd
 international: no
 partner_shortname1: Athens University of Economics & Business

@@ -3,7 +3,7 @@ date: 20220620
 joined_date: 20220620
 category: members
 member_category: Senior Researchers
-id: nalexopoulos
+id: m_nalexopoulos
 givenname: Nikolaos
 surname: Alexopoulos
 email: alexopoulos@aueb.gr
