@@ -2,7 +2,7 @@ title: Mitropoulos-Charalambos
 date: 20190911 
 joined_date: 20190911 
 category: members 
-member_category: Associate Researchers
+member_category: Senior Researchers
 id: c_mitropoulos 
 givenname: Charalambos-Ioannis 
 surname: Mitropoulos 
