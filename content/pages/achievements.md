@@ -1,5 +1,5 @@
 Title: phd achievements
-slug: phd_achievements
+slug: achievements
 
 <div class="panel panel-default" id="achievements">
   <div class="panel-heading">
