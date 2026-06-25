@@ -1,4 +1,4 @@
-Title: phd achievements
+Title: member achievements
 slug: achievements
 
 <div class="panel panel-default" id="achievements">
