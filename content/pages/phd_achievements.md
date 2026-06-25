@@ -10,6 +10,123 @@ slug: phd_achievements
     <div class="row">
     <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
 
+      <h3>June 2026</h3>
+      <p>
+      <img src="../images/phd.png" border="0" align="right" alt="PhD logo">
+      <b>Charalambos Mitropoulos</b> successfully defends his PhD thesis.
+      </p>
+
+      <h3>June 2026</h3>
+      <p>
+        <b>Thodoris Sotiropoulos</b> received the Distinguished Paper Award
+        for the conference paper "Enumerating Ill-Typed Programs for Testing
+        Type Analyzers" published at the
+        <cite>47th ACM SIGPLAN Conference on Programming Language Design and
+        Implementation (PLDI 2026)</cite>.
+      </p>
+
+      <h3>May 2026</h3>
+      <p>
+        <b>Georgios Alexopoulos</b> has papers accepted for publication at
+        three top-rated conferences:
+        "PyXray: Practical Cross-Language Call Graph Construction Through
+        Object Layout Analysis" at the
+        <cite>48th International Conference on Software Engineering
+        (ICSE 2026)</cite>,
+        "Best of Both Worlds: Effective Foreign Bridge Identification in V8
+        Embedders for Security Analysis" at the
+        <cite>47th IEEE Symposium on Security and Privacy</cite>, and
+        "Unfulfilled Promises: LLM-Based Detection of OS Compatibility Issues
+        in Infrastructure as Code" at
+        <cite>FSE 2026</cite>.
+      </p>
+
+      <h3>May 2026</h3>
+      <p>
+        <b>Stefanos Chaliasos</b>, <b>Vaggelis Atlidakis</b>, and
+        <b>Marios Fragkoulis</b> start serving in faculty positions.
+      </p>
+
+      <h3>December 2025</h3>
+      <p>
+      <img src="../images/phd.png" border="0" align="right" alt="PhD logo">
+      <b>Zoe Kotti</b> successfully defends her PhD thesis.
+      </p>
+
+      <h3>December 2025</h3>
+      <p>
+        <b>Ioannis Karyotakis</b> and <b>Evangelos Talos</b> publish a paper
+        in a high-impact journal:
+        <a href="https://rdcu.be/eVsaH">
+        TGIF: The Evolution of Developer Commit Times
+        </a>.
+        <cite>Empirical Software Engineering</cite>, December 2025.
+      </p>
+
+      <h3>October 2025</h3>
+      <p>
+        <b>Konstantinos Karakatsanis</b>,
+        <b>Georgios Alexopoulos</b>,
+        <b>Ioannis Karyotakis</b>,
+        <b>Foivos Timotheos Proestakis</b>, and
+        <b>Evangelos Talos</b> have their tool demonstration paper
+        "PyTrim: A Practical Tool for Reducing Python Dependency Bloat"
+        accepted at the
+        <cite>40th IEEE/ACM International Conference on Automated Software
+        Engineering (ASE 2025)</cite>.
+      </p>
+
+      <h3>April 2025</h3>
+      <p>
+        <b>Diomidis Spinellis</b> received the ACM SIGSOFT Distinguished Paper
+        Award for the conference paper "Code Review Comprehension: Reviewing
+        Strategies Seen Through Code Comprehension Theories" published at the
+        <cite>2025 IEEE/ACM 33rd International Conference on Program
+        Comprehension (ICPC)</cite>.
+      </p>
+
+      <h3>January 2025</h3>
+      <p>
+        <b>Maria Kechagia</b> starts serving in a faculty position.
+      </p>
+
+      <h3>October 2024</h3>
+      <p>
+        <b>Georgios-Petros Drosos</b> and
+        <b>Georgios Alexopoulos</b> publish a paper in a top-rated conference:
+        "When Your Infrastructure Is a Buggy Program: Understanding Faults in
+        Infrastructure as Code Ecosystems" at
+        <cite>OOPSLA 2024</cite>.
+      </p>
+
+      <h3>September 2023</h3>
+      <p>
+        <b>Charalambos Mitropoulos</b> publishes a paper in a high-rated
+        conference:
+        "Syntax-Aware Mutation for Testing the Solidity Compiler" at the
+        <cite>28th European Symposium on Research in Computer Security
+        (ESORICS 2023)</cite>.
+      </p>
+
+      <h3>April 2023</h3>
+      <p>
+        <b>Zoe Kotti</b> publishes a paper in a high-impact journal:
+        <a href="https://arxiv.org/abs/2204.03366">
+        Impact of Software Engineering Research in Practice: A Patent and
+        Author Survey Analysis
+        </a>.
+        <cite>IEEE Transactions on Software Engineering</cite>, April 2023.
+      </p>
+
+      <h3>March 2023</h3>
+      <p>
+        <b>Zoe Kotti</b> publishes a paper in a high-impact journal:
+        <a href="https://arxiv.org/abs/2211.09425">
+        Machine Learning for Software Engineering: A Tertiary Study
+        </a>.
+        <cite>ACM Computing Surveys</cite>, March 2023.
+      </p>
+
       <h3>October 2022</h3>
       <p>
       <img src="../images/phd.png" border="0" align="right" alt="PhD logo">
@@ -19,10 +136,15 @@ slug: phd_achievements
       <h3>June 2022</h3>
       <p>
         <b>Thodoris Sotiropoulos</b> received the Distinguished Paper Award
-        and the Best Artifact Award for his conference paper "Finding Typing
-        Compiler Bugs" published at the
-	   <cite>43rd ACM SIGPLAN Conference on Programming Language Design and
-       Implementation (PLDI 2022)</cite>
+        and the Best Artifact Award for the conference paper "Finding Typing
+        Compiler Bugs", co-authored with
+        <b>Stefanos Chaliasos</b>,
+        <b>Diomidis Spinellis</b>,
+        Arthur Gervais,
+        Benjamin Livshits, and
+        <b>Dimitris Mitropoulos</b>, published at the
+        <cite>43rd ACM SIGPLAN Conference on Programming Language Design and
+        Implementation (PLDI 2022)</cite>.
       </p>
 
       <h3>May 2021</h3>
