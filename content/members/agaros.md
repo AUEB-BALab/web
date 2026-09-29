@@ -11,7 +11,9 @@ github: ApostolisGaros
 linkedin: apostolis-garos-603902197
 photo: agaros.jpg
 
-**Apostolis Garos** is an undergraduate Electrical and Computer Engineering student at the National Technical University of Athens (NTUA). 
+**Apostolis Garos** has an MEng degree from the School of
+Electrical and Computer Engineering at the National Technical University of Athens (NTUA). 
+He is a BLab affiliated researcher.
 
 His main research interests are Software Engineering and Data Science.
 
