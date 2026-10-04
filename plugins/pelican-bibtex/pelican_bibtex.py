@@ -31,7 +31,7 @@ def add_publications(generator):
     Output
     ------
     generator.context['publications']:
-        List of tuples (key, year, text, bibtex, pdf, slides, poster).
+        List of tuples (key, year, month, text, bibtex, pdf, slides, poster).
         See Readme.md for more details.
     """
     if 'PUBLICATIONS_SRC' not in generator.settings:
@@ -82,6 +82,7 @@ def add_publications(generator):
 
         XEProject = entry.fields.get('XEProject')
         url = entry.fields.get('XEurl')
+        month = entry.fields.get('month')
 
         #render the bibtex string for the entry
         bib_buf = StringIO()
@@ -99,6 +100,7 @@ def add_publications(generator):
         #                      ))
         publications.append({'key'    : key,
                              'year'   : year,
+                             'month'   : month,
                              'text'   : text,
                              'url'    : url,
                              'XEmember' : XEmember,

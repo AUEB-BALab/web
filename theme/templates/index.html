@@ -37,25 +37,37 @@
       <ul class="list-group">
         <ul>
            <div>
-              {% for publication in publications|sort(attribute='year')|reverse if publication.year|int() == CURRYEAR %}
-                   <p>
-                    <li>{{ publication.text }} {% if  publication.url %} <a href="{{  publication.url }}"><span class="glyphicon glyphicon-new-window"></span></a> {% endif %} </li>
-                   </p>
-                   {% if loop.last and loop.index < 4 %}
-                      {% for publication in publications|sort(attribute='year')|reverse if publication.year|int() == CURRYEAR - 1 %}
-                          <p>
-                          <li>{{ publication.text }} {% if  publication.url %} <a href="{{  publication.url }}"><span class="glyphicon glyphicon-new-window"></span></a> {% endif %} </li>
-                         </p>
-                      {% endfor %}
-                   {% endif %}
-               {% else %} <!-- In case there is not even one publication the current year-->
-         					 {% for publication in publications|sort(attribute='year')|reverse if publication.year|int() == CURRYEAR - 1 %}
-         						 <p>
-         						 <li>{{ publication.text }} {% if  publication.url %} <a href="{{  publication.url }}"><span class="glyphicon glyphicon-new-window"></span></a> {% endif %} </li>
-         						</p>
-         					 {% endfor %}
-       				{% endfor %}
-            </div>
+	    {% set months = {
+		'jan': 1, 'feb': 2, 'mar': 3, 'apr': 4,
+		'may': 5, 'jun': 6, 'jul': 7, 'aug': 8,
+		'sep': 9, 'oct': 10, 'nov': 11, 'dec': 12
+	    } %}
+
+	    {% for offset in range(12) %}
+		{% set n = CURRYEAR * 12 + CURRMONTH - 1 - offset %}
+		{% set year = n // 12 %}
+		{% set month = n % 12 + 1 %}
+
+		{% for publication in publications
+		   if publication.month is defined
+		   and publication.month
+		   and '/' not in publication.month
+		   and publication.month[:3]|lower in months
+		   and publication.year|int == year
+		   and months[publication.month[:3]|lower] == month %}
+		    <p>
+			<li>
+			    {{ publication.text }}
+			    {% if publication.url %}
+				<a href="{{ publication.url }}">
+				    <span class="glyphicon glyphicon-new-window"></span>
+				</a>
+			    {% endif %}
+			</li>
+		    </p>
+		{% endfor %}
+	    {% endfor %}
+           </div>
         </ul>
       </ul>
     </div>

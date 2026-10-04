@@ -3,6 +3,11 @@
 from __future__ import unicode_literals
 from datetime import datetime
 
+now = datetime.now()
+
+CURRYEAR=now.year
+CURRMONTH=now.month
+
 JINJA_ENVIRONMENT = {'extensions': ['jinja2.ext.loopcontrols']}
 
 AUTHOR = 'Efstathia Chioteli, Ioannis Batas'
