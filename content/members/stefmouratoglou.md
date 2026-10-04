@@ -1,6 +1,6 @@
 title: Stefanos Mouratoglou
-date: 20262507
-joined_date: 20262507
+date: 20260725
+joined_date: 202620725
 category: members
 member_category: Researchers
 id: stefmouratoglou
