@@ -10,4 +10,4 @@ email: t8250277@aueb.gr
 github: stefkotidis-prog
 photo: skotidis.jpg 
 
-Stefanos Kotidis is an undergraduate student at the Athens University of Economics and Business in the Department of Management Science and Technology. His interests lie in the areas of Software Engineering and Data Analytics.
+Stefanos Kotidis is an undergraduate researcher at AUEB. His primary academic and technical interests lie in the broader field of computer science, with a focus on software engineering, algorithms, and data systems.
