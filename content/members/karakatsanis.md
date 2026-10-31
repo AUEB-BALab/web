@@ -6,7 +6,7 @@ member_category: Researchers
 id: karakatsanis
 givenname: Konstantinos
 surname: Karakatsanis
-email: k_karakatsanis@outlook.com
+email: konkara@uoa.gr
 photo: karakatsanis.jpg
 
 Konstantinos
@@ -14,7 +14,6 @@ holds an MS in Electrical and Computer Engineering
 from Georgia Tech 
 and a BS in Management Science and Technology 
 from the Athens University of Economics and Business.
-He was the instructor of the Intro to Computer Security class at Georgia Tech.
 
 His research interests include computer security, 
 with a focus on firmware and software security, 
