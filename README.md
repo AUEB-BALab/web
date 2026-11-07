@@ -108,6 +108,10 @@ The site is implemented using [Pelican](http://docs.getpelican.com/en/stable/).
 * `doc/templates/publication-schema.bib` : Bibtex entries templates
 
 ### Web site installation
+The update script requires `flock` (provided by util-linux on Linux; install
+`flock` separately on macOS) to prevent concurrent builds from deleting each
+other's staging files.
+
 The required _pelican_ package and its dependencies are automatically
 installed in a virtual environment when the `bin/update` command is
 first run.

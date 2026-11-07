@@ -67,13 +67,21 @@ check_md_images()
 
 if [ $(whoami) = www-data ] ; then
   BASE=/var/www/balab/web-contents
+else
+  BASE=balab
+fi
 
+# Serialize builds before modifying shared staging files or the Python environment.
+# Keep the lock outside stage/deploy so it survives cleanup and deployment.
+mkdir -p "$BASE"
+exec 9>"$BASE/.update.lock"
+flock -n 9 || error 'Another site update is running; retry when it finishes'
+
+if [ $(whoami) = www-data ] ; then
   mkdir -p $BASE/lists
   { awk '/^email:/{print $2}' content/members/*
     cat content/mail-extra
   } >$BASE/lists/balab.txt
-else
-  BASE=balab
 fi
 
 rm -rf $BASE/stage
