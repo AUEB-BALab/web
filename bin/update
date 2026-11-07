@@ -97,13 +97,14 @@ check_required_fields content/seminars doc/required_seminar_fields || error "Cou
 check_md_images || error "Some images are missing."
 
 # Create and activate the required Python environment
-if ! [ -d venv ] ; then
+# A system Python upgrade can leave an existing venv unable to find its packages.
+if ! [ -x venv/bin/python ] ||
+   ! venv/bin/python -c 'import pelican, markdown, typogrify, pybtex' >/dev/null 2>&1; then
+  echo 'Creating or repairing the Python virtual environment'
   python3 -m venv venv
-  . venv/bin/activate
-  pip install pelican markdown typogrify pybtex
-else
-  . venv/bin/activate
+  venv/bin/python -m pip install pelican markdown typogrify pybtex
 fi
+. venv/bin/activate
 
 # Cross-platform file size function
 get_file_size() {
