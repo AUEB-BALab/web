@@ -16,7 +16,7 @@ phd_completed: 0
 
 Konstantinos
 is a PhD candidate
-at the [National and Kapodistrian University of Athens](https://en.uoa.gr/).
+at the [National and Kapodistrian University of Athens](https://en.uoa.gr/)
 and a Systems Architect
 at the [Greek Research and Technology Network (GRNET)](https://grnet.gr/).
 He holds an MS in Electrical and Computer Engineering 
