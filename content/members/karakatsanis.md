@@ -11,7 +11,7 @@ web_site: https://k-karakatsanis.github.io/
 photo: karakatsanis.jpg
 phd_title: Automated Foundations of Software Security and Reliability
 phd_supervisor: m_dimitro
-phd_startdate: 20260129 (Required for PhD students)
+phd_startdate: 20260129
 phd_completed: 0
 
 Konstantinos
